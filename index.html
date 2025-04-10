@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christopher Bordelon | Data Analyst & Developer</title>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/examples/js/controls/OrbitControls.js"></script>
+  <style>
+    :root {
+      --sith-red: #ff0000;
+      --dark: #000000;
+      --light: #ffffff;
+      --nav-bg: #1a1a1a;
+      --glow-blue: #00B7EB;
+      --glow-green: #39FF14;
+      --glow-yellow: #FFDD00;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body { 
+      width: 100%; 
+      height: 100%; 
+      margin: 0; 
+      padding: 0; 
+      overflow: hidden; 
+      background: var(--dark); 
+    }
+    
+    body { 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+      line-height: 1.6; 
+      color: var(--light); 
+      position: relative; 
+    }
+    
+    #scene-container { 
+      position: fixed; 
+      top: 60px; 
+      left: 0; 
+      width: 100%; 
+      height: calc(100% - 60px); 
+      z-index: 0; 
+    }
+
+    /* Navigation Bar */
+    nav { 
+      background-color: var(--nav-bg); 
+      padding: 1rem 2rem; 
+      position: fixed; 
+      width: 100%; 
+      top: 0; 
+      z-index: 1000; 
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5); 
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+    }
+    .nav-brand a {
+      color: var(--light);
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+    /* Each li is relatively positioned so that its dropdown is aligned below it */
+    .nav-links li {
+      margin-left: 1.5rem;
+      position: relative;
+    }
+    .nav-links a {
+      color: var(--light);
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+    .nav-links a:hover {
+      background-color: var(--sith-red);
+      color: var(--light);
+    }
+    /* Dropdown styling updated to wrap text properly */
+    .nav-links li .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #333;
+      color: var(--light);
+      padding: 0.5rem;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+      z-index: 1001;
+      font-size: 0.9rem;
+      width: auto;
+      white-space: normal;
+      overflow-wrap: break-word;
+    }
+    .nav-links li:hover .dropdown {
+      display: block;
+    }
+
+    .label { 
+      position: absolute; 
+      color: var(--light); 
+      font-size: 1rem; 
+      text-align: center; 
+      pointer-events: none; 
+      z-index: 1; 
+      background-color: rgba(0, 0, 0, 0.7); 
+      padding: 0.5rem; 
+      border-radius: 4px; 
+      white-space: pre;
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      box-shadow: 0 0 10px var(--glow-blue);
+      transition: box-shadow 0.3s ease;
+    }
+    
+    /* Toggle Rotation Button Style */
+    #toggleRotation {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1001;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: var(--nav-bg);
+      color: var(--light);
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+      transition: background-color 0.3s ease;
+    }
+    
+    #toggleRotation:hover {
+      background-color: var(--sith-red);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-brand">
+      <a href="index.html">Christopher Bordelon | Data Analyst & Developer</a>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="about.html">About</a>
+        <div class="dropdown">Learn more about my background, education, and professional journey.</div>
+      </li>
+      <li>
+        <a href="resume.html">Resume</a>
+        <div class="dropdown">View my resume in traditional (PDF) or interactive (Tableau) format.</div>
+      </li>
+      <li>
+        <a href="portfolio.html">Portfolio</a>
+        <div class="dropdown">Explore past and future projects.</div>
+      </li>
+      <li>
+        <a href="applications.html">Apps</a>
+        <div class="dropdown">Explore the applications and games I've developed, including DOOM and more.</div>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+        <div class="dropdown">bordelondevops2025@gmail.com</div>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/christopher-b-b61554319" target="_blank">LinkedIn</a>
+        <div class="dropdown">Connect with me on LinkedIn.</div>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Nodenet Visualization Container -->
+  <div id="scene-container"></div>
+  
+  <!-- Toggle Rotation Button -->
+  <button id="toggleRotation">Toggle Rotation</button>
+
+  <script>
+    // Toggle rotation flag
+    let autoRotate = true;
+    let angle = 0; // Declare angle only once
+
+    // Nodenet Data & Initialization
+    const mainNodesData = [
+      { title: "Home", description: "You are here!", link: "#", position: { x: 0, y: 0, z: 0 }, size: 1.2, color: 0xff0000, isCentral: true, glowColor: 0xff0000 },
+      { title: "Skills", link: "resume.html", position: { x: -10, y: 0, z: 0 }, size: 0.9, color: 0xff3333, glowColor: 0x00B7EB },
+      { title: "Portfolio", description: "A list of past and future projects", link: "portfolio.html", position: { x: 10, y: 0, z: 0 }, size: 0.9, color: 0xff3333, glowColor: 0x39FF14 },
+      { title: "Python:", description: "A versatile programming language for data analysis and automation.", link: "resume.html", position: { x: -15, y: 5, z: 2 }, size: 0.5, color: 0xff6666, glowColor: 0x00B7EB },
+      { title: "PowerShell:", description: "A scripting language for automating Windows system tasks.", link: "resume.html", position: { x: -15, y: 3, z: 1 }, size: 0.5, color: 0xff6666, glowColor: 0x00B7EB },
+      { title: "VBA:", description: "A language for automating tasks in Microsoft Office applications.", link: "resume.html", position: { x: -15, y: 1, z: 0 }, size: 0.5, color: 0xff6666, glowColor: 0x00B7EB },
+      { title: "Pandas:", description: "A Python library for data manipulation and analysis.", link: "resume.html", position: { x: -20, y: 5, z: 2 }, size: 0.5, color: 0xff6666, glowColor: 0x00B7EB },
+      { title: "NumPy:", description: "A Python library for numerical computations and arrays.", link: "resume.html", position: { x: -20, y: 3, z: 1 }, size: 0.5, color: 0xff6666, glowColor: 0x00B7EB },
+      { title: "Matplotlib:", description: "A Python library for creating static and interactive plots.", link: "resume.html", position: { x: -20, y: 1, z: 0 }, size: 0.5, color: 0xff6666, glowColor: 0x00B7EB },
+      { title: "Plotly:", description: "A Python library for interactive, web-based visualizations.", link: "resume.html", position: { x: -20, y: -1, z: -1 }, size: 0.5, color: 0xff6666, glowColor: 0x00B7EB },
+      { title: "Tableau:", description: "A tool for creating interactive data dashboards and visualizations.", link: "resume.html", position: { x: -25, y: 5, z: 2 }, size: 0.5, color: 0xff6666, glowColor: 0x00B7EB },
+      { title: "Power BI:", description: "A Microsoft tool for business intelligence and data visualization.", link: "resume.html", position: { x: -25, y: 3, z: 1 }, size: 0.5, color: 0xff6666, glowColor: 0x00B7EB },
+      { title: "XLOOKUP", description: "An Excel function for horizontal data lookup.", link: "resume.html", position: { x: -15, y: -3, z: -1 }, size: 0.5, color: 0xff6666, glowColor: 0x00B7EB },
+      { title: "PivotTables", description: "An Excel feature for summarizing and analyzing data.", link: "resume.html", position: { x: -15, y: -5, z: -2 }, size: 0.5, color: 0xff6666, glowColor: 0x00B7EB },
+      { title: "VLOOKUP", description: "An Excel function for vertical data lookup.", link: "resume.html", position: { x: -15, y: -7, z: -3 }, size: 0.5, color: 0xff6666, glowColor: 0x00B7EB },
+      { title: "Power Query", description: "An Excel tool for data transformation and preparation.", link: "resume.html", position: { x: -20, y: -3, z: -1 }, size: 0.5, color: 0xff6666, glowColor: 0x00B7EB },
+      { title: "Power Pivot", description: "An Excel add-in for advanced data modeling.", link: "resume.html", position: { x: -20, y: -5, z: -2 }, size: 0.5, color: 0xff6666, glowColor: 0x00B7EB },
+      { title: "DAX", description: "A formula language for data analysis in Power Pivot.", link: "resume.html", position: { x: -20, y: -7, z: -3 }, size: 0.5, color: 0xff6666, glowColor: 0x00B7EB },
+      { title: "SQL", description: "A language for managing and querying relational databases.", link: "resume.html", position: { x: -25, y: -3, z: -1 }, size: 0.5, color: 0xff6666, glowColor: 0x00B7EB },
+      { title: "Data Cleansing", description: "The process of correcting or removing inaccurate data.", link: "resume.html", position: { x: -25, y: -5, z: -2 }, size: 0.5, color: 0xff6666, glowColor: 0x00B7EB },
+      { title: "Machine Learning", description: "A field of AI for building predictive models.", link: "resume.html", position: { x: -30, y: 3, z: 1 }, size: 0.5, color: 0xff6666, glowColor: 0x00B7EB },
+      { title: "Natural Language Processing", description: "A field of AI for processing human language.", link: "resume.html", position: { x: -30, y: 1, z: 0 }, size: 0.5, color: 0xff6666, glowColor: 0x00B7EB },
+      { title: "Salesforce", description: "A CRM platform for managing customer relationships.", link: "resume.html", position: { x: -30, y: -1, z: -1 }, size: 0.5, color: 0xff6666, glowColor: 0x00B7EB },
+      { title: "Python Inventory System", description: "Tool cutting inventory errors.", link: "Chromebook_losses.html", position: { x: 15, y: 5, z: 2 }, size: 0.5, color: 0xff6666, glowColor: 0x39FF14 },
+      { title: "PowerShell Cloud Migration", description: "Scripts for Azure transition.", link: "cloud_migration.html", position: { x: 15, y: 3, z: 1 }, size: 0.5, color: 0xff6666, glowColor: 0x39FF14 },
+      { title: "Data Visualization Dashboard", description: "Dashboards for real-time insights.", link: "tableau_dashboard.html", position: { x: 15, y: 1, z: 0 }, size: 0.5, color: 0xff6666, glowColor: 0x39FF14 },
+      { title: "Work Automation Suite", description: "Automation cutting reporting time.", link: "work_automation.html", position: { x: 15, y: -1, z: -1 }, size: 0.5, color: 0xff6666, glowColor: 0x39FF14 },
+      { title: "Data Quality Auditor", description: "Script fixing legacy data.", link: "data_quality.html", position: { x: 15, y: -3, z: -2 }, size: 0.5, color: 0xff6666, glowColor: 0x39FF14 },
+      // Apps group: default color red, glow yellow.
+      { title: "Apps", description: "A list of playable and games in development", link: "applications.html", position: { x: 15, y: -5, z: -3 }, size: 0.5, color: 0xff0000, glowColor: 0xffdd00 },
+      { title: "DOOM", description: "A classic first-person shooter game where you battle demons from hell. Experience fast-paced action, iconic weapons, and atmospheric levels in this groundbreaking game that defined the FPS genre.", link: "applications.html", position: { x: 20, y: -5, z: -3 }, size: 0.4, color: 0xff0000, glowColor: 0xffdd00 },
+      { title: "THOTBGONE", description: "A content filtering application for social media platforms that helps users maintain a positive online experience. Uses machine learning to identify and filter out unwanted content based on user preferences and behavior patterns.", link: "applications.html", position: { x: 20, y: -7, z: -4 }, size: 0.4, color: 0xff0000, glowColor: 0xffdd00 },
+      { title: "Worm's Pocketbook", description: "Directional drilling application that calculates complex wellbore trajectories and provides real-time analysis for drilling operations. Essential tool for petroleum engineers and drilling specialists.", link: "applications.html", position: { x: 20, y: -9, z: -5 }, size: 0.4, color: 0xff0000, glowColor: 0xffdd00 },
+      { title: "Decennium Descent", description: "An immersive adventure game set in a dystopian future where players navigate through a world transformed by technological singularity. Features a rich narrative, complex character development, and challenging puzzles that adapt to player choices.", link: "applications.html", position: { x: 25, y: -5, z: -3 }, size: 0.4, color: 0xff0000, glowColor: 0xffdd00 },
+      { title: "Vibe w/ Excel", description: "A custom plugin which takes 20 of the most common Data Analysis tasks and makes them on a Right Click Menu. It uses VBA/Python/PowerShell.", link: "applications.html", position: { x: 25, y: -7, z: -4 }, size: 0.4, color: 0xff0000, glowColor: 0xffdd00 },
+      { title: "Theorycraft", description: "Join waitlist for this upcoming innovative application.", link: "applications.html", position: { x: 25, y: -9, z: -5 }, size: 0.4, color: 0xff0000, glowColor: 0xffdd00 }
+    ];
+    
+    const totalNodes = 100;
+    const additionalNodes = [];
+    for (let i = 0; i < totalNodes - mainNodesData.length; i++) {
+      const x = (Math.random() - 0.5) * 60;
+      const y = (Math.random() - 0.5) * 60;
+      const z = (Math.random() - 0.5) * 20;
+      additionalNodes.push({
+        title: `Node ${i + 1}`,
+        link: "#",
+        position: { x, y, z },
+        size: 0.3,
+        color: 0xff3333,
+        glowColor: 0xff3333,
+        isFiller: true
+      });
+    }
+    const allNodesData = [...mainNodesData, ...additionalNodes];
+    
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / (window.innerHeight - 60), 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setSize(window.innerWidth, window.innerHeight - 60);
+    renderer.setClearColor(0x000000);
+    document.getElementById('scene-container').appendChild(renderer.domElement);
+    
+    const radius = 40;
+    camera.position.set(0, radius * 0.5, radius);
+    camera.lookAt(0, 0, 0);
+    
+    const controls = new THREE.OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.05;
+    controls.screenSpacePanning = false;
+    controls.minDistance = 20;
+    controls.maxDistance = 80;
+    controls.target.set(0, 0, 0);
+    
+    const raycaster = new THREE.Raycaster();
+    const mouse = new THREE.Vector2();
+    const nodeGroup = new THREE.Group();
+    const nodes = [];
+    const labels = [];
+    
+    allNodesData.forEach((project, index) => {
+      const geometry = new THREE.SphereGeometry(project.size, 32, 32);
+      const material = new THREE.MeshPhongMaterial({ color: project.color, emissive: project.glowColor, emissiveIntensity: 0.2, shininess: 100 });
+      const node = new THREE.Mesh(geometry, material);
+      node.position.set(project.position.x, project.position.y, project.position.z);
+      node.userData = { 
+        project, 
+        defaultScale: 1, 
+        hoverScale: 1.5, 
+        originalColor: new THREE.Color(project.color),
+        targetColor: new THREE.Color(project.color),
+        currentColor: new THREE.Color(project.color),
+        glowColor: new THREE.Color(project.glowColor),
+        animationStartTime: null,
+        animationDelay: 0,
+        isAnimating: false,
+        animationDirection: 1,
+        initialPosition: new THREE.Vector3(project.position.x, project.position.y, project.position.z)
+      };
+      nodeGroup.add(node);
+      nodes.push(node);
+    
+      const label = document.createElement('div');
+      label.className = 'label';
+      if (project.description) {
+        label.textContent = `${project.title}\n${project.description}`;
+      } else {
+        label.textContent = project.title;
+      }
+      label.style.display = 'none';
+      document.body.appendChild(label);
+      labels.push(label);
+    });
+    
+    // Add ambient and point lights for better visibility and glow
+    const ambientLight = new THREE.AmbientLight(0x404040, 0.5);
+    scene.add(ambientLight);
+    const pointLight = new THREE.PointLight(0xffffff, 1);
+    pointLight.position.set(0, 10, 10);
+    scene.add(pointLight);
+    
+    const lines = [];
+    const skillNodesAnimation = [];
+    const skillLinesAnimation = [];
+    const portfolioNodesAnimation = [];
+    const portfolioLinesAnimation = [];
+    const appsNodesAnimation = [];
+    const appsLinesAnimation = [];
+    const animationDuration = 1000;
+    const maxDelay = 500;
+    
+    // Create a starfield background
+    const starCount = 2000;
+    const starGeometry = new THREE.BufferGeometry();
+    const starPositions = new Float32Array(starCount * 3);
+    for (let i = 0; i < starCount; i++) {
+      starPositions[i * 3] = (Math.random() - 0.5) * 200;
+      starPositions[i * 3 + 1] = (Math.random() - 0.5) * 200;
+      starPositions[i * 3 + 2] = (Math.random() - 0.5) * 200;
+    }
+    starGeometry.setAttribute('position', new THREE.BufferAttribute(starPositions, 3));
+    const starMaterial = new THREE.PointsMaterial({ color: 0xFFFFFF, size: 0.1, transparent: true, opacity: 0.5 });
+    const stars = new THREE.Points(starGeometry, starMaterial);
+    scene.add(stars);
+    
+    // Create lines between nearby nodes
+    const maxDistance = 10;
+    for (let i = 0; i < nodes.length; i++) {
+      for (let j = i + 1; j < nodes.length; j++) {
+        const start = nodes[i].position;
+        const end = nodes[j].position;
+        const distance = start.distanceTo(end);
+        if (distance < maxDistance) {
+          const lineGeometry = new THREE.BufferGeometry().setFromPoints([start, end]);
+          const lineMaterial = new THREE.LineBasicMaterial({ color: 0xff0000, transparent: true, opacity: 0.3 });
+          const line = new THREE.Line(lineGeometry, lineMaterial);
+          line.userData = {
+            originalColor: new THREE.Color(0xff0000),
+            targetColor: new THREE.Color(0xff0000),
+            currentColor: new THREE.Color(0xff0000),
+            animationStartTime: null,
+            animationDelay: 0,
+            isAnimating: false,
+            animationDirection: 1
+          };
+          nodeGroup.add(line);
+          lines.push(line);
+        }
+      }
+    }
+    
+    // Define main nodes
+    const homeNode = nodes[0];
+    const skillsNode = nodes[1];
+    const portfolioNode = nodes[2];
+    
+    // Create lines from Home to Skills and Portfolio
+    const lineToSkills = new THREE.Line(
+      new THREE.BufferGeometry().setFromPoints([homeNode.position, skillsNode.position]),
+      new THREE.LineBasicMaterial({ color: 0xff0000, transparent: true, opacity: 0.5 })
+    );
+    lineToSkills.userData = {
+      originalColor: new THREE.Color(0xff0000),
+      targetColor: new THREE.Color(0xff0000),
+      currentColor: new THREE.Color(0xff0000),
+      animationStartTime: null,
+      animationDelay: 0,
+      isAnimating: false,
+      animationDirection: 1
+    };
+    const lineToPortfolio = new THREE.Line(
+      new THREE.BufferGeometry().setFromPoints([homeNode.position, portfolioNode.position]),
+      new THREE.LineBasicMaterial({ color: 0xff0000, transparent: true, opacity: 0.5 })
+    );
+    lineToPortfolio.userData = {
+      originalColor: new THREE.Color(0xff0000),
+      targetColor: new THREE.Color(0xff0000),
+      currentColor: new THREE.Color(0xff0000),
+      animationStartTime: null,
+      animationDelay: 0,
+      isAnimating: false,
+      animationDirection: 1
+    };
+    nodeGroup.add(lineToSkills, lineToPortfolio);
+    lines.push(lineToSkills, lineToPortfolio);
+    
+    const skillLinesStartIndex = lines.length;
+    
+    // Create lines from Skills to its sub-nodes (indices 3 to 22)
+    for (let i = 3; i <= 22; i++) {
+      const skillNode = nodes[i];
+      const line = new THREE.Line(
+        new THREE.BufferGeometry().setFromPoints([skillsNode.position, skillNode.position]),
+        new THREE.LineBasicMaterial({ color: 0xff0000, transparent: true, opacity: 0.5 })
+      );
+      const distance = skillsNode.position.distanceTo(skillNode.position);
+      const maxDistanceToSubNode = 20;
+      const delay = (distance / maxDistanceToSubNode) * maxDelay;
+      skillNode.userData.animationDelay = delay;
+      skillNodesAnimation.push({ node: skillNode, startTime: null, direction: 0 });
+      line.userData = {
+        originalColor: new THREE.Color(0xff0000),
+        targetColor: new THREE.Color(0xff0000),
+        currentColor: new THREE.Color(0xff0000),
+        animationStartTime: null,
+        animationDelay: delay,
+        isAnimating: false,
+        animationDirection: 1
+      };
+      nodeGroup.add(line);
+      lines.push(line);
+      skillLinesAnimation.push({ line: line, startTime: null, direction: 0 });
+    }
+    
+    const portfolioLinesStartIndex = lines.length;
+    
+    // Create lines from Portfolio to its sub-nodes (indices 23 to 27)
+    for (let i = 23; i <= 27; i++) {
+      const portfolioSubNode = nodes[i];
+      const line = new THREE.Line(
+        new THREE.BufferGeometry().setFromPoints([portfolioNode.position, portfolioSubNode.position]),
+        new THREE.LineBasicMaterial({ color: 0xff0000, transparent: true, opacity: 0.5 })
+      );
+      const distance = portfolioNode.position.distanceTo(portfolioSubNode.position);
+      const maxDistanceToSubNode = 20;
+      const delay = (distance / maxDistanceToSubNode) * maxDelay;
+      portfolioSubNode.userData.animationDelay = delay;
+      portfolioNodesAnimation.push({ node: portfolioSubNode, startTime: null, direction: 0 });
+      line.userData = {
+        originalColor: new THREE.Color(0xff0000),
+        targetColor: new THREE.Color(0xff0000),
+        currentColor: new THREE.Color(0xff0000),
+        animationStartTime: null,
+        animationDelay: delay,
+        isAnimating: false,
+        animationDirection: 1
+      };
+      nodeGroup.add(line);
+      lines.push(line);
+      portfolioLinesAnimation.push({ line: line, startTime: null, direction: 0 });
+    }
+    
+    const appsLinesStartIndex = lines.length;
+    
+    // Create lines from Apps to its sub-nodes (indices 29 to 34)
+    const appsNode = nodes[28];
+    for (let i = 29; i <= 34; i++) {
+      const subNode = nodes[i];
+      const line = new THREE.Line(
+        new THREE.BufferGeometry().setFromPoints([appsNode.position, subNode.position]),
+        new THREE.LineBasicMaterial({ color: 0xff0000, transparent: true, opacity: 0.5 })
+      );
+      const distance = appsNode.position.distanceTo(subNode.position);
+      const maxDistanceToSubNode = 10;
+      const delay = (distance / maxDistanceToSubNode) * maxDelay;
+      subNode.userData.animationDelay = delay;
+      appsNodesAnimation.push({ node: subNode, startTime: null, direction: 0 });
+      line.userData = {
+        originalColor: new THREE.Color(0xff0000),
+        targetColor: new THREE.Color(0xff0000),
+        currentColor: new THREE.Color(0xff0000),
+        animationStartTime: null,
+        animationDelay: delay,
+        isAnimating: false,
+        animationDirection: 1
+      };
+      nodeGroup.add(line);
+      lines.push(line);
+      appsLinesAnimation.push({ line: line, startTime: null, direction: 0 });
+    }
+    
+    scene.add(nodeGroup);
+    
+    // Handle window resize
+    window.addEventListener('resize', () => {
+      camera.aspect = window.innerWidth / (window.innerHeight - 60);
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight - 60);
+    });
+    
+    // Hover states
+    let isHoveringSkills = false;
+    let isHoveringPortfolio = false;
+    let isHoveringApps = false;
+    
+    // Mouse move event for hover interactions
+    window.addEventListener('mousemove', (event) => {
+      mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+      mouse.y = -((event.clientY - 60) / (window.innerHeight - 60)) * 2 + 1;
+      raycaster.setFromCamera(mouse, camera);
+      const intersects = raycaster.intersectObjects(nodes);
+    
+      // Reset scales, glow, and labels
+      nodes.forEach((node, index) => {
+        node.scale.set(node.userData.defaultScale, node.userData.defaultScale, node.userData.defaultScale);
+        node.material.emissiveIntensity = 0.2;
+        labels[index].style.display = 'none';
+      });
+    
+      if (intersects.length > 0) {
+        const node = intersects[0].object;
+        const index = nodes.indexOf(node);
+        const project = node.userData.project;
+        if (!project.isFiller) {
+          node.scale.set(node.userData.hoverScale, node.userData.hoverScale, node.userData.hoverScale);
+          node.material.emissiveIntensity = 1;
+          const label = labels[index];
+          const vector = node.position.clone().project(camera);
+          const x = (vector.x * 0.5 + 0.5) * window.innerWidth;
+          const y = (-vector.y * 0.5 + 0.5) * (window.innerHeight - 60) + 60;
+          label.style.left = `${x}px`;
+          label.style.top = `${y}px`;
+          label.style.display = 'block';
+          label.style.boxShadow = `0 0 10px ${
+            index === 1 ? 'var(--glow-blue)' :
+            index === 2 ? 'var(--glow-green)' :
+            index === 28 ? 'var(--glow-yellow)' :
+            'var(--sith-red)'
+          }`;
+    
+          if (index === 1) {
+            if (!isHoveringSkills) {
+              isHoveringSkills = true;
+              const currentTime = performance.now();
+              for (let i = 3; i <= 22; i++) {
+                const skillNode = nodes[i];
+                skillNode.userData.targetColor.set(0x00B7EB);
+                skillNode.userData.animationStartTime = currentTime;
+                skillNode.userData.isAnimating = true;
+                skillNode.userData.animationDirection = 1;
+                const lineIndex = skillLinesStartIndex + (i - 3);
+                const skillLine = lines[lineIndex];
+                skillLine.userData.targetColor.set(0x00B7EB);
+                skillLine.userData.animationStartTime = currentTime;
+                skillLine.userData.isAnimating = true;
+                skillLine.userData.animationDirection = 1;
+              }
+            }
+          } else if (index === 2) {
+            if (!isHoveringPortfolio) {
+              isHoveringPortfolio = true;
+              const currentTime = performance.now();
+              for (let i = 23; i <= 27; i++) {
+                const portfolioNode = nodes[i];
+                portfolioNode.userData.targetColor.set(0x39FF14);
+                portfolioNode.userData.animationStartTime = currentTime;
+                portfolioNode.userData.isAnimating = true;
+                portfolioNode.userData.animationDirection = 1;
+                const lineIndex = portfolioLinesStartIndex + (i - 23);
+                const portfolioLine = lines[lineIndex];
+                portfolioLine.userData.targetColor.set(0x39FF14);
+                portfolioLine.userData.animationStartTime = currentTime;
+                portfolioLine.userData.isAnimating = true;
+                portfolioLine.userData.animationDirection = 1;
+              }
+            }
+          } else if (index === 28) {
+            if (!isHoveringApps) {
+              isHoveringApps = true;
+              const currentTime = performance.now();
+              for (let i = 29; i <= 34; i++) {
+                const appNode = nodes[i];
+                appNode.userData.targetColor.set(0xffdd00);
+                appNode.userData.animationStartTime = currentTime;
+                appNode.userData.isAnimating = true;
+                appNode.userData.animationDirection = 1;
+                const lineIndex = appsLinesStartIndex + (i - 29);
+                const appLine = lines[lineIndex];
+                appLine.userData.targetColor.set(0xffdd00);
+                appLine.userData.animationStartTime = currentTime;
+                appLine.userData.isAnimating = true;
+                appLine.userData.animationDirection = 1;
+              }
+            }
+          } else {
+            if (isHoveringSkills) {
+              isHoveringSkills = false;
+              const currentTime = performance.now();
+              for (let i = 3; i <= 22; i++) {
+                const skillNode = nodes[i];
+                skillNode.userData.targetColor.set(skillNode.userData.originalColor);
+                skillNode.userData.animationStartTime = currentTime;
+                skillNode.userData.isAnimating = true;
+                skillNode.userData.animationDirection = -1;
+                const lineIndex = skillLinesStartIndex + (i - 3);
+                const skillLine = lines[lineIndex];
+                skillLine.userData.targetColor.set(skillLine.userData.originalColor);
+                skillLine.userData.animationStartTime = currentTime;
+                skillLine.userData.isAnimating = true;
+                skillLine.userData.animationDirection = -1;
+              }
+            }
+            if (isHoveringPortfolio) {
+              isHoveringPortfolio = false;
+              const currentTime = performance.now();
+              for (let i = 23; i <= 27; i++) {
+                const portfolioNode = nodes[i];
+                portfolioNode.userData.targetColor.set(portfolioNode.userData.originalColor);
+                portfolioNode.userData.animationStartTime = currentTime;
+                portfolioNode.userData.isAnimating = true;
+                portfolioNode.userData.animationDirection = -1;
+                const lineIndex = portfolioLinesStartIndex + (i - 23);
+                const portfolioLine = lines[lineIndex];
+                portfolioLine.userData.targetColor.set(portfolioLine.userData.originalColor);
+                portfolioLine.userData.animationStartTime = currentTime;
+                portfolioLine.userData.isAnimating = true;
+                portfolioLine.userData.animationDirection = -1;
+              }
+            }
+            if (isHoveringApps) {
+              isHoveringApps = false;
+              const currentTime = performance.now();
+              for (let i = 29; i <= 34; i++) {
+                const appNode = nodes[i];
+                appNode.userData.targetColor.set(appNode.userData.originalColor);
+                appNode.userData.animationStartTime = currentTime;
+                appNode.userData.isAnimating = true;
+                appNode.userData.animationDirection = -1;
+                const lineIndex = appsLinesStartIndex + (i - 29);
+                const appLine = lines[lineIndex];
+                appLine.userData.targetColor.set(appLine.userData.originalColor);
+                appLine.userData.animationStartTime = currentTime;
+                appLine.userData.isAnimating = true;
+                appLine.userData.animationDirection = -1;
+              }
+            }
+          }
+        }
+      } else {
+        if (isHoveringSkills) {
+          isHoveringSkills = false;
+          const currentTime = performance.now();
+          for (let i = 3; i <= 22; i++) {
+            const skillNode = nodes[i];
+            skillNode.userData.targetColor.set(skillNode.userData.originalColor);
+            skillNode.userData.animationStartTime = currentTime;
+            skillNode.userData.isAnimating = true;
+            skillNode.userData.animationDirection = -1;
+            const lineIndex = skillLinesStartIndex + (i - 3);
+            const skillLine = lines[lineIndex];
+            skillLine.userData.targetColor.set(skillLine.userData.originalColor);
+            skillLine.userData.animationStartTime = currentTime;
+            skillLine.userData.isAnimating = true;
+            skillLine.userData.animationDirection = -1;
+          }
+        }
+        if (isHoveringPortfolio) {
+          isHoveringPortfolio = false;
+          const currentTime = performance.now();
+          for (let i = 23; i <= 27; i++) {
+            const portfolioNode = nodes[i];
+            portfolioNode.userData.targetColor.set(portfolioNode.userData.originalColor);
+            portfolioNode.userData.animationStartTime = currentTime;
+            portfolioNode.userData.isAnimating = true;
+            portfolioNode.userData.animationDirection = -1;
+            const lineIndex = portfolioLinesStartIndex + (i - 23);
+            const portfolioLine = lines[lineIndex];
+            portfolioLine.userData.targetColor.set(portfolioLine.userData.originalColor);
+            portfolioLine.userData.animationStartTime = currentTime;
+            portfolioLine.userData.isAnimating = true;
+            portfolioLine.userData.animationDirection = -1;
+          }
+        }
+        if (isHoveringApps) {
+          isHoveringApps = false;
+          const currentTime = performance.now();
+          for (let i = 29; i <= 34; i++) {
+            const appNode = nodes[i];
+            appNode.userData.targetColor.set(appNode.userData.originalColor);
+            appNode.userData.animationStartTime = currentTime;
+            appNode.userData.isAnimating = true;
+            appNode.userData.animationDirection = -1;
+            const lineIndex = appsLinesStartIndex + (i - 29);
+            const appLine = lines[lineIndex];
+            appLine.userData.targetColor.set(appLine.userData.originalColor);
+            appLine.userData.animationStartTime = currentTime;
+            appLine.userData.isAnimating = true;
+            appLine.userData.animationDirection = -1;
+          }
+        }
+      }
+    });
+    
+    window.addEventListener('click', (event) => {
+      mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+      mouse.y = -((event.clientY - 60) / (window.innerHeight - 60)) * 2 + 1;
+      raycaster.setFromCamera(mouse, camera);
+      const intersects = raycaster.intersectObjects(nodes);
+      if (intersects.length > 0) {
+        const node = intersects[0].object;
+        const link = node.userData.project.link;
+        if (link !== '#') {
+          window.location.href = link;
+        }
+      }
+    });
+    
+    let isUserInteracting = false;
+    let inactivityTimeout;
+    
+    controls.addEventListener('start', () => {
+      isUserInteracting = true;
+      clearTimeout(inactivityTimeout);
+    });
+    
+    controls.addEventListener('end', () => {
+      angle = Math.atan2(camera.position.z, camera.position.x);
+      inactivityTimeout = setTimeout(() => {
+        isUserInteracting = false;
+      }, 5000);
+    });
+    
+    // Toggle Rotation Button event listener
+    document.getElementById('toggleRotation').addEventListener('click', () => {
+      autoRotate = !autoRotate;
+    });
+    
+    function animate() {
+      requestAnimationFrame(animate);
+      const currentTime = performance.now();
+    
+      for (let i = 3; i <= 22; i++) {
+        const node = nodes[i];
+        if (node.userData.isAnimating && node.userData.animationStartTime !== null) {
+          const elapsed = currentTime - node.userData.animationStartTime - node.userData.animationDelay;
+          if (elapsed < 0) continue;
+          const t = Math.min(elapsed / animationDuration, 1);
+          const startColor = node.userData.animationDirection === 1 ? node.userData.originalColor : new THREE.Color(0x00B7EB);
+          const endColor = node.userData.targetColor;
+          const r = startColor.r + (endColor.r - startColor.r) * t;
+          const g = startColor.g + (endColor.g - startColor.g) * t;
+          const b = startColor.b + (endColor.b - startColor.b) * t;
+          node.material.color.setRGB(r, g, b);
+          if (t === 1) {
+            node.userData.isAnimating = false;
+            node.userData.animationStartTime = null;
+          }
+        }
+      }
+    
+      for (let i = skillLinesStartIndex; i < skillLinesStartIndex + 20; i++) {
+        const line = lines[i];
+        if (line.userData.isAnimating && line.userData.animationStartTime !== null) {
+          const elapsed = currentTime - line.userData.animationStartTime - line.userData.animationDelay;
+          if (elapsed < 0) continue;
+          const t = Math.min(elapsed / animationDuration, 1);
+          const startColor = line.userData.animationDirection === 1 ? line.userData.originalColor : new THREE.Color(0x00B7EB);
+          const endColor = line.userData.targetColor;
+          const r = startColor.r + (endColor.r - startColor.r) * t;
+          const g = startColor.g + (endColor.g - startColor.g) * t;
+          const b = startColor.b + (endColor.b - startColor.b) * t;
+          line.material.color.setRGB(r, g, b);
+          if (t === 1) {
+            line.userData.isAnimating = false;
+            line.userData.animationStartTime = null;
+          }
+        }
+      }
+    
+      for (let i = 23; i <= 27; i++) {
+        const node = nodes[i];
+        if (node.userData.isAnimating && node.userData.animationStartTime !== null) {
+          const elapsed = currentTime - node.userData.animationStartTime - node.userData.animationDelay;
+          if (elapsed < 0) continue;
+          const t = Math.min(elapsed / animationDuration, 1);
+          const startColor = node.userData.animationDirection === 1 ? node.userData.originalColor : new THREE.Color(0x39FF14);
+          const endColor = node.userData.targetColor;
+          const r = startColor.r + (endColor.r - startColor.r) * t;
+          const g = startColor.g + (endColor.g - startColor.g) * t;
+          const b = startColor.b + (endColor.b - startColor.b) * t;
+          node.material.color.setRGB(r, g, b);
+          if (t === 1) {
+            node.userData.isAnimating = false;
+            node.userData.animationStartTime = null;
+          }
+        }
+      }
+    
+      for (let i = portfolioLinesStartIndex; i < portfolioLinesStartIndex + 5; i++) {
+        const line = lines[i];
+        if (line.userData.isAnimating && line.userData.animationStartTime !== null) {
+          const elapsed = currentTime - line.userData.animationStartTime - line.userData.animationDelay;
+          if (elapsed < 0) continue;
+          const t = Math.min(elapsed / animationDuration, 1);
+          const startColor = line.userData.animationDirection === 1 ? line.userData.originalColor : new THREE.Color(0x39FF14);
+          const endColor = line.userData.targetColor;
+          const r = startColor.r + (endColor.r - startColor.r) * t;
+          const g = startColor.g + (endColor.g - startColor.g) * t;
+          const b = startColor.b + (endColor.b - startColor.b) * t;
+          line.material.color.setRGB(r, g, b);
+          if (t === 1) {
+            line.userData.isAnimating = false;
+            line.userData.animationStartTime = null;
+          }
+        }
+      }
+    
+      for (let i = 29; i <= 34; i++) {
+        const node = nodes[i];
+        if (node.userData.isAnimating && node.userData.animationStartTime !== null) {
+          const elapsed = currentTime - node.userData.animationStartTime - node.userData.animationDelay;
+          if (elapsed < 0) continue;
+          const t = Math.min(elapsed / animationDuration, 1);
+          const startColor = node.userData.animationDirection === 1 ? node.userData.originalColor : new THREE.Color(0xffdd00);
+          const endColor = node.userData.targetColor;
+          const r = startColor.r + (endColor.r - startColor.r) * t;
+          const g = startColor.g + (endColor.g - startColor.g) * t;
+          const b = startColor.b + (endColor.b - startColor.b) * t;
+          node.material.color.setRGB(r, g, b);
+          if (t === 1) {
+            node.userData.isAnimating = false;
+            node.userData.animationStartTime = null;
+          }
+        }
+      }
+    
+      for (let i = appsLinesStartIndex; i < appsLinesStartIndex + 6; i++) {
+        const line = lines[i];
+        if (line.userData.isAnimating && line.userData.animationStartTime !== null) {
+          const elapsed = currentTime - line.userData.animationStartTime - line.userData.animationDelay;
+          if (elapsed < 0) continue;
+          const t = Math.min(elapsed / animationDuration, 1);
+          const startColor = line.userData.animationDirection === 1 ? line.userData.originalColor : new THREE.Color(0xffdd00);
+          const endColor = line.userData.targetColor;
+          const r = startColor.r + (endColor.r - startColor.r) * t;
+          const g = startColor.g + (endColor.g - startColor.g) * t;
+          const b = startColor.b + (endColor.b - startColor.b) * t;
+          line.material.color.setRGB(r, g, b);
+          if (t === 1) {
+            line.userData.isAnimating = false;
+            line.userData.animationStartTime = null;
+          }
+        }
+      }
+    
+      const pulseSpeed = 0.5;
+      const pulseScale = 1 + 0.1 * Math.sin(currentTime * pulseSpeed / 1000);
+      homeNode.scale.set(pulseScale, pulseScale, pulseScale);
+      homeNode.material.emissiveIntensity = 0.5 + 0.3 * Math.sin(currentTime * pulseSpeed / 1000);
+    
+      for (let i = 35; i < nodes.length; i++) {
+        const node = nodes[i];
+        const twinkleSpeed = 0.5 + Math.random() * 0.5;
+        const twinkleScale = 1 + 0.2 * Math.sin(currentTime * twinkleSpeed / 1000);
+        node.scale.set(twinkleScale * node.userData.defaultScale, twinkleScale * node.userData.defaultScale, twinkleScale * node.userData.defaultScale);
+        node.material.emissive.set(0xFFFFFF);
+        node.material.emissiveIntensity = 0.1 * Math.sin(currentTime * twinkleSpeed / 1000);
+      }
+    
+      if (autoRotate && !isUserInteracting) {
+        angle += 0.005;
+        camera.position.x = radius * Math.cos(angle);
+        camera.position.z = radius * Math.sin(angle);
+        camera.position.y = radius * 0.5;
+        camera.lookAt(0, 0, 0);
+      }
+    
+      controls.update();
+      renderer.render(scene, camera);
+    }
+    
+    animate();
+  </script>
+</body>
+</html>
