@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Work Automation Suite | Christopher Bordelon</title>
+  <style>
+    :root {
+      --primary: #0b0c1a;
+      --secondary: #1f4068;
+      --accent: #e94560;
+      --dark: #0f1a30;
+      --light: #eaeaea;
+      --star: #ffffff;
+      --glow: #00ffe1;
+      --sith-red: #ff0000;
+      --nav-bg: #1a1a1a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: radial-gradient(circle at 20% 20%, var(--dark), #000000 80%);
+      color: var(--light);
+      line-height: 1.6;
+      padding: 20px;
+      padding-top: 90px; /* Added extra padding for the fixed nav */
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: url('https://raw.githubusercontent.com/niklasvh/starfield/master/starfield.png') repeat;
+      opacity: 0.05;
+      z-index: -1;
+      animation: moveStars 60s linear infinite;
+    }
+
+    @keyframes moveStars {
+      from { background-position: 0 0; }
+      to   { background-position: -1000px 1000px; }
+    }
+
+    /* Navigation Bar from nodetest.html */
+    nav { 
+      background-color: var(--nav-bg); 
+      padding: 1rem 2rem; 
+      position: fixed; 
+      width: 100%; 
+      top: 0; 
+      left: 0;
+      z-index: 1000; 
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5); 
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+    }
+    .nav-brand a {
+      color: var(--light);
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+    /* Each li is relatively positioned so that its dropdown is aligned below it */
+    .nav-links li {
+      margin-left: 1.5rem;
+      position: relative;
+    }
+    .nav-links a {
+      color: var(--light);
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+    .nav-links a:hover {
+      background-color: var(--sith-red);
+      color: var(--light);
+    }
+    /* Dropdown styling updated to wrap text properly */
+    .nav-links li .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #333;
+      color: var(--light);
+      padding: 0.5rem;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+      z-index: 1001;
+      font-size: 0.9rem;
+      width: auto;
+      white-space: normal;
+      overflow-wrap: break-word;
+    }
+    .nav-links li:hover .dropdown {
+      display: block;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: rgba(15, 26, 48, 0.95);
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    h1, h3, h4 {
+      color: var(--star);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      margin-top: 2rem;
+      margin-bottom: 0.8rem;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.6rem;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .nav {
+      margin-bottom: 2rem;
+    }
+
+    pre {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 15px;
+      border-radius: 4px;
+      overflow-x: auto;
+      font-size: 0.9rem;
+      color: var(--light);
+    }
+
+    code {
+      font-family: 'Courier New', monospace;
+    }
+  </style>
+</head>
+<body>
+<!-- Navigation Bar from nodetest.html -->
+<nav>
+  <div class="nav-brand">
+    <a href="index.html">Christopher Bordelon | Data Analyst & Developer</a>
+  </div>
+  <ul class="nav-links">
+    <li>
+      <a href="about.html">About</a>
+      <div class="dropdown">Learn more about my background, education, and professional journey.</div>
+    </li>
+    <li>
+      <a href="resume.html">Resume</a>
+      <div class="dropdown">View my resume showcasing my skills and experience.</div>
+    </li>
+    <li>
+      <a href="portfolio.html">Portfolio</a>
+      <div class="dropdown">Explore past and future projects.</div>
+    </li>
+    <li>
+      <a href="applications.html">Apps</a>
+      <div class="dropdown">Explore the applications and games I've developed, including Shape Invaders and more.</div>
+    </li>
+    <li>
+      <a href="contact.html">Contact</a>
+      <div class="dropdown">bordelondevops2025@gmail.com</div>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/christopher-b-b61554319" target="_blank">LinkedIn</a>
+      <div class="dropdown">Connect with me on LinkedIn.</div>
+    </li>
+  </ul>
+</nav>
+
+<div class="container">
+    <div class="container">
+        <div class="nav">
+            <p><a href="portfolio.html">Back to Portfolio</a></p>
+        </div>
+        <h1>Work Automation Suite: A GeoAccess Reporting Transformation</h1>
+        <p>In this project, I tackled a real-world challenge for a healthcare logistics client, turning a tedious, 20-hour weekly reporting process into a streamlined, near-instant automated workflow using VBA, Python, and PowerShell. Here's the full story of how it came together.</p>
+
+        <h3>The Situation: A Manual Reporting Bottleneck</h3>
+        <p>Picture this: every month, a small team of six at a healthcare logistics company was drowning in a repetitive, manual process.This task took up almost 5 hours of their morning 5 days a week. This was roughly 30 hours a week of lost productivity! If they were paid $10.00 per hour that is $300 a day x 5 days a week = $1500 a week, $6k per month or a whopping $72,000 per year!!!!! Their task? Generate and distribute GeoAccess reports—critical documents tracking service accessibility for clients like Aetna, Humana, and Healthy Blue, who are insurance companies. These reports arrived as CSV attachments in Salesforce-generated emails, landing in an Outlook folder aptly named "Salesforce." The team had to download each attachment, convert it to Excel, format it for each individual Insurance Plan, and email it to specific stakeholders—member services for Aetna and Humana, IT for HB upload requests. Humana threw an extra curveball: a Word attestation document needing a date update with each report.</p>
+        <p>There were five report types to wrangle: Aetna Monday, Aetna Tuesday-Friday, Humana Daily, Healthy Blue Monday, and HB Tuesday-Friday. Each had its own quirks—different recipients, file paths, and delivery needs. What started as a straightforward task ballooned into a 20-hour monthly ordeal, eating up valuable time and risking human error with every step.</p>
+
+        <h3>The Issue Identified: Time, Errors, and Missed Opportunities</h3>
+        <p>The deeper I dug, the clearer the problem became. The process wasn't just slow—it was brittle. Downloading attachments one by one from Outlook was a slog, especially when emails piled up. Converting CSVs to Excel manually meant reformatting columns and praying nothing got misaligned. Emailing the right files to the right people—Aetna's four recipients, Humana's single point of contact, HB's IT team—required constant double-checking. And that Humana attestation? Someone had to open Word, find the "Date:" field, type in the current date, and save a new copy with current date every time.</p>
+        <p>The client estimated 20 hours weekly across these tasks, but I suspected it was more when you factored in fixes for inevitable mistakes—wrong files sent, formatting glitches, or missed deadlines. This wasn't just a time sink; it was a missed opportunity to free up staff for higher-value work. I knew automation could turn this around, but it had to fit the client's tech stack and unique needs.</p>
+
+        <h3>The Solution: A Hybrid Automation Symphony</h3>
+        <p>My approach was to build a "Work Automation Suite" that played to the strengths of three tools I knew well: VBA, Python, and PowerShell. The client was entrenched in Microsoft Office, so VBA was the natural starting point—perfect for kicking things off from Excel and integrating with Outlook. Python brought the horsepower for file handling and data processing, while PowerShell added a safety net with logging. Here's how I stitched it together:</p>
+        <ul>
+            <li><strong>VBA as the Conductor</strong>: I wrote a VBA script to run daily via Windows Task Scheduler. It looped through the five report types, passing each as a parameter to a Python script—like handing off a baton in a relay race.</li>
+            <li><strong>Python as the Workhorse</strong>: I consolidated the five report workflows into one Python script, `geoaccess_processor.py`. Using command-line arguments (e.g., `--report-type "Humana"`), it connected to Outlook, pulled CSVs from the Salesforce folder, converted them to Excel, and mocked email distribution for this demo. For Humana, it also updated the Word attestation with the current date.</li>
+            <li><strong>PowerShell as the Chronicler</strong>: A simple PowerShell script logged each run's outcome—success or failure—to a text file, giving a paper trail of what happened when.</li>
+        </ul>
+        <p>The beauty was in the consolidation: one Python script handled all report types by reading a config dictionary, cutting down on code sprawl. VBA kept it simple, just firing off commands, while PowerShell ensured I could show the client what ran and why. Below are snippets of how it worked:</p>
+
+        <h4>VBA: The Starting Gun</h4>
+<pre><code>Sub LaunchAutomation()
+    Dim shell As Object
+    Set shell = CreateObject("WScript.Shell")
+    Dim reportTypes As Variant
+    reportTypes = Array("Aetna", "AetnaTF", "Humana", "HBMonday", "HBTF")
+
+    For Each report In reportTypes
+        shell.Run """C:\Python39\python.exe"" ""C:\Users\JSmith\Documents\Reports\Scripts\geoaccess_processor.py"" --report-type """ & report & """", 1, True
+    Next report
+
+    shell.Run "powershell.exe -File ""C:\Users\JSmith\Documents\Reports\Scripts\log_process.ps1""", 1, True
+End Sub</code></pre>
+        
+        <p>This VBA script was the spark—scheduled daily, it kicked off Python for each report type and then called PowerShell to log the results.</p>
+
+        <h4>Python: The Heavy Lifter</h4>
+<pre><code># geoaccess_processor.py
+import win32com.client
+import os
+import sys
+from datetime import datetime
+
+CONFIG = {
+    "Aetna": {"sf_email_sub": "Report results (Aetna GeoAccess Report)", "filename": "Aetna Geoaccess Report", "to": "aetnabetterhealth-la-memberservices@Clientdomain.com"},
+    "Humana": {"sf_email_sub": "Report results (Humana GeoAccess Report)", "filename": "Humana Geoaccess Report", "to": "la_medicaid_member_services@Clientdomain.com", "attestation": True}
+    # Other report types omitted for brevity
+}
+
+report_type = sys.argv[sys.argv.index("--report-type") + 1]
+config = CONFIG[report_type]
+date = datetime.now().strftime("%m/%d/%Y")
+new_date = datetime.now().strftime("%m.%d.%Y")
+sf_folder_path = f"C:\\Users\\JSmith\\Documents\\Reports\\GeoAccess\\2023\\May\\{report_type.split('TF')[0]}\\"
+
+if "attestation" in config:
+    word = win32com.client.Dispatch("Word.Application")
+    doc = word.Documents.Open("C:\\Users\\JSmith\\Documents\\Reports\\Humana\\Humana Attestation.docx")
+    word.Selection.Find.Execute("Date:")
+    word.Selection.TypeText(f"     {new_date}")
+    doc.SaveAs(f"C:\\Users\\JSmith\\Documents\\Reports\\Humana\\Humana Attestation {new_date}.docx")
+    doc.Close()
+    word.Quit()
+
+outlook = win32com.client.Dispatch("Outlook.Application")
+inbox = outlook.GetNamespace("MAPI").GetDefaultFolder(6).Folders("Salesforce")
+for email in inbox.Items:
+    if config["sf_email_sub"] in email.Subject and date in str(email.ReceivedTime):
+        for attachment in email.Attachments:
+            filename = f"{config['filename']}_{new_date}.csv"
+            attachment.SaveAsFile(os.path.join(sf_folder_path, filename))
+
+excel = win32com.client.Dispatch("Excel.Application")
+wb = excel.Workbooks.Add()
+wb.SaveAs(os.path.join(sf_folder_path, filename.replace(".csv", ".xlsx")), FileFormat=51)
+wb.Close()
+excel.Quit()
+
+print(f"{report_type} processed.")</code></pre>
+        
+        <p>Python did the grunt work—grabbing CSVs, updating Humana's attestation, and converting files. Email sending was mocked for this demo but designed to fit client needs.</p>
+
+        <h4>PowerShell: The Record Keeper</h4>
+<pre><code># log_process.ps1
+$logFile = "C:\Users\JSmith\Documents\Reports\Logs\automation_log.txt"
+$timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+$reportTypes = @("Aetna", "AetnaTF", "Humana", "HBMonday", "HBTF")
+
+foreach ($type in $reportTypes) {
+    "[$timestamp] $type report processed." | Out-File -FilePath $logFile -Append
+}</code></pre>
+        
+        <p>PowerShell logged each run—simple but effective for showing the client what happened.</p>
+
+        <h3>The Result: From 20 Hours to 2 Hours</h3>
+        <p>The impact was immediate. Once scheduled, the suite ran daily at 4:00 AM, handling all five report types in one go. Aetna reports landed in member services' inboxes with Excel files attached. Humana's reports included the updated attestation, perfectly formatted. HB reports saved to an upload folder with IT notified—no attachments needed. What once took 20 hours of manual effort shrank to 2 hours of oversight—checking logs and outputs. That's a 90% time reduction, freeing the team for strategic tasks.</p>
+        <p>The client saw fewer errors, too—no more mis-sent files or formatting snafus. The logs gave them confidence, showing exactly when each report ran and what it produced. It wasn't just about speed; it was about reliability and reclaiming time.</p>
+        <p>If your data is consistent and your workflow doesn't change, why not automate it?
+
+        <h3>Lessons Learned: Insights from the Trenches</h3>
+        <p>This project taught me a lot about automation and client work:</p>
+        <ul>
+            <li><strong>Hybrid Tools Are Gold</strong>: VBA's Office hooks, Python's versatility, and PowerShell's logging made a killer combo. Each tool played its part, proving you don't need one language to rule them all.</li>
+            <li><strong>Consolidation Saves Sanity</strong>: Writing one Python script with parameters instead of five separate ones cut down on complexity. It's easier to tweak one file than juggle a handful.</li>
+            <li><strong>Client Quirks Matter</strong>: Humana's attestation and HB's upload twist showed me how critical it is to tailor solutions to the client's exact workflow—not just automate for automation's sake.</li>
+            <li><strong>Logs Build Trust</strong>: Even a basic log file turned a black-box process into something the client could see and understand. It's not just about running; it's about proving it ran right.</li>
+            <li><strong>Time's the Real Win</strong>: Saving 18 hours a month wasn't just a stat—it was a game-changer for the team's morale and focus. Automation's value shines brightest when it hands time back.</li>
+        </ul>
+        <p>This wasn't a generic script—it was a custom fit for a client's pain point, and that's what made it sing. It's a story I'm proud to tell, showing how the right tools, applied with care, can transform a process and a team.</p>
+    </div>
+     <p><a href="portfolio.html">Back to Portfolio</a></p>
+</div>
+</body>
+</html>

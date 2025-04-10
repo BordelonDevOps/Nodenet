@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Data Quality Auditor | Christopher Bordelon</title>
+  <style>
+    :root {
+      --primary: #0b0c1a;
+      --secondary: #1f4068;
+      --accent: #e94560;
+      --dark: #0f1a30;
+      --light: #eaeaea;
+      --star: #ffffff;
+      --glow: #00ffe1;
+      --sith-red: #ff0000;
+      --nav-bg: #1a1a1a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: radial-gradient(circle at 20% 20%, var(--dark), #000000 80%);
+      color: var(--light);
+      line-height: 1.6;
+      padding: 20px;
+      padding-top: 90px; /* Added extra padding for the fixed nav */
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: url('https://raw.githubusercontent.com/niklasvh/starfield/master/starfield.png') repeat;
+      opacity: 0.05;
+      z-index: -1;
+      animation: moveStars 60s linear infinite;
+    }
+
+    @keyframes moveStars {
+      from { background-position: 0 0; }
+      to   { background-position: -1000px 1000px; }
+    }
+
+    /* Navigation Bar from nodetest.html */
+    nav { 
+      background-color: var(--nav-bg); 
+      padding: 1rem 2rem; 
+      position: fixed; 
+      width: 100%; 
+      top: 0; 
+      left: 0;
+      z-index: 1000; 
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5); 
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+    }
+    .nav-brand a {
+      color: var(--light);
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+    /* Each li is relatively positioned so that its dropdown is aligned below it */
+    .nav-links li {
+      margin-left: 1.5rem;
+      position: relative;
+    }
+    .nav-links a {
+      color: var(--light);
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+    .nav-links a:hover {
+      background-color: var(--sith-red);
+      color: var(--light);
+    }
+    /* Dropdown styling updated to wrap text properly */
+    .nav-links li .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #333;
+      color: var(--light);
+      padding: 0.5rem;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+      z-index: 1001;
+      font-size: 0.9rem;
+      width: auto;
+      white-space: normal;
+      overflow-wrap: break-word;
+    }
+    .nav-links li:hover .dropdown {
+      display: block;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: rgba(15, 26, 48, 0.95);
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    h1, h3, h4 {
+      color: var(--star);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      margin-top: 2rem;
+      margin-bottom: 0.8rem;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.6rem;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .nav {
+      margin-bottom: 2rem;
+    }
+
+    pre {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 15px;
+      border-radius: 4px;
+      overflow-x: auto;
+      font-size: 0.9rem;
+      color: var(--light);
+    }
+
+    code {
+      font-family: 'Courier New', monospace;
+    }
+  </style>
+</head>
+<body>
+<!-- Navigation Bar from nodetest.html -->
+<nav>
+  <div class="nav-brand">
+    <a href="index.html">Christopher Bordelon | Data Analyst & Developer</a>
+  </div>
+  <ul class="nav-links">
+    <li>
+      <a href="about.html">About</a>
+      <div class="dropdown">Learn more about my background, education, and professional journey.</div>
+    </li>
+    <li>
+      <a href="resume.html">Resume</a>
+      <div class="dropdown">View my resume showcasing my skills and experience.</div>
+    </li>
+    <li>
+      <a href="portfolio.html">Portfolio</a>
+      <div class="dropdown">Explore past and future projects.</div>
+    </li>
+    <li>
+      <a href="applications.html">Apps</a>
+      <div class="dropdown">Explore the applications and games I've developed, including Shape Invaders and more.</div>
+    </li>
+    <li>
+      <a href="contact.html">Contact</a>
+      <div class="dropdown">bordelondevops2025@gmail.com</div>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/christopher-b-b61554319" target="_blank">LinkedIn</a>
+      <div class="dropdown">Connect with me on LinkedIn.</div>
+    </li>
+  </ul>
+</nav>
+
+<div class="container">
+    <div class="nav">
+        <p><a href="portfolio.html">Back to Portfolio</a></p>
+    </div>
+    <h1>Data Quality Auditor: Rescuing Legacy Data for Salesforce Migration</h1>
+    <p>In this project, I developed a Python-based data quality auditing tool that helped a retail chain salvage and clean a decade's worth of corrupted legacy data for migration to Salesforce, reducing data errors by 40% and saving thousands in potential consulting fees.</p>
+
+    <h3>The Challenge: A Data Migration Nightmare</h3>
+    <p>A regional retail chain with 35 locations was facing a critical challenge: migrating their customer and sales data from a legacy system to Salesforce. The data, accumulated over more than a decade, was stored in a mix of formats—SQL databases, Excel spreadsheets, and even some CSV files exported from an ancient point-of-sale system. Initial attempts at migration revealed alarming issues:</p>
+    <ul>
+        <li>Duplicate customer records with conflicting information</li>
+        <li>Inconsistent date formats (MM/DD/YYYY, DD-MM-YYYY, YYYY/MM/DD)</li>
+        <li>Character encoding problems causing text corruption</li>
+        <li>Missing values in critical fields</li>
+        <li>Inconsistent product codes between systems</li>
+        <li>Sales records that didn't match inventory changes</li>
+    </ul>
+    <p>The Salesforce implementation partner estimated that 30-40% of the data had quality issues, and quoted an additional $75,000 for data cleaning services. The client, already stretching their budget for the migration, needed a more cost-effective solution.</p>
+
+    <h3>The Solution: A Python-Powered Data Quality Auditor</h3>
+    <p>I proposed developing a custom Data Quality Auditor tool that would:</p>
+    <ol>
+        <li>Scan all data sources and identify quality issues</li>
+        <li>Apply automated fixes where possible</li>
+        <li>Flag records requiring manual review</li>
+        <li>Generate clean, Salesforce-ready export files</li>
+    </ol>
+    <p>Using Python with pandas, NumPy, and regular expressions, I built a comprehensive solution that addressed each data quality challenge:</p>
+
+    <h4>1. Data Source Integration</h4>
+    <pre><code>import pandas as pd
+import numpy as np
+import sqlite3
+import glob
+import os
+import re
+from datetime import datetime
+
+# Function to load data from various sources
+def load_data(source_type, source_path):
+    if source_type == 'sql':
+        conn = sqlite3.connect(source_path)
+        return pd.read_sql("SELECT * FROM customers", conn)
+    elif source_type == 'excel':
+        return pd.read_excel(source_path)
+    elif source_type == 'csv':
+        return pd.read_csv(source_path, encoding='latin1')  # Handle encoding issues
+    else:
+        raise ValueError(f"Unsupported source type: {source_type}")
+
+# Load all data sources
+customer_data = []
+for excel_file in glob.glob("data/customers/*.xlsx"):
+    df = load_data('excel', excel_file)
+    df['source'] = os.path.basename(excel_file)  # Track source for auditing
+    customer_data.append(df)
+    
+# Also load from SQL and CSV sources
+sql_df = load_data('sql', 'data/legacy_db.sqlite')
+sql_df['source'] = 'legacy_db'
+customer_data.append(sql_df)
+
+for csv_file in glob.glob("data/pos_exports/*.csv"):
+    df = load_data('csv', csv_file)
+    df['source'] = os.path.basename(csv_file)
+    customer_data.append(df)
+
+# Combine all data sources
+combined_data = pd.concat(customer_data, ignore_index=True)
+print(f"Loaded {len(combined_data)} total records from all sources")</code></pre>
+
+    <h4>2. Duplicate Detection and Resolution</h4>
+    <pre><code># Function to standardize customer names for better matching
+def standardize_name(name):
+    if pd.isna(name):
+        return np.nan
+    # Convert to lowercase, remove extra spaces
+    name = re.sub(r'\s+', ' ', str(name).lower().strip())
+    # Remove common prefixes/suffixes
+    name = re.sub(r'^(mr\.|mrs\.|ms\.|dr\.)\s+', '', name)
+    name = re.sub(r'\s+(jr\.|sr\.|ii|iii|iv)$', '', name)
+    return name
+
+# Apply standardization
+combined_data['std_first_name'] = combined_data['first_name'].apply(standardize_name)
+combined_data['std_last_name'] = combined_data['last_name'].apply(standardize_name)
+combined_data['std_email'] = combined_data['email'].str.lower() if 'email' in combined_data.columns else None
+
+# Find potential duplicates using fuzzy matching on name + either email or phone
+from fuzzywuzzy import fuzz
+potential_duplicates = []
+
+# Create a dictionary for faster lookups
+email_dict = {}
+phone_dict = {}
+for idx, row in combined_data.iterrows():
+    if not pd.isna(row['email']):
+        email = row['email'].lower()
+        if email in email_dict:
+            email_dict[email].append(idx)
+        else:
+            email_dict[email] = [idx]
+    
+    if not pd.isna(row['phone']):
+        # Standardize phone format
+        phone = re.sub(r'\D', '', str(row['phone']))
+        if len(phone) >= 10:  # Ensure it's a valid phone
+            if phone in phone_dict:
+                phone_dict[phone].append(idx)
+            else:
+                phone_dict[phone] = [idx]
+
+# Check for duplicates and score them
+for idx, row in combined_data.iterrows():
+    matches = set()
+    
+    # Check email matches
+    if not pd.isna(row['email']):
+        email = row['email'].lower()
+        if email in email_dict:
+            matches.update(email_dict[email])
+    
+    # Check phone matches
+    if not pd.isna(row['phone']):
+        phone = re.sub(r'\D', '', str(row['phone']))
+        if len(phone) >= 10 and phone in phone_dict:
+            matches.update(phone_dict[phone])
+    
+    # Remove self-match
+    if idx in matches:
+        matches.remove(idx)
+    
+    # Score name similarity for potential matches
+    for match_idx in matches:
+        match_row = combined_data.iloc[match_idx]
+        name_score = fuzz.token_sort_ratio(
+            f"{row['std_first_name']} {row['std_last_name']}",
+            f"{match_row['std_first_name']} {match_row['std_last_name']}"
+        )
+        
+        if name_score > 80:  # High confidence match
+            potential_duplicates.append({
+                'idx1': idx,
+                'idx2': match_idx,
+                'score': name_score,
+                'match_type': 'High confidence'
+            })
+        elif name_score > 60:  # Possible match
+            potential_duplicates.append({
+                'idx1': idx,
+                'idx2': match_idx,
+                'score': name_score,
+                'match_type': 'Possible match'
+            })
+
+# Convert to DataFrame for easier handling
+duplicates_df = pd.DataFrame(potential_duplicates)
+print(f"Found {len(duplicates_df)} potential duplicate pairs")</code></pre>
+
+    <h4>3. Date Format Standardization</h4>
+    <pre><code># Function to standardize dates to Salesforce format (YYYY-MM-DD)
+def standardize_date(date_str):
+    if pd.isna(date_str):
+        return np.nan
+    
+    date_str = str(date_str).strip()
+    
+    # Try different date formats
+    date_formats = [
+        '%m/%d/%Y', '%d/%m/%Y', '%Y/%m/%d',
+        '%m-%d-%Y', '%d-%m-%Y', '%Y-%m-%d',
+        '%m.%d.%Y', '%d.%m.%Y', '%Y.%m.%d',
+        '%b %d, %Y', '%d %b %Y', '%Y %b %d',
+        '%B %d, %Y', '%d %B %Y', '%Y %B %d'
+    ]
+    
+    for fmt in date_formats:
+        try:
+            return datetime.strptime(date_str, fmt).strftime('%Y-%m-%d')
+        except ValueError:
+            continue
+    
+    # If all formats fail, flag for manual review
+    return 'INVALID_DATE'
+
+# Apply to all date columns
+date_columns = ['birth_date', 'registration_date', 'last_purchase_date']
+for col in date_columns:
+    if col in combined_data.columns:
+        combined_data[f'{col}_clean'] = combined_data[col].apply(standardize_date)
+        invalid_dates = combined_data[combined_data[f'{col}_clean'] == 'INVALID_DATE']
+        print(f"Found {len(invalid_dates)} invalid dates in {col}")</code></pre>
+
+    <h4>4. Data Validation and Cleaning</h4>
+    <pre><code># Email validation
+def validate_email(email):
+    if pd.isna(email):
+        return np.nan
+    
+    email = str(email).strip().lower()
+    
+    # Basic email regex pattern
+    pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+    
+    if re.match(pattern, email):
+        return email
+    else:
+        return 'INVALID_EMAIL'
+
+# Phone number standardization
+def standardize_phone(phone):
+    if pd.isna(phone):
+        return np.nan
+    
+    # Remove all non-numeric characters
+    digits = re.sub(r'\D', '', str(phone))
+    
+    # Handle different formats
+    if len(digits) == 10:  # Standard US number
+        return f"({digits[0:3]}) {digits[3:6]}-{digits[6:10]}"
+    elif len(digits) == 11 and digits[0] == '1':  # US with country code
+        return f"({digits[1:4]}) {digits[4:7]}-{digits[7:11]}"
+    else:
+        return 'INVALID_PHONE'
+
+# Apply validations
+combined_data['email_clean'] = combined_data['email'].apply(validate_email)
+combined_data['phone_clean'] = combined_data['phone'].apply(standardize_phone)
+
+# Flag records with invalid data
+invalid_emails = combined_data[combined_data['email_clean'] == 'INVALID_EMAIL']
+invalid_phones = combined_data[combined_data['phone_clean'] == 'INVALID_PHONE']
+
+print(f"Found {len(invalid_emails)} invalid emails")
+print(f"Found {len(invalid_phones)} invalid phone numbers")</code></pre>
+
+    <h4>5. Product Code Reconciliation</h4>
+    <pre><code># Load product mapping
+product_mapping = pd.read_excel('data/product_mapping.xlsx')
+product_dict = dict(zip(product_mapping['legacy_code'], product_mapping['salesforce_code']))
+
+# Function to map product codes
+def map_product_code(legacy_code):
+    if pd.isna(legacy_code):
+        return np.nan
+    
+    legacy_code = str(legacy_code).strip().upper()
+    
+    if legacy_code in product_dict:
+        return product_dict[legacy_code]
+    else:
+        return 'UNMAPPED_PRODUCT'
+
+# Apply to sales data
+sales_data['product_code_sf'] = sales_data['product_code'].apply(map_product_code)
+unmapped_products = sales_data[sales_data['product_code_sf'] == 'UNMAPPED_PRODUCT']
+
+print(f"Found {len(unmapped_products)} sales records with unmapped product codes")</code></pre>
+
+    <h4>6. Data Export for Salesforce</h4>
+    <pre><code># Prepare final export data
+export_data = combined_data.copy()
+
+# Remove duplicate records (keeping most recent)
+if len(duplicates_df) > 0:
+    # Process high confidence duplicates
+    high_conf_dupes = duplicates_df[duplicates_df['match_type'] == 'High confidence']
+    
+    # Create a set of indices to drop
+    indices_to_drop = set()
+    
+    for _, row in high_conf_dupes.iterrows():
+        idx1, idx2 = row['idx1'], row['idx2']
+        
+        # Keep the record with more complete data or more recent source
+        record1 = export_data.iloc[idx1]
+        record2 = export_data.iloc[idx2]
+        
+        # Count non-null values as a measure of completeness
+        completeness1 = record1.count()
+        completeness2 = record2.count()
+        
+        # Determine which to keep (higher completeness wins)
+        if completeness1 >= completeness2:
+            indices_to_drop.add(idx2)
+        else:
+            indices_to_drop.add(idx1)
+    
+    # Drop duplicates
+    export_data = export_data.drop(index=list(indices_to_drop))
+    print(f"Removed {len(indices_to_drop)} duplicate records")
+
+# Use cleaned fields
+for col in date_columns:
+    if f'{col}_clean' in export_data.columns:
+        export_data[col] = export_data[f'{col}_clean']
+        export_data = export_data.drop(columns=[f'{col}_clean'])
+
+export_data['email'] = export_data['email_clean']
+export_data['phone'] = export_data['phone_clean']
+export_data = export_data.drop(columns=['email_clean', 'phone_clean', 'std_first_name', 'std_last_name', 'std_email'])
+
+# Export to CSV for Salesforce import
+export_data.to_csv('salesforce_ready_data.csv', index=False)
+print(f"Exported {len(export_data)} clean records ready for Salesforce import")</code></pre>
+
+    <h3>The Results: Clean Data, Happy Client</h3>
+    <p>The Data Quality Auditor tool delivered impressive results:</p>
+    <ul>
+        <li><strong>40% Reduction in Data Errors:</strong> The automated cleaning process fixed the majority of issues, bringing the error rate down from 30-40% to under 10%.</li>
+        <li><strong>$65,000 Cost Savings:</strong> The client only needed minimal help from the Salesforce partner for data migration, saving approximately $65,000 in consulting fees.</li>
+        <li><strong>Faster Migration Timeline:</strong> The data preparation phase was completed in 3 weeks instead of the estimated 8 weeks, accelerating the overall project timeline.</li>
+        <li><strong>Better Data Visibility:</strong> The detailed audit reports gave the client unprecedented insight into their data quality issues, helping them implement better data governance moving forward.</li>
+        <li><strong>Reusable Tool:</strong> The Data Quality Auditor was designed to be reusable, allowing the client to run regular data quality checks in their new Salesforce environment.</li>
+    </ul>
+
+    <h3>Key Takeaways</h3>
+    <p>This project highlighted several important lessons about data quality and migration:</p>
+    <ol>
+        <li><strong>Proactive Auditing Pays Off:</strong> Identifying and addressing data issues early prevented costly problems during and after migration.</li>
+        <li><strong>Automation + Human Review:</strong> The most effective approach combined automated cleaning with flagging of uncertain cases for human review.</li>
+        <li><strong>Source Tracking is Essential:</strong> Maintaining information about where each record originated helped resolve conflicts between duplicate entries.</li>
+        <li><strong>Flexible Parsing Algorithms:</strong> The ability to handle multiple date formats, phone formats, and naming conventions was crucial for legacy data.</li>
+        <li><strong>Documentation Drives Adoption:</strong> Detailed documentation of the cleaning process built client confidence in the migrated data.</li>
+    </ol>
+
+    <p>The Data Quality Auditor project demonstrates how custom Python tools can solve complex data challenges more cost-effectively than off-the-shelf solutions, especially when dealing with years of accumulated legacy data.</p>
+
+    <div class="nav">
+        <p><a href="portfolio.html">Back to Portfolio</a></p>
+    </div>
+</div>
+</body>
+</html>

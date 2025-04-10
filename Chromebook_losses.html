@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Inventory System | Portfolio</title>
+    <style>
+        :root {
+            --primary: #0b0c1a;
+            --secondary: #1f4068;
+            --accent: #e94560;
+            --dark: #0f1a30;
+            --light: #eaeaea;
+            --star: #ffffff;
+            --glow: #00ffe1;
+            --sith-red: #ff0000;
+            --nav-bg: #1a1a1a;
+            --table-header: #1f4068;
+            --table-even: rgba(15, 26, 48, 0.7);
+            --table-odd: rgba(15, 26, 48, 0.95);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: radial-gradient(circle at 20% 20%, var(--dark), #000000 80%);
+            color: var(--light);
+            line-height: 1.6;
+            padding: 20px;
+            padding-top: 90px; /* Added extra padding for the fixed nav */
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: url('https://raw.githubusercontent.com/niklasvh/starfield/master/starfield.png') repeat;
+            opacity: 0.05;
+            z-index: -1;
+            animation: moveStars 60s linear infinite;
+        }
+        
+        @keyframes moveStars {
+            from { background-position: 0 0; }
+            to { background-position: -1000px 1000px; }
+        }
+        
+        /* Navigation Bar from nodetest.html */
+        nav { 
+            background-color: var(--nav-bg); 
+            padding: 1rem 2rem; 
+            position: fixed; 
+            width: 100%; 
+            top: 0; 
+            left: 0;
+            z-index: 1000; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5); 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
+        .nav-brand a {
+            color: var(--light);
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+            margin: 0;
+            padding: 0;
+        }
+        /* Each li is relatively positioned so that its dropdown is aligned below it */
+        .nav-links li {
+            margin-left: 1.5rem;
+            position: relative;
+        }
+        .nav-links a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav-links a:hover {
+            background-color: var(--sith-red);
+            color: var(--light);
+        }
+        /* Dropdown styling updated to wrap text properly */
+        .nav-links li .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            color: var(--light);
+            padding: 0.5rem;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+            z-index: 1001;
+            font-size: 0.9rem;
+            width: auto;
+            white-space: normal;
+            overflow-wrap: break-word;
+        }
+        .nav-links li:hover .dropdown {
+            display: block;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            background: rgba(15, 26, 48, 0.95);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+        }
+        
+        h1, h3 {
+            color: var(--star);
+            margin-bottom: 1rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        .table th, .table td {
+            padding: 10px;
+            border: 1px solid var(--secondary);
+            text-align: left;
+        }
+        
+        .table th {
+            background: var(--table-header);
+            color: var(--star);
+        }
+        
+        .table tr:nth-child(even) {
+            background: var(--table-even);
+        }
+        
+        .table tr:nth-child(odd) {
+            background: var(--table-odd);
+        }
+        
+        .slicer {
+            margin-bottom: 20px;
+        }
+        
+        select {
+            padding: 8px;
+            font-size: 16px;
+            background-color: var(--secondary);
+            color: var(--light);
+            border: 1px solid var(--accent);
+            border-radius: 4px;
+        }
+        
+        #lossChart {
+            width: 100%;
+            height: 400px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            background: rgba(15, 26, 48, 0.7);
+            border-radius: 4px;
+            padding: 10px;
+        }
+    </style>
+    <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar from nodetest.html -->
+    <nav>
+        <div class="nav-brand">
+            <a href="#">Christopher Bordelon | Data Analyst & Developer</a>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="about.html">About</a>
+                <div class="dropdown">Learn more about my background, education, and professional journey.</div>
+            </li>
+            <li>
+                <a href="resume.html">Resume</a>
+                <div class="dropdown">View my interactive Tableau resume showcasing my skills and experience.</div>
+            </li>
+            <li>
+                <a href="index.html">Portfolio</a>
+                <div class="dropdown">Explore past and future projects.</div>
+            </li>
+            <li>
+                <a href="game.html">Apps</a>
+                <div class="dropdown">Explore the applications and games I've developed, including Shape Invaders and more.</div>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+                <div class="dropdown">bordelondevops2025@gmail.com</div>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/christopher-b-b61554319" target="_blank">LinkedIn</a>
+                <div class="dropdown">Connect with me on LinkedIn.</div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Python Inventory System</h1>
+        <p>Total Devices Lost/Stolen: 1079</p>
+        <p>Total Value of Lost/Stolen Devices: $294,556.21</p>
+
+        <div class="slicer">
+            <label for="schoolFilter">Filter by School: </label>
+            <select id="schoolFilter" onchange="updateChartAndTable()">
+                <option value="all">All Schools</option>
+                <option value="BBE">BBE</option>
+                <option value="BBP">BBP</option>
+                <option value="BBJH">BBJH</option>
+                <option value="BBHS">BBHS</option>
+                <option value="CP">CP</option>
+                <option value="CJH">CJH</option>
+                <option value="CHS">CHS</option>
+                <option value="ELC">ELC</option>
+                <option value="PP">PP</option>
+                <option value="PM">PM</option>
+                <option value="SES">SES</option>
+                <option value="SMP">SMP</option>
+                <option value="SMJ">SMJ</option>
+                <option value="SMSH">SMSH</option>
+                <option value="TE">TE</option>
+            </select>
+        </div>
+
+        <div id="lossChart"></div>
+        <h3>Audit Details</h3>
+        
+        <!-- Hardcoded table for demonstration -->
+        <table id="detailTable" class="table">
+            <thead>
+                <tr>
+                    <th>School</th>
+                    <th># Lost/Stolen</th>
+                    <th>Cost</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>BBE</td>
+                    <td>89</td>
+                    <td>$272.99</td>
+                    <td>$24,296.11</td>
+                </tr>
+                <tr>
+                    <td>BBP</td>
+                    <td>113</td>
+                    <td>$272.99</td>
+                    <td>$30,847.87</td>
+                </tr>
+                <tr>
+                    <td>BBJH</td>
+                    <td>20</td>
+                    <td>$272.99</td>
+                    <td>$5,459.80</td>
+                </tr>
+                <tr>
+                    <td>BBHS</td>
+                    <td>109</td>
+                    <td>$272.99</td>
+                    <td>$29,755.91</td>
+                </tr>
+                <tr>
+                    <td>CP</td>
+                    <td>1</td>
+                    <td>$272.99</td>
+                    <td>$272.99</td>
+                </tr>
+                <tr>
+                    <td>CJH</td>
+                    <td>138</td>
+                    <td>$272.99</td>
+                    <td>$37,672.62</td>
+                </tr>
+                <tr>
+                    <td>CHS</td>
+                    <td>23</td>
+                    <td>$272.99</td>
+                    <td>$6,278.77</td>
+                </tr>
+                <tr>
+                    <td>ELC</td>
+                    <td>0</td>
+                    <td>$272.99</td>
+                    <td>$0.00</td>
+                </tr>
+                <tr>
+                    <td>PP</td>
+                    <td>0</td>
+                    <td>$272.99</td>
+                    <td>$0.00</td>
+                </tr>
+                <tr>
+                    <td>PM</td>
+                    <td>0</td>
+                    <td>$272.99</td>
+                    <td>$0.00</td>
+                </tr>
+                <tr>
+                    <td>SES</td>
+                    <td>14</td>
+                    <td>$272.99</td>
+                    <td>$3,821.86</td>
+                </tr>
+                <tr>
+                    <td>SMP</td>
+                    <td>359</td>
+                    <td>$272.99</td>
+                    <td>$98,003.41</td>
+                </tr>
+                <tr>
+                    <td>SMJ</td>
+                    <td>74</td>
+                    <td>$272.99</td>
+                    <td>$20,201.26</td>
+                </tr>
+                <tr>
+                    <td>SMSH</td>
+                    <td>106</td>
+                    <td>$272.99</td>
+                    <td>$28,936.94</td>
+                </tr>
+                <tr>
+                    <td>TE</td>
+                    <td>33</td>
+                    <td>$272.99</td>
+                    <td>$9,008.67</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Hardcoded chart data based on the Excel analysis
+        const chartData = [
+            {"School": "BBE", "# Lost/Stolen": 89},
+            {"School": "BBP", "# Lost/Stolen": 113},
+            {"School": "BBJH", "# Lost/Stolen": 20},
+            {"School": "BBHS", "# Lost/Stolen": 109},
+            {"School": "CP", "# Lost/Stolen": 1},
+            {"School": "CJH", "# Lost/Stolen": 138},
+            {"School": "CHS", "# Lost/Stolen": 23},
+            {"School": "ELC", "# Lost/Stolen": 0},
+            {"School": "PP", "# Lost/Stolen": 0},
+            {"School": "PM", "# Lost/Stolen": 0},
+            {"School": "SES", "# Lost/Stolen": 14},
+            {"School": "SMP", "# Lost/Stolen": 359},
+            {"School": "SMJ", "# Lost/Stolen": 74},
+            {"School": "SMSH", "# Lost/Stolen": 106},
+            {"School": "TE", "# Lost/Stolen": 33}
+        ];
+        
+        // Update Plotly theme to match dark theme
+        const darkTheme = {
+            paper_bgcolor: 'rgba(15, 26, 48, 0.7)',
+            plot_bgcolor: 'rgba(15, 26, 48, 0.7)',
+            font: {
+                color: '#eaeaea'
+            },
+            title: {
+                font: {
+                    color: '#ffffff'
+                }
+            },
+            xaxis: {
+                tickangle: -45,
+                gridcolor: '#1f4068',
+                zerolinecolor: '#1f4068'
+            },
+            yaxis: {
+                title: "Number Lost/Stolen",
+                tickmode: "linear",
+                tick0: 0,
+                dtick: 25,
+                gridcolor: '#1f4068',
+                zerolinecolor: '#1f4068'
+            }
+        };
+        
+        // Initialize chart with all schools data on page load
+        function initializeChart() {
+            // Use all schools data for initial load
+            let filteredData = chartData;
+            
+            // Adjust bar width and spacing based on number of bars
+            const numBars = filteredData.length;
+            const barWidth = numBars > 3 ? 0.8 : 0.15;
+            const barGap = numBars > 3 ? 0.2 : 0.5;
+
+            const trace = {
+                x: filteredData.map(item => item.School),
+                y: filteredData.map(item => item["# Lost/Stolen"]),
+                type: 'bar',
+                marker: { color: filteredData.map((item, idx) => ['#e94560', '#00ffe1', '#3498db', '#f39c12', '#9b59b6'][idx % 5]) },
+                width: barWidth
+            };
+
+            const layout = {
+                ...darkTheme,
+                title: "Chromebook Losses by School",
+                showlegend: false,
+                bargap: barGap,
+                height: 400
+            };
+
+            Plotly.newPlot('lossChart', [trace], layout);
+        }
+
+        function updateChartAndTable() {
+            const schoolFilter = document.getElementById('schoolFilter').value;
+            const table = document.getElementById('detailTable');
+            
+            // Filter table rows
+            if (table) {
+                const rows = table.getElementsByTagName('tr');
+                // Skip header row (i=0)
+                for (let i = 1; i < rows.length; i++) {
+                    const schoolCell = rows[i].getElementsByTagName('td')[0].textContent;
+                    rows[i].style.display = (schoolFilter === 'all' || schoolCell === schoolFilter) ? '' : 'none';
+                }
+            }
+
+            // Filter chart data
+            let filteredData = schoolFilter === 'all' ? chartData : chartData.filter(item => item.School === schoolFilter);
+
+            // If no data matches the filter, show a message
+            if (filteredData.length === 0) {
+                document.getElementById('lossChart').innerHTML = '<p style="text-align: center; padding: 20px;">No data available for the selected school.</p>';
+                return;
+            }
+
+            // Adjust bar width and spacing
+            const numBars = filteredData.length;
+            const barWidth = numBars > 3 ? 0.8 : 0.15;
+            const barGap = numBars > 3 ? 0.2 : 0.5;
+
+            const trace = {
+                x: filteredData.map(item => item.School),
+                y: filteredData.map(item => item["# Lost/Stolen"]),
+                type: 'bar',
+                marker: { color: filteredData.map((item, idx) => ['#e94560', '#00ffe1', '#3498db', '#f39c12', '#9b59b6'][idx % 5]) },
+                width: barWidth
+            };
+
+            const layout = {
+                ...darkTheme,
+                title: "Chromebook Losses by School",
+                showlegend: false,
+                bargap: barGap,
+                height: 400
+            };
+
+            Plotly.newPlot('lossChart', [trace], layout);
+        }
+
+        // Initialize the chart when the DOM is fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeChart();
+        });
+
+        // Also initialize immediately to ensure it works even if the DOMContentLoaded event has already fired
+        initializeChart();
+    </script>
+</body>
+</html>

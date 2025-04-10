@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Christopher Bordelon</title>
+  <style>
+    :root {
+      --primary: #0b0c1a;
+      --secondary: #1f4068;
+      --accent: #e94560;
+      --dark: #0f1a30;
+      --light: #eaeaea;
+      --star: #ffffff;
+      --glow: #00ffe1;
+      --sith-red: #ff0000;
+      --nav-bg: #1a1a1a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: radial-gradient(circle at 20% 20%, var(--dark), #000000 80%);
+      color: var(--light);
+      line-height: 1.6;
+      padding: 20px;
+      padding-top: 90px; /* Added extra padding for the fixed nav */
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: url('https://raw.githubusercontent.com/niklasvh/starfield/master/starfield.png') repeat;
+      opacity: 0.05;
+      z-index: -1;
+      animation: moveStars 60s linear infinite;
+    }
+
+    @keyframes moveStars {
+      from { background-position: 0 0; }
+      to   { background-position: -1000px 1000px; }
+    }
+
+    /* Navigation Bar from nodetest.html */
+    nav { 
+      background-color: var(--nav-bg); 
+      padding: 1rem 2rem; 
+      position: fixed; 
+      width: 100%; 
+      top: 0; 
+      left: 0;
+      z-index: 1000; 
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5); 
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+    }
+    .nav-brand a {
+      color: var(--light);
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+    /* Each li is relatively positioned so that its dropdown is aligned below it */
+    .nav-links li {
+      margin-left: 1.5rem;
+      position: relative;
+    }
+    .nav-links a {
+      color: var(--light);
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+    .nav-links a:hover {
+      background-color: var(--sith-red);
+      color: var(--light);
+    }
+    /* Dropdown styling updated to wrap text properly */
+    .nav-links li .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #333;
+      color: var(--light);
+      padding: 0.5rem;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+      z-index: 1001;
+      font-size: 0.9rem;
+      width: auto;
+      white-space: normal;
+      overflow-wrap: break-word;
+    }
+    .nav-links li:hover .dropdown {
+      display: block;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: rgba(15, 26, 48, 0.95);
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    h1, h2, h3, h4 {
+      color: var(--star);
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-top: 2rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+      font-size: 1.1rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    .contact-form {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .contact-info {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 0.8rem;
+      border-radius: 4px;
+      border: 1px solid rgba(31, 64, 104, 0.5);
+      background-color: rgba(15, 26, 48, 0.5);
+      color: var(--light);
+      font-family: inherit;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px rgba(233, 69, 96, 0.2);
+    }
+
+    textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 2rem;
+      background-color: var(--accent);
+      color: var(--light);
+      border-radius: 4px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      text-align: center;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .btn:hover {
+      background-color: var(--sith-red);
+      transform: translateY(-2px);
+    }
+
+    .contact-method {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-icon {
+      font-size: 1.5rem;
+      margin-right: 1rem;
+      color: var(--accent);
+    }
+
+    .contact-text h4 {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+
+    .contact-text p {
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(31, 64, 104, 0.5);
+      border-radius: 50%;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+    }
+
+    .social-link:hover {
+      background-color: var(--accent);
+      transform: translateY(-3px);
+    }
+
+    .nav-bottom {
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar from nodetest.html -->
+  <nav>
+    <div class="nav-brand">
+      <a href="index.html">Christopher Bordelon | Data Analyst & Developer</a>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="about.html">About</a>
+        <div class="dropdown">Learn more about my background, education, and professional journey.</div>
+      </li>
+      <li>
+        <a href="resume.html">Resume</a>
+        <div class="dropdown">View my resume in traditional (PDF) or interactive (Tableau) format.</div>
+      </li>
+      <li>
+        <a href="portfolio.html">Portfolio</a>
+        <div class="dropdown">Explore past and future projects.</div>
+      </li>
+      <li>
+        <a href="applications.html">Apps</a>
+        <div class="dropdown">Explore the applications and games I've developed, including Shape Invaders and more.</div>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+        <div class="dropdown">bordelondevops2025@gmail.com</div>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/christopher-b-b61554319" target="_blank">LinkedIn</a>
+        <div class="dropdown">Connect with me on LinkedIn.</div>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Contact Me</h1>
+    <p>I'm always interested in new opportunities, collaborations, or just connecting with like-minded professionals. Feel free to reach out using the form below or through any of my contact channels.</p>
+    
+    <div class="contact-container">
+      <div class="contact-form">
+        <h2>Send a Message</h2>
+        <form id="contact-form" action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="general">General Inquiry</option>
+              <option value="job">Job Opportunity</option>
+              <option value="project">Project Collaboration</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+      
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+        
+        <div class="contact-method">
+          <div class="contact-icon">📧</div>
+          <div class="contact-text">
+            <h4>Email</h4>
+            <p><a href="mailto:bordelondevops2025@gmail.com">bordelondevops2025@gmail.com</a></p>
+          </div>
+        </div>
+        
+        <div class="contact-method">
+          <div class="contact-icon">💼</div>
+          <div class="contact-text">
+            <h4>LinkedIn</h4>
+            <p><a href="https://www.linkedin.com/in/christopher-b-b61554319" target="_blank">linkedin.com/in/christopher-b-b61554319</a></p>
+          </div>
+        </div>
+        
+        <div class="contact-method">
+          <div class="contact-icon">🌐</div>
+          <div class="contact-text">
+            <h4>Website</h4>
+            <p><a href="index.html">christopherbordelon.com</a></p>
+          </div>
+        </div>
+        
+        <div class="contact-method">
+          <div class="contact-icon">📍</div>
+          <div class="contact-text">
+            <h4>Location</h4>
+            <p>New Orleans, LA</p>
+          </div>
+        </div>
+        
+        <h3>Connect on Social Media</h3>
+        <div class="social-links">
+          <a href="#" class="social-link" title="GitHub">
+            <span>GH</span>
+          </a>
+          <a href="#" class="social-link" title="Twitter">
+            <span>TW</span>
+          </a>
+          <a href="#" class="social-link" title="Medium">
+            <span>ME</span>
+          </a>
+          <a href="#" class="social-link" title="Stack Overflow">
+            <span>SO</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="nav-bottom">
+      <p><a href="index.html">Back to Home</a></p>
+    </div>
+  </div>
+
+  <script>
+    // Simple form validation and submission handling
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get form values
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const subject = document.getElementById('subject').value;
+      const message = document.getElementById('message').value;
+      
+      // In a real implementation, you would send this data to a server
+      // For now, we'll just show an alert
+      alert(`Thank you for your message, ${name}! I'll get back to you soon.`);
+      
+      // Reset the form
+      this.reset();
+    });
+  </script>
+</body>
+</html>

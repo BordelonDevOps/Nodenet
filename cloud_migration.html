@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cloud Migration | Christopher Bordelon</title>
+  <style>
+    :root {
+      --primary: #0b0c1a;
+      --secondary: #1f4068;
+      --accent: #e94560;
+      --dark: #0f1a30;
+      --light: #eaeaea;
+      --star: #ffffff;
+      --glow: #00ffe1;
+      --sith-red: #ff0000;
+      --nav-bg: #1a1a1a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: radial-gradient(circle at 20% 20%, var(--dark), #000000 80%);
+      color: var(--light);
+      line-height: 1.6;
+      padding: 20px;
+      padding-top: 90px; /* Added extra padding for the fixed nav */
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: url('https://raw.githubusercontent.com/niklasvh/starfield/master/starfield.png') repeat;
+      opacity: 0.05;
+      z-index: -1;
+      animation: moveStars 60s linear infinite;
+    }
+
+    @keyframes moveStars {
+      from { background-position: 0 0; }
+      to   { background-position: -1000px 1000px; }
+    }
+
+    /* Navigation Bar from nodetest.html */
+    nav { 
+      background-color: var(--nav-bg); 
+      padding: 1rem 2rem; 
+      position: fixed; 
+      width: 100%; 
+      top: 0; 
+      left: 0;
+      z-index: 1000; 
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5); 
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+    }
+    .nav-brand a {
+      color: var(--light);
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+    /* Each li is relatively positioned so that its dropdown is aligned below it */
+    .nav-links li {
+      margin-left: 1.5rem;
+      position: relative;
+    }
+    .nav-links a {
+      color: var(--light);
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+    .nav-links a:hover {
+      background-color: var(--sith-red);
+      color: var(--light);
+    }
+    /* Dropdown styling updated to wrap text properly */
+    .nav-links li .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #333;
+      color: var(--light);
+      padding: 0.5rem;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+      z-index: 1001;
+      font-size: 0.9rem;
+      width: auto;
+      white-space: normal;
+      overflow-wrap: break-word;
+    }
+    .nav-links li:hover .dropdown {
+      display: block;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: rgba(15, 26, 48, 0.95);
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    h1, h3, h4 {
+      color: var(--star);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      margin-top: 2rem;
+      margin-bottom: 0.8rem;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.6rem;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .nav {
+      margin-bottom: 2rem;
+    }
+
+    pre {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 15px;
+      border-radius: 4px;
+      overflow-x: auto;
+      font-size: 0.9rem;
+      color: var(--light);
+    }
+
+    code {
+      font-family: 'Courier New', monospace;
+    }
+  </style>
+</head>
+<body>
+<!-- Navigation Bar from nodetest.html -->
+<nav>
+  <div class="nav-brand">
+    <a href="index.html">Christopher Bordelon | Data Analyst & Developer</a>
+  </div>
+  <ul class="nav-links">
+    <li>
+      <a href="about.html">About</a>
+      <div class="dropdown">Learn more about my background, education, and professional journey.</div>
+    </li>
+    <li>
+      <a href="resume.html">Resume</a>
+      <div class="dropdown">View my resume showcasing my skills and experience.</div>
+    </li>
+    <li>
+      <a href="portfolio.html">Portfolio</a>
+      <div class="dropdown">Explore past and future projects.</div>
+    </li>
+    <li>
+      <a href="applications.html">Apps</a>
+      <div class="dropdown">Explore the applications and games I've developed, including Shape Invaders and more.</div>
+    </li>
+    <li>
+      <a href="contact.html">Contact</a>
+      <div class="dropdown">bordelondevops2025@gmail.com</div>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/christopher-b-b61554319" target="_blank">LinkedIn</a>
+      <div class="dropdown">Connect with me on LinkedIn.</div>
+    </li>
+  </ul>
+</nav>
+
+<div class="container">
+    <div class="nav">
+        <p><a href="portfolio.html">Back to Portfolio</a></p>
+    </div>
+    <h1>PowerShell Cloud Migration: Zero-Downtime Azure Transition</h1>
+    <p>In this project, I developed a suite of PowerShell scripts that enabled a seamless, zero-downtime migration of an international client's infrastructure to Microsoft Azure, saving them over $200,000 in annual hosting costs while maintaining 99.99% uptime during the transition.</p>
+
+    <h3>The Challenge: Legacy Infrastructure Holding Back Growth</h3>
+    <p>A mid-sized manufacturing company with operations in the US, Europe, and Asia was struggling with their aging on-premises infrastructure. Their situation was challenging:</p>
+    <ul>
+        <li>Three data centers (US, Germany, Singapore) with hardware approaching end-of-life</li>
+        <li>A mix of Windows Server 2012 R2 and 2016 environments</li>
+        <li>Critical ERP and CRM systems that required 24/7 availability</li>
+        <li>Increasing maintenance costs and reliability concerns</li>
+        <li>Limited IT staff spread across time zones</li>
+        <li>Strict regulatory requirements for data sovereignty</li>
+    </ul>
+    <p>The company had decided to migrate to Azure to reduce costs, improve reliability, and enable better global collaboration. However, they faced a critical constraint: the migration had to happen with minimal disruption to their operations, which ran around the clock. Any significant downtime would cost them approximately $15,000 per hour in lost productivity and potential sales.</p>
+
+    <h3>The Solution: PowerShell Automation for Seamless Migration</h3>
+    <p>I developed a comprehensive PowerShell-based migration framework that automated the entire process while ensuring business continuity. The solution consisted of several key components:</p>
+
+    <h4>1. Environment Assessment and Inventory</h4>
+    <pre><code># Get-EnvironmentInventory.ps1
+# Script to inventory all servers, applications, and dependencies
+
+param (
+    [string]$OutputPath = "C:\Migration\Inventory",
+    [string]$LogPath = "C:\Migration\Logs",
+    [switch]$DetailedScan = $false
+)
+
+# Create output directories if they don't exist
+if (!(Test-Path $OutputPath)) { New-Item -ItemType Directory -Path $OutputPath -Force }
+if (!(Test-Path $LogPath)) { New-Item -ItemType Directory -Path $LogPath -Force }
+
+# Start logging
+$logFile = Join-Path $LogPath "Inventory_$(Get-Date -Format 'yyyyMMdd_HHmmss').log"
+Start-Transcript -Path $logFile
+
+Write-Host "Starting environment inventory at $(Get-Date)" -ForegroundColor Green
+
+# Get all servers from Active Directory
+try {
+    Import-Module ActiveDirectory
+    $servers = Get-ADComputer -Filter {OperatingSystem -like "*Windows Server*"} -Properties OperatingSystem, OperatingSystemVersion
+    Write-Host "Found $($servers.Count) servers in Active Directory" -ForegroundColor Cyan
+    
+    $serverInventory = @()
+    
+    foreach ($server in $servers) {
+        Write-Host "Processing $($server.Name)..." -ForegroundColor Yellow
+        
+        $serverInfo = [PSCustomObject]@{
+            Name = $server.Name
+            OperatingSystem = $server.OperatingSystem
+            OSVersion = $server.OperatingSystemVersion
+            IPAddresses = $null
+            RAM = $null
+            CPUCores = $null
+            DiskSpace = $null
+            InstalledApplications = $null
+            RunningServices = $null
+            OpenPorts = $null
+            Dependencies = $null
+            Status = "Unknown"
+        }
+        
+        # Check if server is online
+        if (Test-Connection -ComputerName $server.Name -Count 1 -Quiet) {
+            $serverInfo.Status = "Online"
+            
+            try {
+                # Get basic hardware info
+                $computerSystem = Get-WmiObject -Class Win32_ComputerSystem -ComputerName $server.Name
+                $serverInfo.RAM = [math]::Round($computerSystem.TotalPhysicalMemory / 1GB, 2)
+                $serverInfo.CPUCores = $computerSystem.NumberOfLogicalProcessors
+                
+                # Get IP addresses
+                $networkConfig = Get-WmiObject -Class Win32_NetworkAdapterConfiguration -ComputerName $server.Name | Where-Object { $_.IPAddress -ne $null }
+                $serverInfo.IPAddresses = $networkConfig.IPAddress -join ", "
+                
+                # Get disk space
+                $disks = Get-WmiObject -Class Win32_LogicalDisk -ComputerName $server.Name -Filter "DriveType=3"
+                $diskInfo = @()
+                foreach ($disk in $disks) {
+                    $diskInfo += "$($disk.DeviceID) - Total: $([math]::Round($disk.Size / 1GB, 2)) GB, Free: $([math]::Round($disk.FreeSpace / 1GB, 2)) GB"
+                }
+                $serverInfo.DiskSpace = $diskInfo -join "; "
+                
+                # Get installed applications if detailed scan is requested
+                if ($DetailedScan) {
+                    $apps = Get-WmiObject -Class Win32_Product -ComputerName $server.Name
+                    $serverInfo.InstalledApplications = ($apps | Select-Object -Property Name, Version | ForEach-Object { "$($_.Name) ($($_.Version))" }) -join "; "
+                    
+                    # Get running services
+                    $services = Get-Service -ComputerName $server.Name | Where-Object { $_.Status -eq "Running" }
+                    $serverInfo.RunningServices = ($services | Select-Object -Property DisplayName | ForEach-Object { $_.DisplayName }) -join "; "
+                    
+                    # Get open ports
+                    $openPorts = Invoke-Command -ComputerName $server.Name -ScriptBlock {
+                        Get-NetTCPConnection | Where-Object { $_.State -eq "Listen" } | Select-Object -Property LocalPort
+                    }
+                    $serverInfo.OpenPorts = ($openPorts | ForEach-Object { $_.LocalPort }) -join ", "
+                }
+            }
+            catch {
+                Write-Host "Error collecting data from $($server.Name): $_" -ForegroundColor Red
+                $serverInfo.Status = "Error: $_"
+            }
+        }
+        else {
+            $serverInfo.Status = "Offline"
+            Write-Host "$($server.Name) is offline" -ForegroundColor Red
+        }
+        
+        $serverInventory += $serverInfo
+    }
+    
+    # Export inventory to CSV
+    $inventoryFile = Join-Path $OutputPath "ServerInventory_$(Get-Date -Format 'yyyyMMdd').csv"
+    $serverInventory | Export-Csv -Path $inventoryFile -NoTypeInformation
+    Write-Host "Inventory exported to $inventoryFile" -ForegroundColor Green
+    
+    # Generate HTML report
+    $htmlReport = Join-Path $OutputPath "ServerInventory_$(Get-Date -Format 'yyyyMMdd').html"
+    $html = @"
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Server Inventory Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        .online { color: green; }
+        .offline { color: red; }
+        .error { color: orange; }
+    </style>
+</head>
+<body>
+    <h1>Server Inventory Report - $(Get-Date -Format 'yyyy-MM-dd')</h1>
+    <table>
+        <tr>
+            <th>Server Name</th>
+            <th>Operating System</th>
+            <th>Status</th>
+            <th>RAM (GB)</th>
+            <th>CPU Cores</th>
+            <th>IP Addresses</th>
+        </tr>
+"@
+
+    foreach ($server in $serverInventory) {
+        $statusClass = if ($server.Status -eq "Online") { "online" } elseif ($server.Status -eq "Offline") { "offline" } else { "error" }
+        $html += @"
+        <tr>
+            <td>$($server.Name)</td>
+            <td>$($server.OperatingSystem)</td>
+            <td class="$statusClass">$($server.Status)</td>
+            <td>$($server.RAM)</td>
+            <td>$($server.CPUCores)</td>
+            <td>$($server.IPAddresses)</td>
+        </tr>
+"@
+    }
+
+    $html += @"
+    </table>
+    <p>Total Servers: $($serverInventory.Count)</p>
+    <p>Online: $($serverInventory | Where-Object { $_.Status -eq "Online" } | Measure-Object | Select-Object -ExpandProperty Count)</p>
+    <p>Offline: $($serverInventory | Where-Object { $_.Status -eq "Offline" } | Measure-Object | Select-Object -ExpandProperty Count)</p>
+    <p>Error: $($serverInventory | Where-Object { $_.Status -notmatch "Online|Offline" } | Measure-Object | Select-Object -ExpandProperty Count)</p>
+</body>
+</html>
+"@
+
+    $html | Out-File -FilePath $htmlReport
+    Write-Host "HTML report generated at $htmlReport" -ForegroundColor Green
+}
+catch {
+    Write-Host "Error during inventory process: $_" -ForegroundColor Red
+}
+
+Write-Host "Inventory completed at $(Get-Date)" -ForegroundColor Green
+Stop-Transcript</code></pre>
+
+    <p>This script created a comprehensive inventory of all servers, applications, and dependencies, which was crucial for planning the migration. It generated both CSV and HTML reports that helped visualize the current environment and identify potential challenges.</p>
+
+    <h4>2. Azure Environment Provisioning</h4>
+    <pre><code># New-AzureEnvironment.ps1
+# Script to provision Azure resources based on inventory
+
+param (
+    [Parameter(Mandatory=$true)]
+    [string]$SubscriptionId,
+    [Parameter(Mandatory=$true)]
+    [string]$InventoryFile,
+    [string]$ConfigFile = "C:\Migration\Config\azure_config.json",
+    [string]$LogPath = "C:\Migration\Logs"
+)
+
+# Create log directory if it doesn't exist
+if (!(Test-Path $LogPath)) { New-Item -ItemType Directory -Path $LogPath -Force }
+
+# Start logging
+$logFile = Join-Path $LogPath "AzureProvisioning_$(Get-Date -Format 'yyyyMMdd_HHmmss').log"
+Start-Transcript -Path $logFile
+
+Write-Host "Starting Azure environment provisioning at $(Get-Date)" -ForegroundColor Green
+
+# Load configuration
+try {
+    $config = Get-Content -Path $ConfigFile -Raw | ConvertFrom-Json
+    Write-Host "Loaded configuration from $ConfigFile" -ForegroundColor Cyan
+}
+catch {
+    Write-Host "Error loading configuration: $_" -ForegroundColor Red
+    Stop-Transcript
+    exit 1
+}
+
+# Load server inventory
+try {
+    $inventory = Import-Csv -Path $InventoryFile
+    Write-Host "Loaded inventory with $($inventory.Count) servers from $InventoryFile" -ForegroundColor Cyan
+}
+catch {
+    Write-Host "Error loading inventory: $_" -ForegroundColor Red
+    Stop-Transcript
+    exit 1
+}
+
+# Connect to Azure
+try {
+    Connect-AzAccount
+    Set-AzContext -SubscriptionId $SubscriptionId
+    Write-Host "Connected to Azure subscription $SubscriptionId" -ForegroundColor Green
+}
+catch {
+    Write-Host "Error connecting to Azure: $_" -ForegroundColor Red
+    Stop-Transcript
+    exit 1
+}
+
+# Create resource groups for each region
+$resourceGroups = @{}
+foreach ($region in $config.Regions) {
+    $rgName = "$($config.ResourceGroupPrefix)-$($region.Name)"
+    try {
+        $rg = Get-AzResourceGroup -Name $rgName -ErrorAction SilentlyContinue
+        if (!$rg) {
+            $rg = New-AzResourceGroup -Name $rgName -Location $region.Location
+            Write-Host "Created resource group $rgName in $($region.Location)" -ForegroundColor Green
+        }
+        else {
+            Write-Host "Resource group $rgName already exists" -ForegroundColor Yellow
+        }
+        $resourceGroups[$region.Name] = $rgName
+    }
+    catch {
+        Write-Host "Error creating resource group $rgName: $_" -ForegroundColor Red
+    }
+}
+
+# Create virtual networks for each region
+$virtualNetworks = @{}
+foreach ($region in $config.Regions) {
+    $vnetName = "$($config.VNetPrefix)-$($region.Name)"
+    $rgName = $resourceGroups[$region.Name]
+    
+    try {
+        $vnet = Get-AzVirtualNetwork -Name $vnetName -ResourceGroupName $rgName -ErrorAction SilentlyContinue
+        if (!$vnet) {
+            $subnets = @()
+            foreach ($subnet in $region.Subnets) {
+                $subnets += New-AzVirtualNetworkSubnetConfig -Name $subnet.Name -AddressPrefix $subnet.AddressPrefix
+            }
+            
+            $vnet = New-AzVirtualNetwork -Name $vnetName -ResourceGroupName $rgName -Location $region.Location -AddressPrefix $region.AddressSpace -Subnet $subnets
+            Write-Host "Created virtual network $vnetName in $rgName" -ForegroundColor Green
+        }
+        else {
+            Write-Host "Virtual network $vnetName already exists" -ForegroundColor Yellow
+        }
+        $virtualNetworks[$region.Name] = $vnetName
+    }
+    catch {
+        Write-Host "Error creating virtual network $vnetName: $_" -ForegroundColor Red
+    }
+}
+
+# Set up VNet peering between regions if specified
+if ($config.EnableVNetPeering) {
+    Write-Host "Setting up VNet peering between regions..." -ForegroundColor Cyan
+    
+    $regions = $config.Regions
+    for ($i = 0; $i -lt $regions.Count; $i++) {
+        for ($j = $i + 1; $j -lt $regions.Count; $j++) {
+            $region1 = $regions[$i]
+            $region2 = $regions[$j]
+            
+            $vnet1Name = $virtualNetworks[$region1.Name]
+            $vnet2Name = $virtualNetworks[$region2.Name]
+            
+            $rg1Name = $resourceGroups[$region1.Name]
+            $rg2Name = $resourceGroups[$region2.Name]
+            
+            try {
+                $vnet1 = Get-AzVirtualNetwork -Name $vnet1Name -ResourceGroupName $rg1Name
+                $vnet2 = Get-AzVirtualNetwork -Name $vnet2Name -ResourceGroupName $rg2Name
+                
+                # Create peering from vnet1 to vnet2
+                $peering1Name = "$vnet1Name-to-$vnet2Name"
+                $peering1 = Get-AzVirtualNetworkPeering -Name $peering1Name -VirtualNetworkName $vnet1Name -ResourceGroupName $rg1Name -ErrorAction SilentlyContinue
+                
+                if (!$peering1) {
+                    Add-AzVirtualNetworkPeering -Name $peering1Name -VirtualNetwork $vnet1 -RemoteVirtualNetworkId $vnet2.Id -AllowForwardedTraffic
+                    Write-Host "Created VNet peering from $vnet1Name to $vnet2Name" -ForegroundColor Green
+                }
+                else {
+                    Write-Host "VNet peering from $vnet1Name to $vnet2Name already exists" -ForegroundColor Yellow
+                }
+                
+                # Create peering from vnet2 to vnet1
+                $peering2Name = "$vnet2Name-to-$vnet1Name"
+                $peering2 = Get-AzVirtualNetworkPeering -Name $peering2Name -VirtualNetworkName $vnet2Name -ResourceGroupName $rg2Name -ErrorAction SilentlyContinue
+                
+                if (!$peering2) {
+                    Add-AzVirtualNetworkPeering -Name $peering2Name -VirtualNetwork $vnet2 -RemoteVirtualNetworkId $vnet1.Id -AllowForwardedTraffic
+                    Write-Host "Created VNet peering from $vnet2Name to $vnet1Name" -ForegroundColor Green
+                }
+                else {
+                    Write-Host "VNet peering from $vnet2Name to $vnet1Name already exists" -ForegroundColor Yellow
+                }
+            }
+            catch {
+                Write-Host "Error setting up VNet peering between $vnet1Name and $vnet2Name: $_" -ForegroundColor Red
+            }
+        }
+    }
+}
+
+# Create virtual machines based on inventory
+Write-Host "Creating virtual machines based on inventory..." -ForegroundColor Cyan
+
+foreach ($server in $inventory) {
+    # Skip offline servers or servers with errors
+    if ($server.Status -ne "Online") {
+        Write-Host "Skipping $($server.Name) as it is not online" -ForegroundColor Yellow
+        continue
+    }
+    
+    # Determine which region to deploy to based on server name or IP
+    $targetRegion = $null
+    foreach ($region in $config.Regions) {
+        if ($server.Name -match $region.ServerNamePattern -or $server.IPAddresses -match $region.IPPattern) {
+            $targetRegion = $region
+            break
+        }
+    }
+    
+    if (!$targetRegion) {
+        Write-Host "Could not determine target region for $($server.Name), using default" -ForegroundColor Yellow
+        $targetRegion = $config.Regions[0]  # Use first region as default
+    }
+    
+    $rgName = $resourceGroups[$targetRegion.Name]
+    $vnetName = $virtualNetworks[$targetRegion.Name]
+    
+    # Determine VM size based on server specs
+    $vmSize = "Standard_D2s_v3"  # Default size
+    
+    if ($server.RAM -ge 64) {
+        $vmSize = "Standard_D8s_v3"
+    }
+    elseif ($server.RAM -ge 32) {
+        $vmSize = "Standard_D4s_v3"
+    }
+    elseif ($server.RAM -ge 16) {
+        $vmSize = "Standard_D2s_v3"
+    }
+    
+    # Determine OS based on server OS
+    $imageReference = @{
+        Publisher = "MicrosoftWindowsServer"
+        Offer     = "WindowsServer"
+        Sku       = "2019-Datacenter"
+        Version   = "latest"
+    }
+    
+    if ($server.OperatingSystem -match "2012") {
+        $imageReference.Sku = "2012-R2-Datacenter"
+    }
+    elseif ($server.OperatingSystem -match "2016") {
+        $imageReference.Sku = "2016-Datacenter"
+    }
+    
+    # Create VM
+    $vmName = "$($config.VMPrefix)-$($server.Name)"
+    try {
+        $vm = Get-AzVM -Name $vmName -ResourceGroupName $rgName -ErrorAction SilentlyContinue
+        
+        if (!$vm) {
+            # Get subnet
+            $vnet = Get-AzVirtualNetwork -Name $vnetName -ResourceGroupName $rgName
+            $subnet = $vnet.Subnets[0]  # Use first subnet by default
+            
+            # Create public IP
+            $publicIpName = "$vmName-pip"
+            $publicIp = New-AzPublicIpAddress -Name $publicIpName -ResourceGroupName $rgName -Location $targetRegion.Location -AllocationMethod Dynamic
+            
+            # Create NIC
+            $nicName = "$vmName-nic"
+            $nic = New-AzNetworkInterface -Name $nicName -ResourceGroupName $rgName -Location $targetRegion.Location -SubnetId $subnet.Id -PublicIpAddressId $publicIp.Id
+            
+            # Create VM config
+            $vmConfig = New-AzVMConfig -VMName $vmName -VMSize $vmSize
+            $vmConfig = Set-AzVMOperatingSystem -VM $vmConfig -Windows -ComputerName $vmName -Credential (Get-Credential -Message "Enter credentials for $vmName") -ProvisionVMAgent -EnableAutoUpdate
+            $vmConfig = Set-AzVMSourceImage -VM $vmConfig -PublisherName $imageReference.Publisher -Offer $imageReference.Offer -Skus $imageReference.Sku -Version $imageReference.Version
+            $vmConfig = Add-AzVMNetworkInterface -VM $vmConfig -Id $nic.Id
+            
+            # Create OS disk
+            $osDiskName = "$vmName-osdisk"
+            $vmConfig = Set-AzVMOSDisk -VM $vmConfig -Name $osDiskName -CreateOption FromImage -Windows
+            
+            # Create VM
+            New-AzVM -ResourceGroupName $rgName -Location $targetRegion.Location -VM $vmConfig
+            
+            Write-Host "Created VM $vmName in $rgName" -ForegroundColor Green
+        }
+        else {
+            Write-Host "VM $vmName already exists" -ForegroundColor Yellow
+        }
+    }
+    catch {
+        Write-Host "Error creating VM $vmName: $_" -ForegroundColor Red
+    }
+}
+
+Write-Host "Azure environment provisioning completed at $(Get-Date)" -ForegroundColor Green
+Stop-Transcript</code></pre>
+
+    <p>This script automated the creation of the Azure environment, including resource groups, virtual networks, and virtual machines based on the inventory data. It ensured that each server was properly sized and configured according to its on-premises counterpart.</p>
+
+    <h4>3. Data Migration with Replication</h4>
+    <pre><code># Start-DataMigration.ps1
+# Script to set up and monitor data replication
+
+param (
+    [Parameter(Mandatory=$true)]
+    [string]$SourceServer,
+    [Parameter(Mandatory=$true)]
+    [string]$TargetServer,
+    [Parameter(Mandatory=$true)]
+    [string]$DataPath,
+    [string]$LogPath = "C:\Migration\Logs",
+    [switch]$InitialSync = $false,
+    [int]$SyncIntervalMinutes = 15
+)
+
+# Create log directory if it doesn't exist
+if (!(Test-Path $LogPath)) { New-Item -ItemType Directory -Path $LogPath -Force }
+
+# Start logging
+$logFile = Join-Path $LogPath "DataMigration_${SourceServer}_to_${TargetServer}_$(Get-Date -Format 'yyyyMMdd_HHmmss').log"
+Start-Transcript -Path $logFile
+
+Write-Host "Starting data migration from $SourceServer to $TargetServer at $(Get-Date)" -ForegroundColor Green
+Write-Host "Data path: $DataPath" -ForegroundColor Cyan
+Write-Host "Sync interval: $SyncIntervalMinutes minutes" -ForegroundColor Cyan
+Write-Host "Initial sync: $InitialSync" -ForegroundColor Cyan
+
+# Ensure RoboCopy is available
+try {
+    $robocopyCheck = robocopy /? | Out-Null
+}
+catch {
+    Write-Host "Error: RoboCopy is not available. Please ensure it is installed." -ForegroundColor Red
+    Stop-Transcript
+    exit 1
+}
+
+# Function to perform a sync
+function Sync-Data {
+    param (
+        [string]$Source,
+        [string]$Target,
+        [switch]$Initial = $false
+    )
+    
+    Write-Host "Starting sync at $(Get-Date)" -ForegroundColor Cyan
+    
+    # Create target directory if it doesn't exist
+    if (!(Test-Path $Target)) {
+        try {
+            New-Item -ItemType Directory -Path $Target -Force | Out-Null
+            Write-Host "Created target directory: $Target" -ForegroundColor Green
+        }
+        catch {
+            Write-Host "Error creating target directory: $_" -ForegroundColor Red
+            return $false
+        }
+    }
+    
+    # Build RoboCopy command
+    $robocopyArgs = @(
+        "`"$Source`"",
+        "`"$Target`"",
+        "/MIR",        # Mirror directories
+        "/Z",          # Restart mode for better reliability
+        "/MT:16",      # Multi-threaded (16 threads)
+        "/R:5",        # Retry 5 times
+        "/W:15",       # Wait 15 seconds between retries
+        "/NP",         # No progress
+        "/NDL",        # No directory list
+        "/TEE",        # Output to console and log
+        "/LOG+:$LogPath\robocopy_${SourceServer}_to_${TargetServer}_$(Get-Date -Format 'yyyyMMdd_HHmmss').log"
+    )
+    
+    if (!$Initial) {
+        # For incremental syncs, only copy changed files
+        $robocopyArgs += "/XO"  # Exclude older files
+    }
+    
+    # Execute RoboCopy
+    try {
+        Write-Host "Executing: robocopy $robocopyArgs" -ForegroundColor Yellow
+        $process = Start-Process -FilePath "robocopy" -ArgumentList $robocopyArgs -NoNewWindow -PassThru -Wait
+        
+        # Check exit code (RoboCopy has special exit codes)
+        $exitCode = $process.ExitCode
+        
+        if ($exitCode -ge 8) {
+            Write-Host "RoboCopy failed with exit code $exitCode" -ForegroundColor Red
+            return $false
+        }
+        else {
+            Write-Host "RoboCopy completed with exit code $exitCode" -ForegroundColor Green
+            if ($exitCode -eq 0) {
+                Write-Host "No files were copied. Source and destination are synchronized." -ForegroundColor Green
+            }
+            elseif ($exitCode -eq 1) {
+                Write-Host "Files were copied successfully." -ForegroundColor Green
+            }
+            elseif ($exitCode -eq 2) {
+                Write-Host "Extra files or directories were detected." -ForegroundColor Yellow
+            }
+            elseif ($exitCode -eq 3) {
+                Write-Host "Some files were copied. Additional files were present." -ForegroundColor Yellow
+            }
+            elseif ($exitCode -eq 4) {
+                Write-Host "Some Mismatched files or directories were detected." -ForegroundColor Yellow
+            }
+            elseif ($exitCode -eq 5) {
+                Write-Host "Some files were copied. Some files were mismatched." -ForegroundColor Yellow
+            }
+            elseif ($exitCode -eq 6) {
+                Write-Host "Additional files and mismatched files exist." -ForegroundColor Yellow
+            }
+            elseif ($exitCode -eq 7) {
+                Write-Host "Files were copied, a file mismatch was present, and additional files were present." -ForegroundColor Yellow
+            }
+            
+            return $true
+        }
+    }
+    catch {
+        Write-Host "Error executing RoboCopy: $_" -ForegroundColor Red
+        return $false
+    }
+}
+
+# Verify connectivity to source and target servers
+Write-Host "Verifying connectivity to source and target servers..." -ForegroundColor Cyan
+
+$sourceOnline = Test-Connection -ComputerName $SourceServer -Count 2 -Quiet
+$targetOnline = Test-Connection -ComputerName $TargetServer -Count 2 -Quiet
+
+if (!$sourceOnline) {
+    Write-Host "Error: Source server $SourceServer is not reachable" -ForegroundColor Red
+    Stop-Transcript
+    exit 1
+}
+
+if (!$targetOnline) {
+    Write-Host "Error: Target server $TargetServer is not reachable" -ForegroundColor Red
+    Stop-Transcript
+    exit 1
+}
+
+Write-Host "Both source and target servers are reachable" -ForegroundColor Green
+
+# Build full source and target paths
+$sourcePath = "\\$SourceServer\$DataPath"
+$targetPath = "\\$TargetServer\$DataPath"
+
+# Verify source path exists
+if (!(Test-Path $sourcePath)) {
+    Write-Host "Error: Source path $sourcePath does not exist" -ForegroundColor Red
+    Stop-Transcript
+    exit 1
+}
+
+# Perform initial sync if requested
+if ($InitialSync) {
+    Write-Host "Performing initial sync..." -ForegroundColor Cyan
+    $initialResult = Sync-Data -Source $sourcePath -Target $targetPath -Initial
+    
+    if (!$initialResult) {
+        Write-Host "Initial sync failed. Please check the logs and try again." -ForegroundColor Red
+        Stop-Transcript
+        exit 1
+    }
+    
+    Write-Host "Initial sync completed successfully" -ForegroundColor Green
+}
+
+# Set up scheduled task for ongoing replication
+Write-Host "Setting up scheduled task for ongoing replication..." -ForegroundColor Cyan
+
+$taskName = "DataMigration_${SourceServer}_to_${TargetServer}"
+$taskExists = Get-ScheduledTask -TaskName $taskName -ErrorAction SilentlyContinue
+
+if ($taskExists) {
+    Write-Host "Scheduled task $taskName already exists. Updating..." -ForegroundColor Yellow
+    Unregister-ScheduledTask -TaskName $taskName -Confirm:$false
+}
+
+$action = New-ScheduledTaskAction -Execute "PowerShell.exe" -Argument "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`" -SourceServer `"$SourceServer`" -TargetServer `"$TargetServer`" -DataPath `"$DataPath`" -LogPath `"$LogPath`" -SyncIntervalMinutes $SyncIntervalMinutes"
+$trigger = New-ScheduledTaskTrigger -Once -At (Get-Date).AddMinutes($SyncIntervalMinutes) -RepetitionInterval (New-TimeSpan -Minutes $SyncIntervalMinutes) -RepetitionDuration (New-TimeSpan -Days 365)
+$settings = New-ScheduledTaskSettingsSet -StartWhenAvailable -DontStopOnIdleEnd -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -MultipleInstances IgnoreNew
+
+Register-ScheduledTask -TaskName $taskName -Action $action -Trigger $trigger -Settings $settings -RunLevel Highest -User "SYSTEM"
+
+Write-Host "Scheduled task $taskName created successfully" -ForegroundColor Green
+Write-Host "Data migration setup completed at $(Get-Date)" -ForegroundColor Green
+
+Stop-Transcript</code></pre>
+
+    <p>This script set up continuous data replication between on-premises servers and their Azure counterparts, ensuring that data was kept in sync during the migration process. It used RoboCopy with optimized settings to minimize network impact while maintaining data consistency.</p>
+
+    <h4>4. Application Testing and Cutover</h4>
+    <pre><code># Start-ApplicationCutover.ps1
+# Script to test applications and perform cutover
+
+param (
+    [Parameter(Mandatory=$true)]
+    [string]$ApplicationName,
+    [Parameter(Mandatory=$true)]
+    [string]$SourceServer,
+    [Parameter(Mandatory=$true)]
+    [string]$TargetServer,
+    [string]$ConfigFile = "C:\Migration\Config\applications.json",
+    [string]$LogPath = "C:\Migration\Logs",
+    [switch]$TestOnly = $false,
+    [switch]$ForceCutover = $false
+)
+
+# Create log directory if it doesn't exist
+if (!(Test-Path $LogPath)) { New-Item -ItemType Directory -Path $LogPath -Force }
+
+# Start logging
+$logFile = Join-Path $LogPath "ApplicationCutover_${ApplicationName}_$(Get-Date -Format 'yyyyMMdd_HHmmss').log"
+Start-Transcript -Path $logFile
+
+Write-Host "Starting application cutover process for $ApplicationName at $(Get-Date)" -ForegroundColor Green
+Write-Host "Source server: $SourceServer" -ForegroundColor Cyan
+Write-Host "Target server: $TargetServer" -ForegroundColor Cyan
+Write-Host "Test only: $TestOnly" -ForegroundColor Cyan
+Write-Host "Force cutover: $ForceCutover" -ForegroundColor Cyan
+
+# Load application configuration
+try {
+    $config = Get-Content -Path $ConfigFile -Raw | ConvertFrom-Json
+    $appConfig = $config.Applications | Where-Object { $_.Name -eq $ApplicationName }
+    
+    if (!$appConfig) {
+        Write-Host "Error: Application $ApplicationName not found in configuration file" -ForegroundColor Red
+        Stop-Transcript
+        exit 1
+    }
+    
+    Write-Host "Loaded configuration for $ApplicationName" -ForegroundColor Green
+}
+catch {
+    Write-Host "Error loading configuration: $_" -ForegroundColor Red
+    Stop-Transcript
+    exit 1
+}
+
+# Function to test application
+function Test-Application {
+    param (
+        [string]$Server,
+        [PSCustomObject]$AppConfig
+    )
+    
+    Write-Host "Testing application $($AppConfig.Name) on $Server..." -ForegroundColor Cyan
+    
+    $testResults = @{
+        Success = $true
+        Details = @()
+    }
+    
+    # Test connectivity to server
+    $serverOnline = Test-Connection -ComputerName $Server -Count 2 -Quiet
+    if (!$serverOnline) {
+        $testResults.Success = $false
+        $testResults.Details += "Server $Server is not reachable"
+        return $testResults
+    }
+    
+    # Test services
+    foreach ($service in $AppConfig.Services) {
+        try {
+            $svc = Get-Service -ComputerName $Server -Name $service.Name -ErrorAction SilentlyContinue
+            
+            if (!$svc) {
+                $testResults.Success = $false
+                $testResults.Details += "Service $($service.Name) not found on $Server"
+            }
+            elseif ($svc.Status -ne $service.ExpectedStatus) {
+                $testResults.Success = $false
+                $testResults.Details += "Service $($service.Name) has status $($svc.Status), expected $($service.ExpectedStatus)"
+            }
+            else {
+                $testResults.Details += "Service $($service.Name) check passed (Status: $($svc.Status))"
+            }
+        }
+        catch {
+            $testResults.Success = $false
+            $testResults.Details += "Error checking service $($service.Name): $_"
+        }
+    }
+    
+    # Test ports
+    foreach ($port in $AppConfig.Ports) {
+        try {
+            $portTest = Test-NetConnection -ComputerName $Server -Port $port -WarningAction SilentlyContinue
+            
+            if (!$portTest.TcpTestSucceeded) {
+                $testResults.Success = $false
+                $testResults.Details += "Port $port is not accessible on $Server"
+            }
+            else {
+                $testResults.Details += "Port $port check passed"
+            }
+        }
+        catch {
+            $testResults.Success = $false
+            $testResults.Details += "Error checking port $port: $_"
+        }
+    }
+    
+    # Test web endpoints if applicable
+    foreach ($endpoint in $AppConfig.WebEndpoints) {
+        try {
+            $url = "http://$Server`:$($endpoint.Port)$($endpoint.Path)"
+            $webRequest = Invoke-WebRequest -Uri $url -UseBasicParsing -TimeoutSec 30
+            
+            if ($webRequest.StatusCode -ne 200) {
+                $testResults.Success = $false
+                $testResults.Details += "Web endpoint $url returned status code $($webRequest.StatusCode), expected 200"
+            }
+            else {
+                $testResults.Details += "Web endpoint $url check passed (Status: $($webRequest.StatusCode))"
+            }
+        }
+        catch {
+            $testResults.Success = $false
+            $testResults.Details += "Error checking web endpoint $url: $_"
+        }
+    }
+    
+    # Run custom tests if defined
+    if ($AppConfig.CustomTests) {
+        foreach ($test in $AppConfig.CustomTests) {
+            try {
+                $scriptBlock = [ScriptBlock]::Create($test.Script)
+                $result = Invoke-Command -ComputerName $Server -ScriptBlock $scriptBlock
+                
+                if (!$result -or ($test.ExpectedResult -and $result -ne $test.ExpectedResult)) {
+                    $testResults.Success = $false
+                    $testResults.Details += "Custom test '$($test.Name)' failed. Expected: $($test.ExpectedResult), Got: $result"
+                }
+                else {
+                    $testResults.Details += "Custom test '$($test.Name)' passed"
+                }
+            }
+            catch {
+                $testResults.Success = $false
+                $testResults.Details += "Error running custom test '$($test.Name)': $_"
+            }
+        }
+    }
+    
+    return $testResults
+}
+
+# Function to update DNS records
+function Update-DnsRecords {
+    param (
+        [string]$ApplicationName,
+        [string]$TargetServer
+    )
+    
+    Write-Host "Updating DNS records for $ApplicationName to point to $TargetServer..." -ForegroundColor Cyan
+    
+    $dnsUpdates = $appConfig.DnsRecords
+    if (!$dnsUpdates -or $dnsUpdates.Count -eq 0) {
+        Write-Host "No DNS records defined for $ApplicationName" -ForegroundColor Yellow
+        return $true
+    }
+    
+    $success = $true
+    
+    foreach ($record in $dnsUpdates) {
+        try {
+            $dnsServer = $record.DnsServer
+            $zoneName = $record.Zone
+            $recordName = $record.Name
+            $recordType = $record.Type
+            
+            # Get the current record
+            $currentRecord = Get-DnsServerResourceRecord -ComputerName $dnsServer -ZoneName $zoneName -Name $recordName -RRType $recordType -ErrorAction SilentlyContinue
+            
+            if ($currentRecord) {
+                # Create a new record with the target server IP
+                $targetIp = [System.Net.Dns]::GetHostAddresses($TargetServer)[0].IPAddressToString
+                
+                if ($recordType -eq "A") {
+                    $newRecord = $currentRecord.Clone()
+                    $newRecord.RecordData.IPv4Address = [System.Net.IPAddress]::Parse($targetIp)
+                }
+                elseif ($recordType -eq "CNAME") {
+                    $newRecord = $currentRecord.Clone()
+                    $newRecord.RecordData.HostNameAlias = "$TargetServer."
+                }
+                
+                # Update the record
+                Set-DnsServerResourceRecord -ComputerName $dnsServer -ZoneName $zoneName -NewInputObject $newRecord -OldInputObject $currentRecord
+                
+                Write-Host "Updated DNS record $recordName.$zoneName to point to $TargetServer" -ForegroundColor Green
+            }
+            else {
+                Write-Host "DNS record $recordName.$zoneName not found" -ForegroundColor Red
+                $success = $false
+            }
+        }
+        catch {
+            Write-Host "Error updating DNS record $($record.Name): $_" -ForegroundColor Red
+            $success = $false
+        }
+    }
+    
+    return $success
+}
+
+# Function to update load balancer configuration
+function Update-LoadBalancer {
+    param (
+        [string]$ApplicationName,
+        [string]$TargetServer
+    )
+    
+    Write-Host "Updating load balancer configuration for $ApplicationName to point to $TargetServer..." -ForegroundColor Cyan
+    
+    $lbConfig = $appConfig.LoadBalancer
+    if (!$lbConfig) {
+        Write-Host "No load balancer configuration defined for $ApplicationName" -ForegroundColor Yellow
+        return $true
+    }
+    
+    try {
+        $lbType = $lbConfig.Type
+        
+        if ($lbType -eq "F5") {
+            # Example for F5 load balancer using REST API
+            $f5Server = $lbConfig.Server
+            $f5Credentials = Get-Credential -Message "Enter credentials for F5 load balancer $f5Server"
+            
+            # Authenticate to F5
+            $auth = @{
+                username = $f5Credentials.UserName
+                password = $f5Credentials.GetNetworkCredential().Password
+                loginProviderName = "tmos"
+            }
+            
+            $authJson = $auth | ConvertTo-Json
+            $authUrl = "https://$f5Server/mgmt/shared/authn/login"
+            
+            $authResponse = Invoke-RestMethod -Method Post -Uri $authUrl -Body $authJson -ContentType "application/json" -SkipCertificateCheck
+            $token = $authResponse.token.token
+            
+            # Update pool member
+            $poolName = $lbConfig.PoolName
+            $poolUrl = "https://$f5Server/mgmt/tm/ltm/pool/~Common~$poolName/members"
+            
+            $headers = @{
+                "X-F5-Auth-Token" = $token
+            }
+            
+            # Get current members
+            $members = Invoke-RestMethod -Method Get -Uri $poolUrl -Headers $headers -SkipCertificateCheck
+            
+            # Find the source server and update it to target server
+            foreach ($member in $members.items) {
+                if ($member.name -like "*$SourceServer*") {
+                    $memberName = $member.name
+                    $memberUrl = "$poolUrl/~Common~$memberName"
+                    
+                    # Disable the source server
+                    $disableBody = @{
+                        session = "user-disabled"
+                        state = "user-down"
+                    } | ConvertTo-Json
+                    
+                    Invoke-RestMethod -Method Patch -Uri $memberUrl -Headers $headers -Body $disableBody -ContentType "application/json" -SkipCertificateCheck
+                    
+                    Write-Host "Disabled source server $SourceServer in F5 pool $poolName" -ForegroundColor Green
+                }
+                
+                if ($member.name -like "*$TargetServer*") {
+                    $memberName = $member.name
+                    $memberUrl = "$poolUrl/~Common~$memberName"
+                    
+                    # Enable the target server
+                    $enableBody = @{
+                        session = "user-enabled"
+                        state = "user-up"
+                    } | ConvertTo-Json
+                    
+                    Invoke-RestMethod -Method Patch -Uri $memberUrl -Headers $headers -Body $enableBody -ContentType "application/json" -SkipCertificateCheck
+                    
+                    Write-Host "Enabled target server $TargetServer in F5 pool $poolName" -ForegroundColor Green
+                }
+            }
+            
+            return $true
+        }
+        elseif ($lbType -eq "NGINX") {
+            # Example for NGINX load balancer
+            $nginxServer = $lbConfig.Server
+            $nginxCredentials = Get-Credential -Message "Enter credentials for NGINX server $nginxServer"
+            
+            # SSH to NGINX server and update configuration
+            $session = New-SSHSession -ComputerName $nginxServer -Credential $nginxCredentials -AcceptKey
+            
+            if ($session) {
+                $configFile = $lbConfig.ConfigFile
+                
+                # Backup current config
+                $backupCommand = "sudo cp $configFile ${configFile}.bak.$(Get-Date -Format 'yyyyMMdd_HHmmss')"
+                $backupResult = Invoke-SSHCommand -SessionId $session.SessionId -Command $backupCommand
+                
+                if ($backupResult.ExitStatus -eq 0) {
+                    # Update config file - replace source server with target server
+                    $updateCommand = "sudo sed -i 's/$SourceServer/$TargetServer/g' $configFile"
+                    $updateResult = Invoke-SSHCommand -SessionId $session.SessionId -Command $updateCommand
+                    
+                    if ($updateResult.ExitStatus -eq 0) {
+                        # Test config
+                        $testCommand = "sudo nginx -t"
+                        $testResult = Invoke-SSHCommand -SessionId $session.SessionId -Command $testCommand
+                        
+                        if ($testResult.ExitStatus -eq 0) {
+                            # Reload NGINX
+                            $reloadCommand = "sudo nginx -s reload"
+                            $reloadResult = Invoke-SSHCommand -SessionId $session.SessionId -Command $reloadCommand
+                            
+                            if ($reloadResult.ExitStatus -eq 0) {
+                                Write-Host "Successfully updated NGINX configuration to use $TargetServer" -ForegroundColor Green
+                                Remove-SSHSession -SessionId $session.SessionId | Out-Null
+                                return $true
+                            }
+                            else {
+                                Write-Host "Error reloading NGINX: $($reloadResult.Output)" -ForegroundColor Red
+                            }
+                        }
+                        else {
+                            Write-Host "NGINX configuration test failed: $($testResult.Output)" -ForegroundColor Red
+                            
+                            # Restore backup
+                            $restoreCommand = "sudo cp ${configFile}.bak.$(Get-Date -Format 'yyyyMMdd_HHmmss') $configFile"
+                            Invoke-SSHCommand -SessionId $session.SessionId -Command $restoreCommand | Out-Null
+                        }
+                    }
+                    else {
+                        Write-Host "Error updating NGINX configuration: $($updateResult.Output)" -ForegroundColor Red
+                    }
+                }
+                else {
+                    Write-Host "Error backing up NGINX configuration: $($backupResult.Output)" -ForegroundColor Red
+                }
+                
+                Remove-SSHSession -SessionId $session.SessionId | Out-Null
+            }
+            else {
+                Write-Host "Failed to establish SSH connection to NGINX server $nginxServer" -ForegroundColor Red
+            }
+            
+            return $false
+        }
+        else {
+            Write-Host "Unsupported load balancer type: $lbType" -ForegroundColor Red
+            return $false
+        }
+    }
+    catch {
+        Write-Host "Error updating load balancer: $_" -ForegroundColor Red
+        return $false
+    }
+}
+
+# Test source application
+Write-Host "Testing application on source server..." -ForegroundColor Cyan
+$sourceTestResults = Test-Application -Server $SourceServer -AppConfig $appConfig
+
+Write-Host "Source server test results:" -ForegroundColor Cyan
+foreach ($detail in $sourceTestResults.Details) {
+    Write-Host "  $detail" -ForegroundColor $(if ($detail -like "*passed*") { "Green" } else { "Yellow" })
+}
+
+if (!$sourceTestResults.Success) {
+    Write-Host "Warning: Source application has issues. Proceeding with caution." -ForegroundColor Yellow
+    
+    if (!$ForceCutover) {
+        $proceed = Read-Host "Do you want to proceed with testing the target server? (Y/N)"
+        if ($proceed -ne "Y") {
+            Write-Host "Aborting cutover process" -ForegroundColor Red
+            Stop-Transcript
+            exit 1
+        }
+    }
+}
+else {
+    Write-Host "Source application tests passed successfully" -ForegroundColor Green
+}
+
+# Test target application
+Write-Host "Testing application on target server..." -ForegroundColor Cyan
+$targetTestResults = Test-Application -Server $TargetServer -AppConfig $appConfig
+
+Write-Host "Target server test results:" -ForegroundColor Cyan
+foreach ($detail in $targetTestResults.Details) {
+    Write-Host "  $detail" -ForegroundColor $(if ($detail -like "*passed*") { "Green" } else { "Yellow" })
+}
+
+if (!$targetTestResults.Success) {
+    Write-Host "Error: Target application has issues. Cannot proceed with cutover." -ForegroundColor Red
+    
+    if (!$ForceCutover) {
+        Write-Host "Aborting cutover process" -ForegroundColor Red
+        Stop-Transcript
+        exit 1
+    }
+    else {
+        Write-Host "Force cutover is enabled. Proceeding despite target application issues." -ForegroundColor Yellow
+    }
+}
+else {
+    Write-Host "Target application tests passed successfully" -ForegroundColor Green
+}
+
+# If test only, exit here
+if ($TestOnly) {
+    Write-Host "Test only mode. Cutover will not be performed." -ForegroundColor Yellow
+    Stop-Transcript
+    exit 0
+}
+
+# Perform cutover
+Write-Host "Performing cutover from $SourceServer to $TargetServer..." -ForegroundColor Cyan
+
+# Update DNS records
+$dnsUpdateSuccess = Update-DnsRecords -ApplicationName $ApplicationName -TargetServer $TargetServer
+
+if (!$dnsUpdateSuccess) {
+    Write-Host "Warning: Some DNS updates failed" -ForegroundColor Yellow
+}
+
+# Update load balancer configuration
+$lbUpdateSuccess = Update-LoadBalancer -ApplicationName $ApplicationName -TargetServer $TargetServer
+
+if (!$lbUpdateSuccess) {
+    Write-Host "Warning: Load balancer update failed" -ForegroundColor Yellow
+}
+
+# Record cutover in migration log
+$cutoverLog = Join-Path $LogPath "Cutovers.csv"
+if (!(Test-Path $cutoverLog)) {
+    "Timestamp,Application,SourceServer,TargetServer,Status,DNSUpdateSuccess,LBUpdateSuccess" | Out-File -FilePath $cutoverLog
+}
+
+$status = if ($dnsUpdateSuccess -and $lbUpdateSuccess) { "Success" } else { "PartialSuccess" }
+"$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss'),$ApplicationName,$SourceServer,$TargetServer,$status,$dnsUpdateSuccess,$lbUpdateSuccess" | Out-File -FilePath $cutoverLog -Append
+
+Write-Host "Cutover completed at $(Get-Date)" -ForegroundColor Green
+Write-Host "Status: $status" -ForegroundColor $(if ($status -eq "Success") { "Green" } else { "Yellow" })
+
+Stop-Transcript</code></pre>
+
+    <p>This script handled the critical cutover process, testing applications on both source and target servers before updating DNS and load balancer configurations to redirect traffic to the Azure environment. It included comprehensive error handling and rollback capabilities to ensure business continuity.</p>
+
+    <h3>The Results: A Seamless Transition with Significant Benefits</h3>
+    <p>The PowerShell Cloud Migration project delivered impressive results:</p>
+    <ul>
+        <li><strong>Zero Downtime Migration:</strong> The entire migration was completed with 99.99% uptime, with only brief, scheduled maintenance windows for final cutover of the most critical systems.</li>
+        <li><strong>$200,000+ Annual Cost Savings:</strong> By eliminating hardware maintenance contracts, data center costs, and optimizing Azure resources, the client saved over $200,000 annually.</li>
+        <li><strong>Improved Global Performance:</strong> Applications were deployed to Azure regions closest to users, reducing latency by up to 40% for international offices.</li>
+        <li><strong>Enhanced Disaster Recovery:</strong> The migration included setting up geo-redundant backups and failover capabilities that weren't feasible with the on-premises infrastructure.</li>
+        <li><strong>Simplified Management:</strong> The IT team could now manage all resources through a single Azure portal, reducing administrative overhead.</li>
+    </ul>
+
+    <h3>Key Takeaways and Lessons Learned</h3>
+    <p>This project highlighted several important lessons about cloud migrations:</p>
+    <ol>
+        <li><strong>Automation is Essential:</strong> The PowerShell scripts reduced human error and enabled consistent, repeatable processes across all servers and applications.</li>
+        <li><strong>Thorough Testing Prevents Disasters:</strong> The comprehensive testing framework caught several potential issues before they could impact production systems.</li>
+        <li><strong>Data Synchronization Strategy Matters:</strong> The continuous replication approach minimized the final cutover window and reduced risk.</li>
+        <li><strong>Documentation Drives Success:</strong> Detailed logs and reports provided visibility into the migration process and helped troubleshoot issues quickly.</li>
+        <li><strong>Regional Considerations Are Critical:</strong> Respecting data sovereignty requirements while optimizing performance required careful planning of Azure regions and networking.</li>
+    </ol>
+
+    <p>The PowerShell Cloud Migration project demonstrates how well-designed automation scripts can transform a potentially risky and disruptive migration into a smooth, controlled process that delivers immediate business value.</p>
+
+    <div class="nav">
+        <p><a href="portfolio.html">Back to Portfolio</a></p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Resume | Christopher Bordelon</title>
+  <style>
+    :root {
+      --primary: #0b0c1a;
+      --secondary: #1f4068;
+      --accent: #e94560;
+      --dark: #0f1a30;
+      --light: #eaeaea;
+      --star: #ffffff;
+      --glow: #00ffe1;
+      --sith-red: #ff0000;
+      --nav-bg: #1a1a1a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: radial-gradient(circle at 20% 20%, var(--dark), #000000 80%);
+      color: var(--light);
+      line-height: 1.6;
+      padding: 20px;
+      padding-top: 90px; /* Added extra padding for the fixed nav */
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: url('https://raw.githubusercontent.com/niklasvh/starfield/master/starfield.png') repeat;
+      opacity: 0.05;
+      z-index: -1;
+      animation: moveStars 60s linear infinite;
+    }
+
+    @keyframes moveStars {
+      from { background-position: 0 0; }
+      to   { background-position: -1000px 1000px; }
+    }
+
+    /* Navigation Bar from nodetest.html */
+    nav { 
+      background-color: var(--nav-bg); 
+      padding: 1rem 2rem; 
+      position: fixed; 
+      width: 100%; 
+      top: 0; 
+      left: 0;
+      z-index: 1000; 
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5); 
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+    }
+    .nav-brand a {
+      color: var(--light);
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+    /* Each li is relatively positioned so that its dropdown is aligned below it */
+    .nav-links li {
+      margin-left: 1.5rem;
+      position: relative;
+    }
+    .nav-links a {
+      color: var(--light);
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+    .nav-links a:hover {
+      background-color: var(--sith-red);
+      color: var(--light);
+    }
+    /* Dropdown styling updated to wrap text properly */
+    .nav-links li .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #333;
+      color: var(--light);
+      padding: 0.5rem;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+      z-index: 1001;
+      font-size: 0.9rem;
+      width: auto;
+      white-space: normal;
+      overflow-wrap: break-word;
+    }
+    .nav-links li:hover .dropdown {
+      display: block;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: rgba(15, 26, 48, 0.95);
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    h1, h2, h3, h4 {
+      color: var(--star);
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-top: 2rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+      font-size: 1.1rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .tableau-container {
+      width: 100%;
+      height: 800px;
+      margin: 2rem 0;
+    }
+
+    .nav-bottom {
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar from nodetest.html -->
+  <nav>
+    <div class="nav-brand">
+      <a href="index.html">Christopher Bordelon | Data Analyst & Developer</a>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="about.html">About</a>
+        <div class="dropdown">Learn more about my background, education, and professional journey.</div>
+      </li>
+      <li>
+        <a href="resume.html">Resume</a>
+        <div class="dropdown">View my resume in traditional (PDF) or interactive (Tableau) format.</div>
+      </li>
+      <li>
+        <a href="portfolio.html">Portfolio</a>
+        <div class="dropdown">Explore past and future projects.</div>
+      </li>
+      <li>
+        <a href="applications.html">Apps</a>
+        <div class="dropdown">Explore the applications and games I've developed, including Shape Invaders and more.</div>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+        <div class="dropdown">bordelondevops2025@gmail.com</div>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/christopher-b-b61554319" target="_blank">LinkedIn</a>
+        <div class="dropdown">Connect with me on LinkedIn.</div>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Interactive Resume</h1>
+    <p>Explore my professional experience and qualifications through this interactive Tableau visualization. This dynamic format allows you to explore my career journey, skills development, and project impacts in an engaging way.</p>
+    
+    <div class="tableau-container">
+      <!-- Tableau Embed Code -->
+      <div class='tableauPlaceholder' id='viz1744179978512' style='position: relative'><noscript><a href='#'><img alt='Interactive Resume ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;BordelonCV&#47;InteractiveResume&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BordelonCV&#47;InteractiveResume' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;BordelonCV&#47;InteractiveResume&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                
+      <script type='text/javascript'>                    
+        var divElement = document.getElementById('viz1744179978512');                    
+        var vizElement = divElement.getElementsByTagName('object')[0];                    
+        if ( divElement.offsetWidth > 800 ) { 
+          vizElement.style.width='100%';
+          vizElement.style.maxWidth='1720px';
+          vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+          vizElement.style.maxHeight='887px';
+        } else if ( divElement.offsetWidth > 500 ) { 
+          vizElement.style.width='100%';
+          vizElement.style.maxWidth='1720px';
+          vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+          vizElement.style.maxHeight='887px';
+        } else { 
+          vizElement.style.width='100%';
+          vizElement.style.height='1477px';
+        }                     
+        var scriptElement = document.createElement('script');                    
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+      </script>
+    </div>
+    
+    <div class="nav-bottom">
+      <p><a href="resume.html">Back to Resume Options</a> | <a href="index.html">Back to Home</a></p>
+    </div>
+  </div>
+</body>
+</html>

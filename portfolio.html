@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Christopher Bordelon</title>
+  <style>
+    :root {
+      --primary: #0b0c1a;
+      --secondary: #1f4068;
+      --accent: #e94560;
+      --dark: #0f1a30;
+      --light: #eaeaea;
+      --star: #ffffff;
+      --glow: #00ffe1;
+      --sith-red: #ff0000;
+      --nav-bg: #1a1a1a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: radial-gradient(circle at 20% 20%, var(--dark), #000000 80%);
+      color: var(--light);
+      line-height: 1.6;
+      padding: 20px;
+      padding-top: 90px; /* Added extra padding for the fixed nav */
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: url('https://raw.githubusercontent.com/niklasvh/starfield/master/starfield.png') repeat;
+      opacity: 0.05;
+      z-index: -1;
+      animation: moveStars 60s linear infinite;
+    }
+
+    @keyframes moveStars {
+      from { background-position: 0 0; }
+      to   { background-position: -1000px 1000px; }
+    }
+
+    /* Navigation Bar from nodetest.html */
+    nav { 
+      background-color: var(--nav-bg); 
+      padding: 1rem 2rem; 
+      position: fixed; 
+      width: 100%; 
+      top: 0; 
+      left: 0;
+      z-index: 1000; 
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5); 
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+    }
+    .nav-brand a {
+      color: var(--light);
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+    /* Each li is relatively positioned so that its dropdown is aligned below it */
+    .nav-links li {
+      margin-left: 1.5rem;
+      position: relative;
+    }
+    .nav-links a {
+      color: var(--light);
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+    .nav-links a:hover {
+      background-color: var(--sith-red);
+      color: var(--light);
+    }
+    /* Dropdown styling updated to wrap text properly */
+    .nav-links li .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #333;
+      color: var(--light);
+      padding: 0.5rem;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+      z-index: 1001;
+      font-size: 0.9rem;
+      width: auto;
+      white-space: normal;
+      overflow-wrap: break-word;
+    }
+    .nav-links li:hover .dropdown {
+      display: block;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: rgba(15, 26, 48, 0.95);
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    h1, h2, h3, h4 {
+      color: var(--star);
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-top: 2rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+      font-size: 1.1rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    .portfolio-item {
+      background: rgba(31, 64, 104, 0.3);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .portfolio-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    }
+
+    .portfolio-img {
+      height: 200px;
+      background-color: #142037;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+    }
+
+    .portfolio-info {
+      padding: 1.5rem;
+    }
+
+    .portfolio-info h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+    }
+
+    .portfolio-info p {
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+
+    .portfolio-link {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .nav-bottom {
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar from nodetest.html -->
+  <nav>
+    <div class="nav-brand">
+      <a href="index.html">Christopher Bordelon | Data Analyst & Developer</a>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="about.html">About</a>
+        <div class="dropdown">Learn more about my background, education, and professional journey.</div>
+      </li>
+      <li>
+        <a href="resume.html">Resume</a>
+        <div class="dropdown">View my resume showcasing my skills and experience.</div>
+      </li>
+      <li>
+        <a href="portfolio.html">Portfolio</a>
+        <div class="dropdown">Explore past and future projects.</div>
+      </li>
+      <li>
+        <a href="applications.html">Apps</a>
+        <div class="dropdown">Explore the applications and games I've developed, including Shape Invaders and more.</div>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+        <div class="dropdown">bordelondevops2025@gmail.com</div>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/christopher-b-b61554319" target="_blank">LinkedIn</a>
+        <div class="dropdown">Connect with me on LinkedIn.</div>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Portfolio Projects</h1>
+    <p>Welcome to my portfolio! Here you'll find a collection of projects that showcase my skills in data analysis, automation, and development. Each project represents a unique challenge that I've tackled using a combination of technical expertise and creative problem-solving.</p>
+    
+    <div class="portfolio-grid">
+      <a href="Chromebook_losses.html" class="portfolio-link">
+        <div class="portfolio-item">
+          <div class="portfolio-img">💻</div>
+          <div class="portfolio-info">
+            <h3>Python Inventory System</h3>
+            <p>Custom tool reducing inventory errors by 40% for a public school client, tracking lost and stolen Chromebooks across school districts.</p>
+          </div>
+        </div>
+      </a>
+      
+      <a href="cloud_migration.html" class="portfolio-link">
+        <div class="portfolio-item">
+          <div class="portfolio-img">⚡</div>
+          <div class="portfolio-info">
+            <h3>PowerShell Cloud Migration</h3>
+            <p>Zero-downtime scripts for an international client's Azure transition, saving over $200,000 in annual hosting costs.</p>
+          </div>
+        </div>
+      </a>
+      
+      <a href="Tableau_dashboard.html" class="portfolio-link">
+        <div class="portfolio-item">
+          <div class="portfolio-img">📈</div>
+          <div class="portfolio-info">
+            <h3>Data Visualization Dashboard</h3>
+            <p>Tableau dashboards delivering real-time business insights for executive decision-making.</p>
+          </div>
+        </div>
+      </a>
+      
+      <a href="work_automation.html" class="portfolio-link">
+        <div class="portfolio-item">
+          <div class="portfolio-img">🤖</div>
+          <div class="portfolio-info">
+            <h3>Work Automation Suite</h3>
+            <p>VBA-Python-PowerShell automation cutting GeoAccess reporting time by 90%, saving thousands in labor costs.</p>
+          </div>
+        </div>
+      </a>
+      
+      <a href="data_quality.html" class="portfolio-link">
+        <div class="portfolio-item">
+          <div class="portfolio-img">🔍</div>
+          <div class="portfolio-info">
+            <h3>Data Quality Auditor</h3>
+            <p>Python script rescuing corrupted legacy data for Salesforce, reducing errors by 40% and saving $65,000 in consulting fees.</p>
+          </div>
+        </div>
+      </a>
+      
+      <a href="applications.html" class="portfolio-link">
+        <div class="portfolio-item">
+          <div class="portfolio-img">🎮</div>
+          <div class="portfolio-info">
+            <h3>App Portfolio</h3>
+            <p>Collection of games and applications I've developed, including Shape Invaders, THOTBGONE, and Decennium Descent.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    
+    <div class="nav-bottom">
+      <p><a href="index.html">Back to Home</a></p>
+    </div>
+  </div>
+</body>
+</html>
