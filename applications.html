@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Applications | Christopher Bordelon</title>
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Applications | Christopher Bordelon</title>
+<style>
         :root {
             --primary: #0b0c1a;
             --secondary: #1f4068;
@@ -185,7 +186,8 @@
             background-color: rgba(0, 0, 0, 0.2);
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+
         }
         
         .btn {
@@ -258,217 +260,206 @@
     </style>
 </head>
 <body>
-    <!-- Navigation from nodetest.html -->
-    <nav>
-        <div class="nav-brand">
-            <a href="index.html">Christopher Bordelon | Data Analyst & Developer</a>
-        </div>
-        <ul class="nav-links">
-            <li>
-                <a href="index.html#about-section">About</a>
-                <div class="dropdown">Learn more about my background, education, and professional journey.</div>
-            </li>
-            <li>
-                <a href="resume.html">Resume</a>
-                <div class="dropdown">View my interactive Tableau resume showcasing my skills and experience.</div>
-            </li>
-            <li>
-                <a href="index.html#portfolio-section">Portfolio</a>
-                <div class="dropdown">Explore past and future projects.</div>
-            </li>
-            <li>
-                <a href="applications.html" class="active">Apps</a>
-                <div class="dropdown">Explore the applications and games I've developed, including DOOM and more.</div>
-            </li>
-            <li>
-                <a href="index.html#contact-section">Contact</a>
-                <div class="dropdown">bordelondevops2025@gmail.com</div>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/christopher-b-b61554319" target="_blank">LinkedIn</a>
-                <div class="dropdown">Connect with me on LinkedIn.</div>
-            </li>
-        </ul>
-    </nav>
-    
-    <div class="container">
-        <h1>Applications & Games</h1>
-        <p>Explore my collection of applications and games, showcasing my skills in various programming languages and technologies. From browser-based games to practical utilities, these projects demonstrate my passion for creating engaging and useful software.</p>
-        
-        <div class="apps-grid">
-            <!-- DOOM -->
-            <div class="app-card">
-                <div class="app-header">
-                    <h2><span class="app-icon">🔥</span> DOOM <span class="app-status status-completed">Completed</span></h2>
-                </div>
-                <div class="app-body">
-                    <p>A browser-based version of the classic first-person shooter game where you battle demons from hell. Experience fast-paced action, iconic weapons, and atmospheric levels in this groundbreaking game.</p>
-                    <p><strong>Features:</strong></p>
-                    <ul>
-                        <li>Authentic DOOM gameplay experience in your browser</li>
-                        <li>Classic weapons including the shotgun, chaingun, and BFG</li>
-                        <li>Original levels and monsters from the iconic game</li>
-                        <li>Keyboard controls for movement and combat</li>
-                        <li>Save game functionality</li>
-                    </ul>
-                    <div class="tech-tags">
-                        <span class="tech-tag">HTML5</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">JS-DOS</span>
-                        <span class="tech-tag">Emulation</span>
-                    </div>
-                </div>
-                <div class="app-footer">
-                    <a href="https://bordelondevops.github.io/Doom_on_Browser/" class="btn btn-primary">Play Now</a>
-                    <a href="https://github.com/BordelonDevOps/Doom_on_Browser" class="btn btn-secondary">View Source</a>
-                </div>
-            </div>
-            
-            <!-- ThotBGone -->
-            <div class="app-card">
-                <div class="app-header">
-                    <h2><span class="app-icon">🛡️</span> ThotBGone <span class="app-status status-completed">Completed</span></h2>
-                </div>
-                <div class="app-body">
-                    <p>A Chrome extension that filters out OnlyFans and inappropriate content from X.com (formerly Twitter), providing a cleaner browsing experience.</p>
-                    <p><strong>Features:</strong></p>
-                    <ul>
-                        <li>Content filtering based on image recognition and text analysis</li>
-                        <li>Customizable filtering levels</li>
-                        <li>Whitelist and blacklist functionality</li>
-                        <li>Performance optimized to run smoothly in the background</li>
-                        <li>Privacy-focused with no data collection</li>
-                    </ul>
-                    <div class="tech-tags">
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Chrome Extension API</span>
-                        <span class="tech-tag">Content Filtering</span>
-                        <span class="tech-tag">RegEx</span>
-                    </div>
-                </div>
-                <div class="app-footer">
-                    <a href="#" class="btn btn-primary">Download</a>
-                    <a href="#" class="btn btn-secondary">View Source</a>
-                </div>
-            </div>
-            
-            <!-- Directional Drilling Calculator -->
-            <div class="app-card">
-                <div class="app-header">
-                    <h2><span class="app-icon">🔄</span> Directional Drilling Calculator <span class="app-status status-completed">Completed</span></h2>
-                </div>
-                <div class="app-body">
-                    <p>A commercial-grade Python application for calculating directional drilling parameters, trajectories, and optimizations for the oil and gas industry.</p>
-                    <p><strong>Features:</strong></p>
-                    <ul>
-                        <li>Accurate trajectory planning and visualization</li>
-                        <li>Real-time calculation of drilling parameters</li>
-                        <li>Support for multiple calculation methods (minimum curvature, radius of curvature, etc.)</li>
-                        <li>Data export in industry-standard formats</li>
-                        <li>Comprehensive reporting capabilities</li>
-                    </ul>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">NumPy</span>
-                        <span class="tech-tag">Matplotlib</span>
-                        <span class="tech-tag">Pandas</span>
-                        <span class="tech-tag">PyQt</span>
-                    </div>
-                </div>
-                <div class="app-footer">
-                    <a href="#" class="btn btn-primary">Download</a>
-                    <a href="#" class="btn btn-secondary">Documentation</a>
-                </div>
-            </div>
-            
-            <!-- Vibe w/ Excel -->
-            <div class="app-card">
-                <div class="app-header">
-                    <h2><span class="app-icon">📊</span> Vibe w/ Excel <span class="app-status status-development">In Development</span></h2>
-                </div>
-                <div class="app-body">
-                    <p>An advanced Excel add-in that enhances data visualization and analysis capabilities with modern, interactive charts and automated reporting features.</p>
-                    <p><strong>Features:</strong></p>
-                    <ul>
-                        <li>Custom visualization templates beyond Excel's standard offerings</li>
-                        <li>Automated data cleaning and preparation tools</li>
-                        <li>One-click report generation with customizable templates</li>
-                        <li>Integration with external data sources</li>
-                        <li>Advanced statistical analysis functions</li>
-                    </ul>
-                    <div class="tech-tags">
-                        <span class="tech-tag">VBA</span>
-                        <span class="tech-tag">Excel</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Office Add-in API</span>
-                    </div>
-                </div>
-                <div class="app-footer">
-                    <a href="#" class="btn btn-primary">Preview</a>
-                    <a href="#" class="btn btn-secondary">Development Log</a>
-                </div>
-            </div>
-            
-            <!-- Web-based Console Emulator -->
-            <div class="app-card">
-                <div class="app-header">
-                    <h2><span class="app-icon">🎮</span> Web-based Console Emulator <span class="app-status status-completed">Completed</span></h2>
-                </div>
-                <div class="app-body">
-                    <p>A browser-based emulator that allows users to play classic console games directly in their web browser without additional software or plugins.</p>
-                    <p><strong>Features:</strong></p>
-                    <ul>
-                        <li>Support for multiple classic console systems</li>
-                        <li>Responsive controls that work on both desktop and mobile</li>
-                        <li>Save state functionality</li>
-                        <li>Customizable button mapping</li>
-                        <li>High-performance emulation with WebAssembly</li>
-                    </ul>
-                    <div class="tech-tags">
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">WebAssembly</span>
-                        <span class="tech-tag">HTML5</span>
-                        <span class="tech-tag">WebGL</span>
-                    </div>
-                </div>
-                <div class="app-footer">
-                    <a href="console_emulator.html" class="btn btn-primary">Launch Emulator</a>
-                    <a href="#" class="btn btn-secondary">View Source</a>
-                </div>
-            </div>
-            
-            <!-- Decennium Descent -->
-            <div class="app-card">
-                <div class="app-header">
-                    <h2><span class="app-icon">🎲</span> Decennium Descent <span class="app-status status-development">In Development</span></h2>
-                </div>
-                <div class="app-body">
-                    <p>A PC game currently in development that combines roguelike elements with strategic combat in a procedurally generated dungeon environment.</p>
-                    <p><strong>Features:</strong></p>
-                    <ul>
-                        <li>Procedurally generated levels with unique challenges</li>
-                        <li>Character progression and customization</li>
-                        <li>Strategic turn-based combat system</li>
-                        <li>Hundreds of items, weapons, and abilities to discover</li>
-                        <li>Engaging storyline that unfolds as you progress</li>
-                    </ul>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Unity</span>
-                        <span class="tech-tag">C#</span>
-                        <span class="tech-tag">3D Modeling</span>
-                        <span class="tech-tag">Procedural Generation</span>
-                    </div>
-                </div>
-                <div class="app-footer">
-                    <a href="#" class="btn btn-primary">Development Blog</a>
-                    <a href="#" class="btn btn-secondary">Wishlist</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <footer>
-        <p>&copy; 2025 Christopher Bordelon. All rights reserved.</p>
-    </footer>
+<!-- Navigation from nodetest.html -->
+<nav>
+<div class="nav-brand">
+<a href="index.html">Christopher Bordelon | Data Analyst &amp; Developer</a>
+</div>
+<ul class="nav-links">
+<li>
+<a href="index.html#about-section">About</a>
+<div class="dropdown">Learn more about my background, education, and professional journey.</div>
+</li>
+<li>
+<a href="resume.html">Resume</a>
+<div class="dropdown">View my interactive Tableau resume showcasing my skills and experience.</div>
+</li>
+<li>
+<a href="index.html#portfolio-section">Portfolio</a>
+<div class="dropdown">Explore past and future projects.</div>
+</li>
+<li>
+<a class="active" href="applications.html">Apps</a>
+<div class="dropdown">Explore the applications and games I've developed, including DOOM and more.</div>
+</li>
+<li>
+<a href="index.html#contact-section">Contact</a>
+<div class="dropdown">bordelondevops2025@gmail.com</div>
+</li>
+<li>
+<a href="https://www.linkedin.com/in/christopher-b-b61554319" target="_blank">LinkedIn</a>
+<div class="dropdown">Connect with me on LinkedIn.</div>
+</li>
+</ul>
+</nav>
+<div class="container">
+<h1>Applications &amp; Games</h1>
+<p>Explore my collection of applications and games, showcasing my skills in various programming languages and technologies. From browser-based games to practical utilities, these projects demonstrate my passion for creating engaging and useful software.</p>
+<div class="apps-grid">
+<!-- DOOM -->
+<div class="app-card">
+<div class="app-header">
+<h2><span class="app-icon">🔥</span> DOOM <span class="app-status status-completed">Completed</span></h2>
+</div>
+<div class="app-body">
+<p>A browser-based version of the classic first-person shooter game where you battle demons from hell. Experience fast-paced action, iconic weapons, and atmospheric levels in this groundbreaking game.</p>
+<p><strong>Features:</strong></p>
+<ul>
+<li>Authentic DOOM gameplay experience in your browser</li>
+<li>Classic weapons including the shotgun, chaingun, and BFG</li>
+<li>Original levels and monsters from the iconic game</li>
+<li>Keyboard controls for movement and combat</li>
+<li>Save game functionality</li>
+</ul>
+<div class="tech-tags">
+<span class="tech-tag">HTML5</span>
+<span class="tech-tag">JavaScript</span>
+<span class="tech-tag">JS-DOS</span>
+<span class="tech-tag">Emulation</span>
+</div>
+</div>
+<div class="app-footer" style="text-align: center;">
+<a class="btn btn-primary" href="https://bordelondevops.github.io/Doom_on_Browser/">Play Now</a>
+<a class="btn btn-secondary" href="https://github.com/BordelonDevOps/Doom_on_Browser">View Source</a>
+</div>
+</div>
+<!-- ThotBGone -->
+<div class="app-card">
+<div class="app-header">
+<h2><span class="app-icon">🛡️</span> ThotBGone <span class="app-status status-completed">Completed</span></h2>
+</div>
+<div class="app-body">
+<p>A Chrome extension that filters out OnlyFans and inappropriate content from X.com (formerly Twitter), providing a cleaner browsing experience.</p>
+<p><strong>Features:</strong></p>
+<ul>
+<li>Content filtering based on image recognition and text analysis</li>
+<li>Customizable filtering levels</li>
+<li>Whitelist and blacklist functionality</li>
+<li>Performance optimized to run smoothly in the background</li>
+<li>Privacy-focused with no data collection</li>
+</ul>
+<div class="tech-tags">
+<span class="tech-tag">JavaScript</span>
+<span class="tech-tag">Chrome Extension API</span>
+<span class="tech-tag">Content Filtering</span>
+<span class="tech-tag">RegEx</span>
+</div>
+</div>
+<div class="app-footer" style="text-align: center;">
+<a class="btn btn-primary" href="https://github.com/BordelonDevOps/ThotBGone">About</a>
+</div>
+</div>
+<!-- Worm Killer -->
+<div class="app-card">
+<div class="app-header">
+<h2><span class="app-icon">🔄</span> Worm Killer<span class="app-status status-completed">Completed</span></h2>
+</div>
+<div class="app-body">
+<p>A commercial-grade Python application for calculating directional drilling parameters, trajectories, and optimizations for the oil and gas industry.</p>
+<p><strong>Features:</strong></p>
+<ul>
+<li>Accurate trajectory planning and visualization</li>
+<li>Real-time calculation of drilling parameters</li>
+<li>Support for multiple calculation methods (minimum curvature, radius of curvature, etc.)</li>
+<li>Data export in industry-standard formats</li>
+<li>Comprehensive reporting capabilities</li>
+</ul>
+<div class="tech-tags">
+<span class="tech-tag">Python</span>
+<span class="tech-tag">NumPy</span>
+<span class="tech-tag">Matplotlib</span>
+<span class="tech-tag">Pandas</span>
+<span class="tech-tag">PyQt</span>
+</div>
+</div>
+<div class="app-footer" style="text-align: center;">
+<a class="btn btn-primary" href="https://github.com/BordelonDevOps/WormDriller">About</a>
+</div>
+</div>
+<!-- Vibe w/ Excel -->
+<div class="app-card">
+<div class="app-header">
+<h2><span class="app-icon">📊</span> Vibe w/ Excel <span class="app-status status-development">In Development</span></h2>
+</div>
+<div class="app-body">
+<p>An advanced Excel add-in that enhances data visualization and analysis capabilities with modern, interactive charts and automated reporting features.</p>
+<p><strong>Features:</strong></p>
+<ul>
+<li>Custom visualization templates beyond Excel's standard offerings</li>
+<li>Automated data cleaning and preparation tools</li>
+<li>One-click report generation with customizable templates</li>
+<li>Integration with external data sources</li>
+<li>Advanced statistical analysis functions</li>
+</ul>
+<div class="tech-tags">
+<span class="tech-tag">VBA</span>
+<span class="tech-tag">Excel</span>
+<span class="tech-tag">JavaScript</span>
+<span class="tech-tag">Office Add-in API</span>
+<span class="tech-tag">Python</span>
+</div>
+</div>
+<div class="app-footer" style="text-align: center;">
+<a class="btn btn-primary" href="https://github.com/BordelonDevOps/VibewExcel">About</a>
+
+</div>
+</div>
+<!-- Shape Invaders -->
+<div class="app-card">
+<div class="app-header">
+<h2><span class="app-icon">🎮</span> Shape Invaders <span class="app-status status-development">In Development</span></h2>
+</div>
+<div class="app-body">
+<p>A browser-based game that allows users to stop a Geometric Assault on your freedom!</p>
+<p><strong>Features:</strong></p>
+<ul>
+<li>Support for multiple classic console systems</li>
+<li>Responsive controls that work on both desktop and mobile</li>
+<li>Save state functionality</li>
+<li>Customizable button mapping</li>
+<li>High-performance emulation with WebAssembly</li>
+</ul>
+<div class="tech-tags">
+<span class="tech-tag">JavaScript</span>
+<span class="tech-tag">WebAssembly</span>
+<span class="tech-tag">HTML5</span>
+<span class="tech-tag">WebGL</span>
+</div>
+</div>
+<div class="app-footer" style="text-align: center;">
+<a class="btn btn-primary" href="https://github.com/BordelonDevOps/ShapeInvaders">About</a>
+</div>
+</div>
+<!-- Decennium Descent -->
+<div class="app-card">
+<div class="app-header">
+<h2><span class="app-icon">🎲</span> Decennium Descent <span class="app-status status-development">In Development</span></h2>
+</div>
+<div class="app-body">
+<p>A PC game currently in development that combines roguelike elements with strategic combat in a procedurally generated dungeon environment.</p>
+<p><strong>Features:</strong></p>
+<ul>
+<li>Procedurally generated levels with unique challenges</li>
+<li>Character progression and customization</li>
+<li>Strategic turn-based combat system</li>
+<li>Hundreds of items, weapons, and abilities to discover</li>
+<li>Engaging storyline that unfolds as you progress</li>
+</ul>
+<div class="tech-tags">
+<span class="tech-tag">Unity</span>
+<span class="tech-tag">C#</span>
+<span class="tech-tag">3D Modeling</span>
+<span class="tech-tag">Procedural Generation</span>
+</div>
+</div>
+<div class="app-footer" style="text-align: center;">
+<a class="btn btn-primary" href="https://github.com/BordelonDevOps/DecenniumDescent">About</a>
+</div>
+</div>
+</div>
+</div>
+<footer>
+<p>© 2025 Christopher Bordelon. All rights reserved.</p>
+</footer>
 </body>
 </html>
