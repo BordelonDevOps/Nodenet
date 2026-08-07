@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Christopher Bordelon's portfolio of data analysis, automation, browser applications, and engineering software projects.">
   <title>Christopher Bordelon | Data Analyst & Developer</title>
   <script src="three.min.js"></script>
   <script src="OrbitControls.js"></script>
@@ -151,6 +152,7 @@
       background-color: var(--sith-red);
     }
   </style>
+  <link rel="stylesheet" href="site.css">
 </head>
 <body>
   <!-- Navigation Bar -->
@@ -185,6 +187,16 @@
       </li>
     </ul>
   </nav>
+
+  <main class="home-intro">
+    <h1>Christopher Bordelon</h1>
+    <p>Data analyst and developer building practical tools for automation, engineering, financial research, and interactive data experiences.</p>
+    <div class="home-actions">
+      <a class="primary" href="applications.html">Explore applications</a>
+      <a class="secondary" href="resume.html">View resume</a>
+      <a class="secondary" href="contact.html">Contact me</a>
+    </div>
+  </main>
 
   <!-- Nodenet Visualization Container -->
   <div id="scene-container"></div>
@@ -231,9 +243,9 @@
       { title: "Apps", description: "A list of playable and games in development", link: "applications.html", position: { x: 15, y: -5, z: -3 }, size: 0.5, color: 0xff0000, glowColor: 0xffdd00 },
       { title: "DOOM", description: "A classic first-person shooter game where you battle demons from hell, now from the comfort of your browser!. Experience fast-paced action, iconic weapons, and atmospheric levels in this groundbreaking game that defined the FPS genre.", link: "applications.html", position: { x: 20, y: -5, z: -3 }, size: 0.4, color: 0xff0000, glowColor: 0xffdd00 },
       { title: "THOTBGONE", description: "A content filtering application for social media platforms that helps users maintain a positive online experience. Uses a static custom database to identify and filter out unwanted Adult content based on user preferences and behavior patterns.", link: "applications.html", position: { x: 20, y: -7, z: -4 }, size: 0.4, color: 0xff0000, glowColor: 0xffdd00 },
-      { title: "Worm Driller", description: "Directional drilling application that calculates complex wellbore trajectories and provides real-time analysis for drilling operations. Essential tool for petroleum engineers and drilling specialists.", link: "applications.html", position: { x: 20, y: -9, z: -5 }, size: 0.4, color: 0xff0000, glowColor: 0xffdd00 },
+      { title: "WormDriller", description: "A browser-based drilling engineering workspace with BSEE reference wells, 3D trajectories, and migrated field calculations.", link: "applications.html", position: { x: 20, y: -9, z: -5 }, size: 0.4, color: 0xff0000, glowColor: 0xffdd00 },
       { title: "Decennium Descent", description: "An immersive adventure game set in a medival universe where players navigate through a massive ever changing dungeon. Features a rich narrative, complex character development, and an immersive crafting system.", link: "applications.html", position: { x: 25, y: -5, z: -3 }, size: 0.4, color: 0xff0000, glowColor: 0xffdd00 },
-      { title: "Vibe w/ Excel", description: "A custom plugin which takes 20 of the most common Data Analysis tasks and makes them on a Right Click Menu. It uses VBA/Python/PowerShell.", link: "applications.html", position: { x: 25, y: -7, z: -4 }, size: 0.4, color: 0xff0000, glowColor: 0xffdd00 },
+      { title: "Vibe w/ Excel", description: "A browser-based workbook assistant for guided cleaning, analysis, pivot tables, charts, and downloadable results.", link: "applications.html", position: { x: 25, y: -7, z: -4 }, size: 0.4, color: 0xff0000, glowColor: 0xffdd00 },
       { title: "Shape Invaders", description: "Read more about this Geometric space shooter!", link: "applications.html", position: { x: 25, y: -9, z: -5 }, size: 0.4, color: 0xff0000, glowColor: 0xffdd00 }
     ];
     
@@ -884,5 +896,6 @@
     
     animate();
   </script>
+  <script src="site.js"></script>
 </body>
 </html>

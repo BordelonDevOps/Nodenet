@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Christopher Bordelon about data analysis, automation, application development, or project collaboration.">
   <title>Contact | Christopher Bordelon</title>
   <style>
     :root {
@@ -277,6 +278,7 @@
       margin-top: 2rem;
     }
   </style>
+  <link rel="stylesheet" href="site.css">
 </head>
 <body>
   <!-- Navigation Bar from nodetest.html -->
@@ -319,6 +321,7 @@
     <div class="contact-container">
       <div class="contact-form">
         <h2>Send a Message</h2>
+        <p class="site-notice">This form opens a pre-addressed message in your email application. The website does not collect or store your submission.</p>
         <form id="contact-form" action="#" method="POST">
           <div class="form-group">
             <label for="name">Name</label>
@@ -345,7 +348,7 @@
             <textarea id="message" name="message" required></textarea>
           </div>
           
-          <button type="submit" class="btn">Send Message</button>
+          <button type="submit" class="btn">Open Email Draft</button>
         </form>
       </div>
       
@@ -372,7 +375,7 @@
           <div class="contact-icon">🌐</div>
           <div class="contact-text">
             <h4>Website</h4>
-            <p><a href="index.html">christopherbordelon.com</a></p>
+            <p><a href="https://bordelondevops.github.io/Nodenet/">bordelondevops.github.io/Nodenet</a></p>
           </div>
         </div>
         
@@ -386,17 +389,11 @@
         
         <h3>Connect on Social Media</h3>
         <div class="social-links">
-          <a href="#" class="social-link" title="GitHub">
+          <a href="https://github.com/BordelonDevOps" class="social-link" title="GitHub" aria-label="GitHub profile" target="_blank">
             <span>GH</span>
           </a>
-          <a href="#" class="social-link" title="Twitter">
-            <span>TW</span>
-          </a>
-          <a href="#" class="social-link" title="Medium">
-            <span>ME</span>
-          </a>
-          <a href="#" class="social-link" title="Stack Overflow">
-            <span>SO</span>
+          <a href="https://www.linkedin.com/in/christopher-b-b61554319" class="social-link" title="LinkedIn" aria-label="LinkedIn profile" target="_blank">
+            <span>IN</span>
           </a>
         </div>
       </div>
@@ -408,23 +405,16 @@
   </div>
 
   <script>
-    // Simple form validation and submission handling
     document.getElementById('contact-form').addEventListener('submit', function(e) {
       e.preventDefault();
-      
-      // Get form values
       const name = document.getElementById('name').value;
       const email = document.getElementById('email').value;
-      const subject = document.getElementById('subject').value;
+      const subject = document.getElementById('subject').selectedOptions[0].text;
       const message = document.getElementById('message').value;
-      
-      // In a real implementation, you would send this data to a server
-      // For now, we'll just show an alert
-      alert(`Thank you for your message, ${name}! I'll get back to you soon.`);
-      
-      // Reset the form
-      this.reset();
+      const body = `Name: ${name}\nReply email: ${email}\n\n${message}`;
+      window.location.href = `mailto:bordelondevops2025@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     });
   </script>
+  <script src="site.js"></script>
 </body>
 </html>
