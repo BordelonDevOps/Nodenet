@@ -229,22 +229,22 @@
             <p><a href="portfolio.html">Back to Portfolio</a></p>
         </div>
         <h1>Work Automation Suite: A GeoAccess Reporting Transformation</h1>
-        <p>In this project, I tackled a real-world challenge for a healthcare logistics client, turning a tedious, 20-hour weekly reporting process into a streamlined, near-instant automated workflow using VBA, Python, and PowerShell. Here's the full story of how it came together.</p>
+        <p>This case study presents a prototype for consolidating five recurring GeoAccess reporting workflows with VBA, Python, and PowerShell.</p>
+        <p><strong>Accuracy note:</strong> The 90% time reduction below is modeled from a 20-hour monthly baseline and two hours of monthly review. File processing and logging are demonstrated; outbound email delivery is represented as an integration point rather than a completed production feature.</p>
 
         <h3>The Situation: A Manual Reporting Bottleneck</h3>
-        <p>Picture this: every month, a small team of six at a healthcare logistics company was drowning in a repetitive, manual process.This task took up almost 5 hours of their morning 5 days a week. This was roughly 30 hours a week of lost productivity! If they were paid $10.00 per hour that is $300 a day x 5 days a week = $1500 a week, $6k per month or a whopping $72,000 per year!!!!! Their task? Generate and distribute GeoAccess reports—critical documents tracking service accessibility for clients like Aetna, Humana, and Healthy Blue, who are insurance companies. These reports arrived as CSV attachments in Salesforce-generated emails, landing in an Outlook folder aptly named "Salesforce." The team had to download each attachment, convert it to Excel, format it for each individual Insurance Plan, and email it to specific stakeholders—member services for Aetna and Humana, IT for HB upload requests. Humana threw an extra curveball: a Word attestation document needing a date update with each report.</p>
-        <p>There were five report types to wrangle: Aetna Monday, Aetna Tuesday-Friday, Humana Daily, Healthy Blue Monday, and HB Tuesday-Friday. Each had its own quirks—different recipients, file paths, and delivery needs. What started as a straightforward task ballooned into a 20-hour monthly ordeal, eating up valuable time and risking human error with every step.</p>
+        <p>A healthcare logistics reporting workflow required staff to retrieve Salesforce-generated CSV attachments from Outlook, convert them to Excel, apply plan-specific handling, and prepare files for the appropriate recipients. Humana reports also required a dated Word attestation.</p>
+        <p>The workflow covered five report types: Aetna Monday, Aetna Tuesday-Friday, Humana Daily, Healthy Blue Monday, and Healthy Blue Tuesday-Friday. The case-study baseline assigns approximately 20 staff hours per month to this repetitive work.</p>
 
         <h3>The Issue Identified: Time, Errors, and Missed Opportunities</h3>
-        <p>The deeper I dug, the clearer the problem became. The process wasn't just slow—it was brittle. Downloading attachments one by one from Outlook was a slog, especially when emails piled up. Converting CSVs to Excel manually meant reformatting columns and praying nothing got misaligned. Emailing the right files to the right people—Aetna's four recipients, Humana's single point of contact, HB's IT team—required constant double-checking. And that Humana attestation? Someone had to open Word, find the "Date:" field, type in the current date, and save a new copy with current date every time.</p>
-        <p>The client estimated 20 hours weekly across these tasks, but I suspected it was more when you factored in fixes for inevitable mistakes—wrong files sent, formatting glitches, or missed deadlines. This wasn't just a time sink; it was a missed opportunity to free up staff for higher-value work. I knew automation could turn this around, but it had to fit the client's tech stack and unique needs.</p>
+        <p>The main risks were repetitive file handling, inconsistent formatting, incorrect routing, missed deadlines, and manual attestation updates. The solution needed to fit a Microsoft Office environment while leaving a visible processing record for review.</p>
 
-        <h3>The Solution: A Hybrid Automation Symphony</h3>
-        <p>My approach was to build a "Work Automation Suite" that played to the strengths of three tools I knew well: VBA, Python, and PowerShell. The client was entrenched in Microsoft Office, so VBA was the natural starting point—perfect for kicking things off from Excel and integrating with Outlook. Python brought the horsepower for file handling and data processing, while PowerShell added a safety net with logging. Here's how I stitched it together:</p>
+        <h3>The Solution: A Hybrid Automation Workflow</h3>
+        <p>The prototype assigns orchestration, processing, and logging to tools suited to the client's Microsoft Office environment:</p>
         <ul>
-            <li><strong>VBA as the Conductor</strong>: I wrote a VBA script to run daily via Windows Task Scheduler. It looped through the five report types, passing each as a parameter to a Python script—like handing off a baton in a relay race.</li>
+            <li><strong>VBA orchestration</strong>: A scheduled VBA entry point loops through the five report types and passes each one to the Python processor.</li>
             <li><strong>Python as the Workhorse</strong>: I consolidated the five report workflows into one Python script, `geoaccess_processor.py`. Using command-line arguments (e.g., `--report-type "Humana"`), it connected to Outlook, pulled CSVs from the Salesforce folder, converted them to Excel, and mocked email distribution for this demo. For Humana, it also updated the Word attestation with the current date.</li>
-            <li><strong>PowerShell as the Chronicler</strong>: A simple PowerShell script logged each run's outcome—success or failure—to a text file, giving a paper trail of what happened when.</li>
+            <li><strong>PowerShell logging</strong>: A PowerShell script records each run's reported outcome in a text log for later review.</li>
         </ul>
         <p>The beauty was in the consolidation: one Python script handled all report types by reading a config dictionary, cutting down on code sprawl. VBA kept it simple, just firing off commands, while PowerShell ensured I could show the client what ran and why. Below are snippets of how it worked:</p>
 
@@ -262,7 +262,7 @@
     shell.Run "powershell.exe -File ""C:\Users\JSmith\Documents\Reports\Scripts\log_process.ps1""", 1, True
 End Sub</code></pre>
         
-        <p>This VBA script was the spark—scheduled daily, it kicked off Python for each report type and then called PowerShell to log the results.</p>
+        <p>The VBA entry point starts Python for each report type and then invokes the PowerShell logging step.</p>
 
         <h4>Python: The Heavy Lifter</h4>
 <pre><code># geoaccess_processor.py
@@ -308,7 +308,7 @@ excel.Quit()
 
 print(f"{report_type} processed.")</code></pre>
         
-        <p>Python did the grunt work—grabbing CSVs, updating Humana's attestation, and converting files. Email sending was mocked for this demo but designed to fit client needs.</p>
+        <p>Python retrieves CSV attachments, updates the Humana attestation, and converts files. Email delivery is mocked in this demonstration and would require production credentials, recipient validation, error handling, and approval controls.</p>
 
         <h4>PowerShell: The Record Keeper</h4>
 <pre><code># log_process.ps1
@@ -320,23 +320,22 @@ foreach ($type in $reportTypes) {
     "[$timestamp] $type report processed." | Out-File -FilePath $logFile -Append
 }</code></pre>
         
-        <p>PowerShell logged each run—simple but effective for showing the client what happened.</p>
+        <p>PowerShell provides a simple processing log for operator review.</p>
 
-        <h3>The Result: From 20 Hours to 2 Hours</h3>
-        <p>The impact was immediate. Once scheduled, the suite ran daily at 4:00 AM, handling all five report types in one go. Aetna reports landed in member services' inboxes with Excel files attached. Humana's reports included the updated attestation, perfectly formatted. HB reports saved to an upload folder with IT notified—no attachments needed. What once took 20 hours of manual effort shrank to 2 hours of oversight—checking logs and outputs. That's a 90% time reduction, freeing the team for strategic tasks.</p>
-        <p>The client saw fewer errors, too—no more mis-sent files or formatting snafus. The logs gave them confidence, showing exactly when each report ran and what it produced. It wasn't just about speed; it was about reliability and reclaiming time.</p>
-        <p>If your data is consistent and your workflow doesn't change, why not automate it?
+        <h3>Modeled Result: From 20 Monthly Hours to 2</h3>
+        <p>Using the case-study baseline, automating attachment retrieval, conversion, attestation updates, and logging reduces monthly handling from 20 hours to approximately two hours of output and log review. That is a modeled 90% reduction, not a production measurement.</p>
+        <p>The workflow also centralizes repeatable steps and creates an audit trail. Production deployment would still require secure configuration, recipient validation, monitoring, and tested recovery procedures.</p>
 
         <h3>Lessons Learned: Insights from the Trenches</h3>
         <p>This project taught me a lot about automation and client work:</p>
         <ul>
             <li><strong>Hybrid Tools Are Gold</strong>: VBA's Office hooks, Python's versatility, and PowerShell's logging made a killer combo. Each tool played its part, proving you don't need one language to rule them all.</li>
             <li><strong>Consolidation Saves Sanity</strong>: Writing one Python script with parameters instead of five separate ones cut down on complexity. It's easier to tweak one file than juggle a handful.</li>
-            <li><strong>Client Quirks Matter</strong>: Humana's attestation and HB's upload twist showed me how critical it is to tailor solutions to the client's exact workflow—not just automate for automation's sake.</li>
+            <li><strong>Workflow details matter</strong>: Humana's attestation and Healthy Blue's upload path show why automation must reflect the actual process.</li>
             <li><strong>Logs Build Trust</strong>: Even a basic log file turned a black-box process into something the client could see and understand. It's not just about running; it's about proving it ran right.</li>
-            <li><strong>Time's the Real Win</strong>: Saving 18 hours a month wasn't just a stat—it was a game-changer for the team's morale and focus. Automation's value shines brightest when it hands time back.</li>
+            <li><strong>Review time remains necessary</strong>: The modeled savings assume two monthly hours for checking logs, outputs, and exceptions.</li>
         </ul>
-        <p>This wasn't a generic script—it was a custom fit for a client's pain point, and that's what made it sing. It's a story I'm proud to tell, showing how the right tools, applied with care, can transform a process and a team.</p>
+        <p>The prototype demonstrates how a multi-tool workflow can reduce repetitive handling while preserving human review at the final control point.</p>
     </div>
      <p><a href="portfolio.html">Back to Portfolio</a></p>
 </div>

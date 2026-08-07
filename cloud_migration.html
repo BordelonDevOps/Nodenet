@@ -227,8 +227,9 @@
     <div class="nav">
         <p><a href="portfolio.html">Back to Portfolio</a></p>
     </div>
-    <h1>PowerShell Cloud Migration: Zero-Downtime Azure Transition</h1>
-    <p>In this project, I developed a suite of PowerShell scripts that enabled a seamless, zero-downtime migration of an international client's infrastructure to Microsoft Azure, saving them over $200,000 in annual hosting costs while maintaining 99.99% uptime during the transition.</p>
+    <h1>PowerShell Cloud Migration: Controlled Azure Transition</h1>
+    <p>This case study presents a PowerShell framework for assessing, migrating, validating, and cutting over a multi-region environment to Microsoft Azure with limited service disruption and rollback support.</p>
+    <p><strong>Accuracy note:</strong> Availability, cost, and performance figures below are reported case-study estimates. They are not independently audited, and the documented maintenance windows mean this should not be described as a literal zero-downtime migration.</p>
 
     <h3>The Challenge: Legacy Infrastructure Holding Back Growth</h3>
     <p>A mid-sized manufacturing company with operations in the US, Europe, and Asia was struggling with their aging on-premises infrastructure. Their situation was challenging:</p>
@@ -1331,12 +1332,12 @@ Stop-Transcript</code></pre>
 
     <p>This script handled the critical cutover process, testing applications on both source and target servers before updating DNS and load balancer configurations to redirect traffic to the Azure environment. It included comprehensive error handling and rollback capabilities to ensure business continuity.</p>
 
-    <h3>The Results: A Seamless Transition with Significant Benefits</h3>
-    <p>The PowerShell Cloud Migration project delivered impressive results:</p>
+    <h3>Reported Case-Study Outcomes</h3>
+    <p>The project record describes the following outcomes:</p>
     <ul>
-        <li><strong>Zero Downtime Migration:</strong> The entire migration was completed with 99.99% uptime, with only brief, scheduled maintenance windows for final cutover of the most critical systems.</li>
-        <li><strong>$200,000+ Annual Cost Savings:</strong> By eliminating hardware maintenance contracts, data center costs, and optimizing Azure resources, the client saved over $200,000 annually.</li>
-        <li><strong>Improved Global Performance:</strong> Applications were deployed to Azure regions closest to users, reducing latency by up to 40% for international offices.</li>
+        <li><strong>Limited Disruption:</strong> The case study reports 99.99% availability during the transition, including brief scheduled maintenance windows for critical cutovers.</li>
+        <li><strong>Estimated Annual Savings:</strong> The case study estimates more than $200,000 in annual savings from retired maintenance contracts, data-center costs, and resource optimization.</li>
+        <li><strong>Reported Performance Improvement:</strong> Regional deployment was reported to reduce latency by as much as 40% for international offices.</li>
         <li><strong>Enhanced Disaster Recovery:</strong> The migration included setting up geo-redundant backups and failover capabilities that weren't feasible with the on-premises infrastructure.</li>
         <li><strong>Simplified Management:</strong> The IT team could now manage all resources through a single Azure portal, reducing administrative overhead.</li>
     </ul>

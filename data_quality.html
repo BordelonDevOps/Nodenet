@@ -228,10 +228,11 @@
         <p><a href="portfolio.html">Back to Portfolio</a></p>
     </div>
     <h1>Data Quality Auditor: Rescuing Legacy Data for Salesforce Migration</h1>
-    <p>In this project, I developed a Python-based data quality auditing tool that helped a retail chain salvage and clean a decade's worth of corrupted legacy data for migration to Salesforce, reducing data errors by 40% and saving thousands in potential consulting fees.</p>
+    <p>This case study presents a Python-based data quality auditor for profiling, cleaning, reconciling, and exporting legacy records for a Salesforce migration.</p>
+    <p><strong>Accuracy note:</strong> Issue rates, schedules, and avoided-cost figures below are case-study estimates based on the described source data and vendor quote. They are not independently audited.</p>
 
     <h3>The Challenge: A Data Migration Nightmare</h3>
-    <p>A regional retail chain with 35 locations was facing a critical challenge: migrating their customer and sales data from a legacy system to Salesforce. The data, accumulated over more than a decade, was stored in a mix of formats—SQL databases, Excel spreadsheets, and even some CSV files exported from an ancient point-of-sale system. Initial attempts at migration revealed alarming issues:</p>
+    <p>A regional retail chain with 35 locations was facing a critical challenge: migrating customer and sales data from a legacy system to Salesforce. The data, accumulated over more than a decade, was stored in SQL databases, Excel spreadsheets, and CSV exports from an older point-of-sale system. Initial migration attempts revealed several issues:</p>
     <ul>
         <li>Duplicate customer records with conflicting information</li>
         <li>Inconsistent date formats (MM/DD/YYYY, DD-MM-YYYY, YYYY/MM/DD)</li>
@@ -530,10 +531,10 @@ export_data.to_csv('salesforce_ready_data.csv', index=False)
 print(f"Exported {len(export_data)} clean records ready for Salesforce import")</code></pre>
 
     <h3>The Results: Clean Data, Happy Client</h3>
-    <p>The Data Quality Auditor tool delivered impressive results:</p>
+    <p>The case study records the following outcomes:</p>
     <ul>
-        <li><strong>40% Reduction in Data Errors:</strong> The automated cleaning process fixed the majority of issues, bringing the error rate down from 30-40% to under 10%.</li>
-        <li><strong>$65,000 Cost Savings:</strong> The client only needed minimal help from the Salesforce partner for data migration, saving approximately $65,000 in consulting fees.</li>
+        <li><strong>Lower Flagged-Record Rate:</strong> The automated process reportedly brought the estimated issue rate from 30-40% to below 10% in the cleaned dataset.</li>
+        <li><strong>Estimated Avoided Cost:</strong> Compared with the quoted $75,000 cleaning service, the case study estimates approximately $65,000 in avoided consulting expense.</li>
         <li><strong>Faster Migration Timeline:</strong> The data preparation phase was completed in 3 weeks instead of the estimated 8 weeks, accelerating the overall project timeline.</li>
         <li><strong>Better Data Visibility:</strong> The detailed audit reports gave the client unprecedented insight into their data quality issues, helping them implement better data governance moving forward.</li>
         <li><strong>Reusable Tool:</strong> The Data Quality Auditor was designed to be reusable, allowing the client to run regular data quality checks in their new Salesforce environment.</li>
