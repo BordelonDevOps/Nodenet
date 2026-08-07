@@ -213,6 +213,25 @@
             transform: translateY(-2px);
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
+
+        .card-doom { order: 1; }
+        .card-shapes { order: 2; }
+        .card-vibe { order: 3; }
+        .card-thot { order: 4; }
+        .card-traderiser { order: 5; }
+        .card-options { order: 6; }
+        .card-wormdriller { order: 7; }
+        .card-decennium { order: 8; }
+
+        .btn-disabled {
+            cursor: not-allowed;
+            opacity: 0.55;
+        }
+
+        .btn-disabled:hover {
+            transform: none;
+            box-shadow: none;
+        }
         
         /* Tech Tags */
         .tech-tags {
@@ -297,7 +316,7 @@
 <p>Explore my collection of applications and games, showcasing my skills in various programming languages and technologies. From browser-based games to practical utilities, these projects demonstrate my passion for creating engaging and useful software.</p>
 <div class="apps-grid">
 <!-- DOOM -->
-<div class="app-card">
+<div class="app-card card-doom">
 <div class="app-header">
 <h2><span class="app-icon">🔥</span> DOOM <span class="app-status status-completed">Completed</span></h2>
 </div>
@@ -324,7 +343,7 @@
 </div>
 </div>
 <!-- ThotBGone -->
-<div class="app-card">
+<div class="app-card card-thot">
 <div class="app-header">
 <h2><span class="app-icon">🛡️</span> ThotBGone <span class="app-status status-completed">Completed</span></h2>
 </div>
@@ -350,53 +369,54 @@
 </div>
 </div>
 <!-- Worm Driller -->
-<div class="app-card">
+<div class="app-card card-wormdriller">
 <div class="app-header">
-<h2><span class="app-icon">🔄</span> Worm Driller<span class="app-status status-completed">Completed</span></h2>
+<h2><span class="app-icon">🔄</span> WormDriller <span class="app-status status-development">In Development</span></h2>
 </div>
 <div class="app-body">
-<p>A commercial-grade Python application for calculating directional drilling parameters, trajectories, and optimizations for the oil and gas industry.</p>
+<p>A browser-based drilling engineering workspace for reviewing public well references, visualizing trajectories, and running migrated field calculations.</p>
 <p><strong>Features:</strong></p>
 <ul>
-<li>Accurate trajectory planning and visualization</li>
-<li>Real-time calculation of drilling parameters</li>
-<li>Support for multiple calculation methods (minimum curvature, radius of curvature, etc.)</li>
-<li>Data export in industry-standard formats</li>
-<li>Comprehensive reporting capabilities</li>
+<li>Unified selected-well workspace backed by bundled BSEE reference records</li>
+<li>Interactive survey tables and survey-derived 3D wellbore visualization</li>
+<li>Field-program calculations covering hydraulics, well control, cementing, casing, and drill-string workflows</li>
+<li>Traceable calculation provenance and per-well saved results</li>
+<li>Clearly labeled public-reference and demonstration data</li>
 </ul>
 <div class="tech-tags">
-<span class="tech-tag">Python</span>
-<span class="tech-tag">NumPy</span>
-<span class="tech-tag">Matplotlib</span>
-<span class="tech-tag">Pandas</span>
-<span class="tech-tag">PyQt</span>
+<span class="tech-tag">React</span>
+<span class="tech-tag">Vite</span>
+<span class="tech-tag">Three.js</span>
+<span class="tech-tag">JavaScript</span>
+<span class="tech-tag">BSEE Data</span>
 </div>
 </div>
 <div class="app-footer" style="text-align: center;">
 <a class="btn btn-primary" href="https://github.com/BordelonDevOps/WormDriller">About</a>
+<span class="btn btn-secondary btn-disabled" aria-disabled="true" title="Render deployment coming soon">Website</span>
 </div>
 </div>
 <!-- Vibe w/ Excel -->
-<div class="app-card">
+<div class="app-card card-vibe">
 <div class="app-header">
-<h2><span class="app-icon">📊</span> Vibe w/ Excel <span class="app-status status-development">In Development</span></h2>
+<h2><span class="app-icon">📊</span> Vibe w/ Excel <span class="app-status status-completed">Working</span></h2>
 </div>
 <div class="app-body">
-<p>An advanced Excel add-in that enhances data visualization and analysis capabilities with modern, interactive charts and automated reporting features.</p>
+<p>A browser-based workbook assistant for uploading Excel or CSV files, cleaning data, and quickly building practical analyses without advanced spreadsheet knowledge.</p>
 <p><strong>Features:</strong></p>
 <ul>
-<li>Custom visualization templates beyond Excel's standard offerings</li>
-<li>Automated data cleaning and preparation tools</li>
-<li>One-click report generation with customizable templates</li>
-<li>Integration with external data sources</li>
-<li>Advanced statistical analysis functions</li>
+<li>Browser upload and workbook inspection workflow</li>
+<li>Guided cleaning, transformation, and validation tasks</li>
+<li>Quick pivot-table and pivot-chart setup</li>
+<li>Common complex spreadsheet tasks presented as reusable actions</li>
+<li>Downloadable processed workbook results</li>
 </ul>
 <div class="tech-tags">
-<span class="tech-tag">VBA</span>
-<span class="tech-tag">Excel</span>
-<span class="tech-tag">JavaScript</span>
-<span class="tech-tag">Office Add-in API</span>
 <span class="tech-tag">Python</span>
+<span class="tech-tag">Flask</span>
+<span class="tech-tag">OpenPyXL</span>
+<span class="tech-tag">Excel</span>
+<span class="tech-tag">CSV</span>
 </div>
 </div>
 <div class="app-footer" style="text-align: center;">
@@ -405,7 +425,7 @@
 </div>
 </div>
 <!-- Shape Invaders -->
-<div class="app-card">
+<div class="app-card card-shapes">
 <div class="app-header">
 <h2><span class="app-icon">🎮</span> Shape Invaders: Ascension <span class="app-status status-completed">Playable</span></h2>
 </div>
@@ -433,7 +453,7 @@
 </div>
 </div>
 <!-- Decennium Descent -->
-<div class="app-card">
+<div class="app-card card-decennium">
 <div class="app-header">
 <h2><span class="app-icon">🎲</span> Decennium Descent <span class="app-status status-development">In Development</span></h2>
 </div>
@@ -459,9 +479,9 @@
 </div>
 </div>
 <!-- TradeRiser -->
-<div class="app-card">
+<div class="app-card card-traderiser">
 <div class="app-header">
-<h2><span class="app-icon">📈</span> TradeRiser <span class="app-status status-development">Validated Locally</span></h2>
+<h2><span class="app-icon">📈</span> TradeRiser <span class="app-status status-development">In Development</span></h2>
 </div>
 <div class="app-body">
 <p>An educational Flask market-research toolkit for security lookup, portfolio metrics, and rules-based asset-allocation illustrations.</p>
@@ -477,14 +497,14 @@
 </div>
 </div>
 <div class="app-footer" style="text-align: center;">
-<a class="btn btn-primary" href="https://github.com/BordelonDevOps/TradeRiser-Support">TradeRiser</a>
-<a class="btn btn-secondary" href="https://github.com/BordelonDevOps/TradeRiser-Support#readme">About</a>
+<a class="btn btn-primary" href="https://github.com/BordelonDevOps/TradeRiser.AI">About</a>
+<span class="btn btn-secondary btn-disabled" aria-disabled="true" title="Render deployment coming soon">Website</span>
 </div>
 </div>
 <!-- Options Strategy -->
-<div class="app-card">
+<div class="app-card card-options">
 <div class="app-header">
-<h2><span class="app-icon">📊</span> Options Strategy <span class="app-status status-completed">Tested</span></h2>
+<h2><span class="app-icon">📊</span> Options Strategy <span class="app-status status-development">In Development</span></h2>
 </div>
 <div class="app-body">
 <p>An educational options modeling application for constructing multi-leg strategies and visualizing modeled profit and loss.</p>
@@ -500,8 +520,8 @@
 </div>
 </div>
 <div class="app-footer" style="text-align: center;">
-<a class="btn btn-primary" href="https://github.com/BordelonDevOps/Options_Strategy">Options Strategy</a>
-<a class="btn btn-secondary" href="https://github.com/BordelonDevOps/Options_Strategy#readme">About</a>
+<a class="btn btn-primary" href="https://github.com/BordelonDevOps/Options_Strategy">About</a>
+<span class="btn btn-secondary btn-disabled" aria-disabled="true" title="Render deployment coming soon">Website</span>
 </div>
 </div>
 </div>
