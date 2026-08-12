@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "published_at": "2026-08-12T14:56:53.297540+00:00",
+  "published_at": "2026-08-12T16:14:05.173199+00:00",
   "experiment": {
     "name": "$15 Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -8,9 +8,9 @@
     "objective": "Test how TradeRiser's rules perform in a $15 account over 21 days."
   },
   "account": {
-    "value": 15.0047,
+    "value": 15.0178,
     "cash": 3.51,
-    "invested": 11.4964,
+    "invested": 11.5072,
     "buying_power": 3.51,
     "currency": "USD"
   },
@@ -20,7 +20,7 @@
       "shares": 0.008722,
       "average_price": 773.91,
       "cost_basis": 6.75,
-      "current_value": 6.7375,
+      "current_value": 6.7363,
       "strategy": "champion"
     },
     {
@@ -28,7 +28,7 @@
       "shares": 0.015771,
       "average_price": 301.19,
       "cost_basis": 4.7501,
-      "current_value": 4.7589,
+      "current_value": 4.7709,
       "strategy": "champion"
     }
   ],
@@ -178,7 +178,7 @@
     },
     {
       "kind": "champion",
-      "generated_at": "2026-08-12T14:10:17.530415+00:00",
+      "generated_at": "2026-08-12T16:13:07.824306+00:00",
       "status": "not_authorized",
       "selected": [
         "IWM",
@@ -186,11 +186,6 @@
         "SPY"
       ],
       "orders": [
-        {
-          "symbol": "IWM",
-          "side": "sell",
-          "dollars": 2.01
-        },
         {
           "symbol": "QQQ",
           "side": "buy",
@@ -244,43 +239,43 @@
         "symbol": "SPY"
       },
       {
-        "annualized_volatility": 0.180827,
-        "distance_from_200d_average": 0.130148,
+        "annualized_volatility": 0.180952,
+        "distance_from_200d_average": 0.132325,
         "eligible": true,
-        "momentum_126d": 0.139057,
-        "momentum_63d": 0.071002,
-        "price": 301.915,
-        "score": 0.543193,
+        "momentum_126d": 0.141264,
+        "momentum_63d": 0.073077,
+        "price": 302.5,
+        "score": 0.554576,
         "symbol": "IWM"
       },
       {
-        "annualized_volatility": 0.258898,
-        "distance_from_200d_average": 0.118548,
+        "annualized_volatility": 0.258671,
+        "distance_from_200d_average": 0.116573,
         "eligible": true,
-        "momentum_126d": 0.188942,
-        "momentum_63d": 0.026649,
-        "price": 725.29,
-        "score": 0.353676,
+        "momentum_126d": 0.186832,
+        "momentum_63d": 0.024827,
+        "price": 724.0027,
+        "score": 0.346498,
         "symbol": "QQQ"
       },
       {
-        "annualized_volatility": 0.252048,
-        "distance_from_200d_average": -0.013591,
+        "annualized_volatility": 0.251508,
+        "distance_from_200d_average": -0.016006,
         "eligible": false,
-        "momentum_126d": -0.120934,
-        "momentum_63d": -0.061095,
-        "price": 406.48,
-        "score": -0.33736,
+        "momentum_126d": -0.123097,
+        "momentum_63d": -0.063405,
+        "price": 405.48,
+        "score": -0.347034,
         "symbol": "GLD"
       },
       {
-        "annualized_volatility": 0.092351,
-        "distance_from_200d_average": -0.034987,
+        "annualized_volatility": 0.092314,
+        "distance_from_200d_average": -0.035511,
         "eligible": false,
-        "momentum_126d": -0.048925,
-        "momentum_63d": -0.020142,
-        "price": 82.315,
-        "score": -0.342772,
+        "momentum_126d": -0.049444,
+        "momentum_63d": -0.020677,
+        "price": 82.2701,
+        "score": -0.348634,
         "symbol": "TLT"
       }
     ],
