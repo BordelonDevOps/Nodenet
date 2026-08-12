@@ -1,6 +1,6 @@
 {
-  "schema_version": "1.0.0",
-  "published_at": "2026-08-12T14:11:53.514511+00:00",
+  "schema_version": "1.1.0",
+  "published_at": "2026-08-12T14:25:49.146866+00:00",
   "experiment": {
     "name": "$15 Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -8,10 +8,10 @@
     "objective": "Test how TradeRiser's rules perform in a $15 account over 21 days."
   },
   "account": {
-    "value": 15.0117,
+    "value": 15.0069,
     "cash": 3.51,
     "invested": 11.499,
-    "buying_power": 1.5,
+    "buying_power": 3.51,
     "currency": "USD"
   },
   "holdings": [
@@ -30,6 +30,22 @@
       "cost_basis": 4.7501,
       "current_value": 4.7614,
       "strategy": "champion"
+    }
+  ],
+  "trades": [
+    {
+      "symbol": "IWM",
+      "side": "sell",
+      "dollar_amount": 2.01,
+      "state": "filled",
+      "quantity": 0.00665,
+      "average_price": 301.9516,
+      "fees": 0.0,
+      "reconciled_at": "2026-08-12T14:11:14.095462+00:00",
+      "deferred_follow_up": {
+        "QQQ": 3.33,
+        "status": "awaiting_settled_buying_power"
+      }
     }
   ],
   "decisions": [
