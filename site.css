@@ -71,16 +71,16 @@ textarea:focus-visible {
 
 .container:has(.apps-grid) { max-width: 1500px; }
 .app-header, .app-body { padding: 1rem !important; }
-.app-header h2 { align-items: flex-start !important; flex-wrap: wrap; gap: .35rem; font-size: clamp(1.05rem, 1.7vw, 1.3rem); }
-.app-status { margin-left: auto !important; }
+.app-header h2 { font-size: clamp(1.05rem, 1.7vw, 1.3rem); }
+.app-status { margin-left: 0 !important; }
 .app-body { font-size: .92rem; }
 .app-footer { flex-wrap: wrap; }
 
 @media (min-width: 1200px) {
   .apps-grid { gap: 1rem !important; }
   .app-header, .app-body { padding: 1.1rem !important; }
-  .app-header h2 { align-items: flex-start !important; flex-wrap: wrap; gap: .35rem; font-size: 1.25rem; }
-  .app-status { margin-left: auto !important; }
+  .app-header h2 { font-size: 1.25rem; }
+  .app-status { margin-left: 0 !important; }
   .app-body { font-size: .93rem; }
 }
 
@@ -109,6 +109,4 @@ textarea:focus-visible {
 @media (max-width: 600px) {
   .container { padding: 16px !important; }
   .home-intro { padding: 18px; }
-  .app-header h2 { flex-wrap: wrap; gap: .4rem; }
-  .app-status { margin-left: 0 !important; }
 }

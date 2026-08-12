@@ -119,6 +119,7 @@
         /* Applications Grid */
         .apps-grid {
             display: grid;
+            grid-auto-rows: 1fr;
             grid-template-columns: repeat(4, minmax(0, 1fr));
             gap: 1.25rem;
             margin-top: 2rem;
@@ -126,19 +127,20 @@
         
         .app-card {
             background: rgba(15, 26, 48, 0.95);
-            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 12px;
             overflow: hidden;
             box-shadow: 0 3px 10px rgba(0,0,0,0.3);
-            transition: transform 0.3s ease;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
             height: 100%;
             display: flex;
             flex-direction: column;
         }
         
         .app-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(0,0,0,0.4);
-            outline: 1px solid var(--star);
+            border-color: var(--star);
         }
         
 .app-header {
@@ -182,26 +184,53 @@
         }
         
         .app-body {
-            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
             flex-grow: 1;
+            padding: 1.25rem;
+        }
+
+        .app-body > p:first-child {
+            margin-bottom: 1.1rem;
+        }
+
+        .app-body h3 {
+            font-size: 0.78rem;
+            letter-spacing: 0.06em;
+            margin: 0 0 0.6rem;
+            text-transform: uppercase;
+        }
+
+        .app-body ul {
+            margin: 0 0 1rem;
+            padding-left: 1.15rem;
+        }
+
+        .app-body li + li {
+            margin-top: 0.4rem;
         }
         
         .app-footer {
-            padding: 1rem 1.5rem;
+            align-items: center;
             background-color: rgba(0, 0, 0, 0.2);
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             display: flex;
-            justify-content: center;
             gap: 0.5rem;
-
+            min-height: 72px;
+            padding: 0.9rem 1.25rem;
         }
         
         .btn {
-            display: inline-block;
+            align-items: center;
+            display: inline-flex;
+            flex: 1 1 0;
+            justify-content: center;
+            min-height: 40px;
             padding: 0.5rem 1rem;
             border-radius: 4px;
             text-decoration: none;
             font-weight: bold;
+            text-align: center;
             transition: all 0.3s ease;
         }
         
@@ -244,7 +273,8 @@
             display: flex;
             flex-wrap: wrap;
             gap: 0.5rem;
-            margin-top: 1rem;
+            margin-top: auto;
+            padding-top: 0.25rem;
         }
         
         .tech-tag {
@@ -291,6 +321,7 @@
 
         @media (max-width: 600px) {
             .apps-grid {
+                grid-auto-rows: auto;
                 grid-template-columns: 1fr;
             }
         }
@@ -342,7 +373,7 @@
 </div>
 <div class="app-body">
 <p>A browser-based version of the classic first-person shooter game where you battle demons from hell. Experience fast-paced action, iconic weapons, and atmospheric levels in this groundbreaking game.</p>
-<p><strong>Features:</strong></p>
+<h3>Features</h3>
 <ul>
 <li>Authentic DOOM gameplay experience in your browser</li>
 <li>Classic weapons including the shotgun, chaingun, and BFG</li>
@@ -355,9 +386,9 @@
 <span class="tech-tag">Emulation</span>
 </div>
 </div>
-<div class="app-footer" style="text-align: center;">
-<a class="btn btn-primary" href="https://bordelondevops.github.io/Doom_on_Browser/">Play Now</a>
-<a class="btn btn-secondary" href="https://github.com/BordelonDevOps/Doom_on_Browser">View Source</a>
+<div class="app-footer">
+<a class="btn btn-primary" href="https://bordelondevops.github.io/Doom_on_Browser/">Play</a>
+<a class="btn btn-secondary" href="https://github.com/BordelonDevOps/Doom_on_Browser">About</a>
 </div>
 </div>
 <!-- ThotBGone -->
@@ -368,7 +399,7 @@
 </div>
 <div class="app-body">
 <p>A privacy-focused Chrome extension that locally filters selected adult promotions and platform links from X timelines.</p>
-<p><strong>Features:</strong></p>
+<h3>Features</h3>
 <ul>
 <li>Tested link and phrase rules with Balanced and Strict modes</li>
 <li>Account allowlists, blocklists, and one-time post reveal controls</li>
@@ -381,7 +412,7 @@
 <span class="tech-tag">Rules Engine</span>
 </div>
 </div>
-<div class="app-footer" style="text-align: center;">
+<div class="app-footer">
 <a class="btn btn-primary" href="https://github.com/BordelonDevOps/ThotBGone">About</a>
 </div>
 </div>
@@ -393,7 +424,7 @@
 </div>
 <div class="app-body">
 <p>A browser-based drilling engineering workspace for reviewing public well references, visualizing trajectories, and running migrated field calculations.</p>
-<p><strong>Features:</strong></p>
+<h3>Features</h3>
 <ul>
 <li>Unified selected-well workspace backed by bundled BSEE reference records</li>
 <li>Interactive survey tables and survey-derived 3D wellbore visualization</li>
@@ -407,7 +438,7 @@
 <span class="tech-tag">BSEE Data</span>
 </div>
 </div>
-<div class="app-footer" style="text-align: center;">
+<div class="app-footer">
 <a class="btn btn-primary" href="https://github.com/BordelonDevOps/WormDriller">About</a>
 <span class="btn btn-secondary btn-disabled" aria-disabled="true" title="Public website coming soon">Website: Coming Soon</span>
 </div>
@@ -420,7 +451,7 @@
 </div>
 <div class="app-body">
 <p>A browser-based workbook assistant for uploading Excel or CSV files, cleaning data, and quickly building practical analyses without advanced spreadsheet knowledge.</p>
-<p><strong>Features:</strong></p>
+<h3>Features</h3>
 <ul>
 <li>Browser upload and workbook inspection workflow</li>
 <li>Guided cleaning, transformation, and validation tasks</li>
@@ -435,7 +466,7 @@
 <span class="tech-tag">CSV</span>
 </div>
 </div>
-<div class="app-footer" style="text-align: center;">
+<div class="app-footer">
 <a class="btn btn-primary" href="https://github.com/BordelonDevOps/VibewExcel">About</a>
 <span class="btn btn-secondary btn-disabled" aria-disabled="true" title="Public website coming soon">Website: Coming Soon</span>
 </div>
@@ -448,7 +479,7 @@
 </div>
 <div class="app-body">
 <p>A Galaga-inspired geometric arcade RPG rebuilt from the ground up as a dependency-free browser game.</p>
-<p><strong>Features:</strong></p>
+<h3>Features</h3>
 <ul>
 <li>Custom Canvas game loop with formation entry, swooping attacks, collision detection, particles, and screen effects</li>
 <li>Five enemy archetypes, escalating waves, and dedicated boss encounters</li>
@@ -463,9 +494,9 @@
 <span class="tech-tag">GitHub Pages</span>
 </div>
 </div>
-<div class="app-footer" style="text-align: center;">
-<a class="btn btn-primary" href="https://bordelondevops.github.io/ShapeInvaders/">Play Now</a>
-<a class="btn btn-secondary" href="https://github.com/BordelonDevOps/ShapeInvaders">View Source</a>
+<div class="app-footer">
+<a class="btn btn-primary" href="https://bordelondevops.github.io/ShapeInvaders/">Play</a>
+<a class="btn btn-secondary" href="https://github.com/BordelonDevOps/ShapeInvaders">About</a>
 </div>
 </div>
 <!-- TradeRiser -->
@@ -476,7 +507,7 @@
 </div>
 <div class="app-body">
 <p>An educational Flask market-research toolkit for security lookup, portfolio metrics, and rules-based asset-allocation illustrations.</p>
-<p><strong>Verified capabilities:</strong></p>
+<h3>Features</h3>
 <ul>
 <li>Yahoo Finance-backed market lookup with provider-dependent availability</li>
 <li>Multi-ticker portfolio analysis and risk metrics</li>
@@ -487,7 +518,7 @@
 <span class="tech-tag">Python</span><span class="tech-tag">Flask</span><span class="tech-tag">Pandas</span><span class="tech-tag">yfinance</span>
 </div>
 </div>
-<div class="app-footer" style="text-align: center;">
+<div class="app-footer">
 <a class="btn btn-primary" href="https://github.com/BordelonDevOps/TradeRiser-Support">About</a>
 <a class="btn btn-secondary" href="traderiser/" title="View the public agentic trading record">View Live Experiment</a>
 </div>
@@ -500,7 +531,7 @@
 </div>
 <div class="app-body">
 <p>An educational options laboratory for constructing multi-leg strategies, visualizing modeled profit and loss, and learning how price, time, and volatility affect risk.</p>
-<p><strong>Verified capabilities:</strong></p>
+<h3>Features</h3>
 <ul>
 <li>Stock, call, and put legs with buy/sell actions</li>
 <li>Six working templates, including covered calls, spreads, iron condors, and straddles</li>
@@ -511,7 +542,7 @@
 <span class="tech-tag">Python</span><span class="tech-tag">Flask</span><span class="tech-tag">NumPy</span><span class="tech-tag">Matplotlib</span>
 </div>
 </div>
-<div class="app-footer" style="text-align: center;">
+<div class="app-footer">
 <a class="btn btn-primary" href="https://github.com/BordelonDevOps/Options_Strategy">About</a>
 <span class="btn btn-secondary btn-disabled" aria-disabled="true" title="Public website coming soon">Website: Coming Soon</span>
 </div>
