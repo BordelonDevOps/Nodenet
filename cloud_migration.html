@@ -228,6 +228,11 @@
         <p><a href="portfolio.html">Back to Portfolio</a></p>
     </div>
     <h1>PowerShell Cloud Migration: Controlled Azure Transition</h1>
+    <dl class="case-summary" aria-label="Case study summary">
+        <div><dt>Deliverable</dt><dd>PowerShell framework for inventory, staged migration, validation, cutover, and rollback.</dd></div>
+        <div><dt>Evidence</dt><dd>Representative scripts and workflow documentation are included on this page.</dd></div>
+        <div><dt>Limit</dt><dd>Business outcomes are reported case-study estimates, not independently audited production results.</dd></div>
+    </dl>
     <p>This case study presents a PowerShell framework for assessing, migrating, validating, and cutting over a multi-region environment to Microsoft Azure with limited service disruption and rollback support.</p>
     <p><strong>Accuracy note:</strong> Availability, cost, and performance figures below are reported case-study estimates. They are not independently audited, and the documented maintenance windows mean this should not be described as a literal zero-downtime migration.</p>
 
@@ -367,7 +372,7 @@ try {
     </style>
 </head>
 <body>
-    <h1>Server Inventory Report - $(Get-Date -Format 'yyyy-MM-dd')</h1>
+    &lt;h1&gt;Server Inventory Report - $(Get-Date -Format 'yyyy-MM-dd')&lt;/h1&gt;
     <table>
         <tr>
             <th>Server Name</th>
