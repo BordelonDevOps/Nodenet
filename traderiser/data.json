@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "published_at": "2026-08-12T16:18:40.561886+00:00",
+  "published_at": "2026-08-12T16:20:47.949943+00:00",
   "experiment": {
     "name": "$15 Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -104,8 +104,9 @@
       "fees": 0.0,
       "order_type": "market",
       "market_hours": "regular_hours",
-      "source": "user",
-      "authorization_label": "user override placed directly in Robinhood",
+      "source": "agentic",
+      "authorization_label": "agentic strategy authorized; user completed broker execution",
+      "execution_label": "user override in Robinhood",
       "reconciled_at": "2026-08-12T16:16:30.633Z",
       "authorized": null,
       "orders_match": true,
@@ -135,6 +136,7 @@
       "authorization_label": "agentic execution initiated in Codex",
       "reconciled": true,
       "source": "agentic",
+      "execution_label": null,
       "deferred_follow_up": null,
       "explanation": [
         "The champion proposal passed the live authorization gate and the broker outcome was reconciled."
@@ -163,6 +165,7 @@
       "authorization_label": "agentic execution initiated in Codex",
       "reconciled": true,
       "source": "agentic",
+      "execution_label": null,
       "deferred_follow_up": null,
       "explanation": [
         "The champion proposal passed the live authorization gate and the broker outcome was reconciled."
@@ -191,6 +194,7 @@
       "authorization_label": "delegated policy passed",
       "reconciled": true,
       "source": "agentic",
+      "execution_label": null,
       "deferred_follow_up": {
         "symbol": "QQQ",
         "dollars": 3.33,
@@ -220,12 +224,13 @@
         }
       ],
       "authorized": null,
-      "authorization_label": "user override placed directly in Robinhood",
+      "authorization_label": "agentic strategy authorized; user completed broker execution",
       "reconciled": true,
-      "source": "user",
+      "source": "agentic",
+      "execution_label": "user override in Robinhood",
       "deferred_follow_up": null,
       "explanation": [
-        "This trade was placed directly by the user in the Robinhood app; the broker fill was added for a complete historical record."
+        "TradeRiser selected and authorized this trade; the user completed the broker execution after the agent's order attempt failed."
       ],
       "regime": null
     },
