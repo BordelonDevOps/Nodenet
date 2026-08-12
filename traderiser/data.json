@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "published_at": "2026-08-12T16:14:05.173199+00:00",
+  "published_at": "2026-08-12T16:18:40.561886+00:00",
   "experiment": {
     "name": "$15 Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -8,10 +8,10 @@
     "objective": "Test how TradeRiser's rules perform in a $15 account over 21 days."
   },
   "account": {
-    "value": 15.0178,
-    "cash": 3.51,
-    "invested": 11.5072,
-    "buying_power": 3.51,
+    "value": 15.0177,
+    "cash": 0.0,
+    "invested": 15.0175,
+    "buying_power": 0.0,
     "currency": "USD"
   },
   "holdings": [
@@ -20,7 +20,7 @@
       "shares": 0.008722,
       "average_price": 773.91,
       "cost_basis": 6.75,
-      "current_value": 6.7363,
+      "current_value": 6.7376,
       "strategy": "champion"
     },
     {
@@ -28,7 +28,15 @@
       "shares": 0.015771,
       "average_price": 301.19,
       "cost_basis": 4.7501,
-      "current_value": 4.7709,
+      "current_value": 4.7704,
+      "strategy": "champion"
+    },
+    {
+      "symbol": "QQQ",
+      "shares": 0.004847,
+      "average_price": 724.16,
+      "cost_basis": 3.51,
+      "current_value": 3.5095,
       "strategy": "champion"
     }
   ],
@@ -85,6 +93,23 @@
         "dollars": 3.33,
         "status": "awaiting_settled_buying_power"
       }
+    },
+    {
+      "symbol": "QQQ",
+      "side": "buy",
+      "dollar_amount": 3.51,
+      "state": "filled",
+      "quantity": 0.004847,
+      "average_price": 724.06,
+      "fees": 0.0,
+      "order_type": "market",
+      "market_hours": "regular_hours",
+      "source": "user",
+      "authorization_label": "user override placed directly in Robinhood",
+      "reconciled_at": "2026-08-12T16:16:30.633Z",
+      "authorized": null,
+      "orders_match": true,
+      "deferred_follow_up": null
     }
   ],
   "decisions": [
@@ -177,9 +202,37 @@
       "regime": null
     },
     {
+      "kind": "executed_trade",
+      "generated_at": "2026-08-12T16:16:30.633Z",
+      "status": "filled",
+      "selected": [
+        "QQQ"
+      ],
+      "orders": [
+        {
+          "symbol": "QQQ",
+          "side": "buy",
+          "dollars": 3.51,
+          "status": "filled",
+          "quantity": 0.004847,
+          "average_price": 724.06,
+          "fees": 0.0
+        }
+      ],
+      "authorized": null,
+      "authorization_label": "user override placed directly in Robinhood",
+      "reconciled": true,
+      "source": "user",
+      "deferred_follow_up": null,
+      "explanation": [
+        "This trade was placed directly by the user in the Robinhood app; the broker fill was added for a complete historical record."
+      ],
+      "regime": null
+    },
+    {
       "kind": "champion",
       "generated_at": "2026-08-12T16:13:07.824306+00:00",
-      "status": "not_authorized",
+      "status": "rejected_before_order_creation",
       "selected": [
         "IWM",
         "QQQ",
@@ -189,17 +242,16 @@
         {
           "symbol": "QQQ",
           "side": "buy",
-          "dollars": 3.33
+          "dollars": 3.33,
+          "status": "rejected_before_order_creation"
         }
       ],
       "explanation": [
-        "Only assets above their 200-day average with positive 3- and 6-month momentum qualify.",
-        "Qualifying assets are ranked by volatility-adjusted momentum and sized by inverse volatility.",
-        "The account keeps at least the configured cash reserve and uses no leverage or short positions.",
-        "Small target changes inside the rebalance band are suppressed to reduce turnover.",
-        "This is a proposed paper-trading decision, not an executed order or profit guarantee."
+        "You can only purchase 0 shares of QQQ.",
+        "No order was created and no funds moved. The kill switch was activated."
       ],
-      "regime": null
+      "regime": null,
+      "authorized": true
     },
     {
       "kind": "challenger",
