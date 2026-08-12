@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "published_at": "2026-08-12T14:41:55.232732+00:00",
+  "published_at": "2026-08-12T14:56:53.297540+00:00",
   "experiment": {
     "name": "$15 Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -43,8 +43,8 @@
       "fees": 0.0,
       "order_type": "limit",
       "market_hours": "extended_hours",
-      "source": "user",
-      "authorization_label": "manual user order before agentic execution workflow",
+      "source": "agentic",
+      "authorization_label": "agentic execution initiated in Codex",
       "reconciled_at": "2026-08-10T11:42:13.225Z",
       "authorized": null,
       "orders_match": true,
@@ -60,8 +60,8 @@
       "fees": 0.0,
       "order_type": "limit",
       "market_hours": "extended_hours",
-      "source": "user",
-      "authorization_label": "manual user order before agentic execution workflow",
+      "source": "agentic",
+      "authorization_label": "agentic execution initiated in Codex",
       "reconciled_at": "2026-08-10T11:42:48.359Z",
       "authorized": null,
       "orders_match": true,
@@ -107,12 +107,12 @@
         }
       ],
       "authorized": null,
-      "authorization_label": "manual user order before agentic execution workflow",
+      "authorization_label": "agentic execution initiated in Codex",
       "reconciled": true,
-      "source": "user",
+      "source": "agentic",
       "deferred_follow_up": null,
       "explanation": [
-        "This trade was placed manually by the user before the agentic execution workflow; the broker fill was added for a complete historical record."
+        "The champion proposal passed the live authorization gate and the broker outcome was reconciled."
       ],
       "regime": null
     },
@@ -135,12 +135,12 @@
         }
       ],
       "authorized": null,
-      "authorization_label": "manual user order before agentic execution workflow",
+      "authorization_label": "agentic execution initiated in Codex",
       "reconciled": true,
-      "source": "user",
+      "source": "agentic",
       "deferred_follow_up": null,
       "explanation": [
-        "This trade was placed manually by the user before the agentic execution workflow; the broker fill was added for a complete historical record."
+        "The champion proposal passed the live authorization gate and the broker outcome was reconciled."
       ],
       "regime": null
     },
