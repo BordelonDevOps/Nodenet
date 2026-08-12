@@ -69,6 +69,43 @@ textarea:focus-visible {
   background: rgba(245,158,11,.12);
 }
 
+.case-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .75rem;
+  margin: 1rem 0 1.5rem;
+}
+.case-summary > div {
+  padding: .9rem 1rem;
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 8px;
+  background: rgba(15,26,48,.72);
+}
+.case-summary dt {
+  margin-bottom: .35rem;
+  color: var(--site-focus);
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.case-summary dd { margin: 0; line-height: 1.5; }
+
+.option-icon,
+.portfolio-img {
+  font-weight: 800;
+  letter-spacing: .04em;
+}
+.option-icon { font-size: 1.25rem !important; }
+.portfolio-img { font-size: 1.5rem !important; }
+.contact-icon {
+  min-width: 4.5rem;
+  font-size: .72rem !important;
+  font-weight: 800;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
 .container:has(.apps-grid) { max-width: 1500px; }
 .app-header, .app-body { padding: 1rem !important; }
 .app-header h2 { font-size: clamp(1.05rem, 1.7vw, 1.3rem); }
@@ -109,4 +146,5 @@ textarea:focus-visible {
 @media (max-width: 600px) {
   .container { padding: 16px !important; }
   .home-intro { padding: 18px; }
+  .case-summary { grid-template-columns: 1fr; }
 }
