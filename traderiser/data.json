@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "published_at": "2026-08-12T14:35:35.648077+00:00",
+  "published_at": "2026-08-12T14:39:58.107060+00:00",
   "experiment": {
     "name": "$15 Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -34,6 +34,40 @@
   ],
   "trades": [
     {
+      "symbol": "SPY",
+      "side": "buy",
+      "dollar_amount": 6.75,
+      "state": "filled",
+      "quantity": 0.008722,
+      "average_price": 773.8344,
+      "fees": 0.0,
+      "order_type": "limit",
+      "market_hours": "extended_hours",
+      "source": "user",
+      "authorization_label": "manual user order before agentic execution workflow",
+      "reconciled_at": "2026-08-10T11:42:13.225Z",
+      "authorized": null,
+      "orders_match": true,
+      "deferred_follow_up": null
+    },
+    {
+      "symbol": "IWM",
+      "side": "buy",
+      "dollar_amount": 6.75,
+      "state": "filled",
+      "quantity": 0.022421,
+      "average_price": 301.0532,
+      "fees": 0.0,
+      "order_type": "limit",
+      "market_hours": "extended_hours",
+      "source": "user",
+      "authorization_label": "manual user order before agentic execution workflow",
+      "reconciled_at": "2026-08-10T11:42:48.359Z",
+      "authorized": null,
+      "orders_match": true,
+      "deferred_follow_up": null
+    },
+    {
       "symbol": "IWM",
       "side": "sell",
       "dollar_amount": 2.01,
@@ -44,6 +78,8 @@
       "reconciled_at": "2026-08-12T14:11:14.095462+00:00",
       "authorized": true,
       "orders_match": true,
+      "source": "agentic",
+      "authorization_label": "delegated policy passed",
       "deferred_follow_up": {
         "symbol": "QQQ",
         "dollars": 3.33,
@@ -52,6 +88,62 @@
     }
   ],
   "decisions": [
+    {
+      "kind": "executed_trade",
+      "generated_at": "2026-08-10T11:42:13.225Z",
+      "status": "filled",
+      "selected": [
+        "SPY"
+      ],
+      "orders": [
+        {
+          "symbol": "SPY",
+          "side": "buy",
+          "dollars": 6.75,
+          "status": "filled",
+          "quantity": 0.008722,
+          "average_price": 773.8344,
+          "fees": 0.0
+        }
+      ],
+      "authorized": null,
+      "authorization_label": "manual user order before agentic execution workflow",
+      "reconciled": true,
+      "source": "user",
+      "deferred_follow_up": null,
+      "explanation": [
+        "The champion proposal passed the live authorization gate and the broker outcome was reconciled."
+      ],
+      "regime": null
+    },
+    {
+      "kind": "executed_trade",
+      "generated_at": "2026-08-10T11:42:48.359Z",
+      "status": "filled",
+      "selected": [
+        "IWM"
+      ],
+      "orders": [
+        {
+          "symbol": "IWM",
+          "side": "buy",
+          "dollars": 6.75,
+          "status": "filled",
+          "quantity": 0.022421,
+          "average_price": 301.0532,
+          "fees": 0.0
+        }
+      ],
+      "authorized": null,
+      "authorization_label": "manual user order before agentic execution workflow",
+      "reconciled": true,
+      "source": "user",
+      "deferred_follow_up": null,
+      "explanation": [
+        "The champion proposal passed the live authorization gate and the broker outcome was reconciled."
+      ],
+      "regime": null
+    },
     {
       "kind": "executed_trade",
       "generated_at": "2026-08-12T14:11:14.095462+00:00",
@@ -71,7 +163,9 @@
         }
       ],
       "authorized": true,
+      "authorization_label": "delegated policy passed",
       "reconciled": true,
+      "source": "agentic",
       "deferred_follow_up": {
         "symbol": "QQQ",
         "dollars": 3.33,
