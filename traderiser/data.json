@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "published_at": "2026-08-12T14:34:06.136279+00:00",
+  "published_at": "2026-08-12T14:35:35.648077+00:00",
   "experiment": {
     "name": "$15 Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -45,7 +45,8 @@
       "authorized": true,
       "orders_match": true,
       "deferred_follow_up": {
-        "QQQ": 3.33,
+        "symbol": "QQQ",
+        "dollars": 3.33,
         "status": "awaiting_settled_buying_power"
       }
     }
@@ -72,7 +73,8 @@
       "authorized": true,
       "reconciled": true,
       "deferred_follow_up": {
-        "QQQ": 3.33,
+        "symbol": "QQQ",
+        "dollars": 3.33,
         "status": "awaiting_settled_buying_power"
       },
       "explanation": [
