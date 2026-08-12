@@ -141,30 +141,34 @@
             outline: 1px solid var(--star);
         }
         
-        .app-header {
-            padding: 1.5rem;
+.app-header {
+            align-items: flex-start;
             background-color: rgba(15, 26, 48, 0.8);
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        .app-header h2 {
-            margin-bottom: 0.5rem;
             display: flex;
-            align-items: center;
+            flex-direction: column;
+            gap: 0.6rem;
+            justify-content: flex-start;
+            min-height: 86px;
+            padding: 1.25rem;
         }
         
-        .app-header h2 .app-icon {
-            margin-right: 0.5rem;
-            font-size: 1.5rem;
+.app-header h2 {
+            font-size: 1.2rem;
+            line-height: 1.25;
+            margin: 0;
         }
         
-        .app-status {
+.app-status {
             display: inline-block;
-            padding: 0.25rem 0.5rem;
-            border-radius: 4px;
-            font-size: 0.8rem;
+            border-radius: 999px;
+            flex: 0 0 auto;
+            font-size: 0.72rem;
             font-weight: bold;
-            margin-left: 0.5rem;
+            letter-spacing: 0.025em;
+            margin: 0;
+            padding: 0.3rem 0.6rem;
+            text-transform: uppercase;
         }
         
         .status-completed {
@@ -333,7 +337,8 @@
 <!-- DOOM -->
 <div class="app-card card-doom">
 <div class="app-header">
-<h2><span class="app-icon">🔥</span> DOOM <span class="app-status status-completed">Completed</span></h2>
+<h2>DOOM</h2>
+<span class="app-status status-completed">Available</span>
 </div>
 <div class="app-body">
 <p>A browser-based version of the classic first-person shooter game where you battle demons from hell. Experience fast-paced action, iconic weapons, and atmospheric levels in this groundbreaking game.</p>
@@ -358,7 +363,8 @@
 <!-- ThotBGone -->
 <div class="app-card card-thot">
 <div class="app-header">
-<h2><span class="app-icon">🛡️</span> ThotBGone <span class="app-status status-completed">Completed</span></h2>
+<h2>ThotBGone</h2>
+<span class="app-status status-completed">Available</span>
 </div>
 <div class="app-body">
 <p>A privacy-focused Chrome extension that locally filters selected adult promotions and platform links from X timelines.</p>
@@ -382,7 +388,8 @@
 <!-- Worm Driller -->
 <div class="app-card card-wormdriller">
 <div class="app-header">
-<h2><span class="app-icon">🔄</span> WormDriller <span class="app-status status-development">In Development</span></h2>
+<h2>WormDriller</h2>
+<span class="app-status status-development">In Development</span>
 </div>
 <div class="app-body">
 <p>A browser-based drilling engineering workspace for reviewing public well references, visualizing trajectories, and running migrated field calculations.</p>
@@ -408,7 +415,8 @@
 <!-- Vibe w/ Excel -->
 <div class="app-card card-vibe">
 <div class="app-header">
-<h2><span class="app-icon">📊</span> Vibe w/ Excel <span class="app-status status-completed">Working</span></h2>
+<h2>Vibe w/ Excel</h2>
+<span class="app-status status-completed">Available</span>
 </div>
 <div class="app-body">
 <p>A browser-based workbook assistant for uploading Excel or CSV files, cleaning data, and quickly building practical analyses without advanced spreadsheet knowledge.</p>
@@ -435,7 +443,8 @@
 <!-- Shape Invaders -->
 <div class="app-card card-shapes">
 <div class="app-header">
-<h2><span class="app-icon">🎮</span> Shape Invaders: Ascension <span class="app-status status-completed">Playable</span></h2>
+<h2>Shape Invaders: Ascension</h2>
+<span class="app-status status-completed">Available</span>
 </div>
 <div class="app-body">
 <p>A Galaga-inspired geometric arcade RPG rebuilt from the ground up as a dependency-free browser game.</p>
@@ -462,7 +471,8 @@
 <!-- TradeRiser -->
 <div class="app-card card-traderiser">
 <div class="app-header">
-<h2><span class="app-icon">📈</span> TradeRiser <span class="app-status status-development">In Development</span></h2>
+<h2>TradeRiser</h2>
+<span class="app-status status-development">In Development</span>
 </div>
 <div class="app-body">
 <p>An educational Flask market-research toolkit for security lookup, portfolio metrics, and rules-based asset-allocation illustrations.</p>
@@ -485,7 +495,8 @@
 <!-- Options Strategy -->
 <div class="app-card card-options">
 <div class="app-header">
-<h2><span class="app-icon">📊</span> Options Strategy <span class="app-status status-development">In Development</span></h2>
+<h2>Options Strategy</h2>
+<span class="app-status status-development">In Development</span>
 </div>
 <div class="app-body">
 <p>An educational options laboratory for constructing multi-leg strategies, visualizing modeled profit and loss, and learning how price, time, and volatility affect risk.</p>
