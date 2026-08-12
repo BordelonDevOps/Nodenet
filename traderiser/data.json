@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "published_at": "2026-08-12T14:39:58.107060+00:00",
+  "published_at": "2026-08-12T14:41:55.232732+00:00",
   "experiment": {
     "name": "$15 Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -112,7 +112,7 @@
       "source": "user",
       "deferred_follow_up": null,
       "explanation": [
-        "The champion proposal passed the live authorization gate and the broker outcome was reconciled."
+        "This trade was placed manually by the user before the agentic execution workflow; the broker fill was added for a complete historical record."
       ],
       "regime": null
     },
@@ -140,7 +140,7 @@
       "source": "user",
       "deferred_follow_up": null,
       "explanation": [
-        "The champion proposal passed the live authorization gate and the broker outcome was reconciled."
+        "This trade was placed manually by the user before the agentic execution workflow; the broker fill was added for a complete historical record."
       ],
       "regime": null
     },
