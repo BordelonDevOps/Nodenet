@@ -364,6 +364,8 @@
       let selected = null;
       let keyboardIndex = 0;
       let motionPaused = reduceMotion.matches;
+      let userDragging = false;
+      let rotationAngle = 0;
 
       const pointerFromEvent = event => {
         const rect = renderer.domElement.getBoundingClientRect();
@@ -422,6 +424,9 @@
         renderer.domElement.focus();
       });
 
+      controls.addEventListener("start", () => { userDragging = true; });
+      controls.addEventListener("end", () => { userDragging = false; });
+
       const syncMotionButton = () => {
         motionButton.textContent = motionPaused ? "Resume motion" : "Pause motion";
         motionButton.setAttribute("aria-pressed", String(motionPaused));
@@ -449,12 +454,13 @@
       const clock = new THREE.Clock();
       const animate = () => {
         requestAnimationFrame(animate);
+        const delta = Math.min(clock.getDelta(), .05);
         const elapsed = clock.getElapsedTime();
         controls.update();
-        if (!motionPaused) {
-          network.rotation.y = Math.sin(elapsed * .18) * .095;
-          network.rotation.x = Math.sin(elapsed * .12) * .025;
+        if (!motionPaused && !userDragging && !selected) {
+          rotationAngle = (rotationAngle + delta * Math.PI / 100) % (Math.PI * 2);
         }
+        network.rotation.y = rotationAngle;
 
         meshes.forEach((mesh, index) => {
           const active = mesh === hovered || mesh.userData.selected;
