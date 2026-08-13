@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "published_at": "2026-08-12T16:20:47.949943+00:00",
+  "published_at": "2026-08-13T13:41:05.264454+00:00",
   "experiment": {
     "name": "$15 Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -8,9 +8,9 @@
     "objective": "Test how TradeRiser's rules perform in a $15 account over 21 days."
   },
   "account": {
-    "value": 15.0177,
+    "value": 15.1099,
     "cash": 0.0,
-    "invested": 15.0175,
+    "invested": 15.1095,
     "buying_power": 0.0,
     "currency": "USD"
   },
@@ -20,7 +20,7 @@
       "shares": 0.008722,
       "average_price": 773.91,
       "cost_basis": 6.75,
-      "current_value": 6.7376,
+      "current_value": 6.7707,
       "strategy": "champion"
     },
     {
@@ -28,7 +28,7 @@
       "shares": 0.015771,
       "average_price": 301.19,
       "cost_basis": 4.7501,
-      "current_value": 4.7704,
+      "current_value": 4.8084,
       "strategy": "champion"
     },
     {
@@ -36,7 +36,7 @@
       "shares": 0.004847,
       "average_price": 724.16,
       "cost_basis": 3.51,
-      "current_value": 3.5095,
+      "current_value": 3.5304,
       "strategy": "champion"
     }
   ],
