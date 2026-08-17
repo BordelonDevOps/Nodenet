@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "published_at": "2026-08-17T14:17:57.152215+00:00",
+  "published_at": "2026-08-17T14:26:32.456899+00:00",
   "experiment": {
     "name": "$15 Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -236,7 +236,7 @@
     },
     {
       "kind": "champion",
-      "generated_at": "2026-08-17T14:17:28.424033+00:00",
+      "generated_at": "2026-08-17T14:26:09.339317+00:00",
       "status": "not_authorized",
       "selected": [
         "IWM",
@@ -271,53 +271,53 @@
   "research": {
     "champion_rankings": [
       {
-        "annualized_volatility": 0.173913,
-        "distance_from_200d_average": 0.133169,
+        "annualized_volatility": 0.173878,
+        "distance_from_200d_average": 0.133447,
         "eligible": true,
-        "momentum_126d": 0.159677,
-        "momentum_63d": 0.096568,
-        "price": 303.685,
-        "score": 0.700418,
+        "momentum_126d": 0.159964,
+        "momentum_63d": 0.096839,
+        "price": 303.76,
+        "score": 0.702151,
         "symbol": "IWM"
       },
       {
-        "annualized_volatility": 0.136811,
-        "distance_from_200d_average": 0.102524,
+        "annualized_volatility": 0.13683,
+        "distance_from_200d_average": 0.102213,
         "eligible": true,
-        "momentum_126d": 0.143293,
-        "momentum_63d": 0.051608,
-        "price": 775.32,
-        "score": 0.64529,
+        "momentum_126d": 0.142969,
+        "momentum_63d": 0.05131,
+        "price": 775.1,
+        "score": 0.642942,
         "symbol": "SPY"
       },
       {
-        "annualized_volatility": 0.256563,
-        "distance_from_200d_average": 0.126954,
+        "annualized_volatility": 0.256551,
+        "distance_from_200d_average": 0.12612,
         "eligible": true,
-        "momentum_126d": 0.219913,
-        "momentum_63d": 0.034467,
-        "price": 732.56,
-        "score": 0.423466,
+        "momentum_126d": 0.219005,
+        "momentum_63d": 0.033698,
+        "price": 732.015,
+        "score": 0.420271,
         "symbol": "QQQ"
       },
       {
-        "annualized_volatility": 0.249215,
-        "distance_from_200d_average": -0.018434,
+        "annualized_volatility": 0.249556,
+        "distance_from_200d_average": -0.016409,
         "eligible": false,
-        "momentum_126d": -0.12466,
-        "momentum_63d": -0.029572,
-        "price": 404.95,
-        "score": -0.27128,
+        "momentum_126d": -0.122845,
+        "momentum_63d": -0.02756,
+        "price": 405.7895,
+        "score": -0.263163,
         "symbol": "GLD"
       },
       {
-        "annualized_volatility": 0.089321,
-        "distance_from_200d_average": -0.040231,
+        "annualized_volatility": 0.089333,
+        "distance_from_200d_average": -0.040311,
         "eligible": false,
-        "momentum_126d": -0.067676,
-        "momentum_63d": -0.011073,
-        "price": 81.7768,
-        "score": -0.37745,
+        "momentum_126d": -0.067753,
+        "momentum_63d": -0.011156,
+        "price": 81.77,
+        "score": -0.3783,
         "symbol": "TLT"
       }
     ],
