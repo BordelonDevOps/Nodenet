@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "published_at": "2026-08-18T14:21:42.724775+00:00",
+  "published_at": "2026-08-18T14:28:01.155623+00:00",
   "experiment": {
     "name": "$15 Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -12,9 +12,9 @@
     "cash": 0.0,
     "invested": 25.9322,
     "buying_power": 0.0,
-    "net_contributions": 25.0,
-    "investment_gain": 0.9429,
-    "simple_return_on_contributions": 0.03771727,
+    "net_contributions": 25.99,
+    "investment_gain": -0.0471,
+    "simple_return_on_contributions": -0.00181102,
     "currency": "USD"
   },
   "holdings": [
