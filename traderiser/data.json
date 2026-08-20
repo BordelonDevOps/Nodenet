@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1.0",
-  "published_at": "2026-08-18T14:28:01.155623+00:00",
+  "published_at": "2026-08-20T14:17:15.510395+00:00",
   "experiment": {
     "name": "$15 Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -8,13 +8,13 @@
     "objective": "Test how TradeRiser's rules perform in a $15 account over 21 days."
   },
   "account": {
-    "value": 25.9429,
+    "value": 25.7446,
     "cash": 0.0,
-    "invested": 25.9322,
+    "invested": 25.7318,
     "buying_power": 0.0,
     "net_contributions": 25.99,
-    "investment_gain": -0.0471,
-    "simple_return_on_contributions": -0.00181102,
+    "investment_gain": -0.2454,
+    "simple_return_on_contributions": -0.00944329,
     "currency": "USD"
   },
   "holdings": [
@@ -23,7 +23,7 @@
       "shares": 0.014614,
       "average_price": 771.86,
       "cost_basis": 11.28,
-      "current_value": 11.2318,
+      "current_value": 11.1905,
       "strategy": "champion"
     },
     {
@@ -31,7 +31,7 @@
       "shares": 0.028651,
       "average_price": 301.56,
       "cost_basis": 8.64,
-      "current_value": 8.6493,
+      "current_value": 8.545,
       "strategy": "champion"
     },
     {
@@ -39,7 +39,7 @@
       "shares": 0.008422,
       "average_price": 721.92,
       "cost_basis": 6.08,
-      "current_value": 6.0511,
+      "current_value": 5.9963,
       "strategy": "champion"
     }
   ],
@@ -371,75 +371,43 @@
     },
     {
       "kind": "champion",
-      "generated_at": "2026-08-18T14:20:01.921196+00:00",
-      "status": "authorized",
+      "generated_at": "2026-08-20T14:16:20.824894+00:00",
+      "status": "not_authorized",
       "selected": [
         "IWM",
-        "QQQ",
         "SPY"
       ],
-      "orders": [
-        {
-          "symbol": "IWM",
-          "side": "buy",
-          "dollars": 3.89
-        },
-        {
-          "symbol": "QQQ",
-          "side": "buy",
-          "dollars": 2.57
-        },
-        {
-          "symbol": "SPY",
-          "side": "buy",
-          "dollars": 4.53
-        }
-      ],
+      "orders": [],
       "explanation": [
-        "all authorization checks passed"
+        "Only assets above their 200-day average with positive 3- and 6-month momentum qualify.",
+        "Qualifying assets are ranked by volatility-adjusted momentum, filtered for correlation, and sized by covariance-aware equal risk contribution.",
+        "The account keeps at least the configured cash reserve and uses no leverage or short positions.",
+        "Routine changes occur on the configured monthly session and only outside a five-percent drift band; severe trend-and-momentum exits may occur daily.",
+        "This is a proposed paper-trading decision, not an executed order or profit guarantee."
       ],
-      "regime": null,
-      "authorized": true
+      "regime": null
     },
     {
       "kind": "challenger",
-      "generated_at": "2026-08-18T14:21:33.165873+00:00",
+      "generated_at": "2026-08-20T14:16:51.950369+00:00",
       "status": "hypothetical_only",
       "selected": [
         "IWM",
         "SPY",
-        "VXUS"
+        "QQQ"
       ],
       "orders": [
         {
-          "symbol": "IWM",
-          "side": "sell",
-          "dollars": 1.46,
-          "status": "hypothetical_only"
-        },
-        {
-          "symbol": "QQQ",
-          "side": "sell",
-          "dollars": 6.05,
-          "status": "hypothetical_only"
-        },
-        {
           "symbol": "SPY",
           "side": "sell",
-          "dollars": 1.89,
-          "status": "hypothetical_only"
-        },
-        {
-          "symbol": "VXUS",
-          "side": "buy",
-          "dollars": 6.83,
+          "dollars": 1.18,
           "status": "hypothetical_only"
         }
       ],
       "explanation": [],
       "regime": {
         "name": "risk_on",
-        "risk_asset_breadth": 0.6,
+        "risk_asset_breadth": 1.0,
         "spy_above_200d": true
       }
     }
@@ -447,195 +415,199 @@
   "research": {
     "champion_rankings": [
       {
-        "annualized_volatility": 0.180923,
-        "distance_from_200d_average": 0.139614,
+        "annualized_volatility": 0.1738,
+        "distance_from_200d_average": 0.12344,
         "eligible": true,
-        "momentum_126d": 0.180394,
-        "momentum_63d": 0.075112,
-        "price": 305.09,
-        "score": 0.647925,
+        "momentum_126d": 0.147678,
+        "momentum_63d": 0.10783,
+        "price": 301.72,
+        "score": 0.712135,
         "symbol": "IWM"
       },
       {
-        "annualized_volatility": 0.139153,
-        "distance_from_200d_average": 0.104712,
+        "annualized_volatility": 0.137211,
+        "distance_from_200d_average": 0.092241,
         "eligible": true,
-        "momentum_126d": 0.145604,
-        "momentum_63d": 0.040325,
-        "price": 776.34,
-        "score": 0.592416,
+        "momentum_126d": 0.12656,
+        "momentum_63d": 0.050851,
+        "price": 769.06,
+        "score": 0.591317,
         "symbol": "SPY"
       },
       {
-        "annualized_volatility": 0.25847,
-        "distance_from_200d_average": 0.125545,
+        "annualized_volatility": 0.258509,
+        "distance_from_200d_average": 0.100132,
         "eligible": true,
-        "momentum_126d": 0.220026,
-        "momentum_63d": 0.016787,
-        "price": 731.07,
-        "score": 0.379475,
+        "momentum_126d": 0.184851,
+        "momentum_63d": 0.021862,
+        "price": 716.08,
+        "score": 0.336769,
         "symbol": "QQQ"
       },
       {
-        "annualized_volatility": 0.252663,
-        "distance_from_200d_average": -0.026367,
+        "annualized_volatility": 0.26126,
+        "distance_from_200d_average": 0.002145,
         "eligible": false,
-        "momentum_126d": -0.11057,
-        "momentum_63d": -0.060228,
-        "price": 401.48,
-        "score": -0.318071,
+        "momentum_126d": -0.096971,
+        "momentum_63d": 0.005687,
+        "price": 413.84,
+        "score": -0.135408,
         "symbol": "GLD"
       },
       {
-        "annualized_volatility": 0.093847,
-        "distance_from_200d_average": -0.037529,
+        "annualized_volatility": 0.096078,
+        "distance_from_200d_average": -0.025027,
         "eligible": false,
-        "momentum_126d": -0.059539,
-        "momentum_63d": -0.022611,
-        "price": 82.04,
-        "score": -0.398328,
+        "momentum_126d": -0.051494,
+        "momentum_63d": 0.0117,
+        "price": 83.02,
+        "score": -0.141316,
         "symbol": "TLT"
       }
     ],
     "challenger_rankings": [
       {
-        "annualized_volatility": 0.001604,
+        "annualized_volatility": 0.001607,
         "asset_group": "defensive",
-        "distance_from_200d_average": 0.014716,
+        "distance_from_200d_average": 0.014586,
         "drawdown_126d": 0.0,
         "eligible": true,
-        "momentum_126d": 0.018658,
-        "momentum_21d": 0.00329,
-        "momentum_63d": 0.009548,
-        "price": 100.5733,
-        "score": 1.239589,
+        "momentum_126d": 0.018422,
+        "momentum_21d": 0.003058,
+        "momentum_63d": 0.009314,
+        "price": 100.59,
+        "score": 1.216111,
         "symbol": "SGOV"
       },
       {
-        "annualized_volatility": 0.183559,
+        "annualized_volatility": 0.176766,
         "asset_group": "risk",
-        "distance_from_200d_average": 0.127639,
-        "diversification_adjusted_score": 0.555036,
-        "drawdown_126d": -0.010358,
+        "distance_from_200d_average": 0.124503,
+        "diversification_adjusted_score": 0.610062,
+        "drawdown_126d": -0.011046,
         "eligible": true,
-        "momentum_126d": 0.168168,
-        "momentum_21d": 0.021449,
-        "momentum_63d": 0.063976,
-        "price": 301.93,
-        "score": 0.555036,
+        "momentum_126d": 0.151823,
+        "momentum_21d": 0.032192,
+        "momentum_63d": 0.095907,
+        "price": 301.72,
+        "score": 0.610062,
         "symbol": "IWM"
       },
       {
-        "annualized_volatility": 0.141278,
+        "annualized_volatility": 0.138434,
         "asset_group": "risk",
-        "distance_from_200d_average": 0.093161,
-        "diversification_adjusted_score": 0.234057,
-        "drawdown_126d": -0.012268,
+        "distance_from_200d_average": 0.092809,
+        "diversification_adjusted_score": 0.293595,
+        "drawdown_126d": -0.011339,
         "eligible": true,
-        "momentum_126d": 0.133794,
-        "momentum_21d": 0.023467,
-        "momentum_63d": 0.029601,
-        "price": 768.337,
-        "score": 0.529648,
+        "momentum_126d": 0.132236,
+        "momentum_21d": 0.036343,
+        "momentum_63d": 0.043852,
+        "price": 769.06,
+        "score": 0.590393,
         "symbol": "SPY"
       },
       {
-        "annualized_volatility": 0.262449,
+        "annualized_volatility": 0.260329,
         "asset_group": "risk",
-        "distance_from_200d_average": 0.105559,
-        "drawdown_126d": -0.036468,
-        "eligible": false,
-        "momentum_126d": 0.198481,
-        "momentum_21d": 0.01731,
-        "momentum_63d": -0.001168,
-        "price": 718.16,
-        "score": 0.342836,
+        "distance_from_200d_average": 0.100822,
+        "diversification_adjusted_score": 0.044162,
+        "drawdown_126d": -0.039258,
+        "eligible": true,
+        "momentum_126d": 0.193699,
+        "momentum_21d": 0.028762,
+        "momentum_63d": 0.015565,
+        "price": 716.08,
+        "score": 0.368032,
         "symbol": "QQQ"
       },
       {
-        "annualized_volatility": 0.193259,
+        "annualized_volatility": 0.189831,
         "asset_group": "risk",
-        "distance_from_200d_average": 0.085782,
-        "diversification_adjusted_score": -0.06794,
-        "drawdown_126d": -0.008949,
+        "distance_from_200d_average": 0.084384,
+        "diversification_adjusted_score": -0.017755,
+        "drawdown_126d": -0.010242,
         "eligible": true,
-        "momentum_126d": 0.064373,
-        "momentum_21d": 0.034202,
-        "momentum_63d": 0.027126,
-        "price": 86.935,
-        "score": 0.232175,
+        "momentum_126d": 0.063506,
+        "momentum_21d": 0.046948,
+        "momentum_63d": 0.045869,
+        "price": 86.97,
+        "score": 0.282016,
         "symbol": "VXUS"
       },
       {
-        "annualized_volatility": 0.332466,
+        "annualized_volatility": 0.331285,
         "asset_group": "risk",
-        "distance_from_200d_average": 0.089529,
-        "drawdown_126d": -0.074498,
-        "eligible": false,
-        "momentum_126d": 0.088524,
-        "momentum_21d": 0.026717,
-        "momentum_63d": -0.016807,
-        "price": 65.905,
-        "score": 0.099574,
+        "distance_from_200d_average": 0.090816,
+        "diversification_adjusted_score": -0.130369,
+        "drawdown_126d": -0.071619,
+        "eligible": true,
+        "momentum_126d": 0.09173,
+        "momentum_21d": 0.04012,
+        "momentum_63d": 0.022836,
+        "price": 66.11,
+        "score": 0.155043,
         "symbol": "EEM"
       },
       {
-        "annualized_volatility": 0.249205,
+        "annualized_volatility": 0.259858,
         "asset_group": "defensive",
-        "distance_from_200d_average": -0.022022,
-        "drawdown_126d": -0.176755,
+        "distance_from_200d_average": 0.002254,
+        "drawdown_126d": -0.155429,
         "eligible": false,
-        "momentum_126d": -0.106338,
-        "momentum_21d": 0.105299,
-        "momentum_63d": -0.055757,
-        "price": 403.39,
-        "score": -0.230009,
+        "momentum_126d": -0.076662,
+        "momentum_21d": 0.125789,
+        "momentum_63d": -0.01097,
+        "price": 413.84,
+        "score": -0.089575,
         "symbol": "GLD"
       },
       {
-        "annualized_volatility": 0.050986,
+        "annualized_volatility": 0.049482,
         "asset_group": "defensive",
-        "distance_from_200d_average": -0.010159,
-        "drawdown_126d": -0.032933,
+        "distance_from_200d_average": -0.005199,
+        "drawdown_126d": -0.028198,
         "eligible": false,
-        "momentum_126d": -0.021348,
-        "momentum_21d": -0.005079,
-        "momentum_63d": -0.00418,
-        "price": 92.925,
-        "score": -0.245261,
+        "momentum_126d": -0.020299,
+        "momentum_21d": 0.001716,
+        "momentum_63d": 0.009154,
+        "price": 93.38,
+        "score": -0.119969,
         "symbol": "IEF"
       },
       {
-        "annualized_volatility": 0.09508,
+        "annualized_volatility": 0.097352,
         "asset_group": "defensive",
-        "distance_from_200d_average": -0.043949,
-        "drawdown_126d": -0.082254,
+        "distance_from_200d_average": -0.025263,
+        "drawdown_126d": -0.064966,
         "eligible": false,
-        "momentum_126d": -0.065901,
-        "momentum_21d": -0.028462,
-        "momentum_63d": -0.029223,
-        "price": 81.485,
-        "score": -0.499907,
+        "momentum_126d": -0.055082,
+        "momentum_21d": -0.006384,
+        "momentum_63d": 0.005162,
+        "price": 83.02,
+        "score": -0.26541,
         "symbol": "TLT"
       }
     ],
     "backtest": {
       "method": "monthly_walk_forward_next_session",
-      "data_start": "2022-06-02 00:00:00",
-      "data_end": "2026-08-18 00:00:00",
+      "data_start": "2022-06-06 00:00:00",
+      "data_end": "2026-08-19 00:00:00",
       "strategy": {
-        "annualized_volatility": 0.104312,
-        "cagr": 0.091593,
+        "annual_risk_free_rate": 0.0,
+        "annualized_volatility": 0.104358,
+        "cagr": 0.091665,
         "maximum_drawdown": -0.109786,
-        "sharpe_zero_rate": 0.892485,
-        "total_return": 0.442245
+        "sharpe_excess_return": 0.892769,
+        "total_return": 0.442643
       },
       "benchmark": {
-        "annualized_volatility": 0.166687,
-        "cagr": 0.173351,
+        "annual_risk_free_rate": 0.0,
+        "annualized_volatility": 0.166448,
+        "cagr": 0.177415,
         "maximum_drawdown": -0.187552,
-        "sharpe_zero_rate": 1.042331,
-        "total_return": 0.95034
+        "sharpe_excess_return": 1.064374,
+        "total_return": 0.978723
       }
     }
   },
