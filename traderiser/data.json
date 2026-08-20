@@ -1,6 +1,6 @@
 {
   "schema_version": "1.2.0",
-  "published_at": "2026-08-20T16:05:07.223052+00:00",
+  "published_at": "2026-08-20T16:05:20.942314+00:00",
   "experiment": {
     "name": "$15 Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -10,7 +10,7 @@
   "account": {
     "value": 25.711,
     "cash": 0.0,
-    "invested": 25.7103,
+    "invested": 25.7107,
     "buying_power": 0.0,
     "net_contributions": 25.99,
     "investment_gain": -0.279,
@@ -23,7 +23,7 @@
       "shares": 0.014614,
       "average_price": 771.86,
       "cost_basis": 11.28,
-      "current_value": 11.1875,
+      "current_value": 11.1879,
       "strategy": "champion"
     },
     {
@@ -1179,7 +1179,7 @@
         {
           "symbol": "SPY",
           "shares": 0.014614,
-          "value": 11.1875
+          "value": 11.1879
         },
         {
           "symbol": "IWM",
@@ -1192,7 +1192,7 @@
           "value": 5.9897
         }
       ],
-      "captured_at": "2026-08-20T16:05:07.223460+00:00",
+      "captured_at": "2026-08-20T16:05:20.942711+00:00",
       "source": "live_broker_snapshot",
       "breakdown_estimated": false,
       "note": "Holding values came from the latest reconciled quantities and fresh quotes.",
