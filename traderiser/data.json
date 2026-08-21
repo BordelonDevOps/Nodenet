@@ -1,6 +1,6 @@
 {
   "schema_version": "1.3.0",
-  "published_at": "2026-08-21T21:35:50.621286+00:00",
+  "published_at": "2026-08-21T22:55:59.741010+00:00",
   "experiment": {
     "name": "$15 Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -10,36 +10,36 @@
   "account": {
     "value": 25.7144,
     "cash": 0.0,
-    "invested": 25.7152,
+    "invested": 25.7144,
     "buying_power": 0.0,
-    "net_contributions": 25.99,
-    "investment_gain": -0.2756,
-    "simple_return_on_contributions": -0.0106052,
+    "net_contributions": 25.0,
+    "investment_gain": 0.7144,
+    "simple_return_on_contributions": 0.028576,
     "currency": "USD"
   },
   "holdings": [
     {
-      "symbol": "SPY",
-      "shares": 0.014614,
-      "average_price": 771.86,
-      "cost_basis": 11.28,
-      "current_value": 11.1772,
-      "strategy": "champion"
-    },
-    {
       "symbol": "IWM",
       "shares": 0.028651,
-      "average_price": 301.56,
-      "cost_basis": 8.64,
-      "current_value": 8.5571,
+      "average_price": 301.4893,
+      "cost_basis": 8.638,
+      "current_value": 8.5464,
       "strategy": "champion"
     },
     {
       "symbol": "QQQ",
       "shares": 0.008422,
-      "average_price": 721.92,
+      "average_price": 721.9188,
       "cost_basis": 6.08,
-      "current_value": 5.9809,
+      "current_value": 6.0001,
+      "strategy": "champion"
+    },
+    {
+      "symbol": "SPY",
+      "shares": 0.014614,
+      "average_price": 771.8626,
+      "cost_basis": 11.28,
+      "current_value": 11.1679,
       "strategy": "champion"
     }
   ],
@@ -987,7 +987,7 @@
       "captured_at": "2026-08-10T13:43:21.457098+00:00",
       "source": "broker_snapshot",
       "breakdown_estimated": true,
-      "note": "Historical holding values are allocated from the broker total using contemporaneous cost-basis weights.",
+      "note": "The broker total is exact. Historical holding values are allocated using the quantities and average prices stored in that reconciled snapshot.",
       "net_cash_flow": 15.0,
       "contributions": 15.0,
       "withdrawals": 0.0,
@@ -1015,7 +1015,7 @@
       "captured_at": "2026-08-11T13:41:53.034626+00:00",
       "source": "broker_snapshot",
       "breakdown_estimated": true,
-      "note": "Historical holding values are allocated from the broker total using contemporaneous cost-basis weights.",
+      "note": "The broker total is exact. Historical holding values are allocated using the quantities and average prices stored in that reconciled snapshot.",
       "net_cash_flow": 0.0,
       "contributions": 0.0,
       "withdrawals": -0.0,
@@ -1043,7 +1043,7 @@
       "captured_at": "2026-08-12T14:11:14.095462+00:00",
       "source": "broker_snapshot",
       "breakdown_estimated": true,
-      "note": "Historical holding values are allocated from the broker total using contemporaneous cost-basis weights.",
+      "note": "The broker total is exact. Historical holding values are allocated using the quantities and average prices stored in that reconciled snapshot.",
       "net_cash_flow": 0.0,
       "contributions": 0.0,
       "withdrawals": -0.0,
@@ -1076,7 +1076,7 @@
       "captured_at": "2026-08-13",
       "source": "broker_snapshot",
       "breakdown_estimated": true,
-      "note": "Historical holding values are allocated from the broker total using contemporaneous cost-basis weights.",
+      "note": "The broker total is exact. Historical holding values are allocated using the quantities and average prices stored in that reconciled snapshot.",
       "net_cash_flow": 0.0,
       "contributions": 0.0,
       "withdrawals": -0.0,
@@ -1109,7 +1109,7 @@
       "captured_at": "2026-08-14",
       "source": "broker_snapshot",
       "breakdown_estimated": true,
-      "note": "Historical holding values are allocated from the broker total using contemporaneous cost-basis weights.",
+      "note": "The broker total is exact. Historical holding values are allocated using the quantities and average prices stored in that reconciled snapshot.",
       "net_cash_flow": 0.0,
       "contributions": 0.0,
       "withdrawals": -0.0,
@@ -1208,7 +1208,7 @@
       "captured_at": "2026-08-17",
       "source": "broker_snapshot",
       "breakdown_estimated": true,
-      "note": "Historical holding values are allocated from the broker total using contemporaneous cost-basis weights.",
+      "note": "The broker total is exact. Historical holding values are allocated using the quantities and average prices stored in that reconciled snapshot.",
       "net_cash_flow": 0.0,
       "contributions": 0.0,
       "withdrawals": -0.0,
@@ -1241,14 +1241,14 @@
       "captured_at": "2026-08-18T14:21:10.132674+00:00",
       "source": "broker_snapshot",
       "breakdown_estimated": true,
-      "note": "Historical holding values are allocated from the broker total using contemporaneous cost-basis weights.",
-      "net_cash_flow": 10.99,
-      "contributions": 10.99,
+      "note": "The broker total is exact. Historical holding values are allocated using the quantities and average prices stored in that reconciled snapshot.",
+      "net_cash_flow": 10.0,
+      "contributions": 10.0,
       "withdrawals": 0.0,
       "change": 10.8398,
       "change_pct": 0.7177202,
-      "market_gain": -0.1502,
-      "time_weighted_return": -0.00248829
+      "market_gain": 0.8398,
+      "time_weighted_return": 0.06355486
     },
     {
       "date": "2026-08-19",
@@ -1281,7 +1281,7 @@
       "change": 0.0,
       "change_pct": 0.0,
       "market_gain": 0.0,
-      "time_weighted_return": -0.00248829
+      "time_weighted_return": 0.06355486
     },
     {
       "date": "2026-08-20",
@@ -1307,14 +1307,14 @@
       "captured_at": "2026-08-20T14:17:15.282015+00:00",
       "source": "broker_snapshot",
       "breakdown_estimated": true,
-      "note": "Historical holding values are allocated from the broker total using contemporaneous cost-basis weights.",
+      "note": "The broker total is exact. Historical holding values are allocated using the quantities and average prices stored in that reconciled snapshot.",
       "net_cash_flow": 0.0,
       "contributions": 0.0,
       "withdrawals": -0.0,
       "change": -0.1983,
       "change_pct": -0.00764371,
       "market_gain": -0.1983,
-      "time_weighted_return": -0.01011298
+      "time_weighted_return": 0.05542535
     },
     {
       "date": "2026-08-21",
@@ -1322,22 +1322,22 @@
       "cash": 0.0,
       "holdings": [
         {
-          "symbol": "SPY",
-          "shares": 0.014614,
-          "value": 11.1772
-        },
-        {
           "symbol": "IWM",
           "shares": 0.028651,
-          "value": 8.5571
+          "value": 8.5464
         },
         {
           "symbol": "QQQ",
           "shares": 0.008422,
-          "value": 5.9809
+          "value": 6.0001
+        },
+        {
+          "symbol": "SPY",
+          "shares": 0.014614,
+          "value": 11.1679
         }
       ],
-      "captured_at": "2026-08-21T21:35:50.621183+00:00",
+      "captured_at": "2026-08-21T22:55:59.740906+00:00",
       "source": "live_broker_snapshot",
       "breakdown_estimated": false,
       "note": "Holding values came from the latest reconciled quantities and fresh quotes.",
@@ -1347,13 +1347,13 @@
       "change": -0.0302,
       "change_pct": -0.00117306,
       "market_gain": -0.0302,
-      "time_weighted_return": -0.01127418
+      "time_weighted_return": 0.05418727
     }
   ],
   "daily_briefing": {
     "as_of": "2026-08-20 00:00:00",
     "headline": "TradeRiser made no trade because no change cleared its timing and size rules.",
-    "portfolio_context": "The live account currently holds SPY, IWM, QQQ.",
+    "portfolio_context": "The live account currently holds IWM, QQQ, SPY.",
     "market_context": "The completed-session screen qualified IWM, SPY for consideration.",
     "champion": "The live strategy currently favors IWM, SPY.",
     "challenger": "The research-only challenger favors SPY, IWM, VXUS.",
