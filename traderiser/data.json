@@ -1,31 +1,23 @@
 {
-  "schema_version": "1.3.0",
-  "published_at": "2026-08-24T14:19:38.485133+00:00",
+  "schema_version": "1.4.0",
+  "published_at": "2026-08-25T13:11:35.394231+00:00",
   "experiment": {
     "name": "$15 Agentic Trading Experiment",
     "started": "2026-08-10",
     "ends": "2026-08-31",
-    "objective": "Test how TradeRiser's rules perform in a $15 account over 21 days."
+    "objective": "Test whether TradeRiser's rules can grow a $15 account over 21 days."
   },
   "account": {
     "value": 25.6242,
     "cash": 0.0,
-    "invested": 25.6229,
+    "invested": 25.6228,
     "buying_power": 0.0,
     "net_contributions": 25.0,
     "investment_gain": 0.6242,
-    "simple_return_on_contributions": 0.02496782,
+    "simple_return_on_contributions": 0.024968,
     "currency": "USD"
   },
   "holdings": [
-    {
-      "symbol": "SPY",
-      "shares": 0.014614,
-      "average_price": 771.86,
-      "cost_basis": 11.28,
-      "current_value": 11.1476,
-      "strategy": "champion"
-    },
     {
       "symbol": "IWM",
       "shares": 0.028651,
@@ -40,6 +32,14 @@
       "average_price": 721.92,
       "cost_basis": 6.08,
       "current_value": 5.9248,
+      "strategy": "champion"
+    },
+    {
+      "symbol": "SPY",
+      "shares": 0.014614,
+      "average_price": 771.86,
+      "cost_basis": 11.28,
+      "current_value": 11.1476,
       "strategy": "champion"
     }
   ],
@@ -59,7 +59,9 @@
       "reconciled_at": "2026-08-10T11:42:13.225Z",
       "authorized": null,
       "orders_match": true,
-      "deferred_follow_up": null
+      "deferred_follow_up": null,
+      "decision_source": "agentic",
+      "broker_submission_source": "user"
     },
     {
       "symbol": "IWM",
@@ -76,7 +78,9 @@
       "reconciled_at": "2026-08-10T11:42:48.359Z",
       "authorized": null,
       "orders_match": true,
-      "deferred_follow_up": null
+      "deferred_follow_up": null,
+      "decision_source": "agentic",
+      "broker_submission_source": "user"
     },
     {
       "symbol": "IWM",
@@ -95,7 +99,9 @@
         "symbol": "QQQ",
         "dollars": 3.33,
         "status": "awaiting_settled_buying_power"
-      }
+      },
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic API"
     },
     {
       "symbol": "QQQ",
@@ -113,7 +119,9 @@
       "reconciled_at": "2026-08-12T16:16:30.633Z",
       "authorized": null,
       "orders_match": true,
-      "deferred_follow_up": null
+      "deferred_follow_up": null,
+      "decision_source": "agentic",
+      "broker_submission_source": "user"
     },
     {
       "symbol": "IWM",
@@ -128,7 +136,9 @@
       "orders_match": true,
       "source": "agentic",
       "authorization_label": "delegated policy passed",
-      "deferred_follow_up": null
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic"
     },
     {
       "symbol": "QQQ",
@@ -143,7 +153,9 @@
       "orders_match": true,
       "source": "agentic",
       "authorization_label": "delegated policy passed",
-      "deferred_follow_up": null
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic"
     },
     {
       "symbol": "SPY",
@@ -158,7 +170,9 @@
       "orders_match": true,
       "source": "agentic",
       "authorization_label": "delegated policy passed",
-      "deferred_follow_up": null
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic"
     }
   ],
   "decisions": [
@@ -186,6 +200,9 @@
       "source": "agentic",
       "execution_label": null,
       "deferred_follow_up": null,
+      "decision_source": "agentic",
+      "broker_submission_source": "user",
+      "stage": "execution",
       "explanation": [
         "The champion proposal passed the live authorization gate and the broker outcome was reconciled."
       ],
@@ -215,6 +232,9 @@
       "source": "agentic",
       "execution_label": null,
       "deferred_follow_up": null,
+      "decision_source": "agentic",
+      "broker_submission_source": "user",
+      "stage": "execution",
       "explanation": [
         "The champion proposal passed the live authorization gate and the broker outcome was reconciled."
       ],
@@ -236,7 +256,8 @@
         "Small target changes inside the rebalance band are suppressed to reduce turnover.",
         "This is a proposed paper-trading decision, not an executed order or profit guarantee."
       ],
-      "regime": null
+      "regime": null,
+      "stage": "evaluation"
     },
     {
       "kind": "challenger",
@@ -266,7 +287,8 @@
         "name": "risk_on",
         "risk_asset_breadth": 0.8,
         "spy_above_200d": true
-      }
+      },
+      "stage": "research"
     },
     {
       "kind": "champion",
@@ -281,6 +303,7 @@
         "no orders were proposed"
       ],
       "regime": null,
+      "stage": "evaluation",
       "authorized": false,
       "reconciled": true
     },
@@ -312,7 +335,8 @@
         "name": "risk_on",
         "risk_asset_breadth": 0.8,
         "spy_above_200d": true
-      }
+      },
+      "stage": "research"
     },
     {
       "kind": "champion",
@@ -327,6 +351,7 @@
         "no orders were proposed"
       ],
       "regime": null,
+      "stage": "evaluation",
       "authorized": false,
       "reconciled": true
     },
@@ -358,7 +383,8 @@
         "name": "risk_on",
         "risk_asset_breadth": 0.8,
         "spy_above_200d": true
-      }
+      },
+      "stage": "research"
     },
     {
       "kind": "champion",
@@ -376,7 +402,8 @@
         "Small target changes inside the rebalance band are suppressed to reduce turnover.",
         "This is a proposed paper-trading decision, not an executed order or profit guarantee."
       ],
-      "regime": null
+      "regime": null,
+      "stage": "evaluation"
     },
     {
       "kind": "challenger",
@@ -406,7 +433,8 @@
         "name": "risk_on",
         "risk_asset_breadth": 0.8,
         "spy_above_200d": true
-      }
+      },
+      "stage": "research"
     },
     {
       "kind": "champion",
@@ -433,6 +461,7 @@
         "all authorization checks passed"
       ],
       "regime": null,
+      "stage": "reconciliation",
       "authorized": true,
       "reconciled": true
     },
@@ -464,6 +493,9 @@
         "dollars": 3.33,
         "status": "awaiting_settled_buying_power"
       },
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic API",
+      "stage": "execution",
       "explanation": [
         "The champion proposal passed the live authorization gate and the broker outcome was reconciled."
       ],
@@ -491,7 +523,8 @@
         "name": "risk_on",
         "risk_asset_breadth": 1.0,
         "spy_above_200d": true
-      }
+      },
+      "stage": "research"
     },
     {
       "kind": "champion",
@@ -515,6 +548,7 @@
         "No order was created and no funds moved. The kill switch was activated."
       ],
       "regime": null,
+      "stage": "execution",
       "authorized": true
     },
     {
@@ -541,6 +575,9 @@
       "source": "agentic",
       "execution_label": "user override in Robinhood",
       "deferred_follow_up": null,
+      "decision_source": "agentic",
+      "broker_submission_source": "user",
+      "stage": "execution",
       "explanation": [
         "TradeRiser selected and authorized this trade; the user completed the broker execution after the agent's order attempt failed."
       ],
@@ -563,7 +600,8 @@
         "Small target changes inside the rebalance band are suppressed to reduce turnover.",
         "This is a proposed paper-trading decision, not an executed order or profit guarantee."
       ],
-      "regime": null
+      "regime": null,
+      "stage": "evaluation"
     },
     {
       "kind": "champion",
@@ -579,6 +617,7 @@
         "no orders were proposed"
       ],
       "regime": null,
+      "stage": "authorization",
       "authorized": false
     },
     {
@@ -596,7 +635,8 @@
         "name": "risk_on",
         "risk_asset_breadth": 0.8,
         "spy_above_200d": true
-      }
+      },
+      "stage": "research"
     },
     {
       "kind": "champion",
@@ -615,7 +655,8 @@
         "Small target changes inside the rebalance band are suppressed to reduce turnover.",
         "This is a proposed paper-trading decision, not an executed order or profit guarantee."
       ],
-      "regime": null
+      "regime": null,
+      "stage": "evaluation"
     },
     {
       "kind": "champion",
@@ -631,6 +672,7 @@
         "no orders were proposed"
       ],
       "regime": null,
+      "stage": "authorization",
       "authorized": false
     },
     {
@@ -648,7 +690,8 @@
         "name": "risk_on",
         "risk_asset_breadth": 1.0,
         "spy_above_200d": true
-      }
+      },
+      "stage": "research"
     },
     {
       "kind": "champion",
@@ -664,6 +707,7 @@
         "no orders were proposed"
       ],
       "regime": null,
+      "stage": "authorization",
       "authorized": false
     },
     {
@@ -696,6 +740,7 @@
         "proposed buys would breach the cash reserve"
       ],
       "regime": null,
+      "stage": "authorization",
       "authorized": false
     },
     {
@@ -728,6 +773,7 @@
         "all authorization checks passed"
       ],
       "regime": null,
+      "stage": "reconciliation",
       "authorized": true,
       "reconciled": true
     },
@@ -755,6 +801,9 @@
       "source": "agentic",
       "execution_label": null,
       "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic",
+      "stage": "execution",
       "explanation": [
         "The champion proposal passed the live authorization gate and the broker outcome was reconciled."
       ],
@@ -784,6 +833,9 @@
       "source": "agentic",
       "execution_label": null,
       "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic",
+      "stage": "execution",
       "explanation": [
         "The champion proposal passed the live authorization gate and the broker outcome was reconciled."
       ],
@@ -813,6 +865,9 @@
       "source": "agentic",
       "execution_label": null,
       "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic",
+      "stage": "execution",
       "explanation": [
         "The champion proposal passed the live authorization gate and the broker outcome was reconciled."
       ],
@@ -858,7 +913,8 @@
         "name": "risk_on",
         "risk_asset_breadth": 0.6,
         "spy_above_200d": true
-      }
+      },
+      "stage": "research"
     },
     {
       "kind": "champion",
@@ -877,6 +933,7 @@
         "This is a proposed paper-trading decision, not an executed order or profit guarantee."
       ],
       "regime": null,
+      "stage": "evaluation",
       "authorized": false,
       "reconciled": true
     },
@@ -902,7 +959,8 @@
         "name": "risk_on",
         "risk_asset_breadth": 1.0,
         "spy_above_200d": true
-      }
+      },
+      "stage": "research"
     },
     {
       "kind": "champion",
@@ -921,6 +979,7 @@
         "This is a proposed paper-trading decision, not an executed order or profit guarantee."
       ],
       "regime": null,
+      "stage": "evaluation",
       "authorized": false,
       "reconciled": true
     },
@@ -964,7 +1023,8 @@
         "name": "risk_on",
         "risk_asset_breadth": 0.8,
         "spy_above_200d": true
-      }
+      },
+      "stage": "research"
     },
     {
       "kind": "champion",
@@ -980,6 +1040,7 @@
         "no orders were proposed"
       ],
       "regime": null,
+      "stage": "evaluation",
       "authorized": false,
       "reconciled": true
     },
@@ -1023,7 +1084,8 @@
         "name": "risk_on",
         "risk_asset_breadth": 0.8,
         "spy_above_200d": true
-      }
+      },
+      "stage": "research"
     }
   ],
   "portfolio_history": [
@@ -1053,7 +1115,11 @@
       "change": null,
       "change_pct": null,
       "market_gain": null,
-      "time_weighted_return": 0.0
+      "time_weighted_return": 0.0,
+      "cash_flow_timing": "date_only",
+      "benchmark_value": 15.0,
+      "benchmark_return": 0.0,
+      "excess_return": 0.0
     },
     {
       "date": "2026-08-11",
@@ -1081,7 +1147,11 @@
       "change": 0.0085,
       "change_pct": 0.00056704,
       "market_gain": 0.0085,
-      "time_weighted_return": 0.00056704
+      "time_weighted_return": 0.00056704,
+      "cash_flow_timing": "none",
+      "benchmark_value": 15.0095,
+      "benchmark_return": 0.00063067,
+      "excess_return": -6.363e-05
     },
     {
       "date": "2026-08-12",
@@ -1109,7 +1179,11 @@
       "change": 0.013,
       "change_pct": 0.00086674,
       "market_gain": 0.013,
-      "time_weighted_return": 0.00143427
+      "time_weighted_return": 0.00143427,
+      "cash_flow_timing": "none",
+      "benchmark_value": 14.9984,
+      "benchmark_return": -0.00010349,
+      "excess_return": 0.00153776
     },
     {
       "date": "2026-08-13",
@@ -1142,7 +1216,11 @@
       "change": 0.0982,
       "change_pct": 0.00654156,
       "market_gain": 0.0982,
-      "time_weighted_return": 0.00798522
+      "time_weighted_return": 0.00798522,
+      "cash_flow_timing": "none",
+      "benchmark_value": 14.9984,
+      "benchmark_return": -0.00010349,
+      "excess_return": 0.00808871
     },
     {
       "date": "2026-08-14",
@@ -1175,7 +1253,11 @@
       "change": 0.0291,
       "change_pct": 0.00192589,
       "market_gain": 0.0291,
-      "time_weighted_return": 0.00992649
+      "time_weighted_return": 0.00992649,
+      "cash_flow_timing": "none",
+      "benchmark_value": 15.1001,
+      "benchmark_return": 0.00667538,
+      "excess_return": 0.00325111
     },
     {
       "date": "2026-08-15",
@@ -1208,7 +1290,11 @@
       "change": 0.0,
       "change_pct": 0.0,
       "market_gain": 0.0,
-      "time_weighted_return": 0.00992649
+      "time_weighted_return": 0.00992649,
+      "cash_flow_timing": "none",
+      "benchmark_value": 15.1001,
+      "benchmark_return": 0.00667538,
+      "excess_return": 0.00325111
     },
     {
       "date": "2026-08-16",
@@ -1241,7 +1327,11 @@
       "change": 0.0,
       "change_pct": 0.0,
       "market_gain": 0.0,
-      "time_weighted_return": 0.00992649
+      "time_weighted_return": 0.00992649,
+      "cash_flow_timing": "none",
+      "benchmark_value": 15.1001,
+      "benchmark_return": 0.00667538,
+      "excess_return": 0.00325111
     },
     {
       "date": "2026-08-17",
@@ -1274,7 +1364,11 @@
       "change": -0.0359,
       "change_pct": -0.00237136,
       "market_gain": -0.0359,
-      "time_weighted_return": 0.00753159
+      "time_weighted_return": 0.00753159,
+      "cash_flow_timing": "none",
+      "benchmark_value": 15.0452,
+      "benchmark_return": 0.00301427,
+      "excess_return": 0.00451732
     },
     {
       "date": "2026-08-18",
@@ -1307,7 +1401,11 @@
       "change": 10.8398,
       "change_pct": 0.7177202,
       "market_gain": 0.8398,
-      "time_weighted_return": 0.06355486
+      "time_weighted_return": 0.06355486,
+      "cash_flow_timing": "date_only",
+      "benchmark_value": 25.0452,
+      "benchmark_return": 0.00180856,
+      "excess_return": 0.0617463
     },
     {
       "date": "2026-08-19",
@@ -1340,7 +1438,11 @@
       "change": 0.0,
       "change_pct": 0.0,
       "market_gain": 0.0,
-      "time_weighted_return": 0.06355486
+      "time_weighted_return": 0.06355486,
+      "cash_flow_timing": "none",
+      "benchmark_value": 24.843,
+      "benchmark_return": -0.00628013,
+      "excess_return": 0.06983499
     },
     {
       "date": "2026-08-20",
@@ -1373,7 +1475,11 @@
       "change": -0.1983,
       "change_pct": -0.00764371,
       "market_gain": -0.1983,
-      "time_weighted_return": 0.05542535
+      "time_weighted_return": 0.05542535,
+      "cash_flow_timing": "none",
+      "benchmark_value": 24.6343,
+      "benchmark_return": -0.01462724,
+      "excess_return": 0.07005259
     },
     {
       "date": "2026-08-21",
@@ -1406,7 +1512,11 @@
       "change": -0.0302,
       "change_pct": -0.00117306,
       "market_gain": -0.0302,
-      "time_weighted_return": 0.05418727
+      "time_weighted_return": 0.05418727,
+      "cash_flow_timing": "none",
+      "benchmark_value": 24.7351,
+      "benchmark_return": -0.01059582,
+      "excess_return": 0.06478309
     },
     {
       "date": "2026-08-22",
@@ -1439,7 +1549,11 @@
       "change": 0.0,
       "change_pct": 0.0,
       "market_gain": 0.0,
-      "time_weighted_return": 0.05418727
+      "time_weighted_return": 0.05418727,
+      "cash_flow_timing": "none",
+      "benchmark_value": 24.7351,
+      "benchmark_return": -0.01059582,
+      "excess_return": 0.06478309
     },
     {
       "date": "2026-08-23",
@@ -1472,7 +1586,11 @@
       "change": 0.0,
       "change_pct": 0.0,
       "market_gain": 0.0,
-      "time_weighted_return": 0.05418727
+      "time_weighted_return": 0.05418727,
+      "cash_flow_timing": "none",
+      "benchmark_value": 24.7351,
+      "benchmark_return": -0.01059582,
+      "excess_return": 0.06478309
     },
     {
       "date": "2026-08-24",
@@ -1480,10 +1598,42 @@
       "cash": 0.0,
       "holdings": [
         {
+          "symbol": "IWM",
+          "shares": 0.028651,
+          "value": 8.5138
+        },
+        {
+          "symbol": "QQQ",
+          "shares": 0.008422,
+          "value": 5.9926
+        },
+        {
           "symbol": "SPY",
           "shares": 0.014614,
-          "value": 11.1476
-        },
+          "value": 11.1178
+        }
+      ],
+      "captured_at": "2026-08-24T14:18:57.627526+00:00",
+      "source": "broker_snapshot",
+      "breakdown_estimated": true,
+      "note": "The broker total is exact. Historical holding values are allocated using the quantities and average prices stored in that reconciled snapshot.",
+      "net_cash_flow": 0.0,
+      "contributions": 0.0,
+      "withdrawals": -0.0,
+      "change": -0.0902,
+      "change_pct": -0.00350776,
+      "market_gain": -0.0902,
+      "time_weighted_return": 0.05048943,
+      "cash_flow_timing": "none",
+      "benchmark_value": 24.7351,
+      "benchmark_return": -0.01059582,
+      "excess_return": 0.06108525
+    },
+    {
+      "date": "2026-08-25",
+      "value": 25.6242,
+      "cash": 0.0,
+      "holdings": [
         {
           "symbol": "IWM",
           "shares": 0.028651,
@@ -1493,25 +1643,186 @@
           "symbol": "QQQ",
           "shares": 0.008422,
           "value": 5.9248
+        },
+        {
+          "symbol": "SPY",
+          "shares": 0.014614,
+          "value": 11.1476
         }
       ],
-      "captured_at": "2026-08-24T14:19:38.485011+00:00",
+      "captured_at": "2026-08-25T13:11:35.393891+00:00",
       "source": "live_broker_snapshot",
       "breakdown_estimated": false,
       "note": "Holding values came from the latest reconciled quantities and fresh quotes.",
       "net_cash_flow": 0.0,
       "contributions": 0.0,
       "withdrawals": -0.0,
-      "change": -0.0902,
-      "change_pct": -0.00350776,
-      "market_gain": -0.0902,
-      "time_weighted_return": 0.05048943
+      "change": 0.0,
+      "change_pct": 0.0,
+      "market_gain": 0.0,
+      "time_weighted_return": 0.05048943,
+      "cash_flow_timing": "none",
+      "benchmark_value": 24.7351,
+      "benchmark_return": -0.01059582,
+      "excess_return": 0.06108525
     }
   ],
+  "performance": {
+    "simple_return_on_contributions": 0.024968,
+    "time_weighted_return": 0.05048943,
+    "time_weighted_quality": "estimated",
+    "money_weighted": {
+      "return": 0.03173898,
+      "gain": 0.6242,
+      "weighted_capital": 19.6667,
+      "method": "modified_dietz_non_annualized",
+      "quality": "estimated_date_only_flows",
+      "note": "Cash-flow dates without exact timestamps make this an estimate."
+    },
+    "live_benchmark": {
+      "symbol": "SPY",
+      "status": "estimated_completed_session",
+      "value": 24.7351,
+      "return": -0.01059582,
+      "actual_excess_return": 0.0423348,
+      "history": [
+        {
+          "date": "2026-08-10",
+          "price": 772.99,
+          "value": 15.0,
+          "return": 0.0,
+          "actual_return": 0.0,
+          "excess_return": 0.0
+        },
+        {
+          "date": "2026-08-11",
+          "price": 773.4775,
+          "value": 15.0095,
+          "return": 0.00063067,
+          "actual_return": 0.00056704,
+          "excess_return": -6.363e-05
+        },
+        {
+          "date": "2026-08-12",
+          "price": 772.91,
+          "value": 14.9984,
+          "return": -0.00010349,
+          "actual_return": 0.00143427,
+          "excess_return": 0.00153776
+        },
+        {
+          "date": "2026-08-13",
+          "price": 772.91,
+          "value": 14.9984,
+          "return": -0.00010349,
+          "actual_return": 0.00798522,
+          "excess_return": 0.00808871
+        },
+        {
+          "date": "2026-08-14",
+          "price": 778.15,
+          "value": 15.1001,
+          "return": 0.00667538,
+          "actual_return": 0.00992649,
+          "excess_return": 0.00325111
+        },
+        {
+          "date": "2026-08-15",
+          "price": 778.15,
+          "value": 15.1001,
+          "return": 0.00667538,
+          "actual_return": 0.00992649,
+          "excess_return": 0.00325111
+        },
+        {
+          "date": "2026-08-16",
+          "price": 778.15,
+          "value": 15.1001,
+          "return": 0.00667538,
+          "actual_return": 0.00992649,
+          "excess_return": 0.00325111
+        },
+        {
+          "date": "2026-08-17",
+          "price": 775.32,
+          "value": 15.0452,
+          "return": 0.00301427,
+          "actual_return": 0.00753159,
+          "excess_return": 0.00451732
+        },
+        {
+          "date": "2026-08-18",
+          "price": 775.32,
+          "value": 25.0452,
+          "return": 0.00180856,
+          "actual_return": 0.06355486,
+          "excess_return": 0.0617463
+        },
+        {
+          "date": "2026-08-19",
+          "price": 769.06,
+          "value": 24.843,
+          "return": -0.00628013,
+          "actual_return": 0.06355486,
+          "excess_return": 0.06983499
+        },
+        {
+          "date": "2026-08-20",
+          "price": 762.6,
+          "value": 24.6343,
+          "return": -0.01462724,
+          "actual_return": 0.05542535,
+          "excess_return": 0.07005259
+        },
+        {
+          "date": "2026-08-21",
+          "price": 765.72,
+          "value": 24.7351,
+          "return": -0.01059582,
+          "actual_return": 0.05418727,
+          "excess_return": 0.06478309
+        },
+        {
+          "date": "2026-08-22",
+          "price": 765.72,
+          "value": 24.7351,
+          "return": -0.01059582,
+          "actual_return": 0.05418727,
+          "excess_return": 0.06478309
+        },
+        {
+          "date": "2026-08-23",
+          "price": 765.72,
+          "value": 24.7351,
+          "return": -0.01059582,
+          "actual_return": 0.05418727,
+          "excess_return": 0.06478309
+        },
+        {
+          "date": "2026-08-24",
+          "price": 765.72,
+          "value": 24.7351,
+          "return": -0.01059582,
+          "actual_return": 0.05048943,
+          "excess_return": 0.06108525
+        },
+        {
+          "date": "2026-08-25",
+          "price": 765.72,
+          "value": 24.7351,
+          "return": -0.01059582,
+          "actual_return": 0.05048943,
+          "excess_return": 0.06108525
+        }
+      ],
+      "note": "Uses the same published cash flows and the latest completed-session benchmark price available to each evaluation date.",
+      "actual_return_basis": "modified_dietz_non_annualized"
+    }
+  },
   "daily_briefing": {
     "as_of": "2026-08-21 00:00:00",
     "headline": "TradeRiser made no trade because no change cleared its timing and size rules.",
-    "portfolio_context": "The live account currently holds SPY, IWM, QQQ.",
+    "portfolio_context": "The live account currently holds IWM, QQQ, SPY.",
     "market_context": "The completed-session screen qualified IWM, SPY for consideration.",
     "champion": "The live strategy currently favors IWM, SPY.",
     "challenger": "The research-only challenger favors IWM, SPY, VXUS.",
@@ -1542,7 +1853,7 @@
     ]
   },
   "evidence": {
-    "live_days": 15,
+    "live_days": 16,
     "champion_cycles": 16,
     "challenger_cycles": 11,
     "reconciled_trades": 7,
