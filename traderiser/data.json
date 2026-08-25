@@ -2,10 +2,10 @@
   "schema_version": "1.4.0",
   "published_at": "2026-08-25T14:19:56.151345+00:00",
   "experiment": {
-    "name": "$15 Agentic Trading Experiment",
+    "name": "TradeRiser Agentic Trading Experiment",
     "started": "2026-08-10",
     "ends": "2026-08-31",
-    "objective": "Test how TradeRiser's rules perform in a $15 account over 21 days."
+    "objective": "Test how TradeRiser's rules perform using the experiment's cumulative contributed funds over 21 days."
   },
   "account": {
     "value": 25.7151,

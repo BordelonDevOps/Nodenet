@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="The public, auditable record of TradeRiser's $15 agentic trading experiment.">
+  <meta name="description" content="The public, auditable record of TradeRiser's agentic trading experiment using contributed funds.">
   <title>TradeRiser · Public Trading Record</title>
   <style>
     :root{--ink:#13251d;--muted:#607168;--line:#dce6e0;--paper:#f5f8f6;--card:#fff;--green:#0b6b47;--lime:#d7f447;--blue:#2b65d9;--amber:#a76000;--red:#b93535;--shadow:0 12px 34px rgba(15,45,31,.08)}
@@ -21,7 +21,7 @@
 <body>
   <header><div class="brand">TradeRiser<span>.AI</span> / Public Record</div><div class="live">Live experiment | values may be delayed</div></header>
   <main>
-    <div class="eyebrow">$15 live trading test</div>
+    <div class="eyebrow" id="experiment-funding">Live trading test</div>
     <h1>A running record of what TradeRiser does.</h1>
     <p class="lede">This page tracks the positions, decisions, and results from a small live account. It shows what the TradeRiser logic selected, what the agentic trading process did with that decision, and when no trade was made.</p>
     <nav class="tabs" aria-label="Transparency sections">
@@ -61,7 +61,7 @@
     function buildProfile(e){e.preventDefault();const years=+horizon.value,monthlyAmount=+monthly.value,lossAmount=+loss.value,hasEmergency=emergency.value==='yes';let name=lossAmount<10?'Cautious':lossAmount<25?'Balanced growth':'Growth';let reserve=lossAmount<10?30:lossAmount<25?10:5;if(years<3)reserve=Math.max(reserve,40);const warnings=[];if(!hasEmergency)warnings.push('Build accessible emergency savings before relying on invested money.');if(years<3)warnings.push('A short timeline can force a sale during a market decline.');document.getElementById('profile-result').innerHTML=`<div class="callout"><b>${name}</b><div class="plain">For ${goal.value.toLowerCase()} over ${years} years with ${money(monthlyAmount)} added monthly.</div></div><div class="reason">Suggested cash reserve <b>${reserve}%</b></div><div class="reason">Borrowed leverage <b>Not allowed</b></div><div class="reason">Status <b>Draft requiring review</b></div>${warnings.map(x=>`<div class="warning">${x}</div>`).join('')}`;document.getElementById('projection').innerHTML=projection(monthlyAmount,years)}
     document.getElementById('goal-form').addEventListener('submit',buildProfile);
     fetch('data.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('snapshot unavailable');return r.json()}).then(d=>{
-      value.textContent=money(d.account.value);const contributed=d.account.net_contributions??15;const investmentGain=d.account.investment_gain??(d.account.value-contributed);
+      value.textContent=money(d.account.value);const contributed=d.account.net_contributions;const investmentGain=d.account.investment_gain??(contributed==null?null:d.account.value-contributed);document.getElementById('experiment-funding').textContent=contributed==null?'Live trading test':`${money(contributed)} contributed live trading test`;
       contributions.textContent=money(contributed);gain.textContent=money(investmentGain);document.getElementById('gain-rate').textContent=`${pct(d.account.simple_return_on_contributions??(contributed?investmentGain/contributed:null))} return on contributed funds`;
       const perf=d.performance||{},mw=perf.money_weighted||{},lb=perf.live_benchmark||{};document.getElementById('performance-summary').innerHTML=`<div>Simple return on contributions<b>${pct(perf.simple_return_on_contributions)}</b></div><div>Estimated time-weighted return<b>${pct(perf.time_weighted_return)}</b></div><div>Estimated money-weighted return<b>${pct(mw.return)}</b></div><div>Cash-flow-matched ${lb.symbol||'SPY'} value<b>${money(lb.value)}</b></div><div>${lb.symbol||'SPY'} return<b>${pct(lb.return)}</b></div><div>TradeRiser minus ${lb.symbol||'SPY'}<b>${pct(lb.actual_excess_return)}</b></div>`;document.getElementById('performance-note').textContent=`Attribution quality: ${perf.time_weighted_quality||'unavailable'}. ${mw.note||''} ${lb.note||''}`;
       invested.textContent=money(d.account.invested);cash.textContent=money(d.account.cash);ends.textContent=date(d.experiment.ends);objective.textContent=d.experiment.objective;
