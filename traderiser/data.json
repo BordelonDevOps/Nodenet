@@ -1,29 +1,37 @@
 {
   "schema_version": "1.4.0",
-  "published_at": "2026-08-25T13:11:35.394231+00:00",
+  "published_at": "2026-08-25T14:19:32.628645+00:00",
   "experiment": {
     "name": "$15 Agentic Trading Experiment",
     "started": "2026-08-10",
     "ends": "2026-08-31",
-    "objective": "Test whether TradeRiser's rules can grow a $15 account over 21 days."
+    "objective": "Test how TradeRiser's rules perform in a $15 account over 21 days."
   },
   "account": {
-    "value": 25.6242,
+    "value": 25.7151,
     "cash": 0.0,
-    "invested": 25.6228,
+    "invested": 25.7112,
     "buying_power": 0.0,
     "net_contributions": 25.0,
-    "investment_gain": 0.6242,
-    "simple_return_on_contributions": 0.024968,
+    "investment_gain": 0.7151,
+    "simple_return_on_contributions": 0.02860272,
     "currency": "USD"
   },
   "holdings": [
+    {
+      "symbol": "SPY",
+      "shares": 0.014614,
+      "average_price": 771.86,
+      "cost_basis": 11.28,
+      "current_value": 11.1831,
+      "strategy": "champion"
+    },
     {
       "symbol": "IWM",
       "shares": 0.028651,
       "average_price": 301.56,
       "cost_basis": 8.64,
-      "current_value": 8.5505,
+      "current_value": 8.5483,
       "strategy": "champion"
     },
     {
@@ -31,15 +39,7 @@
       "shares": 0.008422,
       "average_price": 721.92,
       "cost_basis": 6.08,
-      "current_value": 5.9248,
-      "strategy": "champion"
-    },
-    {
-      "symbol": "SPY",
-      "shares": 0.014614,
-      "average_price": 771.86,
-      "cost_basis": 11.28,
-      "current_value": 11.1476,
+      "current_value": 5.9798,
       "strategy": "champion"
     }
   ],
@@ -1086,6 +1086,25 @@
         "spy_above_200d": true
       },
       "stage": "research"
+    },
+    {
+      "kind": "champion",
+      "generated_at": "2026-08-25T14:18:57.759117+00:00",
+      "status": "not_authorized",
+      "selected": [
+        "IWM",
+        "SPY"
+      ],
+      "orders": [],
+      "explanation": [
+        "Only assets above their 200-day average with positive 3- and 6-month momentum qualify.",
+        "Qualifying assets are ranked by volatility-adjusted momentum, filtered for correlation, and sized by covariance-aware equal risk contribution.",
+        "The account keeps at least the configured cash reserve and uses no leverage or short positions.",
+        "Routine changes occur on the configured monthly session and only outside a five-percent drift band; severe trend-and-momentum exits may occur daily.",
+        "This is a proposed paper-trading decision, not an executed order or profit guarantee."
+      ],
+      "regime": null,
+      "stage": "evaluation"
     }
   ],
   "portfolio_history": [
@@ -1625,55 +1644,55 @@
       "market_gain": -0.0902,
       "time_weighted_return": 0.05048943,
       "cash_flow_timing": "none",
-      "benchmark_value": 24.7351,
-      "benchmark_return": -0.01059582,
-      "excess_return": 0.06108525
+      "benchmark_value": 24.6624,
+      "benchmark_return": -0.01350309,
+      "excess_return": 0.06399252
     },
     {
       "date": "2026-08-25",
-      "value": 25.6242,
+      "value": 25.7151,
       "cash": 0.0,
       "holdings": [
         {
+          "symbol": "SPY",
+          "shares": 0.014614,
+          "value": 11.1831
+        },
+        {
           "symbol": "IWM",
           "shares": 0.028651,
-          "value": 8.5505
+          "value": 8.5483
         },
         {
           "symbol": "QQQ",
           "shares": 0.008422,
-          "value": 5.9248
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.014614,
-          "value": 11.1476
+          "value": 5.9798
         }
       ],
-      "captured_at": "2026-08-25T13:11:35.393891+00:00",
+      "captured_at": "2026-08-25T14:19:32.628301+00:00",
       "source": "live_broker_snapshot",
       "breakdown_estimated": false,
       "note": "Holding values came from the latest reconciled quantities and fresh quotes.",
       "net_cash_flow": 0.0,
       "contributions": 0.0,
       "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": 0.0,
-      "market_gain": 0.0,
-      "time_weighted_return": 0.05048943,
+      "change": 0.0909,
+      "change_pct": 0.00354743,
+      "market_gain": 0.0909,
+      "time_weighted_return": 0.05421597,
       "cash_flow_timing": "none",
-      "benchmark_value": 24.7351,
-      "benchmark_return": -0.01059582,
-      "excess_return": 0.06108525
+      "benchmark_value": 24.6624,
+      "benchmark_return": -0.01350309,
+      "excess_return": 0.06771906
     }
   ],
   "performance": {
-    "simple_return_on_contributions": 0.024968,
-    "time_weighted_return": 0.05048943,
+    "simple_return_on_contributions": 0.02860272,
+    "time_weighted_return": 0.05421597,
     "time_weighted_quality": "estimated",
     "money_weighted": {
-      "return": 0.03173898,
-      "gain": 0.6242,
+      "return": 0.03636102,
+      "gain": 0.7151,
       "weighted_capital": 19.6667,
       "method": "modified_dietz_non_annualized",
       "quality": "estimated_date_only_flows",
@@ -1682,9 +1701,9 @@
     "live_benchmark": {
       "symbol": "SPY",
       "status": "estimated_completed_session",
-      "value": 24.7351,
-      "return": -0.01059582,
-      "actual_excess_return": 0.0423348,
+      "value": 24.6624,
+      "return": -0.01350309,
+      "actual_excess_return": 0.04986411,
       "history": [
         {
           "date": "2026-08-10",
@@ -1800,19 +1819,19 @@
         },
         {
           "date": "2026-08-24",
-          "price": 765.72,
-          "value": 24.7351,
-          "return": -0.01059582,
+          "price": 763.47,
+          "value": 24.6624,
+          "return": -0.01350309,
           "actual_return": 0.05048943,
-          "excess_return": 0.06108525
+          "excess_return": 0.06399252
         },
         {
           "date": "2026-08-25",
-          "price": 765.72,
-          "value": 24.7351,
-          "return": -0.01059582,
-          "actual_return": 0.05048943,
-          "excess_return": 0.06108525
+          "price": 763.47,
+          "value": 24.6624,
+          "return": -0.01350309,
+          "actual_return": 0.05421597,
+          "excess_return": 0.06771906
         }
       ],
       "note": "Uses the same published cash flows and the latest completed-session benchmark price available to each evaluation date.",
@@ -1820,9 +1839,9 @@
     }
   },
   "daily_briefing": {
-    "as_of": "2026-08-21 00:00:00",
+    "as_of": "2026-08-24 00:00:00",
     "headline": "TradeRiser made no trade because no change cleared its timing and size rules.",
-    "portfolio_context": "The live account currently holds IWM, QQQ, SPY.",
+    "portfolio_context": "The live account currently holds SPY, IWM, QQQ.",
     "market_context": "The completed-session screen qualified IWM, SPY for consideration.",
     "champion": "The live strategy currently favors IWM, SPY.",
     "challenger": "The research-only challenger favors IWM, SPY, VXUS.",
@@ -1854,7 +1873,7 @@
   },
   "evidence": {
     "live_days": 16,
-    "champion_cycles": 16,
+    "champion_cycles": 17,
     "challenger_cycles": 11,
     "reconciled_trades": 7,
     "benchmark": "SPY",
@@ -1868,53 +1887,53 @@
   "research": {
     "champion_rankings": [
       {
-        "annualized_volatility": 0.1694,
-        "distance_from_200d_average": 0.114612,
+        "annualized_volatility": 0.16924,
+        "distance_from_200d_average": 0.106014,
         "eligible": true,
-        "momentum_126d": 0.13831,
-        "momentum_63d": 0.064368,
-        "price": 299.96,
-        "score": 0.554575,
+        "momentum_126d": 0.148643,
+        "momentum_63d": 0.047554,
+        "price": 297.97,
+        "score": 0.51991,
         "symbol": "IWM"
       },
       {
-        "annualized_volatility": 0.137229,
-        "distance_from_200d_average": 0.086154,
+        "annualized_volatility": 0.137231,
+        "distance_from_200d_average": 0.082243,
         "eligible": true,
-        "momentum_126d": 0.116559,
-        "momentum_63d": 0.033623,
-        "price": 765.72,
-        "score": 0.486759,
+        "momentum_126d": 0.124763,
+        "momentum_63d": 0.02655,
+        "price": 763.47,
+        "score": 0.47974,
         "symbol": "SPY"
       },
       {
-        "annualized_volatility": 0.256927,
-        "distance_from_200d_average": 0.094665,
+        "annualized_volatility": 0.257574,
+        "distance_from_200d_average": 0.082998,
         "eligible": false,
-        "momentum_126d": 0.174627,
-        "momentum_63d": -0.0004,
-        "price": 713.44,
-        "score": 0.270935,
+        "momentum_126d": 0.177213,
+        "momentum_63d": -0.014555,
+        "price": 706.32,
+        "score": 0.241299,
         "symbol": "QQQ"
       },
       {
-        "annualized_volatility": 0.262656,
-        "distance_from_200d_average": 0.023937,
+        "annualized_volatility": 0.262568,
+        "distance_from_200d_average": 0.031189,
         "eligible": false,
-        "momentum_126d": -0.096581,
-        "momentum_63d": 0.015276,
-        "price": 423.36,
-        "score": -0.112188,
+        "momentum_126d": -0.113427,
+        "momentum_63d": 0.0311,
+        "price": 426.69,
+        "score": -0.101727,
         "symbol": "GLD"
       },
       {
-        "annualized_volatility": 0.095029,
-        "distance_from_200d_average": -0.035891,
+        "annualized_volatility": 0.095223,
+        "distance_from_200d_average": -0.029649,
         "eligible": false,
-        "momentum_126d": -0.061318,
-        "momentum_63d": -0.014367,
-        "price": 82.05,
-        "score": -0.348814,
+        "momentum_126d": -0.058956,
+        "momentum_63d": -0.013628,
+        "price": 82.56,
+        "score": -0.333526,
         "symbol": "TLT"
       }
     ],
