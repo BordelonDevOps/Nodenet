@@ -1,6 +1,6 @@
 {
-  "schema_version": "1.4.0",
-  "published_at": "2026-08-25T14:19:56.151345+00:00",
+  "schema_version": "1.5.0",
+  "published_at": "2026-08-26T14:17:44.293680+00:00",
   "experiment": {
     "name": "TradeRiser Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -8,13 +8,13 @@
     "objective": "Test how TradeRiser's rules perform using the experiment's cumulative contributed funds over 21 days."
   },
   "account": {
-    "value": 25.7151,
+    "value": 25.7606,
     "cash": 0.0,
-    "invested": 25.7112,
+    "invested": 25.7579,
     "buying_power": 0.0,
     "net_contributions": 25.0,
-    "investment_gain": 0.7151,
-    "simple_return_on_contributions": 0.02860272,
+    "investment_gain": 0.7606,
+    "simple_return_on_contributions": 0.03042234,
     "currency": "USD"
   },
   "holdings": [
@@ -23,7 +23,7 @@
       "shares": 0.014614,
       "average_price": 771.86,
       "cost_basis": 11.28,
-      "current_value": 11.1831,
+      "current_value": 11.1965,
       "strategy": "champion"
     },
     {
@@ -31,7 +31,7 @@
       "shares": 0.028651,
       "average_price": 301.56,
       "cost_basis": 8.64,
-      "current_value": 8.5483,
+      "current_value": 8.5809,
       "strategy": "champion"
     },
     {
@@ -39,7 +39,7 @@
       "shares": 0.008422,
       "average_price": 721.92,
       "cost_basis": 6.08,
-      "current_value": 5.9798,
+      "current_value": 5.9805,
       "strategy": "champion"
     }
   ],
@@ -1148,6 +1148,173 @@
         "spy_above_200d": true
       },
       "stage": "research"
+    },
+    {
+      "kind": "champion",
+      "generated_at": "2026-08-25T17:27:11.839008+00:00",
+      "status": "not_authorized",
+      "selected": [
+        "EWC",
+        "EWT",
+        "FTXH",
+        "SPDW",
+        "VGT"
+      ],
+      "orders": [],
+      "explanation": [
+        "Only assets above their 200-day average with positive 3- and 6-month momentum qualify.",
+        "Qualifying assets are ranked by volatility-adjusted momentum, filtered for correlation, and sized by covariance-aware equal risk contribution.",
+        "The account keeps at least the configured cash reserve and uses no leverage or short positions.",
+        "Routine changes occur on the configured monthly session and only outside a five-percent drift band; severe trend-and-momentum exits may occur daily.",
+        "This is a proposed paper-trading decision, not an executed order or profit guarantee."
+      ],
+      "regime": null,
+      "stage": "evaluation"
+    },
+    {
+      "kind": "champion",
+      "generated_at": "2026-08-25T17:40:11.160634+00:00",
+      "status": "not_authorized",
+      "selected": [
+        "EWC",
+        "EWT",
+        "FTXH",
+        "SPDW",
+        "VGT"
+      ],
+      "orders": [
+        {
+          "symbol": "EWC",
+          "side": "buy",
+          "dollars": 7.51
+        },
+        {
+          "symbol": "EWT",
+          "side": "buy",
+          "dollars": 2.68
+        },
+        {
+          "symbol": "FTXH",
+          "side": "buy",
+          "dollars": 7.29
+        },
+        {
+          "symbol": "IWM",
+          "side": "sell",
+          "dollars": 8.56
+        },
+        {
+          "symbol": "QQQ",
+          "side": "sell",
+          "dollars": 5.98
+        },
+        {
+          "symbol": "SPDW",
+          "side": "buy",
+          "dollars": 4.36
+        },
+        {
+          "symbol": "SPY",
+          "side": "sell",
+          "dollars": 11.18
+        },
+        {
+          "symbol": "VGT",
+          "side": "buy",
+          "dollars": 3.87
+        }
+      ],
+      "explanation": [
+        "EWC notional is outside per-order limits",
+        "IWM was not selected by TradeRiser",
+        "IWM notional is outside per-order limits",
+        "QQQ was not selected by TradeRiser",
+        "SPY was not selected by TradeRiser",
+        "SPY notional is outside per-order limits",
+        "maximum daily notional would be exceeded",
+        "proposed buys would breach the cash reserve"
+      ],
+      "regime": null,
+      "stage": "authorization",
+      "authorized": false
+    },
+    {
+      "kind": "champion",
+      "generated_at": "2026-08-26T14:16:44.747105+00:00",
+      "status": "not_authorized",
+      "selected": [
+        "COPX",
+        "EWC",
+        "EWT",
+        "FTXH",
+        "SPDW"
+      ],
+      "orders": [],
+      "explanation": [
+        "Only assets above their 200-day average with positive 3- and 6-month momentum qualify.",
+        "Qualifying assets are ranked by volatility-adjusted momentum with an RSI overbought penalty, filtered for correlation, and sized by covariance-aware equal risk contribution.",
+        "The account keeps at least the configured cash reserve and uses no leverage or short positions.",
+        "Every completed market session is evaluated; orders are proposed only when the allocation drift exceeds the configured band or a severe risk exit triggers.",
+        "Risk exits combine trend failure with either weak momentum or a volatility-sensitive drawdown from the recent high.",
+        "This is a proposed paper-trading decision, not an executed order or profit guarantee."
+      ],
+      "regime": null,
+      "stage": "evaluation"
+    },
+    {
+      "kind": "challenger",
+      "generated_at": "2026-08-26T14:17:02.351235+00:00",
+      "status": "hypothetical_only",
+      "selected": [
+        "RWL",
+        "FNDX",
+        "RPV"
+      ],
+      "orders": [
+        {
+          "symbol": "FNDX",
+          "side": "buy",
+          "dollars": 8.11,
+          "status": "hypothetical_only"
+        },
+        {
+          "symbol": "IWM",
+          "side": "sell",
+          "dollars": 8.58,
+          "status": "hypothetical_only"
+        },
+        {
+          "symbol": "QQQ",
+          "side": "sell",
+          "dollars": 5.98,
+          "status": "hypothetical_only"
+        },
+        {
+          "symbol": "RPV",
+          "side": "buy",
+          "dollars": 7.01,
+          "status": "hypothetical_only"
+        },
+        {
+          "symbol": "RWL",
+          "side": "buy",
+          "dollars": 8.06,
+          "status": "hypothetical_only"
+        },
+        {
+          "symbol": "SPY",
+          "side": "sell",
+          "dollars": 11.19,
+          "status": "hypothetical_only"
+        }
+      ],
+      "explanation": [],
+      "regime": {
+        "median_distance_from_200d_average": 0.087895,
+        "name": "defensive",
+        "risk_asset_breadth": 0.55
+      },
+      "stage": "research"
     }
   ],
   "portfolio_history": [
@@ -1181,7 +1348,7 @@
       "cash_flow_timing": "date_only",
       "benchmark_value": 15.0,
       "benchmark_return": 0.0,
-      "excess_return": 0.0
+      "excess_return": -0.0
     },
     {
       "date": "2026-08-11",
@@ -1211,9 +1378,9 @@
       "market_gain": 0.0085,
       "time_weighted_return": 0.00056704,
       "cash_flow_timing": "none",
-      "benchmark_value": 15.0095,
-      "benchmark_return": 0.00063067,
-      "excess_return": -6.363e-05
+      "benchmark_value": 15.0456,
+      "benchmark_return": 0.00304037,
+      "excess_return": -0.00247333
     },
     {
       "date": "2026-08-12",
@@ -1243,9 +1410,9 @@
       "market_gain": 0.013,
       "time_weighted_return": 0.00143427,
       "cash_flow_timing": "none",
-      "benchmark_value": 14.9984,
-      "benchmark_return": -0.00010349,
-      "excess_return": 0.00153776
+      "benchmark_value": 15.087,
+      "benchmark_return": 0.0058004,
+      "excess_return": -0.00436613
     },
     {
       "date": "2026-08-13",
@@ -1280,9 +1447,9 @@
       "market_gain": 0.0982,
       "time_weighted_return": 0.00798522,
       "cash_flow_timing": "none",
-      "benchmark_value": 14.9984,
-      "benchmark_return": -0.00010349,
-      "excess_return": 0.00808871
+      "benchmark_value": 15.087,
+      "benchmark_return": 0.0058004,
+      "excess_return": 0.00218482
     },
     {
       "date": "2026-08-14",
@@ -1317,9 +1484,9 @@
       "market_gain": 0.0291,
       "time_weighted_return": 0.00992649,
       "cash_flow_timing": "none",
-      "benchmark_value": 15.1001,
-      "benchmark_return": 0.00667538,
-      "excess_return": 0.00325111
+      "benchmark_value": 15.134,
+      "benchmark_return": 0.00893156,
+      "excess_return": 0.00099493
     },
     {
       "date": "2026-08-15",
@@ -1354,9 +1521,9 @@
       "market_gain": 0.0,
       "time_weighted_return": 0.00992649,
       "cash_flow_timing": "none",
-      "benchmark_value": 15.1001,
-      "benchmark_return": 0.00667538,
-      "excess_return": 0.00325111
+      "benchmark_value": 15.134,
+      "benchmark_return": 0.00893156,
+      "excess_return": 0.00099493
     },
     {
       "date": "2026-08-16",
@@ -1391,9 +1558,9 @@
       "market_gain": 0.0,
       "time_weighted_return": 0.00992649,
       "cash_flow_timing": "none",
-      "benchmark_value": 15.1001,
-      "benchmark_return": 0.00667538,
-      "excess_return": 0.00325111
+      "benchmark_value": 15.134,
+      "benchmark_return": 0.00893156,
+      "excess_return": 0.00099493
     },
     {
       "date": "2026-08-17",
@@ -1428,9 +1595,9 @@
       "market_gain": -0.0359,
       "time_weighted_return": 0.00753159,
       "cash_flow_timing": "none",
-      "benchmark_value": 15.0452,
-      "benchmark_return": 0.00301427,
-      "excess_return": 0.00451732
+      "benchmark_value": 15.119,
+      "benchmark_return": 0.00793559,
+      "excess_return": -0.000404
     },
     {
       "date": "2026-08-18",
@@ -1465,9 +1632,9 @@
       "market_gain": 0.8398,
       "time_weighted_return": 0.06355486,
       "cash_flow_timing": "date_only",
-      "benchmark_value": 25.0452,
-      "benchmark_return": 0.00180856,
-      "excess_return": 0.0617463
+      "benchmark_value": 25.119,
+      "benchmark_return": 0.00476135,
+      "excess_return": 0.05879351
     },
     {
       "date": "2026-08-19",
@@ -1502,9 +1669,9 @@
       "market_gain": 0.0,
       "time_weighted_return": 0.06355486,
       "cash_flow_timing": "none",
-      "benchmark_value": 24.843,
-      "benchmark_return": -0.00628013,
-      "excess_return": 0.06983499
+      "benchmark_value": 25.1149,
+      "benchmark_return": 0.00459502,
+      "excess_return": 0.05895984
     },
     {
       "date": "2026-08-20",
@@ -1539,9 +1706,9 @@
       "market_gain": -0.1983,
       "time_weighted_return": 0.05542535,
       "cash_flow_timing": "none",
-      "benchmark_value": 24.6343,
-      "benchmark_return": -0.01462724,
-      "excess_return": 0.07005259
+      "benchmark_value": 24.9452,
+      "benchmark_return": -0.00219089,
+      "excess_return": 0.05761624
     },
     {
       "date": "2026-08-21",
@@ -1576,9 +1743,9 @@
       "market_gain": -0.0302,
       "time_weighted_return": 0.05418727,
       "cash_flow_timing": "none",
-      "benchmark_value": 24.7351,
-      "benchmark_return": -0.01059582,
-      "excess_return": 0.06478309
+      "benchmark_value": 25.1014,
+      "benchmark_return": 0.00405516,
+      "excess_return": 0.05013211
     },
     {
       "date": "2026-08-22",
@@ -1613,9 +1780,9 @@
       "market_gain": 0.0,
       "time_weighted_return": 0.05418727,
       "cash_flow_timing": "none",
-      "benchmark_value": 24.7351,
-      "benchmark_return": -0.01059582,
-      "excess_return": 0.06478309
+      "benchmark_value": 25.1014,
+      "benchmark_return": 0.00405516,
+      "excess_return": 0.05013211
     },
     {
       "date": "2026-08-23",
@@ -1650,9 +1817,9 @@
       "market_gain": 0.0,
       "time_weighted_return": 0.05418727,
       "cash_flow_timing": "none",
-      "benchmark_value": 24.7351,
-      "benchmark_return": -0.01059582,
-      "excess_return": 0.06478309
+      "benchmark_value": 25.1014,
+      "benchmark_return": 0.00405516,
+      "excess_return": 0.05013211
     },
     {
       "date": "2026-08-24",
@@ -1687,194 +1854,239 @@
       "market_gain": -0.0902,
       "time_weighted_return": 0.05048943,
       "cash_flow_timing": "none",
-      "benchmark_value": 24.6624,
-      "benchmark_return": -0.01350309,
-      "excess_return": 0.06399252
+      "benchmark_value": 25.0739,
+      "benchmark_return": 0.0029565,
+      "excess_return": 0.04753293
     },
     {
       "date": "2026-08-25",
-      "value": 25.7151,
+      "value": 25.6242,
+      "cash": 0.0,
+      "holdings": [
+        {
+          "symbol": "IWM",
+          "shares": 0.028651,
+          "value": 8.5138
+        },
+        {
+          "symbol": "QQQ",
+          "shares": 0.008422,
+          "value": 5.9926
+        },
+        {
+          "symbol": "SPY",
+          "shares": 0.014614,
+          "value": 11.1178
+        }
+      ],
+      "captured_at": null,
+      "source": "carried_forward_no_broker_snapshot",
+      "breakdown_estimated": true,
+      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
+      "net_cash_flow": 0.0,
+      "contributions": 0.0,
+      "withdrawals": -0.0,
+      "change": 0.0,
+      "change_pct": 0.0,
+      "market_gain": 0.0,
+      "time_weighted_return": 0.05048943,
+      "cash_flow_timing": "none",
+      "benchmark_value": 25.4549,
+      "benchmark_return": 0.01819661,
+      "excess_return": 0.03229282
+    },
+    {
+      "date": "2026-08-26",
+      "value": 25.7606,
       "cash": 0.0,
       "holdings": [
         {
           "symbol": "SPY",
           "shares": 0.014614,
-          "value": 11.1831
+          "value": 11.1965
         },
         {
           "symbol": "IWM",
           "shares": 0.028651,
-          "value": 8.5483
+          "value": 8.5809
         },
         {
           "symbol": "QQQ",
           "shares": 0.008422,
-          "value": 5.9798
+          "value": 5.9805
         }
       ],
-      "captured_at": "2026-08-25T14:19:56.151053+00:00",
+      "captured_at": "2026-08-26T14:17:44.293126+00:00",
       "source": "live_broker_snapshot",
       "breakdown_estimated": false,
       "note": "Holding values came from the latest reconciled quantities and fresh quotes.",
       "net_cash_flow": 0.0,
       "contributions": 0.0,
       "withdrawals": -0.0,
-      "change": 0.0909,
-      "change_pct": 0.00354743,
-      "market_gain": 0.0909,
-      "time_weighted_return": 0.05421597,
+      "change": 0.1364,
+      "change_pct": 0.00532309,
+      "market_gain": 0.1364,
+      "time_weighted_return": 0.05608129,
       "cash_flow_timing": "none",
-      "benchmark_value": 24.6624,
-      "benchmark_return": -0.01350309,
-      "excess_return": 0.06771906
+      "benchmark_value": 25.4549,
+      "benchmark_return": 0.01819661,
+      "excess_return": 0.03788468
     }
   ],
   "performance": {
-    "simple_return_on_contributions": 0.02860272,
-    "time_weighted_return": 0.05421597,
+    "simple_return_on_contributions": 0.03042234,
+    "time_weighted_return": 0.05608129,
     "time_weighted_quality": "estimated",
     "money_weighted": {
-      "return": 0.03636102,
-      "gain": 0.7151,
-      "weighted_capital": 19.6667,
+      "return": 0.03803,
+      "gain": 0.7606,
+      "weighted_capital": 20.0,
       "method": "modified_dietz_non_annualized",
       "quality": "estimated_date_only_flows",
       "note": "Cash-flow dates without exact timestamps make this an estimate."
     },
     "live_benchmark": {
-      "symbol": "SPY",
+      "symbol": "Equal-weight provider universe",
       "status": "estimated_completed_session",
-      "value": 24.6624,
-      "return": -0.01350309,
-      "actual_excess_return": 0.04986411,
+      "value": 25.4549,
+      "return": 0.01819661,
+      "actual_excess_return": 0.01983339,
       "history": [
         {
           "date": "2026-08-10",
-          "price": 772.99,
+          "price": 99.7786,
           "value": 15.0,
           "return": 0.0,
           "actual_return": 0.0,
-          "excess_return": 0.0
+          "excess_return": -0.0
         },
         {
           "date": "2026-08-11",
-          "price": 773.4775,
-          "value": 15.0095,
-          "return": 0.00063067,
+          "price": 100.082,
+          "value": 15.0456,
+          "return": 0.00304037,
           "actual_return": 0.00056704,
-          "excess_return": -6.363e-05
+          "excess_return": -0.00247333
         },
         {
           "date": "2026-08-12",
-          "price": 772.91,
-          "value": 14.9984,
-          "return": -0.00010349,
+          "price": 100.3574,
+          "value": 15.087,
+          "return": 0.0058004,
           "actual_return": 0.00143427,
-          "excess_return": 0.00153776
+          "excess_return": -0.00436613
         },
         {
           "date": "2026-08-13",
-          "price": 772.91,
-          "value": 14.9984,
-          "return": -0.00010349,
+          "price": 100.3574,
+          "value": 15.087,
+          "return": 0.0058004,
           "actual_return": 0.00798522,
-          "excess_return": 0.00808871
+          "excess_return": 0.00218482
         },
         {
           "date": "2026-08-14",
-          "price": 778.15,
-          "value": 15.1001,
-          "return": 0.00667538,
+          "price": 100.6698,
+          "value": 15.134,
+          "return": 0.00893156,
           "actual_return": 0.00992649,
-          "excess_return": 0.00325111
+          "excess_return": 0.00099493
         },
         {
           "date": "2026-08-15",
-          "price": 778.15,
-          "value": 15.1001,
-          "return": 0.00667538,
+          "price": 100.6698,
+          "value": 15.134,
+          "return": 0.00893156,
           "actual_return": 0.00992649,
-          "excess_return": 0.00325111
+          "excess_return": 0.00099493
         },
         {
           "date": "2026-08-16",
-          "price": 778.15,
-          "value": 15.1001,
-          "return": 0.00667538,
+          "price": 100.6698,
+          "value": 15.134,
+          "return": 0.00893156,
           "actual_return": 0.00992649,
-          "excess_return": 0.00325111
+          "excess_return": 0.00099493
         },
         {
           "date": "2026-08-17",
-          "price": 775.32,
-          "value": 15.0452,
-          "return": 0.00301427,
+          "price": 100.5704,
+          "value": 15.119,
+          "return": 0.00793559,
           "actual_return": 0.00753159,
-          "excess_return": 0.00451732
+          "excess_return": -0.000404
         },
         {
           "date": "2026-08-18",
-          "price": 775.32,
-          "value": 25.0452,
-          "return": 0.00180856,
+          "price": 100.5704,
+          "value": 25.119,
+          "return": 0.00476135,
           "actual_return": 0.06355486,
-          "excess_return": 0.0617463
+          "excess_return": 0.05879351
         },
         {
           "date": "2026-08-19",
-          "price": 769.06,
-          "value": 24.843,
-          "return": -0.00628013,
+          "price": 100.5538,
+          "value": 25.1149,
+          "return": 0.00459502,
           "actual_return": 0.06355486,
-          "excess_return": 0.06983499
+          "excess_return": 0.05895984
         },
         {
           "date": "2026-08-20",
-          "price": 762.6,
-          "value": 24.6343,
-          "return": -0.01462724,
+          "price": 99.8745,
+          "value": 24.9452,
+          "return": -0.00219089,
           "actual_return": 0.05542535,
-          "excess_return": 0.07005259
+          "excess_return": 0.05761624
         },
         {
           "date": "2026-08-21",
-          "price": 765.72,
-          "value": 24.7351,
-          "return": -0.01059582,
+          "price": 100.4997,
+          "value": 25.1014,
+          "return": 0.00405516,
           "actual_return": 0.05418727,
-          "excess_return": 0.06478309
+          "excess_return": 0.05013211
         },
         {
           "date": "2026-08-22",
-          "price": 765.72,
-          "value": 24.7351,
-          "return": -0.01059582,
+          "price": 100.4997,
+          "value": 25.1014,
+          "return": 0.00405516,
           "actual_return": 0.05418727,
-          "excess_return": 0.06478309
+          "excess_return": 0.05013211
         },
         {
           "date": "2026-08-23",
-          "price": 765.72,
-          "value": 24.7351,
-          "return": -0.01059582,
+          "price": 100.4997,
+          "value": 25.1014,
+          "return": 0.00405516,
           "actual_return": 0.05418727,
-          "excess_return": 0.06478309
+          "excess_return": 0.05013211
         },
         {
           "date": "2026-08-24",
-          "price": 763.47,
-          "value": 24.6624,
-          "return": -0.01350309,
+          "price": 100.3898,
+          "value": 25.0739,
+          "return": 0.0029565,
           "actual_return": 0.05048943,
-          "excess_return": 0.06399252
+          "excess_return": 0.04753293
         },
         {
           "date": "2026-08-25",
-          "price": 763.47,
-          "value": 24.6624,
-          "return": -0.01350309,
-          "actual_return": 0.05421597,
-          "excess_return": 0.06771906
+          "price": 101.9152,
+          "value": 25.4549,
+          "return": 0.01819661,
+          "actual_return": 0.05048943,
+          "excess_return": 0.03229282
+        },
+        {
+          "date": "2026-08-26",
+          "price": 101.9152,
+          "value": 25.4549,
+          "return": 0.01819661,
+          "actual_return": 0.05608129,
+          "excess_return": 0.03788468
         }
       ],
       "note": "Uses the same published cash flows and the latest completed-session benchmark price available to each evaluation date.",
@@ -1882,12 +2094,12 @@
     }
   },
   "daily_briefing": {
-    "as_of": "2026-08-24 00:00:00",
+    "as_of": "2026-08-25 00:00:00",
     "headline": "TradeRiser made no trade because no change cleared its timing and size rules.",
     "portfolio_context": "The live account currently holds SPY, IWM, QQQ.",
-    "market_context": "The completed-session screen qualified IWM, SPY for consideration.",
-    "champion": "The live strategy currently favors IWM, SPY.",
-    "challenger": "The research-only challenger favors SPY, IWM, VXUS.",
+    "market_context": "The completed-session screen qualified FTXH, IHE, EWC, EWT, FLTW, SPDW, IDMO, SPHB, SCHF, VEA, IMTM, COPX, PICK, VPL for consideration.",
+    "champion": "The live strategy currently favors COPX, EWC, EWT, FTXH, SPDW.",
+    "challenger": "The research-only challenger favors RWL, FNDX, RPV.",
     "disclosure": "This briefing explains completed-session model inputs; it is not a real-time news feed or a recommendation."
   },
   "plain_language": {
@@ -1905,21 +2117,22 @@
       "Use completed market sessions",
       "Require positive trend and momentum",
       "Limit overlapping holdings",
-      "Trade only when timing and drift rules permit"
+      "Replace a holding only when the incoming asset's persistent, estimated benefit exceeds costs"
     ],
     "risk_controls": [
       "No borrowed leverage",
       "No short sales",
       "Maximum five positions",
+      "Optional replacements require explicit tax-cost data and a conservative uncertainty allowance",
       "Policy-gated execution and broker reconciliation"
     ]
   },
   "evidence": {
-    "live_days": 16,
-    "champion_cycles": 17,
-    "challenger_cycles": 12,
+    "live_days": 17,
+    "champion_cycles": 20,
+    "challenger_cycles": 13,
     "reconciled_trades": 7,
-    "benchmark": "SPY",
+    "benchmark": "Equal-weight provider universe",
     "backtest_method": "monthly_walk_forward_next_session",
     "limitations": [
       "The live account is small and the observation period is short.",
@@ -1930,198 +2143,1266 @@
   "research": {
     "champion_rankings": [
       {
-        "annualized_volatility": 0.16924,
-        "distance_from_200d_average": 0.106014,
+        "annualized_volatility": 0.205419,
+        "distance_from_200d_average": 0.223687,
+        "drawdown_from_63d_high": 0.0,
         "eligible": true,
-        "momentum_126d": 0.148643,
-        "momentum_63d": 0.047554,
-        "price": 297.97,
-        "score": 0.51991,
-        "symbol": "IWM"
+        "momentum_126d": 0.212601,
+        "momentum_63d": 0.236501,
+        "overbought": true,
+        "price": 42.761,
+        "rsi_14": 75.1159,
+        "score": 0.954768,
+        "symbol": "FTXH",
+        "volatility_trailing_exit_threshold": -0.08
       },
       {
-        "annualized_volatility": 0.137231,
-        "distance_from_200d_average": 0.082243,
+        "annualized_volatility": 0.20223,
+        "distance_from_200d_average": 0.193308,
+        "drawdown_from_63d_high": -0.006934,
         "eligible": true,
-        "momentum_126d": 0.124763,
-        "momentum_63d": 0.02655,
-        "price": 763.47,
-        "score": 0.47974,
-        "symbol": "SPY"
+        "momentum_126d": 0.179983,
+        "momentum_63d": 0.181424,
+        "overbought": false,
+        "price": 107.41,
+        "rsi_14": 69.7526,
+        "score": 0.894266,
+        "symbol": "IHE",
+        "volatility_trailing_exit_threshold": -0.08
       },
       {
-        "annualized_volatility": 0.257574,
-        "distance_from_200d_average": 0.082998,
-        "eligible": false,
-        "momentum_126d": 0.177213,
-        "momentum_63d": -0.014555,
-        "price": 706.32,
-        "score": 0.241299,
-        "symbol": "QQQ"
+        "annualized_volatility": 0.117133,
+        "distance_from_200d_average": 0.112579,
+        "drawdown_from_63d_high": 0.0,
+        "eligible": true,
+        "momentum_126d": 0.101217,
+        "momentum_63d": 0.072139,
+        "overbought": false,
+        "price": 62.64,
+        "rsi_14": 73.7245,
+        "score": 0.715166,
+        "symbol": "EWC",
+        "volatility_trailing_exit_threshold": -0.08
       },
       {
-        "annualized_volatility": 0.262568,
-        "distance_from_200d_average": 0.031189,
-        "eligible": false,
-        "momentum_126d": -0.113427,
-        "momentum_63d": 0.0311,
-        "price": 426.69,
-        "score": -0.101727,
-        "symbol": "GLD"
+        "annualized_volatility": 0.416436,
+        "distance_from_200d_average": 0.284841,
+        "drawdown_from_63d_high": -0.054963,
+        "eligible": true,
+        "momentum_126d": 0.391787,
+        "momentum_63d": 0.031917,
+        "overbought": false,
+        "price": 105.4,
+        "rsi_14": 61.2805,
+        "score": 0.42231,
+        "symbol": "EWT",
+        "volatility_trailing_exit_threshold": -0.08
       },
       {
-        "annualized_volatility": 0.095223,
-        "distance_from_200d_average": -0.029649,
+        "annualized_volatility": 0.433435,
+        "distance_from_200d_average": 0.277791,
+        "drawdown_from_63d_high": -0.073786,
+        "eligible": true,
+        "momentum_126d": 0.380672,
+        "momentum_63d": 0.009996,
+        "overbought": false,
+        "price": 101.09,
+        "rsi_14": 59.7042,
+        "score": 0.365144,
+        "symbol": "FLTW",
+        "volatility_trailing_exit_threshold": -0.081912
+      },
+      {
+        "annualized_volatility": 0.313468,
+        "distance_from_200d_average": 0.145331,
+        "drawdown_from_63d_high": -0.064563,
         "eligible": false,
-        "momentum_126d": -0.058956,
-        "momentum_63d": -0.013628,
-        "price": 82.56,
-        "score": -0.333526,
-        "symbol": "TLT"
+        "momentum_126d": 0.277875,
+        "momentum_63d": -0.003389,
+        "overbought": false,
+        "price": 117.51,
+        "rsi_14": 42.0217,
+        "score": 0.348095,
+        "symbol": "VGT",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.313941,
+        "distance_from_200d_average": 0.145057,
+        "drawdown_from_63d_high": -0.06592,
+        "eligible": false,
+        "momentum_126d": 0.277397,
+        "momentum_63d": -0.004502,
+        "overbought": false,
+        "price": 280.41,
+        "rsi_14": 42.0084,
+        "score": 0.344834,
+        "symbol": "FTEC",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.348454,
+        "distance_from_200d_average": 0.1468,
+        "drawdown_from_63d_high": -0.082,
+        "eligible": false,
+        "momentum_126d": 0.298339,
+        "momentum_63d": -0.017194,
+        "overbought": false,
+        "price": 181.74,
+        "rsi_14": 41.0246,
+        "score": 0.312866,
+        "symbol": "XLK",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.315754,
+        "distance_from_200d_average": 0.127054,
+        "drawdown_from_63d_high": -0.075633,
+        "eligible": false,
+        "momentum_126d": 0.272923,
+        "momentum_63d": -0.018642,
+        "overbought": false,
+        "price": 157.99,
+        "rsi_14": 38.9884,
+        "score": 0.310317,
+        "symbol": "IGM",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.409409,
+        "distance_from_200d_average": 0.151762,
+        "drawdown_from_63d_high": -0.090567,
+        "eligible": false,
+        "momentum_126d": 0.332677,
+        "momentum_63d": -0.014158,
+        "overbought": false,
+        "price": 355.27,
+        "rsi_14": 46.2984,
+        "score": 0.304283,
+        "symbol": "XNTK",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.376173,
+        "distance_from_200d_average": 0.165498,
+        "drawdown_from_63d_high": -0.075093,
+        "eligible": false,
+        "momentum_126d": 0.279877,
+        "momentum_63d": -0.008622,
+        "overbought": false,
+        "price": 138.33,
+        "rsi_14": 45.8957,
+        "score": 0.283853,
+        "symbol": "IXN",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.18519,
+        "distance_from_200d_average": 0.106527,
+        "drawdown_from_63d_high": 0.0,
+        "eligible": true,
+        "momentum_126d": 0.074749,
+        "momentum_63d": 0.03713,
+        "overbought": false,
+        "price": 52.3,
+        "rsi_14": 62.6506,
+        "score": 0.281752,
+        "symbol": "SPDW",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.221179,
+        "distance_from_200d_average": 0.102913,
+        "drawdown_from_63d_high": -0.002517,
+        "eligible": true,
+        "momentum_126d": 0.08164,
+        "momentum_63d": 0.048673,
+        "overbought": false,
+        "price": 63.4,
+        "rsi_14": 60.6557,
+        "score": 0.279681,
+        "symbol": "IDMO",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.341936,
+        "distance_from_200d_average": 0.137315,
+        "drawdown_from_63d_high": -0.055882,
+        "eligible": true,
+        "momentum_126d": 0.206983,
+        "momentum_63d": 0.015366,
+        "overbought": false,
+        "price": 148.0,
+        "rsi_14": 49.2462,
+        "score": 0.269094,
+        "symbol": "SPHB",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.1901,
+        "distance_from_200d_average": 0.106067,
+        "drawdown_from_63d_high": 0.0,
+        "eligible": true,
+        "momentum_126d": 0.074056,
+        "momentum_63d": 0.035393,
+        "overbought": false,
+        "price": 28.59,
+        "rsi_14": 61.9047,
+        "score": 0.267533,
+        "symbol": "SCHF",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.188102,
+        "distance_from_200d_average": 0.103184,
+        "drawdown_from_63d_high": 0.0,
+        "eligible": true,
+        "momentum_126d": 0.069747,
+        "momentum_63d": 0.033413,
+        "overbought": false,
+        "price": 73.79,
+        "rsi_14": 62.0,
+        "score": 0.254898,
+        "symbol": "VEA",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.361493,
+        "distance_from_200d_average": 0.125014,
+        "drawdown_from_63d_high": -0.088148,
+        "eligible": false,
+        "momentum_126d": 0.24677,
+        "momentum_63d": -0.014445,
+        "overbought": false,
+        "price": 147.41,
+        "rsi_14": 43.065,
+        "score": 0.249081,
+        "symbol": "SPMO",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.423698,
+        "distance_from_200d_average": 0.153417,
+        "drawdown_from_63d_high": -0.116874,
+        "eligible": false,
+        "momentum_126d": 0.282207,
+        "momentum_63d": -0.060419,
+        "overbought": false,
+        "price": 148.79,
+        "rsi_14": 47.9906,
+        "score": 0.180863,
+        "symbol": "QTUM",
+        "volatility_trailing_exit_threshold": -0.080071
+      },
+      {
+        "annualized_volatility": 0.638981,
+        "distance_from_200d_average": 0.216474,
+        "drawdown_from_63d_high": -0.215188,
+        "eligible": false,
+        "momentum_126d": 0.421448,
+        "momentum_63d": -0.097855,
+        "overbought": false,
+        "price": 514.06,
+        "rsi_14": 43.2358,
+        "score": 0.17194,
+        "symbol": "SOXX",
+        "volatility_trailing_exit_threshold": -0.120756
+      },
+      {
+        "annualized_volatility": 0.530397,
+        "distance_from_200d_average": 0.185291,
+        "drawdown_from_63d_high": -0.169066,
+        "eligible": false,
+        "momentum_126d": 0.326033,
+        "momentum_63d": -0.076926,
+        "overbought": false,
+        "price": 555.82,
+        "rsi_14": 43.8747,
+        "score": 0.158858,
+        "symbol": "SMH",
+        "volatility_trailing_exit_threshold": -0.100236
+      },
+      {
+        "annualized_volatility": 0.418997,
+        "distance_from_200d_average": 0.172596,
+        "drawdown_from_63d_high": -0.078045,
+        "eligible": false,
+        "momentum_126d": 0.186152,
+        "momentum_63d": -0.013225,
+        "overbought": false,
+        "price": 138.45,
+        "rsi_14": 55.0935,
+        "score": 0.158774,
+        "symbol": "AIA",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.210831,
+        "distance_from_200d_average": 0.077281,
+        "drawdown_from_63d_high": -0.009334,
+        "eligible": true,
+        "momentum_126d": 0.043975,
+        "momentum_63d": 0.024631,
+        "overbought": false,
+        "price": 54.13,
+        "rsi_14": 61.1974,
+        "score": 0.153527,
+        "symbol": "IMTM",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.508378,
+        "distance_from_200d_average": 0.218895,
+        "drawdown_from_63d_high": 0.0,
+        "eligible": true,
+        "momentum_126d": 0.0351,
+        "momentum_63d": 0.104415,
+        "overbought": false,
+        "price": 96.32,
+        "rsi_14": 71.3333,
+        "score": 0.15085,
+        "symbol": "COPX",
+        "volatility_trailing_exit_threshold": -0.096074
+      },
+      {
+        "annualized_volatility": 0.341103,
+        "distance_from_200d_average": 0.16301,
+        "drawdown_from_63d_high": -0.020714,
+        "eligible": true,
+        "momentum_126d": 0.073849,
+        "momentum_63d": 0.024623,
+        "overbought": false,
+        "price": 66.94,
+        "rsi_14": 65.0612,
+        "score": 0.129913,
+        "symbol": "PICK",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.384008,
+        "distance_from_200d_average": 0.152934,
+        "drawdown_from_63d_high": -0.076439,
+        "eligible": false,
+        "momentum_126d": 0.135857,
+        "momentum_63d": -0.010569,
+        "overbought": false,
+        "price": 98.35,
+        "rsi_14": 59.2299,
+        "score": 0.125001,
+        "symbol": "EMXC",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.222379,
+        "distance_from_200d_average": 0.068525,
+        "drawdown_from_63d_high": -0.06577,
+        "eligible": false,
+        "momentum_126d": 0.111974,
+        "momentum_63d": -0.030675,
+        "overbought": false,
+        "price": 115.84,
+        "rsi_14": 49.0566,
+        "score": 0.118645,
+        "symbol": "ICVT",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.317609,
+        "distance_from_200d_average": 0.119365,
+        "drawdown_from_63d_high": -0.041166,
+        "eligible": true,
+        "momentum_126d": 0.082274,
+        "momentum_63d": 0.002338,
+        "overbought": false,
+        "price": 115.76,
+        "rsi_14": 57.8488,
+        "score": 0.108033,
+        "symbol": "VPL",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.656262,
+        "distance_from_200d_average": 0.189457,
+        "drawdown_from_63d_high": -0.249858,
+        "eligible": false,
+        "momentum_126d": 0.397869,
+        "momentum_63d": -0.152578,
+        "overbought": false,
+        "price": 222.8,
+        "rsi_14": 43.1336,
+        "score": 0.103008,
+        "symbol": "FTXL",
+        "volatility_trailing_exit_threshold": -0.124022
+      },
+      {
+        "annualized_volatility": 0.53777,
+        "distance_from_200d_average": 0.223754,
+        "drawdown_from_63d_high": 0.0,
+        "eligible": false,
+        "momentum_126d": -0.014384,
+        "momentum_63d": 0.217796,
+        "overbought": true,
+        "price": 93.17,
+        "rsi_14": 83.2594,
+        "score": 0.0823,
+        "symbol": "RING",
+        "volatility_trailing_exit_threshold": -0.101629
+      },
+      {
+        "annualized_volatility": 0.746355,
+        "distance_from_200d_average": 0.16284,
+        "drawdown_from_63d_high": -0.276115,
+        "eligible": false,
+        "momentum_126d": 0.323244,
+        "momentum_63d": -0.158744,
+        "overbought": false,
+        "price": 135.96,
+        "rsi_14": 43.367,
+        "score": 0.045623,
+        "symbol": "PSI",
+        "volatility_trailing_exit_threshold": -0.141048
+      },
+      {
+        "annualized_volatility": 0.535197,
+        "distance_from_200d_average": 0.188228,
+        "drawdown_from_63d_high": 0.0,
+        "eligible": false,
+        "momentum_126d": -0.046793,
+        "momentum_63d": 0.192316,
+        "overbought": true,
+        "price": 105.52,
+        "rsi_14": 82.2695,
+        "score": 0.03063,
+        "symbol": "GDX",
+        "volatility_trailing_exit_threshold": -0.101143
+      },
+      {
+        "annualized_volatility": 0.64133,
+        "distance_from_200d_average": 0.140201,
+        "drawdown_from_63d_high": -0.244132,
+        "eligible": false,
+        "momentum_126d": 0.370132,
+        "momentum_63d": -0.22321,
+        "overbought": false,
+        "price": 490.93,
+        "rsi_14": 44.616,
+        "score": 0.022027,
+        "symbol": "XSD",
+        "volatility_trailing_exit_threshold": -0.1212
+      },
+      {
+        "annualized_volatility": 0.321663,
+        "distance_from_200d_average": 0.105827,
+        "drawdown_from_63d_high": -0.142005,
+        "eligible": false,
+        "momentum_126d": 0.181017,
+        "momentum_63d": -0.117118,
+        "overbought": false,
+        "price": 211.61,
+        "rsi_14": 41.8283,
+        "score": 0.00664,
+        "symbol": "XTL",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.411942,
+        "distance_from_200d_average": 0.083811,
+        "drawdown_from_63d_high": -0.08889,
+        "eligible": false,
+        "momentum_126d": 0.014474,
+        "momentum_63d": -0.013267,
+        "overbought": false,
+        "price": 120.94,
+        "rsi_14": 63.3038,
+        "score": -0.00527,
+        "symbol": "XME",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.294412,
+        "distance_from_200d_average": 0.03816,
+        "drawdown_from_63d_high": -0.088023,
+        "eligible": false,
+        "momentum_126d": 0.019347,
+        "momentum_63d": -0.085708,
+        "overbought": false,
+        "price": 179.41,
+        "rsi_14": 33.1314,
+        "score": -0.148384,
+        "symbol": "GRID",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.499654,
+        "distance_from_200d_average": 0.000243,
+        "drawdown_from_63d_high": -0.098839,
+        "eligible": false,
+        "momentum_126d": -0.123931,
+        "momentum_63d": -0.05348,
+        "overbought": false,
+        "price": 48.14,
+        "rsi_14": 69.722,
+        "score": -0.163434,
+        "symbol": "URA",
+        "volatility_trailing_exit_threshold": -0.094426
+      },
+      {
+        "annualized_volatility": 0.080586,
+        "distance_from_200d_average": -0.010047,
+        "drawdown_from_63d_high": -0.025629,
+        "eligible": false,
+        "momentum_126d": -0.037925,
+        "momentum_63d": -0.001097,
+        "overbought": false,
+        "price": 97.98,
+        "rsi_14": 54.4286,
+        "score": -0.196419,
+        "symbol": "TLH",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.378417,
+        "distance_from_200d_average": -0.001957,
+        "drawdown_from_63d_high": -0.146572,
+        "eligible": false,
+        "momentum_126d": -0.016191,
+        "momentum_63d": -0.121151,
+        "overbought": false,
+        "price": 122.74,
+        "rsi_14": 50.7936,
+        "score": -0.209207,
+        "symbol": "ARKQ",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.079058,
+        "distance_from_200d_average": -0.011093,
+        "drawdown_from_63d_high": -0.031733,
+        "eligible": false,
+        "momentum_126d": -0.03182,
+        "momentum_63d": -0.012957,
+        "overbought": false,
+        "price": 48.46,
+        "rsi_14": 51.6129,
+        "score": -0.259326,
+        "symbol": "IGLB",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.42566,
+        "distance_from_200d_average": -0.054259,
+        "drawdown_from_63d_high": -0.10241,
+        "eligible": false,
+        "momentum_126d": -0.176111,
+        "momentum_63d": -0.078672,
+        "overbought": false,
+        "price": 124.02,
+        "rsi_14": 66.6012,
+        "score": -0.276388,
+        "symbol": "NLR",
+        "volatility_trailing_exit_threshold": -0.080442
       }
     ],
+    "replacement_analysis": {
+      "calibrated_forward_return_per_score": 0.0,
+      "comparisons": [
+        {
+          "calibrated_forward_return_per_score": 0.0,
+          "data_as_of": "2026-08-21 00:00:00",
+          "estimated_tax_cost_dollars": 0.0,
+          "expected_edge_dollars": 0.0,
+          "incoming_median_score": 0.5187,
+          "outgoing_score": 0.554575,
+          "outgoing_symbol": "IWM",
+          "passed": false,
+          "required_edge_dollars": 0.06,
+          "round_trip_cost_dollars": 0.0172,
+          "score_advantage": -0.035875,
+          "uncertainty_buffer_dollars": 0.0429
+        },
+        {
+          "calibrated_forward_return_per_score": 0.0,
+          "data_as_of": "2026-08-21 00:00:00",
+          "estimated_tax_cost_dollars": 0.0,
+          "expected_edge_dollars": 0.0,
+          "incoming_median_score": 0.5187,
+          "outgoing_score": 0.270935,
+          "outgoing_symbol": "QQQ",
+          "passed": false,
+          "required_edge_dollars": 0.0419,
+          "round_trip_cost_dollars": 0.012,
+          "score_advantage": 0.247765,
+          "uncertainty_buffer_dollars": 0.0299
+        },
+        {
+          "calibrated_forward_return_per_score": 0.0,
+          "data_as_of": "2026-08-21 00:00:00",
+          "estimated_tax_cost_dollars": 0.0,
+          "expected_edge_dollars": 0.0,
+          "incoming_median_score": 0.5187,
+          "outgoing_score": 0.486759,
+          "outgoing_symbol": "SPY",
+          "passed": false,
+          "required_edge_dollars": 0.0784,
+          "round_trip_cost_dollars": 0.0224,
+          "score_advantage": 0.031941,
+          "uncertainty_buffer_dollars": 0.056
+        },
+        {
+          "calibrated_forward_return_per_score": 0.0,
+          "data_as_of": "2026-08-24 00:00:00",
+          "estimated_tax_cost_dollars": 0.0,
+          "expected_edge_dollars": 0.0,
+          "incoming_median_score": 0.47839,
+          "outgoing_score": 0.51991,
+          "outgoing_symbol": "IWM",
+          "passed": false,
+          "required_edge_dollars": 0.06,
+          "round_trip_cost_dollars": 0.0172,
+          "score_advantage": -0.04152,
+          "uncertainty_buffer_dollars": 0.0429
+        },
+        {
+          "calibrated_forward_return_per_score": 0.0,
+          "data_as_of": "2026-08-24 00:00:00",
+          "estimated_tax_cost_dollars": 0.0,
+          "expected_edge_dollars": 0.0,
+          "incoming_median_score": 0.47839,
+          "outgoing_score": 0.241299,
+          "outgoing_symbol": "QQQ",
+          "passed": false,
+          "required_edge_dollars": 0.0419,
+          "round_trip_cost_dollars": 0.012,
+          "score_advantage": 0.237091,
+          "uncertainty_buffer_dollars": 0.0299
+        },
+        {
+          "calibrated_forward_return_per_score": 0.0,
+          "data_as_of": "2026-08-24 00:00:00",
+          "estimated_tax_cost_dollars": 0.0,
+          "expected_edge_dollars": 0.0,
+          "incoming_median_score": 0.47839,
+          "outgoing_score": 0.47974,
+          "outgoing_symbol": "SPY",
+          "passed": false,
+          "required_edge_dollars": 0.0784,
+          "round_trip_cost_dollars": 0.0224,
+          "score_advantage": -0.00135,
+          "uncertainty_buffer_dollars": 0.056
+        },
+        {
+          "calibrated_forward_return_per_score": 0.0,
+          "data_as_of": "2026-08-25 00:00:00",
+          "estimated_tax_cost_dollars": 0.0,
+          "expected_edge_dollars": 0.0,
+          "incoming_median_score": 0.42231,
+          "outgoing_score": 0.459025,
+          "outgoing_symbol": "IWM",
+          "passed": false,
+          "required_edge_dollars": 0.06,
+          "round_trip_cost_dollars": 0.0172,
+          "score_advantage": -0.036715,
+          "uncertainty_buffer_dollars": 0.0429
+        },
+        {
+          "calibrated_forward_return_per_score": 0.0,
+          "data_as_of": "2026-08-25 00:00:00",
+          "estimated_tax_cost_dollars": 0.0,
+          "expected_edge_dollars": 0.0,
+          "incoming_median_score": 0.42231,
+          "outgoing_score": 0.208948,
+          "outgoing_symbol": "QQQ",
+          "passed": false,
+          "required_edge_dollars": 0.0419,
+          "round_trip_cost_dollars": 0.012,
+          "score_advantage": 0.213362,
+          "uncertainty_buffer_dollars": 0.0299
+        },
+        {
+          "calibrated_forward_return_per_score": 0.0,
+          "data_as_of": "2026-08-25 00:00:00",
+          "estimated_tax_cost_dollars": 0.0,
+          "expected_edge_dollars": 0.0,
+          "incoming_median_score": 0.42231,
+          "outgoing_score": 0.452648,
+          "outgoing_symbol": "SPY",
+          "passed": false,
+          "required_edge_dollars": 0.0784,
+          "round_trip_cost_dollars": 0.0224,
+          "score_advantage": -0.030338,
+          "uncertainty_buffer_dollars": 0.056
+        }
+      ],
+      "missing_symbols": [],
+      "missing_tax_cost_symbols": [],
+      "passed": false,
+      "reason": "replacement advantage did not persist above the hurdle",
+      "required_sessions": 3,
+      "score_hurdle": 0.2
+    },
     "challenger_rankings": [
       {
-        "annualized_volatility": 0.001554,
-        "asset_group": "defensive",
-        "distance_from_200d_average": 0.014512,
-        "drawdown_126d": 0.0,
+        "annualized_volatility": 0.091265,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.108573,
+        "diversification_adjusted_score": 0.94752,
+        "drawdown_126d": -0.008628,
         "eligible": true,
-        "momentum_126d": 0.018219,
-        "momentum_21d": 0.003058,
-        "momentum_63d": 0.009113,
-        "price": 100.64,
-        "score": 1.199958,
-        "symbol": "SGOV"
+        "momentum_126d": 0.126793,
+        "momentum_21d": 0.026573,
+        "momentum_63d": 0.069431,
+        "price": 134.44,
+        "score": 0.94752,
+        "symbol": "RWL"
       },
       {
-        "annualized_volatility": 0.137231,
-        "asset_group": "risk",
-        "distance_from_200d_average": 0.082243,
-        "diversification_adjusted_score": 0.520599,
-        "drawdown_126d": -0.018525,
+        "annualized_volatility": 0.090753,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.114356,
+        "diversification_adjusted_score": 0.61103,
+        "drawdown_126d": -0.004894,
         "eligible": true,
-        "momentum_126d": 0.124763,
-        "momentum_21d": 0.03321,
-        "momentum_63d": 0.02655,
-        "price": 763.47,
-        "score": 0.520599,
-        "symbol": "SPY"
+        "momentum_126d": 0.132509,
+        "momentum_21d": 0.028129,
+        "momentum_63d": 0.056092,
+        "price": 32.53,
+        "score": 0.934138,
+        "symbol": "FNDX"
       },
       {
-        "annualized_volatility": 0.16924,
-        "asset_group": "risk",
-        "distance_from_200d_average": 0.106014,
-        "diversification_adjusted_score": 0.219358,
-        "drawdown_126d": -0.023337,
+        "annualized_volatility": 0.105032,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.115345,
+        "diversification_adjusted_score": 0.521885,
+        "drawdown_126d": -0.006347,
         "eligible": true,
-        "momentum_126d": 0.148643,
-        "momentum_21d": 0.023354,
-        "momentum_63d": 0.047554,
-        "price": 297.97,
-        "score": 0.515343,
-        "symbol": "IWM"
+        "momentum_126d": 0.105246,
+        "momentum_21d": 0.022354,
+        "momentum_63d": 0.093255,
+        "price": 122.11,
+        "score": 0.802652,
+        "symbol": "RPV"
       },
       {
-        "annualized_volatility": 0.257574,
-        "asset_group": "risk",
-        "distance_from_200d_average": 0.082998,
-        "drawdown_126d": -0.052353,
+        "annualized_volatility": 0.255997,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.233559,
+        "diversification_adjusted_score": 0.431965,
+        "drawdown_126d": -0.016716,
+        "eligible": true,
+        "momentum_126d": 0.341412,
+        "momentum_21d": 0.02974,
+        "momentum_63d": 0.037673,
+        "price": 201.17,
+        "score": 0.670708,
+        "symbol": "VLUE"
+      },
+      {
+        "annualized_volatility": 0.123133,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.098605,
+        "diversification_adjusted_score": 0.366833,
+        "drawdown_126d": -0.011011,
+        "eligible": true,
+        "momentum_126d": 0.101021,
+        "momentum_21d": 0.037724,
+        "momentum_63d": 0.080104,
+        "price": 118.56,
+        "score": 0.655402,
+        "symbol": "XMHQ"
+      },
+      {
+        "annualized_volatility": 0.182356,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.124793,
+        "diversification_adjusted_score": 0.271567,
+        "drawdown_126d": -0.026059,
+        "eligible": true,
+        "momentum_126d": 0.176174,
+        "momentum_21d": 0.021596,
+        "momentum_63d": 0.057245,
+        "price": 97.92,
+        "score": 0.561788,
+        "symbol": "IMCG"
+      },
+      {
+        "annualized_volatility": 0.119136,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.095009,
+        "diversification_adjusted_score": 0.216358,
+        "drawdown_126d": -0.01355,
+        "eligible": true,
+        "momentum_126d": 0.089938,
+        "momentum_21d": 0.01042,
+        "momentum_63d": 0.059846,
+        "price": 248.25,
+        "score": 0.529631,
+        "symbol": "VBR"
+      },
+      {
+        "annualized_volatility": 0.155711,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.102822,
+        "diversification_adjusted_score": 0.208654,
+        "drawdown_126d": -0.018868,
+        "eligible": true,
+        "momentum_126d": 0.130159,
+        "momentum_21d": 0.026908,
+        "momentum_63d": 0.045284,
+        "price": 88.92,
+        "score": 0.507788,
+        "symbol": "SMLF"
+      },
+      {
+        "annualized_volatility": 0.168106,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.143014,
+        "diversification_adjusted_score": 0.394577,
+        "drawdown_126d": -0.009937,
+        "eligible": true,
+        "momentum_126d": 0.074889,
+        "momentum_21d": 0.104653,
+        "momentum_63d": 0.082738,
+        "price": 65.76,
+        "score": 0.494755,
+        "symbol": "IGE"
+      },
+      {
+        "annualized_volatility": 0.416436,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.284841,
+        "diversification_adjusted_score": 0.262994,
+        "drawdown_126d": -0.054963,
+        "eligible": true,
+        "momentum_126d": 0.391787,
+        "momentum_21d": 0.077599,
+        "momentum_63d": 0.031917,
+        "price": 105.4,
+        "score": 0.473717,
+        "symbol": "EWT"
+      },
+      {
+        "annualized_volatility": 0.228908,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.158023,
+        "diversification_adjusted_score": 0.377597,
+        "drawdown_126d": -0.02651,
+        "eligible": true,
+        "momentum_126d": 0.141851,
+        "momentum_21d": 0.0634,
+        "momentum_63d": 0.080511,
+        "price": 62.06,
+        "score": 0.450724,
+        "symbol": "XLE"
+      },
+      {
+        "annualized_volatility": 0.230371,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.157308,
+        "diversification_adjusted_score": 0.373874,
+        "drawdown_126d": -0.024894,
+        "eligible": true,
+        "momentum_126d": 0.143395,
+        "momentum_21d": 0.064546,
+        "momentum_63d": 0.077953,
+        "price": 34.47,
+        "score": 0.44835,
+        "symbol": "FENY"
+      },
+      {
+        "annualized_volatility": 0.231294,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.156221,
+        "diversification_adjusted_score": 0.36761,
+        "drawdown_126d": -0.02554,
+        "eligible": true,
+        "momentum_126d": 0.142308,
+        "momentum_21d": 0.064491,
+        "momentum_63d": 0.076877,
+        "price": 175.13,
+        "score": 0.442582,
+        "symbol": "VDE"
+      },
+      {
+        "annualized_volatility": 0.140405,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.091979,
+        "diversification_adjusted_score": 0.126191,
+        "drawdown_126d": -0.020305,
+        "eligible": true,
+        "momentum_126d": 0.099665,
+        "momentum_21d": 0.020648,
+        "momentum_63d": 0.037606,
+        "price": 303.01,
+        "score": 0.43751,
+        "symbol": "VB"
+      },
+      {
+        "annualized_volatility": 0.433435,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.277791,
+        "diversification_adjusted_score": 0.208157,
+        "drawdown_126d": -0.073786,
+        "eligible": true,
+        "momentum_126d": 0.380672,
+        "momentum_21d": 0.077144,
+        "momentum_63d": 0.009996,
+        "price": 101.09,
+        "score": 0.420442,
+        "symbol": "FLTW"
+      },
+      {
+        "annualized_volatility": 0.220701,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.140941,
+        "diversification_adjusted_score": 0.332275,
+        "drawdown_126d": -0.025947,
+        "eligible": true,
+        "momentum_126d": 0.134872,
+        "momentum_21d": 0.053156,
+        "momentum_63d": 0.056698,
+        "price": 57.06,
+        "score": 0.406597,
+        "symbol": "IXC"
+      },
+      {
+        "annualized_volatility": 0.235066,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.149541,
+        "diversification_adjusted_score": 0.33302,
+        "drawdown_126d": -0.027264,
+        "eligible": true,
+        "momentum_126d": 0.139349,
+        "momentum_21d": 0.060195,
+        "momentum_63d": 0.059199,
+        "price": 110.96,
+        "score": 0.399305,
+        "symbol": "RSPG"
+      },
+      {
+        "annualized_volatility": 0.123599,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.079845,
+        "diversification_adjusted_score": 0.069503,
+        "drawdown_126d": -0.02159,
+        "eligible": true,
+        "momentum_126d": 0.07003,
+        "momentum_21d": 0.019534,
+        "momentum_63d": 0.036809,
+        "price": 75.68,
+        "score": 0.38541,
+        "symbol": "JHMM"
+      },
+      {
+        "annualized_volatility": 0.202635,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.081402,
+        "diversification_adjusted_score": 0.232312,
+        "drawdown_126d": -0.044322,
+        "eligible": true,
+        "momentum_126d": 0.096109,
+        "momentum_21d": -0.025089,
+        "momentum_63d": 0.092933,
+        "price": 145.33,
+        "score": 0.338108,
+        "symbol": "IAK"
+      },
+      {
+        "annualized_volatility": 0.116775,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.069741,
+        "diversification_adjusted_score": 0.034883,
+        "drawdown_126d": -0.024255,
+        "eligible": true,
+        "momentum_126d": 0.047331,
+        "momentum_21d": 0.006426,
+        "momentum_63d": 0.045009,
+        "price": 43.85,
+        "score": 0.322237,
+        "symbol": "SDVY"
+      },
+      {
+        "annualized_volatility": 0.341936,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.137315,
+        "diversification_adjusted_score": 0.054604,
+        "drawdown_126d": -0.055882,
+        "eligible": true,
+        "momentum_126d": 0.206983,
+        "momentum_21d": 0.047788,
+        "momentum_63d": 0.015366,
+        "price": 148.0,
+        "score": 0.302107,
+        "symbol": "SPHB"
+      },
+      {
+        "annualized_volatility": 0.170232,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.076873,
+        "diversification_adjusted_score": -0.055483,
+        "drawdown_126d": -0.038788,
+        "eligible": true,
+        "momentum_126d": 0.080513,
+        "momentum_21d": 0.007657,
+        "momentum_63d": 0.004589,
+        "price": 114.49,
+        "score": 0.221567,
+        "symbol": "IJK"
+      },
+      {
+        "annualized_volatility": 0.322122,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.093056,
+        "drawdown_126d": -0.077681,
         "eligible": false,
-        "momentum_126d": 0.177213,
-        "momentum_21d": 0.032285,
-        "momentum_63d": -0.014555,
-        "price": 706.32,
-        "score": 0.301806,
-        "symbol": "QQQ"
+        "momentum_126d": 0.148792,
+        "momentum_21d": 0.01297,
+        "momentum_63d": -0.021716,
+        "price": 155.42,
+        "score": 0.172897,
+        "symbol": "PWB"
       },
       {
-        "annualized_volatility": 0.186962,
-        "asset_group": "risk",
-        "distance_from_200d_average": 0.083519,
-        "diversification_adjusted_score": -0.044909,
-        "drawdown_126d": -0.007625,
-        "eligible": true,
-        "momentum_126d": 0.057318,
-        "momentum_21d": 0.045563,
-        "momentum_63d": 0.037088,
-        "price": 87.2,
-        "score": 0.254224,
-        "symbol": "VXUS"
-      },
-      {
-        "annualized_volatility": 0.329702,
-        "asset_group": "risk",
-        "distance_from_200d_average": 0.086506,
-        "diversification_adjusted_score": -0.158108,
-        "drawdown_126d": -0.071619,
-        "eligible": true,
-        "momentum_126d": 0.077918,
-        "momentum_21d": 0.043897,
-        "momentum_63d": 0.008707,
-        "price": 66.11,
-        "score": 0.124314,
-        "symbol": "EEM"
-      },
-      {
-        "annualized_volatility": 0.262568,
-        "asset_group": "defensive",
-        "distance_from_200d_average": 0.031189,
-        "drawdown_126d": -0.129204,
+        "annualized_volatility": 0.193792,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.082864,
+        "drawdown_126d": -0.038069,
         "eligible": false,
-        "momentum_126d": -0.113427,
-        "momentum_21d": 0.147325,
-        "momentum_63d": 0.0311,
-        "price": 426.69,
-        "score": -0.073022,
-        "symbol": "GLD"
+        "momentum_126d": 0.078209,
+        "momentum_21d": -0.00167,
+        "momentum_63d": -0.012366,
+        "price": 73.89,
+        "score": 0.148033,
+        "symbol": "MLPX"
       },
       {
-        "annualized_volatility": 0.047474,
-        "asset_group": "defensive",
-        "distance_from_200d_average": -0.008956,
-        "drawdown_126d": -0.032048,
+        "annualized_volatility": 0.321663,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.105827,
+        "drawdown_126d": -0.142005,
         "eligible": false,
-        "momentum_126d": -0.026585,
-        "momentum_21d": 0.003217,
-        "momentum_63d": 0.000766,
-        "price": 93.01,
-        "score": -0.240805,
-        "symbol": "IEF"
+        "momentum_126d": 0.181017,
+        "momentum_21d": 0.015208,
+        "momentum_63d": -0.117118,
+        "price": 211.61,
+        "score": 0.099758,
+        "symbol": "XTL"
       },
       {
-        "annualized_volatility": 0.095223,
-        "asset_group": "defensive",
-        "distance_from_200d_average": -0.029649,
-        "drawdown_126d": -0.070147,
+        "annualized_volatility": 0.411942,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.083811,
+        "drawdown_126d": -0.08889,
         "eligible": false,
-        "momentum_126d": -0.058956,
-        "momentum_21d": -0.004293,
-        "momentum_63d": -0.013628,
-        "price": 82.56,
-        "score": -0.355258,
-        "symbol": "TLT"
+        "momentum_126d": 0.014474,
+        "momentum_21d": 0.172922,
+        "momentum_63d": -0.013267,
+        "price": 120.94,
+        "score": 0.066271,
+        "symbol": "XME"
+      },
+      {
+        "annualized_volatility": 0.208373,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.052326,
+        "drawdown_126d": -0.088326,
+        "eligible": false,
+        "momentum_126d": 0.079398,
+        "momentum_21d": -0.02468,
+        "momentum_63d": -0.037716,
+        "price": 85.36,
+        "score": 0.062347,
+        "symbol": "XSMO"
+      },
+      {
+        "annualized_volatility": 0.214395,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.041264,
+        "drawdown_126d": -0.071053,
+        "eligible": false,
+        "momentum_126d": 0.001394,
+        "momentum_21d": -0.032185,
+        "momentum_63d": -0.010344,
+        "price": 55.63,
+        "score": -0.061748,
+        "symbol": "PAVE"
+      },
+      {
+        "annualized_volatility": 0.261238,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.02598,
+        "drawdown_126d": -0.104994,
+        "eligible": false,
+        "momentum_126d": 0.047975,
+        "momentum_21d": -0.024334,
+        "momentum_63d": -0.080357,
+        "price": 155.57,
+        "score": -0.069898,
+        "symbol": "XMMO"
+      },
+      {
+        "annualized_volatility": 0.252683,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.025763,
+        "drawdown_126d": -0.074718,
+        "eligible": false,
+        "momentum_126d": -0.034936,
+        "momentum_21d": -0.0394,
+        "momentum_63d": 0.021676,
+        "price": 234.3,
+        "score": -0.082058,
+        "symbol": "ITA"
+      },
+      {
+        "annualized_volatility": 0.294412,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.03816,
+        "drawdown_126d": -0.098429,
+        "eligible": false,
+        "momentum_126d": 0.019347,
+        "momentum_21d": 0.016718,
+        "momentum_63d": -0.085708,
+        "price": 179.41,
+        "score": -0.08557,
+        "symbol": "GRID"
+      },
+      {
+        "annualized_volatility": 0.499654,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.000243,
+        "drawdown_126d": -0.173704,
+        "eligible": false,
+        "momentum_126d": -0.123931,
+        "momentum_21d": 0.193948,
+        "momentum_63d": -0.05348,
+        "price": 48.14,
+        "score": -0.11487,
+        "symbol": "URA"
+      },
+      {
+        "annualized_volatility": 0.151812,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.024522,
+        "drawdown_126d": -0.070392,
+        "eligible": false,
+        "momentum_126d": -0.005449,
+        "momentum_21d": -0.037647,
+        "momentum_63d": -0.032456,
+        "price": 59.56,
+        "score": -0.158173,
+        "symbol": "IFRA"
+      },
+      {
+        "annualized_volatility": 0.319304,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": -0.001733,
+        "drawdown_126d": -0.107438,
+        "eligible": false,
+        "momentum_126d": -0.063227,
+        "momentum_21d": -0.030102,
+        "momentum_63d": -0.042133,
+        "price": 264.85,
+        "score": -0.181004,
+        "symbol": "XAR"
+      },
+      {
+        "annualized_volatility": 0.241908,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.004921,
+        "drawdown_126d": -0.079698,
+        "eligible": false,
+        "momentum_126d": -0.056881,
+        "momentum_21d": -0.037024,
+        "momentum_63d": -0.01889,
+        "price": 170.62,
+        "score": -0.183675,
+        "symbol": "PPA"
+      },
+      {
+        "annualized_volatility": 0.150378,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.003643,
+        "drawdown_126d": -0.061548,
+        "eligible": false,
+        "momentum_126d": -0.039165,
+        "momentum_21d": -0.035204,
+        "momentum_63d": -0.013703,
+        "price": 47.96,
+        "score": -0.211302,
+        "symbol": "FXU"
+      },
+      {
+        "annualized_volatility": 0.099511,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.017649,
+        "drawdown_126d": -0.037237,
+        "eligible": false,
+        "momentum_126d": -0.030388,
+        "momentum_21d": -0.015104,
+        "momentum_63d": -0.012759,
+        "price": 65.86,
+        "score": -0.221959,
+        "symbol": "IGF"
+      },
+      {
+        "annualized_volatility": 0.42566,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": -0.054259,
+        "drawdown_126d": -0.193785,
+        "eligible": false,
+        "momentum_126d": -0.176111,
+        "momentum_21d": 0.12992,
+        "momentum_63d": -0.078672,
+        "price": 124.02,
+        "score": -0.238272,
+        "symbol": "NLR"
+      },
+      {
+        "annualized_volatility": 0.310426,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": -0.040006,
+        "drawdown_126d": -0.165478,
+        "eligible": false,
+        "momentum_126d": -0.073018,
+        "momentum_21d": -0.076489,
+        "momentum_63d": -0.133281,
+        "price": 111.2,
+        "score": -0.34677,
+        "symbol": "AIRR"
+      },
+      {
+        "annualized_volatility": 0.16057,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": -0.0229,
+        "drawdown_126d": -0.080426,
+        "eligible": false,
+        "momentum_126d": -0.0701,
+        "momentum_21d": -0.051883,
+        "momentum_63d": -0.038461,
+        "price": 43.31,
+        "score": -0.365021,
+        "symbol": "XLU"
       }
     ],
     "backtest": {
       "method": "monthly_walk_forward_next_session",
-      "data_start": "2022-06-09 00:00:00",
-      "data_end": "2026-08-24 00:00:00",
+      "data_start": "2022-06-10 00:00:00",
+      "data_end": "2026-08-25 00:00:00",
       "strategy": {
         "annual_risk_free_rate": 0.0,
-        "annualized_volatility": 0.10432,
-        "cagr": 0.090136,
-        "maximum_drawdown": -0.109786,
-        "sharpe_excess_return": 0.879618,
-        "total_return": 0.434711
+        "annualized_volatility": 0.164511,
+        "cagr": 0.042869,
+        "maximum_drawdown": -0.239071,
+        "sharpe_excess_return": 0.337765,
+        "total_return": 0.19192
       },
       "benchmark": {
         "annual_risk_free_rate": 0.0,
-        "annualized_volatility": 0.16584,
-        "cagr": 0.182356,
-        "maximum_drawdown": -0.187552,
-        "sharpe_excess_return": 1.092921,
-        "total_return": 1.014985
+        "annualized_volatility": 0.171068,
+        "cagr": 0.194635,
+        "maximum_drawdown": -0.199053,
+        "sharpe_excess_return": 1.125398,
+        "total_return": 1.10397
       }
     }
   },
