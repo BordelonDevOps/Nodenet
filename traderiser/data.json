@@ -1,6 +1,6 @@
 {
   "schema_version": "1.6.0",
-  "published_at": "2026-08-27T19:35:02.526865+00:00",
+  "published_at": "2026-08-27T19:35:39.284571+00:00",
   "experiment": {
     "name": "TradeRiser Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -1556,6 +1556,55 @@
         "The champion proposal passed the live authorization gate and the broker outcome was reconciled."
       ],
       "regime": null
+    },
+    {
+      "kind": "challenger",
+      "generated_at": "2026-08-27T19:35:25.842265+00:00",
+      "status": "hypothetical_only",
+      "selected": [
+        "EWT",
+        "SCHX",
+        "DYNF"
+      ],
+      "orders": [
+        {
+          "symbol": "DYNF",
+          "side": "buy",
+          "dollars": 9.39,
+          "status": "hypothetical_only"
+        },
+        {
+          "symbol": "IWM",
+          "side": "sell",
+          "dollars": 8.6,
+          "status": "hypothetical_only"
+        },
+        {
+          "symbol": "QQQ",
+          "side": "sell",
+          "dollars": 6.06,
+          "status": "hypothetical_only"
+        },
+        {
+          "symbol": "SCHX",
+          "side": "buy",
+          "dollars": 10.55,
+          "status": "hypothetical_only"
+        },
+        {
+          "symbol": "SPY",
+          "side": "sell",
+          "dollars": 8.24,
+          "status": "hypothetical_only"
+        }
+      ],
+      "explanation": [],
+      "regime": {
+        "median_distance_from_200d_average": 0.086296,
+        "name": "defensive",
+        "risk_asset_breadth": 0.5
+      },
+      "stage": "research"
     }
   ],
   "portfolio_history": [
@@ -2199,7 +2248,7 @@
           "value": 3.0196
         }
       ],
-      "captured_at": "2026-08-27T19:35:02.526143+00:00",
+      "captured_at": "2026-08-27T19:35:39.283993+00:00",
       "source": "live_broker_snapshot",
       "breakdown_estimated": false,
       "note": "Holding values came from the latest reconciled quantities and fresh quotes.",
@@ -2422,7 +2471,7 @@
   "evidence": {
     "live_days": 18,
     "champion_cycles": 23,
-    "challenger_cycles": 14,
+    "challenger_cycles": 15,
     "reconciled_trades": 9,
     "benchmark": "Equal-weight provider universe",
     "backtest_method": "monthly_walk_forward_next_session",
@@ -3279,6 +3328,20 @@
         "symbol": "DYNF"
       },
       {
+        "annualized_volatility": 0.135265,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.08466,
+        "diversification_adjusted_score": 0.128626,
+        "drawdown_126d": -0.015181,
+        "eligible": true,
+        "momentum_126d": 0.111368,
+        "momentum_21d": 0.034178,
+        "momentum_63d": 0.023417,
+        "price": 90.17,
+        "score": 0.477832,
+        "symbol": "SPYM"
+      },
+      {
         "annualized_volatility": 0.135336,
         "asset_group": "provider_candidate",
         "distance_from_200d_average": 0.084695,
@@ -3310,14 +3373,14 @@
         "annualized_volatility": 0.137792,
         "asset_group": "provider_candidate",
         "distance_from_200d_average": 0.084651,
-        "diversification_adjusted_score": 0.120046,
+        "diversification_adjusted_score": 0.120047,
         "drawdown_126d": -0.015125,
         "eligible": true,
         "momentum_126d": 0.111342,
         "momentum_21d": 0.03417,
         "momentum_63d": 0.023267,
         "price": 769.65,
-        "score": 0.468534,
+        "score": 0.468535,
         "symbol": "IVV"
       },
       {
@@ -3423,7 +3486,7 @@
         "distance_from_200d_average": 0.130506,
         "drawdown_126d": -0.07183,
         "eligible": false,
-        "momentum_126d": 0.252645,
+        "momentum_126d": 0.252646,
         "momentum_21d": 0.061137,
         "momentum_63d": -0.011105,
         "price": 158.64,
@@ -3526,19 +3589,6 @@
         "symbol": "VUG"
       },
       {
-        "annualized_volatility": 0.361485,
-        "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.124558,
-        "drawdown_126d": -0.087468,
-        "eligible": false,
-        "momentum_126d": 0.229682,
-        "momentum_21d": 0.046612,
-        "momentum_63d": -0.012391,
-        "price": 147.52,
-        "score": 0.277849,
-        "symbol": "SPMO"
-      },
-      {
         "annualized_volatility": 0.255353,
         "asset_group": "provider_candidate",
         "distance_from_200d_average": 0.089141,
@@ -3591,6 +3641,20 @@
         "symbol": "SMH"
       },
       {
+        "annualized_volatility": 0.507447,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.206195,
+        "diversification_adjusted_score": -0.074996,
+        "drawdown_126d": -0.008098,
+        "eligible": true,
+        "momentum_126d": 0.008465,
+        "momentum_21d": 0.248563,
+        "momentum_63d": 0.11354,
+        "price": 95.54,
+        "score": 0.18176,
+        "symbol": "COPX"
+      },
+      {
         "annualized_volatility": 0.533799,
         "asset_group": "provider_candidate",
         "distance_from_200d_average": 0.151235,
@@ -3615,19 +3679,6 @@
         "price": 62.0,
         "score": 0.175464,
         "symbol": "XLG"
-      },
-      {
-        "annualized_volatility": 0.222431,
-        "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.064638,
-        "drawdown_126d": -0.068512,
-        "eligible": false,
-        "momentum_126d": 0.100423,
-        "momentum_21d": 0.03381,
-        "momentum_63d": -0.033843,
-        "price": 115.5,
-        "score": 0.163185,
-        "symbol": "ICVT"
       },
       {
         "annualized_volatility": 0.383921,
@@ -3695,6 +3746,19 @@
         "symbol": "IWY"
       },
       {
+        "annualized_volatility": 0.640727,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.137592,
+        "drawdown_126d": -0.244471,
+        "eligible": false,
+        "momentum_126d": 0.351616,
+        "momentum_21d": 0.040764,
+        "momentum_63d": -0.210052,
+        "price": 490.71,
+        "score": 0.083815,
+        "symbol": "XSD"
+      },
+      {
         "annualized_volatility": 0.746269,
         "asset_group": "provider_candidate",
         "distance_from_200d_average": 0.164577,
@@ -3721,19 +3785,6 @@
         "symbol": "XME"
       },
       {
-        "annualized_volatility": 0.293759,
-        "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.045568,
-        "drawdown_126d": -0.091294,
-        "eligible": false,
-        "momentum_126d": 0.017062,
-        "momentum_21d": 0.04829,
-        "momentum_63d": -0.06509,
-        "price": 180.83,
-        "score": -0.041362,
-        "symbol": "GRID"
-      },
-      {
         "annualized_volatility": 0.498925,
         "asset_group": "provider_candidate",
         "distance_from_200d_average": -0.001944,
@@ -3753,19 +3804,19 @@
       "data_end": "2026-08-26 00:00:00",
       "strategy": {
         "annual_risk_free_rate": 0.0,
-        "annualized_volatility": 0.20986,
-        "cagr": 0.198979,
-        "maximum_drawdown": -0.292501,
-        "sharpe_excess_return": 0.970089,
-        "total_return": 1.136156
+        "annualized_volatility": 0.226327,
+        "cagr": 0.197575,
+        "maximum_drawdown": -0.304317,
+        "sharpe_excess_return": 0.910338,
+        "total_return": 1.125708
       },
       "benchmark": {
         "annual_risk_free_rate": 0.0,
-        "annualized_volatility": 0.208521,
-        "cagr": 0.276453,
-        "maximum_drawdown": -0.223294,
-        "sharpe_excess_return": 1.274949,
-        "total_return": 1.775681
+        "annualized_volatility": 0.215554,
+        "cagr": 0.281572,
+        "maximum_drawdown": -0.23124,
+        "sharpe_excess_return": 1.258813,
+        "total_return": 1.822532
       }
     }
   },
