@@ -1,6 +1,6 @@
 {
   "schema_version": "1.6.0",
-  "published_at": "2026-08-27T19:33:56.537118+00:00",
+  "published_at": "2026-08-27T19:35:02.526865+00:00",
   "experiment": {
     "name": "TradeRiser Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -9,12 +9,12 @@
   },
   "account": {
     "value": 25.9154,
-    "cash": 3.02,
-    "invested": 22.8953,
-    "buying_power": 3.02,
+    "cash": 0.0,
+    "invested": 25.9155,
+    "buying_power": 0.0,
     "net_contributions": 25.0,
     "investment_gain": 0.9154,
-    "simple_return_on_contributions": 0.03661507,
+    "simple_return_on_contributions": 0.03661636,
     "currency": "USD"
   },
   "holdings": [
@@ -23,7 +23,7 @@
       "shares": 0.010694,
       "average_price": 771.46,
       "cost_basis": 8.25,
-      "current_value": 8.2385,
+      "current_value": 8.239,
       "strategy": "champion"
     },
     {
@@ -31,7 +31,7 @@
       "shares": 0.028651,
       "average_price": 301.56,
       "cost_basis": 8.64,
-      "current_value": 8.5989,
+      "current_value": 8.5985,
       "strategy": "champion"
     },
     {
@@ -39,7 +39,15 @@
       "shares": 0.008422,
       "average_price": 721.92,
       "cost_basis": 6.08,
-      "current_value": 6.0579,
+      "current_value": 6.0584,
+      "strategy": "champion"
+    },
+    {
+      "symbol": "EWT",
+      "shares": 0.027875,
+      "average_price": 108.34,
+      "cost_basis": 3.02,
+      "current_value": 3.0196,
       "strategy": "champion"
     }
   ],
@@ -183,6 +191,23 @@
       "average_price": 770.3543,
       "fees": 0.0,
       "reconciled_at": "2026-08-27T19:33:48.812730+00:00",
+      "authorized": true,
+      "orders_match": true,
+      "source": "agentic",
+      "authorization_label": "delegated policy passed",
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic"
+    },
+    {
+      "symbol": "EWT",
+      "side": "buy",
+      "dollar_amount": 3.02,
+      "state": "filled",
+      "quantity": 0.027875,
+      "average_price": 108.3399,
+      "fees": 0.0,
+      "reconciled_at": "2026-08-27T19:34:53.832888+00:00",
       "authorized": true,
       "orders_match": true,
       "source": "agentic",
@@ -1443,6 +1468,32 @@
       "reconciled": true
     },
     {
+      "kind": "champion",
+      "generated_at": "2026-08-27T19:32:35.205269+00:00",
+      "status": "authorized",
+      "selected": [
+        "COPX",
+        "EWT",
+        "FTEC",
+        "QYLD",
+        "URTH"
+      ],
+      "orders": [
+        {
+          "symbol": "EWT",
+          "side": "buy",
+          "dollars": 3.02
+        }
+      ],
+      "explanation": [
+        "all authorization checks passed"
+      ],
+      "regime": null,
+      "stage": "reconciliation",
+      "authorized": true,
+      "reconciled": true
+    },
+    {
       "kind": "executed_trade",
       "generated_at": "2026-08-27T19:33:48.812730+00:00",
       "status": "filled",
@@ -1457,6 +1508,38 @@
           "status": "filled",
           "quantity": 0.00392,
           "average_price": 770.3543,
+          "fees": 0.0
+        }
+      ],
+      "authorized": true,
+      "authorization_label": "delegated policy passed",
+      "reconciled": true,
+      "source": "agentic",
+      "execution_label": null,
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic",
+      "stage": "execution",
+      "explanation": [
+        "The champion proposal passed the live authorization gate and the broker outcome was reconciled."
+      ],
+      "regime": null
+    },
+    {
+      "kind": "executed_trade",
+      "generated_at": "2026-08-27T19:34:53.832888+00:00",
+      "status": "filled",
+      "selected": [
+        "EWT"
+      ],
+      "orders": [
+        {
+          "symbol": "EWT",
+          "side": "buy",
+          "dollars": 3.02,
+          "status": "filled",
+          "quantity": 0.027875,
+          "average_price": 108.3399,
           "fees": 0.0
         }
       ],
@@ -2093,25 +2176,30 @@
     {
       "date": "2026-08-27",
       "value": 25.9154,
-      "cash": 3.02,
+      "cash": 0.0,
       "holdings": [
         {
           "symbol": "SPY",
           "shares": 0.010694,
-          "value": 8.2385
+          "value": 8.239
         },
         {
           "symbol": "IWM",
           "shares": 0.028651,
-          "value": 8.5989
+          "value": 8.5985
         },
         {
           "symbol": "QQQ",
           "shares": 0.008422,
-          "value": 6.0579
+          "value": 6.0584
+        },
+        {
+          "symbol": "EWT",
+          "shares": 0.027875,
+          "value": 3.0196
         }
       ],
-      "captured_at": "2026-08-27T19:33:56.536604+00:00",
+      "captured_at": "2026-08-27T19:35:02.526143+00:00",
       "source": "live_broker_snapshot",
       "breakdown_estimated": false,
       "note": "Holding values came from the latest reconciled quantities and fresh quotes.",
@@ -2129,7 +2217,7 @@
     }
   ],
   "performance": {
-    "simple_return_on_contributions": 0.03661507,
+    "simple_return_on_contributions": 0.03661636,
     "time_weighted_return": 0.06242747,
     "time_weighted_quality": "estimated",
     "money_weighted": {
@@ -2298,8 +2386,8 @@
   },
   "daily_briefing": {
     "as_of": "2026-08-26 00:00:00",
-    "headline": "TradeRiser proposed 2 portfolio changes.",
-    "portfolio_context": "The live account currently holds SPY, IWM, QQQ.",
+    "headline": "TradeRiser proposed 1 portfolio change.",
+    "portfolio_context": "The live account currently holds SPY, IWM, QQQ, EWT.",
     "market_context": "The completed-session screen qualified EWT, COPX, FTEC, VGT, IYW, DYNF, URTH, IVV, VOO, SPYM, SPY, VV, SCHX, IWB, IUSG, SPYG, VOOG, IVW, OEF, SCHG, QYLD for consideration.",
     "champion": "The live strategy currently favors COPX, EWT, FTEC, QYLD, URTH.",
     "challenger": "The research-only challenger favors EWT, SCHX, DYNF.",
@@ -2333,9 +2421,9 @@
   },
   "evidence": {
     "live_days": 18,
-    "champion_cycles": 22,
+    "champion_cycles": 23,
     "challenger_cycles": 14,
-    "reconciled_trades": 8,
+    "reconciled_trades": 9,
     "benchmark": "Equal-weight provider universe",
     "backtest_method": "monthly_walk_forward_next_session",
     "limitations": [
