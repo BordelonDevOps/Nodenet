@@ -1,6 +1,6 @@
 {
   "schema_version": "1.6.0",
-  "published_at": "2026-08-28T14:19:38.469232+00:00",
+  "published_at": "2026-08-28T14:21:10.518804+00:00",
   "experiment": {
     "name": "TradeRiser Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -8,13 +8,13 @@
     "objective": "Test how TradeRiser's rules perform using the experiment's cumulative contributed funds over 21 days."
   },
   "account": {
-    "value": 25.8976,
-    "cash": 2.2,
-    "invested": 23.6993,
-    "buying_power": 2.2,
+    "value": 25.894,
+    "cash": 0.0,
+    "invested": 25.894,
+    "buying_power": 0.0,
     "net_contributions": 25.0,
-    "investment_gain": 0.8976,
-    "simple_return_on_contributions": 0.03590521,
+    "investment_gain": 0.894,
+    "simple_return_on_contributions": 0.03576181,
     "currency": "USD"
   },
   "holdings": [
@@ -23,7 +23,7 @@
       "shares": 0.007844,
       "average_price": 770.02,
       "cost_basis": 6.04,
-      "current_value": 6.0519,
+      "current_value": 6.0527,
       "strategy": "champion"
     },
     {
@@ -31,7 +31,7 @@
       "shares": 0.028651,
       "average_price": 301.56,
       "cost_basis": 8.64,
-      "current_value": 8.546,
+      "current_value": 8.5454,
       "strategy": "champion"
     },
     {
@@ -39,7 +39,7 @@
       "shares": 0.008422,
       "average_price": 721.92,
       "cost_basis": 6.08,
-      "current_value": 6.0591,
+      "current_value": 6.0608,
       "strategy": "champion"
     },
     {
@@ -47,7 +47,15 @@
       "shares": 0.027875,
       "average_price": 108.34,
       "cost_basis": 3.02,
-      "current_value": 3.0423,
+      "current_value": 3.0409,
+      "strategy": "champion"
+    },
+    {
+      "symbol": "FLTW",
+      "shares": 0.020992,
+      "average_price": 104.8,
+      "cost_basis": 2.2,
+      "current_value": 2.1942,
       "strategy": "champion"
     }
   ],
@@ -225,6 +233,23 @@
       "average_price": 771.4177,
       "fees": 0.0,
       "reconciled_at": "2026-08-28T14:19:37.989226+00:00",
+      "authorized": true,
+      "orders_match": true,
+      "source": "agentic",
+      "authorization_label": "delegated policy passed",
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic"
+    },
+    {
+      "symbol": "FLTW",
+      "side": "buy",
+      "dollar_amount": 2.2,
+      "state": "filled",
+      "quantity": 0.020992,
+      "average_price": 104.7999,
+      "fees": 0.0,
+      "reconciled_at": "2026-08-28T14:21:10.209198+00:00",
       "authorized": true,
       "orders_match": true,
       "source": "agentic",
@@ -1655,6 +1680,32 @@
       "reconciled": true
     },
     {
+      "kind": "champion",
+      "generated_at": "2026-08-28T14:16:40.724697+00:00",
+      "status": "authorized",
+      "selected": [
+        "CRAK",
+        "DIVB",
+        "DXJ",
+        "FLTW",
+        "LVHI"
+      ],
+      "orders": [
+        {
+          "symbol": "FLTW",
+          "side": "buy",
+          "dollars": 2.2
+        }
+      ],
+      "explanation": [
+        "all authorization checks passed"
+      ],
+      "regime": null,
+      "stage": "reconciliation",
+      "authorized": true,
+      "reconciled": true
+    },
+    {
       "kind": "executed_trade",
       "generated_at": "2026-08-28T14:19:37.989226+00:00",
       "status": "filled",
@@ -1669,6 +1720,38 @@
           "status": "filled",
           "quantity": 0.00285,
           "average_price": 771.4177,
+          "fees": 0.0
+        }
+      ],
+      "authorized": true,
+      "authorization_label": "delegated policy passed",
+      "reconciled": true,
+      "source": "agentic",
+      "execution_label": null,
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic",
+      "stage": "execution",
+      "explanation": [
+        "The champion proposal passed the live authorization gate and the broker outcome was reconciled."
+      ],
+      "regime": null
+    },
+    {
+      "kind": "executed_trade",
+      "generated_at": "2026-08-28T14:21:10.209198+00:00",
+      "status": "filled",
+      "selected": [
+        "FLTW"
+      ],
+      "orders": [
+        {
+          "symbol": "FLTW",
+          "side": "buy",
+          "dollars": 2.2,
+          "status": "filled",
+          "quantity": 0.020992,
+          "average_price": 104.7999,
           "fees": 0.0
         }
       ],
@@ -2346,54 +2429,59 @@
     },
     {
       "date": "2026-08-28",
-      "value": 25.8976,
-      "cash": 2.2,
+      "value": 25.894,
+      "cash": 0.0,
       "holdings": [
         {
           "symbol": "SPY",
           "shares": 0.007844,
-          "value": 6.0519
+          "value": 6.0527
         },
         {
           "symbol": "IWM",
           "shares": 0.028651,
-          "value": 8.546
+          "value": 8.5454
         },
         {
           "symbol": "QQQ",
           "shares": 0.008422,
-          "value": 6.0591
+          "value": 6.0608
         },
         {
           "symbol": "EWT",
           "shares": 0.027875,
-          "value": 3.0423
+          "value": 3.0409
+        },
+        {
+          "symbol": "FLTW",
+          "shares": 0.020992,
+          "value": 2.1942
         }
       ],
-      "captured_at": "2026-08-28T14:19:38.468540+00:00",
+      "captured_at": "2026-08-28T14:21:10.518113+00:00",
       "source": "live_broker_snapshot",
       "breakdown_estimated": false,
       "note": "Holding values came from the latest reconciled quantities and fresh quotes.",
       "net_cash_flow": 0.0,
       "contributions": 0.0,
       "withdrawals": -0.0,
-      "change": -0.0178,
-      "change_pct": -0.00068685,
-      "market_gain": -0.0178,
-      "time_weighted_return": 0.06169774,
+      "change": -0.0214,
+      "change_pct": -0.00082576,
+      "market_gain": -0.0214,
+      "time_weighted_return": 0.06155015,
       "cash_flow_timing": "none",
       "benchmark_value": 25.9416,
       "benchmark_return": 0.03766562,
-      "excess_return": 0.02403212
+      "excess_return": 0.02388453
     }
   ],
   "performance": {
-    "simple_return_on_contributions": 0.03590521,
-    "time_weighted_return": 0.06169774,
+    "simple_return_on_contributions": 0.03576181,
+    "time_weighted_return": 0.06155015,
     "time_weighted_quality": "estimated",
     "money_weighted": {
-      "return": 0.04366703,
-      "gain": 0.8976,
+      "return": 0.04349189,
+      "gain": 0.894,
       "weighted_capital": 20.5556,
       "method": "modified_dietz_non_annualized",
       "quality": "estimated_date_only_flows",
@@ -2404,7 +2492,7 @@
       "status": "estimated_completed_session",
       "value": 25.9416,
       "return": 0.03766562,
-      "actual_excess_return": 0.00600141,
+      "actual_excess_return": 0.00582627,
       "history": [
         {
           "date": "2026-08-10",
@@ -2555,8 +2643,8 @@
           "price": 103.8639,
           "value": 25.9416,
           "return": 0.03766562,
-          "actual_return": 0.06169774,
-          "excess_return": 0.02403212
+          "actual_return": 0.06155015,
+          "excess_return": 0.02388453
         }
       ],
       "note": "Uses the same published cash flows and the latest completed-session benchmark price available to each evaluation date.",
@@ -2565,8 +2653,8 @@
   },
   "daily_briefing": {
     "as_of": "2026-08-27 00:00:00",
-    "headline": "TradeRiser proposed 2 portfolio changes.",
-    "portfolio_context": "The live account currently holds SPY, IWM, QQQ, EWT.",
+    "headline": "TradeRiser proposed 1 portfolio change.",
+    "portfolio_context": "The live account currently holds SPY, IWM, QQQ, EWT, FLTW.",
     "market_context": "The completed-session screen qualified FLTW, CRAK, EWT, DXJ, DIVB, LVHI, GVAL, IWX, EWJV, KBWB, EUFN, EFV, HEFA, DBEF, PXH, WTV, DEM, IHDG, IAK, EQWL, IXG, IPAC, USMC, IYF, FNCL, VFH, XLF, IYG for consideration.",
     "champion": "The live strategy currently favors CRAK, DIVB, DXJ, FLTW, LVHI.",
     "challenger": "The research-only challenger favors EWT, SCHX, DYNF.",
@@ -2600,9 +2688,9 @@
   },
   "evidence": {
     "live_days": 19,
-    "champion_cycles": 24,
+    "champion_cycles": 25,
     "challenger_cycles": 15,
-    "reconciled_trades": 10,
+    "reconciled_trades": 11,
     "benchmark": "Equal-weight provider universe",
     "backtest_method": "monthly_walk_forward_next_session",
     "limitations": [
