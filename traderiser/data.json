@@ -1,6 +1,6 @@
 {
   "schema_version": "1.6.0",
-  "published_at": "2026-08-28T14:49:15.890571+00:00",
+  "published_at": "2026-08-28T15:26:15.775278+00:00",
   "experiment": {
     "name": "TradeRiser Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -8,13 +8,13 @@
     "objective": "Test how TradeRiser's rules perform using the experiment's cumulative contributed funds over 21 days."
   },
   "account": {
-    "value": 35.9462,
+    "value": 35.9617,
     "cash": 10.0,
-    "invested": 25.9462,
+    "invested": 25.9616,
     "buying_power": 10.0,
     "net_contributions": 35.0,
-    "investment_gain": 0.9462,
-    "simple_return_on_contributions": 0.02703474,
+    "investment_gain": 0.9617,
+    "simple_return_on_contributions": 0.02747584,
     "currency": "USD"
   },
   "holdings": [
@@ -23,7 +23,7 @@
       "shares": 0.007844,
       "average_price": 770.02,
       "cost_basis": 6.04,
-      "current_value": 6.0673,
+      "current_value": 6.0784,
       "strategy": "champion"
     },
     {
@@ -31,7 +31,7 @@
       "shares": 0.028651,
       "average_price": 301.56,
       "cost_basis": 8.64,
-      "current_value": 8.544,
+      "current_value": 8.548,
       "strategy": "champion"
     },
     {
@@ -39,7 +39,7 @@
       "shares": 0.008422,
       "average_price": 721.92,
       "cost_basis": 6.08,
-      "current_value": 6.0836,
+      "current_value": 6.0915,
       "strategy": "champion"
     },
     {
@@ -47,7 +47,7 @@
       "shares": 0.027875,
       "average_price": 108.34,
       "cost_basis": 3.02,
-      "current_value": 3.0476,
+      "current_value": 3.0442,
       "strategy": "champion"
     },
     {
@@ -55,7 +55,7 @@
       "shares": 0.020992,
       "average_price": 104.8,
       "cost_basis": 2.2,
-      "current_value": 2.2037,
+      "current_value": 2.1995,
       "strategy": "champion"
     }
   ],
@@ -1945,6 +1945,30 @@
       "regime": null,
       "stage": "authorization",
       "authorized": false
+    },
+    {
+      "kind": "champion",
+      "generated_at": "2026-08-28T15:25:57.947642+00:00",
+      "status": "not_authorized",
+      "selected": [
+        "CRAK",
+        "DIVB",
+        "DXJ",
+        "FLTW",
+        "GVAL",
+        "IHDG",
+        "IWX",
+        "KBWB",
+        "LVHI",
+        "WTV"
+      ],
+      "orders": [],
+      "explanation": [
+        "no orders were proposed"
+      ],
+      "regime": null,
+      "stage": "authorization",
+      "authorized": false
     }
   ],
   "portfolio_history": [
@@ -2606,59 +2630,59 @@
     },
     {
       "date": "2026-08-28",
-      "value": 35.9462,
+      "value": 35.9617,
       "cash": 10.0,
       "holdings": [
         {
           "symbol": "SPY",
           "shares": 0.007844,
-          "value": 6.0673
+          "value": 6.0784
         },
         {
           "symbol": "IWM",
           "shares": 0.028651,
-          "value": 8.544
+          "value": 8.548
         },
         {
           "symbol": "QQQ",
           "shares": 0.008422,
-          "value": 6.0836
+          "value": 6.0915
         },
         {
           "symbol": "EWT",
           "shares": 0.027875,
-          "value": 3.0476
+          "value": 3.0442
         },
         {
           "symbol": "FLTW",
           "shares": 0.020992,
-          "value": 2.2037
+          "value": 2.1995
         }
       ],
-      "captured_at": "2026-08-28T14:49:15.889869+00:00",
+      "captured_at": "2026-08-28T15:26:15.771580+00:00",
       "source": "live_broker_snapshot",
       "breakdown_estimated": false,
       "note": "Holding values came from the latest reconciled quantities and fresh quotes.",
       "net_cash_flow": 10.0,
       "contributions": 10.0,
       "withdrawals": 0.0,
-      "change": 10.0308,
-      "change_pct": 0.38705943,
-      "market_gain": 0.0308,
-      "time_weighted_return": 0.06369014,
+      "change": 10.0463,
+      "change_pct": 0.38765753,
+      "market_gain": 0.0463,
+      "time_weighted_return": 0.06432558,
       "cash_flow_timing": "date_only",
       "benchmark_value": 35.9416,
       "benchmark_return": 0.02690401,
-      "excess_return": 0.03678613
+      "excess_return": 0.03742157
     }
   ],
   "performance": {
-    "simple_return_on_contributions": 0.02703474,
-    "time_weighted_return": 0.06369014,
+    "simple_return_on_contributions": 0.02747584,
+    "time_weighted_return": 0.06432558,
     "time_weighted_quality": "estimated",
     "money_weighted": {
-      "return": 0.04603135,
-      "gain": 0.9462,
+      "return": 0.04678541,
+      "gain": 0.9617,
       "weighted_capital": 20.5556,
       "method": "modified_dietz_non_annualized",
       "quality": "estimated_date_only_flows",
@@ -2669,7 +2693,7 @@
       "status": "estimated_completed_session",
       "value": 35.9416,
       "return": 0.02690401,
-      "actual_excess_return": 0.01912734,
+      "actual_excess_return": 0.0198814,
       "history": [
         {
           "date": "2026-08-10",
@@ -2820,8 +2844,8 @@
           "price": 103.8639,
           "value": 35.9416,
           "return": 0.02690401,
-          "actual_return": 0.06369014,
-          "excess_return": 0.03678613
+          "actual_return": 0.06432558,
+          "excess_return": 0.03742157
         }
       ],
       "note": "Uses the same published cash flows and the latest completed-session benchmark price available to each evaluation date.",
@@ -2865,7 +2889,7 @@
   },
   "evidence": {
     "live_days": 19,
-    "champion_cycles": 27,
+    "champion_cycles": 28,
     "challenger_cycles": 17,
     "reconciled_trades": 11,
     "benchmark": "Equal-weight provider universe",
@@ -3304,12 +3328,12 @@
         "drawdown_from_63d_high": -0.0291,
         "eligible": false,
         "momentum_126d": -0.038104,
-        "momentum_12_1": 0.106139,
+        "momentum_12_1": 0.106138,
         "momentum_63d": 0.01014,
         "overbought": false,
         "price": 229.21,
         "rsi_14": 46.412,
-        "score": 0.106139,
+        "score": 0.106138,
         "symbol": "VDC",
         "volatility_trailing_exit_threshold": -0.08
       },
@@ -3394,12 +3418,12 @@
         "drawdown_from_63d_high": -0.007939,
         "eligible": true,
         "momentum_126d": 0.110893,
-        "momentum_12_1": 0.070311,
+        "momentum_12_1": 0.07031,
         "momentum_63d": 0.127341,
         "overbought": false,
         "price": 97.47,
         "rsi_14": 54.1944,
-        "score": 0.070311,
+        "score": 0.07031,
         "symbol": "IYG",
         "volatility_trailing_exit_threshold": -0.08
       },
@@ -3510,12 +3534,12 @@
           "funded_dollars": 4.77,
           "incoming_score": 0.388386,
           "incoming_symbol": "CRAK",
-          "outgoing_score": 0.16592,
+          "outgoing_score": 0.165921,
           "outgoing_symbol": "SPY",
           "passed": false,
           "required_edge_dollars": 0.0334,
           "round_trip_cost_dollars": 0.0095,
-          "score_advantage": 0.222466,
+          "score_advantage": 0.222465,
           "uncertainty_buffer_dollars": 0.0238
         },
         {
@@ -3536,7 +3560,7 @@
           "uncertainty_buffer_dollars": 0.0238
         },
         {
-          "calibrated_forward_return_per_score": -0.07474096,
+          "calibrated_forward_return_per_score": -0.07474098,
           "calibration_samples": 30,
           "data_as_of": "2026-08-25 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -3553,7 +3577,7 @@
           "uncertainty_buffer_dollars": 0.014
         },
         {
-          "calibrated_forward_return_per_score": -0.07474096,
+          "calibrated_forward_return_per_score": -0.07474098,
           "calibration_samples": 30,
           "data_as_of": "2026-08-26 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -3561,16 +3585,16 @@
           "funded_dollars": 2.8,
           "incoming_score": 0.402162,
           "incoming_symbol": "DXJ",
-          "outgoing_score": 0.190109,
+          "outgoing_score": 0.19011,
           "outgoing_symbol": "QQQ",
           "passed": false,
           "required_edge_dollars": 0.0196,
           "round_trip_cost_dollars": 0.0056,
-          "score_advantage": 0.212053,
+          "score_advantage": 0.212052,
           "uncertainty_buffer_dollars": 0.014
         },
         {
-          "calibrated_forward_return_per_score": -0.07474096,
+          "calibrated_forward_return_per_score": -0.07474098,
           "calibration_samples": 30,
           "data_as_of": "2026-08-27 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -3587,7 +3611,7 @@
           "uncertainty_buffer_dollars": 0.014
         },
         {
-          "calibrated_forward_return_per_score": -0.001415,
+          "calibrated_forward_return_per_score": -0.00141496,
           "calibration_samples": 30,
           "data_as_of": "2026-08-25 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -3604,7 +3628,7 @@
           "uncertainty_buffer_dollars": 0.0222
         },
         {
-          "calibrated_forward_return_per_score": -0.001415,
+          "calibrated_forward_return_per_score": -0.00141496,
           "calibration_samples": 30,
           "data_as_of": "2026-08-26 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -3621,7 +3645,7 @@
           "uncertainty_buffer_dollars": 0.0222
         },
         {
-          "calibrated_forward_return_per_score": -0.001415,
+          "calibrated_forward_return_per_score": -0.00141496,
           "calibration_samples": 30,
           "data_as_of": "2026-08-27 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -3638,52 +3662,52 @@
           "uncertainty_buffer_dollars": 0.0222
         },
         {
-          "calibrated_forward_return_per_score": -0.04620221,
+          "calibrated_forward_return_per_score": -0.04620216,
           "calibration_samples": 30,
           "data_as_of": "2026-08-25 00:00:00",
           "estimated_tax_cost_dollars": 0.01,
-          "expected_edge_dollars": 0.0835,
-          "funded_dollars": 3.05,
+          "expected_edge_dollars": 0.0832,
+          "funded_dollars": 3.04,
           "incoming_score": 0.122251,
           "incoming_symbol": "LVHI",
           "outgoing_score": 0.714778,
           "outgoing_symbol": "EWT",
           "passed": false,
-          "required_edge_dollars": 0.0314,
+          "required_edge_dollars": 0.0313,
           "round_trip_cost_dollars": 0.0061,
           "score_advantage": -0.592527,
           "uncertainty_buffer_dollars": 0.0152
         },
         {
-          "calibrated_forward_return_per_score": -0.04620221,
+          "calibrated_forward_return_per_score": -0.04620216,
           "calibration_samples": 30,
           "data_as_of": "2026-08-26 00:00:00",
           "estimated_tax_cost_dollars": 0.01,
-          "expected_edge_dollars": 0.0518,
-          "funded_dollars": 3.05,
+          "expected_edge_dollars": 0.0517,
+          "funded_dollars": 3.04,
           "incoming_score": 0.290294,
           "incoming_symbol": "LVHI",
           "outgoing_score": 0.658223,
           "outgoing_symbol": "EWT",
           "passed": false,
-          "required_edge_dollars": 0.0314,
+          "required_edge_dollars": 0.0313,
           "round_trip_cost_dollars": 0.0061,
           "score_advantage": -0.367929,
           "uncertainty_buffer_dollars": 0.0152
         },
         {
-          "calibrated_forward_return_per_score": -0.04620221,
+          "calibrated_forward_return_per_score": -0.04620216,
           "calibration_samples": 30,
           "data_as_of": "2026-08-27 00:00:00",
           "estimated_tax_cost_dollars": 0.01,
-          "expected_edge_dollars": 0.0384,
-          "funded_dollars": 3.05,
+          "expected_edge_dollars": 0.0383,
+          "funded_dollars": 3.04,
           "incoming_score": 0.299012,
           "incoming_symbol": "LVHI",
           "outgoing_score": 0.571727,
           "outgoing_symbol": "EWT",
           "passed": false,
-          "required_edge_dollars": 0.0314,
+          "required_edge_dollars": 0.0313,
           "round_trip_cost_dollars": 0.0061,
           "score_advantage": -0.272715,
           "uncertainty_buffer_dollars": 0.0152
