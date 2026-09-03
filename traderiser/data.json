@@ -1,6 +1,6 @@
 {
   "schema_version": "1.6.0",
-  "published_at": "2026-09-03T14:35:19.970820+00:00",
+  "published_at": "2026-09-03T14:37:36.206897+00:00",
   "experiment": {
     "name": "TradeRiser Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -151,6 +151,7 @@
       "orders_match": true,
       "source": "agentic",
       "authorization_label": "delegated policy passed",
+      "execution_label": null,
       "deferred_follow_up": {
         "symbol": "QQQ",
         "dollars": 3.33,
@@ -192,6 +193,7 @@
       "orders_match": true,
       "source": "agentic",
       "authorization_label": "delegated policy passed",
+      "execution_label": null,
       "deferred_follow_up": null,
       "decision_source": "TradeRiser champion",
       "broker_submission_source": "agentic"
@@ -209,6 +211,7 @@
       "orders_match": true,
       "source": "agentic",
       "authorization_label": "delegated policy passed",
+      "execution_label": null,
       "deferred_follow_up": null,
       "decision_source": "TradeRiser champion",
       "broker_submission_source": "agentic"
@@ -226,6 +229,7 @@
       "orders_match": true,
       "source": "agentic",
       "authorization_label": "delegated policy passed",
+      "execution_label": null,
       "deferred_follow_up": null,
       "decision_source": "TradeRiser champion",
       "broker_submission_source": "agentic"
@@ -243,6 +247,7 @@
       "orders_match": true,
       "source": "agentic",
       "authorization_label": "delegated policy passed",
+      "execution_label": null,
       "deferred_follow_up": null,
       "decision_source": "TradeRiser champion",
       "broker_submission_source": "agentic"
@@ -260,6 +265,7 @@
       "orders_match": true,
       "source": "agentic",
       "authorization_label": "delegated policy passed",
+      "execution_label": null,
       "deferred_follow_up": null,
       "decision_source": "TradeRiser champion",
       "broker_submission_source": "agentic"
@@ -277,6 +283,7 @@
       "orders_match": true,
       "source": "agentic",
       "authorization_label": "delegated policy passed",
+      "execution_label": null,
       "deferred_follow_up": null,
       "decision_source": "TradeRiser champion",
       "broker_submission_source": "agentic"
@@ -294,6 +301,7 @@
       "orders_match": true,
       "source": "agentic",
       "authorization_label": "delegated policy passed",
+      "execution_label": null,
       "deferred_follow_up": null,
       "decision_source": "TradeRiser champion",
       "broker_submission_source": "agentic"
@@ -311,6 +319,7 @@
       "orders_match": true,
       "source": "agentic",
       "authorization_label": "delegated policy passed",
+      "execution_label": null,
       "deferred_follow_up": null,
       "decision_source": "TradeRiser champion",
       "broker_submission_source": "agentic API"
@@ -328,6 +337,7 @@
       "orders_match": true,
       "source": "agentic",
       "authorization_label": "delegated policy passed",
+      "execution_label": null,
       "deferred_follow_up": null,
       "decision_source": "TradeRiser champion",
       "broker_submission_source": "agentic API"
@@ -345,6 +355,7 @@
       "orders_match": true,
       "source": "agentic",
       "authorization_label": "delegated policy passed",
+      "execution_label": null,
       "deferred_follow_up": null,
       "decision_source": "TradeRiser champion",
       "broker_submission_source": "agentic API"
@@ -362,6 +373,7 @@
       "orders_match": true,
       "source": "agentic",
       "authorization_label": "delegated policy passed",
+      "execution_label": null,
       "deferred_follow_up": null,
       "decision_source": "TradeRiser champion",
       "broker_submission_source": "agentic API"
@@ -379,6 +391,7 @@
       "orders_match": true,
       "source": "agentic",
       "authorization_label": "delegated policy passed",
+      "execution_label": null,
       "deferred_follow_up": null,
       "decision_source": "TradeRiser champion",
       "broker_submission_source": "agentic API"
@@ -396,6 +409,7 @@
       "orders_match": true,
       "source": "agentic",
       "authorization_label": "delegated policy passed",
+      "execution_label": "user-approved affordability correction from $1.98 to available $1.97",
       "deferred_follow_up": null,
       "decision_source": "TradeRiser champion",
       "broker_submission_source": "agentic"
@@ -2942,13 +2956,13 @@
       "authorization_label": "delegated policy passed",
       "reconciled": true,
       "source": "agentic",
-      "execution_label": null,
+      "execution_label": "user-approved affordability correction from $1.98 to available $1.97",
       "deferred_follow_up": null,
       "decision_source": "TradeRiser champion",
       "broker_submission_source": "agentic",
       "stage": "execution",
       "explanation": [
-        "The champion proposal passed the live authorization gate and the broker outcome was reconciled."
+        "TradeRiser selected CRAK; the user explicitly approved reducing the order by one cent to match available cash, and the agentic connection executed it."
       ],
       "regime": null
     }
@@ -4058,7 +4072,7 @@
           "value": 4.338
         }
       ],
-      "captured_at": "2026-09-03T14:35:19.969856+00:00",
+      "captured_at": "2026-09-03T14:37:36.206095+00:00",
       "source": "live_broker_snapshot",
       "breakdown_estimated": false,
       "note": "Holding values came from the latest reconciled quantities and fresh quotes.",
