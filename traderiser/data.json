@@ -1,6 +1,6 @@
 {
   "schema_version": "1.6.0",
-  "published_at": "2026-09-03T14:20:48.184775+00:00",
+  "published_at": "2026-09-03T14:35:19.970820+00:00",
   "experiment": {
     "name": "TradeRiser Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -8,13 +8,13 @@
     "objective": "Continue the live observation through December 31, 2026 using the experiment's cumulative contributed funds."
   },
   "account": {
-    "value": 45.9755,
-    "cash": 1.97,
-    "invested": 44.0001,
-    "buying_power": 1.97,
+    "value": 45.9319,
+    "cash": 0.0,
+    "invested": 45.9413,
+    "buying_power": 0.0,
     "net_contributions": 45.0,
-    "investment_gain": 0.9755,
-    "simple_return_on_contributions": 0.0216776,
+    "investment_gain": 0.9319,
+    "simple_return_on_contributions": 0.02070945,
     "currency": "USD"
   },
   "holdings": [
@@ -23,7 +23,7 @@
       "shares": 0.007844,
       "average_price": 770.02,
       "cost_basis": 6.04,
-      "current_value": 6.0271,
+      "current_value": 6.0238,
       "strategy": "champion"
     },
     {
@@ -31,7 +31,7 @@
       "shares": 0.028651,
       "average_price": 301.56,
       "cost_basis": 8.64,
-      "current_value": 8.4277,
+      "current_value": 8.4105,
       "strategy": "champion"
     },
     {
@@ -39,7 +39,7 @@
       "shares": 0.008422,
       "average_price": 721.92,
       "cost_basis": 6.08,
-      "current_value": 6.0011,
+      "current_value": 5.9953,
       "strategy": "champion"
     },
     {
@@ -47,7 +47,7 @@
       "shares": 0.027875,
       "average_price": 108.34,
       "cost_basis": 3.02,
-      "current_value": 3.0306,
+      "current_value": 3.0214,
       "strategy": "champion"
     },
     {
@@ -55,15 +55,15 @@
       "shares": 0.020992,
       "average_price": 104.8,
       "cost_basis": 2.2,
-      "current_value": 2.1918,
+      "current_value": 2.1886,
       "strategy": "champion"
     },
     {
       "symbol": "CRAK",
-      "shares": 0.079245,
-      "average_price": 60.07,
-      "cost_basis": 4.7602,
-      "current_value": 4.9861,
+      "shares": 0.110477,
+      "average_price": 60.92,
+      "cost_basis": 6.7303,
+      "current_value": 6.9711,
       "strategy": "champion"
     },
     {
@@ -71,7 +71,7 @@
       "shares": 0.015514,
       "average_price": 180.48,
       "cost_basis": 2.8,
-      "current_value": 2.7827,
+      "current_value": 2.7792,
       "strategy": "champion"
     },
     {
@@ -79,7 +79,7 @@
       "shares": 0.035311,
       "average_price": 69.1,
       "cost_basis": 2.44,
-      "current_value": 2.4483,
+      "current_value": 2.4481,
       "strategy": "champion"
     },
     {
@@ -87,7 +87,7 @@
       "shares": 0.013854,
       "average_price": 267.79,
       "cost_basis": 3.71,
-      "current_value": 3.7655,
+      "current_value": 3.7653,
       "strategy": "champion"
     },
     {
@@ -95,7 +95,7 @@
       "shares": 0.041468,
       "average_price": 104.18,
       "cost_basis": 4.3201,
-      "current_value": 4.3392,
+      "current_value": 4.338,
       "strategy": "champion"
     }
   ],
@@ -382,6 +382,23 @@
       "deferred_follow_up": null,
       "decision_source": "TradeRiser champion",
       "broker_submission_source": "agentic API"
+    },
+    {
+      "symbol": "CRAK",
+      "side": "buy",
+      "dollar_amount": 1.97,
+      "state": "filled",
+      "quantity": 0.031232,
+      "average_price": 63.0751,
+      "fees": 0.0,
+      "reconciled_at": "2026-09-03T14:35:10.530995+00:00",
+      "authorized": true,
+      "orders_match": true,
+      "source": "agentic",
+      "authorization_label": "delegated policy passed",
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic"
     }
   ],
   "decisions": [
@@ -2902,6 +2919,38 @@
         "risk_asset_breadth": 0.4
       },
       "stage": "research"
+    },
+    {
+      "kind": "executed_trade",
+      "generated_at": "2026-09-03T14:35:10.530995+00:00",
+      "status": "filled",
+      "selected": [
+        "CRAK"
+      ],
+      "orders": [
+        {
+          "symbol": "CRAK",
+          "side": "buy",
+          "dollars": 1.97,
+          "status": "filled",
+          "quantity": 0.031232,
+          "average_price": 63.0751,
+          "fees": 0.0
+        }
+      ],
+      "authorized": true,
+      "authorization_label": "delegated policy passed",
+      "reconciled": true,
+      "source": "agentic",
+      "execution_label": null,
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic",
+      "stage": "execution",
+      "explanation": [
+        "The champion proposal passed the live authorization gate and the broker outcome was reconciled."
+      ],
+      "regime": null
     }
   ],
   "portfolio_history": [
@@ -3955,71 +4004,71 @@
     },
     {
       "date": "2026-09-03",
-      "value": 45.9755,
-      "cash": 1.97,
+      "value": 45.9319,
+      "cash": 0.0,
       "holdings": [
         {
           "symbol": "SPY",
           "shares": 0.007844,
-          "value": 6.0271
+          "value": 6.0238
         },
         {
           "symbol": "IWM",
           "shares": 0.028651,
-          "value": 8.4277
+          "value": 8.4105
         },
         {
           "symbol": "QQQ",
           "shares": 0.008422,
-          "value": 6.0011
+          "value": 5.9953
         },
         {
           "symbol": "EWT",
           "shares": 0.027875,
-          "value": 3.0306
+          "value": 3.0214
         },
         {
           "symbol": "FLTW",
           "shares": 0.020992,
-          "value": 2.1918
+          "value": 2.1886
         },
         {
           "symbol": "CRAK",
-          "shares": 0.079245,
-          "value": 4.9861
+          "shares": 0.110477,
+          "value": 6.9711
         },
         {
           "symbol": "DXJ",
           "shares": 0.015514,
-          "value": 2.7827
+          "value": 2.7792
         },
         {
           "symbol": "DIVB",
           "shares": 0.035311,
-          "value": 2.4483
+          "value": 2.4481
         },
         {
           "symbol": "FBT",
           "shares": 0.013854,
-          "value": 3.7655
+          "value": 3.7653
         },
         {
           "symbol": "IHE",
           "shares": 0.041468,
-          "value": 4.3392
+          "value": 4.338
         }
       ],
-      "captured_at": "2026-09-03T14:20:48.183981+00:00",
+      "captured_at": "2026-09-03T14:35:19.969856+00:00",
       "source": "live_broker_snapshot",
       "breakdown_estimated": false,
       "note": "Holding values came from the latest reconciled quantities and fresh quotes.",
       "net_cash_flow": 0.0,
       "contributions": 0.0,
       "withdrawals": -0.0,
-      "change": 0.1314,
-      "change_pct": 0.00286624,
-      "market_gain": 0.1314,
-      "time_weighted_return": 2.06703713,
+      "change": 0.0878,
+      "change_pct": 0.00191519,
+      "market_gain": 0.0878,
+      "time_weighted_return": 2.06412856,
       "cash_flow_timing": "none",
       "benchmark_value": 0.0,
       "benchmark_return": null,
@@ -4027,8 +4076,8 @@
     }
   ],
   "performance": {
-    "simple_return_on_contributions": 0.0216776,
-    "time_weighted_return": 2.06703713,
+    "simple_return_on_contributions": 0.02070945,
+    "time_weighted_return": 2.06412856,
     "time_weighted_quality": "timestamped",
     "money_weighted": {
       "return": null,
@@ -4239,7 +4288,7 @@
           "price": 105.973,
           "value": 0.0,
           "return": null,
-          "actual_return": 2.06703713,
+          "actual_return": 2.06412856,
           "excess_return": null
         }
       ],
@@ -4285,7 +4334,7 @@
     "live_days": 25,
     "champion_cycles": 33,
     "challenger_cycles": 23,
-    "reconciled_trades": 16,
+    "reconciled_trades": 17,
     "benchmark": "Equal-weight provider universe",
     "backtest_method": "monthly_walk_forward_next_session",
     "limitations": [
