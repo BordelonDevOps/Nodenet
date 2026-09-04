@@ -1,6 +1,6 @@
 {
   "schema_version": "1.6.0",
-  "published_at": "2026-09-04T14:21:48.664304+00:00",
+  "published_at": "2026-09-04T14:22:31.246833+00:00",
   "experiment": {
     "name": "TradeRiser Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -3081,6 +3081,32 @@
       "regime": null
     },
     {
+      "kind": "champion",
+      "generated_at": "2026-09-04T14:20:47.646067+00:00",
+      "status": "not_authorized",
+      "selected": [
+        "FLTW",
+        "FNDE",
+        "HEFA",
+        "RWR",
+        "VLUE",
+        "VPL"
+      ],
+      "orders": [
+        {
+          "symbol": "VLUE",
+          "side": "buy",
+          "dollars": 5.93
+        }
+      ],
+      "explanation": [
+        "maximum position count would be exceeded"
+      ],
+      "regime": null,
+      "stage": "authorization",
+      "authorized": false
+    },
+    {
       "kind": "challenger",
       "generated_at": "2026-09-04T14:21:34.262916+00:00",
       "status": "hypothetical_only",
@@ -4343,7 +4369,7 @@
           "value": 4.3324
         }
       ],
-      "captured_at": "2026-09-04T14:21:48.663410+00:00",
+      "captured_at": "2026-09-04T14:22:31.245857+00:00",
       "source": "live_broker_snapshot",
       "breakdown_estimated": false,
       "note": "Holding values came from the latest reconciled quantities and fresh quotes.",
@@ -4590,7 +4616,7 @@
   },
   "daily_briefing": {
     "as_of": "2026-09-03 00:00:00",
-    "headline": "TradeRiser proposed 2 portfolio changes.",
+    "headline": "TradeRiser proposed 1 portfolio change.",
     "portfolio_context": "The live account currently holds SPY, IWM, QQQ, EWT, FLTW, CRAK, DXJ, DIVB, FBT, IHE.",
     "market_context": "The completed-session screen qualified FLTW, EWT, VLUE, VPL, SCHF, HEFA, VEA, FEZ, RWR, FNDE for consideration.",
     "champion": "The live strategy currently favors FLTW, FNDE, HEFA, RWR, VLUE, VPL.",
@@ -4625,7 +4651,7 @@
   },
   "evidence": {
     "live_days": 26,
-    "champion_cycles": 35,
+    "champion_cycles": 36,
     "challenger_cycles": 24,
     "reconciled_trades": 18,
     "benchmark": "Equal-weight provider universe",
