@@ -1,6 +1,6 @@
 {
   "schema_version": "1.6.0",
-  "published_at": "2026-09-04T15:37:42.539310+00:00",
+  "published_at": "2026-09-07T14:23:57.003461+00:00",
   "experiment": {
     "name": "TradeRiser Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -8,13 +8,13 @@
     "objective": "Continue the live observation through December 31, 2026 using the experiment's cumulative contributed funds."
   },
   "account": {
-    "value": 46.2358,
+    "value": 46.3014,
     "cash": 0.11,
-    "invested": 46.1333,
+    "invested": 46.225,
     "buying_power": 0.11,
     "net_contributions": 45.0,
-    "investment_gain": 1.2358,
-    "simple_return_on_contributions": 0.02746147,
+    "investment_gain": 1.3014,
+    "simple_return_on_contributions": 0.02891987,
     "currency": "USD"
   },
   "holdings": [
@@ -23,7 +23,7 @@
       "shares": 0.028651,
       "average_price": 301.56,
       "cost_basis": 8.64,
-      "current_value": 8.4658,
+      "current_value": 8.4793,
       "strategy": "champion"
     },
     {
@@ -31,7 +31,7 @@
       "shares": 0.008422,
       "average_price": 721.92,
       "cost_basis": 6.08,
-      "current_value": 6.0406,
+      "current_value": 6.0569,
       "strategy": "champion"
     },
     {
@@ -39,7 +39,7 @@
       "shares": 0.027875,
       "average_price": 108.34,
       "cost_basis": 3.02,
-      "current_value": 3.112,
+      "current_value": 3.1273,
       "strategy": "champion"
     },
     {
@@ -47,7 +47,7 @@
       "shares": 0.020992,
       "average_price": 104.8,
       "cost_basis": 2.2,
-      "current_value": 2.2503,
+      "current_value": 2.2615,
       "strategy": "champion"
     },
     {
@@ -55,7 +55,7 @@
       "shares": 0.110477,
       "average_price": 60.92,
       "cost_basis": 6.7303,
-      "current_value": 7.0003,
+      "current_value": 7.0219,
       "strategy": "champion"
     },
     {
@@ -63,7 +63,7 @@
       "shares": 0.015514,
       "average_price": 180.48,
       "cost_basis": 2.8,
-      "current_value": 2.789,
+      "current_value": 2.7912,
       "strategy": "champion"
     },
     {
@@ -71,7 +71,7 @@
       "shares": 0.035311,
       "average_price": 69.1,
       "cost_basis": 2.44,
-      "current_value": 2.4409,
+      "current_value": 2.4373,
       "strategy": "champion"
     },
     {
@@ -79,7 +79,7 @@
       "shares": 0.013854,
       "average_price": 267.79,
       "cost_basis": 3.71,
-      "current_value": 3.7577,
+      "current_value": 3.7528,
       "strategy": "champion"
     },
     {
@@ -87,7 +87,7 @@
       "shares": 0.041468,
       "average_price": 104.18,
       "cost_basis": 4.3201,
-      "current_value": 4.3378,
+      "current_value": 4.3384,
       "strategy": "champion"
     },
     {
@@ -95,7 +95,7 @@
       "shares": 0.02899,
       "average_price": 204.9,
       "cost_basis": 5.9401,
-      "current_value": 5.9389,
+      "current_value": 5.9584,
       "strategy": "champion"
     }
   ],
@@ -3432,6 +3432,85 @@
         "risk_asset_breadth": 0.275
       },
       "stage": "research"
+    },
+    {
+      "kind": "challenger",
+      "generated_at": "2026-09-07T14:23:03.805458+00:00",
+      "status": "hypothetical_only",
+      "selected": [
+        "CRAK",
+        "VLUE",
+        "EWT"
+      ],
+      "orders": [
+        {
+          "symbol": "CRAK",
+          "side": "buy",
+          "dollars": 9.29,
+          "status": "hypothetical_only"
+        },
+        {
+          "symbol": "DIVB",
+          "side": "sell",
+          "dollars": 2.44,
+          "status": "hypothetical_only"
+        },
+        {
+          "symbol": "DXJ",
+          "side": "sell",
+          "dollars": 2.79,
+          "status": "hypothetical_only"
+        },
+        {
+          "symbol": "EWT",
+          "side": "buy",
+          "dollars": 6.54,
+          "status": "hypothetical_only"
+        },
+        {
+          "symbol": "FBT",
+          "side": "sell",
+          "dollars": 3.75,
+          "status": "hypothetical_only"
+        },
+        {
+          "symbol": "FLTW",
+          "side": "sell",
+          "dollars": 2.26,
+          "status": "hypothetical_only"
+        },
+        {
+          "symbol": "IHE",
+          "side": "sell",
+          "dollars": 4.34,
+          "status": "hypothetical_only"
+        },
+        {
+          "symbol": "IWM",
+          "side": "sell",
+          "dollars": 8.48,
+          "status": "hypothetical_only"
+        },
+        {
+          "symbol": "QQQ",
+          "side": "sell",
+          "dollars": 6.06,
+          "status": "hypothetical_only"
+        },
+        {
+          "symbol": "VLUE",
+          "side": "buy",
+          "dollars": 9.73,
+          "status": "hypothetical_only"
+        }
+      ],
+      "explanation": [],
+      "regime": {
+        "median_distance_from_200d_average": 0.124396,
+        "name": "risk_on",
+        "risk_asset_breadth": 0.6
+      },
+      "stage": "research"
     }
   ],
   "portfolio_history": [
@@ -4561,60 +4640,60 @@
       "cash": 0.11,
       "holdings": [
         {
-          "symbol": "IWM",
-          "shares": 0.028651,
-          "value": 8.4658
-        },
-        {
-          "symbol": "QQQ",
-          "shares": 0.008422,
-          "value": 6.0406
-        },
-        {
-          "symbol": "EWT",
-          "shares": 0.027875,
-          "value": 3.112
-        },
-        {
-          "symbol": "FLTW",
-          "shares": 0.020992,
-          "value": 2.2503
-        },
-        {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 7.0003
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.015514,
-          "value": 2.789
+          "value": 6.7663
         },
         {
           "symbol": "DIVB",
           "shares": 0.035311,
-          "value": 2.4409
+          "value": 2.4532
+        },
+        {
+          "symbol": "DXJ",
+          "shares": 0.015514,
+          "value": 2.8151
+        },
+        {
+          "symbol": "EWT",
+          "shares": 0.027875,
+          "value": 3.0363
         },
         {
           "symbol": "FBT",
           "shares": 0.013854,
-          "value": 3.7577
+          "value": 3.73
+        },
+        {
+          "symbol": "FLTW",
+          "shares": 0.020992,
+          "value": 2.2119
         },
         {
           "symbol": "IHE",
           "shares": 0.041468,
-          "value": 4.3378
+          "value": 4.3433
+        },
+        {
+          "symbol": "IWM",
+          "shares": 0.028651,
+          "value": 8.6846
+        },
+        {
+          "symbol": "QQQ",
+          "shares": 0.008422,
+          "value": 6.1128
         },
         {
           "symbol": "VLUE",
           "shares": 0.02899,
-          "value": 5.9389
+          "value": 5.9721
         }
       ],
-      "captured_at": "2026-09-04T15:37:42.538175+00:00",
-      "source": "live_broker_snapshot",
-      "breakdown_estimated": false,
-      "note": "Holding values came from the latest reconciled quantities and fresh quotes.",
+      "captured_at": "2026-09-04T15:36:40.837814+00:00",
+      "source": "broker_snapshot",
+      "breakdown_estimated": true,
+      "note": "The broker total is exact. Historical holding values are allocated using the quantities and average prices stored in that reconciled snapshot.",
       "net_cash_flow": 0.0,
       "contributions": 0.0,
       "withdrawals": -0.0,
@@ -4626,11 +4705,227 @@
       "benchmark_value": 0.0,
       "benchmark_return": null,
       "excess_return": null
+    },
+    {
+      "date": "2026-09-05",
+      "value": 46.2358,
+      "cash": 0.11,
+      "holdings": [
+        {
+          "symbol": "CRAK",
+          "shares": 0.110477,
+          "value": 6.7663
+        },
+        {
+          "symbol": "DIVB",
+          "shares": 0.035311,
+          "value": 2.4532
+        },
+        {
+          "symbol": "DXJ",
+          "shares": 0.015514,
+          "value": 2.8151
+        },
+        {
+          "symbol": "EWT",
+          "shares": 0.027875,
+          "value": 3.0363
+        },
+        {
+          "symbol": "FBT",
+          "shares": 0.013854,
+          "value": 3.73
+        },
+        {
+          "symbol": "FLTW",
+          "shares": 0.020992,
+          "value": 2.2119
+        },
+        {
+          "symbol": "IHE",
+          "shares": 0.041468,
+          "value": 4.3433
+        },
+        {
+          "symbol": "IWM",
+          "shares": 0.028651,
+          "value": 8.6846
+        },
+        {
+          "symbol": "QQQ",
+          "shares": 0.008422,
+          "value": 6.1128
+        },
+        {
+          "symbol": "VLUE",
+          "shares": 0.02899,
+          "value": 5.9721
+        }
+      ],
+      "captured_at": null,
+      "source": "carried_forward_no_broker_snapshot",
+      "breakdown_estimated": true,
+      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
+      "net_cash_flow": 0.0,
+      "contributions": 0.0,
+      "withdrawals": -0.0,
+      "change": 0.0,
+      "change_pct": 0.0,
+      "market_gain": 0.0,
+      "time_weighted_return": 2.08440181,
+      "cash_flow_timing": "none",
+      "benchmark_value": 0.0,
+      "benchmark_return": null,
+      "excess_return": null
+    },
+    {
+      "date": "2026-09-06",
+      "value": 46.2358,
+      "cash": 0.11,
+      "holdings": [
+        {
+          "symbol": "CRAK",
+          "shares": 0.110477,
+          "value": 6.7663
+        },
+        {
+          "symbol": "DIVB",
+          "shares": 0.035311,
+          "value": 2.4532
+        },
+        {
+          "symbol": "DXJ",
+          "shares": 0.015514,
+          "value": 2.8151
+        },
+        {
+          "symbol": "EWT",
+          "shares": 0.027875,
+          "value": 3.0363
+        },
+        {
+          "symbol": "FBT",
+          "shares": 0.013854,
+          "value": 3.73
+        },
+        {
+          "symbol": "FLTW",
+          "shares": 0.020992,
+          "value": 2.2119
+        },
+        {
+          "symbol": "IHE",
+          "shares": 0.041468,
+          "value": 4.3433
+        },
+        {
+          "symbol": "IWM",
+          "shares": 0.028651,
+          "value": 8.6846
+        },
+        {
+          "symbol": "QQQ",
+          "shares": 0.008422,
+          "value": 6.1128
+        },
+        {
+          "symbol": "VLUE",
+          "shares": 0.02899,
+          "value": 5.9721
+        }
+      ],
+      "captured_at": null,
+      "source": "carried_forward_no_broker_snapshot",
+      "breakdown_estimated": true,
+      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
+      "net_cash_flow": 0.0,
+      "contributions": 0.0,
+      "withdrawals": -0.0,
+      "change": 0.0,
+      "change_pct": 0.0,
+      "market_gain": 0.0,
+      "time_weighted_return": 2.08440181,
+      "cash_flow_timing": "none",
+      "benchmark_value": 0.0,
+      "benchmark_return": null,
+      "excess_return": null
+    },
+    {
+      "date": "2026-09-07",
+      "value": 46.3014,
+      "cash": 0.11,
+      "holdings": [
+        {
+          "symbol": "IWM",
+          "shares": 0.028651,
+          "value": 8.4793
+        },
+        {
+          "symbol": "QQQ",
+          "shares": 0.008422,
+          "value": 6.0569
+        },
+        {
+          "symbol": "EWT",
+          "shares": 0.027875,
+          "value": 3.1273
+        },
+        {
+          "symbol": "FLTW",
+          "shares": 0.020992,
+          "value": 2.2615
+        },
+        {
+          "symbol": "CRAK",
+          "shares": 0.110477,
+          "value": 7.0219
+        },
+        {
+          "symbol": "DXJ",
+          "shares": 0.015514,
+          "value": 2.7912
+        },
+        {
+          "symbol": "DIVB",
+          "shares": 0.035311,
+          "value": 2.4373
+        },
+        {
+          "symbol": "FBT",
+          "shares": 0.013854,
+          "value": 3.7528
+        },
+        {
+          "symbol": "IHE",
+          "shares": 0.041468,
+          "value": 4.3384
+        },
+        {
+          "symbol": "VLUE",
+          "shares": 0.02899,
+          "value": 5.9584
+        }
+      ],
+      "captured_at": "2026-09-07T14:23:57.002515+00:00",
+      "source": "live_broker_snapshot",
+      "breakdown_estimated": false,
+      "note": "Holding values came from the latest reconciled quantities and fresh quotes.",
+      "net_cash_flow": 0.0,
+      "contributions": 0.0,
+      "withdrawals": -0.0,
+      "change": 0.0656,
+      "change_pct": 0.00141881,
+      "market_gain": 0.0656,
+      "time_weighted_return": 2.088778,
+      "cash_flow_timing": "none",
+      "benchmark_value": 0.0,
+      "benchmark_return": null,
+      "excess_return": null
     }
   ],
   "performance": {
-    "simple_return_on_contributions": 0.02746147,
-    "time_weighted_return": 2.08440181,
+    "simple_return_on_contributions": 0.02891987,
+    "time_weighted_return": 2.088778,
     "time_weighted_quality": "timestamped",
     "money_weighted": {
       "return": null,
@@ -4851,6 +5146,30 @@
           "return": null,
           "actual_return": 2.08440181,
           "excess_return": null
+        },
+        {
+          "date": "2026-09-05",
+          "price": 107.5755,
+          "value": 0.0,
+          "return": null,
+          "actual_return": 2.08440181,
+          "excess_return": null
+        },
+        {
+          "date": "2026-09-06",
+          "price": 107.5755,
+          "value": 0.0,
+          "return": null,
+          "actual_return": 2.08440181,
+          "excess_return": null
+        },
+        {
+          "date": "2026-09-07",
+          "price": 107.5755,
+          "value": 0.0,
+          "return": null,
+          "actual_return": 2.088778,
+          "excess_return": null
         }
       ],
       "note": "Uses the same published cash flows and the latest completed-session benchmark price available to each evaluation date."
@@ -4892,9 +5211,9 @@
     ]
   },
   "evidence": {
-    "live_days": 26,
+    "live_days": 29,
     "champion_cycles": 38,
-    "challenger_cycles": 25,
+    "challenger_cycles": 26,
     "reconciled_trades": 20,
     "benchmark": "Equal-weight provider universe",
     "backtest_method": "monthly_walk_forward_next_session",
@@ -5783,556 +6102,569 @@
     },
     "challenger_rankings": [
       {
-        "annualized_volatility": 0.236958,
+        "annualized_volatility": 0.22918,
         "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.330612,
-        "diversification_adjusted_score": 1.188265,
+        "distance_from_200d_average": 0.344628,
+        "diversification_adjusted_score": 1.333085,
         "drawdown_126d": 0.0,
         "eligible": true,
-        "momentum_126d": 0.345552,
-        "momentum_21d": 0.176349,
-        "momentum_63d": 0.25943,
-        "price": 62.77,
-        "score": 1.188265,
+        "momentum_126d": 0.35818,
+        "momentum_21d": 0.176721,
+        "momentum_63d": 0.311404,
+        "price": 63.59,
+        "score": 1.333085,
         "symbol": "CRAK"
       },
       {
-        "annualized_volatility": 0.252748,
+        "annualized_volatility": 0.238288,
         "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.230961,
-        "diversification_adjusted_score": 0.723652,
-        "drawdown_126d": -0.003519,
+        "distance_from_200d_average": 0.237916,
+        "diversification_adjusted_score": 0.936139,
+        "drawdown_126d": 0.0,
         "eligible": true,
-        "momentum_126d": 0.391829,
-        "momentum_21d": 0.03309,
-        "momentum_63d": 0.021718,
-        "price": 203.87,
-        "score": 0.753002,
+        "momentum_126d": 0.432821,
+        "momentum_21d": 0.047452,
+        "momentum_63d": 0.074586,
+        "price": 205.51,
+        "score": 0.966751,
         "symbol": "VLUE"
       },
       {
-        "annualized_volatility": 0.413122,
+        "annualized_volatility": 0.386568,
         "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.316425,
-        "diversification_adjusted_score": 0.422362,
-        "drawdown_126d": -0.012553,
+        "distance_from_200d_average": 0.336791,
+        "diversification_adjusted_score": 0.631671,
+        "drawdown_126d": 0.0,
         "eligible": true,
-        "momentum_126d": 0.564347,
-        "momentum_21d": 0.082891,
-        "momentum_63d": 0.041418,
-        "price": 110.13,
-        "score": 0.686805,
+        "momentum_126d": 0.613636,
+        "momentum_21d": 0.10002,
+        "momentum_63d": 0.14376,
+        "price": 112.18,
+        "score": 0.896238,
         "symbol": "EWT"
       },
       {
-        "annualized_volatility": 0.428373,
+        "annualized_volatility": 0.396258,
         "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.314723,
-        "diversification_adjusted_score": 0.359805,
-        "drawdown_126d": -0.027974,
+        "distance_from_200d_average": 0.332727,
+        "diversification_adjusted_score": 0.577934,
+        "drawdown_126d": -0.011574,
         "eligible": true,
-        "momentum_126d": 0.55042,
-        "momentum_21d": 0.083214,
-        "momentum_63d": 0.019192,
-        "price": 106.09,
-        "score": 0.625747,
+        "momentum_126d": 0.603242,
+        "momentum_21d": 0.09701,
+        "momentum_63d": 0.12742,
+        "price": 107.88,
+        "score": 0.843672,
         "symbol": "FLTW"
       },
       {
-        "annualized_volatility": 0.165285,
+        "annualized_volatility": 0.150582,
         "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.116219,
-        "diversification_adjusted_score": 0.318474,
+        "distance_from_200d_average": 0.12454,
+        "diversification_adjusted_score": 0.541545,
         "drawdown_126d": 0.0,
         "eligible": true,
-        "momentum_126d": 0.167461,
-        "momentum_21d": 0.041199,
-        "momentum_63d": 0.03157,
-        "price": 56.61,
-        "score": 0.572629,
+        "momentum_126d": 0.185247,
+        "momentum_21d": 0.047706,
+        "momentum_63d": 0.076899,
+        "price": 57.1,
+        "score": 0.795695,
         "symbol": "DEM"
       },
       {
-        "annualized_volatility": 0.157325,
+        "annualized_volatility": 0.139666,
         "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.09369,
-        "diversification_adjusted_score": 0.256505,
+        "distance_from_200d_average": 0.099776,
+        "diversification_adjusted_score": 0.48317,
         "drawdown_126d": 0.0,
         "eligible": true,
-        "momentum_126d": 0.13098,
-        "momentum_21d": 0.031077,
-        "momentum_63d": 0.035892,
-        "price": 42.8,
-        "score": 0.494002,
+        "momentum_126d": 0.143492,
+        "momentum_21d": 0.039074,
+        "momentum_63d": 0.080949,
+        "price": 43.08,
+        "score": 0.721135,
         "symbol": "FNDE"
       },
       {
-        "annualized_volatility": 0.214839,
+        "annualized_volatility": 0.187813,
         "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.106921,
-        "diversification_adjusted_score": 0.159668,
-        "drawdown_126d": -0.029768,
+        "distance_from_200d_average": 0.114989,
+        "diversification_adjusted_score": 0.425391,
+        "drawdown_126d": -0.021255,
         "eligible": true,
-        "momentum_126d": 0.181417,
-        "momentum_21d": -0.008899,
-        "momentum_63d": 0.022292,
-        "price": 194.91,
-        "score": 0.400586,
+        "momentum_126d": 0.2116,
+        "momentum_21d": 0.000763,
+        "momentum_63d": 0.08716,
+        "price": 196.62,
+        "score": 0.66492,
         "symbol": "IWC"
       },
       {
-        "annualized_volatility": 0.347784,
+        "annualized_volatility": 0.343168,
         "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.163085,
-        "drawdown_126d": -0.060634,
-        "eligible": false,
-        "momentum_126d": 0.329885,
-        "momentum_21d": 0.000323,
-        "momentum_63d": -0.036125,
-        "price": 185.97,
-        "score": 0.375512,
-        "symbol": "XLK"
-      },
-      {
-        "annualized_volatility": 0.37314,
-        "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.177575,
-        "drawdown_126d": -0.055837,
-        "eligible": false,
-        "momentum_126d": 0.340975,
-        "momentum_21d": 0.00922,
-        "momentum_63d": -0.031452,
-        "price": 141.21,
-        "score": 0.37269,
+        "distance_from_200d_average": 0.189853,
+        "diversification_adjusted_score": 0.270796,
+        "drawdown_126d": -0.044404,
+        "eligible": true,
+        "momentum_126d": 0.383993,
+        "momentum_21d": 0.025619,
+        "momentum_63d": 0.057661,
+        "price": 142.92,
+        "score": 0.566173,
         "symbol": "IXN"
       },
       {
-        "annualized_volatility": 0.19199,
+        "annualized_volatility": 0.170798,
         "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.093394,
-        "diversification_adjusted_score": 0.102196,
-        "drawdown_126d": -0.004547,
+        "distance_from_200d_average": 0.09787,
+        "diversification_adjusted_score": 0.29244,
+        "drawdown_126d": 0.0,
         "eligible": true,
-        "momentum_126d": 0.130376,
-        "momentum_21d": 0.014979,
-        "momentum_63d": 0.027725,
-        "price": 28.46,
-        "score": 0.370594,
+        "momentum_126d": 0.143297,
+        "momentum_21d": 0.023479,
+        "momentum_63d": 0.07539,
+        "price": 52.31,
+        "score": 0.559526,
+        "symbol": "SPDW"
+      },
+      {
+        "annualized_volatility": 0.320891,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.169595,
+        "diversification_adjusted_score": 0.261152,
+        "drawdown_126d": -0.054017,
+        "eligible": true,
+        "momentum_126d": 0.367444,
+        "momentum_21d": 0.010522,
+        "momentum_63d": 0.039952,
+        "price": 187.28,
+        "score": 0.551913,
+        "symbol": "XLK"
+      },
+      {
+        "annualized_volatility": 0.175708,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.096792,
+        "diversification_adjusted_score": 0.269811,
+        "drawdown_126d": -0.00035,
+        "eligible": true,
+        "momentum_126d": 0.143721,
+        "momentum_21d": 0.022906,
+        "momentum_63d": 0.072479,
+        "price": 28.58,
+        "score": 0.538437,
         "symbol": "SCHF"
       },
       {
-        "annualized_volatility": 0.190157,
+        "annualized_volatility": 0.372366,
         "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.090445,
-        "diversification_adjusted_score": 0.093042,
-        "drawdown_126d": -0.004743,
+        "distance_from_200d_average": 0.199693,
+        "diversification_adjusted_score": 0.250432,
+        "drawdown_126d": -0.042818,
         "eligible": true,
-        "momentum_126d": 0.124064,
-        "momentum_21d": 0.015066,
-        "momentum_63d": 0.027653,
-        "price": 73.44,
-        "score": 0.359151,
-        "symbol": "VEA"
-      },
-      {
-        "annualized_volatility": 0.193306,
-        "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.083585,
-        "diversification_adjusted_score": 0.040349,
-        "drawdown_126d": -0.01216,
-        "eligible": true,
-        "momentum_126d": 0.122691,
-        "momentum_21d": 0.006857,
-        "momentum_63d": 0.013149,
-        "price": 38.18,
-        "score": 0.313475,
-        "symbol": "HFXI"
-      },
-      {
-        "annualized_volatility": 0.407037,
-        "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.165554,
-        "drawdown_126d": -0.071985,
-        "eligible": false,
-        "momentum_126d": 0.299313,
-        "momentum_21d": 0.024706,
-        "momentum_63d": -0.040599,
-        "price": 139.36,
-        "score": 0.290138,
+        "momentum_126d": 0.350057,
+        "momentum_21d": 0.071248,
+        "momentum_63d": 0.08333,
+        "price": 143.74,
+        "score": 0.528927,
         "symbol": "AIA"
       },
       {
-        "annualized_volatility": 0.379993,
+        "annualized_volatility": 0.174187,
         "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.15002,
-        "drawdown_126d": -0.067988,
-        "eligible": false,
-        "momentum_126d": 0.244559,
-        "momentum_21d": 0.043748,
-        "momentum_63d": -0.018111,
-        "price": 99.25,
-        "score": 0.278963,
+        "distance_from_200d_average": 0.094007,
+        "diversification_adjusted_score": 0.260304,
+        "drawdown_126d": -0.000407,
+        "eligible": true,
+        "momentum_126d": 0.137782,
+        "momentum_21d": 0.02274,
+        "momentum_63d": 0.071971,
+        "price": 73.76,
+        "score": 0.526573,
+        "symbol": "VEA"
+      },
+      {
+        "annualized_volatility": 0.28796,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.14359,
+        "diversification_adjusted_score": 0.239756,
+        "drawdown_126d": -0.053693,
+        "eligible": true,
+        "momentum_126d": 0.31692,
+        "momentum_21d": 0.000371,
+        "momentum_63d": 0.033065,
+        "price": 161.74,
+        "score": 0.522281,
+        "symbol": "IGM"
+      },
+      {
+        "annualized_volatility": 0.34851,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.169522,
+        "diversification_adjusted_score": 0.189943,
+        "drawdown_126d": -0.050427,
+        "eligible": true,
+        "momentum_126d": 0.28062,
+        "momentum_21d": 0.076432,
+        "momentum_63d": 0.083276,
+        "price": 101.12,
+        "score": 0.477226,
         "symbol": "EMXC"
       },
       {
-        "annualized_volatility": 0.308695,
+        "annualized_volatility": 0.179878,
         "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.11023,
-        "drawdown_126d": -0.049816,
-        "eligible": false,
-        "momentum_126d": 0.191771,
-        "momentum_21d": 0.034985,
-        "momentum_63d": -0.018381,
-        "price": 72.48,
-        "score": 0.268926,
+        "distance_from_200d_average": 0.088101,
+        "diversification_adjusted_score": 0.193753,
+        "drawdown_126d": -0.006986,
+        "eligible": true,
+        "momentum_126d": 0.138192,
+        "momentum_21d": 0.014003,
+        "momentum_63d": 0.055198,
+        "price": 38.38,
+        "score": 0.466938,
+        "symbol": "HFXI"
+      },
+      {
+        "annualized_volatility": 0.281058,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.126879,
+        "diversification_adjusted_score": 0.182275,
+        "drawdown_126d": -0.034282,
+        "eligible": true,
+        "momentum_126d": 0.219208,
+        "momentum_21d": 0.057645,
+        "momentum_63d": 0.066719,
+        "price": 73.665,
+        "score": 0.466507,
         "symbol": "EMGF"
       },
       {
-        "annualized_volatility": 0.4073,
+        "annualized_volatility": 0.37827,
         "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.144682,
-        "drawdown_126d": -0.088263,
-        "eligible": false,
-        "momentum_126d": 0.317779,
-        "momentum_21d": -0.006721,
-        "momentum_63d": -0.069859,
-        "price": 356.17,
-        "score": 0.265697,
+        "distance_from_200d_average": 0.159789,
+        "diversification_adjusted_score": 0.136777,
+        "drawdown_126d": -0.074875,
+        "eligible": true,
+        "momentum_126d": 0.360567,
+        "momentum_21d": 0.012921,
+        "momentum_63d": 0.021927,
+        "price": 361.4,
+        "score": 0.437341,
         "symbol": "XNTK"
       },
       {
-        "annualized_volatility": 0.317877,
+        "annualized_volatility": 0.293418,
         "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.120756,
-        "diversification_adjusted_score": -0.02409,
-        "drawdown_126d": -0.031392,
+        "distance_from_200d_average": 0.133281,
+        "diversification_adjusted_score": 0.148721,
+        "drawdown_126d": -0.019134,
         "eligible": true,
-        "momentum_126d": 0.171391,
-        "momentum_21d": 0.034318,
-        "momentum_63d": 0.002744,
-        "price": 116.94,
-        "score": 0.259394,
+        "momentum_126d": 0.197734,
+        "momentum_21d": 0.054685,
+        "momentum_63d": 0.081362,
+        "price": 118.42,
+        "score": 0.432797,
         "symbol": "VPL"
       },
       {
-        "annualized_volatility": 0.36055,
+        "annualized_volatility": 0.19685,
         "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.116437,
-        "drawdown_126d": -0.088148,
-        "eligible": false,
-        "momentum_126d": 0.237392,
-        "momentum_21d": -0.019032,
-        "momentum_63d": -0.033984,
-        "price": 147.41,
-        "score": 0.230702,
-        "symbol": "SPMO"
+        "distance_from_200d_average": 0.073399,
+        "diversification_adjusted_score": 0.159557,
+        "drawdown_126d": -0.006955,
+        "eligible": true,
+        "momentum_126d": 0.126385,
+        "momentum_21d": 0.022423,
+        "momentum_63d": 0.06146,
+        "price": 54.26,
+        "score": 0.419237,
+        "symbol": "IMTM"
       },
       {
-        "annualized_volatility": 0.345066,
+        "annualized_volatility": 0.50119,
         "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.113551,
-        "drawdown_126d": -0.067045,
+        "distance_from_200d_average": 0.188027,
+        "drawdown_126d": -0.152337,
         "eligible": false,
-        "momentum_126d": 0.203966,
-        "momentum_21d": -0.014621,
-        "momentum_63d": -0.035627,
-        "price": 146.25,
-        "score": 0.20462,
-        "symbol": "SPHB"
-      },
-      {
-        "annualized_volatility": 0.531465,
-        "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.160604,
-        "drawdown_126d": -0.17388,
-        "eligible": false,
-        "momentum_126d": 0.397749,
-        "momentum_21d": -0.030016,
-        "momentum_63d": -0.119405,
-        "price": 552.6,
-        "score": 0.20338,
+        "momentum_126d": 0.489936,
+        "momentum_21d": -0.007822,
+        "momentum_63d": -0.004704,
+        "price": 567.01,
+        "score": 0.395404,
         "symbol": "SMH"
       },
       {
-        "annualized_volatility": 0.417721,
+        "annualized_volatility": 0.326702,
         "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.121058,
-        "drawdown_126d": -0.132721,
-        "eligible": false,
-        "momentum_126d": 0.311913,
-        "momentum_21d": -0.025802,
-        "momentum_63d": -0.120897,
-        "price": 146.12,
-        "score": 0.189185,
-        "symbol": "QTUM"
+        "distance_from_200d_average": 0.128016,
+        "diversification_adjusted_score": 0.093368,
+        "drawdown_126d": -0.053457,
+        "eligible": true,
+        "momentum_126d": 0.258576,
+        "momentum_21d": 0.019163,
+        "momentum_63d": 0.037234,
+        "price": 148.38,
+        "score": 0.394419,
+        "symbol": "SPHB"
       },
       {
-        "annualized_volatility": 0.630363,
+        "annualized_volatility": 0.343677,
         "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.167642,
-        "drawdown_126d": -0.233294,
+        "distance_from_200d_average": 0.132472,
+        "diversification_adjusted_score": 0.068205,
+        "drawdown_126d": -0.073859,
+        "eligible": true,
+        "momentum_126d": 0.271769,
+        "momentum_21d": 0.004158,
+        "momentum_63d": 0.039297,
+        "price": 149.72,
+        "score": 0.379821,
+        "symbol": "SPMO"
+      },
+      {
+        "annualized_volatility": 0.599314,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.205381,
+        "drawdown_126d": -0.206333,
         "eligible": false,
-        "momentum_126d": 0.488477,
-        "momentum_21d": -0.053703,
-        "momentum_63d": -0.166382,
-        "price": 502.2,
-        "score": 0.180968,
+        "momentum_126d": 0.60869,
+        "momentum_21d": -0.023774,
+        "momentum_63d": -0.036429,
+        "price": 519.86,
+        "score": 0.376249,
         "symbol": "SOXX"
       },
       {
-        "annualized_volatility": 0.648626,
+        "annualized_volatility": 0.385041,
         "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.152993,
-        "drawdown_126d": -0.259488,
+        "distance_from_200d_average": 0.132746,
+        "drawdown_126d": -0.122216,
         "eligible": false,
-        "momentum_126d": 0.465998,
-        "momentum_21d": -0.047425,
-        "momentum_63d": -0.194606,
-        "price": 219.94,
-        "score": 0.138792,
+        "momentum_126d": 0.35446,
+        "momentum_21d": -0.009046,
+        "momentum_63d": -0.030404,
+        "price": 147.89,
+        "score": 0.35137,
+        "symbol": "QTUM"
+      },
+      {
+        "annualized_volatility": 0.618602,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.191026,
+        "drawdown_126d": -0.232856,
+        "eligible": false,
+        "momentum_126d": 0.600641,
+        "momentum_21d": -0.011711,
+        "momentum_63d": -0.067517,
+        "price": 227.85,
+        "score": 0.336733,
         "symbol": "FTXL"
       },
       {
-        "annualized_volatility": 0.377258,
+        "annualized_volatility": 0.359905,
         "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.076068,
-        "drawdown_126d": -0.132669,
+        "distance_from_200d_average": 0.094386,
+        "drawdown_126d": -0.116911,
         "eligible": false,
-        "momentum_126d": 0.214506,
-        "momentum_21d": -0.034067,
-        "momentum_63d": -0.080152,
-        "price": 299.42,
-        "score": 0.130279,
+        "momentum_126d": 0.264992,
+        "momentum_21d": -0.010741,
+        "momentum_63d": -0.004154,
+        "price": 304.86,
+        "score": 0.292092,
         "symbol": "MTUM"
       },
       {
-        "annualized_volatility": 0.280359,
+        "annualized_volatility": 0.265402,
         "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.060823,
-        "drawdown_126d": -0.087451,
-        "eligible": false,
-        "momentum_126d": 0.129748,
-        "momentum_21d": -0.017307,
-        "momentum_63d": -0.042399,
-        "price": 227.69,
-        "score": 0.121118,
+        "distance_from_200d_average": 0.069446,
+        "diversification_adjusted_score": -0.011673,
+        "drawdown_126d": -0.078995,
+        "eligible": true,
+        "momentum_126d": 0.166706,
+        "momentum_21d": -0.003123,
+        "momentum_63d": 0.012947,
+        "price": 229.8,
+        "score": 0.277629,
         "symbol": "VFMO"
       },
       {
-        "annualized_volatility": 0.323581,
+        "annualized_volatility": 0.309435,
         "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.076325,
-        "drawdown_126d": -0.085692,
-        "eligible": false,
-        "momentum_126d": 0.159293,
-        "momentum_21d": -0.040242,
-        "momentum_63d": -0.050182,
-        "price": 154.07,
-        "score": 0.120952,
+        "distance_from_200d_average": 0.089216,
+        "diversification_adjusted_score": -0.028063,
+        "drawdown_126d": -0.073705,
+        "eligible": true,
+        "momentum_126d": 0.196734,
+        "momentum_21d": -0.018857,
+        "momentum_63d": 0.011732,
+        "price": 156.09,
+        "score": 0.268759,
         "symbol": "PWB"
       },
       {
-        "annualized_volatility": 0.628631,
+        "annualized_volatility": 0.206864,
         "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.097065,
-        "drawdown_126d": -0.26324,
+        "distance_from_200d_average": 0.054158,
+        "drawdown_126d": -0.073227,
         "eligible": false,
-        "momentum_126d": 0.435653,
-        "momentum_21d": -0.060122,
-        "momentum_63d": -0.257054,
-        "price": 478.52,
-        "score": 0.083802,
-        "symbol": "XSD"
-      },
-      {
-        "annualized_volatility": 0.222515,
-        "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.048153,
-        "drawdown_126d": -0.079283,
-        "eligible": false,
-        "momentum_126d": 0.111375,
-        "momentum_21d": -0.016587,
-        "momentum_63d": -0.068262,
-        "price": 114.03,
-        "score": 0.083137,
+        "momentum_126d": 0.141107,
+        "momentum_21d": 0.003189,
+        "momentum_63d": -0.021079,
+        "price": 114.78,
+        "score": 0.256067,
         "symbol": "ICVT"
       },
       {
-        "annualized_volatility": 0.745343,
+        "annualized_volatility": 0.591342,
         "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.091113,
-        "drawdown_126d": -0.309445,
+        "distance_from_200d_average": 0.124253,
+        "drawdown_126d": -0.243332,
         "eligible": false,
-        "momentum_126d": 0.375857,
-        "momentum_21d": -0.091737,
-        "momentum_63d": -0.196882,
-        "price": 129.7,
-        "score": 0.032494,
+        "momentum_126d": 0.528318,
+        "momentum_21d": -0.055667,
+        "momentum_63d": -0.140026,
+        "price": 491.45,
+        "score": 0.239502,
+        "symbol": "XSD"
+      },
+      {
+        "annualized_volatility": 0.724062,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.141059,
+        "drawdown_126d": -0.275902,
+        "eligible": false,
+        "momentum_126d": 0.524849,
+        "momentum_21d": -0.059799,
+        "momentum_63d": -0.062179,
+        "price": 136.0,
+        "score": 0.210641,
         "symbol": "PSI"
       },
       {
-        "annualized_volatility": 0.207575,
+        "annualized_volatility": 0.199434,
         "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.035006,
-        "drawdown_126d": -0.098366,
+        "distance_from_200d_average": 0.041601,
+        "drawdown_126d": -0.091744,
         "eligible": false,
-        "momentum_126d": 0.082663,
-        "momentum_21d": -0.050821,
-        "momentum_63d": -0.047455,
-        "price": 84.42,
-        "score": 0.02563,
+        "momentum_126d": 0.117329,
+        "momentum_21d": -0.037356,
+        "momentum_63d": -0.010811,
+        "price": 85.04,
+        "score": 0.185369,
         "symbol": "XSMO"
       },
       {
-        "annualized_volatility": 0.407541,
+        "annualized_volatility": 0.215036,
         "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.052337,
-        "drawdown_126d": -0.108176,
+        "distance_from_200d_average": 0.026367,
+        "drawdown_126d": -0.078901,
         "eligible": false,
-        "momentum_126d": 0.050185,
-        "momentum_21d": 0.05772,
-        "momentum_63d": -0.079199,
-        "price": 118.38,
-        "score": -0.011322,
-        "symbol": "XME"
-      },
-      {
-        "annualized_volatility": 0.294325,
-        "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.022232,
-        "drawdown_126d": -0.107827,
-        "eligible": false,
-        "momentum_126d": 0.060986,
-        "momentum_21d": -0.048808,
-        "momentum_63d": -0.095146,
-        "price": 177.54,
-        "score": -0.080024,
-        "symbol": "GRID"
-      },
-      {
-        "annualized_volatility": 0.216558,
-        "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.0185,
-        "drawdown_126d": -0.086749,
-        "eligible": false,
-        "momentum_126d": 0.033209,
-        "momentum_21d": -0.067519,
-        "momentum_63d": -0.049021,
-        "price": 54.69,
-        "score": -0.094265,
+        "momentum_126d": 0.071282,
+        "momentum_21d": -0.05467,
+        "momentum_63d": -0.025111,
+        "price": 55.16,
+        "score": 0.037726,
         "symbol": "PAVE"
       },
       {
-        "annualized_volatility": 0.260965,
+        "annualized_volatility": 0.279299,
         "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.003242,
-        "drawdown_126d": -0.12116,
+        "distance_from_200d_average": 0.02971,
+        "drawdown_126d": -0.10054,
         "eligible": false,
-        "momentum_126d": 0.040998,
-        "momentum_21d": -0.040693,
-        "momentum_63d": -0.109116,
-        "price": 152.76,
-        "score": -0.137124,
+        "momentum_126d": 0.084096,
+        "momentum_21d": -0.035562,
+        "momentum_63d": -0.041842,
+        "price": 178.99,
+        "score": 0.03246,
+        "symbol": "GRID"
+      },
+      {
+        "annualized_volatility": 0.249228,
+        "asset_group": "provider_candidate",
+        "distance_from_200d_average": 0.012476,
+        "drawdown_126d": -0.112415,
+        "eligible": false,
+        "momentum_126d": 0.074419,
+        "momentum_21d": -0.032363,
+        "momentum_63d": -0.061503,
+        "price": 154.28,
+        "score": -0.006077,
         "symbol": "XMMO"
       },
       {
-        "annualized_volatility": 0.146776,
+        "annualized_volatility": 0.146839,
         "asset_group": "provider_candidate",
-        "distance_from_200d_average": 0.009002,
-        "drawdown_126d": -0.080381,
+        "distance_from_200d_average": 0.014097,
+        "drawdown_126d": -0.075074,
         "eligible": false,
-        "momentum_126d": 0.002299,
-        "momentum_21d": -0.039609,
-        "momentum_63d": -0.041922,
-        "price": 58.92,
-        "score": -0.166983,
+        "momentum_126d": 0.023284,
+        "momentum_21d": -0.027568,
+        "momentum_63d": -0.030103,
+        "price": 59.26,
+        "score": -0.056715,
         "symbol": "IFRA"
       },
       {
-        "annualized_volatility": 0.494588,
+        "annualized_volatility": 0.453121,
         "asset_group": "provider_candidate",
-        "distance_from_200d_average": -0.051186,
-        "drawdown_126d": -0.215585,
+        "distance_from_200d_average": -0.044141,
+        "drawdown_126d": -0.209406,
         "eligible": false,
-        "momentum_126d": -0.087095,
-        "momentum_21d": 0.065516,
-        "momentum_63d": -0.09109,
-        "price": 45.7,
-        "score": -0.171107,
+        "momentum_126d": -0.055761,
+        "momentum_21d": 0.066204,
+        "momentum_63d": 0.016553,
+        "price": 46.06,
+        "score": -0.065721,
         "symbol": "URA"
       },
       {
-        "annualized_volatility": 0.421938,
+        "annualized_volatility": 0.396943,
         "asset_group": "provider_candidate",
-        "distance_from_200d_average": -0.088174,
-        "drawdown_126d": -0.201407,
+        "distance_from_200d_average": -0.082245,
+        "drawdown_126d": -0.196315,
         "eligible": false,
-        "momentum_126d": -0.145224,
-        "momentum_21d": 0.046628,
-        "momentum_63d": -0.094094,
-        "price": 119.19,
-        "score": -0.261184,
+        "momentum_126d": -0.11808,
+        "momentum_21d": 0.053394,
+        "momentum_63d": -0.017689,
+        "price": 119.95,
+        "score": -0.171636,
         "symbol": "NLR"
       },
       {
-        "annualized_volatility": 0.436817,
+        "annualized_volatility": 0.310674,
         "asset_group": "provider_candidate",
-        "distance_from_200d_average": -0.061332,
-        "drawdown_126d": -0.248477,
+        "distance_from_200d_average": -0.065597,
+        "drawdown_126d": -0.18409,
         "eligible": false,
-        "momentum_126d": -0.005592,
-        "momentum_21d": -0.11576,
-        "momentum_63d": -0.207564,
-        "price": 197.38,
-        "score": -0.287193,
-        "symbol": "PRN"
-      },
-      {
-        "annualized_volatility": 0.192162,
-        "asset_group": "provider_candidate",
-        "distance_from_200d_average": -0.056646,
-        "drawdown_126d": -0.107961,
-        "eligible": false,
-        "momentum_126d": -0.09054,
-        "momentum_21d": -0.011048,
-        "momentum_63d": -0.044962,
-        "price": 75.19,
-        "score": -0.332406,
-        "symbol": "UTES"
-      },
-      {
-        "annualized_volatility": 0.314136,
-        "asset_group": "provider_candidate",
-        "distance_from_200d_average": -0.074223,
-        "drawdown_126d": -0.192195,
-        "eligible": false,
-        "momentum_126d": -0.050903,
-        "momentum_21d": -0.118139,
-        "momentum_63d": -0.183308,
-        "price": 107.64,
-        "score": -0.400417,
+        "momentum_126d": -0.014725,
+        "momentum_21d": -0.102526,
+        "momentum_63d": -0.150426,
+        "price": 108.72,
+        "score": -0.302821,
         "symbol": "AIRR"
       }
     ],
     "backtest": {
       "method": "monthly_walk_forward_next_session",
       "data_start": "2022-06-22 00:00:00",
-      "data_end": "2026-09-03 00:00:00",
+      "data_end": "2026-09-04 00:00:00",
       "strategy": {
         "annual_risk_free_rate": 0.0,
-        "annualized_volatility": 0.190947,
-        "cagr": 0.086961,
+        "annualized_volatility": 0.187438,
+        "cagr": 0.101203,
         "maximum_drawdown": -0.302755,
-        "sharpe_excess_return": 0.532482,
-        "total_return": 0.417316
+        "sharpe_excess_return": 0.608368,
+        "total_return": 0.497195
       },
       "benchmark": {
         "annual_risk_free_rate": 0.0,
-        "annualized_volatility": 0.205894,
-        "cagr": 0.270719,
-        "maximum_drawdown": -0.215007,
-        "sharpe_excess_return": 1.266841,
-        "total_return": 1.723902
+        "annualized_volatility": 0.204121,
+        "cagr": 0.274215,
+        "maximum_drawdown": -0.210528,
+        "sharpe_excess_return": 1.289506,
+        "total_return": 1.758033
       }
     }
   },
