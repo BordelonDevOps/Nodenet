@@ -1,6 +1,6 @@
 {
   "schema_version": "1.6.0",
-  "published_at": "2026-09-07T14:25:04.785116+00:00",
+  "published_at": "2026-09-08T14:19:10.916194+00:00",
   "experiment": {
     "name": "TradeRiser Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -8,13 +8,13 @@
     "objective": "Continue the live observation through December 31, 2026 using the experiment's cumulative contributed funds."
   },
   "account": {
-    "value": 46.3014,
+    "value": 46.1134,
     "cash": 0.11,
-    "invested": 46.225,
+    "invested": 46.003,
     "buying_power": 0.11,
     "net_contributions": 45.0,
-    "investment_gain": 1.3014,
-    "simple_return_on_contributions": 0.02891987,
+    "investment_gain": 1.1134,
+    "simple_return_on_contributions": 0.02474269,
     "currency": "USD"
   },
   "holdings": [
@@ -23,7 +23,7 @@
       "shares": 0.028651,
       "average_price": 301.56,
       "cost_basis": 8.64,
-      "current_value": 8.4793,
+      "current_value": 8.4437,
       "strategy": "champion"
     },
     {
@@ -31,7 +31,7 @@
       "shares": 0.008422,
       "average_price": 721.92,
       "cost_basis": 6.08,
-      "current_value": 6.0569,
+      "current_value": 6.0358,
       "strategy": "champion"
     },
     {
@@ -39,7 +39,7 @@
       "shares": 0.027875,
       "average_price": 108.34,
       "cost_basis": 3.02,
-      "current_value": 3.1273,
+      "current_value": 3.103,
       "strategy": "champion"
     },
     {
@@ -47,7 +47,7 @@
       "shares": 0.020992,
       "average_price": 104.8,
       "cost_basis": 2.2,
-      "current_value": 2.2615,
+      "current_value": 2.2495,
       "strategy": "champion"
     },
     {
@@ -55,7 +55,7 @@
       "shares": 0.110477,
       "average_price": 60.92,
       "cost_basis": 6.7303,
-      "current_value": 7.0219,
+      "current_value": 7.1622,
       "strategy": "champion"
     },
     {
@@ -63,7 +63,7 @@
       "shares": 0.015514,
       "average_price": 180.48,
       "cost_basis": 2.8,
-      "current_value": 2.7912,
+      "current_value": 2.7274,
       "strategy": "champion"
     },
     {
@@ -71,7 +71,7 @@
       "shares": 0.035311,
       "average_price": 69.1,
       "cost_basis": 2.44,
-      "current_value": 2.4373,
+      "current_value": 2.4079,
       "strategy": "champion"
     },
     {
@@ -79,7 +79,7 @@
       "shares": 0.013854,
       "average_price": 267.79,
       "cost_basis": 3.71,
-      "current_value": 3.7528,
+      "current_value": 3.6857,
       "strategy": "champion"
     },
     {
@@ -87,7 +87,7 @@
       "shares": 0.041468,
       "average_price": 104.18,
       "cost_basis": 4.3201,
-      "current_value": 4.3384,
+      "current_value": 4.2637,
       "strategy": "champion"
     },
     {
@@ -95,7 +95,7 @@
       "shares": 0.02899,
       "average_price": 204.9,
       "cost_basis": 5.9401,
-      "current_value": 5.9584,
+      "current_value": 5.9241,
       "strategy": "champion"
     }
   ],
@@ -3535,6 +3535,34 @@
       ],
       "regime": null,
       "stage": "evaluation"
+    },
+    {
+      "kind": "champion",
+      "generated_at": "2026-09-08T14:18:36.416169+00:00",
+      "status": "not_authorized",
+      "selected": [
+        "COPX",
+        "CRAK",
+        "ECH",
+        "EMXC",
+        "GSG",
+        "IDMO",
+        "IXC",
+        "MLPX",
+        "RING",
+        "XME"
+      ],
+      "orders": [],
+      "explanation": [
+        "Only assets above their 200-day average with positive 3- and 6-month momentum qualify.",
+        "Qualifying assets are ranked by 12-to-1 momentum, which omits the most recent month to reduce short-term reversal effects; an RSI overbought penalty, correlation filter, and covariance-aware risk sizing are then applied.",
+        "The account keeps at least the configured cash reserve and uses no leverage or short positions.",
+        "Every completed market session is evaluated; orders are proposed only when the allocation drift exceeds the configured band or a severe risk exit triggers.",
+        "Risk exits combine trend failure with either weak momentum or a volatility-sensitive drawdown from the recent high.",
+        "This is a proposed paper-trading decision, not an executed order or profit guarantee."
+      ],
+      "regime": null,
+      "stage": "evaluation"
     }
   ],
   "portfolio_history": [
@@ -4880,60 +4908,60 @@
       "cash": 0.11,
       "holdings": [
         {
-          "symbol": "IWM",
-          "shares": 0.028651,
-          "value": 8.4793
-        },
-        {
-          "symbol": "QQQ",
-          "shares": 0.008422,
-          "value": 6.0569
-        },
-        {
-          "symbol": "EWT",
-          "shares": 0.027875,
-          "value": 3.1273
-        },
-        {
-          "symbol": "FLTW",
-          "shares": 0.020992,
-          "value": 2.2615
-        },
-        {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 7.0219
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.015514,
-          "value": 2.7912
+          "value": 6.7759
         },
         {
           "symbol": "DIVB",
           "shares": 0.035311,
-          "value": 2.4373
+          "value": 2.4565
+        },
+        {
+          "symbol": "DXJ",
+          "shares": 0.015514,
+          "value": 2.819
+        },
+        {
+          "symbol": "EWT",
+          "shares": 0.027875,
+          "value": 3.0405
         },
         {
           "symbol": "FBT",
           "shares": 0.013854,
-          "value": 3.7528
+          "value": 3.7351
+        },
+        {
+          "symbol": "FLTW",
+          "shares": 0.020992,
+          "value": 2.2149
         },
         {
           "symbol": "IHE",
           "shares": 0.041468,
-          "value": 4.3384
+          "value": 4.3494
+        },
+        {
+          "symbol": "IWM",
+          "shares": 0.028651,
+          "value": 8.6986
+        },
+        {
+          "symbol": "QQQ",
+          "shares": 0.008422,
+          "value": 6.1212
         },
         {
           "symbol": "VLUE",
           "shares": 0.02899,
-          "value": 5.9584
+          "value": 5.9803
         }
       ],
-      "captured_at": "2026-09-07T14:25:04.783993+00:00",
-      "source": "live_broker_snapshot",
-      "breakdown_estimated": false,
-      "note": "Holding values came from the latest reconciled quantities and fresh quotes.",
+      "captured_at": "2026-09-07T14:23:56.724430+00:00",
+      "source": "broker_snapshot",
+      "breakdown_estimated": true,
+      "note": "The broker total is exact. Historical holding values are allocated using the quantities and average prices stored in that reconciled snapshot.",
       "net_cash_flow": 0.0,
       "contributions": 0.0,
       "withdrawals": -0.0,
@@ -4945,11 +4973,83 @@
       "benchmark_value": 0.0,
       "benchmark_return": null,
       "excess_return": null
+    },
+    {
+      "date": "2026-09-08",
+      "value": 46.1134,
+      "cash": 0.11,
+      "holdings": [
+        {
+          "symbol": "IWM",
+          "shares": 0.028651,
+          "value": 8.4437
+        },
+        {
+          "symbol": "QQQ",
+          "shares": 0.008422,
+          "value": 6.0358
+        },
+        {
+          "symbol": "EWT",
+          "shares": 0.027875,
+          "value": 3.103
+        },
+        {
+          "symbol": "FLTW",
+          "shares": 0.020992,
+          "value": 2.2495
+        },
+        {
+          "symbol": "CRAK",
+          "shares": 0.110477,
+          "value": 7.1622
+        },
+        {
+          "symbol": "DXJ",
+          "shares": 0.015514,
+          "value": 2.7274
+        },
+        {
+          "symbol": "DIVB",
+          "shares": 0.035311,
+          "value": 2.4079
+        },
+        {
+          "symbol": "FBT",
+          "shares": 0.013854,
+          "value": 3.6857
+        },
+        {
+          "symbol": "IHE",
+          "shares": 0.041468,
+          "value": 4.2637
+        },
+        {
+          "symbol": "VLUE",
+          "shares": 0.02899,
+          "value": 5.9241
+        }
+      ],
+      "captured_at": "2026-09-08T14:19:10.915181+00:00",
+      "source": "live_broker_snapshot",
+      "breakdown_estimated": false,
+      "note": "Holding values came from the latest reconciled quantities and fresh quotes.",
+      "net_cash_flow": 0.0,
+      "contributions": 0.0,
+      "withdrawals": -0.0,
+      "change": -0.188,
+      "change_pct": -0.00406035,
+      "market_gain": -0.188,
+      "time_weighted_return": 2.07623647,
+      "cash_flow_timing": "none",
+      "benchmark_value": 0.0,
+      "benchmark_return": null,
+      "excess_return": null
     }
   ],
   "performance": {
-    "simple_return_on_contributions": 0.02891987,
-    "time_weighted_return": 2.088778,
+    "simple_return_on_contributions": 0.02474269,
+    "time_weighted_return": 2.07623647,
     "time_weighted_quality": "timestamped",
     "money_weighted": {
       "return": null,
@@ -5165,7 +5265,7 @@
         },
         {
           "date": "2026-09-04",
-          "price": 107.5755,
+          "price": 109.4351,
           "value": 0.0,
           "return": null,
           "actual_return": 2.08440181,
@@ -5173,7 +5273,7 @@
         },
         {
           "date": "2026-09-05",
-          "price": 107.5755,
+          "price": 109.4351,
           "value": 0.0,
           "return": null,
           "actual_return": 2.08440181,
@@ -5181,7 +5281,7 @@
         },
         {
           "date": "2026-09-06",
-          "price": 107.5755,
+          "price": 109.4351,
           "value": 0.0,
           "return": null,
           "actual_return": 2.08440181,
@@ -5189,10 +5289,18 @@
         },
         {
           "date": "2026-09-07",
-          "price": 107.5755,
+          "price": 109.4351,
           "value": 0.0,
           "return": null,
           "actual_return": 2.088778,
+          "excess_return": null
+        },
+        {
+          "date": "2026-09-08",
+          "price": 109.4351,
+          "value": 0.0,
+          "return": null,
+          "actual_return": 2.07623647,
           "excess_return": null
         }
       ],
@@ -5203,8 +5311,8 @@
     "as_of": "2026-09-04 00:00:00",
     "headline": "TradeRiser made no trade because no change cleared its timing and size rules.",
     "portfolio_context": "The live account currently holds IWM, QQQ, EWT, FLTW, CRAK, DXJ, DIVB, FBT, IHE, VLUE.",
-    "market_context": "The completed-session screen qualified no funds for consideration.",
-    "champion": "The live strategy currently favors IWM, QQQ, EWT, FLTW, CRAK, DXJ, DIVB, FBT, IHE, VLUE.",
+    "market_context": "The completed-session screen qualified COPX, CRAK, PICK, EMXC, XLK, SPHB, GSG, XME, IXC, FENY, VDE, XLE, FTGC, RING, PWB, SPMO, ECH, MLPX, IDMO, RWR, USRT for consideration.",
+    "champion": "The live strategy currently favors COPX, CRAK, ECH, EMXC, GSG, IDMO, IXC, MLPX, RING, XME.",
     "challenger": "The research-only challenger favors CRAK, VLUE, EWT.",
     "disclosure": "This briefing explains completed-session model inputs; it is not a real-time news feed or a recommendation."
   },
@@ -5235,8 +5343,8 @@
     ]
   },
   "evidence": {
-    "live_days": 29,
-    "champion_cycles": 39,
+    "live_days": 30,
+    "champion_cycles": 40,
     "challenger_cycles": 26,
     "reconciled_trades": 20,
     "benchmark": "Equal-weight provider universe",
@@ -5248,8 +5356,626 @@
     ]
   },
   "research": {
-    "champion_rankings": [],
-    "replacement_analysis": {},
+    "champion_rankings": [
+      {
+        "annualized_volatility": 0.618602,
+        "distance_from_200d_average": 0.191026,
+        "drawdown_from_63d_high": -0.232856,
+        "eligible": false,
+        "momentum_126d": 0.600641,
+        "momentum_12_1": 1.338421,
+        "momentum_63d": -0.067517,
+        "overbought": false,
+        "price": 227.85,
+        "rsi_14": 36.7742,
+        "score": 1.338421,
+        "symbol": "FTXL",
+        "volatility_trailing_exit_threshold": -0.116905
+      },
+      {
+        "annualized_volatility": 0.724062,
+        "distance_from_200d_average": 0.141059,
+        "drawdown_from_63d_high": -0.275902,
+        "eligible": false,
+        "momentum_126d": 0.524849,
+        "momentum_12_1": 1.296873,
+        "momentum_63d": -0.062179,
+        "overbought": false,
+        "price": 136.0,
+        "rsi_14": 27.0189,
+        "score": 1.296873,
+        "symbol": "PSI",
+        "volatility_trailing_exit_threshold": -0.136835
+      },
+      {
+        "annualized_volatility": 0.599314,
+        "distance_from_200d_average": 0.205381,
+        "drawdown_from_63d_high": -0.206333,
+        "eligible": false,
+        "momentum_126d": 0.60869,
+        "momentum_12_1": 1.191117,
+        "momentum_63d": -0.036429,
+        "overbought": false,
+        "price": 519.86,
+        "rsi_14": 34.5506,
+        "score": 1.191117,
+        "symbol": "SOXX",
+        "volatility_trailing_exit_threshold": -0.11326
+      },
+      {
+        "annualized_volatility": 0.50119,
+        "distance_from_200d_average": 0.188027,
+        "drawdown_from_63d_high": -0.152337,
+        "eligible": false,
+        "momentum_126d": 0.489936,
+        "momentum_12_1": 0.977707,
+        "momentum_63d": -0.004704,
+        "overbought": false,
+        "price": 567.01,
+        "rsi_14": 39.8758,
+        "score": 0.977707,
+        "symbol": "SMH",
+        "volatility_trailing_exit_threshold": -0.094716
+      },
+      {
+        "annualized_volatility": 0.591342,
+        "distance_from_200d_average": 0.124253,
+        "drawdown_from_63d_high": -0.241847,
+        "eligible": false,
+        "momentum_126d": 0.528318,
+        "momentum_12_1": 0.818938,
+        "momentum_63d": -0.140026,
+        "overbought": false,
+        "price": 491.45,
+        "rsi_14": 29.6549,
+        "score": 0.818938,
+        "symbol": "XSD",
+        "volatility_trailing_exit_threshold": -0.111753
+      },
+      {
+        "annualized_volatility": 0.453252,
+        "distance_from_200d_average": 0.128589,
+        "drawdown_from_63d_high": -0.060031,
+        "eligible": true,
+        "momentum_126d": 0.137812,
+        "momentum_12_1": 0.763223,
+        "momentum_63d": 0.128077,
+        "overbought": false,
+        "price": 90.66,
+        "rsi_14": 56.8766,
+        "score": 0.763223,
+        "symbol": "COPX",
+        "volatility_trailing_exit_threshold": -0.085657
+      },
+      {
+        "annualized_volatility": 0.286897,
+        "distance_from_200d_average": 0.074166,
+        "drawdown_from_63d_high": -0.094984,
+        "eligible": false,
+        "momentum_126d": 0.151193,
+        "momentum_12_1": 0.609854,
+        "momentum_63d": -0.076128,
+        "overbought": false,
+        "price": 208.46,
+        "rsi_14": 30.5538,
+        "score": 0.609854,
+        "symbol": "XTL",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.385041,
+        "distance_from_200d_average": 0.132746,
+        "drawdown_from_63d_high": -0.121383,
+        "eligible": false,
+        "momentum_126d": 0.35446,
+        "momentum_12_1": 0.600609,
+        "momentum_63d": -0.030404,
+        "overbought": false,
+        "price": 147.89,
+        "rsi_14": 31.2795,
+        "score": 0.600609,
+        "symbol": "QTUM",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.22918,
+        "distance_from_200d_average": 0.344628,
+        "drawdown_from_63d_high": 0.0,
+        "eligible": true,
+        "momentum_126d": 0.35818,
+        "momentum_12_1": 0.555118,
+        "momentum_63d": 0.311404,
+        "overbought": false,
+        "price": 63.59,
+        "rsi_14": 70.054,
+        "score": 0.555118,
+        "symbol": "CRAK",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.298721,
+        "distance_from_200d_average": 0.114462,
+        "drawdown_from_63d_high": -0.028085,
+        "eligible": true,
+        "momentum_126d": 0.143566,
+        "momentum_12_1": 0.545877,
+        "momentum_63d": 0.061936,
+        "overbought": false,
+        "price": 65.06,
+        "rsi_14": 59.3488,
+        "score": 0.545877,
+        "symbol": "PICK",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.34851,
+        "distance_from_200d_average": 0.169522,
+        "drawdown_from_63d_high": -0.050427,
+        "eligible": true,
+        "momentum_126d": 0.28062,
+        "momentum_12_1": 0.508398,
+        "momentum_63d": 0.083276,
+        "overbought": false,
+        "price": 101.12,
+        "rsi_14": 59.252,
+        "score": 0.508398,
+        "symbol": "EMXC",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.320891,
+        "distance_from_200d_average": 0.169595,
+        "drawdown_from_63d_high": -0.025345,
+        "eligible": true,
+        "momentum_126d": 0.367444,
+        "momentum_12_1": 0.418692,
+        "momentum_63d": 0.039952,
+        "overbought": false,
+        "price": 187.28,
+        "rsi_14": 44.8579,
+        "score": 0.418692,
+        "symbol": "XLK",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.326702,
+        "distance_from_200d_average": 0.128016,
+        "drawdown_from_63d_high": -0.053457,
+        "eligible": true,
+        "momentum_126d": 0.258576,
+        "momentum_12_1": 0.39702,
+        "momentum_63d": 0.037234,
+        "overbought": false,
+        "price": 148.38,
+        "rsi_14": 44.5892,
+        "score": 0.39702,
+        "symbol": "SPHB",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.250666,
+        "distance_from_200d_average": 0.199407,
+        "drawdown_from_63d_high": -0.003718,
+        "eligible": true,
+        "momentum_126d": 0.1684,
+        "momentum_12_1": 0.365714,
+        "momentum_63d": 0.102564,
+        "overbought": false,
+        "price": 34.83,
+        "rsi_14": 70.9832,
+        "score": 0.365714,
+        "symbol": "GSG",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.376203,
+        "distance_from_200d_average": 0.053126,
+        "drawdown_from_63d_high": -0.03561,
+        "eligible": true,
+        "momentum_126d": 0.078398,
+        "momentum_12_1": 0.357771,
+        "momentum_63d": 0.000853,
+        "overbought": false,
+        "price": 118.62,
+        "rsi_14": 50.7424,
+        "score": 0.357771,
+        "symbol": "XME",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.21441,
+        "distance_from_200d_average": 0.152556,
+        "drawdown_from_63d_high": -0.013345,
+        "eligible": true,
+        "momentum_126d": 0.125074,
+        "momentum_12_1": 0.353695,
+        "momentum_63d": 0.09127,
+        "overbought": false,
+        "price": 58.41,
+        "rsi_14": 59.3592,
+        "score": 0.353695,
+        "symbol": "IXC",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.223533,
+        "distance_from_200d_average": 0.176092,
+        "drawdown_from_63d_high": -0.015785,
+        "eligible": true,
+        "momentum_126d": 0.14732,
+        "momentum_12_1": 0.348249,
+        "momentum_63d": 0.120111,
+        "overbought": false,
+        "price": 35.54,
+        "rsi_14": 60.582,
+        "score": 0.348249,
+        "symbol": "FENY",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.22486,
+        "distance_from_200d_average": 0.175106,
+        "drawdown_from_63d_high": -0.016502,
+        "eligible": true,
+        "momentum_126d": 0.145462,
+        "momentum_12_1": 0.347315,
+        "momentum_63d": 0.11969,
+        "overbought": false,
+        "price": 180.58,
+        "rsi_14": 59.9498,
+        "score": 0.347315,
+        "symbol": "VDE",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.223384,
+        "distance_from_200d_average": 0.178146,
+        "drawdown_from_63d_high": -0.015975,
+        "eligible": true,
+        "momentum_126d": 0.148021,
+        "momentum_12_1": 0.34648,
+        "momentum_63d": 0.118814,
+        "overbought": false,
+        "price": 64.06,
+        "rsi_14": 59.973,
+        "score": 0.34648,
+        "symbol": "XLE",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.135388,
+        "distance_from_200d_average": 0.151955,
+        "drawdown_from_63d_high": -0.007878,
+        "eligible": true,
+        "momentum_126d": 0.131313,
+        "momentum_12_1": 0.341006,
+        "momentum_63d": 0.102358,
+        "overbought": false,
+        "price": 30.98,
+        "rsi_14": 70.8151,
+        "score": 0.341006,
+        "symbol": "FTGC",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.52003,
+        "distance_from_200d_average": 0.133848,
+        "drawdown_from_63d_high": -0.06193,
+        "eligible": true,
+        "momentum_126d": 0.00993,
+        "momentum_12_1": 0.327617,
+        "momentum_63d": 0.282825,
+        "overbought": false,
+        "price": 87.4,
+        "rsi_14": 59.6061,
+        "score": 0.327617,
+        "symbol": "RING",
+        "volatility_trailing_exit_threshold": -0.098276
+      },
+      {
+        "annualized_volatility": 0.309435,
+        "distance_from_200d_average": 0.089216,
+        "drawdown_from_63d_high": -0.073705,
+        "eligible": true,
+        "momentum_126d": 0.196734,
+        "momentum_12_1": 0.324977,
+        "momentum_63d": 0.011732,
+        "overbought": false,
+        "price": 156.09,
+        "rsi_14": 32.4864,
+        "score": 0.324977,
+        "symbol": "PWB",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.310674,
+        "distance_from_200d_average": -0.065597,
+        "drawdown_from_63d_high": -0.18409,
+        "eligible": false,
+        "momentum_126d": -0.014725,
+        "momentum_12_1": 0.317783,
+        "momentum_63d": -0.150426,
+        "overbought": false,
+        "price": 108.72,
+        "rsi_14": 17.2749,
+        "score": 0.317783,
+        "symbol": "AIRR",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.279299,
+        "distance_from_200d_average": 0.02971,
+        "drawdown_from_63d_high": -0.090157,
+        "eligible": false,
+        "momentum_126d": 0.084096,
+        "momentum_12_1": 0.312139,
+        "momentum_63d": -0.041842,
+        "overbought": false,
+        "price": 178.99,
+        "rsi_14": 28.9658,
+        "score": 0.312139,
+        "symbol": "GRID",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.512488,
+        "distance_from_200d_average": 0.105397,
+        "drawdown_from_63d_high": -0.059325,
+        "eligible": false,
+        "momentum_126d": -0.020911,
+        "momentum_12_1": 0.309114,
+        "momentum_63d": 0.259006,
+        "overbought": false,
+        "price": 99.26,
+        "rsi_14": 58.7843,
+        "score": 0.309114,
+        "symbol": "GDX",
+        "volatility_trailing_exit_threshold": -0.096851
+      },
+      {
+        "annualized_volatility": 0.347259,
+        "distance_from_200d_average": -0.009268,
+        "drawdown_from_63d_high": -0.09236,
+        "eligible": false,
+        "momentum_126d": 0.029907,
+        "momentum_12_1": 0.284221,
+        "momentum_63d": -0.056713,
+        "overbought": false,
+        "price": 122.25,
+        "rsi_14": 32.2692,
+        "score": 0.284221,
+        "symbol": "ARKQ",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.343677,
+        "distance_from_200d_average": 0.132472,
+        "drawdown_from_63d_high": -0.073859,
+        "eligible": true,
+        "momentum_126d": 0.271769,
+        "momentum_12_1": 0.281458,
+        "momentum_63d": 0.039297,
+        "overbought": false,
+        "price": 149.72,
+        "rsi_14": 36.5213,
+        "score": 0.281458,
+        "symbol": "SPMO",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.359905,
+        "distance_from_200d_average": 0.094386,
+        "drawdown_from_63d_high": -0.116911,
+        "eligible": false,
+        "momentum_126d": 0.264992,
+        "momentum_12_1": 0.267085,
+        "momentum_63d": -0.004154,
+        "overbought": false,
+        "price": 304.86,
+        "rsi_14": 29.7957,
+        "score": 0.267085,
+        "symbol": "MTUM",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.216499,
+        "distance_from_200d_average": 0.008066,
+        "drawdown_from_63d_high": -0.03383,
+        "eligible": true,
+        "momentum_126d": 0.063985,
+        "momentum_12_1": 0.26114,
+        "momentum_63d": 0.074178,
+        "overbought": false,
+        "price": 40.84,
+        "rsi_14": 52.8674,
+        "score": 0.26114,
+        "symbol": "ECH",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.185179,
+        "distance_from_200d_average": 0.096258,
+        "drawdown_from_63d_high": -0.014915,
+        "eligible": true,
+        "momentum_126d": 0.062905,
+        "momentum_12_1": 0.259297,
+        "momentum_63d": 0.038651,
+        "overbought": false,
+        "price": 75.61,
+        "rsi_14": 53.3851,
+        "score": 0.259297,
+        "symbol": "MLPX",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.206864,
+        "distance_from_200d_average": 0.054158,
+        "drawdown_from_63d_high": -0.073227,
+        "eligible": false,
+        "momentum_126d": 0.141107,
+        "momentum_12_1": 0.231313,
+        "momentum_63d": -0.021079,
+        "overbought": false,
+        "price": 114.78,
+        "rsi_14": 33.8903,
+        "score": 0.231313,
+        "symbol": "ICVT",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.211177,
+        "distance_from_200d_average": 0.096212,
+        "drawdown_from_63d_high": -0.001573,
+        "eligible": true,
+        "momentum_126d": 0.139434,
+        "momentum_12_1": 0.218836,
+        "momentum_63d": 0.106276,
+        "overbought": false,
+        "price": 63.46,
+        "rsi_14": 49.2515,
+        "score": 0.218836,
+        "symbol": "IDMO",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.249228,
+        "distance_from_200d_average": 0.012476,
+        "drawdown_from_63d_high": -0.112415,
+        "eligible": false,
+        "momentum_126d": 0.074418,
+        "momentum_12_1": 0.204577,
+        "momentum_63d": -0.061503,
+        "overbought": false,
+        "price": 154.28,
+        "rsi_14": 23.7457,
+        "score": 0.204577,
+        "symbol": "XMMO",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.146839,
+        "distance_from_200d_average": 0.014097,
+        "drawdown_from_63d_high": -0.075074,
+        "eligible": false,
+        "momentum_126d": 0.023284,
+        "momentum_12_1": 0.195592,
+        "momentum_63d": -0.030103,
+        "overbought": false,
+        "price": 59.26,
+        "rsi_14": 25.5574,
+        "score": 0.195592,
+        "symbol": "IFRA",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.155419,
+        "distance_from_200d_average": 0.047766,
+        "drawdown_from_63d_high": -0.065945,
+        "eligible": true,
+        "momentum_126d": 0.068496,
+        "momentum_12_1": 0.187406,
+        "momentum_63d": 0.010878,
+        "overbought": false,
+        "price": 111.33,
+        "rsi_14": 33.0043,
+        "score": 0.187406,
+        "symbol": "RWR",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.148956,
+        "distance_from_200d_average": 0.047706,
+        "drawdown_from_63d_high": -0.064165,
+        "eligible": true,
+        "momentum_126d": 0.066734,
+        "momentum_12_1": 0.183713,
+        "momentum_63d": 0.005625,
+        "overbought": false,
+        "price": 65.34,
+        "rsi_14": 31.442,
+        "score": 0.183713,
+        "symbol": "USRT",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.092012,
+        "distance_from_200d_average": 0.002439,
+        "drawdown_from_63d_high": -0.035709,
+        "eligible": false,
+        "momentum_126d": -0.016454,
+        "momentum_12_1": 0.137523,
+        "momentum_63d": -0.002782,
+        "overbought": false,
+        "price": 65.08,
+        "rsi_14": 43.0052,
+        "score": 0.137523,
+        "symbol": "IGF",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.453121,
+        "distance_from_200d_average": -0.044141,
+        "drawdown_from_63d_high": -0.047757,
+        "eligible": false,
+        "momentum_126d": -0.055761,
+        "momentum_12_1": 0.120352,
+        "momentum_63d": 0.016553,
+        "overbought": false,
+        "price": 46.06,
+        "rsi_14": 52.4985,
+        "score": 0.120352,
+        "symbol": "URA",
+        "volatility_trailing_exit_threshold": -0.085632
+      },
+      {
+        "annualized_volatility": 0.153118,
+        "distance_from_200d_average": 0.030407,
+        "drawdown_from_63d_high": -0.045208,
+        "eligible": false,
+        "momentum_126d": 0.040168,
+        "momentum_12_1": 0.110032,
+        "momentum_63d": -0.008614,
+        "overbought": false,
+        "price": 43.93,
+        "rsi_14": 36.7647,
+        "score": 0.110032,
+        "symbol": "XLRE",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.396943,
+        "distance_from_200d_average": -0.082245,
+        "drawdown_from_63d_high": -0.055065,
+        "eligible": false,
+        "momentum_126d": -0.11808,
+        "momentum_12_1": -0.012955,
+        "momentum_63d": -0.017689,
+        "overbought": false,
+        "price": 119.95,
+        "rsi_14": 52.1322,
+        "score": -0.012955,
+        "symbol": "NLR",
+        "volatility_trailing_exit_threshold": -0.08
+      }
+    ],
+    "replacement_analysis": {
+      "comparisons": [],
+      "missing_symbols": [],
+      "missing_tax_cost_symbols": [
+        "DIVB",
+        "DXJ",
+        "EWT",
+        "FBT",
+        "IHE",
+        "IWM",
+        "QQQ",
+        "VLUE"
+      ],
+      "passed": false,
+      "reason": "replacement market or tax evidence is incomplete",
+      "required_sessions": 3,
+      "score_hurdle": 0.2
+    },
     "challenger_rankings": [
       {
         "annualized_volatility": 0.22918,
