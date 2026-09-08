@@ -1,6 +1,6 @@
 {
   "schema_version": "1.6.0",
-  "published_at": "2026-09-08T15:08:56.621596+00:00",
+  "published_at": "2026-09-08T18:26:16.906197+00:00",
   "experiment": {
     "name": "TradeRiser Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -5149,7 +5149,7 @@
           "value": 5.9227
         }
       ],
-      "captured_at": "2026-09-08T15:08:56.620543+00:00",
+      "captured_at": "2026-09-08T18:26:16.903959+00:00",
       "source": "live_broker_snapshot",
       "breakdown_estimated": false,
       "note": "Holding values came from the latest reconciled quantities and fresh quotes.",
@@ -7010,7 +7010,115 @@
         "sharpe_excess_return": 1.340662,
         "total_return": 1.710812
       }
-    }
+    },
+    "codex_comparisons": [
+      {
+        "agreements": [
+          "No holding required an immediate discretionary trade",
+          "CRAK should not be increased solely because of geopolitical headlines"
+        ],
+        "as_of": "2026-09-08T15:07:23Z",
+        "cycle_id": "codex-comparison-2026-09-08",
+        "disagreements": [
+          "TradeRiser currently targets zero for nine held funds if future replacement evidence clears; Codex lacks enough qualitative evidence to support wholesale replacement",
+          "Codex flags EWT/FLTW and FBT/IHE overlap explicitly; the champion output does not publish held-position factor overlap"
+        ],
+        "holdings": [
+          {
+            "agreement": "no immediate trade",
+            "codex": "hold/watch",
+            "codex_thesis": "small-cap diversification remains useful but rate and economic sensitivity are elevated",
+            "confidence": "low",
+            "symbol": "IWM",
+            "traderiser": "not selected; retain because no replacement cleared evidence"
+          },
+          {
+            "agreement": "no immediate trade",
+            "codex": "hold/watch",
+            "codex_thesis": "profitable growth exposure remains useful but concentration and valuation risk argue against adding",
+            "confidence": "medium",
+            "symbol": "QQQ",
+            "traderiser": "not selected; retain because no replacement cleared evidence"
+          },
+          {
+            "agreement": "no immediate trade",
+            "codex": "hold/watch overlap",
+            "codex_thesis": "Taiwan exposure can participate in technology strength but overlaps FLTW and carries geopolitical concentration",
+            "confidence": "medium",
+            "symbol": "EWT",
+            "traderiser": "not selected; retain because no replacement cleared evidence"
+          },
+          {
+            "agreement": "no immediate trade",
+            "codex": "hold/watch overlap",
+            "codex_thesis": "duplicates part of EWT country risk; consolidation should be tested rather than assumed",
+            "confidence": "medium",
+            "symbol": "FLTW",
+            "traderiser": "not selected; retain because no replacement cleared evidence"
+          },
+          {
+            "agreement": "no immediate trade",
+            "codex": "hold, do not chase",
+            "codex_thesis": "refining margins can benefit from product-supply disruption, but crude spikes and post-rally concentration can reverse the thesis",
+            "confidence": "medium",
+            "symbol": "CRAK",
+            "traderiser": "selected at $5.00 target versus about $7.15 held; no approved change"
+          },
+          {
+            "agreement": "no immediate trade",
+            "codex": "hold/watch",
+            "codex_thesis": "Japan equity exposure diversifies the account, while currency hedging and policy shifts create regime risk",
+            "confidence": "low",
+            "symbol": "DXJ",
+            "traderiser": "not selected; retain because no replacement cleared evidence"
+          },
+          {
+            "agreement": "no immediate trade",
+            "codex": "hold",
+            "codex_thesis": "shareholder-yield exposure diversifies momentum themes but the position is too small for a strong qualitative edge",
+            "confidence": "low",
+            "symbol": "DIVB",
+            "traderiser": "not selected; retain because no replacement cleared evidence"
+          },
+          {
+            "agreement": "no immediate trade",
+            "codex": "hold/watch overlap",
+            "codex_thesis": "biotechnology upside is volatile and overlaps the broader healthcare allocation through IHE",
+            "confidence": "low",
+            "symbol": "FBT",
+            "traderiser": "not selected; retain because no replacement cleared evidence"
+          },
+          {
+            "agreement": "no immediate trade",
+            "codex": "hold/watch overlap",
+            "codex_thesis": "pharmaceutical exposure is more defensive than FBT, but combined healthcare concentration should be measured",
+            "confidence": "low",
+            "symbol": "IHE",
+            "traderiser": "not selected; retain because no replacement cleared evidence"
+          },
+          {
+            "agreement": "no immediate trade",
+            "codex": "hold/watch",
+            "codex_thesis": "value-factor diversification can offset growth concentration, but the holding is too new for a confident judgment",
+            "confidence": "low",
+            "symbol": "VLUE",
+            "traderiser": "not selected; retain because no replacement cleared evidence"
+          }
+        ],
+        "improvement_candidates": [
+          "Score and publish every held asset, not only the selected provider universe",
+          "Add country, sector, factor, and duplicate-exposure attribution",
+          "Track locked TradeRiser and Codex views against subsequent 1-, 5-, 21-, and 63-session returns",
+          "Require repeated out-of-sample improvement before qualitative context can affect champion rules"
+        ],
+        "limitations": [
+          "Codex analysis is qualitative and can be narrative-biased",
+          "Current-event context is research-only and cannot create or block live orders",
+          "One daily comparison is not evidence of predictive skill"
+        ],
+        "method": "locked_independent_review"
+      }
+    ]
   },
   "disclosures": [
     "This is a small, live experiment and not a recommendation or profit guarantee.",
