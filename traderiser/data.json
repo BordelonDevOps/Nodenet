@@ -1,6 +1,6 @@
 {
   "schema_version": "1.6.0",
-  "published_at": "2026-09-08T14:19:56.791559+00:00",
+  "published_at": "2026-09-08T15:08:56.621596+00:00",
   "experiment": {
     "name": "TradeRiser Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -8,13 +8,13 @@
     "objective": "Continue the live observation through December 31, 2026 using the experiment's cumulative contributed funds."
   },
   "account": {
-    "value": 46.1134,
+    "value": 46.1644,
     "cash": 0.11,
-    "invested": 46.003,
+    "invested": 46.0545,
     "buying_power": 0.11,
     "net_contributions": 45.0,
-    "investment_gain": 1.1134,
-    "simple_return_on_contributions": 0.02474269,
+    "investment_gain": 1.1644,
+    "simple_return_on_contributions": 0.02587469,
     "currency": "USD"
   },
   "holdings": [
@@ -23,7 +23,7 @@
       "shares": 0.028651,
       "average_price": 301.56,
       "cost_basis": 8.64,
-      "current_value": 8.4437,
+      "current_value": 8.4621,
       "strategy": "champion"
     },
     {
@@ -31,7 +31,7 @@
       "shares": 0.008422,
       "average_price": 721.92,
       "cost_basis": 6.08,
-      "current_value": 6.0358,
+      "current_value": 6.0538,
       "strategy": "champion"
     },
     {
@@ -39,7 +39,7 @@
       "shares": 0.027875,
       "average_price": 108.34,
       "cost_basis": 3.02,
-      "current_value": 3.103,
+      "current_value": 3.1131,
       "strategy": "champion"
     },
     {
@@ -47,7 +47,7 @@
       "shares": 0.020992,
       "average_price": 104.8,
       "cost_basis": 2.2,
-      "current_value": 2.2495,
+      "current_value": 2.2566,
       "strategy": "champion"
     },
     {
@@ -55,7 +55,7 @@
       "shares": 0.110477,
       "average_price": 60.92,
       "cost_basis": 6.7303,
-      "current_value": 7.1622,
+      "current_value": 7.1545,
       "strategy": "champion"
     },
     {
@@ -63,7 +63,7 @@
       "shares": 0.015514,
       "average_price": 180.48,
       "cost_basis": 2.8,
-      "current_value": 2.7274,
+      "current_value": 2.7294,
       "strategy": "champion"
     },
     {
@@ -71,7 +71,7 @@
       "shares": 0.035311,
       "average_price": 69.1,
       "cost_basis": 2.44,
-      "current_value": 2.4079,
+      "current_value": 2.404,
       "strategy": "champion"
     },
     {
@@ -79,7 +79,7 @@
       "shares": 0.013854,
       "average_price": 267.79,
       "cost_basis": 3.71,
-      "current_value": 3.6857,
+      "current_value": 3.6912,
       "strategy": "champion"
     },
     {
@@ -87,7 +87,7 @@
       "shares": 0.041468,
       "average_price": 104.18,
       "cost_basis": 4.3201,
-      "current_value": 4.2637,
+      "current_value": 4.2671,
       "strategy": "champion"
     },
     {
@@ -95,7 +95,7 @@
       "shares": 0.02899,
       "average_price": 204.9,
       "cost_basis": 5.9401,
-      "current_value": 5.9241,
+      "current_value": 5.9227,
       "strategy": "champion"
     }
   ],
@@ -3654,6 +3654,34 @@
         "risk_asset_breadth": 0.525
       },
       "stage": "research"
+    },
+    {
+      "kind": "champion",
+      "generated_at": "2026-09-08T15:08:25.373274+00:00",
+      "status": "not_authorized",
+      "selected": [
+        "COPX",
+        "CRAK",
+        "ECH",
+        "EMXC",
+        "GSG",
+        "IDMO",
+        "IXC",
+        "MLPX",
+        "RING",
+        "XME"
+      ],
+      "orders": [],
+      "explanation": [
+        "Only assets above their 200-day average with positive 3- and 6-month momentum qualify.",
+        "Qualifying assets are ranked by 12-to-1 momentum, which omits the most recent month to reduce short-term reversal effects; an RSI overbought penalty, correlation filter, and covariance-aware risk sizing are then applied.",
+        "The account keeps at least the configured cash reserve and uses no leverage or short positions.",
+        "Every completed market session is evaluated; orders are proposed only when the allocation drift exceeds the configured band or a severe risk exit triggers.",
+        "Risk exits combine trend failure with either weak momentum or a volatility-sensitive drawdown from the recent high.",
+        "This is a proposed paper-trading decision, not an executed order or profit guarantee."
+      ],
+      "regime": null,
+      "stage": "evaluation"
     }
   ],
   "portfolio_history": [
@@ -5067,71 +5095,71 @@
     },
     {
       "date": "2026-09-08",
-      "value": 46.1134,
+      "value": 46.1644,
       "cash": 0.11,
       "holdings": [
         {
           "symbol": "IWM",
           "shares": 0.028651,
-          "value": 8.4437
+          "value": 8.4621
         },
         {
           "symbol": "QQQ",
           "shares": 0.008422,
-          "value": 6.0358
+          "value": 6.0538
         },
         {
           "symbol": "EWT",
           "shares": 0.027875,
-          "value": 3.103
+          "value": 3.1131
         },
         {
           "symbol": "FLTW",
           "shares": 0.020992,
-          "value": 2.2495
+          "value": 2.2566
         },
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 7.1622
+          "value": 7.1545
         },
         {
           "symbol": "DXJ",
           "shares": 0.015514,
-          "value": 2.7274
+          "value": 2.7294
         },
         {
           "symbol": "DIVB",
           "shares": 0.035311,
-          "value": 2.4079
+          "value": 2.404
         },
         {
           "symbol": "FBT",
           "shares": 0.013854,
-          "value": 3.6857
+          "value": 3.6912
         },
         {
           "symbol": "IHE",
           "shares": 0.041468,
-          "value": 4.2637
+          "value": 4.2671
         },
         {
           "symbol": "VLUE",
           "shares": 0.02899,
-          "value": 5.9241
+          "value": 5.9227
         }
       ],
-      "captured_at": "2026-09-08T14:19:56.790570+00:00",
+      "captured_at": "2026-09-08T15:08:56.620543+00:00",
       "source": "live_broker_snapshot",
       "breakdown_estimated": false,
       "note": "Holding values came from the latest reconciled quantities and fresh quotes.",
       "net_cash_flow": 0.0,
       "contributions": 0.0,
       "withdrawals": -0.0,
-      "change": -0.188,
-      "change_pct": -0.00406035,
-      "market_gain": -0.188,
-      "time_weighted_return": 2.07623647,
+      "change": -0.137,
+      "change_pct": -0.00295887,
+      "market_gain": -0.137,
+      "time_weighted_return": 2.0796387,
       "cash_flow_timing": "none",
       "benchmark_value": 0.0,
       "benchmark_return": null,
@@ -5139,8 +5167,8 @@
     }
   ],
   "performance": {
-    "simple_return_on_contributions": 0.02474269,
-    "time_weighted_return": 2.07623647,
+    "simple_return_on_contributions": 0.02587469,
+    "time_weighted_return": 2.0796387,
     "time_weighted_quality": "timestamped",
     "money_weighted": {
       "return": null,
@@ -5391,7 +5419,7 @@
           "price": 109.4351,
           "value": 0.0,
           "return": null,
-          "actual_return": 2.07623647,
+          "actual_return": 2.0796387,
           "excess_return": null
         }
       ],
@@ -5435,7 +5463,7 @@
   },
   "evidence": {
     "live_days": 30,
-    "champion_cycles": 40,
+    "champion_cycles": 41,
     "challenger_cycles": 27,
     "reconciled_trades": 20,
     "benchmark": "Equal-weight provider universe",
@@ -5933,13 +5961,13 @@
         "distance_from_200d_average": 0.012476,
         "drawdown_from_63d_high": -0.112415,
         "eligible": false,
-        "momentum_126d": 0.074418,
-        "momentum_12_1": 0.204577,
+        "momentum_126d": 0.074419,
+        "momentum_12_1": 0.204576,
         "momentum_63d": -0.061503,
         "overbought": false,
         "price": 154.28,
         "rsi_14": 23.7457,
-        "score": 0.204577,
+        "score": 0.204576,
         "symbol": "XMMO",
         "volatility_trailing_exit_threshold": -0.08
       },
@@ -5948,7 +5976,7 @@
         "distance_from_200d_average": 0.014097,
         "drawdown_from_63d_high": -0.075074,
         "eligible": false,
-        "momentum_126d": 0.023284,
+        "momentum_126d": 0.023283,
         "momentum_12_1": 0.195592,
         "momentum_63d": -0.030103,
         "overbought": false,
@@ -6050,20 +6078,372 @@
       }
     ],
     "replacement_analysis": {
-      "comparisons": [],
-      "missing_symbols": [],
-      "missing_tax_cost_symbols": [
-        "DIVB",
-        "DXJ",
-        "EWT",
-        "FBT",
-        "IHE",
-        "IWM",
-        "QQQ",
-        "VLUE"
+      "approved_pairs": [],
+      "calibrated_forward_return_per_score": null,
+      "calibration_method": "walk_forward_pair_specific_relative_return",
+      "comparisons": [
+        {
+          "calibrated_forward_return_per_score": -0.00659324,
+          "calibration_samples": 30,
+          "data_as_of": "2026-09-02 00:00:00",
+          "estimated_tax_cost_dollars": 0.0,
+          "expected_edge_dollars": -0.0056,
+          "funded_dollars": 3.22,
+          "incoming_score": 0.548856,
+          "incoming_symbol": "EMXC",
+          "outgoing_score": 0.28591,
+          "outgoing_symbol": "QQQ",
+          "passed": false,
+          "required_edge_dollars": 0.0225,
+          "round_trip_cost_dollars": 0.0064,
+          "score_advantage": 0.262946,
+          "uncertainty_buffer_dollars": 0.0161
+        },
+        {
+          "calibrated_forward_return_per_score": -0.00659324,
+          "calibration_samples": 30,
+          "data_as_of": "2026-09-03 00:00:00",
+          "estimated_tax_cost_dollars": 0.0,
+          "expected_edge_dollars": -0.0057,
+          "funded_dollars": 3.22,
+          "incoming_score": 0.53094,
+          "incoming_symbol": "EMXC",
+          "outgoing_score": 0.264327,
+          "outgoing_symbol": "QQQ",
+          "passed": false,
+          "required_edge_dollars": 0.0225,
+          "round_trip_cost_dollars": 0.0064,
+          "score_advantage": 0.266613,
+          "uncertainty_buffer_dollars": 0.0161
+        },
+        {
+          "calibrated_forward_return_per_score": -0.00659324,
+          "calibration_samples": 30,
+          "data_as_of": "2026-09-04 00:00:00",
+          "estimated_tax_cost_dollars": 0.0,
+          "expected_edge_dollars": -0.0055,
+          "funded_dollars": 3.22,
+          "incoming_score": 0.508398,
+          "incoming_symbol": "EMXC",
+          "outgoing_score": 0.248356,
+          "outgoing_symbol": "QQQ",
+          "passed": false,
+          "required_edge_dollars": 0.0225,
+          "round_trip_cost_dollars": 0.0064,
+          "score_advantage": 0.260042,
+          "uncertainty_buffer_dollars": 0.0161
+        },
+        {
+          "calibrated_forward_return_per_score": -0.08005381,
+          "calibration_samples": 30,
+          "data_as_of": "2026-09-02 00:00:00",
+          "estimated_tax_cost_dollars": 0.0,
+          "expected_edge_dollars": 0.0663,
+          "funded_dollars": 6.08,
+          "incoming_score": 0.167042,
+          "incoming_symbol": "GSG",
+          "outgoing_score": 0.303308,
+          "outgoing_symbol": "IWM",
+          "passed": false,
+          "required_edge_dollars": 0.0426,
+          "round_trip_cost_dollars": 0.0122,
+          "score_advantage": -0.136266,
+          "uncertainty_buffer_dollars": 0.0304
+        },
+        {
+          "calibrated_forward_return_per_score": -0.08005381,
+          "calibration_samples": 30,
+          "data_as_of": "2026-09-03 00:00:00",
+          "estimated_tax_cost_dollars": 0.0,
+          "expected_edge_dollars": 0.0538,
+          "funded_dollars": 6.08,
+          "incoming_score": 0.185664,
+          "incoming_symbol": "GSG",
+          "outgoing_score": 0.296202,
+          "outgoing_symbol": "IWM",
+          "passed": false,
+          "required_edge_dollars": 0.0426,
+          "round_trip_cost_dollars": 0.0122,
+          "score_advantage": -0.110538,
+          "uncertainty_buffer_dollars": 0.0304
+        },
+        {
+          "calibrated_forward_return_per_score": -0.08005381,
+          "calibration_samples": 30,
+          "data_as_of": "2026-09-04 00:00:00",
+          "estimated_tax_cost_dollars": 0.0,
+          "expected_edge_dollars": -0.0448,
+          "funded_dollars": 6.08,
+          "incoming_score": 0.365714,
+          "incoming_symbol": "GSG",
+          "outgoing_score": 0.273713,
+          "outgoing_symbol": "IWM",
+          "passed": false,
+          "required_edge_dollars": 0.0426,
+          "round_trip_cost_dollars": 0.0122,
+          "score_advantage": 0.092001,
+          "uncertainty_buffer_dollars": 0.0304
+        },
+        {
+          "calibrated_forward_return_per_score": -0.01803463,
+          "calibration_samples": 30,
+          "data_as_of": "2026-09-02 00:00:00",
+          "estimated_tax_cost_dollars": 0.0,
+          "expected_edge_dollars": -0.0,
+          "funded_dollars": 2.4,
+          "incoming_score": 0.327622,
+          "incoming_symbol": "XME",
+          "outgoing_score": 0.327505,
+          "outgoing_symbol": "DIVB",
+          "passed": false,
+          "required_edge_dollars": 0.0168,
+          "round_trip_cost_dollars": 0.0048,
+          "score_advantage": 0.000117,
+          "uncertainty_buffer_dollars": 0.012
+        },
+        {
+          "calibrated_forward_return_per_score": -0.01803463,
+          "calibration_samples": 30,
+          "data_as_of": "2026-09-03 00:00:00",
+          "estimated_tax_cost_dollars": 0.0,
+          "expected_edge_dollars": -0.0022,
+          "funded_dollars": 2.4,
+          "incoming_score": 0.377595,
+          "incoming_symbol": "XME",
+          "outgoing_score": 0.327143,
+          "outgoing_symbol": "DIVB",
+          "passed": false,
+          "required_edge_dollars": 0.0168,
+          "round_trip_cost_dollars": 0.0048,
+          "score_advantage": 0.050452,
+          "uncertainty_buffer_dollars": 0.012
+        },
+        {
+          "calibrated_forward_return_per_score": -0.01803463,
+          "calibration_samples": 30,
+          "data_as_of": "2026-09-04 00:00:00",
+          "estimated_tax_cost_dollars": 0.0,
+          "expected_edge_dollars": -0.0016,
+          "funded_dollars": 2.4,
+          "incoming_score": 0.357771,
+          "incoming_symbol": "XME",
+          "outgoing_score": 0.319918,
+          "outgoing_symbol": "DIVB",
+          "passed": false,
+          "required_edge_dollars": 0.0168,
+          "round_trip_cost_dollars": 0.0048,
+          "score_advantage": 0.037853,
+          "uncertainty_buffer_dollars": 0.012
+        },
+        {
+          "calibrated_forward_return_per_score": 0.03481028,
+          "calibration_samples": 30,
+          "data_as_of": "2026-09-02 00:00:00",
+          "estimated_tax_cost_dollars": 0.0,
+          "expected_edge_dollars": -0.0053,
+          "funded_dollars": 2.73,
+          "incoming_score": 0.342321,
+          "incoming_symbol": "IXC",
+          "outgoing_score": 0.398462,
+          "outgoing_symbol": "DXJ",
+          "passed": false,
+          "required_edge_dollars": 0.0191,
+          "round_trip_cost_dollars": 0.0055,
+          "score_advantage": -0.056141,
+          "uncertainty_buffer_dollars": 0.0137
+        },
+        {
+          "calibrated_forward_return_per_score": 0.03481028,
+          "calibration_samples": 30,
+          "data_as_of": "2026-09-03 00:00:00",
+          "estimated_tax_cost_dollars": 0.0,
+          "expected_edge_dollars": -0.0076,
+          "funded_dollars": 2.73,
+          "incoming_score": 0.34138,
+          "incoming_symbol": "IXC",
+          "outgoing_score": 0.420895,
+          "outgoing_symbol": "DXJ",
+          "passed": false,
+          "required_edge_dollars": 0.0191,
+          "round_trip_cost_dollars": 0.0055,
+          "score_advantage": -0.079515,
+          "uncertainty_buffer_dollars": 0.0137
+        },
+        {
+          "calibrated_forward_return_per_score": 0.03481028,
+          "calibration_samples": 30,
+          "data_as_of": "2026-09-04 00:00:00",
+          "estimated_tax_cost_dollars": 0.0,
+          "expected_edge_dollars": -0.0058,
+          "funded_dollars": 2.73,
+          "incoming_score": 0.353695,
+          "incoming_symbol": "IXC",
+          "outgoing_score": 0.41456,
+          "outgoing_symbol": "DXJ",
+          "passed": false,
+          "required_edge_dollars": 0.0191,
+          "round_trip_cost_dollars": 0.0055,
+          "score_advantage": -0.060865,
+          "uncertainty_buffer_dollars": 0.0137
+        },
+        {
+          "calibrated_forward_return_per_score": -0.01158789,
+          "calibration_samples": 30,
+          "data_as_of": "2026-09-02 00:00:00",
+          "estimated_tax_cost_dollars": 0.0,
+          "expected_edge_dollars": 0.0064,
+          "funded_dollars": 3.69,
+          "incoming_score": 0.259548,
+          "incoming_symbol": "ECH",
+          "outgoing_score": 0.408974,
+          "outgoing_symbol": "FBT",
+          "passed": false,
+          "required_edge_dollars": 0.0258,
+          "round_trip_cost_dollars": 0.0074,
+          "score_advantage": -0.149426,
+          "uncertainty_buffer_dollars": 0.0185
+        },
+        {
+          "calibrated_forward_return_per_score": -0.01158789,
+          "calibration_samples": 30,
+          "data_as_of": "2026-09-03 00:00:00",
+          "estimated_tax_cost_dollars": 0.0,
+          "expected_edge_dollars": 0.0067,
+          "funded_dollars": 3.69,
+          "incoming_score": 0.2637,
+          "incoming_symbol": "ECH",
+          "outgoing_score": 0.421314,
+          "outgoing_symbol": "FBT",
+          "passed": false,
+          "required_edge_dollars": 0.0258,
+          "round_trip_cost_dollars": 0.0074,
+          "score_advantage": -0.157614,
+          "uncertainty_buffer_dollars": 0.0185
+        },
+        {
+          "calibrated_forward_return_per_score": -0.01158789,
+          "calibration_samples": 30,
+          "data_as_of": "2026-09-04 00:00:00",
+          "estimated_tax_cost_dollars": 0.0,
+          "expected_edge_dollars": 0.0068,
+          "funded_dollars": 3.69,
+          "incoming_score": 0.26114,
+          "incoming_symbol": "ECH",
+          "outgoing_score": 0.420137,
+          "outgoing_symbol": "FBT",
+          "passed": false,
+          "required_edge_dollars": 0.0258,
+          "round_trip_cost_dollars": 0.0074,
+          "score_advantage": -0.158997,
+          "uncertainty_buffer_dollars": 0.0185
+        },
+        {
+          "calibrated_forward_return_per_score": -0.03537032,
+          "calibration_samples": 30,
+          "data_as_of": "2026-09-02 00:00:00",
+          "estimated_tax_cost_dollars": 0.0,
+          "expected_edge_dollars": 0.0274,
+          "funded_dollars": 4.27,
+          "incoming_score": 0.2623,
+          "incoming_symbol": "MLPX",
+          "outgoing_score": 0.443842,
+          "outgoing_symbol": "IHE",
+          "passed": false,
+          "required_edge_dollars": 0.0299,
+          "round_trip_cost_dollars": 0.0085,
+          "score_advantage": -0.181542,
+          "uncertainty_buffer_dollars": 0.0213
+        },
+        {
+          "calibrated_forward_return_per_score": -0.03537032,
+          "calibration_samples": 30,
+          "data_as_of": "2026-09-03 00:00:00",
+          "estimated_tax_cost_dollars": 0.0,
+          "expected_edge_dollars": 0.0333,
+          "funded_dollars": 4.27,
+          "incoming_score": 0.242522,
+          "incoming_symbol": "MLPX",
+          "outgoing_score": 0.463086,
+          "outgoing_symbol": "IHE",
+          "passed": false,
+          "required_edge_dollars": 0.0299,
+          "round_trip_cost_dollars": 0.0085,
+          "score_advantage": -0.220564,
+          "uncertainty_buffer_dollars": 0.0213
+        },
+        {
+          "calibrated_forward_return_per_score": -0.03537032,
+          "calibration_samples": 30,
+          "data_as_of": "2026-09-04 00:00:00",
+          "estimated_tax_cost_dollars": 0.0,
+          "expected_edge_dollars": 0.0309,
+          "funded_dollars": 4.27,
+          "incoming_score": 0.259297,
+          "incoming_symbol": "MLPX",
+          "outgoing_score": 0.463845,
+          "outgoing_symbol": "IHE",
+          "passed": false,
+          "required_edge_dollars": 0.0299,
+          "round_trip_cost_dollars": 0.0085,
+          "score_advantage": -0.204548,
+          "uncertainty_buffer_dollars": 0.0213
+        },
+        {
+          "calibrated_forward_return_per_score": -0.02863259,
+          "calibration_samples": 30,
+          "data_as_of": "2026-09-02 00:00:00",
+          "estimated_tax_cost_dollars": 0.0,
+          "expected_edge_dollars": 0.0602,
+          "funded_dollars": 4.55,
+          "incoming_score": 0.233012,
+          "incoming_symbol": "IDMO",
+          "outgoing_score": 0.695184,
+          "outgoing_symbol": "VLUE",
+          "passed": false,
+          "required_edge_dollars": 0.0319,
+          "round_trip_cost_dollars": 0.0091,
+          "score_advantage": -0.462172,
+          "uncertainty_buffer_dollars": 0.0227
+        },
+        {
+          "calibrated_forward_return_per_score": -0.02863259,
+          "calibration_samples": 30,
+          "data_as_of": "2026-09-03 00:00:00",
+          "estimated_tax_cost_dollars": 0.0,
+          "expected_edge_dollars": 0.0597,
+          "funded_dollars": 4.55,
+          "incoming_score": 0.236153,
+          "incoming_symbol": "IDMO",
+          "outgoing_score": 0.694514,
+          "outgoing_symbol": "VLUE",
+          "passed": false,
+          "required_edge_dollars": 0.0319,
+          "round_trip_cost_dollars": 0.0091,
+          "score_advantage": -0.458361,
+          "uncertainty_buffer_dollars": 0.0227
+        },
+        {
+          "calibrated_forward_return_per_score": -0.02863259,
+          "calibration_samples": 30,
+          "data_as_of": "2026-09-04 00:00:00",
+          "estimated_tax_cost_dollars": 0.0,
+          "expected_edge_dollars": 0.0584,
+          "funded_dollars": 4.55,
+          "incoming_score": 0.218836,
+          "incoming_symbol": "IDMO",
+          "outgoing_score": 0.666894,
+          "outgoing_symbol": "VLUE",
+          "passed": false,
+          "required_edge_dollars": 0.0319,
+          "round_trip_cost_dollars": 0.0091,
+          "score_advantage": -0.448058,
+          "uncertainty_buffer_dollars": 0.0227
+        }
       ],
+      "missing_symbols": [],
+      "missing_tax_cost_symbols": [],
       "passed": false,
-      "reason": "replacement market or tax evidence is incomplete",
+      "reason": "no individual replacement pair persisted above the cost-adjusted hurdle",
       "required_sessions": 3,
       "score_hurdle": 0.2
     },
