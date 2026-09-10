@@ -1,6 +1,6 @@
 {
   "schema_version": "1.6.0",
-  "published_at": "2026-09-10T14:18:58.745842+00:00",
+  "published_at": "2026-09-10T14:59:59.853551+00:00",
   "experiment": {
     "name": "TradeRiser Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -3926,6 +3926,34 @@
         "risk_asset_breadth": 0.65
       },
       "stage": "research"
+    },
+    {
+      "kind": "champion",
+      "generated_at": "2026-09-10T14:52:19.497420+00:00",
+      "status": "not_authorized",
+      "selected": [
+        "CRBN",
+        "DXJ",
+        "EINC",
+        "FDL",
+        "IDV",
+        "IXG",
+        "RPV",
+        "SDCI",
+        "THD",
+        "TRTY"
+      ],
+      "orders": [],
+      "explanation": [
+        "Only assets above their 200-day average with positive 3- and 6-month momentum qualify.",
+        "Qualifying assets are ranked by 12-to-1 momentum, which omits the most recent month to reduce short-term reversal effects; an RSI overbought penalty, correlation filter, and covariance-aware risk sizing are then applied.",
+        "The account keeps at least the configured cash reserve and uses no leverage or short positions.",
+        "Every completed market session is evaluated; orders are proposed only when the allocation drift exceeds the configured band or a severe risk exit triggers.",
+        "Risk exits combine trend failure with either weak momentum or a volatility-sensitive drawdown from the recent high.",
+        "This is a proposed paper-trading decision, not an executed order or profit guarantee."
+      ],
+      "regime": null,
+      "stage": "evaluation"
     }
   ],
   "portfolio_history": [
@@ -5537,7 +5565,7 @@
           "value": 5.8322
         }
       ],
-      "captured_at": "2026-09-10T14:18:58.744602+00:00",
+      "captured_at": "2026-09-10T14:59:59.852163+00:00",
       "source": "live_broker_snapshot",
       "breakdown_estimated": false,
       "note": "Holding values came from the latest reconciled quantities and fresh quotes.",
@@ -5834,7 +5862,7 @@
     "as_of": "2026-09-09 00:00:00",
     "headline": "TradeRiser made no trade because no change cleared its timing and size rules.",
     "portfolio_context": "The live account currently holds IWM, QQQ, EWT, FLTW, CRAK, DXJ, DIVB, FBT, IHE, VLUE.",
-    "market_context": "The completed-session screen qualified DXJ, HEWJ, DBJP, SDCI, EINC, IDV, THD, GSG, RPV, FDL, CRBN, IXG, TRTY, REZ, IAK, RWO, EWJV, IYK, HYGH, HYZD, IGBH, LQDH, FLTR, VRIG, FLRN, FLOT for consideration.",
+    "market_context": "The completed-session screen qualified FLTW, VLUE, EWT, IHE, FBT, CRAK, DXJ, HEWJ, DBJP, SDCI, DIVB, EINC, IDV, THD, GSG, IWM, RPV, QQQ, FDL, CRBN, IXG, TRTY, REZ, IAK, RWO, EWJV, IYK, HYGH, HYZD, IGBH, LQDH, FLTR, VRIG, FLRN, FLOT for consideration.",
     "champion": "The live strategy currently favors CRBN, DXJ, EINC, FDL, IDV, IXG, RPV, SDCI, THD, TRTY.",
     "challenger": "The research-only challenger favors FLTR, VRIG, FLOT.",
     "disclosure": "This briefing explains completed-session model inputs; it is not a real-time news feed or a recommendation."
@@ -5867,7 +5895,7 @@
   },
   "evidence": {
     "live_days": 32,
-    "champion_cycles": 43,
+    "champion_cycles": 44,
     "challenger_cycles": 29,
     "reconciled_trades": 20,
     "benchmark": "Equal-weight provider universe",
@@ -5881,6 +5909,36 @@
   "research": {
     "champion_rankings": [
       {
+        "annualized_volatility": 0.393294,
+        "distance_from_200d_average": 0.319785,
+        "drawdown_from_63d_high": -0.015055,
+        "eligible": true,
+        "momentum_126d": 0.57932,
+        "momentum_12_1": 0.811633,
+        "momentum_63d": 0.086171,
+        "overbought": false,
+        "price": 107.5,
+        "rsi_14": 74.4622,
+        "score": 0.811633,
+        "symbol": "FLTW",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.236563,
+        "distance_from_200d_average": 0.218942,
+        "drawdown_from_63d_high": -0.010754,
+        "eligible": true,
+        "momentum_126d": 0.40613,
+        "momentum_12_1": 0.678553,
+        "momentum_63d": 0.04726,
+        "overbought": false,
+        "price": 203.3,
+        "rsi_14": 56.9945,
+        "score": 0.678553,
+        "symbol": "VLUE",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
         "annualized_volatility": 0.281351,
         "distance_from_200d_average": 0.064598,
         "drawdown_from_63d_high": -0.099759,
@@ -5893,6 +5951,66 @@
         "rsi_14": 39.5683,
         "score": 0.609085,
         "symbol": "XTL",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.384382,
+        "distance_from_200d_average": 0.323613,
+        "drawdown_from_63d_high": -0.003744,
+        "eligible": true,
+        "momentum_126d": 0.586598,
+        "momentum_12_1": 0.752614,
+        "momentum_63d": 0.10873,
+        "overbought": true,
+        "price": 111.76,
+        "rsi_14": 75.9178,
+        "score": 0.602614,
+        "symbol": "EWT",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.198151,
+        "distance_from_200d_average": 0.119322,
+        "drawdown_from_63d_high": -0.055196,
+        "eligible": true,
+        "momentum_126d": 0.160388,
+        "momentum_12_1": 0.478513,
+        "momentum_63d": 0.092849,
+        "overbought": false,
+        "price": 102.19,
+        "rsi_14": 26.8784,
+        "score": 0.478513,
+        "symbol": "IHE",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.215095,
+        "distance_from_200d_average": 0.19443,
+        "drawdown_from_63d_high": -0.030484,
+        "eligible": true,
+        "momentum_126d": 0.329861,
+        "momentum_12_1": 0.460787,
+        "momentum_63d": 0.174577,
+        "overbought": false,
+        "price": 265.56,
+        "rsi_14": 41.2725,
+        "score": 0.460787,
+        "symbol": "FBT",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.227465,
+        "distance_from_200d_average": 0.394316,
+        "drawdown_from_63d_high": 0.0,
+        "eligible": true,
+        "momentum_126d": 0.448547,
+        "momentum_12_1": 0.587916,
+        "momentum_63d": 0.393472,
+        "overbought": true,
+        "price": 66.3,
+        "rsi_14": 75.7655,
+        "score": 0.437916,
+        "symbol": "CRAK",
         "volatility_trailing_exit_threshold": -0.08
       },
       {
@@ -5956,11 +6074,26 @@
         "volatility_trailing_exit_threshold": -0.08
       },
       {
+        "annualized_volatility": 0.145146,
+        "distance_from_200d_average": 0.16017,
+        "drawdown_from_63d_high": -0.029707,
+        "eligible": true,
+        "momentum_126d": 0.256411,
+        "momentum_12_1": 0.34564,
+        "momentum_63d": 0.110672,
+        "overbought": false,
+        "price": 67.61,
+        "rsi_14": 36.2213,
+        "score": 0.34564,
+        "symbol": "DIVB",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
         "annualized_volatility": 0.303385,
         "distance_from_200d_average": -0.074679,
         "drawdown_from_63d_high": -0.168604,
         "eligible": false,
-        "momentum_126d": -0.111852,
+        "momentum_126d": -0.111853,
         "momentum_12_1": 0.32739,
         "momentum_63d": -0.097396,
         "overbought": false,
@@ -6031,6 +6164,21 @@
         "volatility_trailing_exit_threshold": -0.08
       },
       {
+        "annualized_volatility": 0.150012,
+        "distance_from_200d_average": 0.066222,
+        "drawdown_from_63d_high": -0.047363,
+        "eligible": true,
+        "momentum_126d": 0.151916,
+        "momentum_12_1": 0.272175,
+        "momentum_63d": 0.022143,
+        "overbought": false,
+        "price": 290.64,
+        "rsi_14": 32.0247,
+        "score": 0.272175,
+        "symbol": "IWM",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
         "annualized_volatility": 0.109649,
         "distance_from_200d_average": 0.093775,
         "drawdown_from_63d_high": -0.018325,
@@ -6058,6 +6206,21 @@
         "rsi_14": 14.7128,
         "score": 0.252664,
         "symbol": "PPA",
+        "volatility_trailing_exit_threshold": -0.08
+      },
+      {
+        "annualized_volatility": 0.236302,
+        "distance_from_200d_average": 0.088623,
+        "drawdown_from_63d_high": -0.03616,
+        "eligible": true,
+        "momentum_126d": 0.18137,
+        "momentum_12_1": 0.251303,
+        "momentum_63d": 0.013092,
+        "overbought": false,
+        "price": 716.31,
+        "rsi_14": 50.1994,
+        "score": 0.251303,
+        "symbol": "QQQ",
         "volatility_trailing_exit_threshold": -0.08
       },
       {
@@ -6350,7 +6513,7 @@
         "distance_from_200d_average": -0.005198,
         "drawdown_from_63d_high": -0.050703,
         "eligible": false,
-        "momentum_126d": -0.028327,
+        "momentum_126d": -0.028326,
         "momentum_12_1": 0.071131,
         "momentum_63d": -0.009688,
         "overbought": false,
@@ -6380,7 +6543,7 @@
         "distance_from_200d_average": 0.026723,
         "drawdown_from_63d_high": -0.001766,
         "eligible": true,
-        "momentum_126d": 0.042183,
+        "momentum_126d": 0.042182,
         "momentum_12_1": 0.066622,
         "momentum_63d": 0.016306,
         "overbought": false,
@@ -6487,7 +6650,7 @@
       "calibration_method": "walk_forward_pair_specific_relative_return",
       "comparisons": [
         {
-          "calibrated_forward_return_per_score": -0.02946494,
+          "calibrated_forward_return_per_score": -0.02946493,
           "calibration_samples": 30,
           "data_as_of": "2026-09-04 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -6504,7 +6667,7 @@
           "uncertainty_buffer_dollars": 0.0298
         },
         {
-          "calibrated_forward_return_per_score": -0.02946494,
+          "calibrated_forward_return_per_score": -0.02946493,
           "calibration_samples": 30,
           "data_as_of": "2026-09-08 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -6521,7 +6684,7 @@
           "uncertainty_buffer_dollars": 0.0298
         },
         {
-          "calibrated_forward_return_per_score": -0.02946494,
+          "calibrated_forward_return_per_score": -0.02946493,
           "calibration_samples": 30,
           "data_as_of": "2026-09-09 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -6538,7 +6701,7 @@
           "uncertainty_buffer_dollars": 0.0298
         },
         {
-          "calibrated_forward_return_per_score": -0.02782734,
+          "calibrated_forward_return_per_score": -0.02782732,
           "calibration_samples": 30,
           "data_as_of": "2026-09-04 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -6555,7 +6718,7 @@
           "uncertainty_buffer_dollars": 0.0256
         },
         {
-          "calibrated_forward_return_per_score": -0.02782734,
+          "calibrated_forward_return_per_score": -0.02782732,
           "calibration_samples": 30,
           "data_as_of": "2026-09-08 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -6572,7 +6735,7 @@
           "uncertainty_buffer_dollars": 0.0256
         },
         {
-          "calibrated_forward_return_per_score": -0.02782734,
+          "calibrated_forward_return_per_score": -0.02782732,
           "calibration_samples": 30,
           "data_as_of": "2026-09-09 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -6589,24 +6752,24 @@
           "uncertainty_buffer_dollars": 0.0256
         },
         {
-          "calibrated_forward_return_per_score": -0.00462546,
+          "calibrated_forward_return_per_score": -0.00462543,
           "calibration_samples": 30,
           "data_as_of": "2026-09-04 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
           "expected_edge_dollars": 0.0003,
           "funded_dollars": 2.39,
-          "incoming_score": 0.294268,
+          "incoming_score": 0.294269,
           "incoming_symbol": "IDV",
           "outgoing_score": 0.319918,
           "outgoing_symbol": "DIVB",
           "passed": false,
           "required_edge_dollars": 0.0167,
           "round_trip_cost_dollars": 0.0048,
-          "score_advantage": -0.02565,
+          "score_advantage": -0.025649,
           "uncertainty_buffer_dollars": 0.012
         },
         {
-          "calibrated_forward_return_per_score": -0.00462546,
+          "calibrated_forward_return_per_score": -0.00462543,
           "calibration_samples": 30,
           "data_as_of": "2026-09-08 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -6623,7 +6786,7 @@
           "uncertainty_buffer_dollars": 0.012
         },
         {
-          "calibrated_forward_return_per_score": -0.00462546,
+          "calibrated_forward_return_per_score": -0.00462543,
           "calibration_samples": 30,
           "data_as_of": "2026-09-09 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -6631,16 +6794,16 @@
           "funded_dollars": 2.39,
           "incoming_score": 0.283551,
           "incoming_symbol": "IDV",
-          "outgoing_score": 0.345639,
+          "outgoing_score": 0.34564,
           "outgoing_symbol": "DIVB",
           "passed": false,
           "required_edge_dollars": 0.0167,
           "round_trip_cost_dollars": 0.0048,
-          "score_advantage": -0.062088,
+          "score_advantage": -0.062089,
           "uncertainty_buffer_dollars": 0.012
         },
         {
-          "calibrated_forward_return_per_score": -0.03012014,
+          "calibrated_forward_return_per_score": -0.03012017,
           "calibration_samples": 30,
           "data_as_of": "2026-09-04 00:00:00",
           "estimated_tax_cost_dollars": 0.0722,
@@ -6657,7 +6820,7 @@
           "uncertainty_buffer_dollars": 0.0126
         },
         {
-          "calibrated_forward_return_per_score": -0.03012014,
+          "calibrated_forward_return_per_score": -0.03012017,
           "calibration_samples": 30,
           "data_as_of": "2026-09-08 00:00:00",
           "estimated_tax_cost_dollars": 0.0722,
@@ -6674,7 +6837,7 @@
           "uncertainty_buffer_dollars": 0.0126
         },
         {
-          "calibrated_forward_return_per_score": -0.03012014,
+          "calibrated_forward_return_per_score": -0.03012017,
           "calibration_samples": 30,
           "data_as_of": "2026-09-09 00:00:00",
           "estimated_tax_cost_dollars": 0.0722,
@@ -6691,7 +6854,7 @@
           "uncertainty_buffer_dollars": 0.0126
         },
         {
-          "calibrated_forward_return_per_score": -0.10391296,
+          "calibrated_forward_return_per_score": -0.10391304,
           "calibration_samples": 30,
           "data_as_of": "2026-09-04 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -6708,7 +6871,7 @@
           "uncertainty_buffer_dollars": 0.0182
         },
         {
-          "calibrated_forward_return_per_score": -0.10391296,
+          "calibrated_forward_return_per_score": -0.10391304,
           "calibration_samples": 30,
           "data_as_of": "2026-09-08 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -6725,7 +6888,7 @@
           "uncertainty_buffer_dollars": 0.0182
         },
         {
-          "calibrated_forward_return_per_score": -0.10391296,
+          "calibrated_forward_return_per_score": -0.10391304,
           "calibration_samples": 30,
           "data_as_of": "2026-09-09 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -6742,7 +6905,7 @@
           "uncertainty_buffer_dollars": 0.0182
         },
         {
-          "calibrated_forward_return_per_score": -0.02077063,
+          "calibrated_forward_return_per_score": -0.02077042,
           "calibration_samples": 30,
           "data_as_of": "2026-09-04 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -6759,7 +6922,7 @@
           "uncertainty_buffer_dollars": 0.0212
         },
         {
-          "calibrated_forward_return_per_score": -0.02077063,
+          "calibrated_forward_return_per_score": -0.02077042,
           "calibration_samples": 30,
           "data_as_of": "2026-09-08 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -6776,7 +6939,7 @@
           "uncertainty_buffer_dollars": 0.0212
         },
         {
-          "calibrated_forward_return_per_score": -0.02077063,
+          "calibrated_forward_return_per_score": -0.02077042,
           "calibration_samples": 30,
           "data_as_of": "2026-09-09 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -6793,7 +6956,7 @@
           "uncertainty_buffer_dollars": 0.0212
         },
         {
-          "calibrated_forward_return_per_score": 0.08390636,
+          "calibrated_forward_return_per_score": 0.08390635,
           "calibration_samples": 30,
           "data_as_of": "2026-09-04 00:00:00",
           "estimated_tax_cost_dollars": 0.009,
@@ -6810,7 +6973,7 @@
           "uncertainty_buffer_dollars": 0.0152
         },
         {
-          "calibrated_forward_return_per_score": 0.08390636,
+          "calibrated_forward_return_per_score": 0.08390635,
           "calibration_samples": 30,
           "data_as_of": "2026-09-08 00:00:00",
           "estimated_tax_cost_dollars": 0.009,
@@ -6827,7 +6990,7 @@
           "uncertainty_buffer_dollars": 0.0152
         },
         {
-          "calibrated_forward_return_per_score": 0.08390636,
+          "calibrated_forward_return_per_score": 0.08390635,
           "calibration_samples": 30,
           "data_as_of": "2026-09-09 00:00:00",
           "estimated_tax_cost_dollars": 0.009,
@@ -6844,7 +7007,7 @@
           "uncertainty_buffer_dollars": 0.0152
         },
         {
-          "calibrated_forward_return_per_score": 0.03203529,
+          "calibrated_forward_return_per_score": 0.03203536,
           "calibration_samples": 30,
           "data_as_of": "2026-09-04 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -6861,7 +7024,7 @@
           "uncertainty_buffer_dollars": 0.0195
         },
         {
-          "calibrated_forward_return_per_score": 0.03203529,
+          "calibrated_forward_return_per_score": 0.03203536,
           "calibration_samples": 30,
           "data_as_of": "2026-09-08 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -6878,7 +7041,7 @@
           "uncertainty_buffer_dollars": 0.0195
         },
         {
-          "calibrated_forward_return_per_score": 0.03203529,
+          "calibrated_forward_return_per_score": 0.03203536,
           "calibration_samples": 30,
           "data_as_of": "2026-09-09 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -7997,6 +8160,234 @@
           "Broker official closes and current quotes were timestamped before this record.",
           "Five, 21, and 63-session automated maturation is not implemented; null values are published rather than inferred.",
           "Codex cannot alter, authorize, suppress, or create an order."
+        ],
+        "method": "locked_independent_review"
+      },
+      {
+        "agreements": [
+          "IWM",
+          "QQQ",
+          "EWT",
+          "FLTW",
+          "CRAK",
+          "DXJ",
+          "DIVB",
+          "FBT",
+          "IHE",
+          "VLUE"
+        ],
+        "as_of": "2026-09-09",
+        "cycle_id": "codex-comparison-2026-09-10-held-risk-repair",
+        "disagreements": [],
+        "holdings": [
+          {
+            "agreement": true,
+            "codex": "hold_watch_intraday_decline",
+            "codex_rationale": "The broad intraday decline warrants monitoring but does not override a locked completed-session trend signal.",
+            "confidence": "medium",
+            "factor_overlap": "See prior daily comparison",
+            "invalidation": "Completed-session trend and momentum risk thresholds trigger.",
+            "principal_risks": [
+              "rapid regime change after the completed-session cutoff"
+            ],
+            "relevant_market_context": "Current broker quote is below the September 9 close; champion remains based on completed September 9 data.",
+            "subsequent_returns": {
+              "21_session_pct": null,
+              "5_session_pct": null,
+              "63_session_pct": null
+            },
+            "symbol": "IWM",
+            "traderiser": "hold",
+            "traderiser_rationale": "Fully scored after held-universe repair: 200-day distance 6.622%, 63-session momentum 2.214%, 126-session momentum 15.192%, 63-session drawdown -4.736%; no risk-exit threshold passed."
+          },
+          {
+            "agreement": true,
+            "codex": "hold_watch_intraday_decline",
+            "codex_rationale": "The broad intraday decline warrants monitoring but does not override a locked completed-session trend signal.",
+            "confidence": "medium",
+            "factor_overlap": "See prior daily comparison",
+            "invalidation": "Completed-session trend and momentum risk thresholds trigger.",
+            "principal_risks": [
+              "rapid regime change after the completed-session cutoff"
+            ],
+            "relevant_market_context": "Current broker quote is below the September 9 close; champion remains based on completed September 9 data.",
+            "subsequent_returns": {
+              "21_session_pct": null,
+              "5_session_pct": null,
+              "63_session_pct": null
+            },
+            "symbol": "QQQ",
+            "traderiser": "hold",
+            "traderiser_rationale": "Fully scored after held-universe repair: 200-day distance 8.862%, 63-session momentum 1.309%, 126-session momentum 18.137%, 63-session drawdown -3.616%; no risk-exit threshold passed."
+          },
+          {
+            "agreement": true,
+            "codex": "hold_watch_intraday_decline",
+            "codex_rationale": "The broad intraday decline warrants monitoring but does not override a locked completed-session trend signal.",
+            "confidence": "medium",
+            "factor_overlap": "See prior daily comparison",
+            "invalidation": "Completed-session trend and momentum risk thresholds trigger.",
+            "principal_risks": [
+              "rapid regime change after the completed-session cutoff"
+            ],
+            "relevant_market_context": "Current broker quote is below the September 9 close; champion remains based on completed September 9 data.",
+            "subsequent_returns": {
+              "21_session_pct": null,
+              "5_session_pct": null,
+              "63_session_pct": null
+            },
+            "symbol": "EWT",
+            "traderiser": "hold",
+            "traderiser_rationale": "Fully scored after held-universe repair: 200-day distance 32.361%, 63-session momentum 10.873%, 126-session momentum 58.660%, 63-session drawdown -0.374%; no risk-exit threshold passed."
+          },
+          {
+            "agreement": true,
+            "codex": "hold_watch_intraday_decline",
+            "codex_rationale": "The broad intraday decline warrants monitoring but does not override a locked completed-session trend signal.",
+            "confidence": "medium",
+            "factor_overlap": "See prior daily comparison",
+            "invalidation": "Completed-session trend and momentum risk thresholds trigger.",
+            "principal_risks": [
+              "rapid regime change after the completed-session cutoff"
+            ],
+            "relevant_market_context": "Current broker quote is below the September 9 close; champion remains based on completed September 9 data.",
+            "subsequent_returns": {
+              "21_session_pct": null,
+              "5_session_pct": null,
+              "63_session_pct": null
+            },
+            "symbol": "FLTW",
+            "traderiser": "hold",
+            "traderiser_rationale": "Fully scored after held-universe repair: 200-day distance 31.978%, 63-session momentum 8.617%, 126-session momentum 57.932%, 63-session drawdown -1.506%; no risk-exit threshold passed."
+          },
+          {
+            "agreement": true,
+            "codex": "hold_watch_intraday_decline",
+            "codex_rationale": "The broad intraday decline warrants monitoring but does not override a locked completed-session trend signal.",
+            "confidence": "medium",
+            "factor_overlap": "See prior daily comparison",
+            "invalidation": "Completed-session trend and momentum risk thresholds trigger.",
+            "principal_risks": [
+              "rapid regime change after the completed-session cutoff"
+            ],
+            "relevant_market_context": "Current broker quote is below the September 9 close; champion remains based on completed September 9 data.",
+            "subsequent_returns": {
+              "21_session_pct": null,
+              "5_session_pct": null,
+              "63_session_pct": null
+            },
+            "symbol": "CRAK",
+            "traderiser": "hold",
+            "traderiser_rationale": "Fully scored after held-universe repair: 200-day distance 39.432%, 63-session momentum 39.347%, 126-session momentum 44.855%, 63-session drawdown 0.000%; no risk-exit threshold passed."
+          },
+          {
+            "agreement": true,
+            "codex": "hold_watch_intraday_decline",
+            "codex_rationale": "The broad intraday decline warrants monitoring but does not override a locked completed-session trend signal.",
+            "confidence": "medium",
+            "factor_overlap": "See prior daily comparison",
+            "invalidation": "Completed-session trend and momentum risk thresholds trigger.",
+            "principal_risks": [
+              "rapid regime change after the completed-session cutoff"
+            ],
+            "relevant_market_context": "Current broker quote is below the September 9 close; champion remains based on completed September 9 data.",
+            "subsequent_returns": {
+              "21_session_pct": null,
+              "5_session_pct": null,
+              "63_session_pct": null
+            },
+            "symbol": "DXJ",
+            "traderiser": "hold",
+            "traderiser_rationale": "Fully scored after held-universe repair: 200-day distance 6.595%, 63-session momentum 2.908%, 126-session momentum 9.119%, 63-session drawdown -5.103%; no risk-exit threshold passed."
+          },
+          {
+            "agreement": true,
+            "codex": "hold_watch_intraday_decline",
+            "codex_rationale": "The broad intraday decline warrants monitoring but does not override a locked completed-session trend signal.",
+            "confidence": "medium",
+            "factor_overlap": "See prior daily comparison",
+            "invalidation": "Completed-session trend and momentum risk thresholds trigger.",
+            "principal_risks": [
+              "rapid regime change after the completed-session cutoff"
+            ],
+            "relevant_market_context": "Current broker quote is below the September 9 close; champion remains based on completed September 9 data.",
+            "subsequent_returns": {
+              "21_session_pct": null,
+              "5_session_pct": null,
+              "63_session_pct": null
+            },
+            "symbol": "DIVB",
+            "traderiser": "hold",
+            "traderiser_rationale": "Fully scored after held-universe repair: 200-day distance 16.017%, 63-session momentum 11.067%, 126-session momentum 25.641%, 63-session drawdown -2.971%; no risk-exit threshold passed."
+          },
+          {
+            "agreement": true,
+            "codex": "hold_watch_intraday_decline",
+            "codex_rationale": "The broad intraday decline warrants monitoring but does not override a locked completed-session trend signal.",
+            "confidence": "medium",
+            "factor_overlap": "See prior daily comparison",
+            "invalidation": "Completed-session trend and momentum risk thresholds trigger.",
+            "principal_risks": [
+              "rapid regime change after the completed-session cutoff"
+            ],
+            "relevant_market_context": "Current broker quote is below the September 9 close; champion remains based on completed September 9 data.",
+            "subsequent_returns": {
+              "21_session_pct": null,
+              "5_session_pct": null,
+              "63_session_pct": null
+            },
+            "symbol": "FBT",
+            "traderiser": "hold",
+            "traderiser_rationale": "Fully scored after held-universe repair: 200-day distance 19.443%, 63-session momentum 17.458%, 126-session momentum 32.986%, 63-session drawdown -3.048%; no risk-exit threshold passed."
+          },
+          {
+            "agreement": true,
+            "codex": "hold_watch_intraday_decline",
+            "codex_rationale": "The broad intraday decline warrants monitoring but does not override a locked completed-session trend signal.",
+            "confidence": "medium",
+            "factor_overlap": "See prior daily comparison",
+            "invalidation": "Completed-session trend and momentum risk thresholds trigger.",
+            "principal_risks": [
+              "rapid regime change after the completed-session cutoff"
+            ],
+            "relevant_market_context": "Current broker quote is below the September 9 close; champion remains based on completed September 9 data.",
+            "subsequent_returns": {
+              "21_session_pct": null,
+              "5_session_pct": null,
+              "63_session_pct": null
+            },
+            "symbol": "IHE",
+            "traderiser": "hold",
+            "traderiser_rationale": "Fully scored after held-universe repair: 200-day distance 11.932%, 63-session momentum 9.285%, 126-session momentum 16.039%, 63-session drawdown -5.520%; no risk-exit threshold passed."
+          },
+          {
+            "agreement": true,
+            "codex": "hold_watch_intraday_decline",
+            "codex_rationale": "The broad intraday decline warrants monitoring but does not override a locked completed-session trend signal.",
+            "confidence": "medium",
+            "factor_overlap": "See prior daily comparison",
+            "invalidation": "Completed-session trend and momentum risk thresholds trigger.",
+            "principal_risks": [
+              "rapid regime change after the completed-session cutoff"
+            ],
+            "relevant_market_context": "Current broker quote is below the September 9 close; champion remains based on completed September 9 data.",
+            "subsequent_returns": {
+              "21_session_pct": null,
+              "5_session_pct": null,
+              "63_session_pct": null
+            },
+            "symbol": "VLUE",
+            "traderiser": "hold",
+            "traderiser_rationale": "Fully scored after held-universe repair: 200-day distance 21.894%, 63-session momentum 4.726%, 126-session momentum 40.613%, 63-session drawdown -1.075%; no risk-exit threshold passed."
+          }
+        ],
+        "improvement_candidates": [
+          "Automate 5-, 21-, and 63-session maturation and scoring before claiming predictive comparisons."
+        ],
+        "limitations": [
+          "Intraday prices cannot be substituted for the completed-session champion cutoff.",
+          "Multi-horizon scoring remains unimplemented and is explicitly null.",
+          "Codex cannot alter or create live orders."
         ],
         "method": "locked_independent_review"
       }
