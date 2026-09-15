@@ -1,6 +1,6 @@
 {
   "schema_version": "1.6.0",
-  "published_at": "2026-09-15T14:17:55.970252+00:00",
+  "published_at": "2026-09-15T14:59:13.378365+00:00",
   "experiment": {
     "name": "TradeRiser Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -8,13 +8,13 @@
     "objective": "Continue the live observation through December 31, 2026 using the experiment's cumulative contributed funds."
   },
   "account": {
-    "value": 55.2322,
-    "cash": 10.11,
-    "invested": 45.1217,
-    "buying_power": 10.11,
+    "value": 55.1086,
+    "cash": 0.0,
+    "invested": 55.0889,
+    "buying_power": 0.0,
     "net_contributions": 55.0,
-    "investment_gain": 0.2322,
-    "simple_return_on_contributions": 0.00422125,
+    "investment_gain": 0.1086,
+    "simple_return_on_contributions": 0.00197481,
     "currency": "USD"
   },
   "holdings": [
@@ -23,7 +23,7 @@
       "shares": 0.020371,
       "average_price": 301.9,
       "cost_basis": 6.15,
-      "current_value": 5.8114,
+      "current_value": 5.7913,
       "strategy": "champion"
     },
     {
@@ -31,7 +31,7 @@
       "shares": 0.008422,
       "average_price": 721.92,
       "cost_basis": 6.08,
-      "current_value": 5.9538,
+      "current_value": 5.9355,
       "strategy": "champion"
     },
     {
@@ -39,7 +39,7 @@
       "shares": 0.049561,
       "average_price": 109.36,
       "cost_basis": 5.42,
-      "current_value": 5.2934,
+      "current_value": 5.2664,
       "strategy": "champion"
     },
     {
@@ -47,7 +47,7 @@
       "shares": 0.020992,
       "average_price": 104.8,
       "cost_basis": 2.2,
-      "current_value": 2.161,
+      "current_value": 2.1464,
       "strategy": "champion"
     },
     {
@@ -55,15 +55,15 @@
       "shares": 0.110477,
       "average_price": 60.92,
       "cost_basis": 6.7303,
-      "current_value": 7.1418,
+      "current_value": 7.1269,
       "strategy": "champion"
     },
     {
       "symbol": "DXJ",
-      "shares": 0.015514,
-      "average_price": 180.48,
-      "cost_basis": 2.8,
-      "current_value": 2.7369,
+      "shares": 0.032612,
+      "average_price": 178.16,
+      "cost_basis": 5.8102,
+      "current_value": 5.7374,
       "strategy": "champion"
     },
     {
@@ -71,31 +71,31 @@
       "shares": 0.035311,
       "average_price": 69.1,
       "cost_basis": 2.44,
-      "current_value": 2.4128,
+      "current_value": 2.4124,
       "strategy": "champion"
     },
     {
       "symbol": "FBT",
-      "shares": 0.013854,
-      "average_price": 267.79,
-      "cost_basis": 3.71,
-      "current_value": 3.6346,
+      "shares": 0.026357,
+      "average_price": 264.83,
+      "cost_basis": 6.9801,
+      "current_value": 6.891,
       "strategy": "champion"
     },
     {
       "symbol": "IHE",
-      "shares": 0.041468,
-      "average_price": 104.18,
-      "cost_basis": 4.3201,
-      "current_value": 4.1726,
+      "shares": 0.068613,
+      "average_price": 102.75,
+      "cost_basis": 7.05,
+      "current_value": 6.8953,
       "strategy": "champion"
     },
     {
       "symbol": "VLUE",
-      "shares": 0.02899,
-      "average_price": 204.9,
-      "cost_basis": 5.9401,
-      "current_value": 5.8034,
+      "shares": 0.034503,
+      "average_price": 204.04,
+      "cost_basis": 7.04,
+      "current_value": 6.8863,
       "strategy": "champion"
     }
   ],
@@ -508,6 +508,78 @@
       "deferred_follow_up": null,
       "decision_source": "TradeRiser champion",
       "broker_submission_source": "agentic API"
+    },
+    {
+      "symbol": "VLUE",
+      "side": "buy",
+      "dollar_amount": 1.1,
+      "state": "filled",
+      "quantity": 0.005513,
+      "average_price": 199.5027,
+      "fees": 0.0,
+      "reconciled_at": "2026-09-15T14:58:59.794986+00:00",
+      "authorized": true,
+      "orders_match": true,
+      "source": "agentic",
+      "authorization_label": "delegated policy passed",
+      "execution_label": null,
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic"
+    },
+    {
+      "symbol": "IHE",
+      "side": "buy",
+      "dollar_amount": 2.73,
+      "state": "filled",
+      "quantity": 0.027145,
+      "average_price": 100.5699,
+      "fees": 0.0,
+      "reconciled_at": "2026-09-15T14:58:59.794986+00:00",
+      "authorized": true,
+      "orders_match": true,
+      "source": "agentic",
+      "authorization_label": "delegated policy passed",
+      "execution_label": null,
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic"
+    },
+    {
+      "symbol": "FBT",
+      "side": "buy",
+      "dollar_amount": 3.27,
+      "state": "filled",
+      "quantity": 0.012503,
+      "average_price": 261.5319,
+      "fees": 0.0,
+      "reconciled_at": "2026-09-15T14:58:59.794986+00:00",
+      "authorized": true,
+      "orders_match": true,
+      "source": "agentic",
+      "authorization_label": "delegated policy passed",
+      "execution_label": null,
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic"
+    },
+    {
+      "symbol": "DXJ",
+      "side": "buy",
+      "dollar_amount": 3.01,
+      "state": "filled",
+      "quantity": 0.017098,
+      "average_price": 176.0399,
+      "fees": 0.0,
+      "reconciled_at": "2026-09-15T14:58:59.794986+00:00",
+      "authorized": true,
+      "orders_match": true,
+      "source": "agentic",
+      "authorization_label": "delegated policy passed",
+      "execution_label": null,
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic"
     }
   ],
   "decisions": [
@@ -4511,6 +4583,179 @@
         "risk_asset_breadth": 0.425
       },
       "stage": "research"
+    },
+    {
+      "kind": "champion",
+      "generated_at": "2026-09-15T14:55:22.467463+00:00",
+      "status": "authorized",
+      "selected": [
+        "CRAK",
+        "EZA",
+        "FTGC",
+        "IDV",
+        "IEO",
+        "IGE",
+        "KBWB",
+        "PWV",
+        "VLUE"
+      ],
+      "orders": [
+        {
+          "symbol": "VLUE",
+          "side": "buy",
+          "dollars": 1.1
+        },
+        {
+          "symbol": "IHE",
+          "side": "buy",
+          "dollars": 2.73
+        },
+        {
+          "symbol": "FBT",
+          "side": "buy",
+          "dollars": 3.27
+        },
+        {
+          "symbol": "DXJ",
+          "side": "buy",
+          "dollars": 3.01
+        }
+      ],
+      "explanation": [
+        "all authorization checks passed"
+      ],
+      "regime": null,
+      "stage": "reconciliation",
+      "authorized": true,
+      "reconciled": true
+    },
+    {
+      "kind": "executed_trade",
+      "generated_at": "2026-09-15T14:58:59.794986+00:00",
+      "status": "filled",
+      "selected": [
+        "VLUE"
+      ],
+      "orders": [
+        {
+          "symbol": "VLUE",
+          "side": "buy",
+          "dollars": 1.1,
+          "status": "filled",
+          "quantity": 0.005513,
+          "average_price": 199.5027,
+          "fees": 0.0
+        }
+      ],
+      "authorized": true,
+      "authorization_label": "delegated policy passed",
+      "reconciled": true,
+      "source": "agentic",
+      "execution_label": null,
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic",
+      "stage": "execution",
+      "explanation": [
+        "The champion proposal passed the live authorization gate and the broker outcome was reconciled."
+      ],
+      "regime": null
+    },
+    {
+      "kind": "executed_trade",
+      "generated_at": "2026-09-15T14:58:59.794986+00:00",
+      "status": "filled",
+      "selected": [
+        "IHE"
+      ],
+      "orders": [
+        {
+          "symbol": "IHE",
+          "side": "buy",
+          "dollars": 2.73,
+          "status": "filled",
+          "quantity": 0.027145,
+          "average_price": 100.5699,
+          "fees": 0.0
+        }
+      ],
+      "authorized": true,
+      "authorization_label": "delegated policy passed",
+      "reconciled": true,
+      "source": "agentic",
+      "execution_label": null,
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic",
+      "stage": "execution",
+      "explanation": [
+        "The champion proposal passed the live authorization gate and the broker outcome was reconciled."
+      ],
+      "regime": null
+    },
+    {
+      "kind": "executed_trade",
+      "generated_at": "2026-09-15T14:58:59.794986+00:00",
+      "status": "filled",
+      "selected": [
+        "FBT"
+      ],
+      "orders": [
+        {
+          "symbol": "FBT",
+          "side": "buy",
+          "dollars": 3.27,
+          "status": "filled",
+          "quantity": 0.012503,
+          "average_price": 261.5319,
+          "fees": 0.0
+        }
+      ],
+      "authorized": true,
+      "authorization_label": "delegated policy passed",
+      "reconciled": true,
+      "source": "agentic",
+      "execution_label": null,
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic",
+      "stage": "execution",
+      "explanation": [
+        "The champion proposal passed the live authorization gate and the broker outcome was reconciled."
+      ],
+      "regime": null
+    },
+    {
+      "kind": "executed_trade",
+      "generated_at": "2026-09-15T14:58:59.794986+00:00",
+      "status": "filled",
+      "selected": [
+        "DXJ"
+      ],
+      "orders": [
+        {
+          "symbol": "DXJ",
+          "side": "buy",
+          "dollars": 3.01,
+          "status": "filled",
+          "quantity": 0.017098,
+          "average_price": 176.0399,
+          "fees": 0.0
+        }
+      ],
+      "authorized": true,
+      "authorization_label": "delegated policy passed",
+      "reconciled": true,
+      "source": "agentic",
+      "execution_label": null,
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic",
+      "stage": "execution",
+      "explanation": [
+        "The champion proposal passed the live authorization gate and the broker outcome was reconciled."
+      ],
+      "regime": null
     }
   ],
   "portfolio_history": [
@@ -6428,71 +6673,71 @@
     },
     {
       "date": "2026-09-15",
-      "value": 55.2322,
-      "cash": 10.11,
+      "value": 55.1086,
+      "cash": 0.0,
       "holdings": [
         {
           "symbol": "IWM",
           "shares": 0.020371,
-          "value": 5.8114
+          "value": 5.7913
         },
         {
           "symbol": "QQQ",
           "shares": 0.008422,
-          "value": 5.9538
+          "value": 5.9355
         },
         {
           "symbol": "EWT",
           "shares": 0.049561,
-          "value": 5.2934
+          "value": 5.2664
         },
         {
           "symbol": "FLTW",
           "shares": 0.020992,
-          "value": 2.161
+          "value": 2.1464
         },
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 7.1418
+          "value": 7.1269
         },
         {
           "symbol": "DXJ",
-          "shares": 0.015514,
-          "value": 2.7369
+          "shares": 0.032612,
+          "value": 5.7374
         },
         {
           "symbol": "DIVB",
           "shares": 0.035311,
-          "value": 2.4128
+          "value": 2.4124
         },
         {
           "symbol": "FBT",
-          "shares": 0.013854,
-          "value": 3.6346
+          "shares": 0.026357,
+          "value": 6.891
         },
         {
           "symbol": "IHE",
-          "shares": 0.041468,
-          "value": 4.1726
+          "shares": 0.068613,
+          "value": 6.8953
         },
         {
           "symbol": "VLUE",
-          "shares": 0.02899,
-          "value": 5.8034
+          "shares": 0.034503,
+          "value": 6.8863
         }
       ],
-      "captured_at": "2026-09-15T14:17:55.965177+00:00",
+      "captured_at": "2026-09-15T14:59:13.376897+00:00",
       "source": "live_broker_snapshot",
       "breakdown_estimated": false,
       "note": "Holding values came from the latest reconciled quantities and fresh quotes.",
       "net_cash_flow": 0.0,
       "contributions": 0.0,
       "withdrawals": -0.0,
-      "change": 9.672,
-      "change_pct": 0.21229055,
-      "market_gain": 9.672,
-      "time_weighted_return": 2.68455391,
+      "change": 9.5484,
+      "change_pct": 0.20957766,
+      "market_gain": 9.5484,
+      "time_weighted_return": 2.67630852,
       "cash_flow_timing": "none",
       "benchmark_value": 0.0,
       "benchmark_return": null,
@@ -6500,8 +6745,8 @@
     }
   ],
   "performance": {
-    "simple_return_on_contributions": 0.00422125,
-    "time_weighted_return": 2.68455391,
+    "simple_return_on_contributions": 0.00197481,
+    "time_weighted_return": 2.67630852,
     "time_weighted_quality": "timestamped",
     "money_weighted": {
       "return": null,
@@ -6808,7 +7053,7 @@
           "price": 110.1402,
           "value": 0.0,
           "return": null,
-          "actual_return": 2.68455391,
+          "actual_return": 2.67630852,
           "excess_return": null
         }
       ],
@@ -6817,7 +7062,7 @@
   },
   "daily_briefing": {
     "as_of": "2026-09-14 00:00:00",
-    "headline": "TradeRiser made no trade because no change cleared its timing and size rules.",
+    "headline": "TradeRiser proposed 4 portfolio changes.",
     "portfolio_context": "The live account currently holds IWM, QQQ, EWT, FLTW, CRAK, DXJ, DIVB, FBT, IHE, VLUE.",
     "market_context": "The completed-session screen qualified FLTW, EWT, VLUE, CRAK, IHE, IEO, FBT, RSPG, DXJ, FENY, VDE, XLE, IXC, FTGC, DIVB, SDCI, IGE, KBWB, PWV, GSG, IDV, EZA, VRIG for consideration.",
     "champion": "The live strategy currently favors CRAK, EZA, FTGC, IDV, IEO, IGE, KBWB, PWV, VLUE.",
@@ -6852,9 +7097,9 @@
   },
   "evidence": {
     "live_days": 37,
-    "champion_cycles": 47,
+    "champion_cycles": 48,
     "challenger_cycles": 33,
-    "reconciled_trades": 22,
+    "reconciled_trades": 26,
     "benchmark": "Equal-weight provider universe",
     "backtest_method": "monthly_walk_forward_next_session",
     "limitations": [
@@ -6961,12 +7206,12 @@
         "drawdown_from_63d_high": -0.26781,
         "eligible": false,
         "momentum_126d": 0.451005,
-        "momentum_12_1": 0.789353,
+        "momentum_12_1": 0.789354,
         "momentum_63d": -0.216188,
         "overbought": false,
         "price": 474.62,
         "rsi_14": 47.2657,
-        "score": 0.789353,
+        "score": 0.789354,
         "symbol": "XSD",
         "volatility_trailing_exit_threshold": -0.108292
       },
@@ -7410,7 +7655,7 @@
         "distance_from_200d_average": 0.069527,
         "drawdown_from_63d_high": -0.010168,
         "eligible": true,
-        "momentum_126d": 0.111935,
+        "momentum_126d": 0.111934,
         "momentum_12_1": 0.266913,
         "momentum_63d": 0.029473,
         "overbought": false,
@@ -7643,7 +7888,7 @@
           "uncertainty_buffer_dollars": 0.0256
         },
         {
-          "calibrated_forward_return_per_score": -0.02011997,
+          "calibrated_forward_return_per_score": -0.02012014,
           "calibration_samples": 30,
           "data_as_of": "2026-09-10 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -7660,7 +7905,7 @@
           "uncertainty_buffer_dollars": 0.029
         },
         {
-          "calibrated_forward_return_per_score": -0.02011997,
+          "calibrated_forward_return_per_score": -0.02012014,
           "calibration_samples": 30,
           "data_as_of": "2026-09-11 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -7677,7 +7922,7 @@
           "uncertainty_buffer_dollars": 0.029
         },
         {
-          "calibrated_forward_return_per_score": -0.02011997,
+          "calibrated_forward_return_per_score": -0.02012014,
           "calibration_samples": 30,
           "data_as_of": "2026-09-14 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -7694,7 +7939,7 @@
           "uncertainty_buffer_dollars": 0.029
         },
         {
-          "calibrated_forward_return_per_score": -0.22916387,
+          "calibrated_forward_return_per_score": -0.2291638,
           "calibration_samples": 30,
           "data_as_of": "2026-09-10 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -7711,7 +7956,7 @@
           "uncertainty_buffer_dollars": 0.0181
         },
         {
-          "calibrated_forward_return_per_score": -0.22916387,
+          "calibrated_forward_return_per_score": -0.2291638,
           "calibration_samples": 30,
           "data_as_of": "2026-09-11 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -7728,7 +7973,7 @@
           "uncertainty_buffer_dollars": 0.0181
         },
         {
-          "calibrated_forward_return_per_score": -0.22916387,
+          "calibrated_forward_return_per_score": -0.2291638,
           "calibration_samples": 30,
           "data_as_of": "2026-09-14 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -7745,7 +7990,7 @@
           "uncertainty_buffer_dollars": 0.0181
         },
         {
-          "calibrated_forward_return_per_score": 0.05119389,
+          "calibrated_forward_return_per_score": 0.05119398,
           "calibration_samples": 30,
           "data_as_of": "2026-09-10 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -7762,7 +8007,7 @@
           "uncertainty_buffer_dollars": 0.0209
         },
         {
-          "calibrated_forward_return_per_score": 0.05119389,
+          "calibrated_forward_return_per_score": 0.05119398,
           "calibration_samples": 30,
           "data_as_of": "2026-09-11 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -7779,7 +8024,7 @@
           "uncertainty_buffer_dollars": 0.0209
         },
         {
-          "calibrated_forward_return_per_score": 0.05119389,
+          "calibrated_forward_return_per_score": 0.05119398,
           "calibration_samples": 30,
           "data_as_of": "2026-09-14 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -7796,7 +8041,7 @@
           "uncertainty_buffer_dollars": 0.0209
         },
         {
-          "calibrated_forward_return_per_score": 0.01237,
+          "calibrated_forward_return_per_score": 0.01236996,
           "calibration_samples": 30,
           "data_as_of": "2026-09-10 00:00:00",
           "estimated_tax_cost_dollars": 0.0705,
@@ -7813,7 +8058,7 @@
           "uncertainty_buffer_dollars": 0.015
         },
         {
-          "calibrated_forward_return_per_score": 0.01237,
+          "calibrated_forward_return_per_score": 0.01236996,
           "calibration_samples": 30,
           "data_as_of": "2026-09-11 00:00:00",
           "estimated_tax_cost_dollars": 0.0705,
@@ -7830,7 +8075,7 @@
           "uncertainty_buffer_dollars": 0.015
         },
         {
-          "calibrated_forward_return_per_score": 0.01237,
+          "calibrated_forward_return_per_score": 0.01236996,
           "calibration_samples": 30,
           "data_as_of": "2026-09-14 00:00:00",
           "estimated_tax_cost_dollars": 0.0705,
@@ -7847,7 +8092,7 @@
           "uncertainty_buffer_dollars": 0.015
         },
         {
-          "calibrated_forward_return_per_score": 0.01659871,
+          "calibrated_forward_return_per_score": 0.01659873,
           "calibration_samples": 30,
           "data_as_of": "2026-09-10 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -7864,7 +8109,7 @@
           "uncertainty_buffer_dollars": 0.0265
         },
         {
-          "calibrated_forward_return_per_score": 0.01659871,
+          "calibrated_forward_return_per_score": 0.01659873,
           "calibration_samples": 30,
           "data_as_of": "2026-09-11 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -7881,7 +8126,7 @@
           "uncertainty_buffer_dollars": 0.0265
         },
         {
-          "calibrated_forward_return_per_score": 0.01659871,
+          "calibrated_forward_return_per_score": 0.01659873,
           "calibration_samples": 30,
           "data_as_of": "2026-09-14 00:00:00",
           "estimated_tax_cost_dollars": 0.0,
@@ -9790,6 +10035,102 @@
           "Automated 5-, 21-, and 63-session maturation remains unimplemented."
         ],
         "method": "locked_independent_review"
+      },
+      {
+        "as_of": "2026-09-15T14:57:49.500656449Z",
+        "cycle_id": "codex-comparison-2026-09-15-contribution-fallback",
+        "holdings": [
+          {
+            "agreement": true,
+            "codex_view": "hold",
+            "confidence": "moderate",
+            "invalidation": "A later completed-session signal or risk-limit breach.",
+            "principal_risk": "Market loss and factor overlap remain possible.",
+            "symbol": "IWM",
+            "traderiser_status": "hold"
+          },
+          {
+            "agreement": true,
+            "codex_view": "hold",
+            "confidence": "moderate",
+            "invalidation": "A later completed-session signal or risk-limit breach.",
+            "principal_risk": "Market loss and factor overlap remain possible.",
+            "symbol": "QQQ",
+            "traderiser_status": "hold"
+          },
+          {
+            "agreement": true,
+            "codex_view": "hold",
+            "confidence": "moderate",
+            "invalidation": "A later completed-session signal or risk-limit breach.",
+            "principal_risk": "Market loss and factor overlap remain possible.",
+            "symbol": "EWT",
+            "traderiser_status": "hold"
+          },
+          {
+            "agreement": true,
+            "codex_view": "hold",
+            "confidence": "moderate",
+            "invalidation": "A later completed-session signal or risk-limit breach.",
+            "principal_risk": "Market loss and factor overlap remain possible.",
+            "symbol": "FLTW",
+            "traderiser_status": "hold"
+          },
+          {
+            "agreement": true,
+            "codex_view": "hold",
+            "confidence": "moderate",
+            "invalidation": "A later completed-session signal or risk-limit breach.",
+            "principal_risk": "Market loss and factor overlap remain possible.",
+            "symbol": "CRAK",
+            "traderiser_status": "hold"
+          },
+          {
+            "agreement": true,
+            "codex_view": "hold",
+            "confidence": "moderate",
+            "invalidation": "A later completed-session signal or risk-limit breach.",
+            "principal_risk": "Market loss and factor overlap remain possible.",
+            "symbol": "DXJ",
+            "traderiser_status": "hold/reinforce"
+          },
+          {
+            "agreement": true,
+            "codex_view": "hold",
+            "confidence": "moderate",
+            "invalidation": "A later completed-session signal or risk-limit breach.",
+            "principal_risk": "Market loss and factor overlap remain possible.",
+            "symbol": "DIVB",
+            "traderiser_status": "hold"
+          },
+          {
+            "agreement": true,
+            "codex_view": "hold",
+            "confidence": "moderate",
+            "invalidation": "A later completed-session signal or risk-limit breach.",
+            "principal_risk": "Market loss and factor overlap remain possible.",
+            "symbol": "FBT",
+            "traderiser_status": "hold/reinforce"
+          },
+          {
+            "agreement": true,
+            "codex_view": "hold",
+            "confidence": "moderate",
+            "invalidation": "A later completed-session signal or risk-limit breach.",
+            "principal_risk": "Market loss and factor overlap remain possible.",
+            "symbol": "IHE",
+            "traderiser_status": "hold/reinforce"
+          },
+          {
+            "agreement": true,
+            "codex_view": "hold",
+            "confidence": "moderate",
+            "invalidation": "A later completed-session signal or risk-limit breach.",
+            "principal_risk": "Market loss and factor overlap remain possible.",
+            "symbol": "VLUE",
+            "traderiser_status": "hold/reinforce"
+          }
+        ]
       }
     ]
   },
