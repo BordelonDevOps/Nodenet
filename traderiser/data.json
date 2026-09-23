@@ -1,6 +1,6 @@
 {
   "schema_version": "1.6.0",
-  "published_at": "2026-09-23T14:19:36.152860+00:00",
+  "published_at": "2026-09-23T14:20:36.253407+00:00",
   "experiment": {
     "name": "TradeRiser Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -8174,7 +8174,7 @@
           "value": 7.0068
         }
       ],
-      "captured_at": "2026-09-23T14:19:36.151107+00:00",
+      "captured_at": "2026-09-23T14:20:36.251148+00:00",
       "source": "live_broker_snapshot",
       "breakdown_estimated": false,
       "note": "Holding values came from the latest reconciled quantities and fresh quotes.",
