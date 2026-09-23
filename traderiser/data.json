@@ -1,6 +1,6 @@
 {
   "schema_version": "1.6.0",
-  "published_at": "2026-09-22T14:19:52.910299+00:00",
+  "published_at": "2026-09-23T14:19:36.152860+00:00",
   "experiment": {
     "name": "TradeRiser Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -8,13 +8,13 @@
     "objective": "Continue the live observation through December 31, 2026 using the experiment's cumulative contributed funds."
   },
   "account": {
-    "value": 56.7443,
+    "value": 56.4409,
     "cash": 0.0,
-    "invested": 56.7384,
+    "invested": 56.4374,
     "buying_power": 0.0,
     "net_contributions": 55.0,
-    "investment_gain": 1.7443,
-    "simple_return_on_contributions": 0.03171526,
+    "investment_gain": 1.4409,
+    "simple_return_on_contributions": 0.02619895,
     "currency": "USD"
   },
   "holdings": [
@@ -23,7 +23,7 @@
       "shares": 0.020441,
       "average_price": 301.84,
       "cost_basis": 6.1699,
-      "current_value": 5.8909,
+      "current_value": 5.8065,
       "strategy": "champion"
     },
     {
@@ -39,7 +39,7 @@
       "shares": 0.104102,
       "average_price": 109.99,
       "cost_basis": 11.4502,
-      "current_value": 12.0004,
+      "current_value": 11.7302,
       "strategy": "champion"
     },
     {
@@ -47,7 +47,7 @@
       "shares": 0.020992,
       "average_price": 104.8,
       "cost_basis": 2.2,
-      "current_value": 2.3343,
+      "current_value": 2.288,
       "strategy": "champion"
     },
     {
@@ -55,7 +55,7 @@
       "shares": 0.110477,
       "average_price": 60.92,
       "cost_basis": 6.7303,
-      "current_value": 7.0551,
+      "current_value": 7.1191,
       "strategy": "champion"
     },
     {
@@ -63,7 +63,7 @@
       "shares": 0.032612,
       "average_price": 178.16,
       "cost_basis": 5.8102,
-      "current_value": 5.9103,
+      "current_value": 5.868,
       "strategy": "champion"
     },
     {
@@ -71,7 +71,7 @@
       "shares": 0.03546,
       "average_price": 69.09,
       "cost_basis": 2.4499,
-      "current_value": 2.3581,
+      "current_value": 2.3592,
       "strategy": "champion"
     },
     {
@@ -79,7 +79,7 @@
       "shares": 0.026357,
       "average_price": 264.83,
       "cost_basis": 6.9801,
-      "current_value": 7.1446,
+      "current_value": 7.1902,
       "strategy": "champion"
     },
     {
@@ -87,7 +87,7 @@
       "shares": 0.06871,
       "average_price": 102.75,
       "cost_basis": 7.06,
-      "current_value": 7.0149,
+      "current_value": 7.0679,
       "strategy": "champion"
     },
     {
@@ -95,7 +95,7 @@
       "shares": 0.034651,
       "average_price": 204.03,
       "cost_basis": 7.0698,
-      "current_value": 7.0283,
+      "current_value": 7.0068,
       "strategy": "champion"
     }
   ],
@@ -8052,9 +8052,44 @@
       "cash": 0.0,
       "holdings": [
         {
+          "symbol": "CRAK",
+          "shares": 0.110477,
+          "value": 6.8301
+        },
+        {
+          "symbol": "DIVB",
+          "shares": 0.03546,
+          "value": 2.4864
+        },
+        {
+          "symbol": "DXJ",
+          "shares": 0.032612,
+          "value": 5.8964
+        },
+        {
+          "symbol": "EWT",
+          "shares": 0.104102,
+          "value": 11.6202
+        },
+        {
+          "symbol": "FBT",
+          "shares": 0.026357,
+          "value": 7.0838
+        },
+        {
+          "symbol": "FLTW",
+          "shares": 0.020992,
+          "value": 2.2327
+        },
+        {
+          "symbol": "IHE",
+          "shares": 0.06871,
+          "value": 7.165
+        },
+        {
           "symbol": "IWM",
           "shares": 0.020441,
-          "value": 5.8909
+          "value": 6.2532
         },
         {
           "symbol": "QQQ",
@@ -8062,50 +8097,15 @@
           "value": 0.0015
         },
         {
-          "symbol": "EWT",
-          "shares": 0.104102,
-          "value": 12.0004
-        },
-        {
-          "symbol": "FLTW",
-          "shares": 0.020992,
-          "value": 2.3343
-        },
-        {
-          "symbol": "CRAK",
-          "shares": 0.110477,
-          "value": 7.0551
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.032612,
-          "value": 5.9103
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.03546,
-          "value": 2.3581
-        },
-        {
-          "symbol": "FBT",
-          "shares": 0.026357,
-          "value": 7.1446
-        },
-        {
-          "symbol": "IHE",
-          "shares": 0.06871,
-          "value": 7.0149
-        },
-        {
           "symbol": "VLUE",
           "shares": 0.034651,
-          "value": 7.0283
+          "value": 7.1751
         }
       ],
-      "captured_at": "2026-09-22T14:19:52.906789+00:00",
-      "source": "live_broker_snapshot",
-      "breakdown_estimated": false,
-      "note": "Holding values came from the latest reconciled quantities and fresh quotes.",
+      "captured_at": "2026-09-22T14:18:50.170466+00:00",
+      "source": "broker_snapshot",
+      "breakdown_estimated": true,
+      "note": "The broker total is exact. Historical holding values are allocated using the quantities and average prices stored in that reconciled snapshot.",
       "net_cash_flow": 0.0,
       "contributions": 0.0,
       "withdrawals": -0.0,
@@ -8117,11 +8117,83 @@
       "benchmark_value": 0.0,
       "benchmark_return": null,
       "excess_return": null
+    },
+    {
+      "date": "2026-09-23",
+      "value": 56.4409,
+      "cash": 0.0,
+      "holdings": [
+        {
+          "symbol": "IWM",
+          "shares": 0.020441,
+          "value": 5.8065
+        },
+        {
+          "symbol": "QQQ",
+          "shares": 2e-06,
+          "value": 0.0015
+        },
+        {
+          "symbol": "EWT",
+          "shares": 0.104102,
+          "value": 11.7302
+        },
+        {
+          "symbol": "FLTW",
+          "shares": 0.020992,
+          "value": 2.288
+        },
+        {
+          "symbol": "CRAK",
+          "shares": 0.110477,
+          "value": 7.1191
+        },
+        {
+          "symbol": "DXJ",
+          "shares": 0.032612,
+          "value": 5.868
+        },
+        {
+          "symbol": "DIVB",
+          "shares": 0.03546,
+          "value": 2.3592
+        },
+        {
+          "symbol": "FBT",
+          "shares": 0.026357,
+          "value": 7.1902
+        },
+        {
+          "symbol": "IHE",
+          "shares": 0.06871,
+          "value": 7.0679
+        },
+        {
+          "symbol": "VLUE",
+          "shares": 0.034651,
+          "value": 7.0068
+        }
+      ],
+      "captured_at": "2026-09-23T14:19:36.151107+00:00",
+      "source": "live_broker_snapshot",
+      "breakdown_estimated": false,
+      "note": "Holding values came from the latest reconciled quantities and fresh quotes.",
+      "net_cash_flow": 0.0,
+      "contributions": 0.0,
+      "withdrawals": -0.0,
+      "change": -0.3034,
+      "change_pct": -0.00534679,
+      "market_gain": -0.3034,
+      "time_weighted_return": 2.76518659,
+      "cash_flow_timing": "none",
+      "benchmark_value": 0.0,
+      "benchmark_return": null,
+      "excess_return": null
     }
   ],
   "performance": {
-    "simple_return_on_contributions": 0.03171526,
-    "time_weighted_return": 2.78542648,
+    "simple_return_on_contributions": 0.02619895,
+    "time_weighted_return": 2.76518659,
     "time_weighted_quality": "timestamped",
     "money_weighted": {
       "return": null,
@@ -8486,6 +8558,14 @@
           "return": null,
           "actual_return": 2.78542648,
           "excess_return": null
+        },
+        {
+          "date": "2026-09-23",
+          "price": 115.333,
+          "value": 0.0,
+          "return": null,
+          "actual_return": 2.76518659,
+          "excess_return": null
         }
       ],
       "note": "Uses the same published cash flows and the latest completed-session benchmark price available to each evaluation date."
@@ -8527,7 +8607,7 @@
     ]
   },
   "evidence": {
-    "live_days": 44,
+    "live_days": 45,
     "champion_cycles": 53,
     "challenger_cycles": 38,
     "reconciled_trades": 32,
