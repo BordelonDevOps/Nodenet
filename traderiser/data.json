@@ -1,6 +1,6 @@
 {
   "schema_version": "1.6.0",
-  "published_at": "2026-09-25T14:21:11.847516+00:00",
+  "published_at": "2026-09-25T14:21:39.502700+00:00",
   "experiment": {
     "name": "TradeRiser Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -12,9 +12,9 @@
     "cash": 0.0,
     "invested": 56.221,
     "buying_power": 0.0,
-    "net_contributions": 15.0,
-    "investment_gain": 41.2209,
-    "simple_return_on_contributions": 2.74806304,
+    "net_contributions": 55.0,
+    "investment_gain": 1.2209,
+    "simple_return_on_contributions": 0.02219901,
     "currency": "USD"
   },
   "holdings": [
@@ -8556,7 +8556,7 @@
           "value": 6.95
         }
       ],
-      "captured_at": "2026-09-25T14:21:11.845030+00:00",
+      "captured_at": "2026-09-25T14:21:39.500797+00:00",
       "source": "live_broker_snapshot",
       "breakdown_estimated": false,
       "note": "Holding values came from the latest reconciled quantities and fresh quotes.",
@@ -8574,7 +8574,7 @@
     }
   ],
   "performance": {
-    "simple_return_on_contributions": 2.74806304,
+    "simple_return_on_contributions": 0.02219901,
     "time_weighted_return": 2.75051033,
     "time_weighted_quality": "timestamped",
     "money_weighted": {
