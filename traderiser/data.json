@@ -1,6 +1,6 @@
 {
   "schema_version": "1.6.0",
-  "published_at": "2026-10-01T14:28:29.051776+00:00",
+  "published_at": "2026-10-01T14:28:46.873539+00:00",
   "experiment": {
     "name": "TradeRiser Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -10,7 +10,7 @@
   "account": {
     "value": 65.5702,
     "cash": 10.0,
-    "invested": 55.5724,
+    "invested": 55.5725,
     "buying_power": 10.0,
     "net_contributions": 65.0,
     "investment_gain": 0.5702,
@@ -55,7 +55,7 @@
       "shares": 0.110477,
       "average_price": 60.92,
       "cost_basis": 6.7303,
-      "current_value": 7.0021,
+      "current_value": 7.0026,
       "strategy": "champion"
     },
     {
@@ -87,7 +87,7 @@
       "shares": 0.06871,
       "average_price": 102.75,
       "cost_basis": 7.06,
-      "current_value": 6.8348,
+      "current_value": 6.8346,
       "strategy": "champion"
     },
     {
@@ -95,7 +95,7 @@
       "shares": 0.034651,
       "average_price": 204.03,
       "cost_basis": 7.0698,
-      "current_value": 6.7963,
+      "current_value": 6.7961,
       "strategy": "champion"
     }
   ],
@@ -9558,7 +9558,7 @@
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 7.0021
+          "value": 7.0026
         },
         {
           "symbol": "DXJ",
@@ -9578,15 +9578,15 @@
         {
           "symbol": "IHE",
           "shares": 0.06871,
-          "value": 6.8348
+          "value": 6.8346
         },
         {
           "symbol": "VLUE",
           "shares": 0.034651,
-          "value": 6.7963
+          "value": 6.7961
         }
       ],
-      "captured_at": "2026-10-01T14:28:29.049867+00:00",
+      "captured_at": "2026-10-01T14:28:46.871515+00:00",
       "source": "live_broker_snapshot",
       "breakdown_estimated": false,
       "note": "Holding values came from the latest reconciled quantities and fresh quotes.",
