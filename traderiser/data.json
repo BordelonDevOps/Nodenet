@@ -1,6 +1,6 @@
 {
   "schema_version": "1.6.0",
-  "published_at": "2026-10-06T15:20:14.936015+00:00",
+  "published_at": "2026-10-06T17:21:51.686994+00:00",
   "experiment": {
     "name": "TradeRiser Agentic Trading Experiment",
     "started": "2026-08-10",
@@ -8,13 +8,13 @@
     "objective": "Continue the live observation through December 31, 2026 using the experiment's cumulative contributed funds."
   },
   "account": {
-    "value": 66.9838,
-    "cash": 3.54,
-    "invested": 63.491,
-    "buying_power": 3.54,
+    "value": 66.8842,
+    "cash": 0.0,
+    "invested": 66.8627,
+    "buying_power": 0.0,
     "net_contributions": 65.0,
-    "investment_gain": 1.9838,
-    "simple_return_on_contributions": 0.03051985,
+    "investment_gain": 1.8842,
+    "simple_return_on_contributions": 0.02898783,
     "currency": "USD"
   },
   "holdings": [
@@ -23,7 +23,7 @@
       "shares": 0.006091,
       "average_price": 302.09,
       "cost_basis": 1.84,
-      "current_value": 1.7243,
+      "current_value": 1.7149,
       "strategy": "champion"
     },
     {
@@ -31,7 +31,7 @@
       "shares": 0.104102,
       "average_price": 109.99,
       "cost_basis": 11.4502,
-      "current_value": 12.3026,
+      "current_value": 12.2695,
       "strategy": "champion"
     },
     {
@@ -39,7 +39,7 @@
       "shares": 0.101392,
       "average_price": 110.46,
       "cost_basis": 11.1998,
-      "current_value": 11.5749,
+      "current_value": 11.5126,
       "strategy": "champion"
     },
     {
@@ -47,7 +47,7 @@
       "shares": 0.110477,
       "average_price": 60.92,
       "cost_basis": 6.7303,
-      "current_value": 7.1656,
+      "current_value": 7.223,
       "strategy": "champion"
     },
     {
@@ -55,7 +55,7 @@
       "shares": 0.040634,
       "average_price": 178.42,
       "cost_basis": 7.2499,
-      "current_value": 7.5018,
+      "current_value": 7.4813,
       "strategy": "champion"
     },
     {
@@ -63,7 +63,7 @@
       "shares": 0.037654,
       "average_price": 65.33,
       "cost_basis": 2.4599,
-      "current_value": 2.46,
+      "current_value": 2.455,
       "strategy": "champion"
     },
     {
@@ -71,7 +71,7 @@
       "shares": 0.026357,
       "average_price": 264.83,
       "cost_basis": 6.9801,
-      "current_value": 7.0324,
+      "current_value": 6.9804,
       "strategy": "champion"
     },
     {
@@ -79,7 +79,7 @@
       "shares": 0.06871,
       "average_price": 102.75,
       "cost_basis": 7.06,
-      "current_value": 6.763,
+      "current_value": 6.7401,
       "strategy": "champion"
     },
     {
@@ -87,7 +87,15 @@
       "shares": 0.034651,
       "average_price": 204.03,
       "cost_basis": 7.0698,
-      "current_value": 6.9664,
+      "current_value": 6.9467,
+      "strategy": "champion"
+    },
+    {
+      "symbol": "SOXX",
+      "shares": 0.005984,
+      "average_price": 591.58,
+      "cost_basis": 3.54,
+      "current_value": 3.5392,
       "strategy": "champion"
     }
   ],
@@ -820,6 +828,24 @@
       "average_price": 762.7801,
       "fees": 0.0,
       "reconciled_at": "2026-10-06T15:18:43.085048+00:00",
+      "authorized": true,
+      "orders_match": true,
+      "source": "agentic",
+      "authorization_label": "delegated policy passed",
+      "execution_label": null,
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic"
+    },
+    {
+      "symbol": "SOXX",
+      "side": "buy",
+      "dollar_amount": 3.54,
+      "state": "filled",
+      "quantity": 0.005984,
+      "average_price": 591.5342,
+      "fees": 0.0,
+      "reconciled_at": "2026-10-06T17:21:43.893899+00:00",
       "authorized": true,
       "orders_match": true,
       "source": "agentic",
@@ -7131,12 +7157,7 @@
         }
       ],
       "explanation": [
-        "Only assets above their 200-day average with positive 3- and 6-month momentum qualify.",
-        "Qualifying assets are ranked by 12-to-1 momentum, which omits the most recent month to reduce short-term reversal effects; an RSI overbought penalty, correlation filter, and covariance-aware risk sizing are then applied.",
-        "The account keeps at least the configured cash reserve and uses no leverage or short positions.",
-        "Every completed market session is evaluated; orders are proposed only when the allocation drift exceeds the configured band or a severe risk exit triggers.",
-        "Risk exits combine trend failure with either weak momentum or a volatility-sensitive drawdown from the recent high.",
-        "This is a proposed paper-trading decision, not an executed order or profit guarantee."
+        "User clarified that the original TradeRiser SOXX purchase should complete the QQQ replacement."
       ],
       "regime": null,
       "stage": "reconciliation",
@@ -7265,6 +7286,38 @@
         "risk_asset_breadth": 0.65
       },
       "stage": "research"
+    },
+    {
+      "kind": "executed_trade",
+      "generated_at": "2026-10-06T17:21:43.893899+00:00",
+      "status": "filled",
+      "selected": [
+        "SOXX"
+      ],
+      "orders": [
+        {
+          "symbol": "SOXX",
+          "side": "buy",
+          "dollars": 3.54,
+          "status": "filled",
+          "quantity": 0.005984,
+          "average_price": 591.5342,
+          "fees": 0.0
+        }
+      ],
+      "authorized": true,
+      "authorization_label": "delegated policy passed",
+      "reconciled": true,
+      "source": "agentic",
+      "execution_label": null,
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic",
+      "stage": "execution",
+      "explanation": [
+        "The champion proposal passed the live authorization gate and the broker outcome was reconciled."
+      ],
+      "regime": null
     }
   ],
   "portfolio_history": [
@@ -10694,66 +10747,71 @@
     },
     {
       "date": "2026-10-06",
-      "value": 66.9838,
-      "cash": 3.54,
+      "value": 66.8842,
+      "cash": 0.0,
       "holdings": [
         {
           "symbol": "IWM",
           "shares": 0.006091,
-          "value": 1.7243
+          "value": 1.7149
         },
         {
           "symbol": "EWT",
           "shares": 0.104102,
-          "value": 12.3026
+          "value": 12.2695
         },
         {
           "symbol": "FLTW",
           "shares": 0.101392,
-          "value": 11.5749
+          "value": 11.5126
         },
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 7.1656
+          "value": 7.223
         },
         {
           "symbol": "DXJ",
           "shares": 0.040634,
-          "value": 7.5018
+          "value": 7.4813
         },
         {
           "symbol": "DIVB",
           "shares": 0.037654,
-          "value": 2.46
+          "value": 2.455
         },
         {
           "symbol": "FBT",
           "shares": 0.026357,
-          "value": 7.0324
+          "value": 6.9804
         },
         {
           "symbol": "IHE",
           "shares": 0.06871,
-          "value": 6.763
+          "value": 6.7401
         },
         {
           "symbol": "VLUE",
           "shares": 0.034651,
-          "value": 6.9664
+          "value": 6.9467
+        },
+        {
+          "symbol": "SOXX",
+          "shares": 0.005984,
+          "value": 3.5392
         }
       ],
-      "captured_at": "2026-10-06T15:20:14.933875+00:00",
+      "captured_at": "2026-10-06T17:21:51.684862+00:00",
       "source": "live_broker_snapshot",
       "breakdown_estimated": false,
       "note": "Holding values came from the latest reconciled quantities and fresh quotes.",
       "net_cash_flow": 0.0,
       "contributions": 0.0,
       "withdrawals": -0.0,
-      "change": 0.5181,
-      "change_pct": 0.007795,
-      "market_gain": 0.5181,
-      "time_weighted_return": 3.46850609,
+      "change": 0.4185,
+      "change_pct": 0.00629648,
+      "market_gain": 0.4185,
+      "time_weighted_return": 3.46186175,
       "cash_flow_timing": "none",
       "benchmark_value": 0.0,
       "benchmark_return": null,
@@ -10761,8 +10819,8 @@
     }
   ],
   "performance": {
-    "simple_return_on_contributions": 0.03051985,
-    "time_weighted_return": 3.46850609,
+    "simple_return_on_contributions": 0.02898783,
+    "time_weighted_return": 3.46186175,
     "time_weighted_quality": "timestamped",
     "money_weighted": {
       "return": null,
@@ -11237,7 +11295,7 @@
           "price": 117.3553,
           "value": 0.0,
           "return": null,
-          "actual_return": 3.46850609,
+          "actual_return": 3.46186175,
           "excess_return": null
         }
       ],
@@ -11247,7 +11305,7 @@
   "daily_briefing": {
     "as_of": "2026-10-05 00:00:00",
     "headline": "TradeRiser proposed 2 portfolio changes.",
-    "portfolio_context": "The live account currently holds IWM, EWT, FLTW, CRAK, DXJ, DIVB, FBT, IHE, VLUE.",
+    "portfolio_context": "The live account currently holds IWM, EWT, FLTW, CRAK, DXJ, DIVB, FBT, IHE, VLUE, SOXX.",
     "market_context": "The completed-session screen qualified CRAK, FLTW, EWT, SOXX, VLUE, SMH, FBT, DXJ, DIVB, XSD, QTUM, GRID, URTH, IVV, SPY, SPHB, OEF, XLK, FTEC, VGT, IYW, IGM, XLG, QQQ, MTUM, IUSG, SPYG, VOOG, IVW, MGK, SCHG, VUG, IWY, VONG, IWF, IWP for consideration.",
     "champion": "The live strategy currently favors IWP, SOXX, URTH.",
     "challenger": "The research-only challenger favors IYW, VGT, FTEC.",
@@ -11283,7 +11341,7 @@
     "live_days": 58,
     "champion_cycles": 64,
     "challenger_cycles": 48,
-    "reconciled_trades": 40,
+    "reconciled_trades": 41,
     "benchmark": "Equal-weight provider universe",
     "backtest_method": "monthly_walk_forward_next_session",
     "limitations": [
