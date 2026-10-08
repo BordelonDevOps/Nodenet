@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8.0",
-  "published_at": "2026-10-08T18:50:52.562287+00:00",
-  "valuation_as_of": "2026-10-08T18:50:41.289000+00:00",
+  "published_at": "2026-10-08T18:55:24.335300+00:00",
+  "valuation_as_of": "2026-10-08T18:55:13.147000+00:00",
   "valuation_provenance": "fresh_broker_supplied",
   "experiment": {
     "name": "TradeRiser Agentic Trading Experiment",
@@ -10,13 +10,13 @@
     "objective": "Continue the live observation through December 31, 2026 using the experiment&amp;#x27;s cumulative contributed funds."
   },
   "account": {
-    "value": 65.6247,
+    "value": 65.618,
     "cash": 8.36,
-    "invested": 57.2647,
+    "invested": 57.2542,
     "buying_power": 8.36,
     "net_contributions": 65.0,
-    "investment_gain": 0.6247,
-    "simple_return_on_contributions": 0.00961077,
+    "investment_gain": 0.618,
+    "simple_return_on_contributions": 0.00950769,
     "currency": "USD"
   },
   "holdings": [
@@ -41,7 +41,7 @@
       "shares": 0.101392,
       "average_price": 110.46,
       "cost_basis": 11.1998,
-      "current_value": 11.0857,
+      "current_value": 11.0801,
       "strategy": "champion"
     },
     {
@@ -57,7 +57,7 @@
       "shares": 0.040634,
       "average_price": 178.42,
       "cost_basis": 7.2499,
-      "current_value": 7.3308,
+      "current_value": 7.3312,
       "strategy": "champion"
     },
     {
@@ -65,7 +65,7 @@
       "shares": 0.037654,
       "average_price": 65.33,
       "cost_basis": 2.4599,
-      "current_value": 2.487,
+      "current_value": 2.4863,
       "strategy": "champion"
     },
     {
@@ -73,7 +73,7 @@
       "shares": 0.026357,
       "average_price": 264.83,
       "cost_basis": 6.9801,
-      "current_value": 6.8512,
+      "current_value": 6.8466,
       "strategy": "champion"
     },
     {
@@ -89,7 +89,7 @@
       "shares": 0.034651,
       "average_price": 204.03,
       "cost_basis": 7.0698,
-      "current_value": 6.9295,
+      "current_value": 6.9307,
       "strategy": "champion"
     },
     {
@@ -97,7 +97,7 @@
       "shares": 0.005984,
       "average_price": 591.58,
       "cost_basis": 3.54,
-      "current_value": 3.3637,
+      "current_value": 3.3625,
       "strategy": "champion"
     }
   ],
@@ -428,6 +428,25 @@
       "execution_label": "legacy_terminal_reconciled_fill",
       "deferred_follow_up": null,
       "decision_source": "historical_journal_continuity",
+      "broker_submission_source": "agentic"
+    },
+    {
+      "symbol": "SPY",
+      "side": "sell",
+      "dollar_amount": 5.9282,
+      "filled_notional": 5.9282,
+      "state": "filled",
+      "quantity": 0.00769,
+      "average_price": 770.9022,
+      "fees": 0.0,
+      "reconciled_at": "2026-09-04T14:20:34.345000+00:00",
+      "authorized": null,
+      "orders_match": null,
+      "deferred_follow_up": null,
+      "source": "agentic",
+      "authorization_label": "historical_fill_no_delegated_authorization",
+      "execution_label": "historical_fill",
+      "decision_source": "not_recorded",
       "broker_submission_source": "agentic"
     },
     {
@@ -3440,6 +3459,38 @@
       "regime": null,
       "stage": "authorization",
       "authorized": false
+    },
+    {
+      "kind": "historical_trade",
+      "generated_at": "2026-09-04T14:20:34.345000+00:00",
+      "status": "filled",
+      "selected": [
+        "SPY"
+      ],
+      "orders": [
+        {
+          "symbol": "SPY",
+          "side": "sell",
+          "dollars": 5.9282,
+          "status": "filled",
+          "quantity": 0.00769,
+          "average_price": 770.9022,
+          "fees": 0.0
+        }
+      ],
+      "authorized": null,
+      "authorization_label": "historical_fill_no_delegated_authorization",
+      "reconciled": null,
+      "source": "agentic",
+      "execution_label": "historical_fill",
+      "deferred_follow_up": null,
+      "decision_source": "not_recorded",
+      "broker_submission_source": "agentic",
+      "stage": "history",
+      "explanation": [
+        "A terminal historical fill is included for continuity; no delegated authorization is claimed."
+      ],
+      "regime": null
     },
     {
       "kind": "champion",
@@ -8609,57 +8660,52 @@
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 5.9914
+          "value": 6.7664
         },
         {
           "symbol": "DIVB",
           "shares": 0.035311,
-          "value": 2.1722
+          "value": 2.4532
         },
         {
           "symbol": "DXJ",
           "shares": 0.015514,
-          "value": 2.4927
+          "value": 2.8152
         },
         {
           "symbol": "EWT",
           "shares": 0.027875,
-          "value": 2.6886
+          "value": 3.0364
         },
         {
           "symbol": "FBT",
           "shares": 0.013854,
-          "value": 3.3028
+          "value": 3.7301
         },
         {
           "symbol": "FLTW",
           "shares": 0.020992,
-          "value": 1.9585
+          "value": 2.2119
         },
         {
           "symbol": "IHE",
           "shares": 0.041468,
-          "value": 3.8459
+          "value": 4.3434
         },
         {
           "symbol": "IWM",
           "shares": 0.028651,
-          "value": 7.6899
+          "value": 8.6847
         },
         {
           "symbol": "QQQ",
           "shares": 0.008422,
-          "value": 5.4122
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.00769,
-          "value": 5.2836
+          "value": 6.1123
         },
         {
           "symbol": "VLUE",
           "shares": 0.02899,
-          "value": 5.288
+          "value": 5.9721
         }
       ],
       "captured_at": "2026-09-04T15:36:40.837814+00:00",
@@ -8689,57 +8735,52 @@
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 5.9914
+          "value": 6.7664
         },
         {
           "symbol": "DIVB",
           "shares": 0.035311,
-          "value": 2.1722
+          "value": 2.4532
         },
         {
           "symbol": "DXJ",
           "shares": 0.015514,
-          "value": 2.4927
+          "value": 2.8152
         },
         {
           "symbol": "EWT",
           "shares": 0.027875,
-          "value": 2.6886
+          "value": 3.0364
         },
         {
           "symbol": "FBT",
           "shares": 0.013854,
-          "value": 3.3028
+          "value": 3.7301
         },
         {
           "symbol": "FLTW",
           "shares": 0.020992,
-          "value": 1.9585
+          "value": 2.2119
         },
         {
           "symbol": "IHE",
           "shares": 0.041468,
-          "value": 3.8459
+          "value": 4.3434
         },
         {
           "symbol": "IWM",
           "shares": 0.028651,
-          "value": 7.6899
+          "value": 8.6847
         },
         {
           "symbol": "QQQ",
           "shares": 0.008422,
-          "value": 5.4122
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.00769,
-          "value": 5.2836
+          "value": 6.1123
         },
         {
           "symbol": "VLUE",
           "shares": 0.02899,
-          "value": 5.288
+          "value": 5.9721
         }
       ],
       "captured_at": null,
@@ -8769,57 +8810,52 @@
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 5.9914
+          "value": 6.7664
         },
         {
           "symbol": "DIVB",
           "shares": 0.035311,
-          "value": 2.1722
+          "value": 2.4532
         },
         {
           "symbol": "DXJ",
           "shares": 0.015514,
-          "value": 2.4927
+          "value": 2.8152
         },
         {
           "symbol": "EWT",
           "shares": 0.027875,
-          "value": 2.6886
+          "value": 3.0364
         },
         {
           "symbol": "FBT",
           "shares": 0.013854,
-          "value": 3.3028
+          "value": 3.7301
         },
         {
           "symbol": "FLTW",
           "shares": 0.020992,
-          "value": 1.9585
+          "value": 2.2119
         },
         {
           "symbol": "IHE",
           "shares": 0.041468,
-          "value": 3.8459
+          "value": 4.3434
         },
         {
           "symbol": "IWM",
           "shares": 0.028651,
-          "value": 7.6899
+          "value": 8.6847
         },
         {
           "symbol": "QQQ",
           "shares": 0.008422,
-          "value": 5.4122
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.00769,
-          "value": 5.2836
+          "value": 6.1123
         },
         {
           "symbol": "VLUE",
           "shares": 0.02899,
-          "value": 5.288
+          "value": 5.9721
         }
       ],
       "captured_at": null,
@@ -9449,57 +9485,52 @@
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 5.9988
+          "value": 6.6358
         },
         {
           "symbol": "DIVB",
           "shares": 0.035311,
-          "value": 2.1749
+          "value": 2.4059
         },
         {
           "symbol": "DXJ",
           "shares": 0.032612,
-          "value": 5.1787
+          "value": 5.7287
         },
         {
           "symbol": "EWT",
           "shares": 0.049561,
-          "value": 4.8312
+          "value": 5.3442
         },
         {
           "symbol": "FBT",
           "shares": 0.026357,
-          "value": 6.2216
+          "value": 6.8823
         },
         {
           "symbol": "FLTW",
           "shares": 0.020992,
-          "value": 1.961
+          "value": 2.1692
         },
         {
           "symbol": "IHE",
           "shares": 0.068613,
-          "value": 6.2841
+          "value": 6.9514
         },
         {
           "symbol": "IWM",
           "shares": 0.020371,
-          "value": 5.4743
+          "value": 6.0556
         },
         {
           "symbol": "QQQ",
           "shares": 0.008422,
-          "value": 5.4189
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.00769,
-          "value": 5.2902
+          "value": 5.9943
         },
         {
           "symbol": "VLUE",
           "shares": 0.034503,
-          "value": 6.275
+          "value": 6.9413
         }
       ],
       "captured_at": "2026-09-15T14:58:59.855117+00:00",
@@ -9529,57 +9560,52 @@
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 6.0548
+          "value": 6.6978
         },
         {
           "symbol": "DIVB",
           "shares": 0.035311,
-          "value": 2.1952
+          "value": 2.4283
         },
         {
           "symbol": "DXJ",
           "shares": 0.032612,
-          "value": 5.2271
+          "value": 5.7822
         },
         {
           "symbol": "EWT",
           "shares": 0.049561,
-          "value": 4.8763
+          "value": 5.3941
         },
         {
           "symbol": "FBT",
           "shares": 0.026357,
-          "value": 6.2797
+          "value": 6.9466
         },
         {
           "symbol": "FLTW",
           "shares": 0.020992,
-          "value": 1.9793
+          "value": 2.1895
         },
         {
           "symbol": "IHE",
           "shares": 0.068613,
-          "value": 6.3428
+          "value": 7.0163
         },
         {
           "symbol": "IWM",
           "shares": 0.020371,
-          "value": 5.5255
+          "value": 6.1122
         },
         {
           "symbol": "QQQ",
           "shares": 0.008422,
-          "value": 5.4695
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.00769,
-          "value": 5.3396
+          "value": 6.0503
         },
         {
           "symbol": "VLUE",
           "shares": 0.034503,
-          "value": 6.3336
+          "value": 7.0061
         }
       ],
       "captured_at": "2026-09-16T14:18:01.692900+00:00",
@@ -9609,57 +9635,52 @@
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 6.1057
+          "value": 6.7546
         },
         {
           "symbol": "DIVB",
           "shares": 0.035311,
-          "value": 2.2137
+          "value": 2.4489
         },
         {
           "symbol": "DXJ",
           "shares": 0.032612,
-          "value": 5.271
+          "value": 5.8312
         },
         {
           "symbol": "EWT",
           "shares": 0.104102,
-          "value": 10.3879
+          "value": 11.4919
         },
         {
           "symbol": "FBT",
           "shares": 0.026357,
-          "value": 6.3325
+          "value": 7.0055
         },
         {
           "symbol": "FLTW",
           "shares": 0.020992,
-          "value": 1.9959
+          "value": 2.208
         },
         {
           "symbol": "IHE",
           "shares": 0.068613,
-          "value": 6.396
+          "value": 7.0758
         },
         {
           "symbol": "IWM",
           "shares": 0.020371,
-          "value": 5.5719
+          "value": 6.1641
         },
         {
           "symbol": "QQQ",
           "shares": 2e-06,
-          "value": 0.0013
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.00769,
-          "value": 5.3844
+          "value": 0.0014
         },
         {
           "symbol": "VLUE",
           "shares": 0.034503,
-          "value": 6.3868
+          "value": 7.0656
         }
       ],
       "captured_at": "2026-09-17T14:20:17.943672+00:00",
@@ -9689,57 +9710,52 @@
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 6.0933
+          "value": 6.7409
         },
         {
           "symbol": "DIVB",
           "shares": 0.035311,
-          "value": 2.2092
+          "value": 2.444
         },
         {
           "symbol": "DXJ",
           "shares": 0.032612,
-          "value": 5.2603
+          "value": 5.8194
         },
         {
           "symbol": "EWT",
           "shares": 0.104102,
-          "value": 10.3668
+          "value": 11.4686
         },
         {
           "symbol": "FBT",
           "shares": 0.026357,
-          "value": 6.3196
+          "value": 6.9913
         },
         {
           "symbol": "FLTW",
           "shares": 0.020992,
-          "value": 1.9918
+          "value": 2.2035
         },
         {
           "symbol": "IHE",
           "shares": 0.068613,
-          "value": 6.383
+          "value": 7.0614
         },
         {
           "symbol": "IWM",
           "shares": 0.020371,
-          "value": 5.5605
+          "value": 6.1515
         },
         {
           "symbol": "QQQ",
           "shares": 2e-06,
-          "value": 0.0013
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.00769,
-          "value": 5.3735
+          "value": 0.0014
         },
         {
           "symbol": "VLUE",
           "shares": 0.034503,
-          "value": 6.3738
+          "value": 7.0512
         }
       ],
       "captured_at": "2026-09-18T14:16:53.578286+00:00",
@@ -9769,57 +9785,52 @@
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 6.0933
+          "value": 6.7409
         },
         {
           "symbol": "DIVB",
           "shares": 0.035311,
-          "value": 2.2092
+          "value": 2.444
         },
         {
           "symbol": "DXJ",
           "shares": 0.032612,
-          "value": 5.2603
+          "value": 5.8194
         },
         {
           "symbol": "EWT",
           "shares": 0.104102,
-          "value": 10.3668
+          "value": 11.4686
         },
         {
           "symbol": "FBT",
           "shares": 0.026357,
-          "value": 6.3196
+          "value": 6.9913
         },
         {
           "symbol": "FLTW",
           "shares": 0.020992,
-          "value": 1.9918
+          "value": 2.2035
         },
         {
           "symbol": "IHE",
           "shares": 0.068613,
-          "value": 6.383
+          "value": 7.0614
         },
         {
           "symbol": "IWM",
           "shares": 0.020371,
-          "value": 5.5605
+          "value": 6.1515
         },
         {
           "symbol": "QQQ",
           "shares": 2e-06,
-          "value": 0.0013
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.00769,
-          "value": 5.3735
+          "value": 0.0014
         },
         {
           "symbol": "VLUE",
           "shares": 0.034503,
-          "value": 6.3738
+          "value": 7.0512
         }
       ],
       "captured_at": null,
@@ -9849,57 +9860,52 @@
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 6.0933
+          "value": 6.7409
         },
         {
           "symbol": "DIVB",
           "shares": 0.035311,
-          "value": 2.2092
+          "value": 2.444
         },
         {
           "symbol": "DXJ",
           "shares": 0.032612,
-          "value": 5.2603
+          "value": 5.8194
         },
         {
           "symbol": "EWT",
           "shares": 0.104102,
-          "value": 10.3668
+          "value": 11.4686
         },
         {
           "symbol": "FBT",
           "shares": 0.026357,
-          "value": 6.3196
+          "value": 6.9913
         },
         {
           "symbol": "FLTW",
           "shares": 0.020992,
-          "value": 1.9918
+          "value": 2.2035
         },
         {
           "symbol": "IHE",
           "shares": 0.068613,
-          "value": 6.383
+          "value": 7.0614
         },
         {
           "symbol": "IWM",
           "shares": 0.020371,
-          "value": 5.5605
+          "value": 6.1515
         },
         {
           "symbol": "QQQ",
           "shares": 2e-06,
-          "value": 0.0013
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.00769,
-          "value": 5.3735
+          "value": 0.0014
         },
         {
           "symbol": "VLUE",
           "shares": 0.034503,
-          "value": 6.3738
+          "value": 7.0512
         }
       ],
       "captured_at": null,
@@ -9929,57 +9935,52 @@
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 6.1616
+          "value": 6.8157
         },
         {
           "symbol": "DIVB",
           "shares": 0.03546,
-          "value": 2.2431
+          "value": 2.4812
         },
         {
           "symbol": "DXJ",
           "shares": 0.032612,
-          "value": 5.3193
+          "value": 5.8839
         },
         {
           "symbol": "EWT",
           "shares": 0.104102,
-          "value": 10.4831
+          "value": 11.5958
         },
         {
           "symbol": "FBT",
           "shares": 0.026357,
-          "value": 6.3905
+          "value": 7.0689
         },
         {
           "symbol": "FLTW",
           "shares": 0.020992,
-          "value": 2.0142
+          "value": 2.228
         },
         {
           "symbol": "IHE",
           "shares": 0.06871,
-          "value": 6.4637
+          "value": 7.1499
         },
         {
           "symbol": "IWM",
           "shares": 0.020441,
-          "value": 5.6412
+          "value": 6.24
         },
         {
           "symbol": "QQQ",
           "shares": 2e-06,
-          "value": 0.0013
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.00769,
-          "value": 5.4338
+          "value": 0.0015
         },
         {
           "symbol": "VLUE",
           "shares": 0.034651,
-          "value": 6.4726
+          "value": 7.1597
         }
       ],
       "captured_at": "2026-09-21T14:20:07.920266+00:00",
@@ -10009,57 +10010,52 @@
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 6.1747
+          "value": 6.8301
         },
         {
           "symbol": "DIVB",
           "shares": 0.03546,
-          "value": 2.2478
+          "value": 2.4864
         },
         {
           "symbol": "DXJ",
           "shares": 0.032612,
-          "value": 5.3306
+          "value": 5.8964
         },
         {
           "symbol": "EWT",
           "shares": 0.104102,
-          "value": 10.5053
+          "value": 11.6204
         },
         {
           "symbol": "FBT",
           "shares": 0.026357,
-          "value": 6.404
+          "value": 7.0838
         },
         {
           "symbol": "FLTW",
           "shares": 0.020992,
-          "value": 2.0185
+          "value": 2.2327
         },
         {
           "symbol": "IHE",
           "shares": 0.06871,
-          "value": 6.4774
+          "value": 7.165
         },
         {
           "symbol": "IWM",
           "shares": 0.020441,
-          "value": 5.6531
+          "value": 6.2532
         },
         {
           "symbol": "QQQ",
           "shares": 2e-06,
-          "value": 0.0013
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.00769,
-          "value": 5.4453
+          "value": 0.0015
         },
         {
           "symbol": "VLUE",
           "shares": 0.034651,
-          "value": 6.4863
+          "value": 7.1748
         }
       ],
       "captured_at": "2026-09-22T14:18:50.170466+00:00",
@@ -10089,57 +10085,52 @@
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 6.1417
+          "value": 6.7936
         },
         {
           "symbol": "DIVB",
           "shares": 0.03546,
-          "value": 2.2358
+          "value": 2.4731
         },
         {
           "symbol": "DXJ",
           "shares": 0.032612,
-          "value": 5.3021
+          "value": 5.8649
         },
         {
           "symbol": "EWT",
           "shares": 0.104102,
-          "value": 10.4491
+          "value": 11.5582
         },
         {
           "symbol": "FBT",
           "shares": 0.026357,
-          "value": 6.3698
+          "value": 7.0459
         },
         {
           "symbol": "FLTW",
           "shares": 0.020992,
-          "value": 2.0077
+          "value": 2.2208
         },
         {
           "symbol": "IHE",
           "shares": 0.06871,
-          "value": 6.4428
+          "value": 7.1267
         },
         {
           "symbol": "IWM",
           "shares": 0.020441,
-          "value": 5.6229
+          "value": 6.2198
         },
         {
           "symbol": "QQQ",
           "shares": 2e-06,
-          "value": 0.0013
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.00769,
-          "value": 5.4161
+          "value": 0.0015
         },
         {
           "symbol": "VLUE",
           "shares": 0.034651,
-          "value": 6.4516
+          "value": 7.1365
         }
       ],
       "captured_at": "2026-09-23T14:19:20.397245+00:00",
@@ -10169,57 +10160,52 @@
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 6.1209
+          "value": 6.7706
         },
         {
           "symbol": "DIVB",
           "shares": 0.03546,
-          "value": 2.2282
+          "value": 2.4648
         },
         {
           "symbol": "DXJ",
           "shares": 0.032612,
-          "value": 5.2841
+          "value": 5.845
         },
         {
           "symbol": "EWT",
           "shares": 0.104102,
-          "value": 10.4137
+          "value": 11.5191
         },
         {
           "symbol": "FBT",
           "shares": 0.026357,
-          "value": 6.3482
+          "value": 7.0221
         },
         {
           "symbol": "FLTW",
           "shares": 0.020992,
-          "value": 2.0009
+          "value": 2.2133
         },
         {
           "symbol": "IHE",
           "shares": 0.06871,
-          "value": 6.421
+          "value": 7.1025
         },
         {
           "symbol": "IWM",
           "shares": 0.020441,
-          "value": 5.6039
+          "value": 6.1987
         },
         {
           "symbol": "QQQ",
           "shares": 2e-06,
-          "value": 0.0013
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.00769,
-          "value": 5.3978
+          "value": 0.0015
         },
         {
           "symbol": "VLUE",
           "shares": 0.034651,
-          "value": 6.4298
+          "value": 7.1123
         }
       ],
       "captured_at": "2026-09-24T14:17:23.037494+00:00",
@@ -10249,57 +10235,52 @@
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 6.1471
+          "value": 6.8031
         },
         {
           "symbol": "DIVB",
           "shares": 0.03546,
-          "value": 2.2378
+          "value": 2.4766
         },
         {
           "symbol": "DXJ",
           "shares": 0.032612,
-          "value": 5.3068
+          "value": 5.8731
         },
         {
           "symbol": "EWT",
           "shares": 0.104102,
-          "value": 10.4584
+          "value": 11.5744
         },
         {
           "symbol": "FBT",
           "shares": 0.026357,
-          "value": 6.3754
+          "value": 7.0558
         },
         {
           "symbol": "FLTW",
           "shares": 0.057336,
-          "value": 5.6904
+          "value": 6.2976
         },
         {
           "symbol": "IHE",
           "shares": 0.06871,
-          "value": 6.4485
+          "value": 7.1366
         },
         {
           "symbol": "IWM",
           "shares": 0.006091,
-          "value": 1.677
+          "value": 1.856
         },
         {
           "symbol": "QQQ",
           "shares": 2e-06,
-          "value": 0.0013
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.00769,
-          "value": 5.4209
+          "value": 0.0015
         },
         {
           "symbol": "VLUE",
           "shares": 0.034651,
-          "value": 6.4574
+          "value": 7.1464
         }
       ],
       "captured_at": "2026-09-25T14:21:01.329605+00:00",
@@ -10329,57 +10310,52 @@
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 6.1471
+          "value": 6.8031
         },
         {
           "symbol": "DIVB",
           "shares": 0.03546,
-          "value": 2.2378
+          "value": 2.4766
         },
         {
           "symbol": "DXJ",
           "shares": 0.032612,
-          "value": 5.3068
+          "value": 5.8731
         },
         {
           "symbol": "EWT",
           "shares": 0.104102,
-          "value": 10.4584
+          "value": 11.5744
         },
         {
           "symbol": "FBT",
           "shares": 0.026357,
-          "value": 6.3754
+          "value": 7.0558
         },
         {
           "symbol": "FLTW",
           "shares": 0.057336,
-          "value": 5.6904
+          "value": 6.2976
         },
         {
           "symbol": "IHE",
           "shares": 0.06871,
-          "value": 6.4485
+          "value": 7.1366
         },
         {
           "symbol": "IWM",
           "shares": 0.006091,
-          "value": 1.677
+          "value": 1.856
         },
         {
           "symbol": "QQQ",
           "shares": 2e-06,
-          "value": 0.0013
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.00769,
-          "value": 5.4209
+          "value": 0.0015
         },
         {
           "symbol": "VLUE",
           "shares": 0.034651,
-          "value": 6.4574
+          "value": 7.1464
         }
       ],
       "captured_at": null,
@@ -10409,57 +10385,52 @@
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 6.1471
+          "value": 6.8031
         },
         {
           "symbol": "DIVB",
           "shares": 0.03546,
-          "value": 2.2378
+          "value": 2.4766
         },
         {
           "symbol": "DXJ",
           "shares": 0.032612,
-          "value": 5.3068
+          "value": 5.8731
         },
         {
           "symbol": "EWT",
           "shares": 0.104102,
-          "value": 10.4584
+          "value": 11.5744
         },
         {
           "symbol": "FBT",
           "shares": 0.026357,
-          "value": 6.3754
+          "value": 7.0558
         },
         {
           "symbol": "FLTW",
           "shares": 0.057336,
-          "value": 5.6904
+          "value": 6.2976
         },
         {
           "symbol": "IHE",
           "shares": 0.06871,
-          "value": 6.4485
+          "value": 7.1366
         },
         {
           "symbol": "IWM",
           "shares": 0.006091,
-          "value": 1.677
+          "value": 1.856
         },
         {
           "symbol": "QQQ",
           "shares": 2e-06,
-          "value": 0.0013
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.00769,
-          "value": 5.4209
+          "value": 0.0015
         },
         {
           "symbol": "VLUE",
           "shares": 0.034651,
-          "value": 6.4574
+          "value": 7.1464
         }
       ],
       "captured_at": null,
@@ -10489,57 +10460,52 @@
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 6.1421
+          "value": 6.7975
         },
         {
           "symbol": "DIVB",
           "shares": 0.03546,
-          "value": 2.236
+          "value": 2.4746
         },
         {
           "symbol": "DXJ",
           "shares": 0.032612,
-          "value": 5.3024
+          "value": 5.8683
         },
         {
           "symbol": "EWT",
           "shares": 0.104102,
-          "value": 10.4498
+          "value": 11.5649
         },
         {
           "symbol": "FBT",
           "shares": 0.026357,
-          "value": 6.3702
+          "value": 7.05
         },
         {
           "symbol": "FLTW",
           "shares": 0.057336,
-          "value": 5.6857
+          "value": 6.2925
         },
         {
           "symbol": "IHE",
           "shares": 0.06871,
-          "value": 6.4432
+          "value": 7.1308
         },
         {
           "symbol": "IWM",
           "shares": 0.006091,
-          "value": 1.6756
+          "value": 1.8544
         },
         {
           "symbol": "QQQ",
           "shares": 2e-06,
-          "value": 0.0013
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.00769,
-          "value": 5.4165
+          "value": 0.0015
         },
         {
           "symbol": "VLUE",
           "shares": 0.034651,
-          "value": 6.4521
+          "value": 7.1406
         }
       ],
       "captured_at": "2026-09-28T14:17:24.567684+00:00",
@@ -10569,57 +10535,52 @@
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 6.1249
+          "value": 6.7785
         },
         {
           "symbol": "DIVB",
           "shares": 0.03546,
-          "value": 2.2297
+          "value": 2.4676
         },
         {
           "symbol": "DXJ",
           "shares": 0.032612,
-          "value": 5.2876
+          "value": 5.8518
         },
         {
           "symbol": "EWT",
           "shares": 0.104102,
-          "value": 10.4205
+          "value": 11.5325
         },
         {
           "symbol": "FBT",
           "shares": 0.026357,
-          "value": 6.3524
+          "value": 7.0303
         },
         {
           "symbol": "FLTW",
           "shares": 0.057336,
-          "value": 5.6698
+          "value": 6.2748
         },
         {
           "symbol": "IHE",
           "shares": 0.06871,
-          "value": 6.4252
+          "value": 7.1108
         },
         {
           "symbol": "IWM",
           "shares": 0.006091,
-          "value": 1.6709
+          "value": 1.8492
         },
         {
           "symbol": "QQQ",
           "shares": 2e-06,
-          "value": 0.0013
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.00769,
-          "value": 5.4013
+          "value": 0.0015
         },
         {
           "symbol": "VLUE",
           "shares": 0.034651,
-          "value": 6.434
+          "value": 7.1206
         }
       ],
       "captured_at": "2026-09-29T14:18:37.404605+00:00",
@@ -10649,57 +10610,52 @@
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 6.143
+          "value": 6.7985
         },
         {
           "symbol": "DIVB",
           "shares": 0.03546,
-          "value": 2.2363
+          "value": 2.4749
         },
         {
           "symbol": "DXJ",
           "shares": 0.032612,
-          "value": 5.3032
+          "value": 5.8691
         },
         {
           "symbol": "EWT",
           "shares": 0.104102,
-          "value": 10.4513
+          "value": 11.5666
         },
         {
           "symbol": "FBT",
           "shares": 0.026357,
-          "value": 6.3712
+          "value": 7.051
         },
         {
           "symbol": "FLTW",
           "shares": 0.057336,
-          "value": 5.6866
+          "value": 6.2934
         },
         {
           "symbol": "IHE",
           "shares": 0.06871,
-          "value": 6.4442
+          "value": 7.1318
         },
         {
           "symbol": "IWM",
           "shares": 0.006091,
-          "value": 1.6759
+          "value": 1.8547
         },
         {
           "symbol": "QQQ",
           "shares": 2e-06,
-          "value": 0.0013
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.00769,
-          "value": 5.4173
+          "value": 0.0015
         },
         {
           "symbol": "VLUE",
           "shares": 0.034651,
-          "value": 6.453
+          "value": 7.1416
         }
       ],
       "captured_at": "2026-09-30T14:21:00.435355+00:00",
@@ -10729,57 +10685,52 @@
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 6.1669
+          "value": 6.7246
         },
         {
           "symbol": "DIVB",
           "shares": 0.113924,
-          "value": 6.9457
+          "value": 7.574
         },
         {
           "symbol": "DXJ",
           "shares": 0.040634,
-          "value": 6.6433
+          "value": 7.2441
         },
         {
           "symbol": "EWT",
           "shares": 0.104102,
-          "value": 10.4919
+          "value": 11.4409
         },
         {
           "symbol": "FBT",
           "shares": 0.026357,
-          "value": 6.3959
+          "value": 6.9744
         },
         {
           "symbol": "FLTW",
           "shares": 0.057336,
-          "value": 5.7087
+          "value": 6.225
         },
         {
           "symbol": "IHE",
           "shares": 0.06871,
-          "value": 6.4692
+          "value": 7.0543
         },
         {
           "symbol": "IWM",
           "shares": 0.006091,
-          "value": 1.6824
+          "value": 1.8346
         },
         {
           "symbol": "QQQ",
           "shares": 0.004635,
-          "value": 3.1443
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.00769,
-          "value": 5.4383
+          "value": 3.4287
         },
         {
           "symbol": "VLUE",
           "shares": 0.034651,
-          "value": 6.4781
+          "value": 7.064
         }
       ],
       "captured_at": "2026-10-01T14:44:42.902729+00:00",
@@ -10809,57 +10760,52 @@
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 6.2608
+          "value": 6.8279
         },
         {
           "symbol": "DIVB",
           "shares": 0.037654,
-          "value": 2.3307
+          "value": 2.5418
         },
         {
           "symbol": "DXJ",
           "shares": 0.040634,
-          "value": 6.7444
+          "value": 7.3554
         },
         {
           "symbol": "EWT",
           "shares": 0.104102,
-          "value": 10.6517
+          "value": 11.6167
         },
         {
           "symbol": "FBT",
           "shares": 0.026357,
-          "value": 6.4933
+          "value": 7.0816
         },
         {
           "symbol": "FLTW",
           "shares": 0.101392,
-          "value": 10.4191
+          "value": 11.363
         },
         {
           "symbol": "IHE",
           "shares": 0.06871,
-          "value": 6.5677
+          "value": 7.1627
         },
         {
           "symbol": "IWM",
           "shares": 0.006091,
-          "value": 1.708
+          "value": 1.8627
         },
         {
           "symbol": "QQQ",
           "shares": 0.004635,
-          "value": 3.1922
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.00769,
-          "value": 5.5212
+          "value": 3.4814
         },
         {
           "symbol": "VLUE",
           "shares": 0.034651,
-          "value": 6.5767
+          "value": 7.1725
         }
       ],
       "captured_at": "2026-10-02T14:21:50.656166+00:00",
@@ -10889,57 +10835,52 @@
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 6.2608
+          "value": 6.8279
         },
         {
           "symbol": "DIVB",
           "shares": 0.037654,
-          "value": 2.3307
+          "value": 2.5418
         },
         {
           "symbol": "DXJ",
           "shares": 0.040634,
-          "value": 6.7444
+          "value": 7.3554
         },
         {
           "symbol": "EWT",
           "shares": 0.104102,
-          "value": 10.6517
+          "value": 11.6167
         },
         {
           "symbol": "FBT",
           "shares": 0.026357,
-          "value": 6.4933
+          "value": 7.0816
         },
         {
           "symbol": "FLTW",
           "shares": 0.101392,
-          "value": 10.4191
+          "value": 11.363
         },
         {
           "symbol": "IHE",
           "shares": 0.06871,
-          "value": 6.5677
+          "value": 7.1627
         },
         {
           "symbol": "IWM",
           "shares": 0.006091,
-          "value": 1.708
+          "value": 1.8627
         },
         {
           "symbol": "QQQ",
           "shares": 0.004635,
-          "value": 3.1922
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.00769,
-          "value": 5.5212
+          "value": 3.4814
         },
         {
           "symbol": "VLUE",
           "shares": 0.034651,
-          "value": 6.5767
+          "value": 7.1725
         }
       ],
       "captured_at": null,
@@ -10969,57 +10910,52 @@
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 6.2608
+          "value": 6.8279
         },
         {
           "symbol": "DIVB",
           "shares": 0.037654,
-          "value": 2.3307
+          "value": 2.5418
         },
         {
           "symbol": "DXJ",
           "shares": 0.040634,
-          "value": 6.7444
+          "value": 7.3554
         },
         {
           "symbol": "EWT",
           "shares": 0.104102,
-          "value": 10.6517
+          "value": 11.6167
         },
         {
           "symbol": "FBT",
           "shares": 0.026357,
-          "value": 6.4933
+          "value": 7.0816
         },
         {
           "symbol": "FLTW",
           "shares": 0.101392,
-          "value": 10.4191
+          "value": 11.363
         },
         {
           "symbol": "IHE",
           "shares": 0.06871,
-          "value": 6.5677
+          "value": 7.1627
         },
         {
           "symbol": "IWM",
           "shares": 0.006091,
-          "value": 1.708
+          "value": 1.8627
         },
         {
           "symbol": "QQQ",
           "shares": 0.004635,
-          "value": 3.1922
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.00769,
-          "value": 5.5212
+          "value": 3.4814
         },
         {
           "symbol": "VLUE",
           "shares": 0.034651,
-          "value": 6.5767
+          "value": 7.1725
         }
       ],
       "captured_at": null,
@@ -11049,57 +10985,52 @@
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 6.2608
+          "value": 6.8279
         },
         {
           "symbol": "DIVB",
           "shares": 0.037654,
-          "value": 2.3307
+          "value": 2.5418
         },
         {
           "symbol": "DXJ",
           "shares": 0.040634,
-          "value": 6.7444
+          "value": 7.3554
         },
         {
           "symbol": "EWT",
           "shares": 0.104102,
-          "value": 10.6517
+          "value": 11.6167
         },
         {
           "symbol": "FBT",
           "shares": 0.026357,
-          "value": 6.4933
+          "value": 7.0816
         },
         {
           "symbol": "FLTW",
           "shares": 0.101392,
-          "value": 10.4191
+          "value": 11.363
         },
         {
           "symbol": "IHE",
           "shares": 0.06871,
-          "value": 6.5677
+          "value": 7.1627
         },
         {
           "symbol": "IWM",
           "shares": 0.006091,
-          "value": 1.708
+          "value": 1.8627
         },
         {
           "symbol": "QQQ",
           "shares": 0.004635,
-          "value": 3.1922
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.00769,
-          "value": 5.5212
+          "value": 3.4814
         },
         {
           "symbol": "VLUE",
           "shares": 0.034651,
-          "value": 6.5767
+          "value": 7.1725
         }
       ],
       "captured_at": null,
@@ -11129,57 +11060,52 @@
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 6.2906
+          "value": 6.8596
         },
         {
           "symbol": "DIVB",
           "shares": 0.037654,
-          "value": 2.3418
+          "value": 2.5536
         },
         {
           "symbol": "DXJ",
           "shares": 0.040634,
-          "value": 6.7766
+          "value": 7.3895
         },
         {
           "symbol": "EWT",
           "shares": 0.104102,
-          "value": 10.7025
+          "value": 11.6705
         },
         {
           "symbol": "FBT",
           "shares": 0.026357,
-          "value": 6.5243
+          "value": 7.1144
         },
         {
           "symbol": "FLTW",
           "shares": 0.101392,
-          "value": 10.4688
+          "value": 11.4156
         },
         {
           "symbol": "IHE",
           "shares": 0.06871,
-          "value": 6.5991
+          "value": 7.1959
         },
         {
           "symbol": "IWM",
           "shares": 0.006091,
-          "value": 1.7162
+          "value": 1.8714
         },
         {
           "symbol": "SOXX",
           "shares": 0.005984,
-          "value": 3.3087
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.00769,
-          "value": 5.5475
+          "value": 3.6079
         },
         {
           "symbol": "VLUE",
           "shares": 0.034651,
-          "value": 6.6081
+          "value": 7.2058
         }
       ],
       "captured_at": "2026-10-06T17:21:43.893899+00:00",
@@ -11209,57 +11135,52 @@
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 6.2309
+          "value": 6.7945
         },
         {
           "symbol": "DIVB",
           "shares": 0.037654,
-          "value": 2.3196
+          "value": 2.5293
         },
         {
           "symbol": "DXJ",
           "shares": 0.040634,
-          "value": 6.7123
+          "value": 7.3194
         },
         {
           "symbol": "EWT",
           "shares": 0.104102,
-          "value": 10.601
+          "value": 11.5598
         },
         {
           "symbol": "FBT",
           "shares": 0.026357,
-          "value": 6.4624
+          "value": 7.0469
         },
         {
           "symbol": "FLTW",
           "shares": 0.101392,
-          "value": 10.3695
+          "value": 11.3073
         },
         {
           "symbol": "IHE",
           "shares": 0.06871,
-          "value": 6.5364
+          "value": 7.1276
         },
         {
           "symbol": "IWM",
           "shares": 0.006091,
-          "value": 1.6999
+          "value": 1.8536
         },
         {
           "symbol": "SOXX",
           "shares": 0.005984,
-          "value": 3.2773
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.00769,
-          "value": 5.4949
+          "value": 3.5737
         },
         {
           "symbol": "VLUE",
           "shares": 0.034651,
-          "value": 6.5454
+          "value": 7.1374
         }
       ],
       "captured_at": "2026-10-07T14:18:46.776992+00:00",
@@ -11283,7 +11204,7 @@
     },
     {
       "date": "2026-10-08",
-      "value": 65.6247,
+      "value": 65.618,
       "cash": 8.36,
       "holdings": [
         {
@@ -11299,7 +11220,7 @@
         {
           "symbol": "FLTW",
           "shares": 0.101392,
-          "value": 11.0857
+          "value": 11.0801
         },
         {
           "symbol": "CRAK",
@@ -11309,17 +11230,17 @@
         {
           "symbol": "DXJ",
           "shares": 0.040634,
-          "value": 7.3308
+          "value": 7.3312
         },
         {
           "symbol": "DIVB",
           "shares": 0.037654,
-          "value": 2.487
+          "value": 2.4863
         },
         {
           "symbol": "FBT",
           "shares": 0.026357,
-          "value": 6.8512
+          "value": 6.8466
         },
         {
           "symbol": "IHE",
@@ -11329,26 +11250,26 @@
         {
           "symbol": "VLUE",
           "shares": 0.034651,
-          "value": 6.9295
+          "value": 6.9307
         },
         {
           "symbol": "SOXX",
           "shares": 0.005984,
-          "value": 3.3637
+          "value": 3.3625
         }
       ],
-      "captured_at": "2026-10-08T18:50:41.289000+00:00",
+      "captured_at": "2026-10-08T18:55:13.147000+00:00",
       "source": "fresh_broker_supplied",
       "breakdown_estimated": false,
       "note": "Current holding quantities and values were supplied with the broker valuation; journal reconciliation is not claimed.",
       "net_cash_flow": 0.0,
       "contributions": 0.0,
       "withdrawals": -0.0,
-      "change": -0.6248,
-      "change_pct": -0.00943101,
-      "market_gain": -0.6248,
+      "change": -0.6315,
+      "change_pct": -0.00953215,
+      "market_gain": -0.6315,
       "return_unavailable_reason": "prior_cash_flow_lacks_bracketing_valuations",
-      "period_return": -0.00943101,
+      "period_return": -0.00953215,
       "return_available": true,
       "time_weighted_return": null,
       "cash_flow_timing": "none",
@@ -11358,7 +11279,7 @@
     }
   ],
   "performance": {
-    "simple_return_on_contributions": 0.00961077,
+    "simple_return_on_contributions": 0.00950769,
     "time_weighted_return": null,
     "time_weighted_quality": "unavailable_unbracketed_cash_flow",
     "money_weighted": {
