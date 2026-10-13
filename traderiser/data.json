@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8.0",
-  "published_at": "2026-10-13T15:47:39.982023+00:00",
-  "valuation_as_of": "2026-10-13T15:46:58.998000+00:00",
+  "published_at": "2026-10-13T15:54:04.614419+00:00",
+  "valuation_as_of": "2026-10-13T15:53:59.449000+00:00",
   "valuation_provenance": "fresh_broker_supplied",
   "experiment": {
     "name": "TradeRiser Agentic Trading Experiment",
@@ -10,13 +10,13 @@
     "objective": "Continue the live observation through December 31, 2026 using the experiment&amp;#x27;s cumulative contributed funds."
   },
   "account": {
-    "value": 65.5025,
+    "value": 65.4987,
     "cash": 5.63,
-    "invested": 59.8725,
+    "invested": 59.8687,
     "buying_power": 5.63,
     "net_contributions": 65.0,
-    "investment_gain": 0.5025,
-    "simple_return_on_contributions": 0.00773077,
+    "investment_gain": 0.4987,
+    "simple_return_on_contributions": 0.00767231,
     "currency": "USD"
   },
   "holdings": [
@@ -33,7 +33,7 @@
       "shares": 0.104102,
       "average_price": 109.99,
       "cost_basis": 11.4502,
-      "current_value": 11.7292,
+      "current_value": 11.7344,
       "strategy": "champion"
     },
     {
@@ -41,7 +41,7 @@
       "shares": 0.101392,
       "average_price": 110.46,
       "cost_basis": 11.1998,
-      "current_value": 11.0086,
+      "current_value": 11.0167,
       "strategy": "champion"
     },
     {
@@ -49,7 +49,7 @@
       "shares": 0.110477,
       "average_price": 60.92,
       "cost_basis": 6.7303,
-      "current_value": 7.4682,
+      "current_value": 7.4649,
       "strategy": "champion"
     },
     {
@@ -57,7 +57,7 @@
       "shares": 0.121902,
       "average_price": 59.47,
       "cost_basis": 7.2495,
-      "current_value": 7.4013,
+      "current_value": 7.3995,
       "strategy": "champion"
     },
     {
@@ -65,7 +65,7 @@
       "shares": 0.083648,
       "average_price": 65.99,
       "cost_basis": 5.5199,
-      "current_value": 5.5957,
+      "current_value": 5.5906,
       "strategy": "champion"
     },
     {
@@ -81,7 +81,7 @@
       "shares": 0.1649,
       "average_price": 36.69,
       "cost_basis": 6.0502,
-      "current_value": 6.0485,
+      "current_value": 6.0461,
       "strategy": "champion"
     },
     {
@@ -89,7 +89,7 @@
       "shares": 0.068904,
       "average_price": 61.68,
       "cost_basis": 4.25,
-      "current_value": 4.2497,
+      "current_value": 4.2452,
       "strategy": "champion"
     },
     {
@@ -12731,7 +12731,7 @@
     },
     {
       "date": "2026-10-13",
-      "value": 65.5025,
+      "value": 65.4987,
       "cash": 5.63,
       "holdings": [
         {
@@ -12742,27 +12742,27 @@
         {
           "symbol": "EWT",
           "shares": 0.104102,
-          "value": 11.7292
+          "value": 11.7344
         },
         {
           "symbol": "FLTW",
           "shares": 0.101392,
-          "value": 11.0086
+          "value": 11.0167
         },
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 7.4682
+          "value": 7.4649
         },
         {
           "symbol": "DXJ",
           "shares": 0.121902,
-          "value": 7.4013
+          "value": 7.3995
         },
         {
           "symbol": "DIVB",
           "shares": 0.083648,
-          "value": 5.5957
+          "value": 5.5906
         },
         {
           "symbol": "IHE",
@@ -12772,12 +12772,12 @@
         {
           "symbol": "GSG",
           "shares": 0.1649,
-          "value": 6.0485
+          "value": 6.0461
         },
         {
           "symbol": "IXC",
           "shares": 0.068904,
-          "value": 4.2497
+          "value": 4.2452
         },
         {
           "symbol": "RPV",
@@ -12785,14 +12785,14 @@
           "value": 6.3595
         }
       ],
-      "captured_at": "2026-10-13T15:46:58.998000+00:00",
+      "captured_at": "2026-10-13T15:53:59.449000+00:00",
       "source": "fresh_broker_supplied",
       "breakdown_estimated": false,
       "note": "Current holding quantities and values were supplied with the broker valuation; journal reconciliation is not claimed.",
       "net_cash_flow": 0.0,
       "contributions": 0.0,
       "withdrawals": -0.0,
-      "change": -0.3503,
+      "change": -0.3541,
       "change_pct": null,
       "market_gain": null,
       "return_unavailable_reason": "period_lacks_bracketing_valuations",
@@ -12806,7 +12806,7 @@
     }
   ],
   "performance": {
-    "simple_return_on_contributions": 0.00773077,
+    "simple_return_on_contributions": 0.00767231,
     "time_weighted_return": null,
     "time_weighted_quality": "unavailable_unbracketed_cash_flow",
     "money_weighted": {
@@ -17481,6 +17481,320 @@
             "eligible": true,
             "confidence": "medium",
             "traderiser_score": 0.779356
+          }
+        ]
+      },
+      {
+        "as_of": "2026-10-12",
+        "method": "independent_research_only_same_cutoff",
+        "research_only": true,
+        "can_affect_orders": false,
+        "same_cutoff_verified": true,
+        "agreements": [
+          "CRAK",
+          "DIVB",
+          "DXJ",
+          "EWT",
+          "FLTW",
+          "IHE"
+        ],
+        "disagreements": [
+          "IWM"
+        ],
+        "improvement_candidates": [],
+        "limitations": [
+          "Research-only qualitative comparison; it cannot create, suppress, resize, substitute, or time an order.",
+          "The comparison is bound to completed-session evidence through 2026-10-12 and does not use post-cutoff headlines.",
+          "Directional usefulness remains pending until the predeclared 5-, 21-, and 63-session outcomes are available."
+        ],
+        "holdings": [
+          {
+            "symbol": "CRAK",
+            "traderiser": "hold",
+            "codex": "hold",
+            "agreement": true,
+            "traderiser_score": 0.830662,
+            "traderiser_rationale": [
+              "TradeRiser proposed hold for the champion-time position.",
+              "Score 0.830662; 5-session return 0.011683; 21-session return 0.002437; 63-session momentum 0.249241.",
+              "Eligible=True; consecutive ineligible sessions=0; drawdown from 63-session high=-0.02272."
+            ],
+            "thesis": "The strong medium- and long-horizon trend supports holding the existing position without overriding TradeRiser sizing.",
+            "principal_risks": [
+              "Momentum can reverse after the completed-session cutoff.",
+              "This view does not include intraday news or discretionary order changes."
+            ],
+            "market_context": "Independent review uses only the champion sealed completed-session features through 2026-10-12; no post-cutoff headline or price is used.",
+            "factor_overlap": [
+              "energy and refining factor",
+              "commodity-cycle sensitivity"
+            ],
+            "confidence": "medium",
+            "invalidation_conditions": [
+              "A later completed-session path contradicts the stated trend evidence.",
+              "The 5-, 21-, or 63-session scored outcome disproves the directional view."
+            ],
+            "outcomes": {
+              "5": {
+                "sessions": 5,
+                "status": "pending"
+              },
+              "21": {
+                "sessions": 21,
+                "status": "pending"
+              },
+              "63": {
+                "sessions": 63,
+                "status": "pending"
+              }
+            }
+          },
+          {
+            "symbol": "DIVB",
+            "traderiser": "hold",
+            "codex": "hold",
+            "agreement": true,
+            "traderiser_score": 0.343142,
+            "traderiser_rationale": [
+              "TradeRiser proposed hold for the champion-time position.",
+              "Score 0.343142; 5-session return 0.024443; 21-session return -0.020702; 63-session momentum 0.068226.",
+              "Eligible=True; consecutive ineligible sessions=0; drawdown from 63-session high=-0.037707."
+            ],
+            "thesis": "The trend remains eligible; mixed 5- and 21-session returns are not enough by themselves to justify a sale.",
+            "principal_risks": [
+              "Momentum can reverse after the completed-session cutoff.",
+              "This view does not include intraday news or discretionary order changes."
+            ],
+            "market_context": "Independent review uses only the champion sealed completed-session features through 2026-10-12; no post-cutoff headline or price is used.",
+            "factor_overlap": [
+              "U.S. dividend equity factor",
+              "value factor"
+            ],
+            "confidence": "medium",
+            "invalidation_conditions": [
+              "A later completed-session path contradicts the stated trend evidence.",
+              "The 5-, 21-, or 63-session scored outcome disproves the directional view."
+            ],
+            "outcomes": {
+              "5": {
+                "sessions": 5,
+                "status": "pending"
+              },
+              "21": {
+                "sessions": 21,
+                "status": "pending"
+              },
+              "63": {
+                "sessions": 63,
+                "status": "pending"
+              }
+            }
+          },
+          {
+            "symbol": "DXJ",
+            "traderiser": "hold",
+            "codex": "hold",
+            "agreement": true,
+            "traderiser_score": 0.345515,
+            "traderiser_rationale": [
+              "TradeRiser proposed hold for the champion-time position.",
+              "Score 0.345515; 5-session return -0.008012; 21-session return 0.027488; 63-session momentum 0.028939.",
+              "Eligible=True; consecutive ineligible sessions=0; drawdown from 63-session high=-0.01017."
+            ],
+            "thesis": "The positive 21- and 63-session trend remains intact despite a modest five-session pullback.",
+            "principal_risks": [
+              "Momentum can reverse after the completed-session cutoff.",
+              "This view does not include intraday news or discretionary order changes."
+            ],
+            "market_context": "Independent review uses only the champion sealed completed-session features through 2026-10-12; no post-cutoff headline or price is used.",
+            "factor_overlap": [
+              "Japan equity factor",
+              "currency-hedged exposure"
+            ],
+            "confidence": "medium",
+            "invalidation_conditions": [
+              "A later completed-session path contradicts the stated trend evidence.",
+              "The 5-, 21-, or 63-session scored outcome disproves the directional view."
+            ],
+            "outcomes": {
+              "5": {
+                "sessions": 5,
+                "status": "pending"
+              },
+              "21": {
+                "sessions": 21,
+                "status": "pending"
+              },
+              "63": {
+                "sessions": 63,
+                "status": "pending"
+              }
+            }
+          },
+          {
+            "symbol": "EWT",
+            "traderiser": "hold",
+            "codex": "hold",
+            "agreement": true,
+            "traderiser_score": 0.78938,
+            "traderiser_rationale": [
+              "TradeRiser proposed hold for the champion-time position.",
+              "Score 0.78938; 5-session return -0.03161; 21-session return 0.030295; 63-session momentum 0.121614.",
+              "Eligible=False; consecutive ineligible sessions=1; drawdown from 63-session high=-0.03161."
+            ],
+            "thesis": "One weak five-session observation does not outweigh positive 21-, 63-, and 126-session evidence.",
+            "principal_risks": [
+              "Momentum can reverse after the completed-session cutoff.",
+              "This view does not include intraday news or discretionary order changes."
+            ],
+            "market_context": "Independent review uses only the champion sealed completed-session features through 2026-10-12; no post-cutoff headline or price is used.",
+            "factor_overlap": [
+              "Taiwan equity concentration",
+              "technology-cycle exposure"
+            ],
+            "confidence": "medium",
+            "invalidation_conditions": [
+              "A later completed-session path contradicts the stated trend evidence.",
+              "The 5-, 21-, or 63-session scored outcome disproves the directional view."
+            ],
+            "outcomes": {
+              "5": {
+                "sessions": 5,
+                "status": "pending"
+              },
+              "21": {
+                "sessions": 21,
+                "status": "pending"
+              },
+              "63": {
+                "sessions": 63,
+                "status": "pending"
+              }
+            }
+          },
+          {
+            "symbol": "FLTW",
+            "traderiser": "hold",
+            "codex": "hold",
+            "agreement": true,
+            "traderiser_score": 0.823868,
+            "traderiser_rationale": [
+              "TradeRiser proposed hold for the champion-time position.",
+              "Score 0.823868; 5-session return -0.034712; 21-session return 0.031762; 63-session momentum 0.118878.",
+              "Eligible=False; consecutive ineligible sessions=1; drawdown from 63-session high=-0.034712."
+            ],
+            "thesis": "Longer-horizon momentum remains positive; the single short-horizon weakness flag warrants monitoring rather than an immediate exit.",
+            "principal_risks": [
+              "Momentum can reverse after the completed-session cutoff.",
+              "This view does not include intraday news or discretionary order changes."
+            ],
+            "market_context": "Independent review uses only the champion sealed completed-session features through 2026-10-12; no post-cutoff headline or price is used.",
+            "factor_overlap": [
+              "Taiwan equity concentration",
+              "low-volatility factor",
+              "overlap with EWT"
+            ],
+            "confidence": "medium",
+            "invalidation_conditions": [
+              "A later completed-session path contradicts the stated trend evidence.",
+              "The 5-, 21-, or 63-session scored outcome disproves the directional view."
+            ],
+            "outcomes": {
+              "5": {
+                "sessions": 5,
+                "status": "pending"
+              },
+              "21": {
+                "sessions": 21,
+                "status": "pending"
+              },
+              "63": {
+                "sessions": 63,
+                "status": "pending"
+              }
+            }
+          },
+          {
+            "symbol": "IHE",
+            "traderiser": "hold",
+            "codex": "hold",
+            "agreement": true,
+            "traderiser_score": 0.354888,
+            "traderiser_rationale": [
+              "TradeRiser proposed hold for the champion-time position.",
+              "Score 0.354888; 5-session return 0.020057; 21-session return -0.005983; 63-session momentum 0.016341.",
+              "Eligible=False; consecutive ineligible sessions=1; drawdown from 63-session high=-0.071142."
+            ],
+            "thesis": "The position is economically de minimis and the evidence is mixed: weak 21-session and cost-basis readings but a positive five-session return.",
+            "principal_risks": [
+              "Momentum can reverse after the completed-session cutoff.",
+              "This view does not include intraday news or discretionary order changes."
+            ],
+            "market_context": "Independent review uses only the champion sealed completed-session features through 2026-10-12; no post-cutoff headline or price is used.",
+            "factor_overlap": [
+              "U.S. pharmaceutical equity factor",
+              "health-care sector concentration"
+            ],
+            "confidence": "low",
+            "invalidation_conditions": [
+              "A later completed-session path contradicts the stated trend evidence.",
+              "The 5-, 21-, or 63-session scored outcome disproves the directional view."
+            ],
+            "outcomes": {
+              "5": {
+                "sessions": 5,
+                "status": "pending"
+              },
+              "21": {
+                "sessions": 21,
+                "status": "pending"
+              },
+              "63": {
+                "sessions": 63,
+                "status": "pending"
+              }
+            }
+          },
+          {
+            "symbol": "IWM",
+            "traderiser": "hold",
+            "codex": "exit",
+            "agreement": false,
+            "traderiser_score": 0.18739,
+            "traderiser_rationale": [
+              "TradeRiser proposed hold for the champion-time position.",
+              "Score 0.18739; 5-session return -0.019338; 21-session return -0.03553; 63-session momentum -0.053934.",
+              "Eligible=False; consecutive ineligible sessions=5; drawdown from 63-session high=-0.086742."
+            ],
+            "thesis": "Five consecutive ineligible sessions, a negative 63-session return, and an 8.7% drawdown support closing the residual position when it is operationally sellable.",
+            "principal_risks": [
+              "Momentum can reverse after the completed-session cutoff.",
+              "This view does not include intraday news or discretionary order changes."
+            ],
+            "market_context": "Independent review uses only the champion sealed completed-session features through 2026-10-12; no post-cutoff headline or price is used.",
+            "factor_overlap": [
+              "U.S. small-cap equity factor",
+              "cyclical and financing sensitivity"
+            ],
+            "confidence": "medium",
+            "invalidation_conditions": [
+              "A later completed-session path contradicts the stated trend evidence.",
+              "The 5-, 21-, or 63-session scored outcome disproves the directional view."
+            ],
+            "outcomes": {
+              "5": {
+                "sessions": 5,
+                "status": "pending"
+              },
+              "21": {
+                "sessions": 21,
+                "status": "pending"
+              },
+              "63": {
+                "sessions": 63,
+                "status": "pending"
+              }
+            }
           }
         ]
       }
