@@ -1,6 +1,6 @@
 {
   "schema_version": "1.8.0",
-  "published_at": "2026-10-13T14:39:50.497091+00:00",
+  "published_at": "2026-10-13T14:43:58.740913+00:00",
   "valuation_as_of": "2026-10-13T14:38:15+00:00",
   "valuation_provenance": "fresh_broker_supplied",
   "experiment": {
@@ -1375,7 +1375,7 @@
       ],
       "orders": [],
       "explanation": [
-        "The delegated authorization gate blocked execution."
+        "no orders were proposed"
       ],
       "regime": null,
       "stage": "authorization",
@@ -1424,7 +1424,7 @@
       ],
       "orders": [],
       "explanation": [
-        "The delegated authorization gate blocked execution."
+        "no orders were proposed"
       ],
       "regime": null,
       "stage": "authorization",
@@ -1457,7 +1457,7 @@
       ],
       "orders": [],
       "explanation": [
-        "The delegated authorization gate blocked execution."
+        "no orders were proposed"
       ],
       "regime": null,
       "stage": "authorization",
@@ -1493,7 +1493,7 @@
         }
       ],
       "explanation": [
-        "The delegated authorization gate blocked execution."
+        "proposed buys would breach the cash reserve"
       ],
       "regime": null,
       "stage": "authorization",
@@ -1778,7 +1778,8 @@
       ],
       "orders": [],
       "explanation": [
-        "The delegated authorization gate blocked execution."
+        "day-start account value is not broker-verified",
+        "no orders were proposed"
       ],
       "regime": null,
       "stage": "authorization",
@@ -1961,7 +1962,14 @@
         }
       ],
       "explanation": [
-        "The delegated authorization gate blocked execution."
+        "EWC notional is outside per-order limits",
+        "IWM was not selected by TradeRiser",
+        "IWM notional is outside per-order limits",
+        "QQQ was not selected by TradeRiser",
+        "SPY was not selected by TradeRiser",
+        "SPY notional is outside per-order limits",
+        "maximum daily notional would be exceeded",
+        "proposed buys would breach the cash reserve"
       ],
       "regime": null,
       "stage": "authorization",
@@ -2314,7 +2322,8 @@
         }
       ],
       "explanation": [
-        "The delegated authorization gate blocked execution."
+        "SPY quote is stale",
+        "FLTW quote is stale"
       ],
       "regime": null,
       "stage": "authorization",
@@ -2491,7 +2500,7 @@
       ],
       "orders": [],
       "explanation": [
-        "The delegated authorization gate blocked execution."
+        "no orders were proposed"
       ],
       "regime": null,
       "stage": "authorization",
@@ -2580,7 +2589,7 @@
       ],
       "orders": [],
       "explanation": [
-        "The delegated authorization gate blocked execution."
+        "no orders were proposed"
       ],
       "regime": null,
       "stage": "authorization",
@@ -2604,7 +2613,7 @@
       ],
       "orders": [],
       "explanation": [
-        "The delegated authorization gate blocked execution."
+        "no orders were proposed"
       ],
       "regime": null,
       "stage": "authorization",
@@ -2718,7 +2727,8 @@
         }
       ],
       "explanation": [
-        "The delegated authorization gate blocked execution."
+        "DXJ quote is stale",
+        "DIVB quote is stale"
       ],
       "regime": null,
       "stage": "authorization",
@@ -2912,7 +2922,7 @@
       ],
       "orders": [],
       "explanation": [
-        "The delegated authorization gate blocked execution."
+        "no orders were proposed"
       ],
       "regime": null,
       "stage": "authorization",
@@ -3320,7 +3330,7 @@
         }
       ],
       "explanation": [
-        "The delegated authorization gate blocked execution."
+        "proposed buys would breach the cash reserve"
       ],
       "regime": null,
       "stage": "authorization",
@@ -3504,7 +3514,8 @@
         }
       ],
       "explanation": [
-        "The delegated authorization gate blocked execution."
+        "SPY quote is stale",
+        "VLUE quote is stale"
       ],
       "regime": null,
       "stage": "authorization",
@@ -5914,7 +5925,8 @@
         }
       ],
       "explanation": [
-        "The delegated authorization gate blocked execution."
+        "IWM quote is stale",
+        "FLTW quote is stale"
       ],
       "regime": null,
       "stage": "authorization",
@@ -6436,7 +6448,7 @@
         }
       ],
       "explanation": [
-        "The delegated authorization gate blocked execution."
+        "DXJ quote is stale"
       ],
       "regime": null,
       "stage": "authorization",
@@ -6571,7 +6583,7 @@
         }
       ],
       "explanation": [
-        "The delegated authorization gate blocked execution."
+        "DXJ quote is stale"
       ],
       "regime": null,
       "stage": "authorization",
@@ -7333,7 +7345,7 @@
       ],
       "orders": [],
       "explanation": [
-        "The delegated authorization gate blocked execution."
+        "no orders were proposed"
       ],
       "regime": null,
       "stage": "authorization",
@@ -7891,7 +7903,8 @@
         }
       ],
       "explanation": [
-        "The delegated authorization gate blocked execution."
+        "signal rankings do not cover the exact effective universe",
+        "signal market-data evidence does not match the verified completed-session matrix"
       ],
       "regime": null,
       "stage": "authorization",
@@ -7989,7 +8002,7 @@
         }
       ],
       "explanation": [
-        "The delegated authorization gate blocked execution."
+        "signal champion output does not reproduce for field: funding_analysis"
       ],
       "regime": null,
       "stage": "authorization",
@@ -8086,7 +8099,8 @@
         }
       ],
       "explanation": [
-        "The delegated authorization gate blocked execution."
+        "signal, account, and verified position values do not match",
+        "signal champion output does not reproduce for field: target_cash"
       ],
       "regime": null,
       "stage": "authorization",
@@ -8368,7 +8382,11 @@
         }
       ],
       "explanation": [
-        "The delegated authorization gate blocked execution."
+        "fixed-term pilot policy contract digest does not match the active policy",
+        "fixed-term pilot source digest does not match current production code",
+        "fixed-term pilot strategy policy digest does not match the frozen strategy",
+        "signal strategy policy does not match the fixed-term pilot pin",
+        "signal strategy policy or universe does not match the fixed-term pilot contract"
       ],
       "regime": null,
       "stage": "authorization",
@@ -8417,7 +8435,7 @@
         }
       ],
       "explanation": [
-        "The delegated authorization gate blocked execution."
+        "maximum daily notional would be exceeded"
       ],
       "regime": null,
       "stage": "authorization",
