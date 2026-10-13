@@ -1,6 +1,6 @@
 {
   "schema_version": "1.8.0",
-  "published_at": "2026-10-13T14:43:58.740913+00:00",
+  "published_at": "2026-10-13T14:46:14.393640+00:00",
   "valuation_as_of": "2026-10-13T14:38:15+00:00",
   "valuation_provenance": "fresh_broker_supplied",
   "experiment": {
@@ -7908,7 +7908,9 @@
       ],
       "regime": null,
       "stage": "authorization",
-      "authorized": false
+      "authorized": false,
+      "authorization_basis": "fixed_term_pilot",
+      "authorization_label": "fixed_term_pilot_blocked"
     },
     {
       "kind": "challenger",
@@ -8006,7 +8008,9 @@
       ],
       "regime": null,
       "stage": "authorization",
-      "authorized": false
+      "authorized": false,
+      "authorization_basis": "fixed_term_pilot",
+      "authorization_label": "fixed_term_pilot_blocked"
     },
     {
       "kind": "champion",
@@ -8104,7 +8108,9 @@
       ],
       "regime": null,
       "stage": "authorization",
-      "authorized": false
+      "authorized": false,
+      "authorization_basis": "fixed_term_pilot",
+      "authorization_label": "fixed_term_pilot_blocked"
     },
     {
       "kind": "champion",
@@ -8390,7 +8396,9 @@
       ],
       "regime": null,
       "stage": "authorization",
-      "authorized": false
+      "authorized": false,
+      "authorization_basis": "fixed_term_pilot",
+      "authorization_label": "fixed_term_pilot_blocked"
     },
     {
       "kind": "champion",
@@ -8439,7 +8447,9 @@
       ],
       "regime": null,
       "stage": "authorization",
-      "authorized": false
+      "authorized": false,
+      "authorization_basis": "delegated_policy",
+      "authorization_label": "delegated_policy_blocked"
     }
   ],
   "portfolio_history": [
