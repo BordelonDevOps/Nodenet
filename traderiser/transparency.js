@@ -93,7 +93,9 @@ function validateSnapshot(data) {
   for (const trade of data.historical_trades||[]) if (!object(trade) || trade.state!=='filled' || trade.authorized!=null || trade.orders_match!=null) fail('Invalid historical fill provenance.');
   const objectRows = new Set(['holdings','trades','historical_trades','decisions','portfolio_history','champion_rankings','challenger_rankings','orders','positions','blocked_orders','comparisons','approved_pairs','evidence']);
   const textRows = new Set(['selected','explanation','disclosures','rules','risk_controls','limitations']);
-  const numericFields = new Set(['value','cash','invested','buying_power','net_contributions','investment_gain','simple_return_on_contributions','shares','average_price','cost_basis','current_value','return','time_weighted_return','actual_return','actual_excess_return','excess_return','change','change_pct','contributions','market_gain','withdrawals','quantity','dollars','dollar_amount','fees','score','momentum_12_1','annualized_volatility','cagr','maximum_drawdown','score_advantage','expected_edge_dollars','required_edge_dollars','estimated_tax_cost_dollars','required_sessions','score_hurdle','consecutive_ineligible_sessions','confirmation_sessions','full_exit_sessions','requested_dollars','live_days','champion_cycles','reconciled_trades']);
+  const numericFields = new Set(['value','cash','invested','buying_power','net_contributions','investment_gain','simple_return_on_contributions','shares','average_price','cost_basis','current_value','return','return_5d','return_21d','time_weighted_return','actual_return','actual_excess_return','excess_return','change','change_pct','contributions','market_gain','withdrawals','quantity','dollars','dollar_amount','fees','score','momentum_12_1','annualized_volatility','cagr','maximum_drawdown','score_advantage','expected_edge_dollars','required_edge_dollars','estimated_tax_cost_dollars','required_sessions','score_hurdle','consecutive_ineligible_sessions','confirmation_sessions','full_exit_sessions','requested_dollars','live_days','champion_cycles','reconciled_trades']);
+  const booleanFields = new Set(['eligible','overbought','short_horizon_weakness','cost_basis_weakness','cost_basis_evidence_complete','enabled','passed']);
+  const privateFields = new Set(['cost_basis_return']);
   const arrayFields = new Set(['holdings','trades','decisions','portfolio_history','disclosures','champion_rankings','challenger_rankings','orders','selected','explanation','rules','risk_controls','limitations','positions','blocked_orders','comparisons','approved_pairs','evidence']);
   const objectFields = new Set(['account','experiment','research','performance','money_weighted','live_benchmark','daily_briefing','plain_language','strategy_profile','backtest','strategy','benchmark','replacement_analysis','staged_derisk_analysis','deferred_follow_up']);
   // JSON can parse overflowing exponents as Infinity. Check nested shapes/numbers before rendering.
@@ -101,7 +103,9 @@ function validateSnapshot(data) {
     if (typeof value === 'number' && !Number.isFinite(value)) fail('Nonfinite public numeric value.');
     if (Array.isArray(value)) value.forEach(inspect);
     else if (object(value)) Object.entries(value).forEach(([key,item])=>{
+      if (privateFields.has(key)) fail('Private field '+key+' is not allowed.');
       if (item!=null && numericFields.has(key) && !finite(item)) fail('Invalid numeric '+key+'.');
+      if (item!=null && booleanFields.has(key) && typeof item!=='boolean') fail('Invalid boolean '+key+'.');
       if (item!=null && arrayFields.has(key) && !Array.isArray(item) && !(key==='evidence' && object(item))) fail('Invalid '+key+' collection.');
       if (Array.isArray(item) && objectRows.has(key) && item.some(row=>!object(row))) fail('Invalid '+key+' row.');
       if (Array.isArray(item) && textRows.has(key) && item.some(row=>typeof row!=='string')) fail('Invalid '+key+' text.');
