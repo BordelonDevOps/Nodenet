@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8.0",
-  "published_at": "2026-10-13T14:46:14.393640+00:00",
-  "valuation_as_of": "2026-10-13T14:38:15+00:00",
+  "published_at": "2026-10-13T15:47:39.982023+00:00",
+  "valuation_as_of": "2026-10-13T15:46:58.998000+00:00",
   "valuation_provenance": "fresh_broker_supplied",
   "experiment": {
     "name": "TradeRiser Agentic Trading Experiment",
@@ -10,13 +10,13 @@
     "objective": "Continue the live observation through December 31, 2026 using the experiment&amp;#x27;s cumulative contributed funds."
   },
   "account": {
-    "value": 65.5246,
-    "cash": 22.29,
-    "invested": 43.2351,
-    "buying_power": 22.29,
+    "value": 65.5025,
+    "cash": 5.63,
+    "invested": 59.8725,
+    "buying_power": 5.63,
     "net_contributions": 65.0,
-    "investment_gain": 0.5246,
-    "simple_return_on_contributions": 0.00807077,
+    "investment_gain": 0.5025,
+    "simple_return_on_contributions": 0.00773077,
     "currency": "USD"
   },
   "holdings": [
@@ -33,7 +33,7 @@
       "shares": 0.104102,
       "average_price": 109.99,
       "cost_basis": 11.4502,
-      "current_value": 11.7812,
+      "current_value": 11.7292,
       "strategy": "champion"
     },
     {
@@ -41,7 +41,7 @@
       "shares": 0.101392,
       "average_price": 110.46,
       "cost_basis": 11.1998,
-      "current_value": 11.0482,
+      "current_value": 11.0086,
       "strategy": "champion"
     },
     {
@@ -49,7 +49,7 @@
       "shares": 0.110477,
       "average_price": 60.92,
       "cost_basis": 6.7303,
-      "current_value": 7.4025,
+      "current_value": 7.4682,
       "strategy": "champion"
     },
     {
@@ -57,7 +57,7 @@
       "shares": 0.121902,
       "average_price": 59.47,
       "cost_basis": 7.2495,
-      "current_value": 7.4019,
+      "current_value": 7.4013,
       "strategy": "champion"
     },
     {
@@ -65,7 +65,7 @@
       "shares": 0.083648,
       "average_price": 65.99,
       "cost_basis": 5.5199,
-      "current_value": 5.5894,
+      "current_value": 5.5957,
       "strategy": "champion"
     },
     {
@@ -73,11 +73,96 @@
       "shares": 9e-05,
       "average_price": 111.11,
       "cost_basis": 0.01,
-      "current_value": 0.0089,
+      "current_value": 0.0088,
+      "strategy": "champion"
+    },
+    {
+      "symbol": "GSG",
+      "shares": 0.1649,
+      "average_price": 36.69,
+      "cost_basis": 6.0502,
+      "current_value": 6.0485,
+      "strategy": "champion"
+    },
+    {
+      "symbol": "IXC",
+      "shares": 0.068904,
+      "average_price": 61.68,
+      "cost_basis": 4.25,
+      "current_value": 4.2497,
+      "strategy": "champion"
+    },
+    {
+      "symbol": "RPV",
+      "shares": 0.053839,
+      "average_price": 118.13,
+      "cost_basis": 6.36,
+      "current_value": 6.3595,
       "strategy": "champion"
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "RPV",
+      "side": "buy",
+      "dollar_amount": 6.36,
+      "filled_notional": 6.36,
+      "state": "filled",
+      "quantity": 0.053839,
+      "average_price": 118.1299,
+      "fees": 0.0,
+      "reconciled_at": "2026-10-13T15:47:01.768843+00:00",
+      "authorized": true,
+      "orders_match": true,
+      "source": "agentic",
+      "authorization_basis": "delegated_policy",
+      "authorization_label": "delegated_policy_authorized",
+      "execution_label": "terminal_reconciled_fill",
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic"
+    },
+    {
+      "symbol": "IXC",
+      "side": "buy",
+      "dollar_amount": 4.25,
+      "filled_notional": 4.25,
+      "state": "filled",
+      "quantity": 0.068904,
+      "average_price": 61.6799,
+      "fees": 0.0,
+      "reconciled_at": "2026-10-13T15:47:01.768843+00:00",
+      "authorized": true,
+      "orders_match": true,
+      "source": "agentic",
+      "authorization_basis": "delegated_policy",
+      "authorization_label": "delegated_policy_authorized",
+      "execution_label": "terminal_reconciled_fill",
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic"
+    },
+    {
+      "symbol": "GSG",
+      "side": "buy",
+      "dollar_amount": 6.05,
+      "filled_notional": 6.05,
+      "state": "filled",
+      "quantity": 0.1649,
+      "average_price": 36.6888,
+      "fees": 0.0,
+      "reconciled_at": "2026-10-13T15:47:01.768843+00:00",
+      "authorized": true,
+      "orders_match": true,
+      "source": "agentic",
+      "authorization_basis": "delegated_policy",
+      "authorization_label": "delegated_policy_authorized",
+      "execution_label": "terminal_reconciled_fill",
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic"
+    }
+  ],
   "historical_trades": [
     {
       "symbol": "SPY",
@@ -8450,6 +8535,157 @@
       "authorized": false,
       "authorization_basis": "delegated_policy",
       "authorization_label": "delegated_policy_blocked"
+    },
+    {
+      "kind": "champion",
+      "generated_at": "2026-10-13T15:45:16.105742+00:00",
+      "status": "filled",
+      "selected": [
+        "CRAK",
+        "DGRO",
+        "DIVB",
+        "EWC",
+        "FNDX",
+        "GSG",
+        "IXC",
+        "IYK",
+        "RPV",
+        "WTV"
+      ],
+      "orders": [
+        {
+          "symbol": "GSG",
+          "side": "buy",
+          "dollars": 6.05,
+          "reason": "rules_based_rebalance",
+          "decision_class": "routine_replacement",
+          "funding_source": "available_cash"
+        },
+        {
+          "symbol": "IXC",
+          "side": "buy",
+          "dollars": 4.25,
+          "reason": "rules_based_rebalance",
+          "decision_class": "routine_replacement",
+          "funding_source": "available_cash"
+        },
+        {
+          "symbol": "RPV",
+          "side": "buy",
+          "dollars": 6.36,
+          "reason": "rules_based_rebalance",
+          "decision_class": "routine_replacement",
+          "funding_source": "available_cash"
+        }
+      ],
+      "explanation": [
+        "Delegated authorization passed and terminal broker fills reconciled."
+      ],
+      "regime": null,
+      "stage": "reconciliation",
+      "authorized": true,
+      "authorization_basis": "delegated_policy",
+      "authorization_label": "delegated_policy_authorized",
+      "reconciled": true
+    },
+    {
+      "kind": "executed_trade",
+      "generated_at": "2026-10-13T15:47:01.768843+00:00",
+      "status": "filled",
+      "selected": [
+        "RPV"
+      ],
+      "orders": [
+        {
+          "symbol": "RPV",
+          "side": "buy",
+          "dollars": 6.36,
+          "status": "filled",
+          "quantity": 0.053839,
+          "average_price": 118.1299,
+          "fees": 0.0
+        }
+      ],
+      "authorized": true,
+      "authorization_basis": "delegated_policy",
+      "authorization_label": "delegated_policy_authorized",
+      "reconciled": true,
+      "source": "agentic",
+      "execution_label": "terminal_reconciled_fill",
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic",
+      "stage": "execution",
+      "explanation": [
+        "The champion proposal passed delegated authorization and the terminal broker fill reconciled."
+      ],
+      "regime": null
+    },
+    {
+      "kind": "executed_trade",
+      "generated_at": "2026-10-13T15:47:01.768843+00:00",
+      "status": "filled",
+      "selected": [
+        "IXC"
+      ],
+      "orders": [
+        {
+          "symbol": "IXC",
+          "side": "buy",
+          "dollars": 4.25,
+          "status": "filled",
+          "quantity": 0.068904,
+          "average_price": 61.6799,
+          "fees": 0.0
+        }
+      ],
+      "authorized": true,
+      "authorization_basis": "delegated_policy",
+      "authorization_label": "delegated_policy_authorized",
+      "reconciled": true,
+      "source": "agentic",
+      "execution_label": "terminal_reconciled_fill",
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic",
+      "stage": "execution",
+      "explanation": [
+        "The champion proposal passed delegated authorization and the terminal broker fill reconciled."
+      ],
+      "regime": null
+    },
+    {
+      "kind": "executed_trade",
+      "generated_at": "2026-10-13T15:47:01.768843+00:00",
+      "status": "filled",
+      "selected": [
+        "GSG"
+      ],
+      "orders": [
+        {
+          "symbol": "GSG",
+          "side": "buy",
+          "dollars": 6.05,
+          "status": "filled",
+          "quantity": 0.1649,
+          "average_price": 36.6888,
+          "fees": 0.0
+        }
+      ],
+      "authorized": true,
+      "authorization_basis": "delegated_policy",
+      "authorization_label": "delegated_policy_authorized",
+      "reconciled": true,
+      "source": "agentic",
+      "execution_label": "terminal_reconciled_fill",
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic",
+      "stage": "execution",
+      "explanation": [
+        "The champion proposal passed delegated authorization and the terminal broker fill reconciled."
+      ],
+      "regime": null
     }
   ],
   "portfolio_history": [
@@ -12495,8 +12731,8 @@
     },
     {
       "date": "2026-10-13",
-      "value": 65.5246,
-      "cash": 22.29,
+      "value": 65.5025,
+      "cash": 5.63,
       "holdings": [
         {
           "symbol": "IWM",
@@ -12506,42 +12742,57 @@
         {
           "symbol": "EWT",
           "shares": 0.104102,
-          "value": 11.7812
+          "value": 11.7292
         },
         {
           "symbol": "FLTW",
           "shares": 0.101392,
-          "value": 11.0482
+          "value": 11.0086
         },
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 7.4025
+          "value": 7.4682
         },
         {
           "symbol": "DXJ",
           "shares": 0.121902,
-          "value": 7.4019
+          "value": 7.4013
         },
         {
           "symbol": "DIVB",
           "shares": 0.083648,
-          "value": 5.5894
+          "value": 5.5957
         },
         {
           "symbol": "IHE",
           "shares": 9e-05,
-          "value": 0.0089
+          "value": 0.0088
+        },
+        {
+          "symbol": "GSG",
+          "shares": 0.1649,
+          "value": 6.0485
+        },
+        {
+          "symbol": "IXC",
+          "shares": 0.068904,
+          "value": 4.2497
+        },
+        {
+          "symbol": "RPV",
+          "shares": 0.053839,
+          "value": 6.3595
         }
       ],
-      "captured_at": "2026-10-13T14:38:15+00:00",
+      "captured_at": "2026-10-13T15:46:58.998000+00:00",
       "source": "fresh_broker_supplied",
       "breakdown_estimated": false,
       "note": "Current holding quantities and values were supplied with the broker valuation; journal reconciliation is not claimed.",
       "net_cash_flow": 0.0,
       "contributions": 0.0,
       "withdrawals": -0.0,
-      "change": -0.3282,
+      "change": -0.3503,
       "change_pct": null,
       "market_gain": null,
       "return_unavailable_reason": "period_lacks_bracketing_valuations",
@@ -12555,7 +12806,7 @@
     }
   ],
   "performance": {
-    "simple_return_on_contributions": 0.00807077,
+    "simple_return_on_contributions": 0.00773077,
     "time_weighted_return": null,
     "time_weighted_quality": "unavailable_unbracketed_cash_flow",
     "money_weighted": {
@@ -13312,7 +13563,7 @@
   "daily_briefing": {
     "as_of": "2026-10-12",
     "headline": "TradeRiser proposed 3 portfolio changes.",
-    "portfolio_context": "The live account currently holds IWM, EWT, FLTW, CRAK, DXJ, DIVB, IHE.",
+    "portfolio_context": "The live account currently holds IWM, EWT, FLTW, CRAK, DXJ, DIVB, IHE, GSG, IXC, RPV.",
     "market_context": "The completed-session screen qualified CRAK, GSG, IXC, IEO, XLE, FENY, VDE, DXJ, DIVB, RPV, FNDX, RWL, EWC, WTV, DGRO, IYK, XMHQ, XLP, VDC for consideration.",
     "champion": "The live strategy currently favors CRAK, DGRO, DIVB, EWC, FNDX, GSG, IXC, IYK, RPV, WTV.",
     "challenger": "The research-only challenger favors CRAK, FLTW, FBT.",
@@ -13348,9 +13599,9 @@
   },
   "evidence": {
     "live_days": 65,
-    "champion_cycles": 81,
+    "champion_cycles": 82,
     "challenger_cycles": 52,
-    "reconciled_trades": 0,
+    "reconciled_trades": 3,
     "benchmark": "Equal-weight provider universe",
     "backtest_method": "monthly_threshold_proposals_next_session",
     "limitations": [
@@ -14287,12 +14538,12 @@
           "outgoing_score": 0.317391,
           "incoming_score": 0.55705,
           "calibrated_forward_return_per_score": -0.01340016,
-          "expected_edge_dollars": -0.0195,
-          "funded_dollars": 6.06,
-          "required_edge_dollars": 0.1255,
-          "estimated_tax_cost_dollars": 0.0831,
+          "expected_edge_dollars": -0.0194,
+          "funded_dollars": 6.05,
+          "required_edge_dollars": 0.1252,
+          "estimated_tax_cost_dollars": 0.0828,
           "round_trip_cost_dollars": 0.0121,
-          "uncertainty_buffer_dollars": 0.0303,
+          "uncertainty_buffer_dollars": 0.0302,
           "calibration_samples": 30
         },
         {
@@ -14305,11 +14556,11 @@
           "incoming_score": 0.59568,
           "calibrated_forward_return_per_score": -0.01340016,
           "expected_edge_dollars": -0.0229,
-          "funded_dollars": 6.06,
-          "required_edge_dollars": 0.1255,
-          "estimated_tax_cost_dollars": 0.0831,
+          "funded_dollars": 6.05,
+          "required_edge_dollars": 0.1252,
+          "estimated_tax_cost_dollars": 0.0828,
           "round_trip_cost_dollars": 0.0121,
-          "uncertainty_buffer_dollars": 0.0303,
+          "uncertainty_buffer_dollars": 0.0302,
           "calibration_samples": 30
         },
         {
@@ -14322,11 +14573,11 @@
           "incoming_score": 0.590493,
           "calibrated_forward_return_per_score": -0.01340016,
           "expected_edge_dollars": -0.0199,
-          "funded_dollars": 6.06,
-          "required_edge_dollars": 0.1255,
-          "estimated_tax_cost_dollars": 0.0831,
+          "funded_dollars": 6.05,
+          "required_edge_dollars": 0.1252,
+          "estimated_tax_cost_dollars": 0.0828,
           "round_trip_cost_dollars": 0.0121,
-          "uncertainty_buffer_dollars": 0.0303,
+          "uncertainty_buffer_dollars": 0.0302,
           "calibration_samples": 30
         }
       ],
@@ -14342,7 +14593,7 @@
           "full_exit_sessions": 5,
           "consecutive_ineligible_sessions": 1,
           "trigger": "short_horizon_weakness",
-          "estimated_tax_cost_dollars": 0.2052,
+          "estimated_tax_cost_dollars": 0.1865,
           "evidence": [
             {
               "data_as_of": "2026-10-12",
@@ -14373,7 +14624,7 @@
           "full_exit_sessions": 5,
           "consecutive_ineligible_sessions": 1,
           "trigger": "short_horizon_weakness",
-          "estimated_tax_cost_dollars": 0.1723,
+          "estimated_tax_cost_dollars": 0.1562,
           "evidence": [
             {
               "data_as_of": "2026-10-12",
@@ -14491,8 +14742,8 @@
     },
     "funding_analysis": {
       "available_contribution_cash": 22.28,
-      "cash_funded_budget": 15.0,
-      "unallocated_cash": 7.265,
+      "cash_funded_budget": 16.66,
+      "unallocated_cash": 5.6033,
       "cash_funded_orders": [
         "GSG",
         "IXC",
