@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8.0",
-  "published_at": "2026-10-14T14:25:59.468005+00:00",
-  "valuation_as_of": "2026-10-14T14:25:04.678000+00:00",
+  "published_at": "2026-10-14T14:39:53.721652+00:00",
+  "valuation_as_of": "2026-10-14T14:38:33.526000+00:00",
   "valuation_provenance": "fresh_broker_supplied",
   "experiment": {
     "name": "TradeRiser Agentic Trading Experiment",
@@ -10,13 +10,13 @@
     "objective": "Continue the live observation through December 31, 2026 using the experiment&amp;#x27;s cumulative contributed funds."
   },
   "account": {
-    "value": 65.5373,
+    "value": 65.5371,
     "cash": 0.0,
-    "invested": 65.5374,
+    "invested": 65.5371,
     "buying_power": 0.0,
     "net_contributions": 65.0,
-    "investment_gain": 0.5373,
-    "simple_return_on_contributions": 0.00826615,
+    "investment_gain": 0.5371,
+    "simple_return_on_contributions": 0.00826308,
     "currency": "USD"
   },
   "holdings": [
@@ -41,7 +41,7 @@
       "shares": 0.101392,
       "average_price": 110.46,
       "cost_basis": 11.1998,
-      "current_value": 10.9519,
+      "current_value": 10.96,
       "strategy": "champion"
     },
     {
@@ -49,7 +49,7 @@
       "shares": 0.110477,
       "average_price": 60.92,
       "cost_basis": 6.7303,
-      "current_value": 7.5169,
+      "current_value": 7.5091,
       "strategy": "champion"
     },
     {
@@ -57,7 +57,7 @@
       "shares": 0.121902,
       "average_price": 59.47,
       "cost_basis": 7.2495,
-      "current_value": 7.3531,
+      "current_value": 7.3653,
       "strategy": "champion"
     },
     {
@@ -65,7 +65,7 @@
       "shares": 0.083648,
       "average_price": 65.99,
       "cost_basis": 5.5199,
-      "current_value": 5.5927,
+      "current_value": 5.591,
       "strategy": "champion"
     },
     {
@@ -81,7 +81,7 @@
       "shares": 0.1649,
       "average_price": 36.69,
       "cost_basis": 6.0502,
-      "current_value": 6.0362,
+      "current_value": 6.0337,
       "strategy": "champion"
     },
     {
@@ -89,7 +89,7 @@
       "shares": 0.068904,
       "average_price": 61.68,
       "cost_basis": 4.25,
-      "current_value": 4.2652,
+      "current_value": 4.2583,
       "strategy": "champion"
     },
     {
@@ -97,7 +97,7 @@
       "shares": 0.053839,
       "average_price": 118.13,
       "cost_basis": 6.36,
-      "current_value": 6.3433,
+      "current_value": 6.3395,
       "strategy": "champion"
     },
     {
@@ -105,7 +105,7 @@
       "shares": 0.207864,
       "average_price": 27.09,
       "cost_basis": 5.631,
-      "current_value": 5.7942,
+      "current_value": 5.7963,
       "strategy": "champion"
     }
   ],
@@ -8721,6 +8721,109 @@
       "authorized": false,
       "authorization_basis": "delegated_policy",
       "authorization_label": "delegated_policy_blocked"
+    },
+    {
+      "kind": "challenger",
+      "generated_at": "2026-10-14T14:28:17.644647+00:00",
+      "status": "hypothetical_only",
+      "selected": [
+        "CRAK",
+        "FNDX",
+        "IEO"
+      ],
+      "orders": [
+        {
+          "symbol": "DIVB",
+          "side": "sell",
+          "dollars": 5.59,
+          "reason": "strategy_rule"
+        },
+        {
+          "symbol": "DXJ",
+          "side": "sell",
+          "dollars": 7.35,
+          "reason": "strategy_rule"
+        },
+        {
+          "symbol": "EWT",
+          "side": "sell",
+          "dollars": 11.67,
+          "reason": "strategy_rule"
+        },
+        {
+          "symbol": "FLTW",
+          "side": "sell",
+          "dollars": 10.95,
+          "reason": "strategy_rule"
+        },
+        {
+          "symbol": "FNDX",
+          "side": "buy",
+          "dollars": 19.43,
+          "reason": "strategy_rule"
+        },
+        {
+          "symbol": "GME",
+          "side": "sell",
+          "dollars": 5.79,
+          "reason": "strategy_rule"
+        },
+        {
+          "symbol": "GSG",
+          "side": "sell",
+          "dollars": 6.04,
+          "reason": "strategy_rule"
+        },
+        {
+          "symbol": "IEO",
+          "side": "buy",
+          "dollars": 6.05,
+          "reason": "strategy_rule"
+        },
+        {
+          "symbol": "IXC",
+          "side": "sell",
+          "dollars": 4.27,
+          "reason": "strategy_rule"
+        },
+        {
+          "symbol": "RPV",
+          "side": "sell",
+          "dollars": 6.34,
+          "reason": "strategy_rule"
+        }
+      ],
+      "explanation": [
+        "Research-only evaluation; execution is disabled."
+      ],
+      "regime": "{&#x27;median_distance_from_200d_average&#x27;: 0.03215, &#x27;na",
+      "stage": "research"
+    },
+    {
+      "kind": "champion",
+      "generated_at": "2026-10-14T14:38:47.291509+00:00",
+      "status": "not_authorized",
+      "selected": [
+        "CRAK",
+        "DGRO",
+        "DIVB",
+        "EWC",
+        "FNDX",
+        "GSG",
+        "IAK",
+        "IEO",
+        "RPV",
+        "WTV"
+      ],
+      "orders": [],
+      "explanation": [
+        "no orders were proposed"
+      ],
+      "regime": null,
+      "stage": "authorization",
+      "authorized": false,
+      "authorization_basis": "delegated_policy",
+      "authorization_label": "delegated_policy_blocked"
     }
   ],
   "portfolio_history": [
@@ -12831,7 +12934,7 @@
     },
     {
       "date": "2026-10-14",
-      "value": 65.5373,
+      "value": 65.5371,
       "cash": 0.0,
       "holdings": [
         {
@@ -12847,22 +12950,22 @@
         {
           "symbol": "FLTW",
           "shares": 0.101392,
-          "value": 10.9519
+          "value": 10.96
         },
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 7.5169
+          "value": 7.5091
         },
         {
           "symbol": "DXJ",
           "shares": 0.121902,
-          "value": 7.3531
+          "value": 7.3653
         },
         {
           "symbol": "DIVB",
           "shares": 0.083648,
-          "value": 5.5927
+          "value": 5.591
         },
         {
           "symbol": "IHE",
@@ -12872,36 +12975,36 @@
         {
           "symbol": "GSG",
           "shares": 0.1649,
-          "value": 6.0362
+          "value": 6.0337
         },
         {
           "symbol": "IXC",
           "shares": 0.068904,
-          "value": 4.2652
+          "value": 4.2583
         },
         {
           "symbol": "RPV",
           "shares": 0.053839,
-          "value": 6.3433
+          "value": 6.3395
         },
         {
           "symbol": "GME",
           "shares": 0.207864,
-          "value": 5.7942
+          "value": 5.7963
         }
       ],
-      "captured_at": "2026-10-14T14:25:04.678000+00:00",
+      "captured_at": "2026-10-14T14:38:33.526000+00:00",
       "source": "fresh_broker_supplied",
       "breakdown_estimated": false,
       "note": "Current holding quantities and values were supplied with the broker valuation; journal reconciliation is not claimed.",
       "net_cash_flow": 0.0,
       "contributions": 0.0,
       "withdrawals": -0.0,
-      "change": 0.0348,
-      "change_pct": 0.00053128,
-      "market_gain": 0.0348,
+      "change": 0.0346,
+      "change_pct": 0.00052822,
+      "market_gain": 0.0346,
       "return_unavailable_reason": "prior_cash_flow_lacks_bracketing_valuations",
-      "period_return": 0.00053128,
+      "period_return": 0.00052822,
       "return_available": true,
       "time_weighted_return": null,
       "cash_flow_timing": "none",
@@ -12911,7 +13014,7 @@
     }
   ],
   "performance": {
-    "simple_return_on_contributions": 0.00826615,
+    "simple_return_on_contributions": 0.00826308,
     "time_weighted_return": null,
     "time_weighted_quality": "unavailable_unbracketed_cash_flow",
     "money_weighted": {
@@ -13682,7 +13785,7 @@
     "portfolio_context": "The live account currently holds IWM, EWT, FLTW, CRAK, DXJ, DIVB, IHE, GSG, IXC, RPV, GME.",
     "market_context": "The completed-session screen qualified CRAK, GSG, IEO, DXJ, XLE, FENY, VDE, DIVB, IXC, RPV, FNDX, RWL, WTV, EWC, DGRO, IAK, XMHQ, IYK, XLP, VDC, GME for consideration.",
     "champion": "The live strategy currently favors CRAK, DGRO, DIVB, EWC, FNDX, GSG, IAK, IEO, RPV, WTV.",
-    "challenger": "The research-only challenger favors CRAK, FLTW, FBT.",
+    "challenger": "The research-only challenger favors CRAK, FNDX, IEO.",
     "disclosure": "This briefing explains completed-session model inputs; it is not a real-time news feed or a recommendation."
   },
   "plain_language": {
@@ -13715,8 +13818,8 @@
   },
   "evidence": {
     "live_days": 66,
-    "champion_cycles": 83,
-    "challenger_cycles": 52,
+    "champion_cycles": 84,
+    "challenger_cycles": 53,
     "reconciled_trades": 3,
     "benchmark": "Equal-weight provider universe",
     "backtest_method": "monthly_threshold_proposals_next_session",
@@ -13888,7 +13991,7 @@
         "price": 97.36,
         "annualized_volatility": 0.175056,
         "rsi_14": 34.4095,
-        "consecutive_ineligible_sessions": 2,
+        "consecutive_ineligible_sessions": 1,
         "overbought": false,
         "short_horizon_weakness": false,
         "cost_basis_weakness": true,
@@ -14680,8 +14783,8 @@
           "calibrated_forward_return_per_score": -0.07020746,
           "expected_edge_dollars": -0.1764,
           "funded_dollars": 3.51,
-          "required_edge_dollars": 0.0649,
-          "estimated_tax_cost_dollars": 0.0403,
+          "required_edge_dollars": 0.0654,
+          "estimated_tax_cost_dollars": 0.0409,
           "round_trip_cost_dollars": 0.007,
           "uncertainty_buffer_dollars": 0.0175,
           "calibration_samples": 30
@@ -14697,8 +14800,8 @@
           "calibrated_forward_return_per_score": -0.07020746,
           "expected_edge_dollars": -0.1359,
           "funded_dollars": 3.51,
-          "required_edge_dollars": 0.0649,
-          "estimated_tax_cost_dollars": 0.0403,
+          "required_edge_dollars": 0.0654,
+          "estimated_tax_cost_dollars": 0.0409,
           "round_trip_cost_dollars": 0.007,
           "uncertainty_buffer_dollars": 0.0175,
           "calibration_samples": 30
@@ -14714,8 +14817,8 @@
           "calibrated_forward_return_per_score": -0.07020746,
           "expected_edge_dollars": -0.1394,
           "funded_dollars": 3.51,
-          "required_edge_dollars": 0.0649,
-          "estimated_tax_cost_dollars": 0.0403,
+          "required_edge_dollars": 0.0654,
+          "estimated_tax_cost_dollars": 0.0409,
           "round_trip_cost_dollars": 0.007,
           "uncertainty_buffer_dollars": 0.0175,
           "calibration_samples": 30
@@ -14730,9 +14833,9 @@
           "incoming_score": 0.232132,
           "calibrated_forward_return_per_score": 0.01395118,
           "expected_edge_dollars": -0.0144,
-          "funded_dollars": 4.27,
-          "required_edge_dollars": 0.0361,
-          "estimated_tax_cost_dollars": 0.0062,
+          "funded_dollars": 4.26,
+          "required_edge_dollars": 0.0332,
+          "estimated_tax_cost_dollars": 0.0034,
           "round_trip_cost_dollars": 0.0085,
           "uncertainty_buffer_dollars": 0.0213,
           "calibration_samples": 30
@@ -14747,9 +14850,9 @@
           "incoming_score": 0.250504,
           "calibrated_forward_return_per_score": 0.01395118,
           "expected_edge_dollars": -0.0144,
-          "funded_dollars": 4.27,
-          "required_edge_dollars": 0.0361,
-          "estimated_tax_cost_dollars": 0.0062,
+          "funded_dollars": 4.26,
+          "required_edge_dollars": 0.0332,
+          "estimated_tax_cost_dollars": 0.0034,
           "round_trip_cost_dollars": 0.0085,
           "uncertainty_buffer_dollars": 0.0213,
           "calibration_samples": 30
@@ -14763,10 +14866,10 @@
           "outgoing_score": 0.373517,
           "incoming_score": 0.276962,
           "calibrated_forward_return_per_score": 0.01395118,
-          "expected_edge_dollars": -0.0058,
-          "funded_dollars": 4.27,
-          "required_edge_dollars": 0.0361,
-          "estimated_tax_cost_dollars": 0.0062,
+          "expected_edge_dollars": -0.0057,
+          "funded_dollars": 4.26,
+          "required_edge_dollars": 0.0332,
+          "estimated_tax_cost_dollars": 0.0034,
           "round_trip_cost_dollars": 0.0085,
           "uncertainty_buffer_dollars": 0.0213,
           "calibration_samples": 30
@@ -14780,12 +14883,12 @@
           "outgoing_score": 0.313388,
           "incoming_score": 0.188554,
           "calibrated_forward_return_per_score": 0.03010304,
-          "expected_edge_dollars": -0.0276,
-          "funded_dollars": 7.35,
-          "required_edge_dollars": 0.133,
-          "estimated_tax_cost_dollars": 0.0816,
+          "expected_edge_dollars": -0.0277,
+          "funded_dollars": 7.37,
+          "required_edge_dollars": 0.1382,
+          "estimated_tax_cost_dollars": 0.0867,
           "round_trip_cost_dollars": 0.0147,
-          "uncertainty_buffer_dollars": 0.0367,
+          "uncertainty_buffer_dollars": 0.0369,
           "calibration_samples": 30
         },
         {
@@ -14797,12 +14900,12 @@
           "outgoing_score": 0.345515,
           "incoming_score": 0.210394,
           "calibrated_forward_return_per_score": 0.03010304,
-          "expected_edge_dollars": -0.0299,
-          "funded_dollars": 7.35,
-          "required_edge_dollars": 0.133,
-          "estimated_tax_cost_dollars": 0.0816,
+          "expected_edge_dollars": -0.03,
+          "funded_dollars": 7.37,
+          "required_edge_dollars": 0.1382,
+          "estimated_tax_cost_dollars": 0.0867,
           "round_trip_cost_dollars": 0.0147,
-          "uncertainty_buffer_dollars": 0.0367,
+          "uncertainty_buffer_dollars": 0.0369,
           "calibration_samples": 30
         },
         {
@@ -14814,12 +14917,12 @@
           "outgoing_score": 0.40621,
           "incoming_score": 0.243698,
           "calibrated_forward_return_per_score": 0.03010304,
-          "expected_edge_dollars": -0.036,
-          "funded_dollars": 7.35,
-          "required_edge_dollars": 0.133,
-          "estimated_tax_cost_dollars": 0.0816,
+          "expected_edge_dollars": -0.0361,
+          "funded_dollars": 7.37,
+          "required_edge_dollars": 0.1382,
+          "estimated_tax_cost_dollars": 0.0867,
           "round_trip_cost_dollars": 0.0147,
-          "uncertainty_buffer_dollars": 0.0367,
+          "uncertainty_buffer_dollars": 0.0369,
           "calibration_samples": 30
         },
         {
@@ -14831,12 +14934,12 @@
           "outgoing_score": 0.828048,
           "incoming_score": 0.195015,
           "calibrated_forward_return_per_score": 0.05107907,
-          "expected_edge_dollars": -0.1083,
-          "funded_dollars": 3.35,
-          "required_edge_dollars": 0.1836,
-          "estimated_tax_cost_dollars": 0.1601,
+          "expected_edge_dollars": -0.108,
+          "funded_dollars": 3.34,
+          "required_edge_dollars": 0.1818,
+          "estimated_tax_cost_dollars": 0.1584,
           "round_trip_cost_dollars": 0.0067,
-          "uncertainty_buffer_dollars": 0.0168,
+          "uncertainty_buffer_dollars": 0.0167,
           "calibration_samples": 30
         },
         {
@@ -14848,12 +14951,12 @@
           "outgoing_score": 0.830662,
           "incoming_score": 0.215259,
           "calibrated_forward_return_per_score": 0.05107907,
-          "expected_edge_dollars": -0.1053,
-          "funded_dollars": 3.35,
-          "required_edge_dollars": 0.1836,
-          "estimated_tax_cost_dollars": 0.1601,
+          "expected_edge_dollars": -0.105,
+          "funded_dollars": 3.34,
+          "required_edge_dollars": 0.1818,
+          "estimated_tax_cost_dollars": 0.1584,
           "round_trip_cost_dollars": 0.0067,
-          "uncertainty_buffer_dollars": 0.0168,
+          "uncertainty_buffer_dollars": 0.0167,
           "calibration_samples": 30
         },
         {
@@ -14865,12 +14968,12 @@
           "outgoing_score": 0.852128,
           "incoming_score": 0.229962,
           "calibrated_forward_return_per_score": 0.05107907,
-          "expected_edge_dollars": -0.1065,
-          "funded_dollars": 3.35,
-          "required_edge_dollars": 0.1836,
-          "estimated_tax_cost_dollars": 0.1601,
+          "expected_edge_dollars": -0.1061,
+          "funded_dollars": 3.34,
+          "required_edge_dollars": 0.1818,
+          "estimated_tax_cost_dollars": 0.1584,
           "round_trip_cost_dollars": 0.0067,
-          "uncertainty_buffer_dollars": 0.0168,
+          "uncertainty_buffer_dollars": 0.0167,
           "calibration_samples": 30
         }
       ],
@@ -14927,7 +15030,7 @@
           "full_exit_sessions": 5,
           "consecutive_ineligible_sessions": 2,
           "trigger": "short_horizon_weakness",
-          "estimated_tax_cost_dollars": 0.133,
+          "estimated_tax_cost_dollars": 0.1364,
           "evidence": [
             {
               "data_as_of": "2026-10-13",
@@ -14966,7 +15069,7 @@
           "action": "awaiting_confirmation",
           "confirmation_sessions": 3,
           "full_exit_sessions": 5,
-          "consecutive_ineligible_sessions": 2,
+          "consecutive_ineligible_sessions": 1,
           "trigger": "cost_basis_weakness",
           "estimated_tax_cost_dollars": 0.0,
           "evidence": [
@@ -15076,661 +15179,637 @@
       {
         "symbol": "CRAK",
         "eligible": true,
-        "score": 1.289509,
-        "momentum_21d": 0.010364,
-        "momentum_63d": 0.275789,
-        "momentum_126d": 0.396755,
-        "distance_from_200d_average": 0.313963,
-        "drawdown_126d": -0.015592,
-        "diversification_adjusted_score": 1.289509,
-        "price": 66.29,
-        "annualized_volatility": 0.21427,
-        "asset_group": "provider_candidate"
-      },
-      {
-        "symbol": "VLUE",
-        "eligible": true,
-        "score": 0.909319,
-        "momentum_21d": -0.00209,
-        "momentum_63d": 0.034525,
-        "momentum_126d": 0.322315,
-        "distance_from_200d_average": 0.149929,
-        "drawdown_126d": -0.024523,
-        "price": 199.52,
-        "annualized_volatility": 0.171181,
-        "asset_group": "provider_candidate"
-      },
-      {
-        "symbol": "FLTW",
-        "eligible": true,
-        "score": 0.848957,
-        "momentum_21d": 0.052988,
-        "momentum_63d": 0.121612,
-        "momentum_126d": 0.497014,
-        "distance_from_200d_average": 0.269807,
-        "drawdown_126d": -0.031469,
-        "diversification_adjusted_score": 0.841253,
-        "price": 110.49,
-        "annualized_volatility": 0.323075,
-        "asset_group": "provider_candidate"
-      },
-      {
-        "symbol": "EWT",
-        "eligible": true,
-        "score": 0.844252,
-        "momentum_21d": 0.049486,
-        "momentum_63d": 0.122006,
-        "momentum_126d": 0.485703,
-        "distance_from_200d_average": 0.268554,
-        "drawdown_126d": -0.031271,
-        "diversification_adjusted_score": 0.496693,
-        "price": 114.31,
-        "annualized_volatility": 0.318244,
-        "asset_group": "provider_candidate"
-      },
-      {
-        "symbol": "FNDX",
-        "eligible": true,
-        "score": 0.820715,
-        "momentum_21d": 0.002805,
-        "momentum_63d": 0.025422,
-        "momentum_126d": 0.13102,
-        "distance_from_200d_average": 0.072869,
-        "drawdown_126d": -0.015544,
-        "diversification_adjusted_score": 0.647707,
-        "price": 32.16,
-        "annualized_volatility": 0.082971,
-        "asset_group": "provider_candidate"
-      },
-      {
-        "symbol": "FBT",
-        "eligible": true,
-        "score": 0.778839,
-        "momentum_21d": 0.011896,
-        "momentum_63d": 0.07215,
-        "momentum_126d": 0.315424,
-        "distance_from_200d_average": 0.160631,
-        "drawdown_126d": -0.031069,
-        "diversification_adjusted_score": 0.717621,
-        "price": 265.4,
-        "annualized_volatility": 0.215575,
-        "asset_group": "provider_candidate"
-      },
-      {
-        "symbol": "DIVB",
-        "eligible": true,
-        "score": 0.769876,
-        "momentum_21d": -0.015385,
-        "momentum_63d": 0.037713,
-        "momentum_126d": 0.223268,
-        "distance_from_200d_average": 0.111971,
-        "drawdown_126d": -0.044494,
-        "price": 66.17,
-        "annualized_volatility": 0.141604,
+        "score": 1.349593,
+        "momentum_21d": 0.054151,
+        "momentum_63d": 0.290654,
+        "momentum_126d": 0.415122,
+        "distance_from_200d_average": 0.338899,
+        "drawdown_126d": 0.0,
+        "diversification_adjusted_score": 1.349593,
+        "price": 67.94,
+        "annualized_volatility": 0.221818,
         "asset_group": "provider_candidate"
       },
       {
         "symbol": "IEO",
         "eligible": true,
-        "score": 0.734538,
-        "momentum_21d": 0.019257,
-        "momentum_63d": 0.219781,
-        "momentum_126d": 0.249535,
-        "distance_from_200d_average": 0.2358,
-        "drawdown_126d": -0.008555,
-        "diversification_adjusted_score": 0.482051,
-        "price": 143.71,
-        "annualized_volatility": 0.262076,
+        "score": 0.993566,
+        "momentum_21d": 0.070617,
+        "momentum_63d": 0.282464,
+        "momentum_126d": 0.339447,
+        "distance_from_200d_average": 0.285738,
+        "drawdown_126d": 0.0,
+        "diversification_adjusted_score": 0.739578,
+        "price": 150.29,
+        "annualized_volatility": 0.267458,
         "asset_group": "provider_candidate"
       },
       {
-        "symbol": "RWL",
+        "symbol": "DIVB",
         "eligible": true,
-        "score": 0.670885,
-        "momentum_21d": 0.001594,
-        "momentum_63d": 0.015385,
-        "momentum_126d": 0.124968,
-        "distance_from_200d_average": 0.066093,
-        "drawdown_126d": -0.02202,
-        "diversification_adjusted_score": 0.584754,
-        "price": 132.34,
-        "annualized_volatility": 0.091573,
+        "score": 0.894572,
+        "momentum_21d": -0.023596,
+        "momentum_63d": 0.07089,
+        "momentum_126d": 0.225903,
+        "distance_from_200d_average": 0.121073,
+        "drawdown_126d": -0.034386,
+        "price": 66.87,
+        "annualized_volatility": 0.134802,
         "asset_group": "provider_candidate"
       },
       {
         "symbol": "XLE",
         "eligible": true,
-        "score": 0.612627,
-        "momentum_21d": 0.008268,
-        "momentum_63d": 0.153804,
-        "momentum_126d": 0.158043,
-        "distance_from_200d_average": 0.153819,
-        "drawdown_126d": -0.007025,
-        "diversification_adjusted_score": 0.373343,
-        "price": 65.08,
-        "annualized_volatility": 0.206067,
+        "score": 0.843122,
+        "momentum_21d": 0.047566,
+        "momentum_63d": 0.19645,
+        "momentum_126d": 0.216925,
+        "distance_from_200d_average": 0.186559,
+        "drawdown_126d": 0.0,
+        "diversification_adjusted_score": 0.604749,
+        "price": 67.2,
+        "annualized_volatility": 0.208614,
         "asset_group": "provider_candidate"
       },
       {
-        "symbol": "GSG",
+        "symbol": "FNDX",
         "eligible": true,
-        "score": 0.563885,
-        "momentum_21d": -0.023281,
-        "momentum_63d": 0.182176,
-        "momentum_126d": 0.165375,
-        "distance_from_200d_average": 0.179179,
-        "drawdown_126d": -0.028802,
-        "price": 36.08,
-        "annualized_volatility": 0.233807,
+        "score": 0.814116,
+        "momentum_21d": 0.002811,
+        "momentum_63d": 0.0318,
+        "momentum_126d": 0.125094,
+        "distance_from_200d_average": 0.077659,
+        "drawdown_126d": -0.009422,
+        "diversification_adjusted_score": 0.772327,
+        "price": 32.36,
+        "annualized_volatility": 0.083266,
         "asset_group": "provider_candidate"
       },
       {
         "symbol": "FENY",
         "eligible": true,
-        "score": 0.545219,
-        "momentum_21d": 0.001037,
-        "momentum_63d": 0.14368,
-        "momentum_126d": 0.140426,
-        "distance_from_200d_average": 0.143767,
-        "drawdown_126d": -0.012946,
-        "diversification_adjusted_score": 0.303785,
-        "price": 35.83,
-        "annualized_volatility": 0.207286,
+        "score": 0.780697,
+        "momentum_21d": 0.04213,
+        "momentum_63d": 0.185598,
+        "momentum_126d": 0.200743,
+        "distance_from_200d_average": 0.176109,
+        "drawdown_126d": 0.0,
+        "diversification_adjusted_score": 0.540032,
+        "price": 36.99,
+        "annualized_volatility": 0.20971,
         "asset_group": "provider_candidate"
       },
       {
         "symbol": "VDE",
         "eligible": true,
-        "score": 0.541511,
-        "momentum_21d": 0.001452,
-        "momentum_63d": 0.144025,
-        "momentum_126d": 0.140034,
-        "distance_from_200d_average": 0.143583,
-        "drawdown_126d": -0.0129,
-        "diversification_adjusted_score": 0.299424,
-        "price": 182.11,
-        "annualized_volatility": 0.208751,
+        "score": 0.774317,
+        "momentum_21d": 0.041533,
+        "momentum_63d": 0.186245,
+        "momentum_126d": 0.199706,
+        "distance_from_200d_average": 0.175701,
+        "drawdown_126d": 0.0,
+        "diversification_adjusted_score": 0.532825,
+        "price": 187.97,
+        "annualized_volatility": 0.210973,
+        "asset_group": "provider_candidate"
+      },
+      {
+        "symbol": "EWT",
+        "eligible": true,
+        "score": 0.729913,
+        "momentum_21d": 0.058297,
+        "momentum_63d": 0.107035,
+        "momentum_126d": 0.414537,
+        "distance_from_200d_average": 0.251986,
+        "drawdown_126d": -0.038475,
+        "diversification_adjusted_score": 0.563178,
+        "price": 113.46,
+        "annualized_volatility": 0.318665,
+        "asset_group": "provider_candidate"
+      },
+      {
+        "symbol": "FLTW",
+        "eligible": true,
+        "score": 0.722899,
+        "momentum_21d": 0.060268,
+        "momentum_63d": 0.104093,
+        "momentum_126d": 0.419914,
+        "distance_from_200d_average": 0.248389,
+        "drawdown_126d": -0.042339,
+        "diversification_adjusted_score": 0.552128,
+        "price": 109.25,
+        "annualized_volatility": 0.323726,
         "asset_group": "provider_candidate"
       },
       {
         "symbol": "IXC",
         "eligible": true,
-        "score": 0.497532,
-        "momentum_21d": 0.004529,
-        "momentum_63d": 0.139703,
-        "momentum_126d": 0.10791,
-        "distance_from_200d_average": 0.135047,
-        "drawdown_126d": -0.011555,
-        "diversification_adjusted_score": 0.251106,
-        "price": 59.88,
-        "annualized_volatility": 0.196558,
+        "score": 0.713185,
+        "momentum_21d": 0.040978,
+        "momentum_63d": 0.176482,
+        "momentum_126d": 0.160571,
+        "distance_from_200d_average": 0.165663,
+        "drawdown_126d": 0.0,
+        "diversification_adjusted_score": 0.468068,
+        "price": 61.73,
+        "annualized_volatility": 0.199417,
         "asset_group": "provider_candidate"
       },
       {
-        "symbol": "SOXX",
+        "symbol": "RWL",
         "eligible": true,
-        "score": 0.467772,
-        "momentum_21d": 0.081819,
-        "momentum_63d": 0.011119,
-        "momentum_126d": 0.448607,
-        "distance_from_200d_average": 0.211471,
-        "drawdown_126d": -0.145409,
-        "diversification_adjusted_score": 0.175017,
-        "price": 559.4,
-        "annualized_volatility": 0.440624,
+        "score": 0.663486,
+        "momentum_21d": -0.002811,
+        "momentum_63d": 0.024897,
+        "momentum_126d": 0.117904,
+        "distance_from_200d_average": 0.07074,
+        "drawdown_126d": -0.016256,
+        "price": 133.12,
+        "annualized_volatility": 0.091691,
+        "asset_group": "provider_candidate"
+      },
+      {
+        "symbol": "GSG",
+        "eligible": true,
+        "score": 0.617739,
+        "momentum_21d": 0.007397,
+        "momentum_63d": 0.179282,
+        "momentum_126d": 0.178526,
+        "distance_from_200d_average": 0.196549,
+        "drawdown_126d": -0.010229,
+        "diversification_adjusted_score": 0.415939,
+        "price": 36.77,
+        "annualized_volatility": 0.233057,
         "asset_group": "provider_candidate"
       },
       {
         "symbol": "DGRO",
         "eligible": true,
-        "score": 0.465808,
-        "momentum_21d": -0.001383,
-        "momentum_63d": 0.005989,
-        "momentum_126d": 0.08698,
-        "distance_from_200d_average": 0.046064,
-        "drawdown_126d": -0.02958,
-        "price": 77.29,
-        "annualized_volatility": 0.08656,
-        "asset_group": "provider_candidate"
-      },
-      {
-        "symbol": "DXJ",
-        "eligible": true,
-        "score": 0.439452,
-        "momentum_21d": 0.050391,
-        "momentum_63d": 0.04097,
-        "momentum_126d": 0.106879,
-        "distance_from_200d_average": 0.090908,
-        "drawdown_126d": -0.009517,
-        "diversification_adjusted_score": 0.241338,
-        "price": 60.71,
-        "annualized_volatility": 0.164121,
-        "asset_group": "provider_candidate"
-      },
-      {
-        "symbol": "WTV",
-        "eligible": true,
-        "score": 0.42202,
-        "momentum_21d": -0.015663,
-        "momentum_63d": 0.003327,
-        "momentum_126d": 0.106067,
-        "distance_from_200d_average": 0.045666,
-        "drawdown_126d": -0.041963,
-        "price": 104.51,
-        "annualized_volatility": 0.105805,
-        "asset_group": "provider_candidate"
-      },
-      {
-        "symbol": "IHE",
-        "eligible": true,
-        "score": 0.396744,
-        "momentum_21d": -0.008936,
-        "momentum_63d": 0.003751,
-        "momentum_126d": 0.15511,
-        "distance_from_200d_average": 0.07598,
-        "drawdown_126d": -0.072069,
-        "price": 100.09,
-        "annualized_volatility": 0.167144,
+        "score": 0.489379,
+        "momentum_21d": -0.00302,
+        "momentum_63d": 0.017273,
+        "momentum_126d": 0.082312,
+        "distance_from_200d_average": 0.048762,
+        "drawdown_126d": -0.025939,
+        "price": 77.58,
+        "annualized_volatility": 0.085673,
         "asset_group": "provider_candidate"
       },
       {
         "symbol": "RPV",
         "eligible": true,
-        "score": 0.381824,
-        "momentum_21d": -0.025946,
-        "momentum_63d": 0.001856,
-        "momentum_126d": 0.099548,
-        "distance_from_200d_average": 0.047006,
-        "drawdown_126d": -0.043716,
-        "price": 117.32,
-        "annualized_volatility": 0.1025,
+        "score": 0.470967,
+        "momentum_21d": -0.02357,
+        "momentum_63d": 0.016771,
+        "momentum_126d": 0.107435,
+        "distance_from_200d_average": 0.055899,
+        "drawdown_126d": -0.034179,
+        "price": 118.49,
+        "annualized_volatility": 0.103233,
+        "asset_group": "provider_candidate"
+      },
+      {
+        "symbol": "GME",
+        "eligible": true,
+        "score": 0.444831,
+        "momentum_21d": 0.259019,
+        "momentum_63d": 0.222821,
+        "momentum_126d": 0.132751,
+        "distance_from_200d_average": 0.215575,
+        "drawdown_126d": -0.000367,
+        "diversification_adjusted_score": 0.426957,
+        "price": 27.22,
+        "annualized_volatility": 0.425982,
+        "asset_group": "provider_candidate"
+      },
+      {
+        "symbol": "WTV",
+        "eligible": true,
+        "score": 0.400821,
+        "momentum_21d": -0.021413,
+        "momentum_63d": 0.008899,
+        "momentum_126d": 0.099076,
+        "distance_from_200d_average": 0.049065,
+        "drawdown_126d": -0.037655,
+        "price": 104.98,
+        "annualized_volatility": 0.105832,
+        "asset_group": "provider_candidate"
+      },
+      {
+        "symbol": "DXJ",
+        "eligible": true,
+        "score": 0.373737,
+        "momentum_21d": 0.026476,
+        "momentum_63d": 0.029264,
+        "momentum_126d": 0.101683,
+        "distance_from_200d_average": 0.086386,
+        "drawdown_126d": -0.011312,
+        "diversification_adjusted_score": 0.222337,
+        "price": 60.6,
+        "annualized_volatility": 0.162774,
         "asset_group": "provider_candidate"
       },
       {
         "symbol": "XMHQ",
         "eligible": true,
-        "score": 0.354773,
-        "momentum_21d": 0.003105,
-        "momentum_63d": 0.014853,
-        "momentum_126d": 0.082943,
-        "distance_from_200d_average": 0.039355,
-        "drawdown_126d": -0.045845,
-        "diversification_adjusted_score": 0.174459,
-        "price": 114.23,
-        "annualized_volatility": 0.117804,
-        "asset_group": "provider_candidate"
-      },
-      {
-        "symbol": "XLF",
-        "eligible": false,
-        "score": 0.187356,
-        "momentum_21d": -0.034224,
-        "momentum_63d": -0.020444,
-        "momentum_126d": 0.085604,
-        "distance_from_200d_average": 0.026285,
-        "drawdown_126d": -0.062095,
-        "price": 54.73,
-        "annualized_volatility": 0.120867,
+        "score": 0.31196,
+        "momentum_21d": 0.003624,
+        "momentum_63d": 0.019212,
+        "momentum_126d": 0.067827,
+        "distance_from_200d_average": 0.042483,
+        "drawdown_126d": -0.042087,
+        "diversification_adjusted_score": 0.052777,
+        "price": 114.68,
+        "annualized_volatility": 0.117747,
         "asset_group": "provider_candidate"
       },
       {
         "symbol": "IYK",
-        "eligible": false,
-        "score": 0.145526,
-        "momentum_21d": 0.005771,
-        "momentum_63d": -0.004262,
-        "momentum_126d": 0.051127,
-        "distance_from_200d_average": 0.025102,
-        "drawdown_126d": -0.041227,
-        "price": 73.43,
-        "annualized_volatility": 0.145474,
+        "eligible": true,
+        "score": 0.28842,
+        "momentum_21d": 0.004827,
+        "momentum_63d": 0.022557,
+        "momentum_126d": 0.075278,
+        "distance_from_200d_average": 0.036334,
+        "drawdown_126d": -0.029607,
+        "diversification_adjusted_score": 0.213421,
+        "price": 74.32,
+        "annualized_volatility": 0.144464,
         "asset_group": "provider_candidate"
       },
       {
-        "symbol": "VFH",
+        "symbol": "IAK",
+        "eligible": true,
+        "score": 0.251652,
+        "momentum_21d": -0.019304,
+        "momentum_63d": 0.014259,
+        "momentum_126d": 0.093122,
+        "distance_from_200d_average": 0.048483,
+        "drawdown_126d": -0.060642,
+        "price": 142.35,
+        "annualized_volatility": 0.161292,
+        "asset_group": "provider_candidate"
+      },
+      {
+        "symbol": "IHE",
         "eligible": false,
-        "score": 0.136167,
-        "momentum_21d": -0.038484,
-        "momentum_63d": -0.026784,
-        "momentum_126d": 0.079218,
-        "distance_from_200d_average": 0.020708,
-        "drawdown_126d": -0.066572,
-        "price": 133.12,
-        "annualized_volatility": 0.121567,
+        "score": 0.191041,
+        "momentum_21d": -0.041081,
+        "momentum_63d": -0.013764,
+        "momentum_126d": 0.112751,
+        "distance_from_200d_average": 0.045086,
+        "drawdown_126d": -0.097379,
+        "price": 97.36,
+        "annualized_volatility": 0.175056,
+        "asset_group": "provider_candidate"
+      },
+      {
+        "symbol": "XLP",
+        "eligible": true,
+        "score": 0.17055,
+        "momentum_21d": 0.003834,
+        "momentum_63d": 0.015259,
+        "momentum_126d": 0.0474,
+        "distance_from_200d_average": 0.01564,
+        "drawdown_126d": -0.030947,
+        "diversification_adjusted_score": 0.07467,
+        "price": 84.19,
+        "annualized_volatility": 0.153897,
         "asset_group": "provider_candidate"
       },
       {
         "symbol": "EWC",
         "eligible": true,
-        "score": 0.124824,
-        "momentum_21d": -0.020899,
-        "momentum_63d": 0.005108,
-        "momentum_126d": 0.044883,
-        "distance_from_200d_average": 0.023085,
-        "drawdown_126d": -0.057631,
-        "price": 59.03,
-        "annualized_volatility": 0.127883,
-        "asset_group": "provider_candidate"
-      },
-      {
-        "symbol": "IAK",
-        "eligible": false,
-        "score": 0.09007,
-        "momentum_21d": -0.017932,
-        "momentum_63d": -0.048802,
-        "momentum_126d": 0.08814,
-        "distance_from_200d_average": 0.033371,
-        "drawdown_126d": -0.074698,
-        "price": 140.22,
-        "annualized_volatility": 0.174685,
-        "asset_group": "provider_candidate"
-      },
-      {
-        "symbol": "VBR",
-        "eligible": false,
-        "score": 0.078028,
-        "momentum_21d": -0.019957,
-        "momentum_63d": -0.026158,
-        "momentum_126d": 0.052223,
-        "distance_from_200d_average": 0.01491,
-        "drawdown_126d": -0.064391,
-        "price": 234.43,
-        "annualized_volatility": 0.109998,
-        "asset_group": "provider_candidate"
-      },
-      {
-        "symbol": "XLP",
-        "eligible": false,
-        "score": 0.065001,
-        "momentum_21d": 0.010696,
-        "momentum_63d": -0.007227,
-        "momentum_126d": 0.026604,
-        "distance_from_200d_average": 0.007438,
-        "drawdown_126d": -0.039695,
-        "price": 83.43,
-        "annualized_volatility": 0.154579,
-        "asset_group": "provider_candidate"
-      },
-      {
-        "symbol": "IWM",
-        "eligible": false,
-        "score": 0.061275,
-        "momentum_21d": -0.027916,
-        "momentum_63d": -0.047061,
-        "momentum_126d": 0.072842,
-        "distance_from_200d_average": 0.010975,
-        "drawdown_126d": -0.083325,
-        "price": 278.94,
-        "annualized_volatility": 0.130614,
-        "asset_group": "provider_candidate"
-      },
-      {
-        "symbol": "IYF",
-        "eligible": false,
-        "score": 0.026945,
-        "momentum_21d": -0.047157,
-        "momentum_63d": -0.035648,
-        "momentum_126d": 0.061071,
-        "distance_from_200d_average": 0.009621,
-        "drawdown_126d": -0.074794,
-        "price": 128.15,
-        "annualized_volatility": 0.122109,
+        "score": 0.144671,
+        "momentum_21d": -0.009752,
+        "momentum_63d": 0.00706,
+        "momentum_126d": 0.043184,
+        "distance_from_200d_average": 0.037372,
+        "drawdown_126d": -0.043582,
+        "price": 59.91,
+        "annualized_volatility": 0.128262,
         "asset_group": "provider_candidate"
       },
       {
         "symbol": "VDC",
-        "eligible": false,
-        "score": 0.025449,
-        "momentum_21d": 0.015592,
-        "momentum_63d": -0.00731,
-        "momentum_126d": 0.010148,
-        "distance_from_200d_average": 0.003834,
-        "drawdown_126d": -0.035945,
-        "price": 226.37,
-        "annualized_volatility": 0.148879,
+        "eligible": true,
+        "score": 0.137712,
+        "momentum_21d": 0.008939,
+        "momentum_63d": 0.015314,
+        "momentum_126d": 0.03167,
+        "distance_from_200d_average": 0.012678,
+        "drawdown_126d": -0.026576,
+        "diversification_adjusted_score": 0.045311,
+        "price": 228.57,
+        "annualized_volatility": 0.148239,
         "asset_group": "provider_candidate"
       },
       {
-        "symbol": "RING",
+        "symbol": "XLF",
         "eligible": false,
-        "score": 0.018739,
-        "momentum_21d": -0.076987,
-        "momentum_63d": 0.233992,
-        "momentum_126d": -0.084462,
-        "distance_from_200d_average": -0.005561,
-        "drawdown_126d": -0.162284,
-        "price": 78.05,
-        "annualized_volatility": 0.480387,
-        "asset_group": "provider_candidate"
-      },
-      {
-        "symbol": "GDX",
-        "eligible": false,
-        "score": -0.004341,
-        "momentum_21d": -0.070291,
-        "momentum_63d": 0.216846,
-        "momentum_126d": -0.101721,
-        "distance_from_200d_average": -0.020031,
-        "drawdown_126d": -0.153904,
-        "price": 89.28,
-        "annualized_volatility": 0.470595,
+        "score": 0.093653,
+        "momentum_21d": -0.03535,
+        "momentum_63d": -0.027334,
+        "momentum_126d": 0.066179,
+        "distance_from_200d_average": 0.027967,
+        "drawdown_126d": -0.060553,
+        "price": 54.82,
+        "annualized_volatility": 0.120817,
         "asset_group": "provider_candidate"
       },
       {
         "symbol": "MLPX",
         "eligible": false,
-        "score": -0.106265,
-        "momentum_21d": -0.041323,
-        "momentum_63d": -0.038295,
-        "momentum_126d": 0.014405,
-        "distance_from_200d_average": 0.020142,
-        "drawdown_126d": -0.060721,
-        "price": 72.15,
-        "annualized_volatility": 0.166718,
+        "score": 0.093595,
+        "momentum_21d": -0.009961,
+        "momentum_63d": -0.015739,
+        "momentum_126d": 0.055599,
+        "distance_from_200d_average": 0.037785,
+        "drawdown_126d": -0.042495,
+        "price": 73.55,
+        "annualized_volatility": 0.168096,
+        "asset_group": "provider_candidate"
+      },
+      {
+        "symbol": "VBR",
+        "eligible": false,
+        "score": 0.046166,
+        "momentum_21d": -0.020729,
+        "momentum_63d": -0.024202,
+        "momentum_126d": 0.042995,
+        "distance_from_200d_average": 0.019036,
+        "drawdown_126d": -0.059642,
+        "price": 235.62,
+        "annualized_volatility": 0.11021,
+        "asset_group": "provider_candidate"
+      },
+      {
+        "symbol": "VFH",
+        "eligible": false,
+        "score": 0.034344,
+        "momentum_21d": -0.040171,
+        "momentum_63d": -0.034347,
+        "momentum_126d": 0.058267,
+        "distance_from_200d_average": 0.021734,
+        "drawdown_126d": -0.065661,
+        "price": 133.25,
+        "annualized_volatility": 0.121443,
+        "asset_group": "provider_candidate"
+      },
+      {
+        "symbol": "RING",
+        "eligible": false,
+        "score": -0.053437,
+        "momentum_21d": -0.082489,
+        "momentum_63d": 0.191729,
+        "momentum_126d": -0.120573,
+        "distance_from_200d_average": -0.030662,
+        "drawdown_126d": -0.183428,
+        "price": 76.08,
+        "annualized_volatility": 0.481528,
+        "asset_group": "provider_candidate"
+      },
+      {
+        "symbol": "GDX",
+        "eligible": false,
+        "score": -0.069633,
+        "momentum_21d": -0.073295,
+        "momentum_63d": 0.178919,
+        "momentum_126d": -0.134094,
+        "distance_from_200d_average": -0.042202,
+        "drawdown_126d": -0.173237,
+        "price": 87.24,
+        "annualized_volatility": 0.470296,
+        "asset_group": "provider_candidate"
+      },
+      {
+        "symbol": "IYF",
+        "eligible": false,
+        "score": -0.100567,
+        "momentum_21d": -0.050921,
+        "momentum_63d": -0.047534,
+        "momentum_126d": 0.037532,
+        "distance_from_200d_average": 0.006248,
+        "drawdown_126d": -0.077971,
+        "price": 127.71,
+        "annualized_volatility": 0.122496,
+        "asset_group": "provider_candidate"
+      },
+      {
+        "symbol": "IWM",
+        "eligible": false,
+        "score": -0.124944,
+        "momentum_21d": -0.036426,
+        "momentum_63d": -0.062032,
+        "momentum_126d": 0.034841,
+        "distance_from_200d_average": 0.001891,
+        "drawdown_126d": -0.090686,
+        "price": 276.7,
+        "annualized_volatility": 0.130221,
         "asset_group": "provider_candidate"
       },
       {
         "symbol": "SDVY",
         "eligible": false,
-        "score": -0.151434,
-        "momentum_21d": -0.023389,
-        "momentum_63d": -0.035465,
-        "momentum_126d": 0.005516,
-        "distance_from_200d_average": -0.007922,
-        "drawdown_126d": -0.080108,
-        "price": 41.24,
-        "annualized_volatility": 0.111169,
-        "asset_group": "provider_candidate"
-      },
-      {
-        "symbol": "IAU",
-        "eligible": false,
-        "score": -0.212229,
-        "momentum_21d": -0.029531,
-        "momentum_63d": 0.048106,
-        "momentum_126d": -0.119361,
-        "distance_from_200d_average": -0.073954,
-        "drawdown_126d": -0.136523,
-        "price": 78.87,
-        "annualized_volatility": 0.240213,
-        "asset_group": "provider_candidate"
-      },
-      {
-        "symbol": "GLD",
-        "eligible": false,
-        "score": -0.214086,
-        "momentum_21d": -0.02972,
-        "momentum_63d": 0.047531,
-        "momentum_126d": -0.120216,
-        "distance_from_200d_average": -0.074761,
-        "drawdown_126d": -0.137578,
-        "price": 384.58,
-        "annualized_volatility": 0.241555,
+        "score": -0.190016,
+        "momentum_21d": -0.023763,
+        "momentum_63d": -0.036239,
+        "momentum_126d": -0.003407,
+        "distance_from_200d_average": -0.005125,
+        "drawdown_126d": -0.076985,
+        "price": 41.38,
+        "annualized_volatility": 0.111081,
         "asset_group": "provider_candidate"
       },
       {
         "symbol": "RWR",
         "eligible": false,
-        "score": -0.283088,
-        "momentum_21d": -0.036944,
-        "momentum_63d": -0.078951,
-        "momentum_126d": 0.00631,
-        "distance_from_200d_average": -0.017778,
-        "drawdown_126d": -0.114189,
-        "price": 104.62,
-        "annualized_volatility": 0.126432,
+        "score": -0.250031,
+        "momentum_21d": -0.028284,
+        "momentum_63d": -0.067979,
+        "momentum_126d": 0.001819,
+        "distance_from_200d_average": -0.009661,
+        "drawdown_126d": -0.106061,
+        "price": 105.58,
+        "annualized_volatility": 0.128093,
         "asset_group": "provider_candidate"
       },
       {
         "symbol": "USRT",
         "eligible": false,
-        "score": -0.295037,
-        "momentum_21d": -0.034463,
-        "momentum_63d": -0.077555,
-        "momentum_126d": 0.003308,
-        "distance_from_200d_average": -0.017942,
-        "drawdown_126d": -0.111905,
-        "price": 61.55,
-        "annualized_volatility": 0.121876,
+        "score": -0.276501,
+        "momentum_21d": -0.027096,
+        "momentum_63d": -0.068443,
+        "momentum_126d": -0.003306,
+        "distance_from_200d_average": -0.011551,
+        "drawdown_126d": -0.105268,
+        "price": 62.01,
+        "annualized_volatility": 0.123358,
+        "asset_group": "provider_candidate"
+      },
+      {
+        "symbol": "IAU",
+        "eligible": false,
+        "score": -0.288484,
+        "momentum_21d": -0.028433,
+        "momentum_63d": 0.025826,
+        "momentum_126d": -0.141807,
+        "distance_from_200d_average": -0.080563,
+        "drawdown_126d": -0.143311,
+        "price": 78.25,
+        "annualized_volatility": 0.239301,
+        "asset_group": "provider_candidate"
+      },
+      {
+        "symbol": "GLD",
+        "eligible": false,
+        "score": -0.289774,
+        "momentum_21d": -0.028434,
+        "momentum_63d": 0.02503,
+        "momentum_126d": -0.142488,
+        "distance_from_200d_average": -0.081079,
+        "drawdown_126d": -0.144103,
+        "price": 381.67,
+        "annualized_volatility": 0.240576,
         "asset_group": "provider_candidate"
       },
       {
         "symbol": "ITB",
         "eligible": false,
-        "score": -0.357497,
-        "momentum_21d": -0.031107,
-        "momentum_63d": -0.112402,
-        "momentum_126d": -0.091799,
-        "distance_from_200d_average": -0.11818,
-        "drawdown_126d": -0.18517,
-        "price": 84.76,
-        "annualized_volatility": 0.279146,
+        "score": -0.416132,
+        "momentum_21d": -0.052141,
+        "momentum_63d": -0.1285,
+        "momentum_126d": -0.105702,
+        "distance_from_200d_average": -0.118318,
+        "drawdown_126d": -0.186323,
+        "price": 84.64,
+        "annualized_volatility": 0.278633,
         "asset_group": "provider_candidate"
       },
       {
         "symbol": "XHB",
         "eligible": false,
-        "score": -0.361967,
-        "momentum_21d": -0.016614,
-        "momentum_63d": -0.109929,
-        "momentum_126d": -0.080918,
-        "distance_from_200d_average": -0.09886,
-        "drawdown_126d": -0.177882,
-        "price": 94.77,
-        "annualized_volatility": 0.246336,
+        "score": -0.432682,
+        "momentum_21d": -0.031656,
+        "momentum_63d": -0.126339,
+        "momentum_126d": -0.099107,
+        "distance_from_200d_average": -0.099414,
+        "drawdown_126d": -0.179096,
+        "price": 94.63,
+        "annualized_volatility": 0.245285,
         "asset_group": "provider_candidate"
       },
       {
         "symbol": "IGLB",
         "eligible": false,
-        "score": -0.555042,
-        "momentum_21d": -0.022459,
-        "momentum_63d": -0.045603,
-        "momentum_126d": -0.056085,
-        "distance_from_200d_average": -0.050744,
-        "drawdown_126d": -0.076423,
-        "price": 45.77,
-        "annualized_volatility": 0.085254,
-        "asset_group": "provider_candidate"
-      },
-      {
-        "symbol": "FBND",
-        "eligible": false,
-        "score": -0.585236,
-        "momentum_21d": -0.014546,
-        "momentum_63d": -0.025471,
-        "momentum_126d": -0.029289,
-        "distance_from_200d_average": -0.026114,
-        "drawdown_126d": -0.037633,
-        "price": 43.45,
-        "annualized_volatility": 0.043423,
-        "asset_group": "provider_candidate"
-      },
-      {
-        "symbol": "JMBS",
-        "eligible": false,
-        "score": -0.598108,
-        "momentum_21d": -0.019256,
-        "momentum_63d": -0.034145,
-        "momentum_126d": -0.040463,
-        "distance_from_200d_average": -0.03484,
-        "drawdown_126d": -0.047077,
-        "price": 42.48,
-        "annualized_volatility": 0.058004,
-        "asset_group": "provider_candidate"
-      },
-      {
-        "symbol": "BIV",
-        "eligible": false,
-        "score": -0.607883,
-        "momentum_21d": -0.012927,
-        "momentum_63d": -0.025905,
-        "momentum_126d": -0.033674,
-        "distance_from_200d_average": -0.029107,
-        "drawdown_126d": -0.039771,
-        "price": 72.92,
-        "annualized_volatility": 0.04483,
+        "score": -0.606679,
+        "momentum_21d": -0.020734,
+        "momentum_63d": -0.049368,
+        "momentum_126d": -0.06303,
+        "distance_from_200d_average": -0.047912,
+        "drawdown_126d": -0.074203,
+        "price": 45.88,
+        "annualized_volatility": 0.084656,
         "asset_group": "provider_candidate"
       },
       {
         "symbol": "TLH",
         "eligible": false,
-        "score": -0.610274,
-        "momentum_21d": -0.026205,
-        "momentum_63d": -0.048051,
-        "momentum_126d": -0.062075,
-        "distance_from_200d_average": -0.054264,
-        "drawdown_126d": -0.07609,
-        "price": 92.19,
-        "annualized_volatility": 0.084554,
+        "score": -0.624136,
+        "momentum_21d": -0.022194,
+        "momentum_63d": -0.048987,
+        "momentum_126d": -0.065834,
+        "distance_from_200d_average": -0.049879,
+        "drawdown_126d": -0.072382,
+        "price": 92.56,
+        "annualized_volatility": 0.084498,
+        "asset_group": "provider_candidate"
+      },
+      {
+        "symbol": "JMBS",
+        "eligible": false,
+        "score": -0.627841,
+        "momentum_21d": -0.014233,
+        "momentum_63d": -0.037496,
+        "momentum_126d": -0.043062,
+        "distance_from_200d_average": -0.032486,
+        "drawdown_126d": -0.045058,
+        "price": 42.57,
+        "annualized_volatility": 0.05733,
+        "asset_group": "provider_candidate"
+      },
+      {
+        "symbol": "FBND",
+        "eligible": false,
+        "score": -0.630918,
+        "momentum_21d": -0.011842,
+        "momentum_63d": -0.027781,
+        "momentum_126d": -0.032585,
+        "distance_from_200d_average": -0.024312,
+        "drawdown_126d": -0.036083,
+        "price": 43.52,
+        "annualized_volatility": 0.043021,
         "asset_group": "provider_candidate"
       },
       {
         "symbol": "SCHP",
         "eligible": false,
-        "score": -0.643704,
-        "momentum_21d": -0.018045,
-        "momentum_63d": -0.025105,
-        "momentum_126d": -0.026315,
-        "distance_from_200d_average": -0.023389,
-        "drawdown_126d": -0.034489,
-        "price": 25.18,
-        "annualized_volatility": 0.038164,
+        "score": -0.666401,
+        "momentum_21d": -0.013041,
+        "momentum_63d": -0.025447,
+        "momentum_126d": -0.030258,
+        "distance_from_200d_average": -0.022461,
+        "drawdown_126d": -0.033722,
+        "price": 25.2,
+        "annualized_volatility": 0.038194,
+        "asset_group": "provider_candidate"
+      },
+      {
+        "symbol": "BIV",
+        "eligible": false,
+        "score": -0.667067,
+        "momentum_21d": -0.009167,
+        "momentum_63d": -0.02969,
+        "momentum_126d": -0.037207,
+        "distance_from_200d_average": -0.027336,
+        "drawdown_126d": -0.038323,
+        "price": 73.03,
+        "annualized_volatility": 0.044059,
         "asset_group": "provider_candidate"
       },
       {
         "symbol": "IEF",
         "eligible": false,
-        "score": -0.656214,
-        "momentum_21d": -0.01614,
-        "momentum_63d": -0.031625,
-        "momentum_126d": -0.042279,
-        "distance_from_200d_average": -0.035934,
-        "drawdown_126d": -0.048868,
-        "price": 89.4,
-        "annualized_volatility": 0.051742,
+        "score": -0.704201,
+        "momentum_21d": -0.01189,
+        "momentum_63d": -0.035176,
+        "momentum_126d": -0.045986,
+        "distance_from_200d_average": -0.034017,
+        "drawdown_126d": -0.047378,
+        "price": 89.54,
+        "annualized_volatility": 0.051105,
         "asset_group": "provider_candidate"
       }
     ],
     "backtest": {
       "method": "monthly_threshold_proposals_next_session",
-      "data_start": "2022-07-28",
-      "data_end": "2026-10-09",
+      "data_start": "2022-07-19",
+      "data_end": "2026-10-13",
       "strategy": {
-        "cagr": 0.047596,
-        "maximum_drawdown": -0.14153,
-        "sharpe_excess_return": 0.437408,
-        "total_return": 0.214679,
+        "cagr": 0.020774,
+        "maximum_drawdown": -0.159738,
+        "sharpe_excess_return": 0.24137,
+        "total_return": 0.090606,
         "annual_risk_free_rate": 0.0,
-        "annualized_volatility": 0.123893
+        "annualized_volatility": 0.110659
       },
       "benchmark": {
-        "cagr": 0.168052,
-        "maximum_drawdown": -0.131549,
-        "sharpe_excess_return": 1.247641,
-        "total_return": 0.914974,
+        "cagr": 0.161562,
+        "maximum_drawdown": -0.134494,
+        "sharpe_excess_return": 1.228244,
+        "total_return": 0.8809,
         "annual_risk_free_rate": 0.0,
-        "annualized_volatility": 0.131459
+        "annualized_volatility": 0.128705
       }
     },
     "codex_comparisons": [
@@ -17864,6 +17943,902 @@
             "agreement": false,
             "confidence": "medium",
             "traderiser_score": 0.18739
+          }
+        ]
+      },
+      {
+        "as_of": "2026-10-13",
+        "method": "independent_research_only_same_cutoff",
+        "research_only": true,
+        "can_affect_orders": false,
+        "same_cutoff_verified": true,
+        "agreements": [
+          "DIVB",
+          "DXJ",
+          "FLTW",
+          "GSG",
+          "IHE",
+          "IWM",
+          "IXC"
+        ],
+        "disagreements": [
+          "CRAK",
+          "EWT",
+          "GME",
+          "RPV"
+        ],
+        "improvement_candidates": [],
+        "limitations": [
+          "Research-only comparison; it cannot create, suppress, resize, substitute, or retime a live order.",
+          "Views use completed-session evidence through 2026-10-13; information released after that cutoff was excluded.",
+          "Issuer facts had uneven publication dates and qualitative judgment is not evidence of future returns."
+        ],
+        "holdings": [
+          {
+            "symbol": "CRAK",
+            "traderiser": "hold",
+            "codex": "reduce",
+            "agreement": false,
+            "traderiser_score": 0.852128,
+            "traderiser_rationale": [
+              "TradeRiser proposed hold for the champion-time position.",
+              "Score 0.852128; 5-session return 0.039951; 21-session return 0.054151; 63-session momentum 0.290654.",
+              "Eligible=True; consecutive ineligible sessions=0; drawdown from 63-session high=0.0."
+            ],
+            "thesis": "Refining is distinct downstream exposure, but this narrow fund has already had an exceptional run and is the least diversified equity component of the energy cluster.",
+            "principal_risks": [
+              "Refining-margin mean reversion, demand destruction, capacity additions, regulation, geopolitics, and issuer concentration."
+            ],
+            "market_context": "At the cutoff, the fund had strong year-to-date performance and its issuer emphasized that returns depend on refining margins rather than crude prices alone.",
+            "factor_overlap": [
+              "High overlap with IXC&#x27;s refining sleeve and GSG&#x27;s energy exposure."
+            ],
+            "confidence": "high",
+            "invalidation_conditions": [
+              "Hold if constrained capacity and product demand sustain elevated refining margins and broad refiner cash-flow momentum."
+            ],
+            "outcomes": {
+              "5": {
+                "sessions": 5,
+                "status": "pending"
+              },
+              "21": {
+                "sessions": 21,
+                "status": "pending"
+              },
+              "63": {
+                "sessions": 63,
+                "status": "pending"
+              }
+            }
+          },
+          {
+            "symbol": "DIVB",
+            "traderiser": "hold",
+            "codex": "hold",
+            "agreement": true,
+            "traderiser_score": 0.383058,
+            "traderiser_rationale": [
+              "TradeRiser proposed hold for the champion-time position.",
+              "Score 0.383058; 5-session return 0.025456; 21-session return -0.023596; 63-session momentum 0.07089.",
+              "Eligible=True; consecutive ineligible sessions=0; drawdown from 63-session high=-0.034386."
+            ],
+            "thesis": "DIVB is the broad, low-cost core anchor in the set, with dividend and buyback exposure that is less concentrated than the thematic sleeves.",
+            "principal_risks": [
+              "Value and dividend crowding, buyback cuts, cyclical sector exposure, and growth-led underperformance."
+            ],
+            "market_context": "Issuer facts available by the cutoff showed a diversified portfolio, low expense ratio, and below-market historical beta.",
+            "factor_overlap": [
+              "High style overlap with RPV and moderate energy overlap with IXC."
+            ],
+            "confidence": "high",
+            "invalidation_conditions": [
+              "Reduce if dividends and buybacks weaken broadly or holdings-level evidence shows RPV supplies the same exposure more efficiently."
+            ],
+            "outcomes": {
+              "5": {
+                "sessions": 5,
+                "status": "pending"
+              },
+              "21": {
+                "sessions": 21,
+                "status": "pending"
+              },
+              "63": {
+                "sessions": 63,
+                "status": "pending"
+              }
+            }
+          },
+          {
+            "symbol": "DXJ",
+            "traderiser": "hold",
+            "codex": "hold",
+            "agreement": true,
+            "traderiser_score": 0.40621,
+            "traderiser_rationale": [
+              "TradeRiser proposed hold for the champion-time position.",
+              "Score 0.40621; 5-session return -0.011312; 21-session return 0.026476; 63-session momentum 0.029264.",
+              "Eligible=True; consecutive ineligible sessions=0; drawdown from 63-session high=-0.011312."
+            ],
+            "thesis": "DXJ provides useful Japan, exporter, dividend, and financial exposure while neutralizing most yen movement.",
+            "principal_risks": [
+              "A sharp yen rally, hedge costs, central-bank normalization, exporter cyclicality, and Japan-specific policy risk."
+            ],
+            "market_context": "Issuer data available by the cutoff showed a heavily currency-hedged portfolio led by industrial and financial exposure.",
+            "factor_overlap": [
+              "Moderate value and dividend overlap with DIVB and RPV, with little country overlap elsewhere."
+            ],
+            "confidence": "medium",
+            "invalidation_conditions": [
+              "Reduce if hedge drag and exporter earnings deterioration outweigh the diversification benefit."
+            ],
+            "outcomes": {
+              "5": {
+                "sessions": 5,
+                "status": "pending"
+              },
+              "21": {
+                "sessions": 21,
+                "status": "pending"
+              },
+              "63": {
+                "sessions": 63,
+                "status": "pending"
+              }
+            }
+          },
+          {
+            "symbol": "EWT",
+            "traderiser": "hold",
+            "codex": "reduce",
+            "agreement": false,
+            "traderiser_score": 0.819791,
+            "traderiser_rationale": [
+              "TradeRiser proposed hold for the champion-time position.",
+              "Score 0.819791; 5-session return -0.035286; 21-session return 0.058297; 63-session momentum 0.107035.",
+              "Eligible=False; consecutive ineligible sessions=2; drawdown from 63-session high=-0.038475."
+            ],
+            "thesis": "Taiwan and artificial-intelligence momentum remain strong, but EWT duplicates FLTW while charging materially more.",
+            "principal_risks": [
+              "Taiwan-China geopolitics, semiconductor-cycle reversal, technology concentration, valuation, and currency risk."
+            ],
+            "market_context": "Issuer facts available by the cutoff showed a technology-heavy portfolio and a higher expense ratio than FLTW.",
+            "factor_overlap": [
+              "Near-complete country, technology, and constituent overlap with FLTW."
+            ],
+            "confidence": "high",
+            "invalidation_conditions": [
+              "Hold instead if EWT liquidity and tracking quality prove more valuable than FLTW&#x27;s fee advantage."
+            ],
+            "outcomes": {
+              "5": {
+                "sessions": 5,
+                "status": "pending"
+              },
+              "21": {
+                "sessions": 21,
+                "status": "pending"
+              },
+              "63": {
+                "sessions": 63,
+                "status": "pending"
+              }
+            }
+          },
+          {
+            "symbol": "FLTW",
+            "traderiser": "hold",
+            "codex": "hold",
+            "agreement": true,
+            "traderiser_score": 0.85269,
+            "traderiser_rationale": [
+              "TradeRiser proposed hold for the champion-time position.",
+              "Score 0.85269; 5-session return -0.038208; 21-session return 0.060268; 63-session momentum 0.104093.",
+              "Eligible=False; consecutive ineligible sessions=2; drawdown from 63-session high=-0.042339."
+            ],
+            "thesis": "FLTW is the preferred long-horizon Taiwan implementation because it preserves the country and semiconductor thesis at a lower fee than EWT.",
+            "principal_risks": [
+              "Taiwan geopolitical risk, semiconductor concentration, lower secondary-market liquidity, and tracking differences."
+            ],
+            "market_context": "The latest issuer data available before the cutoff described a technology-heavy Taiwan portfolio with a lower expense ratio than EWT.",
+            "factor_overlap": [
+              "Near-complete overlap with EWT and little incremental diversification."
+            ],
+            "confidence": "high",
+            "invalidation_conditions": [
+              "Reduce if liquidity, spreads, or tracking deteriorate materially; prefer EWT if execution quality becomes the dominant objective."
+            ],
+            "outcomes": {
+              "5": {
+                "sessions": 5,
+                "status": "pending"
+              },
+              "21": {
+                "sessions": 21,
+                "status": "pending"
+              },
+              "63": {
+                "sessions": 63,
+                "status": "pending"
+              }
+            }
+          },
+          {
+            "symbol": "GME",
+            "traderiser": "hold",
+            "codex": "reduce",
+            "agreement": false,
+            "traderiser_score": -0.072103,
+            "traderiser_rationale": [
+              "TradeRiser proposed hold for the champion-time position.",
+              "Score -0.072103; 5-session return 0.099354; 21-session return 0.259019; 63-session momentum 0.222821.",
+              "Eligible=True; consecutive ineligible sessions=0; drawdown from 63-session high=-0.000367."
+            ],
+            "thesis": "Retail profitability improved, but the position remains an idiosyncratic capital-allocation vehicle rather than dependable portfolio diversification.",
+            "principal_risks": [
+              "Declining core sales, concentrated external investments, crypto exposure, dilution, governance uncertainty, and sentiment-driven volatility."
+            ],
+            "market_context": "The latest pre-cutoff filing showed lower sales but higher operating income, alongside large cash, investment, and convertible-financing balances.",
+            "factor_overlap": [
+              "Low conventional factor overlap but concentrated investment and retail-sentiment exposure."
+            ],
+            "confidence": "high",
+            "invalidation_conditions": [
+              "Hold if core sales stabilize, recurring operating earnings grow excluding investment gains, dilution subsides, and capital allocation becomes more transparent."
+            ],
+            "outcomes": {
+              "5": {
+                "sessions": 5,
+                "status": "pending"
+              },
+              "21": {
+                "sessions": 21,
+                "status": "pending"
+              },
+              "63": {
+                "sessions": 63,
+                "status": "pending"
+              }
+            }
+          },
+          {
+            "symbol": "GSG",
+            "traderiser": "hold",
+            "codex": "hold",
+            "agreement": true,
+            "traderiser_score": 0.625835,
+            "traderiser_rationale": [
+              "TradeRiser proposed hold for the champion-time position.",
+              "Score 0.625835; 5-session return 0.027669; 21-session return 0.007397; 63-session momentum 0.179282.",
+              "Eligible=True; consecutive ineligible sessions=0; drawdown from 63-session high=-0.010229."
+            ],
+            "thesis": "GSG is the portfolio&#x27;s only direct futures-based real-asset and inflation hedge, offering a return source not replicated by equities.",
+            "principal_risks": [
+              "Energy concentration, futures-roll losses, volatility, sponsor fees, and trust or tax complexity."
+            ],
+            "market_context": "Index and issuer information available by the cutoff showed a commodity basket with substantial energy exposure.",
+            "factor_overlap": [
+              "High macro overlap with CRAK and IXC, but different vehicle mechanics and direct commodity-carry exposure."
+            ],
+            "confidence": "medium",
+            "invalidation_conditions": [
+              "Reduce if the commodity impulse rolls over, persistent contango erodes returns, or total energy exposure remains excessive."
+            ],
+            "outcomes": {
+              "5": {
+                "sessions": 5,
+                "status": "pending"
+              },
+              "21": {
+                "sessions": 21,
+                "status": "pending"
+              },
+              "63": {
+                "sessions": 63,
+                "status": "pending"
+              }
+            }
+          },
+          {
+            "symbol": "IHE",
+            "traderiser": "hold",
+            "codex": "hold",
+            "agreement": true,
+            "traderiser_score": 0.393195,
+            "traderiser_rationale": [
+              "TradeRiser proposed hold for the champion-time position.",
+              "Score 0.393195; 5-session return -0.009965; 21-session return -0.041081; 63-session momentum -0.013764.",
+              "Eligible=False; consecutive ineligible sessions=2; drawdown from 63-session high=-0.097379."
+            ],
+            "thesis": "IHE is a differentiated defensive health-care sleeve, but narrow pharmaceutical exposure and policy risk do not support increasing it.",
+            "principal_risks": [
+              "Drug-pricing policy, patent cliffs, pipeline failures, litigation, and issuer concentration."
+            ],
+            "market_context": "Issuer facts available by the cutoff showed a concentrated pharmaceutical portfolio with relatively defensive historical beta.",
+            "factor_overlap": [
+              "Moderate health-care overlap with IWM and DIVB, but materially more concentrated in drug manufacturers."
+            ],
+            "confidence": "medium",
+            "invalidation_conditions": [
+              "Reduce if regulatory or patent developments cause sustained earnings-breadth deterioration."
+            ],
+            "outcomes": {
+              "5": {
+                "sessions": 5,
+                "status": "pending"
+              },
+              "21": {
+                "sessions": 21,
+                "status": "pending"
+              },
+              "63": {
+                "sessions": 63,
+                "status": "pending"
+              }
+            }
+          },
+          {
+            "symbol": "IWM",
+            "traderiser": "hold",
+            "codex": "hold",
+            "agreement": true,
+            "traderiser_score": 0.21989,
+            "traderiser_rationale": [
+              "TradeRiser proposed hold for the champion-time position.",
+              "Score 0.21989; 5-session return -0.016492; 21-session return -0.036426; 63-session momentum -0.062032.",
+              "Eligible=False; consecutive ineligible sessions=5; drawdown from 63-session high=-0.090686."
+            ],
+            "thesis": "Broad U.S. small-cap exposure adds size and earnings-breadth diversification, but current rate sensitivity argues against increasing it.",
+            "principal_risks": [
+              "Refinancing stress, weaker credit, cyclical earnings, and exposure to low-profit companies."
+            ],
+            "market_context": "At the cutoff, recent relative momentum was weak while the fund remained more rate- and credit-sensitive than large-cap exposure.",
+            "factor_overlap": [
+              "Moderate value and cyclical overlap with DIVB and RPV."
+            ],
+            "confidence": "medium",
+            "invalidation_conditions": [
+              "Reduce if credit conditions worsen and relative momentum remains broken; increase only if financing conditions and earnings breadth improve together."
+            ],
+            "outcomes": {
+              "5": {
+                "sessions": 5,
+                "status": "pending"
+              },
+              "21": {
+                "sessions": 21,
+                "status": "pending"
+              },
+              "63": {
+                "sessions": 63,
+                "status": "pending"
+              }
+            }
+          },
+          {
+            "symbol": "IXC",
+            "traderiser": "hold",
+            "codex": "hold",
+            "agreement": true,
+            "traderiser_score": 0.373517,
+            "traderiser_rationale": [
+              "TradeRiser proposed hold for the champion-time position.",
+              "Score 0.373517; 5-session return 0.053413; 21-session return 0.040978; 63-session momentum 0.176482.",
+              "Eligible=True; consecutive ineligible sessions=0; drawdown from 63-session high=0.0."
+            ],
+            "thesis": "IXC is the broadest and lowest-cost dedicated energy-equity implementation among the current holdings.",
+            "principal_risks": [
+              "Energy-demand reversal, capital-allocation mistakes, windfall taxes, transition risk, and commodity-linked earnings compression."
+            ],
+            "market_context": "Issuer facts available by the cutoff showed diversified global energy exposure led by integrated oil and gas companies.",
+            "factor_overlap": [
+              "High overlap with CRAK and GSG and moderate overlap with DIVB&#x27;s energy allocation."
+            ],
+            "confidence": "medium",
+            "invalidation_conditions": [
+              "Reduce if demand, free cash flow, or capital discipline weakens, or aggregate energy exposure breaches portfolio limits."
+            ],
+            "outcomes": {
+              "5": {
+                "sessions": 5,
+                "status": "pending"
+              },
+              "21": {
+                "sessions": 21,
+                "status": "pending"
+              },
+              "63": {
+                "sessions": 63,
+                "status": "pending"
+              }
+            }
+          },
+          {
+            "symbol": "RPV",
+            "traderiser": "hold",
+            "codex": "reduce",
+            "agreement": false,
+            "traderiser_score": 0.295128,
+            "traderiser_rationale": [
+              "TradeRiser proposed hold for the champion-time position.",
+              "Score 0.295128; 5-session return 0.014295; 21-session return -0.02357; 63-session momentum 0.016771.",
+              "Eligible=True; consecutive ineligible sessions=0; drawdown from 63-session high=-0.034179."
+            ],
+            "thesis": "Pure-value exposure is valid, but much of its role is already supplied more cheaply and broadly by DIVB.",
+            "principal_risks": [
+              "Value traps, concentrated factor bets, financial and energy cyclicality, and reducing during a sustained value regime."
+            ],
+            "market_context": "Issuer materials available by the cutoff described a concentrated, factor-weighted pure-value portfolio.",
+            "factor_overlap": [
+              "High value and income overlap with DIVB and meaningful cyclical overlap with the energy sleeves."
+            ],
+            "confidence": "medium",
+            "invalidation_conditions": [
+              "Hold if value breadth improves and holdings-level evidence demonstrates substantial diversification versus DIVB."
+            ],
+            "outcomes": {
+              "5": {
+                "sessions": 5,
+                "status": "pending"
+              },
+              "21": {
+                "sessions": 21,
+                "status": "pending"
+              },
+              "63": {
+                "sessions": 63,
+                "status": "pending"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "as_of": "2026-10-13",
+        "method": "independent_research_only_same_cutoff",
+        "research_only": true,
+        "can_affect_orders": false,
+        "same_cutoff_verified": true,
+        "agreements": [
+          "DIVB",
+          "DXJ",
+          "FLTW",
+          "GSG",
+          "IHE",
+          "IWM",
+          "IXC"
+        ],
+        "disagreements": [
+          "CRAK",
+          "EWT",
+          "GME",
+          "RPV"
+        ],
+        "improvement_candidates": [],
+        "limitations": [
+          "Research-only comparison; it cannot create, suppress, resize, substitute, or retime a live order.",
+          "Views use completed-session evidence through 2026-10-13; information released after that cutoff was excluded.",
+          "Issuer facts had uneven publication dates and qualitative judgment is not evidence of future returns."
+        ],
+        "holdings": [
+          {
+            "symbol": "CRAK",
+            "traderiser": "hold",
+            "codex": "reduce",
+            "agreement": false,
+            "traderiser_score": 0.852128,
+            "traderiser_rationale": [
+              "TradeRiser proposed hold for the champion-time position.",
+              "Score 0.852128; 5-session return 0.039951; 21-session return 0.054151; 63-session momentum 0.290654.",
+              "Eligible=True; consecutive ineligible sessions=0; drawdown from 63-session high=0.0."
+            ],
+            "thesis": "Refining is distinct downstream exposure, but this narrow fund has already had an exceptional run and is the least diversified equity component of the energy cluster.",
+            "principal_risks": [
+              "Refining-margin mean reversion, demand destruction, capacity additions, regulation, geopolitics, and issuer concentration."
+            ],
+            "market_context": "At the cutoff, the fund had strong year-to-date performance and its issuer emphasized that returns depend on refining margins rather than crude prices alone.",
+            "factor_overlap": [
+              "High overlap with IXC&#x27;s refining sleeve and GSG&#x27;s energy exposure."
+            ],
+            "confidence": "high",
+            "invalidation_conditions": [
+              "Hold if constrained capacity and product demand sustain elevated refining margins and broad refiner cash-flow momentum."
+            ],
+            "outcomes": {
+              "5": {
+                "sessions": 5,
+                "status": "pending"
+              },
+              "21": {
+                "sessions": 21,
+                "status": "pending"
+              },
+              "63": {
+                "sessions": 63,
+                "status": "pending"
+              }
+            }
+          },
+          {
+            "symbol": "DIVB",
+            "traderiser": "hold",
+            "codex": "hold",
+            "agreement": true,
+            "traderiser_score": 0.383058,
+            "traderiser_rationale": [
+              "TradeRiser proposed hold for the champion-time position.",
+              "Score 0.383058; 5-session return 0.025456; 21-session return -0.023596; 63-session momentum 0.07089.",
+              "Eligible=True; consecutive ineligible sessions=0; drawdown from 63-session high=-0.034386."
+            ],
+            "thesis": "DIVB is the broad, low-cost core anchor in the set, with dividend and buyback exposure that is less concentrated than the thematic sleeves.",
+            "principal_risks": [
+              "Value and dividend crowding, buyback cuts, cyclical sector exposure, and growth-led underperformance."
+            ],
+            "market_context": "Issuer facts available by the cutoff showed a diversified portfolio, low expense ratio, and below-market historical beta.",
+            "factor_overlap": [
+              "High style overlap with RPV and moderate energy overlap with IXC."
+            ],
+            "confidence": "high",
+            "invalidation_conditions": [
+              "Reduce if dividends and buybacks weaken broadly or holdings-level evidence shows RPV supplies the same exposure more efficiently."
+            ],
+            "outcomes": {
+              "5": {
+                "sessions": 5,
+                "status": "pending"
+              },
+              "21": {
+                "sessions": 21,
+                "status": "pending"
+              },
+              "63": {
+                "sessions": 63,
+                "status": "pending"
+              }
+            }
+          },
+          {
+            "symbol": "DXJ",
+            "traderiser": "hold",
+            "codex": "hold",
+            "agreement": true,
+            "traderiser_score": 0.40621,
+            "traderiser_rationale": [
+              "TradeRiser proposed hold for the champion-time position.",
+              "Score 0.40621; 5-session return -0.011312; 21-session return 0.026476; 63-session momentum 0.029264.",
+              "Eligible=True; consecutive ineligible sessions=0; drawdown from 63-session high=-0.011312."
+            ],
+            "thesis": "DXJ provides useful Japan, exporter, dividend, and financial exposure while neutralizing most yen movement.",
+            "principal_risks": [
+              "A sharp yen rally, hedge costs, central-bank normalization, exporter cyclicality, and Japan-specific policy risk."
+            ],
+            "market_context": "Issuer data available by the cutoff showed a heavily currency-hedged portfolio led by industrial and financial exposure.",
+            "factor_overlap": [
+              "Moderate value and dividend overlap with DIVB and RPV, with little country overlap elsewhere."
+            ],
+            "confidence": "medium",
+            "invalidation_conditions": [
+              "Reduce if hedge drag and exporter earnings deterioration outweigh the diversification benefit."
+            ],
+            "outcomes": {
+              "5": {
+                "sessions": 5,
+                "status": "pending"
+              },
+              "21": {
+                "sessions": 21,
+                "status": "pending"
+              },
+              "63": {
+                "sessions": 63,
+                "status": "pending"
+              }
+            }
+          },
+          {
+            "symbol": "EWT",
+            "traderiser": "hold",
+            "codex": "reduce",
+            "agreement": false,
+            "traderiser_score": 0.819791,
+            "traderiser_rationale": [
+              "TradeRiser proposed hold for the champion-time position.",
+              "Score 0.819791; 5-session return -0.035286; 21-session return 0.058297; 63-session momentum 0.107035.",
+              "Eligible=False; consecutive ineligible sessions=2; drawdown from 63-session high=-0.038475."
+            ],
+            "thesis": "Taiwan and artificial-intelligence momentum remain strong, but EWT duplicates FLTW while charging materially more.",
+            "principal_risks": [
+              "Taiwan-China geopolitics, semiconductor-cycle reversal, technology concentration, valuation, and currency risk."
+            ],
+            "market_context": "Issuer facts available by the cutoff showed a technology-heavy portfolio and a higher expense ratio than FLTW.",
+            "factor_overlap": [
+              "Near-complete country, technology, and constituent overlap with FLTW."
+            ],
+            "confidence": "high",
+            "invalidation_conditions": [
+              "Hold instead if EWT liquidity and tracking quality prove more valuable than FLTW&#x27;s fee advantage."
+            ],
+            "outcomes": {
+              "5": {
+                "sessions": 5,
+                "status": "pending"
+              },
+              "21": {
+                "sessions": 21,
+                "status": "pending"
+              },
+              "63": {
+                "sessions": 63,
+                "status": "pending"
+              }
+            }
+          },
+          {
+            "symbol": "FLTW",
+            "traderiser": "hold",
+            "codex": "hold",
+            "agreement": true,
+            "traderiser_score": 0.85269,
+            "traderiser_rationale": [
+              "TradeRiser proposed hold for the champion-time position.",
+              "Score 0.85269; 5-session return -0.038208; 21-session return 0.060268; 63-session momentum 0.104093.",
+              "Eligible=False; consecutive ineligible sessions=2; drawdown from 63-session high=-0.042339."
+            ],
+            "thesis": "FLTW is the preferred long-horizon Taiwan implementation because it preserves the country and semiconductor thesis at a lower fee than EWT.",
+            "principal_risks": [
+              "Taiwan geopolitical risk, semiconductor concentration, lower secondary-market liquidity, and tracking differences."
+            ],
+            "market_context": "The latest issuer data available before the cutoff described a technology-heavy Taiwan portfolio with a lower expense ratio than EWT.",
+            "factor_overlap": [
+              "Near-complete overlap with EWT and little incremental diversification."
+            ],
+            "confidence": "high",
+            "invalidation_conditions": [
+              "Reduce if liquidity, spreads, or tracking deteriorate materially; prefer EWT if execution quality becomes the dominant objective."
+            ],
+            "outcomes": {
+              "5": {
+                "sessions": 5,
+                "status": "pending"
+              },
+              "21": {
+                "sessions": 21,
+                "status": "pending"
+              },
+              "63": {
+                "sessions": 63,
+                "status": "pending"
+              }
+            }
+          },
+          {
+            "symbol": "GME",
+            "traderiser": "hold",
+            "codex": "reduce",
+            "agreement": false,
+            "traderiser_score": -0.072103,
+            "traderiser_rationale": [
+              "TradeRiser proposed hold for the champion-time position.",
+              "Score -0.072103; 5-session return 0.099354; 21-session return 0.259019; 63-session momentum 0.222821.",
+              "Eligible=True; consecutive ineligible sessions=0; drawdown from 63-session high=-0.000367."
+            ],
+            "thesis": "Retail profitability improved, but the position remains an idiosyncratic capital-allocation vehicle rather than dependable portfolio diversification.",
+            "principal_risks": [
+              "Declining core sales, concentrated external investments, crypto exposure, dilution, governance uncertainty, and sentiment-driven volatility."
+            ],
+            "market_context": "The latest pre-cutoff filing showed lower sales but higher operating income, alongside large cash, investment, and convertible-financing balances.",
+            "factor_overlap": [
+              "Low conventional factor overlap but concentrated investment and retail-sentiment exposure."
+            ],
+            "confidence": "high",
+            "invalidation_conditions": [
+              "Hold if core sales stabilize, recurring operating earnings grow excluding investment gains, dilution subsides, and capital allocation becomes more transparent."
+            ],
+            "outcomes": {
+              "5": {
+                "sessions": 5,
+                "status": "pending"
+              },
+              "21": {
+                "sessions": 21,
+                "status": "pending"
+              },
+              "63": {
+                "sessions": 63,
+                "status": "pending"
+              }
+            }
+          },
+          {
+            "symbol": "GSG",
+            "traderiser": "hold",
+            "codex": "hold",
+            "agreement": true,
+            "traderiser_score": 0.625835,
+            "traderiser_rationale": [
+              "TradeRiser proposed hold for the champion-time position.",
+              "Score 0.625835; 5-session return 0.027669; 21-session return 0.007397; 63-session momentum 0.179282.",
+              "Eligible=True; consecutive ineligible sessions=0; drawdown from 63-session high=-0.010229."
+            ],
+            "thesis": "GSG is the portfolio&#x27;s only direct futures-based real-asset and inflation hedge, offering a return source not replicated by equities.",
+            "principal_risks": [
+              "Energy concentration, futures-roll losses, volatility, sponsor fees, and trust or tax complexity."
+            ],
+            "market_context": "Index and issuer information available by the cutoff showed a commodity basket with substantial energy exposure.",
+            "factor_overlap": [
+              "High macro overlap with CRAK and IXC, but different vehicle mechanics and direct commodity-carry exposure."
+            ],
+            "confidence": "medium",
+            "invalidation_conditions": [
+              "Reduce if the commodity impulse rolls over, persistent contango erodes returns, or total energy exposure remains excessive."
+            ],
+            "outcomes": {
+              "5": {
+                "sessions": 5,
+                "status": "pending"
+              },
+              "21": {
+                "sessions": 21,
+                "status": "pending"
+              },
+              "63": {
+                "sessions": 63,
+                "status": "pending"
+              }
+            }
+          },
+          {
+            "symbol": "IHE",
+            "traderiser": "hold",
+            "codex": "hold",
+            "agreement": true,
+            "traderiser_score": 0.393195,
+            "traderiser_rationale": [
+              "TradeRiser proposed hold for the champion-time position.",
+              "Score 0.393195; 5-session return -0.009965; 21-session return -0.041081; 63-session momentum -0.013764.",
+              "Eligible=False; consecutive ineligible sessions=1; drawdown from 63-session high=-0.097379."
+            ],
+            "thesis": "IHE is a differentiated defensive health-care sleeve, but narrow pharmaceutical exposure and policy risk do not support increasing it.",
+            "principal_risks": [
+              "Drug-pricing policy, patent cliffs, pipeline failures, litigation, and issuer concentration."
+            ],
+            "market_context": "Issuer facts available by the cutoff showed a concentrated pharmaceutical portfolio with relatively defensive historical beta.",
+            "factor_overlap": [
+              "Moderate health-care overlap with IWM and DIVB, but materially more concentrated in drug manufacturers."
+            ],
+            "confidence": "medium",
+            "invalidation_conditions": [
+              "Reduce if regulatory or patent developments cause sustained earnings-breadth deterioration."
+            ],
+            "outcomes": {
+              "5": {
+                "sessions": 5,
+                "status": "pending"
+              },
+              "21": {
+                "sessions": 21,
+                "status": "pending"
+              },
+              "63": {
+                "sessions": 63,
+                "status": "pending"
+              }
+            }
+          },
+          {
+            "symbol": "IWM",
+            "traderiser": "hold",
+            "codex": "hold",
+            "agreement": true,
+            "traderiser_score": 0.21989,
+            "traderiser_rationale": [
+              "TradeRiser proposed hold for the champion-time position.",
+              "Score 0.21989; 5-session return -0.016492; 21-session return -0.036426; 63-session momentum -0.062032.",
+              "Eligible=False; consecutive ineligible sessions=5; drawdown from 63-session high=-0.090686."
+            ],
+            "thesis": "Broad U.S. small-cap exposure adds size and earnings-breadth diversification, but current rate sensitivity argues against increasing it.",
+            "principal_risks": [
+              "Refinancing stress, weaker credit, cyclical earnings, and exposure to low-profit companies."
+            ],
+            "market_context": "At the cutoff, recent relative momentum was weak while the fund remained more rate- and credit-sensitive than large-cap exposure.",
+            "factor_overlap": [
+              "Moderate value and cyclical overlap with DIVB and RPV."
+            ],
+            "confidence": "medium",
+            "invalidation_conditions": [
+              "Reduce if credit conditions worsen and relative momentum remains broken; increase only if financing conditions and earnings breadth improve together."
+            ],
+            "outcomes": {
+              "5": {
+                "sessions": 5,
+                "status": "pending"
+              },
+              "21": {
+                "sessions": 21,
+                "status": "pending"
+              },
+              "63": {
+                "sessions": 63,
+                "status": "pending"
+              }
+            }
+          },
+          {
+            "symbol": "IXC",
+            "traderiser": "hold",
+            "codex": "hold",
+            "agreement": true,
+            "traderiser_score": 0.373517,
+            "traderiser_rationale": [
+              "TradeRiser proposed hold for the champion-time position.",
+              "Score 0.373517; 5-session return 0.053413; 21-session return 0.040978; 63-session momentum 0.176482.",
+              "Eligible=True; consecutive ineligible sessions=0; drawdown from 63-session high=0.0."
+            ],
+            "thesis": "IXC is the broadest and lowest-cost dedicated energy-equity implementation among the current holdings.",
+            "principal_risks": [
+              "Energy-demand reversal, capital-allocation mistakes, windfall taxes, transition risk, and commodity-linked earnings compression."
+            ],
+            "market_context": "Issuer facts available by the cutoff showed diversified global energy exposure led by integrated oil and gas companies.",
+            "factor_overlap": [
+              "High overlap with CRAK and GSG and moderate overlap with DIVB&#x27;s energy allocation."
+            ],
+            "confidence": "medium",
+            "invalidation_conditions": [
+              "Reduce if demand, free cash flow, or capital discipline weakens, or aggregate energy exposure breaches portfolio limits."
+            ],
+            "outcomes": {
+              "5": {
+                "sessions": 5,
+                "status": "pending"
+              },
+              "21": {
+                "sessions": 21,
+                "status": "pending"
+              },
+              "63": {
+                "sessions": 63,
+                "status": "pending"
+              }
+            }
+          },
+          {
+            "symbol": "RPV",
+            "traderiser": "hold",
+            "codex": "reduce",
+            "agreement": false,
+            "traderiser_score": 0.295128,
+            "traderiser_rationale": [
+              "TradeRiser proposed hold for the champion-time position.",
+              "Score 0.295128; 5-session return 0.014295; 21-session return -0.02357; 63-session momentum 0.016771.",
+              "Eligible=True; consecutive ineligible sessions=0; drawdown from 63-session high=-0.034179."
+            ],
+            "thesis": "Pure-value exposure is valid, but much of its role is already supplied more cheaply and broadly by DIVB.",
+            "principal_risks": [
+              "Value traps, concentrated factor bets, financial and energy cyclicality, and reducing during a sustained value regime."
+            ],
+            "market_context": "Issuer materials available by the cutoff described a concentrated, factor-weighted pure-value portfolio.",
+            "factor_overlap": [
+              "High value and income overlap with DIVB and meaningful cyclical overlap with the energy sleeves."
+            ],
+            "confidence": "medium",
+            "invalidation_conditions": [
+              "Hold if value breadth improves and holdings-level evidence demonstrates substantial diversification versus DIVB."
+            ],
+            "outcomes": {
+              "5": {
+                "sessions": 5,
+                "status": "pending"
+              },
+              "21": {
+                "sessions": 21,
+                "status": "pending"
+              },
+              "63": {
+                "sessions": 63,
+                "status": "pending"
+              }
+            }
           }
         ]
       }
