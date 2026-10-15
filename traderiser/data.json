@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8.0",
-  "published_at": "2026-10-15T17:08:10.278989+00:00",
-  "valuation_as_of": "2026-10-15T17:08:04.816000+00:00",
+  "published_at": "2026-10-15T17:09:41.517181+00:00",
+  "valuation_as_of": "2026-10-15T17:09:36.139000+00:00",
   "valuation_provenance": "fresh_broker_supplied",
   "experiment": {
     "name": "TradeRiser Agentic Trading Experiment",
@@ -10,13 +10,13 @@
     "objective": "Continue the live observation through December 31, 2026 using the experiment&amp;#x27;s cumulative contributed funds."
   },
   "account": {
-    "value": 74.7206,
+    "value": 74.7277,
     "cash": 5.49,
-    "invested": 69.2305,
+    "invested": 69.2378,
     "buying_power": 5.49,
     "net_contributions": 75.0,
-    "investment_gain": -0.2794,
-    "simple_return_on_contributions": -0.00372533,
+    "investment_gain": -0.2723,
+    "simple_return_on_contributions": -0.00363067,
     "currency": "USD"
   },
   "holdings": [
@@ -33,7 +33,7 @@
       "shares": 0.026092,
       "average_price": 110.38,
       "cost_basis": 2.88,
-      "current_value": 2.8307,
+      "current_value": 2.8315,
       "strategy": "champion"
     },
     {
@@ -41,7 +41,7 @@
       "shares": 0.025402,
       "average_price": 112.98,
       "cost_basis": 2.8699,
-      "current_value": 2.6489,
+      "current_value": 2.6497,
       "strategy": "champion"
     },
     {
@@ -49,7 +49,7 @@
       "shares": 0.110477,
       "average_price": 60.92,
       "cost_basis": 6.7303,
-      "current_value": 7.4009,
+      "current_value": 7.4064,
       "strategy": "champion"
     },
     {
@@ -57,7 +57,7 @@
       "shares": 0.121902,
       "average_price": 59.47,
       "cost_basis": 7.2495,
-      "current_value": 7.2824,
+      "current_value": 7.28,
       "strategy": "champion"
     },
     {
@@ -65,7 +65,7 @@
       "shares": 0.101018,
       "average_price": 66.42,
       "cost_basis": 6.7096,
-      "current_value": 6.9076,
+      "current_value": 6.9096,
       "strategy": "champion"
     },
     {
@@ -81,7 +81,7 @@
       "shares": 0.200791,
       "average_price": 36.66,
       "cost_basis": 7.361,
-      "current_value": 7.354,
+      "current_value": 7.351,
       "strategy": "champion"
     },
     {
@@ -89,7 +89,7 @@
       "shares": 0.068904,
       "average_price": 61.68,
       "cost_basis": 4.25,
-      "current_value": 4.2341,
+      "current_value": 4.2342,
       "strategy": "champion"
     },
     {
@@ -105,7 +105,7 @@
       "shares": 0.207864,
       "average_price": 27.09,
       "cost_basis": 5.631,
-      "current_value": 5.8046,
+      "current_value": 5.7984,
       "strategy": "champion"
     },
     {
@@ -113,7 +113,7 @@
       "shares": 0.026511,
       "average_price": 181.43,
       "cost_basis": 4.8099,
-      "current_value": 4.81,
+      "current_value": 4.8139,
       "strategy": "champion"
     },
     {
@@ -121,7 +121,7 @@
       "shares": 0.027322,
       "average_price": 149.33,
       "cost_basis": 4.08,
-      "current_value": 4.0759,
+      "current_value": 4.077,
       "strategy": "champion"
     },
     {
@@ -129,7 +129,7 @@
       "shares": 0.024563,
       "average_price": 256.08,
       "cost_basis": 6.2901,
-      "current_value": 6.2862,
+      "current_value": 6.2896,
       "strategy": "champion"
     },
     {
@@ -137,7 +137,7 @@
       "shares": 0.0009,
       "average_price": 1266.67,
       "cost_basis": 1.14,
-      "current_value": 1.1407,
+      "current_value": 1.142,
       "strategy": "champion"
     }
   ],
@@ -1168,6 +1168,120 @@
       "average_price": 119.7399,
       "fees": 0.0,
       "reconciled_at": "2026-10-15T14:21:12.331000+00:00",
+      "authorized": null,
+      "orders_match": null,
+      "deferred_follow_up": null,
+      "source": "agentic",
+      "authorization_label": "authorization_identity_mismatch",
+      "execution_label": "historical_fill",
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic"
+    },
+    {
+      "symbol": "EWT",
+      "side": "sell",
+      "dollar_amount": 2.8197,
+      "filled_notional": 2.8197,
+      "state": "filled",
+      "quantity": 0.02601,
+      "average_price": 108.41,
+      "fees": 0.0,
+      "reconciled_at": "2026-10-15T17:01:28.639000+00:00",
+      "authorized": null,
+      "orders_match": null,
+      "deferred_follow_up": null,
+      "source": "agentic",
+      "authorization_label": "authorization_identity_mismatch",
+      "execution_label": "historical_fill",
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic"
+    },
+    {
+      "symbol": "FLTW",
+      "side": "sell",
+      "dollar_amount": 2.6481,
+      "filled_notional": 2.6481,
+      "state": "filled",
+      "quantity": 0.0254,
+      "average_price": 104.2571,
+      "fees": 0.0,
+      "reconciled_at": "2026-10-15T17:01:29.551000+00:00",
+      "authorized": null,
+      "orders_match": null,
+      "deferred_follow_up": null,
+      "source": "agentic",
+      "authorization_label": "authorization_identity_mismatch",
+      "execution_label": "historical_fill",
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic"
+    },
+    {
+      "symbol": "FTNT",
+      "side": "buy",
+      "dollar_amount": 4.8099,
+      "filled_notional": 4.8099,
+      "state": "filled",
+      "quantity": 0.026511,
+      "average_price": 181.4299,
+      "fees": 0.0,
+      "reconciled_at": "2026-10-15T17:01:30.466000+00:00",
+      "authorized": null,
+      "orders_match": null,
+      "deferred_follow_up": null,
+      "source": "agentic",
+      "authorization_label": "authorization_identity_mismatch",
+      "execution_label": "historical_fill",
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic"
+    },
+    {
+      "symbol": "MRK",
+      "side": "buy",
+      "dollar_amount": 4.08,
+      "filled_notional": 4.08,
+      "state": "filled",
+      "quantity": 0.027322,
+      "average_price": 149.3299,
+      "fees": 0.0,
+      "reconciled_at": "2026-10-15T17:01:31.493000+00:00",
+      "authorized": null,
+      "orders_match": null,
+      "deferred_follow_up": null,
+      "source": "agentic",
+      "authorization_label": "authorization_identity_mismatch",
+      "execution_label": "historical_fill",
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic"
+    },
+    {
+      "symbol": "JNJ",
+      "side": "buy",
+      "dollar_amount": 6.2898,
+      "filled_notional": 6.2898,
+      "state": "filled",
+      "quantity": 0.024563,
+      "average_price": 256.0699,
+      "fees": 0.0,
+      "reconciled_at": "2026-10-15T17:01:32.375000+00:00",
+      "authorized": null,
+      "orders_match": null,
+      "deferred_follow_up": null,
+      "source": "agentic",
+      "authorization_label": "authorization_identity_mismatch",
+      "execution_label": "historical_fill",
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic"
+    },
+    {
+      "symbol": "LLY",
+      "side": "buy",
+      "dollar_amount": 1.1398,
+      "filled_notional": 1.1398,
+      "state": "filled",
+      "quantity": 0.0009,
+      "average_price": 1266.4499,
+      "fees": 0.0,
+      "reconciled_at": "2026-10-15T17:01:33.663000+00:00",
       "authorized": null,
       "orders_match": null,
       "deferred_follow_up": null,
@@ -9392,6 +9506,204 @@
       "authorization_basis": "delegated_policy",
       "authorization_label": "delegated_policy_authorized",
       "reconciled": false
+    },
+    {
+      "kind": "historical_trade",
+      "generated_at": "2026-10-15T17:01:28.639000+00:00",
+      "status": "filled",
+      "selected": [
+        "EWT"
+      ],
+      "orders": [
+        {
+          "symbol": "EWT",
+          "side": "sell",
+          "dollars": 2.8197,
+          "status": "filled",
+          "quantity": 0.02601,
+          "average_price": 108.41,
+          "fees": 0.0
+        }
+      ],
+      "authorized": null,
+      "authorization_basis": null,
+      "authorization_label": "authorization_identity_mismatch",
+      "reconciled": null,
+      "source": "agentic",
+      "execution_label": "historical_fill",
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic",
+      "stage": "history",
+      "explanation": [
+        "A broker-confirmed fill is retained for continuity. TradeRiser authorization existed, but the broker fill identity did not match the authorized idempotency key."
+      ],
+      "regime": null
+    },
+    {
+      "kind": "historical_trade",
+      "generated_at": "2026-10-15T17:01:29.551000+00:00",
+      "status": "filled",
+      "selected": [
+        "FLTW"
+      ],
+      "orders": [
+        {
+          "symbol": "FLTW",
+          "side": "sell",
+          "dollars": 2.6481,
+          "status": "filled",
+          "quantity": 0.0254,
+          "average_price": 104.2571,
+          "fees": 0.0
+        }
+      ],
+      "authorized": null,
+      "authorization_basis": null,
+      "authorization_label": "authorization_identity_mismatch",
+      "reconciled": null,
+      "source": "agentic",
+      "execution_label": "historical_fill",
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic",
+      "stage": "history",
+      "explanation": [
+        "A broker-confirmed fill is retained for continuity. TradeRiser authorization existed, but the broker fill identity did not match the authorized idempotency key."
+      ],
+      "regime": null
+    },
+    {
+      "kind": "historical_trade",
+      "generated_at": "2026-10-15T17:01:30.466000+00:00",
+      "status": "filled",
+      "selected": [
+        "FTNT"
+      ],
+      "orders": [
+        {
+          "symbol": "FTNT",
+          "side": "buy",
+          "dollars": 4.8099,
+          "status": "filled",
+          "quantity": 0.026511,
+          "average_price": 181.4299,
+          "fees": 0.0
+        }
+      ],
+      "authorized": null,
+      "authorization_basis": null,
+      "authorization_label": "authorization_identity_mismatch",
+      "reconciled": null,
+      "source": "agentic",
+      "execution_label": "historical_fill",
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic",
+      "stage": "history",
+      "explanation": [
+        "A broker-confirmed fill is retained for continuity. TradeRiser authorization existed, but the broker fill identity did not match the authorized idempotency key."
+      ],
+      "regime": null
+    },
+    {
+      "kind": "historical_trade",
+      "generated_at": "2026-10-15T17:01:31.493000+00:00",
+      "status": "filled",
+      "selected": [
+        "MRK"
+      ],
+      "orders": [
+        {
+          "symbol": "MRK",
+          "side": "buy",
+          "dollars": 4.08,
+          "status": "filled",
+          "quantity": 0.027322,
+          "average_price": 149.3299,
+          "fees": 0.0
+        }
+      ],
+      "authorized": null,
+      "authorization_basis": null,
+      "authorization_label": "authorization_identity_mismatch",
+      "reconciled": null,
+      "source": "agentic",
+      "execution_label": "historical_fill",
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic",
+      "stage": "history",
+      "explanation": [
+        "A broker-confirmed fill is retained for continuity. TradeRiser authorization existed, but the broker fill identity did not match the authorized idempotency key."
+      ],
+      "regime": null
+    },
+    {
+      "kind": "historical_trade",
+      "generated_at": "2026-10-15T17:01:32.375000+00:00",
+      "status": "filled",
+      "selected": [
+        "JNJ"
+      ],
+      "orders": [
+        {
+          "symbol": "JNJ",
+          "side": "buy",
+          "dollars": 6.2898,
+          "status": "filled",
+          "quantity": 0.024563,
+          "average_price": 256.0699,
+          "fees": 0.0
+        }
+      ],
+      "authorized": null,
+      "authorization_basis": null,
+      "authorization_label": "authorization_identity_mismatch",
+      "reconciled": null,
+      "source": "agentic",
+      "execution_label": "historical_fill",
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic",
+      "stage": "history",
+      "explanation": [
+        "A broker-confirmed fill is retained for continuity. TradeRiser authorization existed, but the broker fill identity did not match the authorized idempotency key."
+      ],
+      "regime": null
+    },
+    {
+      "kind": "historical_trade",
+      "generated_at": "2026-10-15T17:01:33.663000+00:00",
+      "status": "filled",
+      "selected": [
+        "LLY"
+      ],
+      "orders": [
+        {
+          "symbol": "LLY",
+          "side": "buy",
+          "dollars": 1.1398,
+          "status": "filled",
+          "quantity": 0.0009,
+          "average_price": 1266.4499,
+          "fees": 0.0
+        }
+      ],
+      "authorized": null,
+      "authorization_basis": null,
+      "authorization_label": "authorization_identity_mismatch",
+      "reconciled": null,
+      "source": "agentic",
+      "execution_label": "historical_fill",
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic",
+      "stage": "history",
+      "explanation": [
+        "A broker-confirmed fill is retained for continuity. TradeRiser authorization existed, but the broker fill identity did not match the authorized idempotency key."
+      ],
+      "regime": null
     }
   ],
   "portfolio_history": [
@@ -13567,7 +13879,7 @@
     },
     {
       "date": "2026-10-15",
-      "value": 74.7206,
+      "value": 74.7277,
       "cash": 5.49,
       "holdings": [
         {
@@ -13578,27 +13890,27 @@
         {
           "symbol": "EWT",
           "shares": 0.026092,
-          "value": 2.8307
+          "value": 2.8315
         },
         {
           "symbol": "FLTW",
           "shares": 0.025402,
-          "value": 2.6489
+          "value": 2.6497
         },
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 7.4009
+          "value": 7.4064
         },
         {
           "symbol": "DXJ",
           "shares": 0.121902,
-          "value": 7.2824
+          "value": 7.28
         },
         {
           "symbol": "DIVB",
           "shares": 0.101018,
-          "value": 6.9076
+          "value": 6.9096
         },
         {
           "symbol": "IHE",
@@ -13608,12 +13920,12 @@
         {
           "symbol": "GSG",
           "shares": 0.200791,
-          "value": 7.354
+          "value": 7.351
         },
         {
           "symbol": "IXC",
           "shares": 0.068904,
-          "value": 4.2341
+          "value": 4.2342
         },
         {
           "symbol": "RPV",
@@ -13623,37 +13935,37 @@
         {
           "symbol": "GME",
           "shares": 0.207864,
-          "value": 5.8046
+          "value": 5.7984
         },
         {
           "symbol": "FTNT",
           "shares": 0.026511,
-          "value": 4.81
+          "value": 4.8139
         },
         {
           "symbol": "MRK",
           "shares": 0.027322,
-          "value": 4.0759
+          "value": 4.077
         },
         {
           "symbol": "JNJ",
           "shares": 0.024563,
-          "value": 6.2862
+          "value": 6.2896
         },
         {
           "symbol": "LLY",
           "shares": 0.0009,
-          "value": 1.1407
+          "value": 1.142
         }
       ],
-      "captured_at": "2026-10-15T17:08:04.816000+00:00",
+      "captured_at": "2026-10-15T17:09:36.139000+00:00",
       "source": "fresh_broker_supplied",
       "breakdown_estimated": false,
       "note": "Current holding quantities and values were supplied with the broker valuation; journal reconciliation is not claimed.",
       "net_cash_flow": 10.0,
       "contributions": 10.0,
       "withdrawals": 0.0,
-      "change": 9.2181,
+      "change": 9.2252,
       "change_pct": null,
       "market_gain": null,
       "return_unavailable_reason": "cash_flow_lacks_bracketing_valuations",
@@ -13667,7 +13979,7 @@
     }
   ],
   "performance": {
-    "simple_return_on_contributions": -0.00372533,
+    "simple_return_on_contributions": -0.00363067,
     "time_weighted_return": null,
     "time_weighted_quality": "unavailable_unbracketed_cash_flow",
     "money_weighted": {
