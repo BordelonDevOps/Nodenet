@@ -1,6 +1,6 @@
 {
   "schema_version": "1.8.0",
-  "published_at": "2026-10-19T14:36:37.249983+00:00",
+  "published_at": "2026-10-19T14:37:27.980625+00:00",
   "valuation_as_of": "2026-10-19T14:35:48.753000+00:00",
   "valuation_provenance": "fresh_broker_supplied",
   "experiment": {
@@ -1285,6 +1285,44 @@
       "average_price": 107.4901,
       "fees": 0.0,
       "reconciled_at": "2026-10-16T14:25:52.214000+00:00",
+      "authorized": null,
+      "orders_match": null,
+      "deferred_follow_up": null,
+      "source": "agentic",
+      "authorization_label": "authorization_identity_mismatch",
+      "execution_label": "historical_fill",
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic"
+    },
+    {
+      "symbol": "EWT",
+      "side": "sell",
+      "dollar_amount": 1.4052,
+      "filled_notional": 1.4052,
+      "state": "filled",
+      "quantity": 0.013072,
+      "average_price": 107.5001,
+      "fees": 0.0,
+      "reconciled_at": "2026-10-19T14:28:53.247000+00:00",
+      "authorized": null,
+      "orders_match": null,
+      "deferred_follow_up": null,
+      "source": "agentic",
+      "authorization_label": "authorization_identity_mismatch",
+      "execution_label": "historical_fill",
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic"
+    },
+    {
+      "symbol": "FLTW",
+      "side": "sell",
+      "dollar_amount": 2.6164,
+      "filled_notional": 2.6164,
+      "state": "filled",
+      "quantity": 0.025402,
+      "average_price": 103.0001,
+      "fees": 0.0,
+      "reconciled_at": "2026-10-19T14:35:29.841000+00:00",
       "authorized": null,
       "orders_match": null,
       "deferred_follow_up": null,
@@ -10062,6 +10100,39 @@
       "reconciled": false
     },
     {
+      "kind": "historical_trade",
+      "generated_at": "2026-10-19T14:28:53.247000+00:00",
+      "status": "filled",
+      "selected": [
+        "EWT"
+      ],
+      "orders": [
+        {
+          "symbol": "EWT",
+          "side": "sell",
+          "dollars": 1.4052,
+          "status": "filled",
+          "quantity": 0.013072,
+          "average_price": 107.5001,
+          "fees": 0.0
+        }
+      ],
+      "authorized": null,
+      "authorization_basis": null,
+      "authorization_label": "authorization_identity_mismatch",
+      "reconciled": null,
+      "source": "agentic",
+      "execution_label": "historical_fill",
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic",
+      "stage": "history",
+      "explanation": [
+        "A broker-confirmed fill is retained for continuity. TradeRiser authorization existed, but the broker fill identity did not match the authorized idempotency key."
+      ],
+      "regime": null
+    },
+    {
       "kind": "champion",
       "generated_at": "2026-10-19T14:35:07.995868+00:00",
       "status": "reconciliation_mismatch",
@@ -10114,6 +10185,39 @@
       "authorization_basis": "delegated_policy",
       "authorization_label": "delegated_policy_authorized",
       "reconciled": false
+    },
+    {
+      "kind": "historical_trade",
+      "generated_at": "2026-10-19T14:35:29.841000+00:00",
+      "status": "filled",
+      "selected": [
+        "FLTW"
+      ],
+      "orders": [
+        {
+          "symbol": "FLTW",
+          "side": "sell",
+          "dollars": 2.6164,
+          "status": "filled",
+          "quantity": 0.025402,
+          "average_price": 103.0001,
+          "fees": 0.0
+        }
+      ],
+      "authorized": null,
+      "authorization_basis": null,
+      "authorization_label": "authorization_identity_mismatch",
+      "reconciled": null,
+      "source": "agentic",
+      "execution_label": "historical_fill",
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic",
+      "stage": "history",
+      "explanation": [
+        "A broker-confirmed fill is retained for continuity. TradeRiser authorization existed, but the broker fill identity did not match the authorized idempotency key."
+      ],
+      "regime": null
     }
   ],
   "portfolio_history": [
