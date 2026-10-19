@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8.0",
-  "published_at": "2026-10-19T14:37:27.980625+00:00",
-  "valuation_as_of": "2026-10-19T14:35:48.753000+00:00",
+  "published_at": "2026-10-19T14:41:51.329226+00:00",
+  "valuation_as_of": "2026-10-19T14:40:59.777153+00:00",
   "valuation_provenance": "fresh_broker_supplied",
   "experiment": {
     "name": "TradeRiser Agentic Trading Experiment",
@@ -10,13 +10,13 @@
     "objective": "Continue the live observation through December 31, 2026 using the experiment&amp;#x27;s cumulative contributed funds."
   },
   "account": {
-    "value": 73.7078,
-    "cash": 5.43,
-    "invested": 68.2781,
-    "buying_power": 5.43,
+    "value": 73.7096,
+    "cash": 1.32,
+    "invested": 72.3928,
+    "buying_power": 1.32,
     "net_contributions": 75.0,
-    "investment_gain": -1.2922,
-    "simple_return_on_contributions": -0.01722933,
+    "investment_gain": -1.2904,
+    "simple_return_on_contributions": -0.01720533,
     "currency": "USD"
   },
   "holdings": [
@@ -33,7 +33,7 @@
       "shares": 0.110477,
       "average_price": 60.92,
       "cost_basis": 6.7303,
-      "current_value": 7.4064,
+      "current_value": 7.3865,
       "strategy": "champion"
     },
     {
@@ -41,7 +41,7 @@
       "shares": 0.121902,
       "average_price": 59.47,
       "cost_basis": 7.2495,
-      "current_value": 7.3166,
+      "current_value": 7.3196,
       "strategy": "champion"
     },
     {
@@ -49,7 +49,7 @@
       "shares": 0.101018,
       "average_price": 66.42,
       "cost_basis": 6.7096,
-      "current_value": 6.9147,
+      "current_value": 6.9167,
       "strategy": "champion"
     },
     {
@@ -65,7 +65,7 @@
       "shares": 0.200791,
       "average_price": 36.66,
       "cost_basis": 7.361,
-      "current_value": 7.4102,
+      "current_value": 7.4112,
       "strategy": "champion"
     },
     {
@@ -73,7 +73,7 @@
       "shares": 0.068904,
       "average_price": 61.68,
       "cost_basis": 4.25,
-      "current_value": 4.3179,
+      "current_value": 4.3093,
       "strategy": "champion"
     },
     {
@@ -81,7 +81,7 @@
       "shares": 0.070541,
       "average_price": 118.51,
       "cost_basis": 8.3598,
-      "current_value": 8.4127,
+      "current_value": 8.4088,
       "strategy": "champion"
     },
     {
@@ -89,7 +89,7 @@
       "shares": 0.404724,
       "average_price": 27.48,
       "cost_basis": 11.1218,
-      "current_value": 10.6625,
+      "current_value": 10.6948,
       "strategy": "champion"
     },
     {
@@ -97,7 +97,7 @@
       "shares": 0.026511,
       "average_price": 181.43,
       "cost_basis": 4.8099,
-      "current_value": 4.5038,
+      "current_value": 4.5086,
       "strategy": "champion"
     },
     {
@@ -105,7 +105,7 @@
       "shares": 0.027322,
       "average_price": 149.33,
       "cost_basis": 4.08,
-      "current_value": 3.9881,
+      "current_value": 3.9878,
       "strategy": "champion"
     },
     {
@@ -113,7 +113,7 @@
       "shares": 0.024563,
       "average_price": 256.08,
       "cost_basis": 6.2901,
-      "current_value": 6.2049,
+      "current_value": 6.2066,
       "strategy": "champion"
     },
     {
@@ -121,7 +121,15 @@
       "shares": 0.0009,
       "average_price": 1266.67,
       "cost_basis": 1.14,
-      "current_value": 1.1282,
+      "current_value": 1.1286,
+      "strategy": "champion"
+    },
+    {
+      "symbol": "VLO",
+      "shares": 0.009268,
+      "average_price": 443.46,
+      "cost_basis": 4.11,
+      "current_value": 4.1022,
       "strategy": "champion"
     }
   ],
@@ -1323,6 +1331,25 @@
       "average_price": 103.0001,
       "fees": 0.0,
       "reconciled_at": "2026-10-19T14:35:29.841000+00:00",
+      "authorized": null,
+      "orders_match": null,
+      "deferred_follow_up": null,
+      "source": "agentic",
+      "authorization_label": "authorization_identity_mismatch",
+      "execution_label": "historical_fill",
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic"
+    },
+    {
+      "symbol": "VLO",
+      "side": "buy",
+      "dollar_amount": 4.1096,
+      "filled_notional": 4.1096,
+      "state": "filled",
+      "quantity": 0.009268,
+      "average_price": 443.4199,
+      "fees": 0.0,
+      "reconciled_at": "2026-10-19T14:38:48.509000+00:00",
       "authorized": null,
       "orders_match": null,
       "deferred_follow_up": null,
@@ -10218,6 +10245,93 @@
         "A broker-confirmed fill is retained for continuity. TradeRiser authorization existed, but the broker fill identity did not match the authorized idempotency key."
       ],
       "regime": null
+    },
+    {
+      "kind": "champion",
+      "generated_at": "2026-10-19T14:38:25.199371+00:00",
+      "status": "reconciliation_mismatch",
+      "selected": [
+        "AAPL",
+        "ABBV",
+        "ABNB",
+        "ADI",
+        "AMGN",
+        "COP",
+        "GILD",
+        "IEFA",
+        "KO",
+        "LLY",
+        "NEM",
+        "PFE",
+        "PM",
+        "SCHD",
+        "TEAM",
+        "TMO",
+        "USO",
+        "VLO",
+        "XLV",
+        "XOM"
+      ],
+      "orders": [
+        {
+          "symbol": "VLO",
+          "side": "buy",
+          "dollars": 4.11,
+          "reason": "rules_based_rebalance",
+          "decision_class": "routine_replacement",
+          "funding_source": "available_cash"
+        },
+        {
+          "symbol": "ADI",
+          "side": "buy",
+          "dollars": 1.31,
+          "reason": "rules_based_rebalance",
+          "decision_class": "routine_replacement",
+          "funding_source": "available_cash"
+        }
+      ],
+      "explanation": [
+        "Broker activity did not qualify as a terminal reconciled delegated fill."
+      ],
+      "regime": null,
+      "stage": "reconciliation",
+      "authorized": true,
+      "authorization_basis": "delegated_policy",
+      "authorization_label": "delegated_policy_authorized",
+      "reconciled": false
+    },
+    {
+      "kind": "historical_trade",
+      "generated_at": "2026-10-19T14:38:48.509000+00:00",
+      "status": "filled",
+      "selected": [
+        "VLO"
+      ],
+      "orders": [
+        {
+          "symbol": "VLO",
+          "side": "buy",
+          "dollars": 4.1096,
+          "status": "filled",
+          "quantity": 0.009268,
+          "average_price": 443.4199,
+          "fees": 0.0
+        }
+      ],
+      "authorized": null,
+      "authorization_basis": null,
+      "authorization_label": "authorization_identity_mismatch",
+      "reconciled": null,
+      "source": "agentic",
+      "execution_label": "historical_fill",
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic",
+      "stage": "history",
+      "explanation": [
+        "A broker-confirmed fill is retained for continuity. TradeRiser authorization existed, but the broker fill identity did not match the authorized idempotency key."
+      ],
+      "regime": null
     }
   ],
   "portfolio_history": [
@@ -14653,8 +14767,8 @@
     },
     {
       "date": "2026-10-19",
-      "value": 73.7078,
-      "cash": 5.43,
+      "value": 73.7096,
+      "cash": 1.32,
       "holdings": [
         {
           "symbol": "IWM",
@@ -14664,17 +14778,17 @@
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 7.4064
+          "value": 7.3865
         },
         {
           "symbol": "DXJ",
           "shares": 0.121902,
-          "value": 7.3166
+          "value": 7.3196
         },
         {
           "symbol": "DIVB",
           "shares": 0.101018,
-          "value": 6.9147
+          "value": 6.9167
         },
         {
           "symbol": "IHE",
@@ -14684,52 +14798,57 @@
         {
           "symbol": "GSG",
           "shares": 0.200791,
-          "value": 7.4102
+          "value": 7.4112
         },
         {
           "symbol": "IXC",
           "shares": 0.068904,
-          "value": 4.3179
+          "value": 4.3093
         },
         {
           "symbol": "RPV",
           "shares": 0.070541,
-          "value": 8.4127
+          "value": 8.4088
         },
         {
           "symbol": "GME",
           "shares": 0.404724,
-          "value": 10.6625
+          "value": 10.6948
         },
         {
           "symbol": "FTNT",
           "shares": 0.026511,
-          "value": 4.5038
+          "value": 4.5086
         },
         {
           "symbol": "MRK",
           "shares": 0.027322,
-          "value": 3.9881
+          "value": 3.9878
         },
         {
           "symbol": "JNJ",
           "shares": 0.024563,
-          "value": 6.2049
+          "value": 6.2066
         },
         {
           "symbol": "LLY",
           "shares": 0.0009,
-          "value": 1.1282
+          "value": 1.1286
+        },
+        {
+          "symbol": "VLO",
+          "shares": 0.009268,
+          "value": 4.1022
         }
       ],
-      "captured_at": "2026-10-19T14:35:48.753000+00:00",
+      "captured_at": "2026-10-19T14:40:59.777153+00:00",
       "source": "fresh_broker_supplied",
       "breakdown_estimated": false,
       "note": "Current holding quantities and values were supplied with the broker valuation; journal reconciliation is not claimed.",
       "net_cash_flow": 0.0,
       "contributions": 0.0,
       "withdrawals": -0.0,
-      "change": 8.2053,
+      "change": 8.2071,
       "change_pct": null,
       "market_gain": null,
       "return_unavailable_reason": "period_lacks_bracketing_valuations",
@@ -14743,7 +14862,7 @@
     }
   ],
   "performance": {
-    "simple_return_on_contributions": -0.01722933,
+    "simple_return_on_contributions": -0.01720533,
     "time_weighted_return": null,
     "time_weighted_quality": "unavailable_unbracketed_cash_flow",
     "money_weighted": {
@@ -15566,7 +15685,7 @@
   "daily_briefing": {
     "as_of": "2026-10-16",
     "headline": "TradeRiser proposed 2 portfolio changes.",
-    "portfolio_context": "The live account currently holds IWM, CRAK, DXJ, DIVB, IHE, GSG, IXC, RPV, GME, FTNT, MRK, JNJ, LLY.",
+    "portfolio_context": "The live account currently holds IWM, CRAK, DXJ, DIVB, IHE, GSG, IXC, RPV, GME, FTNT, MRK, JNJ, LLY, VLO.",
     "market_context": "The completed-session screen qualified VLO, USO, MPC, PSX, CRAK, GSG, ADI, COP, LLY, DXJ, XLE, IXC, AAPL, XOM, NEM, AMGN, GILD, SCHD, CVX, TEAM, RPV, TMO, PM, PFE, XLV, KO, ABBV, ABNB, DIVB, IEFA, EFA, JPM, SPYM, IVV, VOO, SPY, VTI, RSP, DIA, DHR, CRM, PG, MDT, MSFT, MCK, DIS, META, V, XLP, SGOV, BIL, BRK-B, MA, SHOP, ABT, NOW, IBIT, BITO, ACN for consideration.",
     "champion": "The live strategy currently favors AAPL, ABBV, ABNB, ADI, AMGN, COP, GILD, IEFA, KO, LLY, NEM, PFE, PM, SCHD, TEAM, TMO, USO, VLO, XLV, XOM.",
     "challenger": "The research-only challenger favors MPC, TEAM, PSX.",
@@ -15602,7 +15721,7 @@
   },
   "evidence": {
     "live_days": 71,
-    "champion_cycles": 93,
+    "champion_cycles": 94,
     "challenger_cycles": 54,
     "reconciled_trades": 3,
     "benchmark": "Equal-weight provider universe",
@@ -16196,27 +16315,6 @@
         "short_horizon_weakness": true,
         "cost_basis_weakness": false,
         "cost_basis_evidence_complete": false
-      },
-      {
-        "symbol": "FLTW",
-        "eligible": false,
-        "score": 0.815339,
-        "return_5d": -0.076749,
-        "return_21d": -0.041169,
-        "momentum_12_1": 0.815339,
-        "momentum_63d": 0.110736,
-        "momentum_126d": 0.279503,
-        "distance_from_200d_average": 0.156934,
-        "drawdown_from_63d_high": -0.105803,
-        "volatility_trailing_exit_threshold": -0.08,
-        "price": 102.01,
-        "annualized_volatility": 0.321842,
-        "rsi_14": 29.0611,
-        "consecutive_ineligible_sessions": 5,
-        "overbought": false,
-        "short_horizon_weakness": true,
-        "cost_basis_weakness": true,
-        "cost_basis_evidence_complete": true
       },
       {
         "symbol": "PANW",
@@ -19748,8 +19846,8 @@
           "outgoing_score": 0.368849,
           "incoming_score": 1.361976,
           "funded_dollars": 4.11,
-          "required_edge_dollars": 0.0704,
-          "estimated_tax_cost_dollars": 0.0417,
+          "required_edge_dollars": 0.0712,
+          "estimated_tax_cost_dollars": 0.0424,
           "round_trip_cost_dollars": 0.0082,
           "uncertainty_buffer_dollars": 0.0206,
           "calibration_samples": 4
@@ -19763,8 +19861,8 @@
           "outgoing_score": 0.335291,
           "incoming_score": 1.539184,
           "funded_dollars": 4.11,
-          "required_edge_dollars": 0.0704,
-          "estimated_tax_cost_dollars": 0.0417,
+          "required_edge_dollars": 0.0712,
+          "estimated_tax_cost_dollars": 0.0424,
           "round_trip_cost_dollars": 0.0082,
           "uncertainty_buffer_dollars": 0.0206,
           "calibration_samples": 4
@@ -19778,8 +19876,8 @@
           "outgoing_score": 0.185245,
           "incoming_score": 1.616949,
           "funded_dollars": 4.11,
-          "required_edge_dollars": 0.0704,
-          "estimated_tax_cost_dollars": 0.0417,
+          "required_edge_dollars": 0.0712,
+          "estimated_tax_cost_dollars": 0.0424,
           "round_trip_cost_dollars": 0.0082,
           "uncertainty_buffer_dollars": 0.0206,
           "calibration_samples": 4
@@ -19793,8 +19891,8 @@
           "outgoing_score": 0.281285,
           "incoming_score": 0.55908,
           "funded_dollars": 5.08,
-          "required_edge_dollars": 0.0552,
-          "estimated_tax_cost_dollars": 0.0197,
+          "required_edge_dollars": 0.054,
+          "estimated_tax_cost_dollars": 0.0185,
           "round_trip_cost_dollars": 0.0102,
           "uncertainty_buffer_dollars": 0.0254,
           "calibration_samples": 4
@@ -19808,8 +19906,8 @@
           "outgoing_score": 0.248919,
           "incoming_score": 0.557213,
           "funded_dollars": 5.08,
-          "required_edge_dollars": 0.0552,
-          "estimated_tax_cost_dollars": 0.0197,
+          "required_edge_dollars": 0.054,
+          "estimated_tax_cost_dollars": 0.0185,
           "round_trip_cost_dollars": 0.0102,
           "uncertainty_buffer_dollars": 0.0254,
           "calibration_samples": 4
@@ -19823,8 +19921,8 @@
           "outgoing_score": 0.251578,
           "incoming_score": 0.541825,
           "funded_dollars": 5.08,
-          "required_edge_dollars": 0.0552,
-          "estimated_tax_cost_dollars": 0.0197,
+          "required_edge_dollars": 0.054,
+          "estimated_tax_cost_dollars": 0.0185,
           "round_trip_cost_dollars": 0.0102,
           "uncertainty_buffer_dollars": 0.0254,
           "calibration_samples": 4
@@ -19837,9 +19935,9 @@
           "score_advantage": -0.045991,
           "outgoing_score": 0.388816,
           "incoming_score": 0.342825,
-          "funded_dollars": 3.91,
-          "required_edge_dollars": 0.0525,
-          "estimated_tax_cost_dollars": 0.0251,
+          "funded_dollars": 3.92,
+          "required_edge_dollars": 0.0518,
+          "estimated_tax_cost_dollars": 0.0243,
           "round_trip_cost_dollars": 0.0078,
           "uncertainty_buffer_dollars": 0.0196,
           "calibration_samples": 4
@@ -19852,9 +19950,9 @@
           "score_advantage": -0.00213,
           "outgoing_score": 0.348693,
           "incoming_score": 0.346563,
-          "funded_dollars": 3.91,
-          "required_edge_dollars": 0.0525,
-          "estimated_tax_cost_dollars": 0.0251,
+          "funded_dollars": 3.92,
+          "required_edge_dollars": 0.0518,
+          "estimated_tax_cost_dollars": 0.0243,
           "round_trip_cost_dollars": 0.0078,
           "uncertainty_buffer_dollars": 0.0196,
           "calibration_samples": 4
@@ -19867,9 +19965,9 @@
           "score_advantage": -0.000162,
           "outgoing_score": 0.356723,
           "incoming_score": 0.356561,
-          "funded_dollars": 3.91,
-          "required_edge_dollars": 0.0525,
-          "estimated_tax_cost_dollars": 0.0251,
+          "funded_dollars": 3.92,
+          "required_edge_dollars": 0.0518,
+          "estimated_tax_cost_dollars": 0.0243,
           "round_trip_cost_dollars": 0.0078,
           "uncertainty_buffer_dollars": 0.0196,
           "calibration_samples": 4
@@ -19882,9 +19980,9 @@
           "score_advantage": 0.018995,
           "outgoing_score": 0.38328,
           "incoming_score": 0.402275,
-          "funded_dollars": 4.0,
-          "required_edge_dollars": 0.0645,
-          "estimated_tax_cost_dollars": 0.0365,
+          "funded_dollars": 4.01,
+          "required_edge_dollars": 0.065,
+          "estimated_tax_cost_dollars": 0.0369,
           "round_trip_cost_dollars": 0.008,
           "uncertainty_buffer_dollars": 0.02,
           "calibration_samples": 4
@@ -19897,9 +19995,9 @@
           "score_advantage": -0.040528,
           "outgoing_score": 0.38713,
           "incoming_score": 0.346602,
-          "funded_dollars": 4.0,
-          "required_edge_dollars": 0.0645,
-          "estimated_tax_cost_dollars": 0.0365,
+          "funded_dollars": 4.01,
+          "required_edge_dollars": 0.065,
+          "estimated_tax_cost_dollars": 0.0369,
           "round_trip_cost_dollars": 0.008,
           "uncertainty_buffer_dollars": 0.02,
           "calibration_samples": 4
@@ -19912,9 +20010,9 @@
           "score_advantage": -0.030184,
           "outgoing_score": 0.385443,
           "incoming_score": 0.355259,
-          "funded_dollars": 4.0,
-          "required_edge_dollars": 0.0645,
-          "estimated_tax_cost_dollars": 0.0365,
+          "funded_dollars": 4.01,
+          "required_edge_dollars": 0.065,
+          "estimated_tax_cost_dollars": 0.0369,
           "round_trip_cost_dollars": 0.008,
           "uncertainty_buffer_dollars": 0.02,
           "calibration_samples": 4
@@ -19927,11 +20025,11 @@
           "score_advantage": -0.309159,
           "outgoing_score": 0.632967,
           "incoming_score": 0.323808,
-          "funded_dollars": 4.93,
-          "required_edge_dollars": 0.0569,
-          "estimated_tax_cost_dollars": 0.0224,
+          "funded_dollars": 4.94,
+          "required_edge_dollars": 0.0564,
+          "estimated_tax_cost_dollars": 0.0219,
           "round_trip_cost_dollars": 0.0099,
-          "uncertainty_buffer_dollars": 0.0246,
+          "uncertainty_buffer_dollars": 0.0247,
           "calibration_samples": 4
         },
         {
@@ -19942,11 +20040,11 @@
           "score_advantage": -0.332853,
           "outgoing_score": 0.62611,
           "incoming_score": 0.293257,
-          "funded_dollars": 4.93,
-          "required_edge_dollars": 0.0569,
-          "estimated_tax_cost_dollars": 0.0224,
+          "funded_dollars": 4.94,
+          "required_edge_dollars": 0.0564,
+          "estimated_tax_cost_dollars": 0.0219,
           "round_trip_cost_dollars": 0.0099,
-          "uncertainty_buffer_dollars": 0.0246,
+          "uncertainty_buffer_dollars": 0.0247,
           "calibration_samples": 4
         },
         {
@@ -19957,11 +20055,11 @@
           "score_advantage": -0.314467,
           "outgoing_score": 0.613988,
           "incoming_score": 0.299521,
-          "funded_dollars": 4.93,
-          "required_edge_dollars": 0.0569,
-          "estimated_tax_cost_dollars": 0.0224,
+          "funded_dollars": 4.94,
+          "required_edge_dollars": 0.0564,
+          "estimated_tax_cost_dollars": 0.0219,
           "round_trip_cost_dollars": 0.0099,
-          "uncertainty_buffer_dollars": 0.0246,
+          "uncertainty_buffer_dollars": 0.0247,
           "calibration_samples": 4
         },
         {
@@ -20015,67 +20113,6 @@
     "staged_derisk_analysis": {
       "enabled": true,
       "positions": [
-        {
-          "symbol": "FLTW",
-          "action": "full_exit",
-          "confirmation_sessions": 3,
-          "full_exit_sessions": 5,
-          "consecutive_ineligible_sessions": 5,
-          "trigger": "short_horizon_weakness",
-          "estimated_tax_cost_dollars": 0.0,
-          "evidence": [
-            {
-              "data_as_of": "2026-10-16",
-              "eligible": false,
-              "return_5d": -0.076749,
-              "return_21d": -0.041169,
-              "distance_from_200d_average": 0.156934,
-              "momentum_126d": 0.279503,
-              "momentum_63d": 0.110736,
-              "short_horizon_weakness": true
-            },
-            {
-              "data_as_of": "2026-10-15",
-              "eligible": false,
-              "return_5d": -0.04326,
-              "return_21d": 0.004311,
-              "distance_from_200d_average": 0.191699,
-              "momentum_126d": 0.34657,
-              "momentum_63d": 0.119142,
-              "short_horizon_weakness": true
-            },
-            {
-              "data_as_of": "2026-10-14",
-              "eligible": false,
-              "return_5d": -0.046173,
-              "return_21d": 0.042053,
-              "distance_from_200d_average": 0.217155,
-              "momentum_126d": 0.382869,
-              "momentum_63d": 0.109265,
-              "short_horizon_weakness": true
-            },
-            {
-              "data_as_of": "2026-10-13",
-              "eligible": false,
-              "return_5d": -0.038208,
-              "return_21d": 0.060268,
-              "distance_from_200d_average": 0.248389,
-              "momentum_126d": 0.419914,
-              "momentum_63d": 0.104093,
-              "short_horizon_weakness": true
-            },
-            {
-              "data_as_of": "2026-10-12",
-              "eligible": false,
-              "return_5d": -0.034712,
-              "return_21d": 0.031762,
-              "distance_from_200d_average": 0.261896,
-              "momentum_126d": 0.466612,
-              "momentum_63d": 0.118878,
-              "short_horizon_weakness": true
-            }
-          ]
-        },
         {
           "symbol": "FTNT",
           "action": "awaiting_confirmation",
@@ -20232,11 +20269,12 @@
       ]
     },
     "funding_analysis": {
-      "available_contribution_cash": 2.81,
-      "cash_funded_budget": 2.8,
-      "unallocated_cash": 0.0072,
+      "available_contribution_cash": 5.43,
+      "cash_funded_budget": 5.42,
+      "unallocated_cash": 0.0013,
       "cash_funded_orders": [
-        "VLO"
+        "VLO",
+        "ADI"
       ],
       "existing_holding_fallback_orders": [],
       "sale_funded_pairs": [],
