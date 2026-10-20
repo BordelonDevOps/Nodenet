@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8.0",
-  "published_at": "2026-10-20T14:29:30.296187+00:00",
-  "valuation_as_of": "2026-10-20T14:26:02.542000+00:00",
+  "published_at": "2026-10-20T14:39:01.652053+00:00",
+  "valuation_as_of": "2026-10-20T14:37:57.042000+00:00",
   "valuation_provenance": "fresh_broker_supplied",
   "experiment": {
     "name": "TradeRiser Agentic Trading Experiment",
@@ -10,13 +10,13 @@
     "objective": "Continue the live observation through December 31, 2026 using the experiment&amp;#x27;s cumulative contributed funds."
   },
   "account": {
-    "value": 73.6287,
-    "cash": 3.19,
-    "invested": 70.4374,
-    "buying_power": 3.19,
+    "value": 73.6505,
+    "cash": 5.48,
+    "invested": 68.1721,
+    "buying_power": 5.48,
     "net_contributions": 75.0,
-    "investment_gain": -1.3713,
-    "simple_return_on_contributions": -0.018284,
+    "investment_gain": -1.3495,
+    "simple_return_on_contributions": -0.01799333,
     "currency": "USD"
   },
   "holdings": [
@@ -33,7 +33,7 @@
       "shares": 0.110477,
       "average_price": 60.92,
       "cost_basis": 6.7303,
-      "current_value": 7.2141,
+      "current_value": 7.2017,
       "strategy": "champion"
     },
     {
@@ -41,7 +41,7 @@
       "shares": 0.121902,
       "average_price": 59.47,
       "cost_basis": 7.2495,
-      "current_value": 7.2995,
+      "current_value": 7.3056,
       "strategy": "champion"
     },
     {
@@ -49,7 +49,7 @@
       "shares": 0.101018,
       "average_price": 66.42,
       "cost_basis": 6.7096,
-      "current_value": 7.0066,
+      "current_value": 7.0106,
       "strategy": "champion"
     },
     {
@@ -65,7 +65,7 @@
       "shares": 0.200791,
       "average_price": 36.66,
       "cost_basis": 7.361,
-      "current_value": 7.3449,
+      "current_value": 7.3289,
       "strategy": "champion"
     },
     {
@@ -73,7 +73,7 @@
       "shares": 0.068904,
       "average_price": 61.68,
       "cost_basis": 4.25,
-      "current_value": 4.2769,
+      "current_value": 4.2634,
       "strategy": "champion"
     },
     {
@@ -81,7 +81,7 @@
       "shares": 0.070541,
       "average_price": 118.51,
       "cost_basis": 8.3598,
-      "current_value": 8.4579,
+      "current_value": 8.4508,
       "strategy": "champion"
     },
     {
@@ -89,15 +89,15 @@
       "shares": 0.404724,
       "average_price": 27.48,
       "cost_basis": 11.1218,
-      "current_value": 10.5107,
+      "current_value": 10.6119,
       "strategy": "champion"
     },
     {
       "symbol": "FTNT",
-      "shares": 0.026511,
-      "average_price": 181.43,
-      "cost_basis": 4.8099,
-      "current_value": 4.5599,
+      "shares": 0.013211,
+      "average_price": 181.67,
+      "cost_basis": 2.4,
+      "current_value": 2.2711,
       "strategy": "champion"
     },
     {
@@ -105,7 +105,7 @@
       "shares": 0.027322,
       "average_price": 149.33,
       "cost_basis": 4.08,
-      "current_value": 4.0602,
+      "current_value": 4.0497,
       "strategy": "champion"
     },
     {
@@ -113,7 +113,7 @@
       "shares": 0.012313,
       "average_price": 255.83,
       "cost_basis": 3.15,
-      "current_value": 3.2041,
+      "current_value": 3.199,
       "strategy": "champion"
     },
     {
@@ -121,7 +121,7 @@
       "shares": 0.0009,
       "average_price": 1266.67,
       "cost_basis": 1.14,
-      "current_value": 1.1784,
+      "current_value": 1.1709,
       "strategy": "champion"
     },
     {
@@ -129,7 +129,7 @@
       "shares": 0.009268,
       "average_price": 443.46,
       "cost_basis": 4.11,
-      "current_value": 3.9715,
+      "current_value": 3.9571,
       "strategy": "champion"
     },
     {
@@ -137,7 +137,7 @@
       "shares": 0.001677,
       "average_price": 787.12,
       "cost_basis": 1.32,
-      "current_value": 1.3404,
+      "current_value": 1.3391,
       "strategy": "champion"
     }
   ],
@@ -1396,6 +1396,25 @@
       "average_price": 260.2501,
       "fees": 0.0,
       "reconciled_at": "2026-10-20T14:24:44.638000+00:00",
+      "authorized": null,
+      "orders_match": null,
+      "deferred_follow_up": null,
+      "source": "agentic",
+      "authorization_label": "authorization_identity_mismatch",
+      "execution_label": "historical_fill",
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic"
+    },
+    {
+      "symbol": "FTNT",
+      "side": "sell",
+      "dollar_amount": 2.2879,
+      "filled_notional": 2.2879,
+      "state": "filled",
+      "quantity": 0.0133,
+      "average_price": 172.02,
+      "fees": 0.0,
+      "reconciled_at": "2026-10-20T14:32:32.158000+00:00",
       "authorized": null,
       "orders_match": null,
       "deferred_follow_up": null,
@@ -10493,6 +10512,96 @@
         "A broker-confirmed fill is retained for continuity. TradeRiser authorization existed, but the broker fill identity did not match the authorized idempotency key."
       ],
       "regime": null
+    },
+    {
+      "kind": "champion",
+      "generated_at": "2026-10-20T14:32:02.404320+00:00",
+      "status": "reconciliation_mismatch",
+      "selected": [
+        "AAPL",
+        "ABBV",
+        "ABNB",
+        "AMGN",
+        "AMZN",
+        "GILD",
+        "KO",
+        "MRNA",
+        "NEM",
+        "PFE",
+        "PM",
+        "SCHD",
+        "SPYM",
+        "TMO",
+        "XLV"
+      ],
+      "orders": [
+        {
+          "symbol": "JNJ",
+          "side": "sell",
+          "dollars": 1.6,
+          "reason": "persistent_eligibility_failure_reduction",
+          "decision_class": "staged_derisk",
+          "ineligible_sessions": 3
+        },
+        {
+          "symbol": "FTNT",
+          "side": "sell",
+          "dollars": 2.29,
+          "reason": "persistent_eligibility_failure_reduction",
+          "decision_class": "staged_derisk",
+          "ineligible_sessions": 3
+        },
+        {
+          "symbol": "AAPL",
+          "side": "buy",
+          "dollars": 3.18,
+          "reason": "rules_based_rebalance",
+          "decision_class": "routine_replacement",
+          "funding_source": "available_cash"
+        }
+      ],
+      "explanation": [
+        "Broker activity did not qualify as a terminal reconciled delegated fill."
+      ],
+      "regime": null,
+      "stage": "reconciliation",
+      "authorized": true,
+      "authorization_basis": "delegated_policy",
+      "authorization_label": "delegated_policy_authorized",
+      "reconciled": false
+    },
+    {
+      "kind": "historical_trade",
+      "generated_at": "2026-10-20T14:32:32.158000+00:00",
+      "status": "filled",
+      "selected": [
+        "FTNT"
+      ],
+      "orders": [
+        {
+          "symbol": "FTNT",
+          "side": "sell",
+          "dollars": 2.2879,
+          "status": "filled",
+          "quantity": 0.0133,
+          "average_price": 172.02,
+          "fees": 0.0
+        }
+      ],
+      "authorized": null,
+      "authorization_basis": null,
+      "authorization_label": "authorization_identity_mismatch",
+      "reconciled": null,
+      "source": "agentic",
+      "execution_label": "historical_fill",
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic",
+      "stage": "history",
+      "explanation": [
+        "A broker-confirmed fill is retained for continuity. TradeRiser authorization existed, but the broker fill identity did not match the authorized idempotency key."
+      ],
+      "regime": null
     }
   ],
   "portfolio_history": [
@@ -14993,8 +15102,8 @@
     },
     {
       "date": "2026-10-20",
-      "value": 73.6287,
-      "cash": 3.19,
+      "value": 73.6505,
+      "cash": 5.48,
       "holdings": [
         {
           "symbol": "IWM",
@@ -15004,17 +15113,17 @@
         {
           "symbol": "CRAK",
           "shares": 0.110477,
-          "value": 7.2141
+          "value": 7.2017
         },
         {
           "symbol": "DXJ",
           "shares": 0.121902,
-          "value": 7.2995
+          "value": 7.3056
         },
         {
           "symbol": "DIVB",
           "shares": 0.101018,
-          "value": 7.0066
+          "value": 7.0106
         },
         {
           "symbol": "IHE",
@@ -15024,62 +15133,62 @@
         {
           "symbol": "GSG",
           "shares": 0.200791,
-          "value": 7.3449
+          "value": 7.3289
         },
         {
           "symbol": "IXC",
           "shares": 0.068904,
-          "value": 4.2769
+          "value": 4.2634
         },
         {
           "symbol": "RPV",
           "shares": 0.070541,
-          "value": 8.4579
+          "value": 8.4508
         },
         {
           "symbol": "GME",
           "shares": 0.404724,
-          "value": 10.5107
+          "value": 10.6119
         },
         {
           "symbol": "FTNT",
-          "shares": 0.026511,
-          "value": 4.5599
+          "shares": 0.013211,
+          "value": 2.2711
         },
         {
           "symbol": "MRK",
           "shares": 0.027322,
-          "value": 4.0602
+          "value": 4.0497
         },
         {
           "symbol": "JNJ",
           "shares": 0.012313,
-          "value": 3.2041
+          "value": 3.199
         },
         {
           "symbol": "LLY",
           "shares": 0.0009,
-          "value": 1.1784
+          "value": 1.1709
         },
         {
           "symbol": "VLO",
           "shares": 0.009268,
-          "value": 3.9715
+          "value": 3.9571
         },
         {
           "symbol": "REGN",
           "shares": 0.001677,
-          "value": 1.3404
+          "value": 1.3391
         }
       ],
-      "captured_at": "2026-10-20T14:26:02.542000+00:00",
+      "captured_at": "2026-10-20T14:37:57.042000+00:00",
       "source": "fresh_broker_supplied",
       "breakdown_estimated": false,
       "note": "Current holding quantities and values were supplied with the broker valuation; journal reconciliation is not claimed.",
       "net_cash_flow": 0.0,
       "contributions": 0.0,
       "withdrawals": -0.0,
-      "change": 8.1262,
+      "change": 8.148,
       "change_pct": null,
       "market_gain": null,
       "return_unavailable_reason": "period_lacks_bracketing_valuations",
@@ -15093,7 +15202,7 @@
     }
   ],
   "performance": {
-    "simple_return_on_contributions": -0.018284,
+    "simple_return_on_contributions": -0.01799333,
     "time_weighted_return": null,
     "time_weighted_quality": "unavailable_unbracketed_cash_flow",
     "money_weighted": {
@@ -15926,7 +16035,7 @@
   },
   "daily_briefing": {
     "as_of": "2026-10-19",
-    "headline": "TradeRiser proposed 2 portfolio changes.",
+    "headline": "TradeRiser proposed 3 portfolio changes.",
     "portfolio_context": "The live account currently holds IWM, CRAK, DXJ, DIVB, IHE, GSG, IXC, RPV, GME, FTNT, MRK, JNJ, LLY, VLO, REGN.",
     "market_context": "The completed-session screen qualified MRNA, MPC, USO, PSX, CRAK, GSG, ADI, COP, XLE, REGN, DXJ, XOM, IXC, AAPL, AMGN, GILD, SCHD, CVX, NEM, RPV, PM, PFE, TMO, ABNB, XLV, ABBV, KO, DIVB, AMZN, SPYM, VOO, IVV, SPY, VTI, RSP, TEAM, QCOM, DHR, PG, MDT, MCK, CRM, MSFT, V, DIS, XLP, LIN, BRK-B, SGOV, BIL, MA, PATH, COST, ABT, NOW, IBIT, BITO, DASH, ACN for consideration.",
     "champion": "The live strategy currently favors AAPL, ABBV, ABNB, AMGN, AMZN, GILD, KO, MRNA, NEM, PFE, PM, SCHD, SPYM, TMO, XLV.",
@@ -15963,7 +16072,7 @@
   },
   "evidence": {
     "live_days": 72,
-    "champion_cycles": 95,
+    "champion_cycles": 96,
     "challenger_cycles": 54,
     "reconciled_trades": 3,
     "benchmark": "Equal-weight provider universe",
@@ -16614,7 +16723,7 @@
         "price": 143.63,
         "annualized_volatility": 0.344505,
         "rsi_14": 41.1359,
-        "consecutive_ineligible_sessions": 2,
+        "consecutive_ineligible_sessions": 1,
         "overbought": false,
         "short_horizon_weakness": false,
         "cost_basis_weakness": true,
@@ -17000,7 +17109,7 @@
         "overbought": false,
         "short_horizon_weakness": true,
         "cost_basis_weakness": false,
-        "cost_basis_evidence_complete": true
+        "cost_basis_evidence_complete": false
       },
       {
         "symbol": "LLY",
@@ -17138,7 +17247,7 @@
         "price": 100.58,
         "annualized_volatility": 0.171642,
         "rsi_14": 44.0845,
-        "consecutive_ineligible_sessions": 2,
+        "consecutive_ineligible_sessions": 1,
         "overbought": false,
         "short_horizon_weakness": false,
         "cost_basis_weakness": true,
@@ -18645,7 +18754,7 @@
         "price": 26.44,
         "annualized_volatility": 0.439417,
         "rsi_14": 65.9524,
-        "consecutive_ineligible_sessions": 2,
+        "consecutive_ineligible_sessions": 1,
         "overbought": false,
         "short_horizon_weakness": false,
         "cost_basis_weakness": true,
@@ -20109,9 +20218,9 @@
           "score_advantage": 0.011272,
           "outgoing_score": 0.335291,
           "incoming_score": 0.346563,
-          "funded_dollars": 5.01,
-          "required_edge_dollars": 0.112,
-          "estimated_tax_cost_dollars": 0.0769,
+          "funded_dollars": 5.0,
+          "required_edge_dollars": 0.1118,
+          "estimated_tax_cost_dollars": 0.0768,
           "round_trip_cost_dollars": 0.01,
           "uncertainty_buffer_dollars": 0.025,
           "calibration_samples": 4
@@ -20124,9 +20233,9 @@
           "score_advantage": 0.171316,
           "outgoing_score": 0.185245,
           "incoming_score": 0.356561,
-          "funded_dollars": 5.01,
-          "required_edge_dollars": 0.112,
-          "estimated_tax_cost_dollars": 0.0769,
+          "funded_dollars": 5.0,
+          "required_edge_dollars": 0.1118,
+          "estimated_tax_cost_dollars": 0.0768,
           "round_trip_cost_dollars": 0.01,
           "uncertainty_buffer_dollars": 0.025,
           "calibration_samples": 4
@@ -20139,9 +20248,9 @@
           "score_advantage": 0.177345,
           "outgoing_score": 0.186048,
           "incoming_score": 0.363393,
-          "funded_dollars": 5.01,
-          "required_edge_dollars": 0.112,
-          "estimated_tax_cost_dollars": 0.0769,
+          "funded_dollars": 5.0,
+          "required_edge_dollars": 0.1118,
+          "estimated_tax_cost_dollars": 0.0768,
           "round_trip_cost_dollars": 0.01,
           "uncertainty_buffer_dollars": 0.025,
           "calibration_samples": 4
@@ -20155,8 +20264,8 @@
           "outgoing_score": 0.248919,
           "incoming_score": 0.293258,
           "funded_dollars": 7.5,
-          "required_edge_dollars": 0.0969,
-          "estimated_tax_cost_dollars": 0.0444,
+          "required_edge_dollars": 0.0985,
+          "estimated_tax_cost_dollars": 0.046,
           "round_trip_cost_dollars": 0.015,
           "uncertainty_buffer_dollars": 0.0375,
           "calibration_samples": 4
@@ -20170,8 +20279,8 @@
           "outgoing_score": 0.251578,
           "incoming_score": 0.299521,
           "funded_dollars": 7.5,
-          "required_edge_dollars": 0.0969,
-          "estimated_tax_cost_dollars": 0.0444,
+          "required_edge_dollars": 0.0985,
+          "estimated_tax_cost_dollars": 0.046,
           "round_trip_cost_dollars": 0.015,
           "uncertainty_buffer_dollars": 0.0375,
           "calibration_samples": 4
@@ -20185,8 +20294,8 @@
           "outgoing_score": 0.254597,
           "incoming_score": 0.301676,
           "funded_dollars": 7.5,
-          "required_edge_dollars": 0.0969,
-          "estimated_tax_cost_dollars": 0.0444,
+          "required_edge_dollars": 0.0985,
+          "estimated_tax_cost_dollars": 0.046,
           "round_trip_cost_dollars": 0.015,
           "uncertainty_buffer_dollars": 0.0375,
           "calibration_samples": 4
@@ -20199,11 +20308,11 @@
           "score_advantage": -0.111477,
           "outgoing_score": 0.348692,
           "incoming_score": 0.237215,
-          "funded_dollars": 4.3,
-          "required_edge_dollars": 0.0497,
-          "estimated_tax_cost_dollars": 0.0196,
-          "round_trip_cost_dollars": 0.0086,
-          "uncertainty_buffer_dollars": 0.0215,
+          "funded_dollars": 4.26,
+          "required_edge_dollars": 0.0351,
+          "estimated_tax_cost_dollars": 0.0053,
+          "round_trip_cost_dollars": 0.0085,
+          "uncertainty_buffer_dollars": 0.0213,
           "calibration_samples": 4
         },
         {
@@ -20214,11 +20323,11 @@
           "score_advantage": -0.117003,
           "outgoing_score": 0.356723,
           "incoming_score": 0.23972,
-          "funded_dollars": 4.3,
-          "required_edge_dollars": 0.0497,
-          "estimated_tax_cost_dollars": 0.0196,
-          "round_trip_cost_dollars": 0.0086,
-          "uncertainty_buffer_dollars": 0.0215,
+          "funded_dollars": 4.26,
+          "required_edge_dollars": 0.0351,
+          "estimated_tax_cost_dollars": 0.0053,
+          "round_trip_cost_dollars": 0.0085,
+          "uncertainty_buffer_dollars": 0.0213,
           "calibration_samples": 4
         },
         {
@@ -20229,11 +20338,11 @@
           "score_advantage": -0.123118,
           "outgoing_score": 0.364506,
           "incoming_score": 0.241388,
-          "funded_dollars": 4.3,
-          "required_edge_dollars": 0.0497,
-          "estimated_tax_cost_dollars": 0.0196,
-          "round_trip_cost_dollars": 0.0086,
-          "uncertainty_buffer_dollars": 0.0215,
+          "funded_dollars": 4.26,
+          "required_edge_dollars": 0.0351,
+          "estimated_tax_cost_dollars": 0.0053,
+          "round_trip_cost_dollars": 0.0085,
+          "uncertainty_buffer_dollars": 0.0213,
           "calibration_samples": 4
         },
         {
@@ -20244,11 +20353,11 @@
           "score_advantage": -0.188687,
           "outgoing_score": 0.38713,
           "incoming_score": 0.198443,
-          "funded_dollars": 4.83,
-          "required_edge_dollars": 0.074,
-          "estimated_tax_cost_dollars": 0.0402,
-          "round_trip_cost_dollars": 0.0097,
-          "uncertainty_buffer_dollars": 0.0242,
+          "funded_dollars": 4.82,
+          "required_edge_dollars": 0.078,
+          "estimated_tax_cost_dollars": 0.0443,
+          "round_trip_cost_dollars": 0.0096,
+          "uncertainty_buffer_dollars": 0.0241,
           "calibration_samples": 4
         },
         {
@@ -20259,11 +20368,11 @@
           "score_advantage": -0.172714,
           "outgoing_score": 0.385443,
           "incoming_score": 0.212729,
-          "funded_dollars": 4.83,
-          "required_edge_dollars": 0.074,
-          "estimated_tax_cost_dollars": 0.0402,
-          "round_trip_cost_dollars": 0.0097,
-          "uncertainty_buffer_dollars": 0.0242,
+          "funded_dollars": 4.82,
+          "required_edge_dollars": 0.078,
+          "estimated_tax_cost_dollars": 0.0443,
+          "round_trip_cost_dollars": 0.0096,
+          "uncertainty_buffer_dollars": 0.0241,
           "calibration_samples": 4
         },
         {
@@ -20274,11 +20383,11 @@
           "score_advantage": -0.16129,
           "outgoing_score": 0.38291,
           "incoming_score": 0.22162,
-          "funded_dollars": 4.83,
-          "required_edge_dollars": 0.074,
-          "estimated_tax_cost_dollars": 0.0402,
-          "round_trip_cost_dollars": 0.0097,
-          "uncertainty_buffer_dollars": 0.0242,
+          "funded_dollars": 4.82,
+          "required_edge_dollars": 0.078,
+          "estimated_tax_cost_dollars": 0.0443,
+          "round_trip_cost_dollars": 0.0096,
+          "uncertainty_buffer_dollars": 0.0241,
           "calibration_samples": 4
         },
         {
@@ -20289,11 +20398,11 @@
           "score_advantage": -0.388622,
           "outgoing_score": 0.62611,
           "incoming_score": 0.237488,
-          "funded_dollars": 4.44,
-          "required_edge_dollars": 0.04,
-          "estimated_tax_cost_dollars": 0.0089,
+          "funded_dollars": 4.43,
+          "required_edge_dollars": 0.031,
+          "estimated_tax_cost_dollars": 0.0,
           "round_trip_cost_dollars": 0.0089,
-          "uncertainty_buffer_dollars": 0.0222,
+          "uncertainty_buffer_dollars": 0.0221,
           "calibration_samples": 4
         },
         {
@@ -20304,11 +20413,11 @@
           "score_advantage": -0.36248,
           "outgoing_score": 0.613988,
           "incoming_score": 0.251508,
-          "funded_dollars": 4.44,
-          "required_edge_dollars": 0.04,
-          "estimated_tax_cost_dollars": 0.0089,
+          "funded_dollars": 4.43,
+          "required_edge_dollars": 0.031,
+          "estimated_tax_cost_dollars": 0.0,
           "round_trip_cost_dollars": 0.0089,
-          "uncertainty_buffer_dollars": 0.0222,
+          "uncertainty_buffer_dollars": 0.0221,
           "calibration_samples": 4
         },
         {
@@ -20319,11 +20428,11 @@
           "score_advantage": -0.393024,
           "outgoing_score": 0.610914,
           "incoming_score": 0.21789,
-          "funded_dollars": 4.44,
-          "required_edge_dollars": 0.04,
-          "estimated_tax_cost_dollars": 0.0089,
+          "funded_dollars": 4.43,
+          "required_edge_dollars": 0.031,
+          "estimated_tax_cost_dollars": 0.0,
           "round_trip_cost_dollars": 0.0089,
-          "uncertainty_buffer_dollars": 0.0222,
+          "uncertainty_buffer_dollars": 0.0221,
           "calibration_samples": 4
         },
         {
@@ -20334,9 +20443,9 @@
           "score_advantage": -0.64459,
           "outgoing_score": 0.838374,
           "incoming_score": 0.193784,
-          "funded_dollars": 4.5,
-          "required_edge_dollars": 0.1873,
-          "estimated_tax_cost_dollars": 0.1558,
+          "funded_dollars": 4.49,
+          "required_edge_dollars": 0.1761,
+          "estimated_tax_cost_dollars": 0.1447,
           "round_trip_cost_dollars": 0.009,
           "uncertainty_buffer_dollars": 0.0225,
           "calibration_samples": 4
@@ -20349,9 +20458,9 @@
           "score_advantage": -0.671923,
           "outgoing_score": 0.871253,
           "incoming_score": 0.19933,
-          "funded_dollars": 4.5,
-          "required_edge_dollars": 0.1873,
-          "estimated_tax_cost_dollars": 0.1558,
+          "funded_dollars": 4.49,
+          "required_edge_dollars": 0.1761,
+          "estimated_tax_cost_dollars": 0.1447,
           "round_trip_cost_dollars": 0.009,
           "uncertainty_buffer_dollars": 0.0225,
           "calibration_samples": 4
@@ -20364,9 +20473,9 @@
           "score_advantage": -0.633611,
           "outgoing_score": 0.831975,
           "incoming_score": 0.198364,
-          "funded_dollars": 4.5,
-          "required_edge_dollars": 0.1873,
-          "estimated_tax_cost_dollars": 0.1558,
+          "funded_dollars": 4.49,
+          "required_edge_dollars": 0.1761,
+          "estimated_tax_cost_dollars": 0.1447,
           "round_trip_cost_dollars": 0.009,
           "uncertainty_buffer_dollars": 0.0225,
           "calibration_samples": 4
@@ -20433,7 +20542,7 @@
           "action": "awaiting_confirmation",
           "confirmation_sessions": 3,
           "full_exit_sessions": 5,
-          "consecutive_ineligible_sessions": 2,
+          "consecutive_ineligible_sessions": 1,
           "trigger": "cost_basis_weakness",
           "estimated_tax_cost_dollars": 0.0,
           "evidence": [
@@ -20454,7 +20563,7 @@
           "action": "awaiting_confirmation",
           "confirmation_sessions": 3,
           "full_exit_sessions": 5,
-          "consecutive_ineligible_sessions": 2,
+          "consecutive_ineligible_sessions": 1,
           "trigger": "cost_basis_weakness",
           "estimated_tax_cost_dollars": 0.0,
           "evidence": [
@@ -20487,7 +20596,7 @@
           "full_exit_sessions": 5,
           "consecutive_ineligible_sessions": 3,
           "trigger": "short_horizon_weakness",
-          "estimated_tax_cost_dollars": 0.0393,
+          "estimated_tax_cost_dollars": 0.0164,
           "evidence": [
             {
               "data_as_of": "2026-10-19",
@@ -20538,7 +20647,7 @@
           "full_exit_sessions": 5,
           "consecutive_ineligible_sessions": 1,
           "trigger": "cost_basis_weakness",
-          "estimated_tax_cost_dollars": 0.0159,
+          "estimated_tax_cost_dollars": 0.0125,
           "evidence": [
             {
               "data_as_of": "2026-10-19",
@@ -20557,7 +20666,7 @@
           "action": "awaiting_confirmation",
           "confirmation_sessions": 3,
           "full_exit_sessions": 5,
-          "consecutive_ineligible_sessions": 2,
+          "consecutive_ineligible_sessions": 1,
           "trigger": "cost_basis_weakness",
           "estimated_tax_cost_dollars": 0.0,
           "evidence": [
@@ -20605,10 +20714,12 @@
       ]
     },
     "funding_analysis": {
-      "available_contribution_cash": 0.0,
-      "cash_funded_budget": 0.0,
-      "unallocated_cash": 0.0,
-      "cash_funded_orders": [],
+      "available_contribution_cash": 3.19,
+      "cash_funded_budget": 3.18,
+      "unallocated_cash": 0.0038,
+      "cash_funded_orders": [
+        "AAPL"
+      ],
       "existing_holding_fallback_orders": [],
       "sale_funded_pairs": [],
       "unallocated_reason": null
