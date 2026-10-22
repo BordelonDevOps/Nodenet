@@ -1,6 +1,6 @@
 {
   "schema_version": "1.8.0",
-  "published_at": "2026-10-22T15:52:43.958858+00:00",
+  "published_at": "2026-10-22T15:55:38.562762+00:00",
   "valuation_as_of": "2026-10-22T15:50:48.797000+00:00",
   "valuation_provenance": "fresh_broker_supplied",
   "experiment": {
@@ -200,6 +200,46 @@
       "average_price": 36.6888,
       "fees": 0.0,
       "reconciled_at": "2026-10-13T15:47:01.768843+00:00",
+      "authorized": true,
+      "orders_match": true,
+      "source": "agentic",
+      "authorization_basis": "delegated_policy",
+      "authorization_label": "delegated_policy_authorized",
+      "execution_label": "terminal_reconciled_fill",
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic"
+    },
+    {
+      "symbol": "FTNT",
+      "side": "sell",
+      "dollar_amount": 1.1482,
+      "filled_notional": 1.1482,
+      "state": "filled",
+      "quantity": 0.006631,
+      "average_price": 173.1601,
+      "fees": 0.0,
+      "reconciled_at": "2026-10-22T15:51:56.728656+00:00",
+      "authorized": true,
+      "orders_match": true,
+      "source": "agentic",
+      "authorization_basis": "delegated_policy",
+      "authorization_label": "delegated_policy_authorized",
+      "execution_label": "terminal_reconciled_fill",
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic"
+    },
+    {
+      "symbol": "ADI",
+      "side": "buy",
+      "dollar_amount": 1.1298,
+      "filled_notional": 1.1298,
+      "state": "filled",
+      "quantity": 0.002906,
+      "average_price": 388.7664,
+      "fees": 0.0,
+      "reconciled_at": "2026-10-22T15:51:56.728656+00:00",
       "authorized": true,
       "orders_match": true,
       "source": "agentic",
@@ -11025,7 +11065,7 @@
     {
       "kind": "champion",
       "generated_at": "2026-10-22T15:46:38.832243+00:00",
-      "status": "reconciliation_mismatch",
+      "status": "filled",
       "selected": [
         "AAPL",
         "ABNB",
@@ -11063,14 +11103,80 @@
         }
       ],
       "explanation": [
-        "Broker activity did not qualify as a terminal reconciled delegated fill."
+        "Delegated authorization passed and terminal broker fills reconciled."
       ],
       "regime": null,
       "stage": "reconciliation",
       "authorized": true,
       "authorization_basis": "delegated_policy",
       "authorization_label": "delegated_policy_authorized",
-      "reconciled": false
+      "reconciled": true
+    },
+    {
+      "kind": "executed_trade",
+      "generated_at": "2026-10-22T15:51:56.728656+00:00",
+      "status": "filled",
+      "selected": [
+        "FTNT"
+      ],
+      "orders": [
+        {
+          "symbol": "FTNT",
+          "side": "sell",
+          "dollars": 1.1482,
+          "status": "filled",
+          "quantity": 0.006631,
+          "average_price": 173.1601,
+          "fees": 0.0
+        }
+      ],
+      "authorized": true,
+      "authorization_basis": "delegated_policy",
+      "authorization_label": "delegated_policy_authorized",
+      "reconciled": true,
+      "source": "agentic",
+      "execution_label": "terminal_reconciled_fill",
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic",
+      "stage": "execution",
+      "explanation": [
+        "The champion proposal passed delegated authorization and the terminal broker fill reconciled."
+      ],
+      "regime": null
+    },
+    {
+      "kind": "executed_trade",
+      "generated_at": "2026-10-22T15:51:56.728656+00:00",
+      "status": "filled",
+      "selected": [
+        "ADI"
+      ],
+      "orders": [
+        {
+          "symbol": "ADI",
+          "side": "buy",
+          "dollars": 1.1298,
+          "status": "filled",
+          "quantity": 0.002906,
+          "average_price": 388.7664,
+          "fees": 0.0
+        }
+      ],
+      "authorized": true,
+      "authorization_basis": "delegated_policy",
+      "authorization_label": "delegated_policy_authorized",
+      "reconciled": true,
+      "source": "agentic",
+      "execution_label": "terminal_reconciled_fill",
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic",
+      "stage": "execution",
+      "explanation": [
+        "The champion proposal passed delegated authorization and the terminal broker fill reconciled."
+      ],
+      "regime": null
     }
   ],
   "portfolio_history": [
@@ -16700,7 +16806,7 @@
     "live_days": 74,
     "champion_cycles": 101,
     "challenger_cycles": 55,
-    "reconciled_trades": 3,
+    "reconciled_trades": 5,
     "benchmark": "Equal-weight provider universe",
     "backtest_method": "monthly_threshold_proposals_next_session",
     "limitations": [
