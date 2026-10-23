@@ -1,6 +1,6 @@
 {
   "schema_version": "1.8.0",
-  "published_at": "2026-10-23T14:35:03.656570+00:00",
+  "published_at": "2026-10-23T14:36:11.356699+00:00",
   "valuation_as_of": "2026-10-23T14:29:24.418000+00:00",
   "valuation_provenance": "fresh_broker_supplied",
   "experiment": {
@@ -1509,6 +1509,44 @@
       "average_price": 340.1799,
       "fees": 0.0,
       "reconciled_at": "2026-10-21T14:22:24.556000+00:00",
+      "authorized": null,
+      "orders_match": null,
+      "deferred_follow_up": null,
+      "source": "agentic",
+      "authorization_label": "authorization_batch_reconciliation_failed",
+      "execution_label": "historical_fill",
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic"
+    },
+    {
+      "symbol": "VLO",
+      "side": "sell",
+      "dollar_amount": 1.9671,
+      "filled_notional": 1.9671,
+      "state": "filled",
+      "quantity": 0.00462,
+      "average_price": 425.78,
+      "fees": 0.0,
+      "reconciled_at": "2026-10-23T14:26:07.160000+00:00",
+      "authorized": null,
+      "orders_match": null,
+      "deferred_follow_up": null,
+      "source": "agentic",
+      "authorization_label": "authorization_batch_reconciliation_failed",
+      "execution_label": "historical_fill",
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic"
+    },
+    {
+      "symbol": "USO",
+      "side": "buy",
+      "dollar_amount": 1.15,
+      "filled_notional": 1.15,
+      "state": "filled",
+      "quantity": 0.006876,
+      "average_price": 167.2473,
+      "fees": 0.0,
+      "reconciled_at": "2026-10-23T14:26:08.655000+00:00",
       "authorized": null,
       "orders_match": null,
       "deferred_follow_up": null,
@@ -11298,6 +11336,72 @@
       "authorized": true,
       "authorization_basis": "delegated_policy",
       "authorization_label": "delegated_policy_authorized"
+    },
+    {
+      "kind": "historical_trade",
+      "generated_at": "2026-10-23T14:26:07.160000+00:00",
+      "status": "filled",
+      "selected": [
+        "VLO"
+      ],
+      "orders": [
+        {
+          "symbol": "VLO",
+          "side": "sell",
+          "dollars": 1.9671,
+          "status": "filled",
+          "quantity": 0.00462,
+          "average_price": 425.78,
+          "fees": 0.0
+        }
+      ],
+      "authorized": null,
+      "authorization_basis": null,
+      "authorization_label": "authorization_batch_reconciliation_failed",
+      "reconciled": null,
+      "source": "agentic",
+      "execution_label": "historical_fill",
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic",
+      "stage": "history",
+      "explanation": [
+        "A broker-confirmed fill is retained for continuity. TradeRiser authorization existed, but the complete broker fill batch failed strict reconciliation. It is historical only and is not counted as a verified reconciled trade."
+      ],
+      "regime": null
+    },
+    {
+      "kind": "historical_trade",
+      "generated_at": "2026-10-23T14:26:08.655000+00:00",
+      "status": "filled",
+      "selected": [
+        "USO"
+      ],
+      "orders": [
+        {
+          "symbol": "USO",
+          "side": "buy",
+          "dollars": 1.15,
+          "status": "filled",
+          "quantity": 0.006876,
+          "average_price": 167.2473,
+          "fees": 0.0
+        }
+      ],
+      "authorized": null,
+      "authorization_basis": null,
+      "authorization_label": "authorization_batch_reconciliation_failed",
+      "reconciled": null,
+      "source": "agentic",
+      "execution_label": "historical_fill",
+      "deferred_follow_up": null,
+      "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic",
+      "stage": "history",
+      "explanation": [
+        "A broker-confirmed fill is retained for continuity. TradeRiser authorization existed, but the complete broker fill batch failed strict reconciliation. It is historical only and is not counted as a verified reconciled trade."
+      ],
+      "regime": null
     },
     {
       "kind": "champion",
