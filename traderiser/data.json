@@ -1,6 +1,6 @@
 {
   "schema_version": "1.8.0",
-  "published_at": "2026-10-28T14:19:32.743701+00:00",
+  "published_at": "2026-10-28T14:20:30.776841+00:00",
   "valuation_as_of": "2026-10-28T14:19:03.444000+00:00",
   "valuation_provenance": "fresh_broker_supplied",
   "experiment": {
@@ -12233,7 +12233,7 @@
     {
       "kind": "champion",
       "generated_at": "2026-10-28T14:17:10.508152+00:00",
-      "status": "authorized",
+      "status": "execution_rejected_before_order_creation",
       "selected": [
         "AAPL",
         "ABBV",
@@ -12258,32 +12258,15 @@
           "symbol": "GME",
           "side": "sell",
           "dollars": 2.34,
-          "reason": "persistent_eligibility_failure_exit",
-          "decision_class": "staged_derisk_full_exit",
-          "ineligible_sessions": 5
-        },
-        {
-          "symbol": "MRK",
-          "side": "sell",
-          "dollars": 1.93,
-          "reason": "persistent_eligibility_failure_reduction",
-          "decision_class": "staged_derisk",
-          "ineligible_sessions": 3
-        },
-        {
-          "symbol": "JNJ",
-          "side": "buy",
-          "dollars": 2.42,
-          "reason": "rules_based_rebalance",
-          "decision_class": "routine_replacement",
-          "funding_source": "available_cash"
+          "status": "execution_rejected_before_order_creation",
+          "reason": "broker_execution_failure"
         }
       ],
       "explanation": [
-        "The delegated authorization gate passed."
+        "Broker execution did not complete; no terminal fill is reported."
       ],
       "regime": null,
-      "stage": "authorization",
+      "stage": "execution",
       "authorized": true,
       "authorization_basis": "delegated_policy",
       "authorization_label": "delegated_policy_authorized",
