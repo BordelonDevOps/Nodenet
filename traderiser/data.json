@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8.0",
-  "published_at": "2026-10-28T14:21:32.307882+00:00",
-  "valuation_as_of": "2026-10-28T14:19:03.444000+00:00",
+  "published_at": "2026-10-28T14:37:15.604252+00:00",
+  "valuation_as_of": "2026-10-28T14:36:45.030000+00:00",
   "valuation_provenance": "fresh_broker_supplied",
   "experiment": {
     "name": "TradeRiser Agentic Trading Experiment",
@@ -10,13 +10,13 @@
     "objective": "Continue the live observation through December 31, 2026 using the experiment&amp;#x27;s cumulative contributed funds."
   },
   "account": {
-    "value": 73.0233,
-    "cash": 2.45,
-    "invested": 70.5733,
-    "buying_power": 2.45,
+    "value": 72.9968,
+    "cash": 4.79,
+    "invested": 68.2085,
+    "buying_power": 4.79,
     "net_contributions": 75.0,
-    "investment_gain": -1.9767,
-    "simple_return_on_contributions": -0.026356,
+    "investment_gain": -2.0032,
+    "simple_return_on_contributions": -0.02670933,
     "currency": "USD"
   },
   "holdings": [
@@ -25,7 +25,7 @@
       "shares": 1.1e-05,
       "average_price": 0.0,
       "cost_basis": 0.0,
-      "current_value": 0.0030859950000000002,
+      "current_value": 0.00308055,
       "strategy": "champion"
     },
     {
@@ -33,7 +33,7 @@
       "shares": 0.055177,
       "average_price": 61.8,
       "cost_basis": 3.4099386,
-      "current_value": 3.39945497,
+      "current_value": 3.3961443499999997,
       "strategy": "champion"
     },
     {
@@ -41,7 +41,7 @@
       "shares": 0.121902,
       "average_price": 59.47,
       "cost_basis": 7.24951194,
-      "current_value": 7.22756958,
+      "current_value": 7.227435487799999,
       "strategy": "champion"
     },
     {
@@ -49,7 +49,7 @@
       "shares": 0.101018,
       "average_price": 66.42,
       "cost_basis": 6.70961556,
-      "current_value": 7.09449414,
+      "current_value": 7.0864127,
       "strategy": "champion"
     },
     {
@@ -57,7 +57,7 @@
       "shares": 9e-05,
       "average_price": 111.11,
       "cost_basis": 0.0099999,
-      "current_value": 0.009324,
+      "current_value": 0.009315,
       "strategy": "champion"
     },
     {
@@ -65,7 +65,7 @@
       "shares": 0.200791,
       "average_price": 36.66,
       "cost_basis": 7.360998059999999,
-      "current_value": 7.489504299999999,
+      "current_value": 7.48348057,
       "strategy": "champion"
     },
     {
@@ -73,7 +73,7 @@
       "shares": 0.068904,
       "average_price": 61.68,
       "cost_basis": 4.249998720000001,
-      "current_value": 4.3168356,
+      "current_value": 4.315457520000001,
       "strategy": "champion"
     },
     {
@@ -85,19 +85,11 @@
       "strategy": "champion"
     },
     {
-      "symbol": "GME",
-      "shares": 0.101035,
-      "average_price": 27.91,
-      "cost_basis": 2.81988685,
-      "current_value": 2.3480534,
-      "strategy": "champion"
-    },
-    {
       "symbol": "MRK",
       "shares": 0.027322,
       "average_price": 149.33,
       "cost_basis": 4.07999426,
-      "current_value": 3.8681121499999995,
+      "current_value": 3.8742596000000002,
       "strategy": "champion"
     },
     {
@@ -105,7 +97,7 @@
       "shares": 0.012313,
       "average_price": 255.83,
       "cost_basis": 3.15003479,
-      "current_value": 3.3224167899999997,
+      "current_value": 3.324940955,
       "strategy": "champion"
     },
     {
@@ -113,7 +105,7 @@
       "shares": 0.0009,
       "average_price": 1266.67,
       "cost_basis": 1.140003,
-      "current_value": 1.163304,
+      "current_value": 1.162431,
       "strategy": "champion"
     },
     {
@@ -121,7 +113,7 @@
       "shares": 0.004648,
       "average_price": 443.2,
       "cost_basis": 2.0599936,
-      "current_value": 1.7777205600000001,
+      "current_value": 1.7783712800000002,
       "strategy": "champion"
     },
     {
@@ -129,7 +121,7 @@
       "shares": 0.001677,
       "average_price": 787.12,
       "cost_basis": 1.3200002400000002,
-      "current_value": 1.3732198350000002,
+      "current_value": 1.37207109,
       "strategy": "champion"
     },
     {
@@ -137,7 +129,7 @@
       "shares": 0.01605,
       "average_price": 340.19,
       "cost_basis": 5.460049499999999,
-      "current_value": 5.537410499999999,
+      "current_value": 5.538213,
       "strategy": "champion"
     },
     {
@@ -145,7 +137,7 @@
       "shares": 0.002906,
       "average_price": 388.85,
       "cost_basis": 1.1299981000000001,
-      "current_value": 1.23923464,
+      "current_value": 1.24301244,
       "strategy": "champion"
     },
     {
@@ -153,7 +145,7 @@
       "shares": 0.006876,
       "average_price": 167.25,
       "cost_basis": 1.1500110000000001,
-      "current_value": 1.1513862,
+      "current_value": 1.1508361200000001,
       "strategy": "champion"
     },
     {
@@ -161,7 +153,7 @@
       "shares": 0.013168,
       "average_price": 150.36,
       "cost_basis": 1.97994048,
-      "current_value": 1.9640072,
+      "current_value": 1.9642047199999997,
       "strategy": "champion"
     },
     {
@@ -169,7 +161,7 @@
       "shares": 0.01646,
       "average_price": 301.94,
       "cost_basis": 4.969932399999999,
-      "current_value": 5.08840325,
+      "current_value": 5.0830126,
       "strategy": "champion"
     },
     {
@@ -177,7 +169,7 @@
       "shares": 0.023912,
       "average_price": 151.39,
       "cost_basis": 3.6200376799999994,
-      "current_value": 3.72501136,
+      "current_value": 3.7210658800000003,
       "strategy": "champion"
     }
   ],
@@ -1698,6 +1690,25 @@
       "authorization_label": "authorization_batch_reconciliation_failed",
       "execution_label": "historical_fill",
       "decision_source": "TradeRiser champion",
+      "broker_submission_source": "agentic"
+    },
+    {
+      "symbol": "GME",
+      "side": "sell",
+      "dollar_amount": 2.344,
+      "filled_notional": 2.344,
+      "state": "filled",
+      "quantity": 0.101035,
+      "average_price": 23.2001,
+      "fees": 0.0,
+      "reconciled_at": "2026-10-28T14:35:52.336000+00:00",
+      "authorized": null,
+      "orders_match": null,
+      "deferred_follow_up": null,
+      "source": "user",
+      "authorization_label": "historical_fill_no_delegated_authorization",
+      "execution_label": "historical_fill",
+      "decision_source": "not_recorded",
       "broker_submission_source": "agentic"
     }
   ],
@@ -12390,6 +12401,39 @@
       ],
       "regime": "{&#x27;median_distance_from_200d_average&#x27;: 0.038997, &#x27;n",
       "stage": "research"
+    },
+    {
+      "kind": "historical_trade",
+      "generated_at": "2026-10-28T14:35:52.336000+00:00",
+      "status": "filled",
+      "selected": [
+        "GME"
+      ],
+      "orders": [
+        {
+          "symbol": "GME",
+          "side": "sell",
+          "dollars": 2.344,
+          "status": "filled",
+          "quantity": 0.101035,
+          "average_price": 23.2001,
+          "fees": 0.0
+        }
+      ],
+      "authorized": null,
+      "authorization_basis": null,
+      "authorization_label": "historical_fill_no_delegated_authorization",
+      "reconciled": null,
+      "source": "user",
+      "execution_label": "historical_fill",
+      "deferred_follow_up": null,
+      "decision_source": "not_recorded",
+      "broker_submission_source": "agentic",
+      "stage": "history",
+      "explanation": [
+        "A terminal historical fill is included for continuity; no delegated authorization is claimed."
+      ],
+      "regime": null
     }
   ],
   "portfolio_history": [
@@ -17665,43 +17709,43 @@
     },
     {
       "date": "2026-10-28",
-      "value": 73.0233,
-      "cash": 2.45,
+      "value": 72.9968,
+      "cash": 4.79,
       "holdings": [
         {
           "symbol": "IWM",
           "shares": 1.1e-05,
-          "value": 0.0030859950000000002
+          "value": 0.00308055
         },
         {
           "symbol": "CRAK",
           "shares": 0.055177,
-          "value": 3.39945497
+          "value": 3.3961443499999997
         },
         {
           "symbol": "DXJ",
           "shares": 0.121902,
-          "value": 7.22756958
+          "value": 7.227435487799999
         },
         {
           "symbol": "DIVB",
           "shares": 0.101018,
-          "value": 7.09449414
+          "value": 7.0864127
         },
         {
           "symbol": "IHE",
           "shares": 9e-05,
-          "value": 0.009324
+          "value": 0.009315
         },
         {
           "symbol": "GSG",
           "shares": 0.200791,
-          "value": 7.489504299999999
+          "value": 7.48348057
         },
         {
           "symbol": "IXC",
           "shares": 0.068904,
-          "value": 4.3168356
+          "value": 4.315457520000001
         },
         {
           "symbol": "RPV",
@@ -17709,78 +17753,73 @@
           "value": 8.474795740000001
         },
         {
-          "symbol": "GME",
-          "shares": 0.101035,
-          "value": 2.3480534
-        },
-        {
           "symbol": "MRK",
           "shares": 0.027322,
-          "value": 3.8681121499999995
+          "value": 3.8742596000000002
         },
         {
           "symbol": "JNJ",
           "shares": 0.012313,
-          "value": 3.3224167899999997
+          "value": 3.324940955
         },
         {
           "symbol": "LLY",
           "shares": 0.0009,
-          "value": 1.163304
+          "value": 1.162431
         },
         {
           "symbol": "VLO",
           "shares": 0.004648,
-          "value": 1.7777205600000001
+          "value": 1.7783712800000002
         },
         {
           "symbol": "REGN",
           "shares": 0.001677,
-          "value": 1.3732198350000002
+          "value": 1.37207109
         },
         {
           "symbol": "AAPL",
           "shares": 0.01605,
-          "value": 5.537410499999999
+          "value": 5.538213
         },
         {
           "symbol": "ADI",
           "shares": 0.002906,
-          "value": 1.23923464
+          "value": 1.24301244
         },
         {
           "symbol": "USO",
           "shares": 0.006876,
-          "value": 1.1513862
+          "value": 1.1508361200000001
         },
         {
           "symbol": "COP",
           "shares": 0.013168,
-          "value": 1.9640072
+          "value": 1.9642047199999997
         },
         {
           "symbol": "TXN",
           "shares": 0.01646,
-          "value": 5.08840325
+          "value": 5.0830126
         },
         {
           "symbol": "XBI",
           "shares": 0.023912,
-          "value": 3.72501136
+          "value": 3.7210658800000003
         }
       ],
-      "captured_at": "2026-10-28T14:19:03.444000+00:00",
+      "captured_at": "2026-10-28T14:36:45.030000+00:00",
       "source": "fresh_broker_supplied",
       "breakdown_estimated": false,
       "note": "Current holding quantities and values were supplied with the broker valuation; journal reconciliation is not claimed.",
       "net_cash_flow": 0.0,
       "contributions": 0.0,
       "withdrawals": -0.0,
-      "change": 0.0533,
-      "change_pct": 0.00073044,
-      "market_gain": 0.0533,
+      "change": 0.0268,
+      "change_pct": 0.00036727,
+      "market_gain": 0.0268,
       "return_unavailable_reason": "prior_cash_flow_lacks_bracketing_valuations",
-      "period_return": 0.00073044,
+      "period_return": 0.00036727,
       "return_available": true,
       "time_weighted_return": null,
       "cash_flow_timing": "none",
@@ -17790,7 +17829,7 @@
     }
   ],
   "performance": {
-    "simple_return_on_contributions": -0.026356,
+    "simple_return_on_contributions": -0.02670933,
     "time_weighted_return": null,
     "time_weighted_quality": "unavailable_unbracketed_cash_flow",
     "money_weighted": {
@@ -18712,7 +18751,7 @@
   "daily_briefing": {
     "as_of": "2026-10-27",
     "headline": "TradeRiser proposals were blocked by a broker preflight alert; no orders submitted.",
-    "portfolio_context": "The live account currently holds IWM, CRAK, DXJ, DIVB, IHE, GSG, IXC, RPV, GME, MRK, JNJ, LLY, VLO, REGN, AAPL, ADI, USO, COP, TXN, XBI.",
+    "portfolio_context": "The live account currently holds IWM, CRAK, DXJ, DIVB, IHE, GSG, IXC, RPV, MRK, JNJ, LLY, VLO, REGN, AAPL, ADI, USO, COP, TXN, XBI.",
     "market_context": "The completed-session screen qualified MRVL, HPE, CRWD, PANW, DDOG, TXN, ADI, TSM, GSG, AMGN, JNJ, XBI, XLE, XOM, LLY, IXC, DXJ, XLK, COP, REGN, AAPL, GILD, KO, SNOW, PM, PFE, NVDA, CVX, QQQM, QQQ, ABBV, XLV, TMO, RPV, IEFA, IVV, VOO, EFA, SPYM, SPY, UNP, VTI, QCOM, DIVB, RSP, SCHD, DIA, TEAM, NXPI, XLP, V, DHR, PLTR, MDB, PG, COST, MA, MDT, MSFT, DIS, CDNS, IGV, CRM, SGOV, BIL, BRK-B, TSLA, SPOT, IBIT, PATH, BITO, ACN, SPGI, NOW, IBM for consideration. Broker preflight blocked GME: EQUITY_DOLLAR_BASED_SELL_ALL_ERROR. No orders were submitted in this cycle; the proposed batch was stopped. Separate dividend-yield research, provider catalog as of 2026-10-15: HOOY 88.08%; GDXY 81.80%; PLTW 74.56%; YBTC 60.10%; AMDW 48.24%; BLOX 45.32%; AMDY 35.73%; KSLV 32.57%; IEP 29.83%; OXLC 28.78%. This ranks indicated dividend yield, not total return. High yield can reflect a falling price, a nonrecurring distribution, or an unsustainable payout. It does not affect live orders.",
     "champion": "The live strategy currently favors AAPL, ABBV, AMGN, CRWD, DDOG, GILD, HPE, JNJ, LLY, MRVL, NVDA, PFE, SNOW, TSM, TXN, XBI, XLK.",
     "challenger": "The research-only challenger favors TEAM, MPC, FTNT.",
