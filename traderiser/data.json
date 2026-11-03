@@ -1,6 +1,6 @@
 {
   "schema_version": "1.8.0",
-  "published_at": "2026-11-03T15:20:54.797624+00:00",
+  "published_at": "2026-11-03T20:37:32.622367+00:00",
   "valuation_as_of": "2026-11-03T15:20:33.202000+00:00",
   "valuation_provenance": "fresh_broker_supplied",
   "experiment": {
@@ -14,10 +14,12 @@
     "cash": 0.0,
     "invested": 82.8884,
     "buying_power": 0.0,
-    "net_contributions": 85.0,
-    "investment_gain": -2.1127,
-    "simple_return_on_contributions": -0.02485529,
-    "currency": "USD"
+    "net_contributions": 10.0,
+    "investment_gain": 72.8873,
+    "simple_return_on_contributions": 7.28873,
+    "currency": "USD",
+    "contribution_source": "account_owner_correction",
+    "cash_flow_history_complete": false
   },
   "holdings": [
     {
@@ -13497,20 +13499,20 @@
       "captured_at": "2026-08-10T13:43:21.457098+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 15.0,
-      "contributions": 15.0,
-      "withdrawals": 0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": null,
       "change_pct": null,
       "market_gain": null,
-      "return_unavailable_reason": null,
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": null,
       "return_available": true,
-      "time_weighted_return": 0.0,
-      "cash_flow_timing": "date_only",
-      "benchmark_value": 15.0,
-      "benchmark_return": 0.0,
+      "time_weighted_return": null,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -13532,20 +13534,20 @@
       "captured_at": "2026-08-11T13:41:53.034626+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": 0.0085,
       "change_pct": 0.00056704,
-      "market_gain": 0.0085,
-      "return_unavailable_reason": null,
+      "market_gain": null,
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": 0.00056704,
       "return_available": true,
-      "time_weighted_return": 0.00056704,
-      "cash_flow_timing": "none",
-      "benchmark_value": 15.0456,
-      "benchmark_return": 0.00304037,
+      "time_weighted_return": null,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -13567,20 +13569,20 @@
       "captured_at": "2026-08-12T14:11:14.095462+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": 0.013,
       "change_pct": 0.00086674,
-      "market_gain": 0.013,
-      "return_unavailable_reason": null,
+      "market_gain": null,
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": 0.00086674,
       "return_available": true,
-      "time_weighted_return": 0.00143427,
-      "cash_flow_timing": "none",
-      "benchmark_value": 15.0785,
-      "benchmark_return": 0.00523279,
+      "time_weighted_return": null,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -13591,20 +13593,20 @@
       "captured_at": null,
       "source": "journaled_date_only_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journal contains a calendar-date valuation but no timezone-aware capture time; no intraday timing or period return is inferred.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": 0.0982,
       "change_pct": null,
       "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": null,
       "return_available": false,
-      "time_weighted_return": 0.00143427,
-      "cash_flow_timing": "none",
-      "benchmark_value": 15.0785,
-      "benchmark_return": 0.00523279,
+      "time_weighted_return": null,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -13615,68 +13617,20 @@
       "captured_at": null,
       "source": "journaled_date_only_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journal contains a calendar-date valuation but no timezone-aware capture time; no intraday timing or period return is inferred.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": 0.0291,
       "change_pct": null,
       "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": null,
       "return_available": false,
-      "time_weighted_return": 0.00143427,
-      "cash_flow_timing": "none",
-      "benchmark_value": 15.1104,
-      "benchmark_return": 0.00735794,
-      "excess_return": null
-    },
-    {
-      "date": "2026-08-15",
-      "value": 15.139,
-      "cash": 0.0,
-      "holdings": [],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": 0.00143427,
-      "cash_flow_timing": "none",
-      "benchmark_value": 15.1104,
-      "benchmark_return": 0.00735794,
-      "excess_return": null
-    },
-    {
-      "date": "2026-08-16",
-      "value": 15.139,
-      "cash": 0.0,
-      "holdings": [],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": 0.00143427,
-      "cash_flow_timing": "none",
-      "benchmark_value": 15.1104,
-      "benchmark_return": 0.00735794,
+      "time_weighted_return": null,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -13687,20 +13641,20 @@
       "captured_at": null,
       "source": "journaled_date_only_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journal contains a calendar-date valuation but no timezone-aware capture time; no intraday timing or period return is inferred.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": -0.0359,
       "change_pct": null,
       "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": null,
       "return_available": false,
-      "time_weighted_return": 0.00143427,
-      "cash_flow_timing": "none",
-      "benchmark_value": 15.1189,
-      "benchmark_return": 0.00792628,
+      "time_weighted_return": null,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -13727,220 +13681,20 @@
       "captured_at": "2026-08-18T14:21:10.132674+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 10.0,
-      "contributions": 10.0,
-      "withdrawals": 0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": 10.8398,
       "change_pct": null,
       "market_gain": null,
-      "return_unavailable_reason": "cash_flow_lacks_bracketing_valuations",
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": null,
       "return_available": false,
       "time_weighted_return": null,
-      "cash_flow_timing": "date_only",
-      "benchmark_value": 25.1189,
-      "benchmark_return": 0.00475577,
-      "excess_return": null
-    },
-    {
-      "date": "2026-08-19",
-      "value": 25.9429,
-      "cash": 0.0,
-      "holdings": [
-        {
-          "symbol": "IWM",
-          "shares": 0.028651,
-          "value": 8.6203
-        },
-        {
-          "symbol": "QQQ",
-          "shares": 0.008422,
-          "value": 6.067
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.014614,
-          "value": 11.2557
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 25.1126,
-      "benchmark_return": 0.00450285,
-      "excess_return": null
-    },
-    {
-      "date": "2026-08-20",
-      "value": 25.9429,
-      "cash": 0.0,
-      "holdings": [
-        {
-          "symbol": "IWM",
-          "shares": 0.028651,
-          "value": 8.6203
-        },
-        {
-          "symbol": "QQQ",
-          "shares": 0.008422,
-          "value": 6.067
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.014614,
-          "value": 11.2557
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 24.9449,
-      "benchmark_return": -0.00220401,
-      "excess_return": null
-    },
-    {
-      "date": "2026-08-21",
-      "value": 25.9429,
-      "cash": 0.0,
-      "holdings": [
-        {
-          "symbol": "IWM",
-          "shares": 0.028651,
-          "value": 8.6203
-        },
-        {
-          "symbol": "QQQ",
-          "shares": 0.008422,
-          "value": 6.067
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.014614,
-          "value": 11.2557
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 25.1042,
-      "benchmark_return": 0.00416942,
-      "excess_return": null
-    },
-    {
-      "date": "2026-08-22",
-      "value": 25.9429,
-      "cash": 0.0,
-      "holdings": [
-        {
-          "symbol": "IWM",
-          "shares": 0.028651,
-          "value": 8.6203
-        },
-        {
-          "symbol": "QQQ",
-          "shares": 0.008422,
-          "value": 6.067
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.014614,
-          "value": 11.2557
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 25.1042,
-      "benchmark_return": 0.00416942,
-      "excess_return": null
-    },
-    {
-      "date": "2026-08-23",
-      "value": 25.9429,
-      "cash": 0.0,
-      "holdings": [
-        {
-          "symbol": "IWM",
-          "shares": 0.028651,
-          "value": 8.6203
-        },
-        {
-          "symbol": "QQQ",
-          "shares": 0.008422,
-          "value": 6.067
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.014614,
-          "value": 11.2557
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 25.1042,
-      "benchmark_return": 0.00416942,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -13967,100 +13721,20 @@
       "captured_at": "2026-08-24T14:18:57.627526+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": -0.3187,
       "change_pct": null,
       "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": null,
       "return_available": false,
       "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 25.1042,
-      "benchmark_return": 0.00416942,
-      "excess_return": null
-    },
-    {
-      "date": "2026-08-25",
-      "value": 25.6242,
-      "cash": 0.0,
-      "holdings": [
-        {
-          "symbol": "IWM",
-          "shares": 0.028651,
-          "value": 8.5143
-        },
-        {
-          "symbol": "QQQ",
-          "shares": 0.008422,
-          "value": 5.9924
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.014614,
-          "value": 11.1174
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 25.1042,
-      "benchmark_return": 0.00416942,
-      "excess_return": null
-    },
-    {
-      "date": "2026-08-26",
-      "value": 25.6242,
-      "cash": 0.0,
-      "holdings": [
-        {
-          "symbol": "IWM",
-          "shares": 0.028651,
-          "value": 8.5143
-        },
-        {
-          "symbol": "QQQ",
-          "shares": 0.008422,
-          "value": 5.9924
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.014614,
-          "value": 11.1174
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 25.0923,
-      "benchmark_return": 0.00369023,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -14092,20 +13766,20 @@
       "captured_at": "2026-08-27T19:34:53.832888+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": 0.2912,
       "change_pct": null,
       "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": null,
       "return_available": false,
       "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 25.0923,
-      "benchmark_return": 0.00369023,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -14157,215 +13831,20 @@
       "captured_at": "2026-08-28T15:46:57.064617+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 10.0,
-      "contributions": 10.0,
-      "withdrawals": 0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": 9.951,
       "change_pct": 0.38398018,
-      "market_gain": -0.049,
-      "return_unavailable_reason": "prior_cash_flow_lacks_bracketing_valuations",
+      "market_gain": null,
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": -0.00189077,
       "return_available": true,
       "time_weighted_return": null,
-      "cash_flow_timing": "date_only",
-      "benchmark_value": 35.0923,
-      "benchmark_return": 0.00263588,
-      "excess_return": null
-    },
-    {
-      "date": "2026-08-29",
-      "value": 35.8664,
-      "cash": 0.0,
-      "holdings": [
-        {
-          "symbol": "CRAK",
-          "shares": 0.079245,
-          "value": 4.7435
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.035311,
-          "value": 2.4316
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.015514,
-          "value": 2.7903
-        },
-        {
-          "symbol": "EWT",
-          "shares": 0.027875,
-          "value": 3.0095
-        },
-        {
-          "symbol": "FLTW",
-          "shares": 0.020992,
-          "value": 2.1924
-        },
-        {
-          "symbol": "IWM",
-          "shares": 0.028651,
-          "value": 8.608
-        },
-        {
-          "symbol": "QQQ",
-          "shares": 0.008422,
-          "value": 6.0583
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.007844,
-          "value": 6.0328
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 35.0923,
-      "benchmark_return": 0.00263588,
-      "excess_return": null
-    },
-    {
-      "date": "2026-08-30",
-      "value": 35.8664,
-      "cash": 0.0,
-      "holdings": [
-        {
-          "symbol": "CRAK",
-          "shares": 0.079245,
-          "value": 4.7435
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.035311,
-          "value": 2.4316
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.015514,
-          "value": 2.7903
-        },
-        {
-          "symbol": "EWT",
-          "shares": 0.027875,
-          "value": 3.0095
-        },
-        {
-          "symbol": "FLTW",
-          "shares": 0.020992,
-          "value": 2.1924
-        },
-        {
-          "symbol": "IWM",
-          "shares": 0.028651,
-          "value": 8.608
-        },
-        {
-          "symbol": "QQQ",
-          "shares": 0.008422,
-          "value": 6.0583
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.007844,
-          "value": 6.0328
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 35.0923,
-      "benchmark_return": 0.00263588,
-      "excess_return": null
-    },
-    {
-      "date": "2026-08-31",
-      "value": 35.8664,
-      "cash": 0.0,
-      "holdings": [
-        {
-          "symbol": "CRAK",
-          "shares": 0.079245,
-          "value": 4.7435
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.035311,
-          "value": 2.4316
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.015514,
-          "value": 2.7903
-        },
-        {
-          "symbol": "EWT",
-          "shares": 0.027875,
-          "value": 3.0095
-        },
-        {
-          "symbol": "FLTW",
-          "shares": 0.020992,
-          "value": 2.1924
-        },
-        {
-          "symbol": "IWM",
-          "shares": 0.028651,
-          "value": 8.608
-        },
-        {
-          "symbol": "QQQ",
-          "shares": 0.008422,
-          "value": 6.0583
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.007844,
-          "value": 6.0328
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 35.0923,
-      "benchmark_return": 0.00263588,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -14427,95 +13906,20 @@
       "captured_at": "2026-09-01T14:41:05.557638+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 10.0,
-      "contributions": 10.0,
-      "withdrawals": 0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": 9.9777,
       "change_pct": null,
       "market_gain": null,
-      "return_unavailable_reason": "cash_flow_lacks_bracketing_valuations",
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": null,
       "return_available": false,
       "time_weighted_return": null,
-      "cash_flow_timing": "date_only",
-      "benchmark_value": 45.0923,
-      "benchmark_return": 0.00205013,
-      "excess_return": null
-    },
-    {
-      "date": "2026-09-02",
-      "value": 45.8441,
-      "cash": 1.97,
-      "holdings": [
-        {
-          "symbol": "CRAK",
-          "shares": 0.079245,
-          "value": 4.7441
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.035311,
-          "value": 2.4319
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.015514,
-          "value": 2.7906
-        },
-        {
-          "symbol": "EWT",
-          "shares": 0.027875,
-          "value": 3.0099
-        },
-        {
-          "symbol": "FBT",
-          "shares": 0.013854,
-          "value": 3.6976
-        },
-        {
-          "symbol": "FLTW",
-          "shares": 0.020992,
-          "value": 2.1926
-        },
-        {
-          "symbol": "IHE",
-          "shares": 0.041468,
-          "value": 4.3056
-        },
-        {
-          "symbol": "IWM",
-          "shares": 0.028651,
-          "value": 8.609
-        },
-        {
-          "symbol": "QQQ",
-          "shares": 0.008422,
-          "value": 6.0591
-        },
-        {
-          "symbol": "SPY",
-          "shares": 0.007844,
-          "value": 6.0336
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 44.6289,
-      "benchmark_return": -0.00824764,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -14577,20 +13981,20 @@
       "captured_at": "2026-09-03T14:35:10.530995+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": 0.0878,
       "change_pct": null,
       "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": null,
       "return_available": false,
       "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 44.7071,
-      "benchmark_return": -0.00650946,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -14652,170 +14056,20 @@
       "captured_at": "2026-09-04T15:36:40.837814+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": 0.3039,
       "change_pct": 0.00661632,
-      "market_gain": 0.3039,
-      "return_unavailable_reason": "prior_cash_flow_lacks_bracketing_valuations",
+      "market_gain": null,
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": 0.00661632,
       "return_available": true,
       "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 44.7071,
-      "benchmark_return": -0.00650946,
-      "excess_return": null
-    },
-    {
-      "date": "2026-09-05",
-      "value": 46.2358,
-      "cash": 0.11,
-      "holdings": [
-        {
-          "symbol": "CRAK",
-          "shares": 0.110477,
-          "value": 6.7664
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.035311,
-          "value": 2.4532
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.015514,
-          "value": 2.8152
-        },
-        {
-          "symbol": "EWT",
-          "shares": 0.027875,
-          "value": 3.0364
-        },
-        {
-          "symbol": "FBT",
-          "shares": 0.013854,
-          "value": 3.7301
-        },
-        {
-          "symbol": "FLTW",
-          "shares": 0.020992,
-          "value": 2.2119
-        },
-        {
-          "symbol": "IHE",
-          "shares": 0.041468,
-          "value": 4.3434
-        },
-        {
-          "symbol": "IWM",
-          "shares": 0.028651,
-          "value": 8.6847
-        },
-        {
-          "symbol": "QQQ",
-          "shares": 0.008422,
-          "value": 6.1123
-        },
-        {
-          "symbol": "VLUE",
-          "shares": 0.02899,
-          "value": 5.9721
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 44.7071,
-      "benchmark_return": -0.00650946,
-      "excess_return": null
-    },
-    {
-      "date": "2026-09-06",
-      "value": 46.2358,
-      "cash": 0.11,
-      "holdings": [
-        {
-          "symbol": "CRAK",
-          "shares": 0.110477,
-          "value": 6.7664
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.035311,
-          "value": 2.4532
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.015514,
-          "value": 2.8152
-        },
-        {
-          "symbol": "EWT",
-          "shares": 0.027875,
-          "value": 3.0364
-        },
-        {
-          "symbol": "FBT",
-          "shares": 0.013854,
-          "value": 3.7301
-        },
-        {
-          "symbol": "FLTW",
-          "shares": 0.020992,
-          "value": 2.2119
-        },
-        {
-          "symbol": "IHE",
-          "shares": 0.041468,
-          "value": 4.3434
-        },
-        {
-          "symbol": "IWM",
-          "shares": 0.028651,
-          "value": 8.6847
-        },
-        {
-          "symbol": "QQQ",
-          "shares": 0.008422,
-          "value": 6.1123
-        },
-        {
-          "symbol": "VLUE",
-          "shares": 0.02899,
-          "value": 5.9721
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 44.7071,
-      "benchmark_return": -0.00650946,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -14877,20 +14131,20 @@
       "captured_at": "2026-09-07T14:23:56.724430+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": 0.0656,
       "change_pct": null,
       "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": null,
       "return_available": false,
       "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 44.7071,
-      "benchmark_return": -0.00650946,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -14952,20 +14206,20 @@
       "captured_at": "2026-09-08T15:08:56.329829+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": -0.137,
       "change_pct": -0.00295887,
-      "market_gain": -0.137,
-      "return_unavailable_reason": "prior_cash_flow_lacks_bracketing_valuations",
+      "market_gain": null,
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": -0.00295887,
       "return_available": true,
       "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 44.6382,
-      "benchmark_return": -0.00804061,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -15027,20 +14281,20 @@
       "captured_at": "2026-09-09T14:21:05.727405+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": 0.0047,
       "change_pct": 0.00010181,
-      "market_gain": 0.0047,
-      "return_unavailable_reason": "prior_cash_flow_lacks_bracketing_valuations",
+      "market_gain": null,
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": 0.00010181,
       "return_available": true,
       "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 44.3439,
-      "benchmark_return": -0.01458081,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -15102,20 +14356,20 @@
       "captured_at": "2026-09-10T14:59:38.226353+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": -0.5775,
       "change_pct": -0.01250837,
-      "market_gain": -0.5775,
-      "return_unavailable_reason": "prior_cash_flow_lacks_bracketing_valuations",
+      "market_gain": null,
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": -0.01250837,
       "return_available": true,
       "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 44.0861,
-      "benchmark_return": -0.02030919,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -15177,170 +14431,20 @@
       "captured_at": "2026-09-11T14:25:45.481922+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": 0.3919,
       "change_pct": 0.00859588,
-      "market_gain": 0.3919,
-      "return_unavailable_reason": "prior_cash_flow_lacks_bracketing_valuations",
+      "market_gain": null,
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": 0.00859588,
       "return_available": true,
       "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 44.1984,
-      "benchmark_return": -0.0178142,
-      "excess_return": null
-    },
-    {
-      "date": "2026-09-12",
-      "value": 45.9835,
-      "cash": 0.11,
-      "holdings": [
-        {
-          "symbol": "CRAK",
-          "shares": 0.110477,
-          "value": 6.7425
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.035311,
-          "value": 2.4444
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.015514,
-          "value": 2.805
-        },
-        {
-          "symbol": "EWT",
-          "shares": 0.049561,
-          "value": 5.4298
-        },
-        {
-          "symbol": "FBT",
-          "shares": 0.013854,
-          "value": 3.7167
-        },
-        {
-          "symbol": "FLTW",
-          "shares": 0.020992,
-          "value": 2.204
-        },
-        {
-          "symbol": "IHE",
-          "shares": 0.041468,
-          "value": 4.328
-        },
-        {
-          "symbol": "IWM",
-          "shares": 0.020371,
-          "value": 6.1612
-        },
-        {
-          "symbol": "QQQ",
-          "shares": 0.008422,
-          "value": 6.091
-        },
-        {
-          "symbol": "VLUE",
-          "shares": 0.02899,
-          "value": 5.9508
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 44.1984,
-      "benchmark_return": -0.0178142,
-      "excess_return": null
-    },
-    {
-      "date": "2026-09-13",
-      "value": 45.9835,
-      "cash": 0.11,
-      "holdings": [
-        {
-          "symbol": "CRAK",
-          "shares": 0.110477,
-          "value": 6.7425
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.035311,
-          "value": 2.4444
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.015514,
-          "value": 2.805
-        },
-        {
-          "symbol": "EWT",
-          "shares": 0.049561,
-          "value": 5.4298
-        },
-        {
-          "symbol": "FBT",
-          "shares": 0.013854,
-          "value": 3.7167
-        },
-        {
-          "symbol": "FLTW",
-          "shares": 0.020992,
-          "value": 2.204
-        },
-        {
-          "symbol": "IHE",
-          "shares": 0.041468,
-          "value": 4.328
-        },
-        {
-          "symbol": "IWM",
-          "shares": 0.020371,
-          "value": 6.1612
-        },
-        {
-          "symbol": "QQQ",
-          "shares": 0.008422,
-          "value": 6.091
-        },
-        {
-          "symbol": "VLUE",
-          "shares": 0.02899,
-          "value": 5.9508
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 44.1984,
-      "benchmark_return": -0.0178142,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -15402,20 +14506,20 @@
       "captured_at": "2026-09-14T14:18:13.721645+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": -0.4233,
       "change_pct": null,
       "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": null,
       "return_available": false,
       "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 44.0192,
-      "benchmark_return": -0.02179642,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -15477,20 +14581,20 @@
       "captured_at": "2026-09-15T14:58:59.855117+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 10.0,
-      "contributions": 10.0,
-      "withdrawals": 0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": 9.5484,
       "change_pct": 0.20957766,
-      "market_gain": -0.4516,
-      "return_unavailable_reason": "prior_cash_flow_lacks_bracketing_valuations",
+      "market_gain": null,
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": -0.00991216,
       "return_available": true,
       "time_weighted_return": null,
-      "cash_flow_timing": "date_only",
-      "benchmark_value": 53.9086,
-      "benchmark_return": -0.01984369,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -15552,20 +14656,20 @@
       "captured_at": "2026-09-16T14:18:01.692900+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": 0.5147,
       "change_pct": 0.00933974,
-      "market_gain": 0.5147,
-      "return_unavailable_reason": "prior_cash_flow_lacks_bracketing_valuations",
+      "market_gain": null,
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": 0.00933974,
       "return_available": true,
       "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 53.8001,
-      "benchmark_return": -0.02181581,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -15627,20 +14731,20 @@
       "captured_at": "2026-09-17T14:20:17.943672+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": 0.4238,
       "change_pct": 0.00761911,
-      "market_gain": 0.4238,
-      "return_unavailable_reason": "prior_cash_flow_lacks_bracketing_valuations",
+      "market_gain": null,
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": 0.00761911,
       "return_available": true,
       "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 54.2243,
-      "benchmark_return": -0.01410379,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -15702,170 +14806,20 @@
       "captured_at": "2026-09-18T14:16:53.578286+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": -0.1139,
       "change_pct": -0.00203222,
-      "market_gain": -0.1139,
-      "return_unavailable_reason": "prior_cash_flow_lacks_bracketing_valuations",
+      "market_gain": null,
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": -0.00203222,
       "return_available": true,
       "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 54.26,
-      "benchmark_return": -0.01345516,
-      "excess_return": null
-    },
-    {
-      "date": "2026-09-19",
-      "value": 55.9332,
-      "cash": 0.0,
-      "holdings": [
-        {
-          "symbol": "CRAK",
-          "shares": 0.110477,
-          "value": 6.7409
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.035311,
-          "value": 2.444
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.032612,
-          "value": 5.8194
-        },
-        {
-          "symbol": "EWT",
-          "shares": 0.104102,
-          "value": 11.4686
-        },
-        {
-          "symbol": "FBT",
-          "shares": 0.026357,
-          "value": 6.9913
-        },
-        {
-          "symbol": "FLTW",
-          "shares": 0.020992,
-          "value": 2.2035
-        },
-        {
-          "symbol": "IHE",
-          "shares": 0.068613,
-          "value": 7.0614
-        },
-        {
-          "symbol": "IWM",
-          "shares": 0.020371,
-          "value": 6.1515
-        },
-        {
-          "symbol": "QQQ",
-          "shares": 2e-06,
-          "value": 0.0014
-        },
-        {
-          "symbol": "VLUE",
-          "shares": 0.034503,
-          "value": 7.0512
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 54.26,
-      "benchmark_return": -0.01345516,
-      "excess_return": null
-    },
-    {
-      "date": "2026-09-20",
-      "value": 55.9332,
-      "cash": 0.0,
-      "holdings": [
-        {
-          "symbol": "CRAK",
-          "shares": 0.110477,
-          "value": 6.7409
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.035311,
-          "value": 2.444
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.032612,
-          "value": 5.8194
-        },
-        {
-          "symbol": "EWT",
-          "shares": 0.104102,
-          "value": 11.4686
-        },
-        {
-          "symbol": "FBT",
-          "shares": 0.026357,
-          "value": 6.9913
-        },
-        {
-          "symbol": "FLTW",
-          "shares": 0.020992,
-          "value": 2.2035
-        },
-        {
-          "symbol": "IHE",
-          "shares": 0.068613,
-          "value": 7.0614
-        },
-        {
-          "symbol": "IWM",
-          "shares": 0.020371,
-          "value": 6.1515
-        },
-        {
-          "symbol": "QQQ",
-          "shares": 2e-06,
-          "value": 0.0014
-        },
-        {
-          "symbol": "VLUE",
-          "shares": 0.034503,
-          "value": 7.0512
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 54.26,
-      "benchmark_return": -0.01345516,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -15927,20 +14881,20 @@
       "captured_at": "2026-09-21T14:20:07.920266+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": 0.6913,
       "change_pct": null,
       "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": null,
       "return_available": false,
       "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 54.6192,
-      "benchmark_return": -0.00692324,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -16002,20 +14956,20 @@
       "captured_at": "2026-09-22T14:18:50.170466+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": 0.1198,
       "change_pct": 0.00211569,
-      "market_gain": 0.1198,
-      "return_unavailable_reason": "prior_cash_flow_lacks_bracketing_valuations",
+      "market_gain": null,
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": 0.00211569,
       "return_available": true,
       "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 54.6192,
-      "benchmark_return": -0.00692324,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -16077,20 +15031,20 @@
       "captured_at": "2026-09-23T14:19:20.397245+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": -0.3034,
       "change_pct": -0.00534679,
-      "market_gain": -0.3034,
-      "return_unavailable_reason": "prior_cash_flow_lacks_bracketing_valuations",
+      "market_gain": null,
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": -0.00534679,
       "return_available": true,
       "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 54.4815,
-      "benchmark_return": -0.00942725,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -16152,20 +15106,20 @@
       "captured_at": "2026-09-24T14:17:23.037494+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": -0.1911,
       "change_pct": -0.00338584,
-      "market_gain": -0.1911,
-      "return_unavailable_reason": "prior_cash_flow_lacks_bracketing_valuations",
+      "market_gain": null,
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": -0.00338584,
       "return_available": true,
       "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 54.4703,
-      "benchmark_return": -0.00963049,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -16227,170 +15181,20 @@
       "captured_at": "2026-09-25T14:21:01.329605+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": -0.0289,
       "change_pct": -0.00051378,
-      "market_gain": -0.0289,
-      "return_unavailable_reason": "prior_cash_flow_lacks_bracketing_valuations",
+      "market_gain": null,
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": -0.00051378,
       "return_available": true,
       "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 54.5335,
-      "benchmark_return": -0.0084822,
-      "excess_return": null
-    },
-    {
-      "date": "2026-09-26",
-      "value": 56.2209,
-      "cash": 0.0,
-      "holdings": [
-        {
-          "symbol": "CRAK",
-          "shares": 0.110477,
-          "value": 6.8031
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.03546,
-          "value": 2.4766
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.032612,
-          "value": 5.8731
-        },
-        {
-          "symbol": "EWT",
-          "shares": 0.104102,
-          "value": 11.5744
-        },
-        {
-          "symbol": "FBT",
-          "shares": 0.026357,
-          "value": 7.0558
-        },
-        {
-          "symbol": "FLTW",
-          "shares": 0.057336,
-          "value": 6.2976
-        },
-        {
-          "symbol": "IHE",
-          "shares": 0.06871,
-          "value": 7.1366
-        },
-        {
-          "symbol": "IWM",
-          "shares": 0.006091,
-          "value": 1.856
-        },
-        {
-          "symbol": "QQQ",
-          "shares": 2e-06,
-          "value": 0.0015
-        },
-        {
-          "symbol": "VLUE",
-          "shares": 0.034651,
-          "value": 7.1464
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 54.5335,
-      "benchmark_return": -0.0084822,
-      "excess_return": null
-    },
-    {
-      "date": "2026-09-27",
-      "value": 56.2209,
-      "cash": 0.0,
-      "holdings": [
-        {
-          "symbol": "CRAK",
-          "shares": 0.110477,
-          "value": 6.8031
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.03546,
-          "value": 2.4766
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.032612,
-          "value": 5.8731
-        },
-        {
-          "symbol": "EWT",
-          "shares": 0.104102,
-          "value": 11.5744
-        },
-        {
-          "symbol": "FBT",
-          "shares": 0.026357,
-          "value": 7.0558
-        },
-        {
-          "symbol": "FLTW",
-          "shares": 0.057336,
-          "value": 6.2976
-        },
-        {
-          "symbol": "IHE",
-          "shares": 0.06871,
-          "value": 7.1366
-        },
-        {
-          "symbol": "IWM",
-          "shares": 0.006091,
-          "value": 1.856
-        },
-        {
-          "symbol": "QQQ",
-          "shares": 2e-06,
-          "value": 0.0015
-        },
-        {
-          "symbol": "VLUE",
-          "shares": 0.034651,
-          "value": 7.1464
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 54.5335,
-      "benchmark_return": -0.0084822,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -16452,20 +15256,20 @@
       "captured_at": "2026-09-28T14:17:24.567684+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": -0.0459,
       "change_pct": null,
       "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": null,
       "return_available": false,
       "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 53.6977,
-      "benchmark_return": -0.02367816,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -16527,20 +15331,20 @@
       "captured_at": "2026-09-29T14:18:37.404605+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": -0.1574,
       "change_pct": -0.00280196,
-      "market_gain": -0.1574,
-      "return_unavailable_reason": "prior_cash_flow_lacks_bracketing_valuations",
+      "market_gain": null,
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": -0.00280196,
       "return_available": true,
       "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 53.7178,
-      "benchmark_return": -0.02331202,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -16602,20 +15406,20 @@
       "captured_at": "2026-09-30T14:21:00.435355+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": 0.1657,
       "change_pct": 0.002958,
-      "market_gain": 0.1657,
-      "return_unavailable_reason": "prior_cash_flow_lacks_bracketing_valuations",
+      "market_gain": null,
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": 0.002958,
       "return_available": true,
       "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 53.705,
-      "benchmark_return": -0.02354627,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -16677,20 +15481,20 @@
       "captured_at": "2026-10-01T14:44:42.902729+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 10.0,
-      "contributions": 10.0,
-      "withdrawals": 0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": 9.3814,
       "change_pct": 0.16697844,
-      "market_gain": -0.6186,
-      "return_unavailable_reason": "prior_cash_flow_lacks_bracketing_valuations",
+      "market_gain": null,
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": -0.01101039,
       "return_available": true,
       "time_weighted_return": null,
-      "cash_flow_timing": "date_only",
-      "benchmark_value": 63.7807,
-      "benchmark_return": -0.01875844,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -16752,245 +15556,20 @@
       "captured_at": "2026-10-02T14:21:50.656166+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": 0.901,
       "change_pct": 0.01374215,
-      "market_gain": 0.901,
-      "return_unavailable_reason": "prior_cash_flow_lacks_bracketing_valuations",
+      "market_gain": null,
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": 0.01374215,
       "return_available": true,
       "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 64.0255,
-      "benchmark_return": -0.01499171,
-      "excess_return": null
-    },
-    {
-      "date": "2026-10-03",
-      "value": 66.4657,
-      "cash": 0.0,
-      "holdings": [
-        {
-          "symbol": "CRAK",
-          "shares": 0.110477,
-          "value": 6.8279
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.037654,
-          "value": 2.5418
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.040634,
-          "value": 7.3554
-        },
-        {
-          "symbol": "EWT",
-          "shares": 0.104102,
-          "value": 11.6167
-        },
-        {
-          "symbol": "FBT",
-          "shares": 0.026357,
-          "value": 7.0816
-        },
-        {
-          "symbol": "FLTW",
-          "shares": 0.101392,
-          "value": 11.363
-        },
-        {
-          "symbol": "IHE",
-          "shares": 0.06871,
-          "value": 7.1627
-        },
-        {
-          "symbol": "IWM",
-          "shares": 0.006091,
-          "value": 1.8627
-        },
-        {
-          "symbol": "QQQ",
-          "shares": 0.004635,
-          "value": 3.4814
-        },
-        {
-          "symbol": "VLUE",
-          "shares": 0.034651,
-          "value": 7.1725
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 64.0255,
-      "benchmark_return": -0.01499171,
-      "excess_return": null
-    },
-    {
-      "date": "2026-10-04",
-      "value": 66.4657,
-      "cash": 0.0,
-      "holdings": [
-        {
-          "symbol": "CRAK",
-          "shares": 0.110477,
-          "value": 6.8279
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.037654,
-          "value": 2.5418
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.040634,
-          "value": 7.3554
-        },
-        {
-          "symbol": "EWT",
-          "shares": 0.104102,
-          "value": 11.6167
-        },
-        {
-          "symbol": "FBT",
-          "shares": 0.026357,
-          "value": 7.0816
-        },
-        {
-          "symbol": "FLTW",
-          "shares": 0.101392,
-          "value": 11.363
-        },
-        {
-          "symbol": "IHE",
-          "shares": 0.06871,
-          "value": 7.1627
-        },
-        {
-          "symbol": "IWM",
-          "shares": 0.006091,
-          "value": 1.8627
-        },
-        {
-          "symbol": "QQQ",
-          "shares": 0.004635,
-          "value": 3.4814
-        },
-        {
-          "symbol": "VLUE",
-          "shares": 0.034651,
-          "value": 7.1725
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 64.0255,
-      "benchmark_return": -0.01499171,
-      "excess_return": null
-    },
-    {
-      "date": "2026-10-05",
-      "value": 66.4657,
-      "cash": 0.0,
-      "holdings": [
-        {
-          "symbol": "CRAK",
-          "shares": 0.110477,
-          "value": 6.8279
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.037654,
-          "value": 2.5418
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.040634,
-          "value": 7.3554
-        },
-        {
-          "symbol": "EWT",
-          "shares": 0.104102,
-          "value": 11.6167
-        },
-        {
-          "symbol": "FBT",
-          "shares": 0.026357,
-          "value": 7.0816
-        },
-        {
-          "symbol": "FLTW",
-          "shares": 0.101392,
-          "value": 11.363
-        },
-        {
-          "symbol": "IHE",
-          "shares": 0.06871,
-          "value": 7.1627
-        },
-        {
-          "symbol": "IWM",
-          "shares": 0.006091,
-          "value": 1.8627
-        },
-        {
-          "symbol": "QQQ",
-          "shares": 0.004635,
-          "value": 3.4814
-        },
-        {
-          "symbol": "VLUE",
-          "shares": 0.034651,
-          "value": 7.1725
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 64.4052,
-      "benchmark_return": -0.00915118,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -17052,20 +15631,20 @@
       "captured_at": "2026-10-06T17:21:43.893899+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": 0.4185,
       "change_pct": null,
       "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": null,
       "return_available": false,
       "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 64.3168,
-      "benchmark_return": -0.01051142,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -17127,20 +15706,20 @@
       "captured_at": "2026-10-07T14:18:46.776992+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": -0.6347,
       "change_pct": -0.00948954,
-      "market_gain": -0.6347,
-      "return_unavailable_reason": "prior_cash_flow_lacks_bracketing_valuations",
+      "market_gain": null,
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": -0.00948954,
       "return_available": true,
       "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 64.0924,
-      "benchmark_return": -0.01396243,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -17202,320 +15781,20 @@
       "captured_at": "2026-10-08T14:45:12.060169+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": -0.3967,
       "change_pct": -0.00598797,
-      "market_gain": -0.3967,
-      "return_unavailable_reason": "prior_cash_flow_lacks_bracketing_valuations",
+      "market_gain": null,
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": -0.00598797,
       "return_available": true,
       "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 64.1766,
-      "benchmark_return": -0.01266708,
-      "excess_return": null
-    },
-    {
-      "date": "2026-10-09",
-      "value": 65.8528,
-      "cash": 8.36,
-      "holdings": [
-        {
-          "symbol": "CRAK",
-          "shares": 0.110477,
-          "value": 5.8964
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.037654,
-          "value": 2.195
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.040634,
-          "value": 6.3519
-        },
-        {
-          "symbol": "EWT",
-          "shares": 0.104102,
-          "value": 10.0318
-        },
-        {
-          "symbol": "FBT",
-          "shares": 0.026357,
-          "value": 6.1154
-        },
-        {
-          "symbol": "FLTW",
-          "shares": 0.101392,
-          "value": 9.8127
-        },
-        {
-          "symbol": "IHE",
-          "shares": 0.06871,
-          "value": 6.1855
-        },
-        {
-          "symbol": "IWM",
-          "shares": 0.006091,
-          "value": 1.6086
-        },
-        {
-          "symbol": "SOXX",
-          "shares": 0.005984,
-          "value": 3.1013
-        },
-        {
-          "symbol": "VLUE",
-          "shares": 0.034651,
-          "value": 6.194
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 64.4314,
-      "benchmark_return": -0.00874741,
-      "excess_return": null
-    },
-    {
-      "date": "2026-10-10",
-      "value": 65.8528,
-      "cash": 8.36,
-      "holdings": [
-        {
-          "symbol": "CRAK",
-          "shares": 0.110477,
-          "value": 5.8964
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.037654,
-          "value": 2.195
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.040634,
-          "value": 6.3519
-        },
-        {
-          "symbol": "EWT",
-          "shares": 0.104102,
-          "value": 10.0318
-        },
-        {
-          "symbol": "FBT",
-          "shares": 0.026357,
-          "value": 6.1154
-        },
-        {
-          "symbol": "FLTW",
-          "shares": 0.101392,
-          "value": 9.8127
-        },
-        {
-          "symbol": "IHE",
-          "shares": 0.06871,
-          "value": 6.1855
-        },
-        {
-          "symbol": "IWM",
-          "shares": 0.006091,
-          "value": 1.6086
-        },
-        {
-          "symbol": "SOXX",
-          "shares": 0.005984,
-          "value": 3.1013
-        },
-        {
-          "symbol": "VLUE",
-          "shares": 0.034651,
-          "value": 6.194
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 64.4314,
-      "benchmark_return": -0.00874741,
-      "excess_return": null
-    },
-    {
-      "date": "2026-10-11",
-      "value": 65.8528,
-      "cash": 8.36,
-      "holdings": [
-        {
-          "symbol": "CRAK",
-          "shares": 0.110477,
-          "value": 5.8964
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.037654,
-          "value": 2.195
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.040634,
-          "value": 6.3519
-        },
-        {
-          "symbol": "EWT",
-          "shares": 0.104102,
-          "value": 10.0318
-        },
-        {
-          "symbol": "FBT",
-          "shares": 0.026357,
-          "value": 6.1154
-        },
-        {
-          "symbol": "FLTW",
-          "shares": 0.101392,
-          "value": 9.8127
-        },
-        {
-          "symbol": "IHE",
-          "shares": 0.06871,
-          "value": 6.1855
-        },
-        {
-          "symbol": "IWM",
-          "shares": 0.006091,
-          "value": 1.6086
-        },
-        {
-          "symbol": "SOXX",
-          "shares": 0.005984,
-          "value": 3.1013
-        },
-        {
-          "symbol": "VLUE",
-          "shares": 0.034651,
-          "value": 6.194
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 64.4314,
-      "benchmark_return": -0.00874741,
-      "excess_return": null
-    },
-    {
-      "date": "2026-10-12",
-      "value": 65.8528,
-      "cash": 8.36,
-      "holdings": [
-        {
-          "symbol": "CRAK",
-          "shares": 0.110477,
-          "value": 5.8964
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.037654,
-          "value": 2.195
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.040634,
-          "value": 6.3519
-        },
-        {
-          "symbol": "EWT",
-          "shares": 0.104102,
-          "value": 10.0318
-        },
-        {
-          "symbol": "FBT",
-          "shares": 0.026357,
-          "value": 6.1154
-        },
-        {
-          "symbol": "FLTW",
-          "shares": 0.101392,
-          "value": 9.8127
-        },
-        {
-          "symbol": "IHE",
-          "shares": 0.06871,
-          "value": 6.1855
-        },
-        {
-          "symbol": "IWM",
-          "shares": 0.006091,
-          "value": 1.6086
-        },
-        {
-          "symbol": "SOXX",
-          "shares": 0.005984,
-          "value": 3.1013
-        },
-        {
-          "symbol": "VLUE",
-          "shares": 0.034651,
-          "value": 6.194
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 64.3067,
-      "benchmark_return": -0.01066654,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -17567,540 +15846,20 @@
       "captured_at": "2026-10-13T15:46:58.998000+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": -0.3503,
       "change_pct": null,
       "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": null,
       "return_available": false,
       "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 64.2389,
-      "benchmark_return": -0.01170879,
-      "excess_return": null
-    },
-    {
-      "date": "2026-10-14",
-      "value": 65.5025,
-      "cash": 5.63,
-      "holdings": [
-        {
-          "symbol": "CRAK",
-          "shares": 0.110477,
-          "value": 8.1919
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.083648,
-          "value": 6.7743
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.040634,
-          "value": 8.8248
-        },
-        {
-          "symbol": "EWT",
-          "shares": 0.104102,
-          "value": 13.9373
-        },
-        {
-          "symbol": "FBT",
-          "shares": 0.026357,
-          "value": 8.4962
-        },
-        {
-          "symbol": "FLTW",
-          "shares": 0.101392,
-          "value": 13.6329
-        },
-        {
-          "symbol": "IHE",
-          "shares": 9e-05,
-          "value": 0.0113
-        },
-        {
-          "symbol": "IWM",
-          "shares": 1.1e-05,
-          "value": 0.004
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 62.7406,
-      "benchmark_return": -0.03476072,
-      "excess_return": null
-    },
-    {
-      "date": "2026-10-15",
-      "value": 65.5025,
-      "cash": 5.63,
-      "holdings": [
-        {
-          "symbol": "CRAK",
-          "shares": 0.110477,
-          "value": 8.1919
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.083648,
-          "value": 6.7743
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.040634,
-          "value": 8.8248
-        },
-        {
-          "symbol": "EWT",
-          "shares": 0.104102,
-          "value": 13.9373
-        },
-        {
-          "symbol": "FBT",
-          "shares": 0.026357,
-          "value": 8.4962
-        },
-        {
-          "symbol": "FLTW",
-          "shares": 0.101392,
-          "value": 13.6329
-        },
-        {
-          "symbol": "IHE",
-          "shares": 9e-05,
-          "value": 0.0113
-        },
-        {
-          "symbol": "IWM",
-          "shares": 1.1e-05,
-          "value": 0.004
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 10.0,
-      "contributions": 10.0,
-      "withdrawals": 0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "cash_flow_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "date_only",
-      "benchmark_value": 73.3124,
-      "benchmark_return": -0.02250094,
-      "excess_return": null
-    },
-    {
-      "date": "2026-10-16",
-      "value": 65.5025,
-      "cash": 5.63,
-      "holdings": [
-        {
-          "symbol": "CRAK",
-          "shares": 0.110477,
-          "value": 8.1919
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.083648,
-          "value": 6.7743
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.040634,
-          "value": 8.8248
-        },
-        {
-          "symbol": "EWT",
-          "shares": 0.104102,
-          "value": 13.9373
-        },
-        {
-          "symbol": "FBT",
-          "shares": 0.026357,
-          "value": 8.4962
-        },
-        {
-          "symbol": "FLTW",
-          "shares": 0.101392,
-          "value": 13.6329
-        },
-        {
-          "symbol": "IHE",
-          "shares": 9e-05,
-          "value": 0.0113
-        },
-        {
-          "symbol": "IWM",
-          "shares": 1.1e-05,
-          "value": 0.004
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 72.5198,
-      "benchmark_return": -0.03306886,
-      "excess_return": null
-    },
-    {
-      "date": "2026-10-17",
-      "value": 65.5025,
-      "cash": 5.63,
-      "holdings": [
-        {
-          "symbol": "CRAK",
-          "shares": 0.110477,
-          "value": 8.1919
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.083648,
-          "value": 6.7743
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.040634,
-          "value": 8.8248
-        },
-        {
-          "symbol": "EWT",
-          "shares": 0.104102,
-          "value": 13.9373
-        },
-        {
-          "symbol": "FBT",
-          "shares": 0.026357,
-          "value": 8.4962
-        },
-        {
-          "symbol": "FLTW",
-          "shares": 0.101392,
-          "value": 13.6329
-        },
-        {
-          "symbol": "IHE",
-          "shares": 9e-05,
-          "value": 0.0113
-        },
-        {
-          "symbol": "IWM",
-          "shares": 1.1e-05,
-          "value": 0.004
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 72.5198,
-      "benchmark_return": -0.03306886,
-      "excess_return": null
-    },
-    {
-      "date": "2026-10-18",
-      "value": 65.5025,
-      "cash": 5.63,
-      "holdings": [
-        {
-          "symbol": "CRAK",
-          "shares": 0.110477,
-          "value": 8.1919
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.083648,
-          "value": 6.7743
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.040634,
-          "value": 8.8248
-        },
-        {
-          "symbol": "EWT",
-          "shares": 0.104102,
-          "value": 13.9373
-        },
-        {
-          "symbol": "FBT",
-          "shares": 0.026357,
-          "value": 8.4962
-        },
-        {
-          "symbol": "FLTW",
-          "shares": 0.101392,
-          "value": 13.6329
-        },
-        {
-          "symbol": "IHE",
-          "shares": 9e-05,
-          "value": 0.0113
-        },
-        {
-          "symbol": "IWM",
-          "shares": 1.1e-05,
-          "value": 0.004
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 72.5198,
-      "benchmark_return": -0.03306886,
-      "excess_return": null
-    },
-    {
-      "date": "2026-10-19",
-      "value": 65.5025,
-      "cash": 5.63,
-      "holdings": [
-        {
-          "symbol": "CRAK",
-          "shares": 0.110477,
-          "value": 8.1919
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.083648,
-          "value": 6.7743
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.040634,
-          "value": 8.8248
-        },
-        {
-          "symbol": "EWT",
-          "shares": 0.104102,
-          "value": 13.9373
-        },
-        {
-          "symbol": "FBT",
-          "shares": 0.026357,
-          "value": 8.4962
-        },
-        {
-          "symbol": "FLTW",
-          "shares": 0.101392,
-          "value": 13.6329
-        },
-        {
-          "symbol": "IHE",
-          "shares": 9e-05,
-          "value": 0.0113
-        },
-        {
-          "symbol": "IWM",
-          "shares": 1.1e-05,
-          "value": 0.004
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 72.608,
-      "benchmark_return": -0.03189279,
-      "excess_return": null
-    },
-    {
-      "date": "2026-10-20",
-      "value": 65.5025,
-      "cash": 5.63,
-      "holdings": [
-        {
-          "symbol": "CRAK",
-          "shares": 0.110477,
-          "value": 8.1919
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.083648,
-          "value": 6.7743
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.040634,
-          "value": 8.8248
-        },
-        {
-          "symbol": "EWT",
-          "shares": 0.104102,
-          "value": 13.9373
-        },
-        {
-          "symbol": "FBT",
-          "shares": 0.026357,
-          "value": 8.4962
-        },
-        {
-          "symbol": "FLTW",
-          "shares": 0.101392,
-          "value": 13.6329
-        },
-        {
-          "symbol": "IHE",
-          "shares": 9e-05,
-          "value": 0.0113
-        },
-        {
-          "symbol": "IWM",
-          "shares": 1.1e-05,
-          "value": 0.004
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 72.9142,
-      "benchmark_return": -0.02781077,
-      "excess_return": null
-    },
-    {
-      "date": "2026-10-21",
-      "value": 65.5025,
-      "cash": 5.63,
-      "holdings": [
-        {
-          "symbol": "CRAK",
-          "shares": 0.110477,
-          "value": 8.1919
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.083648,
-          "value": 6.7743
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.040634,
-          "value": 8.8248
-        },
-        {
-          "symbol": "EWT",
-          "shares": 0.104102,
-          "value": 13.9373
-        },
-        {
-          "symbol": "FBT",
-          "shares": 0.026357,
-          "value": 8.4962
-        },
-        {
-          "symbol": "FLTW",
-          "shares": 0.101392,
-          "value": 13.6329
-        },
-        {
-          "symbol": "IHE",
-          "shares": 9e-05,
-          "value": 0.0113
-        },
-        {
-          "symbol": "IWM",
-          "shares": 1.1e-05,
-          "value": 0.004
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 73.2562,
-      "benchmark_return": -0.02325026,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -18192,335 +15951,20 @@
       "captured_at": "2026-10-22T15:50:48.797000+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": 8.0438,
       "change_pct": null,
       "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": null,
       "return_available": false,
       "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 72.5507,
-      "benchmark_return": -0.03265717,
-      "excess_return": null
-    },
-    {
-      "date": "2026-10-23",
-      "value": 73.5463,
-      "cash": 1.18,
-      "holdings": [
-        {
-          "symbol": "AAPL",
-          "shares": 0.01605,
-          "value": 5.7966
-        },
-        {
-          "symbol": "CRAK",
-          "shares": 0.110477,
-          "value": 7.145
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.101018,
-          "value": 7.1719
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.040634,
-          "value": 7.697
-        },
-        {
-          "symbol": "FBT",
-          "shares": 0.026357,
-          "value": 7.4104
-        },
-        {
-          "symbol": "FTNT",
-          "shares": 0.006631,
-          "value": 1.2773
-        },
-        {
-          "symbol": "GSG",
-          "shares": 0.200791,
-          "value": 7.8139
-        },
-        {
-          "symbol": "IHE",
-          "shares": 9e-05,
-          "value": 0.0098
-        },
-        {
-          "symbol": "IWM",
-          "shares": 1.1e-05,
-          "value": 0.0035
-        },
-        {
-          "symbol": "IXC",
-          "shares": 0.068904,
-          "value": 4.5121
-        },
-        {
-          "symbol": "JNJ",
-          "shares": 0.012313,
-          "value": 3.3474
-        },
-        {
-          "symbol": "LLY",
-          "shares": 0.0009,
-          "value": 1.2101
-        },
-        {
-          "symbol": "MRK",
-          "shares": 0.027322,
-          "value": 4.3316
-        },
-        {
-          "symbol": "REGN",
-          "shares": 0.001677,
-          "value": 1.4011
-        },
-        {
-          "symbol": "RPV",
-          "shares": 0.070541,
-          "value": 8.8755
-        },
-        {
-          "symbol": "VLO",
-          "shares": 0.009268,
-          "value": 4.3631
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 72.2611,
-      "benchmark_return": -0.03651921,
-      "excess_return": null
-    },
-    {
-      "date": "2026-10-24",
-      "value": 73.5463,
-      "cash": 1.18,
-      "holdings": [
-        {
-          "symbol": "AAPL",
-          "shares": 0.01605,
-          "value": 5.7966
-        },
-        {
-          "symbol": "CRAK",
-          "shares": 0.110477,
-          "value": 7.145
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.101018,
-          "value": 7.1719
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.040634,
-          "value": 7.697
-        },
-        {
-          "symbol": "FBT",
-          "shares": 0.026357,
-          "value": 7.4104
-        },
-        {
-          "symbol": "FTNT",
-          "shares": 0.006631,
-          "value": 1.2773
-        },
-        {
-          "symbol": "GSG",
-          "shares": 0.200791,
-          "value": 7.8139
-        },
-        {
-          "symbol": "IHE",
-          "shares": 9e-05,
-          "value": 0.0098
-        },
-        {
-          "symbol": "IWM",
-          "shares": 1.1e-05,
-          "value": 0.0035
-        },
-        {
-          "symbol": "IXC",
-          "shares": 0.068904,
-          "value": 4.5121
-        },
-        {
-          "symbol": "JNJ",
-          "shares": 0.012313,
-          "value": 3.3474
-        },
-        {
-          "symbol": "LLY",
-          "shares": 0.0009,
-          "value": 1.2101
-        },
-        {
-          "symbol": "MRK",
-          "shares": 0.027322,
-          "value": 4.3316
-        },
-        {
-          "symbol": "REGN",
-          "shares": 0.001677,
-          "value": 1.4011
-        },
-        {
-          "symbol": "RPV",
-          "shares": 0.070541,
-          "value": 8.8755
-        },
-        {
-          "symbol": "VLO",
-          "shares": 0.009268,
-          "value": 4.3631
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 72.2611,
-      "benchmark_return": -0.03651921,
-      "excess_return": null
-    },
-    {
-      "date": "2026-10-25",
-      "value": 73.5463,
-      "cash": 1.18,
-      "holdings": [
-        {
-          "symbol": "AAPL",
-          "shares": 0.01605,
-          "value": 5.7966
-        },
-        {
-          "symbol": "CRAK",
-          "shares": 0.110477,
-          "value": 7.145
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.101018,
-          "value": 7.1719
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.040634,
-          "value": 7.697
-        },
-        {
-          "symbol": "FBT",
-          "shares": 0.026357,
-          "value": 7.4104
-        },
-        {
-          "symbol": "FTNT",
-          "shares": 0.006631,
-          "value": 1.2773
-        },
-        {
-          "symbol": "GSG",
-          "shares": 0.200791,
-          "value": 7.8139
-        },
-        {
-          "symbol": "IHE",
-          "shares": 9e-05,
-          "value": 0.0098
-        },
-        {
-          "symbol": "IWM",
-          "shares": 1.1e-05,
-          "value": 0.0035
-        },
-        {
-          "symbol": "IXC",
-          "shares": 0.068904,
-          "value": 4.5121
-        },
-        {
-          "symbol": "JNJ",
-          "shares": 0.012313,
-          "value": 3.3474
-        },
-        {
-          "symbol": "LLY",
-          "shares": 0.0009,
-          "value": 1.2101
-        },
-        {
-          "symbol": "MRK",
-          "shares": 0.027322,
-          "value": 4.3316
-        },
-        {
-          "symbol": "REGN",
-          "shares": 0.001677,
-          "value": 1.4011
-        },
-        {
-          "symbol": "RPV",
-          "shares": 0.070541,
-          "value": 8.8755
-        },
-        {
-          "symbol": "VLO",
-          "shares": 0.009268,
-          "value": 4.3631
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 72.2611,
-      "benchmark_return": -0.03651921,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -18617,20 +16061,20 @@
       "captured_at": "2026-10-26T14:20:07.388000+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": 0.0951,
       "change_pct": null,
       "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": null,
       "return_available": false,
       "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 72.7003,
-      "benchmark_return": -0.03066224,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -18732,20 +16176,20 @@
       "captured_at": "2026-10-27T14:21:57.287000+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": -0.6714,
       "change_pct": -0.00911715,
-      "market_gain": -0.6714,
-      "return_unavailable_reason": "prior_cash_flow_lacks_bracketing_valuations",
+      "market_gain": null,
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": -0.00911715,
       "return_available": true,
       "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 73.2938,
-      "benchmark_return": -0.0227489,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -18857,20 +16301,20 @@
       "captured_at": "2026-10-28T14:40:12.922000+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": 0.0269,
       "change_pct": 0.00036864,
-      "market_gain": 0.0269,
-      "return_unavailable_reason": "prior_cash_flow_lacks_bracketing_valuations",
+      "market_gain": null,
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": 0.00036864,
       "return_available": true,
       "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 73.4219,
-      "benchmark_return": -0.02104074,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -18987,540 +16431,20 @@
       "captured_at": "2026-10-29T14:16:46.351000+00:00",
       "source": "journaled_broker_valuation",
       "breakdown_estimated": true,
-      "note": "The journaled account total is used as supplied. Historical holding values are allocated using the quantities and average prices stored in that snapshot.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": 0.7052,
       "change_pct": 0.00966068,
-      "market_gain": 0.7052,
-      "return_unavailable_reason": "prior_cash_flow_lacks_bracketing_valuations",
+      "market_gain": null,
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": 0.00966068,
       "return_available": true,
       "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 73.19,
-      "benchmark_return": -0.02413384,
-      "excess_return": null
-    },
-    {
-      "date": "2026-10-30",
-      "value": 73.7021,
-      "cash": 2.05,
-      "holdings": [
-        {
-          "symbol": "AAPL",
-          "shares": 0.01605,
-          "value": 4.9426
-        },
-        {
-          "symbol": "ADI",
-          "shares": 0.002906,
-          "value": 1.0227
-        },
-        {
-          "symbol": "AMGN",
-          "shares": 0.010484,
-          "value": 4.3088
-        },
-        {
-          "symbol": "COP",
-          "shares": 0.013168,
-          "value": 1.7924
-        },
-        {
-          "symbol": "CRAK",
-          "shares": 0.055177,
-          "value": 3.0428
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.101018,
-          "value": 6.1152
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.040634,
-          "value": 6.563
-        },
-        {
-          "symbol": "FBT",
-          "shares": 0.026357,
-          "value": 6.3186
-        },
-        {
-          "symbol": "GSG",
-          "shares": 0.200791,
-          "value": 6.6627
-        },
-        {
-          "symbol": "IHE",
-          "shares": 9e-05,
-          "value": 0.0084
-        },
-        {
-          "symbol": "IWM",
-          "shares": 1.1e-05,
-          "value": 0.003
-        },
-        {
-          "symbol": "IXC",
-          "shares": 0.068904,
-          "value": 3.8473
-        },
-        {
-          "symbol": "JNJ",
-          "shares": 0.012313,
-          "value": 2.8543
-        },
-        {
-          "symbol": "LLY",
-          "shares": 0.0009,
-          "value": 1.0318
-        },
-        {
-          "symbol": "MRK",
-          "shares": 0.027322,
-          "value": 3.6934
-        },
-        {
-          "symbol": "REGN",
-          "shares": 0.001677,
-          "value": 1.1947
-        },
-        {
-          "symbol": "RPV",
-          "shares": 0.070541,
-          "value": 7.5679
-        },
-        {
-          "symbol": "TXN",
-          "shares": 0.01646,
-          "value": 4.4989
-        },
-        {
-          "symbol": "USO",
-          "shares": 0.006876,
-          "value": 1.041
-        },
-        {
-          "symbol": "VLO",
-          "shares": 0.004648,
-          "value": 1.8657
-        },
-        {
-          "symbol": "XBI",
-          "shares": 0.023912,
-          "value": 3.277
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 71.747,
-      "benchmark_return": -0.04337284,
-      "excess_return": null
-    },
-    {
-      "date": "2026-10-31",
-      "value": 73.7021,
-      "cash": 2.05,
-      "holdings": [
-        {
-          "symbol": "AAPL",
-          "shares": 0.01605,
-          "value": 4.9426
-        },
-        {
-          "symbol": "ADI",
-          "shares": 0.002906,
-          "value": 1.0227
-        },
-        {
-          "symbol": "AMGN",
-          "shares": 0.010484,
-          "value": 4.3088
-        },
-        {
-          "symbol": "COP",
-          "shares": 0.013168,
-          "value": 1.7924
-        },
-        {
-          "symbol": "CRAK",
-          "shares": 0.055177,
-          "value": 3.0428
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.101018,
-          "value": 6.1152
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.040634,
-          "value": 6.563
-        },
-        {
-          "symbol": "FBT",
-          "shares": 0.026357,
-          "value": 6.3186
-        },
-        {
-          "symbol": "GSG",
-          "shares": 0.200791,
-          "value": 6.6627
-        },
-        {
-          "symbol": "IHE",
-          "shares": 9e-05,
-          "value": 0.0084
-        },
-        {
-          "symbol": "IWM",
-          "shares": 1.1e-05,
-          "value": 0.003
-        },
-        {
-          "symbol": "IXC",
-          "shares": 0.068904,
-          "value": 3.8473
-        },
-        {
-          "symbol": "JNJ",
-          "shares": 0.012313,
-          "value": 2.8543
-        },
-        {
-          "symbol": "LLY",
-          "shares": 0.0009,
-          "value": 1.0318
-        },
-        {
-          "symbol": "MRK",
-          "shares": 0.027322,
-          "value": 3.6934
-        },
-        {
-          "symbol": "REGN",
-          "shares": 0.001677,
-          "value": 1.1947
-        },
-        {
-          "symbol": "RPV",
-          "shares": 0.070541,
-          "value": 7.5679
-        },
-        {
-          "symbol": "TXN",
-          "shares": 0.01646,
-          "value": 4.4989
-        },
-        {
-          "symbol": "USO",
-          "shares": 0.006876,
-          "value": 1.041
-        },
-        {
-          "symbol": "VLO",
-          "shares": 0.004648,
-          "value": 1.8657
-        },
-        {
-          "symbol": "XBI",
-          "shares": 0.023912,
-          "value": 3.277
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 71.747,
-      "benchmark_return": -0.04337284,
-      "excess_return": null
-    },
-    {
-      "date": "2026-11-01",
-      "value": 73.7021,
-      "cash": 2.05,
-      "holdings": [
-        {
-          "symbol": "AAPL",
-          "shares": 0.01605,
-          "value": 4.9426
-        },
-        {
-          "symbol": "ADI",
-          "shares": 0.002906,
-          "value": 1.0227
-        },
-        {
-          "symbol": "AMGN",
-          "shares": 0.010484,
-          "value": 4.3088
-        },
-        {
-          "symbol": "COP",
-          "shares": 0.013168,
-          "value": 1.7924
-        },
-        {
-          "symbol": "CRAK",
-          "shares": 0.055177,
-          "value": 3.0428
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.101018,
-          "value": 6.1152
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.040634,
-          "value": 6.563
-        },
-        {
-          "symbol": "FBT",
-          "shares": 0.026357,
-          "value": 6.3186
-        },
-        {
-          "symbol": "GSG",
-          "shares": 0.200791,
-          "value": 6.6627
-        },
-        {
-          "symbol": "IHE",
-          "shares": 9e-05,
-          "value": 0.0084
-        },
-        {
-          "symbol": "IWM",
-          "shares": 1.1e-05,
-          "value": 0.003
-        },
-        {
-          "symbol": "IXC",
-          "shares": 0.068904,
-          "value": 3.8473
-        },
-        {
-          "symbol": "JNJ",
-          "shares": 0.012313,
-          "value": 2.8543
-        },
-        {
-          "symbol": "LLY",
-          "shares": 0.0009,
-          "value": 1.0318
-        },
-        {
-          "symbol": "MRK",
-          "shares": 0.027322,
-          "value": 3.6934
-        },
-        {
-          "symbol": "REGN",
-          "shares": 0.001677,
-          "value": 1.1947
-        },
-        {
-          "symbol": "RPV",
-          "shares": 0.070541,
-          "value": 7.5679
-        },
-        {
-          "symbol": "TXN",
-          "shares": 0.01646,
-          "value": 4.4989
-        },
-        {
-          "symbol": "USO",
-          "shares": 0.006876,
-          "value": 1.041
-        },
-        {
-          "symbol": "VLO",
-          "shares": 0.004648,
-          "value": 1.8657
-        },
-        {
-          "symbol": "XBI",
-          "shares": 0.023912,
-          "value": 3.277
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 71.747,
-      "benchmark_return": -0.04337284,
-      "excess_return": null
-    },
-    {
-      "date": "2026-11-02",
-      "value": 73.7021,
-      "cash": 2.05,
-      "holdings": [
-        {
-          "symbol": "AAPL",
-          "shares": 0.01605,
-          "value": 4.9426
-        },
-        {
-          "symbol": "ADI",
-          "shares": 0.002906,
-          "value": 1.0227
-        },
-        {
-          "symbol": "AMGN",
-          "shares": 0.010484,
-          "value": 4.3088
-        },
-        {
-          "symbol": "COP",
-          "shares": 0.013168,
-          "value": 1.7924
-        },
-        {
-          "symbol": "CRAK",
-          "shares": 0.055177,
-          "value": 3.0428
-        },
-        {
-          "symbol": "DIVB",
-          "shares": 0.101018,
-          "value": 6.1152
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.040634,
-          "value": 6.563
-        },
-        {
-          "symbol": "FBT",
-          "shares": 0.026357,
-          "value": 6.3186
-        },
-        {
-          "symbol": "GSG",
-          "shares": 0.200791,
-          "value": 6.6627
-        },
-        {
-          "symbol": "IHE",
-          "shares": 9e-05,
-          "value": 0.0084
-        },
-        {
-          "symbol": "IWM",
-          "shares": 1.1e-05,
-          "value": 0.003
-        },
-        {
-          "symbol": "IXC",
-          "shares": 0.068904,
-          "value": 3.8473
-        },
-        {
-          "symbol": "JNJ",
-          "shares": 0.012313,
-          "value": 2.8543
-        },
-        {
-          "symbol": "LLY",
-          "shares": 0.0009,
-          "value": 1.0318
-        },
-        {
-          "symbol": "MRK",
-          "shares": 0.027322,
-          "value": 3.6934
-        },
-        {
-          "symbol": "REGN",
-          "shares": 0.001677,
-          "value": 1.1947
-        },
-        {
-          "symbol": "RPV",
-          "shares": 0.070541,
-          "value": 7.5679
-        },
-        {
-          "symbol": "TXN",
-          "shares": 0.01646,
-          "value": 4.4989
-        },
-        {
-          "symbol": "USO",
-          "shares": 0.006876,
-          "value": 1.041
-        },
-        {
-          "symbol": "VLO",
-          "shares": 0.004648,
-          "value": 1.8657
-        },
-        {
-          "symbol": "XBI",
-          "shares": 0.023912,
-          "value": 3.277
-        }
-      ],
-      "captured_at": null,
-      "source": "carried_forward_no_broker_snapshot",
-      "breakdown_estimated": true,
-      "note": "No broker valuation was captured this day; the previous published snapshot is shown unchanged.",
-      "net_cash_flow": 10.0,
-      "contributions": 10.0,
-      "withdrawals": 0.0,
-      "change": 0.0,
-      "change_pct": null,
-      "market_gain": null,
-      "return_unavailable_reason": "cash_flow_lacks_bracketing_valuations",
-      "period_return": null,
-      "return_available": false,
-      "time_weighted_return": null,
-      "cash_flow_timing": "date_only",
-      "benchmark_value": 81.6727,
-      "benchmark_return": -0.03914479,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     },
     {
@@ -19632,1007 +16556,44 @@
       "captured_at": "2026-11-03T15:20:33.202000+00:00",
       "source": "fresh_broker_supplied",
       "breakdown_estimated": false,
-      "note": "Current holding quantities and values were supplied with the broker valuation; journal reconciliation is not claimed.",
-      "net_cash_flow": 0.0,
-      "contributions": 0.0,
-      "withdrawals": -0.0,
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
+      "net_cash_flow": null,
+      "contributions": null,
+      "withdrawals": null,
       "change": 9.1852,
       "change_pct": null,
       "market_gain": null,
-      "return_unavailable_reason": "period_lacks_bracketing_valuations",
+      "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
       "period_return": null,
       "return_available": false,
       "time_weighted_return": null,
-      "cash_flow_timing": "none",
-      "benchmark_value": 81.6727,
-      "benchmark_return": -0.03914479,
+      "cash_flow_timing": "unavailable",
+      "benchmark_value": null,
+      "benchmark_return": null,
       "excess_return": null
     }
   ],
   "performance": {
-    "simple_return_on_contributions": -0.02485529,
+    "simple_return_on_contributions": 7.28873,
     "time_weighted_return": null,
-    "time_weighted_quality": "unavailable_unbracketed_cash_flow",
+    "time_weighted_quality": "unavailable_corrected_cash_flow_history",
     "money_weighted": {
       "return": null,
       "gain": null,
-      "method": "modified_dietz_non_annualized",
       "quality": "unavailable",
-      "reason": "cash_flow_lacks_bracketing_valuations"
+      "method": "modified_dietz_non_annualized",
+      "reason": "corrected_contribution_history_timing_unknown",
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable."
     },
     "live_benchmark": {
       "symbol": "Equal-weight provider universe",
-      "status": "estimated_completed_session",
-      "value": 81.6727,
-      "return": -0.03914479,
-      "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-      "actual_excess_return": null,
-      "comparison_unavailable_reason": "return_basis_mismatch",
-      "contract": "synchronized_one_time_equal_dollar_buy_and_hold",
-      "inception_date": "2026-08-10",
-      "cohort_pricing_as_of": "2026-08-10",
-      "cohort": [
-        "GLD",
-        "IWM",
-        "QQQ",
-        "SPY",
-        "TLT"
-      ],
-      "constituent_weight_at_inception": 0.2,
-      "rebalanced": false,
-      "dynamic_constituents": false,
-      "cash_flow_treatment": "external_flows_purchase_or_redeem_fixed_cohort_index_units",
-      "history": [
-        {
-          "date": "2026-08-10",
-          "price": 100.0,
-          "value": 15.0,
-          "return": 0.0,
-          "actual_return": 0.0,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-08-11",
-          "price": 100.304,
-          "value": 15.0456,
-          "return": 0.00304037,
-          "actual_return": 0.00056704,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-08-12",
-          "price": 100.5233,
-          "value": 15.0785,
-          "return": 0.00523279,
-          "actual_return": 0.00143427,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-08-13",
-          "price": 100.5233,
-          "value": 15.0785,
-          "return": 0.00523279,
-          "actual_return": 0.00143427,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-08-14",
-          "price": 100.7358,
-          "value": 15.1104,
-          "return": 0.00735794,
-          "actual_return": 0.00143427,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-08-15",
-          "price": 100.7358,
-          "value": 15.1104,
-          "return": 0.00735794,
-          "actual_return": 0.00143427,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-08-16",
-          "price": 100.7358,
-          "value": 15.1104,
-          "return": 0.00735794,
-          "actual_return": 0.00143427,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-08-17",
-          "price": 100.7926,
-          "value": 15.1189,
-          "return": 0.00792628,
-          "actual_return": 0.00143427,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-08-18",
-          "price": 100.7926,
-          "value": 25.1189,
-          "return": 0.00475577,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-08-19",
-          "price": 100.7673,
-          "value": 25.1126,
-          "return": 0.00450285,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-08-20",
-          "price": 100.0945,
-          "value": 24.9449,
-          "return": -0.00220401,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-08-21",
-          "price": 100.7338,
-          "value": 25.1042,
-          "return": 0.00416942,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-08-22",
-          "price": 100.7338,
-          "value": 25.1042,
-          "return": 0.00416942,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-08-23",
-          "price": 100.7338,
-          "value": 25.1042,
-          "return": 0.00416942,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-08-24",
-          "price": 100.7338,
-          "value": 25.1042,
-          "return": 0.00416942,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-08-25",
-          "price": 100.7338,
-          "value": 25.1042,
-          "return": 0.00416942,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-08-26",
-          "price": 100.6857,
-          "value": 25.0923,
-          "return": 0.00369023,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-08-27",
-          "price": 100.6857,
-          "value": 25.0923,
-          "return": 0.00369023,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-08-28",
-          "price": 100.6857,
-          "value": 35.0923,
-          "return": 0.00263588,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-08-29",
-          "price": 100.6857,
-          "value": 35.0923,
-          "return": 0.00263588,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-08-30",
-          "price": 100.6857,
-          "value": 35.0923,
-          "return": 0.00263588,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-08-31",
-          "price": 100.6857,
-          "value": 35.0923,
-          "return": 0.00263588,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-09-01",
-          "price": 100.6857,
-          "value": 45.0923,
-          "return": 0.00205013,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-09-02",
-          "price": 99.651,
-          "value": 44.6289,
-          "return": -0.00824764,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-09-03",
-          "price": 99.8257,
-          "value": 44.7071,
-          "return": -0.00650946,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-09-04",
-          "price": 99.8257,
-          "value": 44.7071,
-          "return": -0.00650946,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-09-05",
-          "price": 99.8257,
-          "value": 44.7071,
-          "return": -0.00650946,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-09-06",
-          "price": 99.8257,
-          "value": 44.7071,
-          "return": -0.00650946,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-09-07",
-          "price": 99.8257,
-          "value": 44.7071,
-          "return": -0.00650946,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-09-08",
-          "price": 99.6718,
-          "value": 44.6382,
-          "return": -0.00804061,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-09-09",
-          "price": 99.0147,
-          "value": 44.3439,
-          "return": -0.01458081,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-09-10",
-          "price": 98.4391,
-          "value": 44.0861,
-          "return": -0.02030919,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-09-11",
-          "price": 98.6898,
-          "value": 44.1984,
-          "return": -0.0178142,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-09-12",
-          "price": 98.6898,
-          "value": 44.1984,
-          "return": -0.0178142,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-09-13",
-          "price": 98.6898,
-          "value": 44.1984,
-          "return": -0.0178142,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-09-14",
-          "price": 98.2896,
-          "value": 44.0192,
-          "return": -0.02179642,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-09-15",
-          "price": 98.0428,
-          "value": 53.9086,
-          "return": -0.01984369,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-09-16",
-          "price": 97.8455,
-          "value": 53.8001,
-          "return": -0.02181581,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-09-17",
-          "price": 98.6169,
-          "value": 54.2243,
-          "return": -0.01410379,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-09-18",
-          "price": 98.6818,
-          "value": 54.26,
-          "return": -0.01345516,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-09-19",
-          "price": 98.6818,
-          "value": 54.26,
-          "return": -0.01345516,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-09-20",
-          "price": 98.6818,
-          "value": 54.26,
-          "return": -0.01345516,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-09-21",
-          "price": 99.3352,
-          "value": 54.6192,
-          "return": -0.00692324,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-09-22",
-          "price": 99.3352,
-          "value": 54.6192,
-          "return": -0.00692324,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-09-23",
-          "price": 99.0847,
-          "value": 54.4815,
-          "return": -0.00942725,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-09-24",
-          "price": 99.0644,
-          "value": 54.4703,
-          "return": -0.00963049,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-09-25",
-          "price": 99.1792,
-          "value": 54.5335,
-          "return": -0.0084822,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-09-26",
-          "price": 99.1792,
-          "value": 54.5335,
-          "return": -0.0084822,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-09-27",
-          "price": 99.1792,
-          "value": 54.5335,
-          "return": -0.0084822,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-09-28",
-          "price": 97.6592,
-          "value": 53.6977,
-          "return": -0.02367816,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-09-29",
-          "price": 97.6958,
-          "value": 53.7178,
-          "return": -0.02331202,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-09-30",
-          "price": 97.6724,
-          "value": 53.705,
-          "return": -0.02354627,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-10-01",
-          "price": 97.8102,
-          "value": 63.7807,
-          "return": -0.01875844,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-10-02",
-          "price": 98.1856,
-          "value": 64.0255,
-          "return": -0.01499171,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-10-03",
-          "price": 98.1856,
-          "value": 64.0255,
-          "return": -0.01499171,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-10-04",
-          "price": 98.1856,
-          "value": 64.0255,
-          "return": -0.01499171,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-10-05",
-          "price": 98.7678,
-          "value": 64.4052,
-          "return": -0.00915118,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-10-06",
-          "price": 98.6322,
-          "value": 64.3168,
-          "return": -0.01051142,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-10-07",
-          "price": 98.2882,
-          "value": 64.0924,
-          "return": -0.01396243,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-10-08",
-          "price": 98.4174,
-          "value": 64.1766,
-          "return": -0.01266708,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-10-09",
-          "price": 98.8081,
-          "value": 64.4314,
-          "return": -0.00874741,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-10-10",
-          "price": 98.8081,
-          "value": 64.4314,
-          "return": -0.00874741,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-10-11",
-          "price": 98.8081,
-          "value": 64.4314,
-          "return": -0.00874741,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-10-12",
-          "price": 98.6168,
-          "value": 64.3067,
-          "return": -0.01066654,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-10-13",
-          "price": 98.5129,
-          "value": 64.2389,
-          "return": -0.01170879,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-10-14",
-          "price": 96.2151,
-          "value": 62.7406,
-          "return": -0.03476072,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-10-15",
-          "price": 97.0921,
-          "value": 73.3124,
-          "return": -0.02250094,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-10-16",
-          "price": 96.0424,
-          "value": 72.5198,
-          "return": -0.03306886,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-10-17",
-          "price": 96.0424,
-          "value": 72.5198,
-          "return": -0.03306886,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-10-18",
-          "price": 96.0424,
-          "value": 72.5198,
-          "return": -0.03306886,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-10-19",
-          "price": 96.1592,
-          "value": 72.608,
-          "return": -0.03189279,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-10-20",
-          "price": 96.5646,
-          "value": 72.9142,
-          "return": -0.02781077,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-10-21",
-          "price": 97.0176,
-          "value": 73.2562,
-          "return": -0.02325026,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-10-22",
-          "price": 96.0833,
-          "value": 72.5507,
-          "return": -0.03265717,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-10-23",
-          "price": 95.6997,
-          "value": 72.2611,
-          "return": -0.03651921,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-10-24",
-          "price": 95.6997,
-          "value": 72.2611,
-          "return": -0.03651921,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-10-25",
-          "price": 95.6997,
-          "value": 72.2611,
-          "return": -0.03651921,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-10-26",
-          "price": 96.2814,
-          "value": 72.7003,
-          "return": -0.03066224,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-10-27",
-          "price": 97.0674,
-          "value": 73.2938,
-          "return": -0.0227489,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-10-28",
-          "price": 97.2371,
-          "value": 73.4219,
-          "return": -0.02104074,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-10-29",
-          "price": 96.9299,
-          "value": 73.19,
-          "return": -0.02413384,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-10-30",
-          "price": 95.0189,
-          "value": 71.747,
-          "return": -0.04337284,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-10-31",
-          "price": 95.0189,
-          "value": 71.747,
-          "return": -0.04337284,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-11-01",
-          "price": 95.0189,
-          "value": 71.747,
-          "return": -0.04337284,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-11-02",
-          "price": 94.9204,
-          "value": 81.6727,
-          "return": -0.03914479,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        },
-        {
-          "date": "2026-11-03",
-          "price": 94.9204,
-          "value": 81.6727,
-          "return": -0.03914479,
-          "actual_return": null,
-          "actual_return_basis": "time_weighted_return",
-          "return_basis": "cash_flow_matched_simple_return_on_net_contributions",
-          "excess_return": null,
-          "comparison_unavailable_reason": "return_basis_mismatch"
-        }
-      ],
-      "note": "The fixed provider cohort is bought once in equal dollars; constituent weights drift without rebalancing, while external account cash flows purchase or redeem units of that unchanged index.",
+      "status": "unavailable",
+      "return": null,
       "actual_return": null,
-      "actual_return_basis": "modified_dietz_non_annualized"
+      "actual_excess_return": null,
+      "comparison_unavailable_reason": "corrected_contribution_history_timing_unknown",
+      "history": [],
+      "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable."
     }
   },
   "daily_briefing": {
@@ -20682,7 +16643,8 @@
     "limitations": [
       "The live account is small and the observation period is short.",
       "Backtests are hypothetical and may not reproduce future results.",
-      "Operational reliability and investment performance are separate tests."
+      "Operational reliability and investment performance are separate tests.",
+      "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable."
     ]
   },
   "research": {
@@ -37716,6 +33678,7 @@
   "disclosures": [
     "This is a small, live experiment and not a recommendation or profit guarantee.",
     "Challenger orders are hypothetical and are never sent to the broker.",
-    "Displayed values may be delayed and differ from the brokerage account."
+    "Displayed values may be delayed and differ from the brokerage account.",
+    "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable."
   ]
 }

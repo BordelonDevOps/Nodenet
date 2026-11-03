@@ -227,6 +227,7 @@ function renderSnapshot(d) {
   status(stale?'stale':'available',(stale?'Stale snapshot. ':'')+'Publication: '+d.published_at+' · Account valuation: '+d.valuation_as_of+'. Freshness limit: '+FRESHNESS_LIMIT_HOURS+' hours. Process, broker connectivity, and trading readiness are not assessed here.');
   byId('value').textContent=money(d.account.value);
   byId('contributions').textContent=money(d.account.net_contributions);
+  byId('contribution-note').textContent=d.account.contribution_source==='account_owner_correction'?'Account-owner corrected lifetime total':'Deposits minus withdrawals';
   byId('gain').textContent=money(d.account.investment_gain);
   byId('gain-rate').textContent=pct(d.account.simple_return_on_contributions)+' simple return on contributed funds';
   byId('experiment-funding').textContent=money(d.account.net_contributions)+' contributed live trading test';
