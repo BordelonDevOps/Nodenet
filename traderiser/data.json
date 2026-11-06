@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8.0",
-  "published_at": "2026-11-05T15:25:54.140575+00:00",
-  "valuation_as_of": "2026-11-05T15:24:58.036000+00:00",
+  "published_at": "2026-11-06T15:26:43.759100+00:00",
+  "valuation_as_of": "2026-11-06T15:24:33.669000+00:00",
   "valuation_provenance": "fresh_broker_supplied",
   "experiment": {
     "name": "TradeRiser Agentic Trading Experiment",
@@ -10,13 +10,13 @@
     "objective": "Continue the live observation through December 31, 2026 using the experiment&amp;#x27;s cumulative contributed funds."
   },
   "account": {
-    "value": 83.3144,
-    "cash": 6.93,
-    "invested": 76.3797,
-    "buying_power": 6.93,
+    "value": 81.2922,
+    "cash": 18.6,
+    "invested": 62.6864,
+    "buying_power": 18.6,
     "net_contributions": 10.0,
-    "investment_gain": 73.3144,
-    "simple_return_on_contributions": 7.33144,
+    "investment_gain": 71.2922,
+    "simple_return_on_contributions": 7.12922,
     "currency": "USD",
     "contribution_source": "account_owner_correction",
     "cash_flow_history_complete": false
@@ -27,15 +27,7 @@
       "shares": 1.1e-05,
       "average_price": 0.0,
       "cost_basis": 0.0,
-      "current_value": 0.00306185,
-      "strategy": "champion"
-    },
-    {
-      "symbol": "DXJ",
-      "shares": 0.121902,
-      "average_price": 59.47,
-      "cost_basis": 7.24951194,
-      "current_value": 7.048373639999999,
+      "current_value": 0.00300355,
       "strategy": "champion"
     },
     {
@@ -43,7 +35,7 @@
       "shares": 0.101018,
       "average_price": 66.42,
       "cost_basis": 6.70961556,
-      "current_value": 7.36168675,
+      "current_value": 7.12378936,
       "strategy": "champion"
     },
     {
@@ -51,7 +43,7 @@
       "shares": 9e-05,
       "average_price": 111.11,
       "cost_basis": 0.0099999,
-      "current_value": 0.009882,
+      "current_value": 0.0095166,
       "strategy": "champion"
     },
     {
@@ -59,7 +51,7 @@
       "shares": 0.068904,
       "average_price": 61.68,
       "cost_basis": 4.249998720000001,
-      "current_value": 4.07842776,
+      "current_value": 3.93304032,
       "strategy": "champion"
     },
     {
@@ -67,7 +59,7 @@
       "shares": 0.070541,
       "average_price": 118.51,
       "cost_basis": 8.359813910000002,
-      "current_value": 8.728743340000001,
+      "current_value": 8.52205821,
       "strategy": "champion"
     },
     {
@@ -75,7 +67,7 @@
       "shares": 0.021746,
       "average_price": 148.99,
       "cost_basis": 3.2399365400000004,
-      "current_value": 3.3217015,
+      "current_value": 3.19242153,
       "strategy": "champion"
     },
     {
@@ -83,7 +75,7 @@
       "shares": 0.018105,
       "average_price": 260.7,
       "cost_basis": 4.7199735,
-      "current_value": 5.0994543000000006,
+      "current_value": 4.9292673,
       "strategy": "champion"
     },
     {
@@ -91,7 +83,7 @@
       "shares": 0.003724,
       "average_price": 1380.24,
       "cost_basis": 5.1400137599999995,
-      "current_value": 5.357011239999999,
+      "current_value": 5.0826083,
       "strategy": "champion"
     },
     {
@@ -99,7 +91,7 @@
       "shares": 0.001677,
       "average_price": 787.12,
       "cost_basis": 1.3200002400000002,
-      "current_value": 1.5763967700000001,
+      "current_value": 1.51733283,
       "strategy": "champion"
     },
     {
@@ -107,15 +99,7 @@
       "shares": 0.030688,
       "average_price": 339.55,
       "cost_basis": 10.4201104,
-      "current_value": 10.75706464,
-      "strategy": "champion"
-    },
-    {
-      "symbol": "ADI",
-      "shares": 0.002906,
-      "average_price": 388.85,
-      "cost_basis": 1.1299981000000001,
-      "current_value": 1.11311424,
+      "current_value": 10.541328,
       "strategy": "champion"
     },
     {
@@ -123,7 +107,7 @@
       "shares": 0.006876,
       "average_price": 167.25,
       "cost_basis": 1.1500110000000001,
-      "current_value": 1.01699478,
+      "current_value": 1.01654784,
       "strategy": "champion"
     },
     {
@@ -131,23 +115,7 @@
       "shares": 0.013168,
       "average_price": 150.36,
       "cost_basis": 1.97994048,
-      "current_value": 1.836936,
-      "strategy": "champion"
-    },
-    {
-      "symbol": "TXN",
-      "shares": 0.016555,
-      "average_price": 302.02,
-      "cost_basis": 4.9999411,
-      "current_value": 4.870563775,
-      "strategy": "champion"
-    },
-    {
-      "symbol": "XBI",
-      "shares": 0.036677,
-      "average_price": 151.87,
-      "cost_basis": 5.570135990000001,
-      "current_value": 5.62221733,
+      "current_value": 1.79604936,
       "strategy": "champion"
     },
     {
@@ -155,15 +123,15 @@
       "shares": 0.010484,
       "average_price": 454.03,
       "cost_basis": 4.76005052,
-      "current_value": 5.030417154,
+      "current_value": 4.82402913,
       "strategy": "champion"
     },
     {
       "symbol": "SCHD",
-      "shares": 0.097772,
-      "average_price": 35.7,
-      "cost_basis": 3.4904604000000004,
-      "current_value": 3.5476570199999995,
+      "shares": 0.28874,
+      "average_price": 36.09,
+      "cost_basis": 10.4206266,
+      "current_value": 10.1954094,
       "strategy": "champion"
     }
   ],
@@ -1953,6 +1921,101 @@
       "execution_label": "historical_fill",
       "decision_source": "not_recorded",
       "broker_submission_source": "user"
+    },
+    {
+      "symbol": "SCHD",
+      "side": "buy",
+      "dollar_amount": 6.93,
+      "filled_notional": 6.93,
+      "state": "filled",
+      "quantity": 0.190968,
+      "average_price": 36.2887,
+      "fees": 0.0,
+      "reconciled_at": "2026-11-05T15:25:05.791000+00:00",
+      "authorized": null,
+      "orders_match": null,
+      "deferred_follow_up": null,
+      "source": "user",
+      "authorization_label": "historical_fill_no_delegated_authorization",
+      "execution_label": "historical_fill",
+      "decision_source": "not_recorded",
+      "broker_submission_source": "user"
+    },
+    {
+      "symbol": "DXJ",
+      "side": "sell",
+      "dollar_amount": 7.0384,
+      "filled_notional": 7.0384,
+      "state": "filled",
+      "quantity": 0.121902,
+      "average_price": 57.7385,
+      "fees": 0.0,
+      "reconciled_at": "2026-11-05T15:26:44.637000+00:00",
+      "authorized": null,
+      "orders_match": null,
+      "deferred_follow_up": null,
+      "source": "user",
+      "authorization_label": "historical_fill_no_delegated_authorization",
+      "execution_label": "historical_fill",
+      "decision_source": "not_recorded",
+      "broker_submission_source": "user"
+    },
+    {
+      "symbol": "XBI",
+      "side": "sell",
+      "dollar_amount": 5.6101,
+      "filled_notional": 5.6101,
+      "state": "filled",
+      "quantity": 0.036677,
+      "average_price": 152.96,
+      "fees": 0.0,
+      "reconciled_at": "2026-11-05T15:28:44.932000+00:00",
+      "authorized": null,
+      "orders_match": null,
+      "deferred_follow_up": null,
+      "source": "user",
+      "authorization_label": "historical_fill_no_delegated_authorization",
+      "execution_label": "historical_fill",
+      "decision_source": "not_recorded",
+      "broker_submission_source": "user"
+    },
+    {
+      "symbol": "TXN",
+      "side": "sell",
+      "dollar_amount": 4.8445,
+      "filled_notional": 4.8445,
+      "state": "filled",
+      "quantity": 0.016555,
+      "average_price": 292.63,
+      "fees": 0.0,
+      "reconciled_at": "2026-11-05T15:29:11.198000+00:00",
+      "authorized": null,
+      "orders_match": null,
+      "deferred_follow_up": null,
+      "source": "user",
+      "authorization_label": "historical_fill_no_delegated_authorization",
+      "execution_label": "historical_fill",
+      "decision_source": "not_recorded",
+      "broker_submission_source": "user"
+    },
+    {
+      "symbol": "ADI",
+      "side": "sell",
+      "dollar_amount": 1.1144,
+      "filled_notional": 1.1144,
+      "state": "filled",
+      "quantity": 0.002906,
+      "average_price": 383.49,
+      "fees": 0.0,
+      "reconciled_at": "2026-11-05T15:29:55.631000+00:00",
+      "authorized": null,
+      "orders_match": null,
+      "deferred_follow_up": null,
+      "source": "user",
+      "authorization_label": "historical_fill_no_delegated_authorization",
+      "execution_label": "historical_fill",
+      "decision_source": "not_recorded",
+      "broker_submission_source": "user"
     }
   ],
   "decisions": [
@@ -2536,16 +2599,16 @@
       "generated_at": "2026-08-18T14:21:10.132674+00:00",
       "status": "filled",
       "selected": [
-        "IWM"
+        "SPY"
       ],
       "orders": [
         {
-          "symbol": "IWM",
+          "symbol": "SPY",
           "side": "buy",
-          "dollars": 3.8899,
+          "dollars": 4.5292,
           "status": "filled",
-          "quantity": 0.01288,
-          "average_price": 302.0099,
+          "quantity": 0.005892,
+          "average_price": 768.7099,
           "fees": 0.0
         }
       ],
@@ -2569,16 +2632,16 @@
       "generated_at": "2026-08-18T14:21:10.132674+00:00",
       "status": "filled",
       "selected": [
-        "QQQ"
+        "SPY"
       ],
       "orders": [
         {
-          "symbol": "QQQ",
+          "symbol": "SPY",
           "side": "buy",
-          "dollars": 2.5698,
+          "dollars": 4.5292,
           "status": "filled",
-          "quantity": 0.003575,
-          "average_price": 718.8248,
+          "quantity": 0.005892,
+          "average_price": 768.7099,
           "fees": 0.0
         }
       ],
@@ -3284,7 +3347,7 @@
     {
       "kind": "champion",
       "generated_at": "2026-08-28T14:16:40.724697+00:00",
-      "status": "not_authorized",
+      "status": "no_trade",
       "selected": [
         "CRAK",
         "DIVB",
@@ -3293,14 +3356,6 @@
         "LVHI"
       ],
       "orders": [
-        {
-          "symbol": "SPY",
-          "side": "sell",
-          "dollars": 2.2,
-          "reason": "rules_based_rebalance",
-          "decision_class": "routine_replacement",
-          "replacement_pair": "SPY->FLTW"
-        },
         {
           "symbol": "FLTW",
           "side": "buy",
@@ -3311,12 +3366,10 @@
         }
       ],
       "explanation": [
-        "SPY quote is stale",
-        "FLTW quote is stale"
+        "TradeRiser completed a rules-based portfolio evaluation."
       ],
       "regime": null,
-      "stage": "authorization",
-      "authorized": false
+      "stage": "evaluation"
     },
     {
       "kind": "champion",
@@ -3728,16 +3781,16 @@
       "generated_at": "2026-08-28T15:46:57.064617+00:00",
       "status": "filled",
       "selected": [
-        "CRAK"
+        "DIVB"
       ],
       "orders": [
         {
-          "symbol": "CRAK",
+          "symbol": "DIVB",
           "side": "buy",
-          "dollars": 4.76,
+          "dollars": 2.44,
           "status": "filled",
-          "quantity": 0.079245,
-          "average_price": 60.0663,
+          "quantity": 0.035311,
+          "average_price": 69.0999,
           "fees": 0.0
         }
       ],
@@ -3761,16 +3814,16 @@
       "generated_at": "2026-08-28T15:46:57.064617+00:00",
       "status": "filled",
       "selected": [
-        "DXJ"
+        "DIVB"
       ],
       "orders": [
         {
-          "symbol": "DXJ",
+          "symbol": "DIVB",
           "side": "buy",
-          "dollars": 2.8,
+          "dollars": 2.44,
           "status": "filled",
-          "quantity": 0.015514,
-          "average_price": 180.4799,
+          "quantity": 0.035311,
+          "average_price": 69.0999,
           "fees": 0.0
         }
       ],
@@ -4116,16 +4169,16 @@
       "generated_at": "2026-09-01T14:41:05.557638+00:00",
       "status": "filled",
       "selected": [
-        "FBT"
+        "IHE"
       ],
       "orders": [
         {
-          "symbol": "FBT",
+          "symbol": "IHE",
           "side": "buy",
-          "dollars": 3.71,
+          "dollars": 4.32,
           "status": "filled",
-          "quantity": 0.013854,
-          "average_price": 267.7899,
+          "quantity": 0.041468,
+          "average_price": 104.176,
           "fees": 0.0
         }
       ],
@@ -5918,16 +5971,16 @@
       "generated_at": "2026-09-15T14:58:59.794986+00:00",
       "status": "filled",
       "selected": [
-        "VLUE"
+        "DXJ"
       ],
       "orders": [
         {
-          "symbol": "VLUE",
+          "symbol": "DXJ",
           "side": "buy",
-          "dollars": 1.0999,
+          "dollars": 3.0099,
           "status": "filled",
-          "quantity": 0.005513,
-          "average_price": 199.5027,
+          "quantity": 0.017098,
+          "average_price": 176.0399,
           "fees": 0.0
         }
       ],
@@ -5951,16 +6004,16 @@
       "generated_at": "2026-09-15T14:58:59.794986+00:00",
       "status": "filled",
       "selected": [
-        "IHE"
+        "DXJ"
       ],
       "orders": [
         {
-          "symbol": "IHE",
+          "symbol": "DXJ",
           "side": "buy",
-          "dollars": 2.73,
+          "dollars": 3.0099,
           "status": "filled",
-          "quantity": 0.027145,
-          "average_price": 100.5699,
+          "quantity": 0.017098,
+          "average_price": 176.0399,
           "fees": 0.0
         }
       ],
@@ -5984,16 +6037,16 @@
       "generated_at": "2026-09-15T14:58:59.794986+00:00",
       "status": "filled",
       "selected": [
-        "FBT"
+        "DXJ"
       ],
       "orders": [
         {
-          "symbol": "FBT",
+          "symbol": "DXJ",
           "side": "buy",
-          "dollars": 3.2699,
+          "dollars": 3.0099,
           "status": "filled",
-          "quantity": 0.012503,
-          "average_price": 261.5319,
+          "quantity": 0.017098,
+          "average_price": 176.0399,
           "fees": 0.0
         }
       ],
@@ -6926,16 +6979,16 @@
       "generated_at": "2026-09-25T14:21:01.218052+00:00",
       "status": "filled",
       "selected": [
-        "IWM"
+        "FLTW"
       ],
       "orders": [
         {
-          "symbol": "IWM",
-          "side": "sell",
-          "dollars": 4.03,
+          "symbol": "FLTW",
+          "side": "buy",
+          "dollars": 4.0299,
           "status": "filled",
-          "quantity": 0.01435,
-          "average_price": 280.8339,
+          "quantity": 0.036344,
+          "average_price": 110.883,
           "fees": 0.0
         }
       ],
@@ -7628,16 +7681,16 @@
       "generated_at": "2026-10-01T14:44:42.902729+00:00",
       "status": "filled",
       "selected": [
-        "DIVB"
+        "QQQ"
       ],
       "orders": [
         {
-          "symbol": "DIVB",
+          "symbol": "QQQ",
           "side": "buy",
-          "dollars": 5.13,
+          "dollars": 3.4299,
           "status": "filled",
-          "quantity": 0.078464,
-          "average_price": 65.3799,
+          "quantity": 0.004633,
+          "average_price": 740.3299,
           "fees": 0.0
         }
       ],
@@ -7661,16 +7714,16 @@
       "generated_at": "2026-10-01T14:44:42.902729+00:00",
       "status": "filled",
       "selected": [
-        "DXJ"
+        "QQQ"
       ],
       "orders": [
         {
-          "symbol": "DXJ",
+          "symbol": "QQQ",
           "side": "buy",
-          "dollars": 1.4399,
+          "dollars": 3.4299,
           "status": "filled",
-          "quantity": 0.008022,
-          "average_price": 179.4975,
+          "quantity": 0.004633,
+          "average_price": 740.3299,
           "fees": 0.0
         }
       ],
@@ -8480,16 +8533,16 @@
       "generated_at": "2026-10-08T14:46:12.003468+00:00",
       "status": "filled",
       "selected": [
-        "IWM"
+        "IHE"
       ],
       "orders": [
         {
-          "symbol": "IWM",
+          "symbol": "IHE",
           "side": "sell",
-          "dollars": 1.6772,
+          "dollars": 6.6774,
           "status": "filled",
-          "quantity": 0.00608,
-          "average_price": 275.8601,
+          "quantity": 0.06862,
+          "average_price": 97.3101,
           "fees": 0.0
         }
       ],
@@ -9497,16 +9550,16 @@
       "generated_at": "2026-10-13T15:47:01.768843+00:00",
       "status": "filled",
       "selected": [
-        "RPV"
+        "GSG"
       ],
       "orders": [
         {
-          "symbol": "RPV",
+          "symbol": "GSG",
           "side": "buy",
-          "dollars": 6.36,
+          "dollars": 6.05,
           "status": "filled",
-          "quantity": 0.053839,
-          "average_price": 118.1299,
+          "quantity": 0.1649,
+          "average_price": 36.6888,
           "fees": 0.0
         }
       ],
@@ -9530,16 +9583,16 @@
       "generated_at": "2026-10-13T15:47:01.768843+00:00",
       "status": "filled",
       "selected": [
-        "IXC"
+        "GSG"
       ],
       "orders": [
         {
-          "symbol": "IXC",
+          "symbol": "GSG",
           "side": "buy",
-          "dollars": 4.25,
+          "dollars": 6.05,
           "status": "filled",
-          "quantity": 0.068904,
-          "average_price": 61.6799,
+          "quantity": 0.1649,
+          "average_price": 36.6888,
           "fees": 0.0
         }
       ],
@@ -11553,16 +11606,16 @@
       "generated_at": "2026-10-22T15:51:56.728656+00:00",
       "status": "filled",
       "selected": [
-        "FTNT"
+        "ADI"
       ],
       "orders": [
         {
-          "symbol": "FTNT",
-          "side": "sell",
-          "dollars": 1.1482,
+          "symbol": "ADI",
+          "side": "buy",
+          "dollars": 1.1298,
           "status": "filled",
-          "quantity": 0.006631,
-          "average_price": 173.1601,
+          "quantity": 0.002906,
+          "average_price": 388.7664,
           "fees": 0.0
         }
       ],
@@ -12013,16 +12066,16 @@
       "generated_at": "2026-10-26T14:22:03.324347+00:00",
       "status": "filled",
       "selected": [
-        "GME"
+        "COP"
       ],
       "orders": [
         {
-          "symbol": "GME",
-          "side": "sell",
-          "dollars": 5.0278,
+          "symbol": "COP",
+          "side": "buy",
+          "dollars": 1.9799,
           "status": "filled",
-          "quantity": 0.20257,
-          "average_price": 24.8201,
+          "quantity": 0.013168,
+          "average_price": 150.3599,
           "fees": 0.0
         }
       ],
@@ -12046,16 +12099,16 @@
       "generated_at": "2026-10-26T14:22:03.324347+00:00",
       "status": "filled",
       "selected": [
-        "CRAK"
+        "COP"
       ],
       "orders": [
         {
-          "symbol": "CRAK",
-          "side": "sell",
-          "dollars": 3.5669,
+          "symbol": "COP",
+          "side": "buy",
+          "dollars": 1.9799,
           "status": "filled",
-          "quantity": 0.0553,
-          "average_price": 64.5016,
+          "quantity": 0.013168,
+          "average_price": 150.3599,
           "fees": 0.0
         }
       ],
@@ -12275,16 +12328,16 @@
       "generated_at": "2026-10-27T14:21:58.709530+00:00",
       "status": "filled",
       "selected": [
-        "GME"
+        "XBI"
       ],
       "orders": [
         {
-          "symbol": "GME",
-          "side": "sell",
-          "dollars": 2.42,
+          "symbol": "XBI",
+          "side": "buy",
+          "dollars": 3.6199,
           "status": "filled",
-          "quantity": 0.101119,
-          "average_price": 23.932,
+          "quantity": 0.023912,
+          "average_price": 151.3851,
           "fees": 0.0
         }
       ],
@@ -12308,16 +12361,16 @@
       "generated_at": "2026-10-27T14:21:58.709530+00:00",
       "status": "filled",
       "selected": [
-        "TXN"
+        "XBI"
       ],
       "orders": [
         {
-          "symbol": "TXN",
+          "symbol": "XBI",
           "side": "buy",
-          "dollars": 4.9698,
+          "dollars": 3.6199,
           "status": "filled",
-          "quantity": 0.01646,
-          "average_price": 301.9307,
+          "quantity": 0.023912,
+          "average_price": 151.3851,
           "fees": 0.0
         }
       ],
@@ -13895,6 +13948,171 @@
           "status": "filled",
           "quantity": 0.200791,
           "average_price": 34.5329,
+          "fees": 0.0
+        }
+      ],
+      "authorized": null,
+      "authorization_basis": null,
+      "authorization_label": "historical_fill_no_delegated_authorization",
+      "reconciled": null,
+      "source": "user",
+      "execution_label": "historical_fill",
+      "deferred_follow_up": null,
+      "decision_source": "not_recorded",
+      "broker_submission_source": "user",
+      "stage": "history",
+      "explanation": [
+        "A terminal historical fill is included for continuity; no delegated authorization is claimed."
+      ],
+      "regime": null
+    },
+    {
+      "kind": "historical_trade",
+      "generated_at": "2026-11-05T15:25:05.791000+00:00",
+      "status": "filled",
+      "selected": [
+        "SCHD"
+      ],
+      "orders": [
+        {
+          "symbol": "SCHD",
+          "side": "buy",
+          "dollars": 6.93,
+          "status": "filled",
+          "quantity": 0.190968,
+          "average_price": 36.2887,
+          "fees": 0.0
+        }
+      ],
+      "authorized": null,
+      "authorization_basis": null,
+      "authorization_label": "historical_fill_no_delegated_authorization",
+      "reconciled": null,
+      "source": "user",
+      "execution_label": "historical_fill",
+      "deferred_follow_up": null,
+      "decision_source": "not_recorded",
+      "broker_submission_source": "user",
+      "stage": "history",
+      "explanation": [
+        "A terminal historical fill is included for continuity; no delegated authorization is claimed."
+      ],
+      "regime": null
+    },
+    {
+      "kind": "historical_trade",
+      "generated_at": "2026-11-05T15:26:44.637000+00:00",
+      "status": "filled",
+      "selected": [
+        "DXJ"
+      ],
+      "orders": [
+        {
+          "symbol": "DXJ",
+          "side": "sell",
+          "dollars": 7.0384,
+          "status": "filled",
+          "quantity": 0.121902,
+          "average_price": 57.7385,
+          "fees": 0.0
+        }
+      ],
+      "authorized": null,
+      "authorization_basis": null,
+      "authorization_label": "historical_fill_no_delegated_authorization",
+      "reconciled": null,
+      "source": "user",
+      "execution_label": "historical_fill",
+      "deferred_follow_up": null,
+      "decision_source": "not_recorded",
+      "broker_submission_source": "user",
+      "stage": "history",
+      "explanation": [
+        "A terminal historical fill is included for continuity; no delegated authorization is claimed."
+      ],
+      "regime": null
+    },
+    {
+      "kind": "historical_trade",
+      "generated_at": "2026-11-05T15:28:44.932000+00:00",
+      "status": "filled",
+      "selected": [
+        "XBI"
+      ],
+      "orders": [
+        {
+          "symbol": "XBI",
+          "side": "sell",
+          "dollars": 5.6101,
+          "status": "filled",
+          "quantity": 0.036677,
+          "average_price": 152.96,
+          "fees": 0.0
+        }
+      ],
+      "authorized": null,
+      "authorization_basis": null,
+      "authorization_label": "historical_fill_no_delegated_authorization",
+      "reconciled": null,
+      "source": "user",
+      "execution_label": "historical_fill",
+      "deferred_follow_up": null,
+      "decision_source": "not_recorded",
+      "broker_submission_source": "user",
+      "stage": "history",
+      "explanation": [
+        "A terminal historical fill is included for continuity; no delegated authorization is claimed."
+      ],
+      "regime": null
+    },
+    {
+      "kind": "historical_trade",
+      "generated_at": "2026-11-05T15:29:11.198000+00:00",
+      "status": "filled",
+      "selected": [
+        "TXN"
+      ],
+      "orders": [
+        {
+          "symbol": "TXN",
+          "side": "sell",
+          "dollars": 4.8445,
+          "status": "filled",
+          "quantity": 0.016555,
+          "average_price": 292.63,
+          "fees": 0.0
+        }
+      ],
+      "authorized": null,
+      "authorization_basis": null,
+      "authorization_label": "historical_fill_no_delegated_authorization",
+      "reconciled": null,
+      "source": "user",
+      "execution_label": "historical_fill",
+      "deferred_follow_up": null,
+      "decision_source": "not_recorded",
+      "broker_submission_source": "user",
+      "stage": "history",
+      "explanation": [
+        "A terminal historical fill is included for continuity; no delegated authorization is claimed."
+      ],
+      "regime": null
+    },
+    {
+      "kind": "historical_trade",
+      "generated_at": "2026-11-05T15:29:55.631000+00:00",
+      "status": "filled",
+      "selected": [
+        "ADI"
+      ],
+      "orders": [
+        {
+          "symbol": "ADI",
+          "side": "sell",
+          "dollars": 1.1144,
+          "status": "filled",
+          "quantity": 0.002906,
+          "average_price": 383.49,
           "fees": 0.0
         }
       ],
@@ -16883,109 +17101,89 @@
       "excess_return": null
     },
     {
-      "date": "2026-11-05",
-      "value": 83.3144,
-      "cash": 6.93,
+      "date": "2026-11-06",
+      "value": 81.2922,
+      "cash": 18.6,
       "holdings": [
         {
           "symbol": "IWM",
           "shares": 1.1e-05,
-          "value": 0.00306185
-        },
-        {
-          "symbol": "DXJ",
-          "shares": 0.121902,
-          "value": 7.048373639999999
+          "value": 0.00300355
         },
         {
           "symbol": "DIVB",
           "shares": 0.101018,
-          "value": 7.36168675
+          "value": 7.12378936
         },
         {
           "symbol": "IHE",
           "shares": 9e-05,
-          "value": 0.009882
+          "value": 0.0095166
         },
         {
           "symbol": "IXC",
           "shares": 0.068904,
-          "value": 4.07842776
+          "value": 3.93304032
         },
         {
           "symbol": "RPV",
           "shares": 0.070541,
-          "value": 8.728743340000001
+          "value": 8.52205821
         },
         {
           "symbol": "MRK",
           "shares": 0.021746,
-          "value": 3.3217015
+          "value": 3.19242153
         },
         {
           "symbol": "JNJ",
           "shares": 0.018105,
-          "value": 5.0994543000000006
+          "value": 4.9292673
         },
         {
           "symbol": "LLY",
           "shares": 0.003724,
-          "value": 5.357011239999999
+          "value": 5.0826083
         },
         {
           "symbol": "REGN",
           "shares": 0.001677,
-          "value": 1.5763967700000001
+          "value": 1.51733283
         },
         {
           "symbol": "AAPL",
           "shares": 0.030688,
-          "value": 10.75706464
-        },
-        {
-          "symbol": "ADI",
-          "shares": 0.002906,
-          "value": 1.11311424
+          "value": 10.541328
         },
         {
           "symbol": "USO",
           "shares": 0.006876,
-          "value": 1.01699478
+          "value": 1.01654784
         },
         {
           "symbol": "COP",
           "shares": 0.013168,
-          "value": 1.836936
-        },
-        {
-          "symbol": "TXN",
-          "shares": 0.016555,
-          "value": 4.870563775
-        },
-        {
-          "symbol": "XBI",
-          "shares": 0.036677,
-          "value": 5.62221733
+          "value": 1.79604936
         },
         {
           "symbol": "AMGN",
           "shares": 0.010484,
-          "value": 5.030417154
+          "value": 4.82402913
         },
         {
           "symbol": "SCHD",
-          "shares": 0.097772,
-          "value": 3.5476570199999995
+          "shares": 0.28874,
+          "value": 10.1954094
         }
       ],
-      "captured_at": "2026-11-05T15:24:58.036000+00:00",
+      "captured_at": "2026-11-06T15:24:33.669000+00:00",
       "source": "fresh_broker_supplied",
       "breakdown_estimated": false,
       "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
       "net_cash_flow": null,
       "contributions": null,
       "withdrawals": null,
-      "change": 9.6123,
+      "change": 7.5901,
       "change_pct": null,
       "market_gain": null,
       "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
@@ -16999,7 +17197,7 @@
     }
   ],
   "performance": {
-    "simple_return_on_contributions": 7.33144,
+    "simple_return_on_contributions": 7.12922,
     "time_weighted_return": null,
     "time_weighted_quality": "unavailable_corrected_cash_flow_history",
     "money_weighted": {
@@ -17023,10 +17221,10 @@
   },
   "daily_briefing": {
     "as_of": "2026-11-04",
-    "headline": "On-demand signal: reduce GSG by $3.47. The separate manual sale closed the position.",
-    "portfolio_context": "The live account currently holds IWM, DXJ, DIVB, IHE, IXC, RPV, MRK, JNJ, LLY, REGN, AAPL, ADI, USO, COP, TXN, XBI, AMGN, SCHD.",
-    "market_context": "The completed-session screen qualified MRNA, TXN, MRK, DE, NEM, JNJ, AMGN, XBI, DXJ, PM, IHE, KO, DIVB, UNP, ABBV, ABNB, AAPL, GILD, RPV, LIN, PFE, TMO, UNH, REGN, SPYM, VOO, IVV, SPY, RSP, LLY, SCHD, MCK, XLP, V, XLF, MA, MSFT, SGOV, BIL, XLV, PG, DHR, COST, MDT, WFC, DIS, BRK-B, ABT, ACN, SPOT, IBM, ISRG, SPGI, MCD, HD for consideration. Separate dividend-yield research, provider catalog as of 2026-10-15: HOOY 88.08%; GDXY 81.80%; PLTW 74.56%; YBTC 60.10%; AMDW 48.24%; BLOX 45.32%; AMDY 35.73%; KSLV 32.57%; IEP 29.83%; OXLC 28.78%. This ranks indicated dividend yield, not total return. High yield can reflect a falling price, a nonrecurring distribution, or an unsustainable payout. It does not affect live orders. No independently completed 9:15 run was verified.",
-    "champion": "The live strategy currently favors AAPL, ABBV, ABNB, AMGN, DE, GILD, JNJ, KO, LIN, MRK, MRNA, NEM, PFE, PM, SPYM, TMO, UNH, UNP, XBI.",
+    "headline": "No completed November 6 TradeRiser signal was found. The latest signal was generated November 5.",
+    "portfolio_context": "The live account currently holds IWM, DIVB, IHE, IXC, RPV, MRK, JNJ, LLY, REGN, AAPL, USO, COP, AMGN, SCHD.",
+    "market_context": "Robinhood confirmed five additional manual fills and two rejected manual IWM sell orders from November 5. The broker did not provide rejection reasons. The completed-session screen qualified MRNA, TXN, MRK, DE, NEM, JNJ, AMGN, XBI, DXJ, PM, IHE, KO, DIVB, UNP, ABBV, ABNB, AAPL, GILD, RPV, LIN, PFE, TMO, UNH, REGN, SPYM, VOO, IVV, SPY, RSP, LLY, SCHD, MCK, XLP, V, XLF, MA, MSFT, SGOV, BIL, XLV, PG, DHR, COST, MDT, WFC, DIS, BRK-B, ABT, ACN, SPOT, IBM, ISRG, SPGI, MCD, HD for consideration. Separate dividend-yield research, provider catalog as of 2026-10-15: HOOY 88.08%; GDXY 81.80%; PLTW 74.56%; YBTC 60.10%; AMDW 48.24%; BLOX 45.32%; AMDY 35.73%; KSLV 32.57%; IEP 29.83%; OXLC 28.78%. This ranks indicated dividend yield, not total return. High yield can reflect a falling price, a nonrecurring distribution, or an unsustainable payout. It does not affect live orders.",
+    "champion": "The November 5 signal favored AAPL, ABBV, ABNB, AMGN, DE, GILD, JNJ, KO, LIN, MRK, MRNA, NEM, PFE, PM, SPYM, TMO, UNH, UNP, XBI.",
     "challenger": "The research-only challenger favors ABBV, TMO, PSX.",
     "disclosure": "This briefing explains completed-session model inputs; it is not a real-time news feed or a recommendation."
   },
@@ -17059,7 +17257,7 @@
     ]
   },
   "evidence": {
-    "live_days": 88,
+    "live_days": 89,
     "champion_cycles": 114,
     "challenger_cycles": 63,
     "reconciled_trades": 13,
