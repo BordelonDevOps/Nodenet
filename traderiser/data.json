@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8.0",
-  "published_at": "2026-11-10T15:33:52.944378+00:00",
-  "valuation_as_of": "2026-11-10T15:33:29.766000+00:00",
+  "published_at": "2026-11-10T16:32:05.542051+00:00",
+  "valuation_as_of": "2026-11-10T16:30:44.716000+00:00",
   "valuation_provenance": "fresh_broker_supplied",
   "experiment": {
     "name": "TradeRiser Agentic Trading Experiment",
@@ -10,13 +10,13 @@
     "objective": "Continue the live observation through December 31, 2026 using the experiment&amp;#x27;s cumulative contributed funds."
   },
   "account": {
-    "value": 82.0422,
-    "cash": 0.0,
-    "invested": 82.0422,
-    "buying_power": 0.0,
+    "value": 82.2054,
+    "cash": 2.32,
+    "invested": 79.8854,
+    "buying_power": 2.32,
     "net_contributions": 10.0,
-    "investment_gain": 72.0422,
-    "simple_return_on_contributions": 7.20422,
+    "investment_gain": 72.2054,
+    "simple_return_on_contributions": 7.22054,
     "currency": "USD",
     "contribution_source": "account_owner_correction",
     "cash_flow_history_complete": false
@@ -27,7 +27,7 @@
       "shares": 1.1e-05,
       "average_price": 0.0,
       "cost_basis": 0.0,
-      "current_value": 0.0030767,
+      "current_value": 0.00306878,
       "strategy": "champion"
     },
     {
@@ -35,7 +35,7 @@
       "shares": 0.101018,
       "average_price": 66.42,
       "cost_basis": 6.70961556,
-      "current_value": 7.135406430000001,
+      "current_value": 7.16116602,
       "strategy": "champion"
     },
     {
@@ -43,7 +43,7 @@
       "shares": 9e-05,
       "average_price": 111.11,
       "cost_basis": 0.0099999,
-      "current_value": 0.009832500000000001,
+      "current_value": 0.0098343,
       "strategy": "champion"
     },
     {
@@ -51,7 +51,7 @@
       "shares": 0.070541,
       "average_price": 118.51,
       "cost_basis": 8.359813910000002,
-      "current_value": 8.573905845,
+      "current_value": 8.59683167,
       "strategy": "champion"
     },
     {
@@ -59,7 +59,7 @@
       "shares": 0.021746,
       "average_price": 148.99,
       "cost_basis": 3.2399365400000004,
-      "current_value": 3.17687314,
+      "current_value": 3.1801350400000006,
       "strategy": "champion"
     },
     {
@@ -67,7 +67,7 @@
       "shares": 0.018105,
       "average_price": 260.7,
       "cost_basis": 4.7199735,
-      "current_value": 5.07971985,
+      "current_value": 5.09094495,
       "strategy": "champion"
     },
     {
@@ -75,7 +75,7 @@
       "shares": 0.007806,
       "average_price": 1389.96,
       "cost_basis": 10.85002776,
-      "current_value": 11.022618419999999,
+      "current_value": 11.0529057,
       "strategy": "champion"
     },
     {
@@ -83,7 +83,7 @@
       "shares": 0.001677,
       "average_price": 787.12,
       "cost_basis": 1.3200002400000002,
-      "current_value": 1.5273277500000002,
+      "current_value": 1.5270258900000002,
       "strategy": "champion"
     },
     {
@@ -91,7 +91,7 @@
       "shares": 0.030688,
       "average_price": 339.55,
       "cost_basis": 10.4201104,
-      "current_value": 10.65548736,
+      "current_value": 10.66285248,
       "strategy": "champion"
     },
     {
@@ -99,7 +99,7 @@
       "shares": 0.006876,
       "average_price": 167.25,
       "cost_basis": 1.1500110000000001,
-      "current_value": 0.96174612,
+      "current_value": 0.9719913600000001,
       "strategy": "champion"
     },
     {
@@ -107,7 +107,7 @@
       "shares": 0.010484,
       "average_price": 454.03,
       "cost_basis": 4.76005052,
-      "current_value": 4.8399386,
+      "current_value": 4.8404628,
       "strategy": "champion"
     },
     {
@@ -115,7 +115,7 @@
       "shares": 0.28874,
       "average_price": 36.09,
       "cost_basis": 10.4206266,
-      "current_value": 10.240164100000001,
+      "current_value": 10.2632633,
       "strategy": "champion"
     },
     {
@@ -123,7 +123,7 @@
       "shares": 0.00877,
       "average_price": 670.47,
       "cost_basis": 5.8800219,
-      "current_value": 5.9419381,
+      "current_value": 5.96373155,
       "strategy": "champion"
     },
     {
@@ -131,7 +131,7 @@
       "shares": 0.052661,
       "average_price": 95.9,
       "cost_basis": 5.0501899,
-      "current_value": 5.066514809999999,
+      "current_value": 5.07336074,
       "strategy": "champion"
     },
     {
@@ -139,15 +139,7 @@
       "shares": 0.018441,
       "average_price": 292.83,
       "cost_basis": 5.4000780299999995,
-      "current_value": 5.470430444999999,
-      "strategy": "champion"
-    },
-    {
-      "symbol": "HOOY",
-      "shares": 0.122174,
-      "average_price": 18.58,
-      "cost_basis": 2.26999292,
-      "current_value": 2.33718862,
+      "current_value": 5.487857189999999,
       "strategy": "champion"
     }
   ],
@@ -2157,6 +2149,25 @@
       "average_price": 1398.55,
       "fees": 0.0,
       "reconciled_at": "2026-11-09T16:51:11.181000+00:00",
+      "authorized": null,
+      "orders_match": null,
+      "deferred_follow_up": null,
+      "source": "user",
+      "authorization_label": "historical_fill_no_delegated_authorization",
+      "execution_label": "historical_fill",
+      "decision_source": "not_recorded",
+      "broker_submission_source": "user"
+    },
+    {
+      "symbol": "HOOY",
+      "side": "sell",
+      "dollar_amount": 2.3183,
+      "filled_notional": 2.3183,
+      "state": "filled",
+      "quantity": 0.122174,
+      "average_price": 18.9757,
+      "fees": 0.0,
+      "reconciled_at": "2026-11-10T16:29:04.617000+00:00",
       "authorized": null,
       "orders_match": null,
       "deferred_follow_up": null,
@@ -14670,10 +14681,44 @@
       "explanation": [
         "Signal-only evaluation completed for manual entry; no authorization or assistant order submission occurred.",
         "HOOY: severe trend and drawdown risk exit.",
-        "Available contribution cash: $0.00; no individual replacement pair persisted above the cost-adjusted hurdle."
+        "At morning signal generation, available contribution cash was $0.00; no individual replacement pair persisted above the cost-adjusted hurdle.",
+        "Robinhood subsequently confirmed a manual sale of all 0.122174 HOOY shares. HOOY is absent from the latest complete holdings. The original morning proposal and the actual fill are preserved separately."
       ],
       "regime": null,
       "stage": "evaluation"
+    },
+    {
+      "kind": "historical_trade",
+      "generated_at": "2026-11-10T16:29:04.617000+00:00",
+      "status": "filled",
+      "selected": [
+        "HOOY"
+      ],
+      "orders": [
+        {
+          "symbol": "HOOY",
+          "side": "sell",
+          "dollars": 2.3183,
+          "status": "filled",
+          "quantity": 0.122174,
+          "average_price": 18.9757,
+          "fees": 0.0
+        }
+      ],
+      "authorized": null,
+      "authorization_basis": null,
+      "authorization_label": "historical_fill_no_delegated_authorization",
+      "reconciled": null,
+      "source": "user",
+      "execution_label": "historical_fill",
+      "deferred_follow_up": null,
+      "decision_source": "not_recorded",
+      "broker_submission_source": "user",
+      "stage": "history",
+      "explanation": [
+        "A terminal historical fill is included for continuity; no delegated authorization is claimed."
+      ],
+      "regime": null
     }
   ],
   "portfolio_history": [
@@ -17646,98 +17691,93 @@
     },
     {
       "date": "2026-11-10",
-      "value": 82.0422,
-      "cash": 0.0,
+      "value": 82.2054,
+      "cash": 2.32,
       "holdings": [
         {
           "symbol": "IWM",
           "shares": 1.1e-05,
-          "value": 0.0030767
+          "value": 0.00306878
         },
         {
           "symbol": "DIVB",
           "shares": 0.101018,
-          "value": 7.135406430000001
+          "value": 7.16116602
         },
         {
           "symbol": "IHE",
           "shares": 9e-05,
-          "value": 0.009832500000000001
+          "value": 0.0098343
         },
         {
           "symbol": "RPV",
           "shares": 0.070541,
-          "value": 8.573905845
+          "value": 8.59683167
         },
         {
           "symbol": "MRK",
           "shares": 0.021746,
-          "value": 3.17687314
+          "value": 3.1801350400000006
         },
         {
           "symbol": "JNJ",
           "shares": 0.018105,
-          "value": 5.07971985
+          "value": 5.09094495
         },
         {
           "symbol": "LLY",
           "shares": 0.007806,
-          "value": 11.022618419999999
+          "value": 11.0529057
         },
         {
           "symbol": "REGN",
           "shares": 0.001677,
-          "value": 1.5273277500000002
+          "value": 1.5270258900000002
         },
         {
           "symbol": "AAPL",
           "shares": 0.030688,
-          "value": 10.65548736
+          "value": 10.66285248
         },
         {
           "symbol": "USO",
           "shares": 0.006876,
-          "value": 0.96174612
+          "value": 0.9719913600000001
         },
         {
           "symbol": "AMGN",
           "shares": 0.010484,
-          "value": 4.8399386
+          "value": 4.8404628
         },
         {
           "symbol": "SCHD",
           "shares": 0.28874,
-          "value": 10.240164100000001
+          "value": 10.2632633
         },
         {
           "symbol": "DE",
           "shares": 0.00877,
-          "value": 5.9419381
+          "value": 5.96373155
         },
         {
           "symbol": "KO",
           "shares": 0.052661,
-          "value": 5.066514809999999
+          "value": 5.07336074
         },
         {
           "symbol": "UNP",
           "shares": 0.018441,
-          "value": 5.470430444999999
-        },
-        {
-          "symbol": "HOOY",
-          "shares": 0.122174,
-          "value": 2.33718862
+          "value": 5.487857189999999
         }
       ],
-      "captured_at": "2026-11-10T15:33:29.766000+00:00",
+      "captured_at": "2026-11-10T16:30:44.716000+00:00",
       "source": "fresh_broker_supplied",
       "breakdown_estimated": false,
       "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
       "net_cash_flow": null,
       "contributions": null,
       "withdrawals": null,
-      "change": 8.3401,
+      "change": 8.5033,
       "change_pct": null,
       "market_gain": null,
       "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
@@ -17751,7 +17791,7 @@
     }
   ],
   "performance": {
-    "simple_return_on_contributions": 7.20422,
+    "simple_return_on_contributions": 7.22054,
     "time_weighted_return": null,
     "time_weighted_quality": "unavailable_corrected_cash_flow_history",
     "money_weighted": {
@@ -17775,9 +17815,9 @@
   },
   "daily_briefing": {
     "as_of": "2026-11-09",
-    "headline": "TradeRiser proposed 1 portfolio change.",
-    "portfolio_context": "The live account currently holds IWM, DIVB, IHE, RPV, MRK, JNJ, LLY, REGN, AAPL, USO, AMGN, SCHD, DE, KO, UNP, HOOY.",
-    "market_context": "The completed-session screen qualified MRNA, TXN, MRK, NEM, JNJ, ABNB, AMGN, IHE, DIVB, KO, ABBV, SCHD, LLY, GILD, AAPL, RPV, XLV, LIN, DE, TMO, RSP, V, XLP, MCK, MSFT, MA, XLF, PG, DHR, BRK-B, SGOV, BIL, COST, MDT, DIS, SPGI, ACN, SPOT, ABT, HD, ISRG, IBM, MCD for consideration. Separate dividend-yield research, provider catalog as of 2026-10-15: HOOY 88.08%; GDXY 81.80%; PLTW 74.56%; YBTC 60.10%; AMDW 48.24%; BLOX 45.32%; AMDY 35.73%; KSLV 32.57%; IEP 29.83%; OXLC 28.78%. This ranks indicated dividend yield, not total return. High yield can reflect a falling price, a nonrecurring distribution, or an unsustainable payout. It does not affect live orders. Signal-only evaluation completed for manual entry; no authorization or assistant order submission occurred. HOOY: severe trend and drawdown risk exit. Available contribution cash: $0.00; no individual replacement pair persisted above the cost-adjusted hurdle.",
+    "headline": "HOOY position closed by a broker-confirmed manual sale.",
+    "portfolio_context": "The live account currently holds IWM, DIVB, IHE, RPV, MRK, JNJ, LLY, REGN, AAPL, USO, AMGN, SCHD, DE, KO, UNP.",
+    "market_context": "The completed-session screen qualified MRNA, TXN, MRK, NEM, JNJ, ABNB, AMGN, IHE, DIVB, KO, ABBV, SCHD, LLY, GILD, AAPL, RPV, XLV, LIN, DE, TMO, RSP, V, XLP, MCK, MSFT, MA, XLF, PG, DHR, BRK-B, SGOV, BIL, COST, MDT, DIS, SPGI, ACN, SPOT, ABT, HD, ISRG, IBM, MCD for consideration. Separate dividend-yield research, provider catalog as of 2026-10-15: HOOY 88.08%; GDXY 81.80%; PLTW 74.56%; YBTC 60.10%; AMDW 48.24%; BLOX 45.32%; AMDY 35.73%; KSLV 32.57%; IEP 29.83%; OXLC 28.78%. This ranks indicated dividend yield, not total return. High yield can reflect a falling price, a nonrecurring distribution, or an unsustainable payout. It does not affect live orders. Signal-only evaluation completed for manual entry; no authorization or assistant order submission occurred. HOOY: severe trend and drawdown risk exit. At morning signal generation, available contribution cash was $0.00; no individual replacement pair persisted above the cost-adjusted hurdle. Robinhood subsequently confirmed a manual sale of all 0.122174 HOOY shares. HOOY is absent from the latest complete holdings. The original morning proposal and the actual fill are preserved separately.",
     "champion": "The live strategy currently favors AAPL, ABBV, ABNB, AMGN, DE, GILD, JNJ, KO, LIN, LLY, MRK, MRNA, NEM, RSP, SCHD, TMO, V, XLP, XLV.",
     "challenger": "The research-only challenger favors ABBV, TMO, PSX.",
     "disclosure": "This briefing explains completed-session model inputs; it is not a real-time news feed or a recommendation."
