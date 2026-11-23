@@ -1,6 +1,6 @@
 {
   "schema_version": "1.8.0",
-  "published_at": "2026-11-20T15:31:45.972385+00:00",
+  "published_at": "2026-11-23T15:35:57.761389+00:00",
   "valuation_as_of": "2026-11-20T15:31:15.711000+00:00",
   "valuation_provenance": "fresh_broker_supplied",
   "experiment": {
@@ -18488,13 +18488,13 @@
     }
   },
   "daily_briefing": {
-    "as_of": "2026-11-19",
-    "headline": "TradeRiser proposed 4 portfolio changes.",
-    "portfolio_context": "The live account currently holds IWM, DIVB, IHE, RPV, MRK, JNJ, LLY, REGN, AAPL, USO, AMGN, SCHD, KO, UNP.",
-    "market_context": "The completed-session screen qualified CRWD, PANW, KO, AAPL, GILD, TMO, MCK, WMT, XLP, COST, REGN, PG, DIS, DHR, MDT, SGOV, BIL, SPOT for consideration. Separate dividend-yield research, provider catalog as of 2026-10-15: HOOY 88.08%; GDXY 81.80%; PLTW 74.56%; YBTC 60.10%; AMDW 48.24%; BLOX 45.32%; AMDY 35.73%; KSLV 32.57%; IEP 29.83%; OXLC 28.78%. This ranks indicated dividend yield, not total return. High yield can reflect a falling price, a nonrecurring distribution, or an unsustainable payout. It does not affect live orders. Signal-only evaluation completed for manual entry; no authorization or assistant order submission occurred. Known unresolved bookkeeping defect: broker-confirmed manually entered fills are not included when reconstructing loss-exit cooldowns or completed staged reductions. Manual entry describes order submission, not the source of the investment decision. The signal is the unchanged application output and may be affected by this missing state; no correction or order submission occurred. RPV: reduce exposure after persistent failure of the trend and momentum screen. UNP: reduce exposure after persistent failure of the trend and momentum screen. MRK: reduce exposure after persistent material 5/21-session price deterioration. SGOV: rebalance to rules-based target. IWM: defensive sale is below the minimum order or remaining cycle capacity (suppressed; not a trade proposal). USO: defensive sale is below the minimum order or remaining cycle capacity (suppressed; not a trade proposal). AMGN: short_horizon_weakness is awaiting confirmation (2 of 3 completed sessions). DIVB: short_horizon_weakness is awaiting confirmation (2 of 3 completed sessions). IHE: short_horizon_weakness is awaiting confirmation (2 of 3 completed sessions). JNJ: short_horizon_weakness is awaiting confirmation (1 of 3 completed sessions). LLY: short_horizon_weakness is awaiting confirmation (2 of 3 completed sessions). SCHD: short_horizon_weakness is awaiting confirmation (2 of 3 completed sessions).",
-    "champion": "The live strategy currently favors AAPL, BIL, COST, CRWD, DHR, DIS, GILD, KO, MCK, MDT, PG, SGOV, SPOT, TMO, WMT, XLP.",
-    "challenger": "The research-only challenger favors ABBV, TMO, PSX.",
-    "disclosure": "This briefing explains completed-session model inputs; it is not a real-time news feed or a recommendation."
+    "as_of": "2026-11-23",
+    "headline": "November 23 signal unavailable: broker connection tools missing.",
+    "portfolio_context": "No fresh portfolio valuation was obtained. Last verified account valuation: November 20, 2026 at 9:31 AM Central.",
+    "market_context": "The regular US equity session is open. Robinhood read-only MCP tools are unavailable in this assistant session; fresh account, order, quote, and tax-lot evidence could not be retrieved.",
+    "champion": "The last completed champion signal was generated November 20 at 9:30 AM Central, using November 19 completed-session data. No November 23 recommendations are available.",
+    "challenger": "Previously published research is retained at its original dates; no current research run was performed.",
+    "disclosure": "November 23: no current completed signal was generated because authenticated broker-read tools are unavailable. This is a failed input check, not a zero-proposal decision. Account values, holdings, fills, and the prior signal remain historical at their original timestamps."
   },
   "plain_language": {
     "covariance-aware equal risk contribution": "Sizes holdings so one volatile or closely related investment does not dominate the portfolio's risk.",
@@ -36263,9 +36263,20 @@
     ]
   },
   "disclosures": [
+    "November 23: no current completed signal was generated because authenticated broker-read tools are unavailable. This is a failed input check, not a zero-proposal decision. Account values, holdings, fills, and the prior signal remain historical at their original timestamps.",
     "This is a small, live experiment and not a recommendation or profit guarantee.",
     "Challenger orders are hypothetical and are never sent to the broker.",
     "Displayed values may be delayed and differ from the brokerage account.",
     "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable."
-  ]
+  ],
+  "monitoring_status": {
+    "date": "2026-11-23",
+    "checked_at": "2026-11-23T15:35:57.761389+00:00",
+    "status": "broker_read_unavailable",
+    "signal_status": "not_run",
+    "market_open": true,
+    "current_broker_snapshot": false,
+    "last_valuation_as_of": "2026-11-20T15:31:15.711000+00:00",
+    "message": "November 23: no current completed signal was generated because authenticated broker-read tools are unavailable. This is a failed input check, not a zero-proposal decision. Account values, holdings, fills, and the prior signal remain historical at their original timestamps."
+  }
 }
