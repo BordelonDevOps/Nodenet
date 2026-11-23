@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8.0",
-  "published_at": "2026-11-23T15:35:57.761389+00:00",
-  "valuation_as_of": "2026-11-20T15:31:15.711000+00:00",
+  "published_at": "2026-11-23T22:26:30.881018+00:00",
+  "valuation_as_of": "2026-11-23T22:24:46.793000+00:00",
   "valuation_provenance": "fresh_broker_supplied",
   "experiment": {
     "name": "TradeRiser Agentic Trading Experiment",
@@ -10,13 +10,13 @@
     "objective": "Continue the live observation through December 31, 2026 using the experiment&amp;#x27;s cumulative contributed funds."
   },
   "account": {
-    "value": 89.3878,
-    "cash": 7.67,
-    "invested": 81.7193,
-    "buying_power": 7.67,
+    "value": 89.2151,
+    "cash": 20.0,
+    "invested": 69.2151,
+    "buying_power": 20.0,
     "net_contributions": 10.0,
-    "investment_gain": 79.3878,
-    "simple_return_on_contributions": 7.93878,
+    "investment_gain": 79.2151,
+    "simple_return_on_contributions": 7.92151,
     "currency": "USD",
     "contribution_source": "account_owner_correction",
     "cash_flow_history_complete": false
@@ -27,7 +27,7 @@
       "shares": 1.1e-05,
       "average_price": 0.0,
       "cost_basis": 0.0,
-      "current_value": 0.002887995,
+      "current_value": 0.0029236251,
       "strategy": "champion"
     },
     {
@@ -35,7 +35,7 @@
       "shares": 0.101018,
       "average_price": 66.42,
       "cost_basis": 6.70961556,
-      "current_value": 6.94195696,
+      "current_value": 6.8944785,
       "strategy": "champion"
     },
     {
@@ -43,23 +43,7 @@
       "shares": 9e-05,
       "average_price": 111.11,
       "cost_basis": 0.0099999,
-      "current_value": 0.0094788,
-      "strategy": "champion"
-    },
-    {
-      "symbol": "RPV",
-      "shares": 0.070541,
-      "average_price": 118.51,
-      "cost_basis": 8.359813910000002,
-      "current_value": 8.32313259,
-      "strategy": "champion"
-    },
-    {
-      "symbol": "MRK",
-      "shares": 0.021746,
-      "average_price": 148.99,
-      "cost_basis": 3.2399365400000004,
-      "current_value": 2.95691235,
+      "current_value": 0.009513,
       "strategy": "champion"
     },
     {
@@ -67,7 +51,7 @@
       "shares": 0.018105,
       "average_price": 260.7,
       "cost_basis": 4.7199735,
-      "current_value": 4.910304123,
+      "current_value": 4.8970404,
       "strategy": "champion"
     },
     {
@@ -75,7 +59,7 @@
       "shares": 0.007813,
       "average_price": 1389.99,
       "cost_basis": 10.85999187,
-      "current_value": 10.628727070000002,
+      "current_value": 10.6752292647,
       "strategy": "champion"
     },
     {
@@ -83,7 +67,7 @@
       "shares": 0.001677,
       "average_price": 787.12,
       "cost_basis": 1.3200002400000002,
-      "current_value": 1.5607671300000001,
+      "current_value": 1.57804023,
       "strategy": "champion"
     },
     {
@@ -91,7 +75,7 @@
       "shares": 0.030716,
       "average_price": 339.56,
       "cost_basis": 10.429924960000001,
-      "current_value": 10.71957684,
+      "current_value": 10.7413852,
       "strategy": "champion"
     },
     {
@@ -99,7 +83,7 @@
       "shares": 0.006876,
       "average_price": 167.25,
       "cost_basis": 1.1500110000000001,
-      "current_value": 0.93338262,
+      "current_value": 0.9172584,
       "strategy": "champion"
     },
     {
@@ -107,15 +91,15 @@
       "shares": 0.010484,
       "average_price": 454.03,
       "cost_basis": 4.76005052,
-      "current_value": 4.61773022,
+      "current_value": 4.7146548,
       "strategy": "champion"
     },
     {
       "symbol": "SCHD",
-      "shares": 0.56644,
-      "average_price": 36.05,
-      "cost_basis": 20.420162,
-      "current_value": 19.563478144,
+      "shares": 0.689002,
+      "average_price": 35.75,
+      "cost_basis": 24.6318215,
+      "current_value": 23.729159979800002,
       "strategy": "champion"
     },
     {
@@ -123,15 +107,7 @@
       "shares": 0.052661,
       "average_price": 95.9,
       "cost_basis": 5.0501899,
-      "current_value": 5.121018945,
-      "strategy": "champion"
-    },
-    {
-      "symbol": "UNP",
-      "shares": 0.018441,
-      "average_price": 292.83,
-      "cost_basis": 5.4000780299999995,
-      "current_value": 5.429952449999999,
+      "current_value": 5.0554559999999995,
       "strategy": "champion"
     }
   ],
@@ -2282,6 +2258,120 @@
       "execution_label": "historical_fill",
       "decision_source": "not_recorded",
       "broker_submission_source": "user"
+    },
+    {
+      "symbol": "RPV",
+      "side": "sell",
+      "dollar_amount": 8.2468,
+      "filled_notional": 8.2468,
+      "state": "filled",
+      "quantity": 0.070541,
+      "average_price": 116.9084,
+      "fees": 0.0,
+      "reconciled_at": "2026-11-20T18:11:18.479000+00:00",
+      "authorized": null,
+      "orders_match": null,
+      "deferred_follow_up": null,
+      "source": "user",
+      "authorization_label": "historical_fill_no_delegated_authorization",
+      "execution_label": "historical_fill",
+      "decision_source": "not_recorded",
+      "broker_submission_source": "user"
+    },
+    {
+      "symbol": "UNP",
+      "side": "sell",
+      "dollar_amount": 5.3618,
+      "filled_notional": 5.3618,
+      "state": "filled",
+      "quantity": 0.018441,
+      "average_price": 290.755,
+      "fees": 0.0,
+      "reconciled_at": "2026-11-20T18:11:50.219000+00:00",
+      "authorized": null,
+      "orders_match": null,
+      "deferred_follow_up": null,
+      "source": "user",
+      "authorization_label": "historical_fill_no_delegated_authorization",
+      "execution_label": "historical_fill",
+      "decision_source": "not_recorded",
+      "broker_submission_source": "user"
+    },
+    {
+      "symbol": "MRK",
+      "side": "sell",
+      "dollar_amount": 2.9261,
+      "filled_notional": 2.9261,
+      "state": "filled",
+      "quantity": 0.021746,
+      "average_price": 134.56,
+      "fees": 0.0,
+      "reconciled_at": "2026-11-20T18:12:14.919000+00:00",
+      "authorized": null,
+      "orders_match": null,
+      "deferred_follow_up": null,
+      "source": "user",
+      "authorization_label": "historical_fill_no_delegated_authorization",
+      "execution_label": "historical_fill",
+      "decision_source": "not_recorded",
+      "broker_submission_source": "user"
+    },
+    {
+      "symbol": "SGOV",
+      "side": "buy",
+      "dollar_amount": 20.0,
+      "filled_notional": 20.0,
+      "state": "filled",
+      "quantity": 0.198737,
+      "average_price": 100.6354,
+      "fees": 0.0,
+      "reconciled_at": "2026-11-20T18:15:29.908000+00:00",
+      "authorized": null,
+      "orders_match": null,
+      "deferred_follow_up": null,
+      "source": "user",
+      "authorization_label": "historical_fill_no_delegated_authorization",
+      "execution_label": "historical_fill",
+      "decision_source": "not_recorded",
+      "broker_submission_source": "user"
+    },
+    {
+      "symbol": "SCHD",
+      "side": "buy",
+      "dollar_amount": 4.21,
+      "filled_notional": 4.21,
+      "state": "filled",
+      "quantity": 0.122562,
+      "average_price": 34.3499,
+      "fees": 0.0,
+      "reconciled_at": "2026-11-20T18:16:10.250000+00:00",
+      "authorized": null,
+      "orders_match": null,
+      "deferred_follow_up": null,
+      "source": "user",
+      "authorization_label": "historical_fill_no_delegated_authorization",
+      "execution_label": "historical_fill",
+      "decision_source": "not_recorded",
+      "broker_submission_source": "user"
+    },
+    {
+      "symbol": "SGOV",
+      "side": "sell",
+      "dollar_amount": 20.0029,
+      "filled_notional": 20.0029,
+      "state": "filled",
+      "quantity": 0.198737,
+      "average_price": 100.65,
+      "fees": 0.0,
+      "reconciled_at": "2026-11-23T22:09:04.320000+00:00",
+      "authorized": null,
+      "orders_match": null,
+      "deferred_follow_up": null,
+      "source": "user",
+      "authorization_label": "historical_fill_no_delegated_authorization",
+      "execution_label": "historical_fill",
+      "decision_source": "not_recorded",
+      "broker_submission_source": "user"
     }
   ],
   "decisions": [
@@ -3648,8 +3738,6 @@
         }
       ],
       "explanation": [
-        "SPY quote is stale",
-        "FLTW quote is stale",
         "Proposals were generated; execution is not established for this cycle."
       ],
       "regime": null,
@@ -15398,6 +15486,204 @@
       ],
       "regime": null,
       "stage": "evaluation"
+    },
+    {
+      "kind": "historical_trade",
+      "generated_at": "2026-11-20T18:11:18.479000+00:00",
+      "status": "filled",
+      "selected": [
+        "RPV"
+      ],
+      "orders": [
+        {
+          "symbol": "RPV",
+          "side": "sell",
+          "dollars": 8.2468,
+          "status": "filled",
+          "quantity": 0.070541,
+          "average_price": 116.9084,
+          "fees": 0.0
+        }
+      ],
+      "authorized": null,
+      "authorization_basis": null,
+      "authorization_label": "historical_fill_no_delegated_authorization",
+      "reconciled": null,
+      "source": "user",
+      "execution_label": "historical_fill",
+      "deferred_follow_up": null,
+      "decision_source": "not_recorded",
+      "broker_submission_source": "user",
+      "stage": "history",
+      "explanation": [
+        "A terminal historical fill is included for continuity; no delegated authorization is claimed."
+      ],
+      "regime": null
+    },
+    {
+      "kind": "historical_trade",
+      "generated_at": "2026-11-20T18:11:50.219000+00:00",
+      "status": "filled",
+      "selected": [
+        "UNP"
+      ],
+      "orders": [
+        {
+          "symbol": "UNP",
+          "side": "sell",
+          "dollars": 5.3618,
+          "status": "filled",
+          "quantity": 0.018441,
+          "average_price": 290.755,
+          "fees": 0.0
+        }
+      ],
+      "authorized": null,
+      "authorization_basis": null,
+      "authorization_label": "historical_fill_no_delegated_authorization",
+      "reconciled": null,
+      "source": "user",
+      "execution_label": "historical_fill",
+      "deferred_follow_up": null,
+      "decision_source": "not_recorded",
+      "broker_submission_source": "user",
+      "stage": "history",
+      "explanation": [
+        "A terminal historical fill is included for continuity; no delegated authorization is claimed."
+      ],
+      "regime": null
+    },
+    {
+      "kind": "historical_trade",
+      "generated_at": "2026-11-20T18:12:14.919000+00:00",
+      "status": "filled",
+      "selected": [
+        "MRK"
+      ],
+      "orders": [
+        {
+          "symbol": "MRK",
+          "side": "sell",
+          "dollars": 2.9261,
+          "status": "filled",
+          "quantity": 0.021746,
+          "average_price": 134.56,
+          "fees": 0.0
+        }
+      ],
+      "authorized": null,
+      "authorization_basis": null,
+      "authorization_label": "historical_fill_no_delegated_authorization",
+      "reconciled": null,
+      "source": "user",
+      "execution_label": "historical_fill",
+      "deferred_follow_up": null,
+      "decision_source": "not_recorded",
+      "broker_submission_source": "user",
+      "stage": "history",
+      "explanation": [
+        "A terminal historical fill is included for continuity; no delegated authorization is claimed."
+      ],
+      "regime": null
+    },
+    {
+      "kind": "historical_trade",
+      "generated_at": "2026-11-20T18:15:29.908000+00:00",
+      "status": "filled",
+      "selected": [
+        "SGOV"
+      ],
+      "orders": [
+        {
+          "symbol": "SGOV",
+          "side": "buy",
+          "dollars": 20.0,
+          "status": "filled",
+          "quantity": 0.198737,
+          "average_price": 100.6354,
+          "fees": 0.0
+        }
+      ],
+      "authorized": null,
+      "authorization_basis": null,
+      "authorization_label": "historical_fill_no_delegated_authorization",
+      "reconciled": null,
+      "source": "user",
+      "execution_label": "historical_fill",
+      "deferred_follow_up": null,
+      "decision_source": "not_recorded",
+      "broker_submission_source": "user",
+      "stage": "history",
+      "explanation": [
+        "A terminal historical fill is included for continuity; no delegated authorization is claimed."
+      ],
+      "regime": null
+    },
+    {
+      "kind": "historical_trade",
+      "generated_at": "2026-11-20T18:16:10.250000+00:00",
+      "status": "filled",
+      "selected": [
+        "SCHD"
+      ],
+      "orders": [
+        {
+          "symbol": "SCHD",
+          "side": "buy",
+          "dollars": 4.21,
+          "status": "filled",
+          "quantity": 0.122562,
+          "average_price": 34.3499,
+          "fees": 0.0
+        }
+      ],
+      "authorized": null,
+      "authorization_basis": null,
+      "authorization_label": "historical_fill_no_delegated_authorization",
+      "reconciled": null,
+      "source": "user",
+      "execution_label": "historical_fill",
+      "deferred_follow_up": null,
+      "decision_source": "not_recorded",
+      "broker_submission_source": "user",
+      "stage": "history",
+      "explanation": [
+        "A terminal historical fill is included for continuity; no delegated authorization is claimed."
+      ],
+      "regime": null
+    },
+    {
+      "kind": "historical_trade",
+      "generated_at": "2026-11-23T22:09:04.320000+00:00",
+      "status": "filled",
+      "selected": [
+        "SGOV"
+      ],
+      "orders": [
+        {
+          "symbol": "SGOV",
+          "side": "sell",
+          "dollars": 20.0029,
+          "status": "filled",
+          "quantity": 0.198737,
+          "average_price": 100.65,
+          "fees": 0.0
+        }
+      ],
+      "authorized": null,
+      "authorization_basis": null,
+      "authorization_label": "historical_fill_no_delegated_authorization",
+      "reconciled": null,
+      "source": "user",
+      "execution_label": "historical_fill",
+      "deferred_follow_up": null,
+      "decision_source": "not_recorded",
+      "broker_submission_source": "user",
+      "stage": "history",
+      "explanation": [
+        "A terminal historical fill is included for continuity; no delegated authorization is claimed."
+      ],
+      "regime": null
     }
   ],
   "portfolio_history": [
@@ -18369,89 +18655,74 @@
       "excess_return": null
     },
     {
-      "date": "2026-11-20",
-      "value": 89.3878,
-      "cash": 7.67,
+      "date": "2026-11-23",
+      "value": 89.2151,
+      "cash": 20.0,
       "holdings": [
         {
           "symbol": "IWM",
           "shares": 1.1e-05,
-          "value": 0.002887995
+          "value": 0.0029236251
         },
         {
           "symbol": "DIVB",
           "shares": 0.101018,
-          "value": 6.94195696
+          "value": 6.8944785
         },
         {
           "symbol": "IHE",
           "shares": 9e-05,
-          "value": 0.0094788
-        },
-        {
-          "symbol": "RPV",
-          "shares": 0.070541,
-          "value": 8.32313259
-        },
-        {
-          "symbol": "MRK",
-          "shares": 0.021746,
-          "value": 2.95691235
+          "value": 0.009513
         },
         {
           "symbol": "JNJ",
           "shares": 0.018105,
-          "value": 4.910304123
+          "value": 4.8970404
         },
         {
           "symbol": "LLY",
           "shares": 0.007813,
-          "value": 10.628727070000002
+          "value": 10.6752292647
         },
         {
           "symbol": "REGN",
           "shares": 0.001677,
-          "value": 1.5607671300000001
+          "value": 1.57804023
         },
         {
           "symbol": "AAPL",
           "shares": 0.030716,
-          "value": 10.71957684
+          "value": 10.7413852
         },
         {
           "symbol": "USO",
           "shares": 0.006876,
-          "value": 0.93338262
+          "value": 0.9172584
         },
         {
           "symbol": "AMGN",
           "shares": 0.010484,
-          "value": 4.61773022
+          "value": 4.7146548
         },
         {
           "symbol": "SCHD",
-          "shares": 0.56644,
-          "value": 19.563478144
+          "shares": 0.689002,
+          "value": 23.729159979800002
         },
         {
           "symbol": "KO",
           "shares": 0.052661,
-          "value": 5.121018945
-        },
-        {
-          "symbol": "UNP",
-          "shares": 0.018441,
-          "value": 5.429952449999999
+          "value": 5.0554559999999995
         }
       ],
-      "captured_at": "2026-11-20T15:31:15.711000+00:00",
+      "captured_at": "2026-11-23T22:24:46.793000+00:00",
       "source": "fresh_broker_supplied",
       "breakdown_estimated": false,
       "note": "Lifetime net contributions reflect the account owner's corrected total. A corrected dated cash-flow ledger was not supplied; historical cash-flow returns and matched benchmark comparisons are unavailable.",
       "net_cash_flow": null,
       "contributions": null,
       "withdrawals": null,
-      "change": 15.6857,
+      "change": 15.513,
       "change_pct": null,
       "market_gain": null,
       "return_unavailable_reason": "corrected_contribution_history_timing_unknown",
@@ -18465,7 +18736,7 @@
     }
   ],
   "performance": {
-    "simple_return_on_contributions": 7.93878,
+    "simple_return_on_contributions": 7.92151,
     "time_weighted_return": null,
     "time_weighted_quality": "unavailable_corrected_cash_flow_history",
     "money_weighted": {
@@ -18489,12 +18760,12 @@
   },
   "daily_briefing": {
     "as_of": "2026-11-23",
-    "headline": "November 23 signal unavailable: broker connection tools missing.",
-    "portfolio_context": "No fresh portfolio valuation was obtained. Last verified account valuation: November 20, 2026 at 9:31 AM Central.",
-    "market_context": "The regular US equity session is open. Robinhood read-only MCP tools are unavailable in this assistant session; fresh account, order, quote, and tax-lot evidence could not be retrieved.",
-    "champion": "The last completed champion signal was generated November 20 at 9:30 AM Central, using November 19 completed-session data. No November 23 recommendations are available.",
-    "challenger": "Previously published research is retained at its original dates; no current research run was performed.",
-    "disclosure": "November 23: no current completed signal was generated because authenticated broker-read tools are unavailable. This is a failed input check, not a zero-proposal decision. Account values, holdings, fills, and the prior signal remain historical at their original timestamps."
+    "headline": "November 23 signal blocked by missing SNDK provider history.",
+    "portfolio_context": "Fresh broker valuation: $89.22; cash and unleveraged buying power $20.00; 11 holdings. Valuation timestamp: 2026-11-23T22:24:46.793Z. Holding values use each broker quote's most recent regular-hours or after-hours trade timestamp.",
+    "market_context": "The regular US equity session is closed. The broker connection is working. Repeated provider downloads and a separate symbol query returned missing November 20 OHLC prices and zero volume for SNDK, alongside an 8-for-1 split record. TradeRiser rejected the gap under its existing history validation. Known unresolved bookkeeping defect: broker-confirmed manually entered fills are not included when reconstructing loss-exit cooldowns or completed staged reductions. Manual entry describes order submission, not the source of the investment decision. The signal is the unchanged application output and may be affected by this missing state; no correction or order submission occurred.",
+    "champion": "No November 23 signal completed. The November 20 proposals remain historical at their original timestamp; they are not refreshed recommendations.",
+    "challenger": "Previously produced research is retained with its original dates; no new research cycle was run.",
+    "disclosure": "November 23 after-close attempt: Robinhood connectivity was restored and broker evidence was refreshed, but TradeRiser stopped on missing SNDK provider data for November 20. No completed November 23 signal or current recommendations exist. This is a data-validation failure, not a zero-proposal decision. The last completed signal remains November 20."
   },
   "plain_language": {
     "covariance-aware equal risk contribution": "Sizes holdings so one volatile or closely related investment does not dominate the portfolio's risk.",
@@ -18525,7 +18796,7 @@
     ]
   },
   "evidence": {
-    "live_days": 103,
+    "live_days": 106,
     "champion_cycles": 125,
     "challenger_cycles": 63,
     "reconciled_trades": 13,
@@ -36263,7 +36534,7 @@
     ]
   },
   "disclosures": [
-    "November 23: no current completed signal was generated because authenticated broker-read tools are unavailable. This is a failed input check, not a zero-proposal decision. Account values, holdings, fills, and the prior signal remain historical at their original timestamps.",
+    "November 23 after-close attempt: Robinhood connectivity was restored and broker evidence was refreshed, but TradeRiser stopped on missing SNDK provider data for November 20. No completed November 23 signal or current recommendations exist. This is a data-validation failure, not a zero-proposal decision. The last completed signal remains November 20.",
     "This is a small, live experiment and not a recommendation or profit guarantee.",
     "Challenger orders are hypothetical and are never sent to the broker.",
     "Displayed values may be delayed and differ from the brokerage account.",
@@ -36271,12 +36542,17 @@
   ],
   "monitoring_status": {
     "date": "2026-11-23",
-    "checked_at": "2026-11-23T15:35:57.761389+00:00",
-    "status": "broker_read_unavailable",
+    "checked_at": "2026-11-23T22:26:31.794641+00:00",
+    "status": "completed_session_data_error",
     "signal_status": "not_run",
-    "market_open": true,
-    "current_broker_snapshot": false,
-    "last_valuation_as_of": "2026-11-20T15:31:15.711000+00:00",
-    "message": "November 23: no current completed signal was generated because authenticated broker-read tools are unavailable. This is a failed input check, not a zero-proposal decision. Account values, holdings, fills, and the prior signal remain historical at their original timestamps."
+    "market_open": false,
+    "broker_connection_restored": true,
+    "current_broker_snapshot": true,
+    "valuation_as_of": "2026-11-23T22:24:46.793Z",
+    "last_signal_generated_at": "2026-11-20T15:30:46.376428+00:00",
+    "expected_completed_session": "2026-11-23",
+    "blocked_symbol": "SNDK",
+    "missing_provider_session": "2026-11-20",
+    "message": "November 23 after-close attempt: Robinhood connectivity was restored and broker evidence was refreshed, but TradeRiser stopped on missing SNDK provider data for November 20. No completed November 23 signal or current recommendations exist. This is a data-validation failure, not a zero-proposal decision. The last completed signal remains November 20."
   }
 }
